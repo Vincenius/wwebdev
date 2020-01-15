@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { Head } from '../../../components'
+import { Head, Nav } from '../../../components'
 import Background1 from './components/Background1'
 import Background2 from './components/Background2'
 import Background3 from './components/Background3'
@@ -49,7 +49,7 @@ const Demo = () => {
             { activeBg === 2 && <Background3 /> }
 
             <S.Footer>
-                Made by <Link href="/"><a>Vincent Will</a></Link>
+                Made by <Link href="/"><a>wwev.dev</a></Link>
             </S.Footer>
         </S.Container>
     )

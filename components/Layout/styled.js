@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { boxShadow } from '../../ui/constants'
+import { greyBlue, boxShadow } from '../../ui/constants'
 
 export const Container = styled.div`
     max-width: 1440px;
@@ -12,7 +12,8 @@ export const Container = styled.div`
     min-height: 100vh;
 `
 export const Time = styled.time`
-    color: rgba(255,255,255,0.8);
+    color: ${greyBlue};
     font-size: 1rem;
     line-height: 30px;
+    margin-right: 3px;
 `

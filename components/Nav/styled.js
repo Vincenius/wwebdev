@@ -1,11 +1,20 @@
 import styled from 'styled-components'
-import { breakpointSmall } from '../../ui/constants'
+import * as ui from '../../ui'
+import { darkGrey, breakpointSmall } from '../../ui/constants'
 
-export const Navigation = styled.nav`
+export const Container = styled.div`
+    background: ${darkGrey};
+    position: relative;
+    padding: 16px 20px;
+    margin: 0 auto 30px;
+`
+
+export const Navigation = styled(ui.Container)`
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 
     @media (max-width: ${breakpointSmall}) {
         flex-direction: column;

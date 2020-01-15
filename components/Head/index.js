@@ -14,7 +14,7 @@ class MyHead extends React.Component {
 
         return (
             <Head>
-                <title>{title} | Vincent Will</title>
+                <title>{title} | wweb.dev</title>
                 <link rel='icon' href='/favicon.ico' type="image/x-icon" />
                 <meta charSet="utf-8"></meta>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>

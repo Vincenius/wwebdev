@@ -17,11 +17,11 @@ const Home = () => (
             </p>
             <p>
                 The only external dependency I'm using is "Google Fonts" and I'm trying to get rid of that soon. <br />
-                Other than that there is nothing that could track you, as far as I'm aware of. No share links (eg. facebook)
-                and no cookies and no other tools.
+                Other than that there is nothing that could track you, as far as I'm aware of. No share links (eg. facebook),
+                no cookies and no other tools.
             </p>
             <p>
-                If you think I'm missing something here - please let me know: info@vincentwill.com
+                If you think I'm missing something here - please let me know: info@wweb.dev
             </p>
 
             <br />
@@ -29,10 +29,10 @@ const Home = () => (
             <br />
 
             <h2>Version for my legal safety</h2>
-            <p>Effective date: May 29, 2019</p>
+            <p>Effective date: January 15, 2020</p>
             <p>
                 Vincent Will ('us', 'we', or 'our') operates the
-                https://vincentwill.com website (hereinafter referred to
+                https://wweb.dev website (hereinafter referred to
                 as the 'Service').
             </p>
             <p>
@@ -52,7 +52,7 @@ const Home = () => (
                 otherwise defined in this Privacy Policy, the terms used
                 in this Privacy Policy have the same meanings as in our
                 Terms and Conditions, accessible from
-                https://vincentwill.com
+                https://wweb.dev
             </p>
             <h2>Information Collection And Use</h2>
             <p>
@@ -282,7 +282,7 @@ const Home = () => (
                 please contact us:
             </p>
             <ul>
-                <li>By email: info@vincentwill.com</li>
+                <li>By email: info@wweb.dev</li>
             </ul>
         </ui.Container>
     </Layout>

@@ -1,11 +1,11 @@
 import React from 'react'
 import * as ui from '../ui'
-import { ArticlePreview, SubscribeForm, Layout } from '../components'
+import { SubscribeForm, Layout } from '../components'
 import { generateResources } from '../content/generator'
 
 const Home = () => (
     <Layout
-        title="A Blog about Web-Development"
+        title="Free Resources and Tools for your usage"
     >
         <ui.Container>
             { generateResources() }

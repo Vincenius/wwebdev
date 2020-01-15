@@ -1,10 +1,11 @@
 import styled from 'styled-components'
-import { gradient, blue, breakpoint } from '../../ui/constants'
+import { darkGrey, breakpoint } from '../../ui/constants'
 
 export const Container = styled.header`
     position: relative;
-    padding: 24px 0;
+    padding: 0 0 24px;
     display: block;
+    margin-bottom: 50px;
 
     &::before {
         content: '';
@@ -13,10 +14,7 @@ export const Container = styled.header`
         left: 0;
         width: 100%;
         height: 100%;
-        background: ${blue};
-        background: ${gradient};
-        transform-origin: 0;
-        transform: skewY(-12deg);
+        background: linear-gradient(112.5deg, rgba(232, 232, 232, 0.03) 0%, rgba(232, 232, 232, 0.03) 2%,rgba(231, 231, 231, 0.03) 2%, rgba(231, 231, 231, 0.03) 4%,rgba(231, 231, 231, 0.03) 4%, rgba(231, 231, 231, 0.03) 11%,rgba(2, 2, 2, 0.03) 11%, rgba(2, 2, 2, 0.03) 67%,rgba(231, 231, 231, 0.03) 67%, rgba(231, 231, 231, 0.03) 90%,rgba(111, 111, 111, 0.03) 90%, rgba(111, 111, 111, 0.03) 100%),linear-gradient(157.5deg, rgba(210, 210, 210, 0.03) 0%, rgba(210, 210, 210, 0.03) 17%,rgba(254, 254, 254, 0.03) 17%, rgba(254, 254, 254, 0.03) 18%,rgba(96, 96, 96, 0.03) 18%, rgba(96, 96, 96, 0.03) 44%,rgba(159, 159, 159, 0.03) 44%, rgba(159, 159, 159, 0.03) 70%,rgba(24, 24, 24, 0.03) 70%, rgba(24, 24, 24, 0.03) 82%,rgba(16, 16, 16, 0.03) 82%, rgba(16, 16, 16, 0.03) 100%),linear-gradient(22.5deg, rgba(47, 47, 47, 0.03) 0%, rgba(47, 47, 47, 0.03) 32%,rgba(124, 124, 124, 0.03) 32%, rgba(124, 124, 124, 0.03) 40%,rgba(200, 200, 200, 0.03) 40%, rgba(200, 200, 200, 0.03) 42%,rgba(16, 16, 16, 0.03) 42%, rgba(16, 16, 16, 0.03) 64%,rgba(243, 243, 243, 0.03) 64%, rgba(243, 243, 243, 0.03) 94%,rgba(93, 93, 93, 0.03) 94%, rgba(93, 93, 93, 0.03) 100%),linear-gradient(90deg, #FFF,#FFF);
     }
 `
 
@@ -24,14 +22,10 @@ export const Content = styled.div`
     position: relative;
     max-width: 848px;
     width: 100%;
-    padding: 50px 24px 0;
-    margin: 0 auto 260px;
-    color: #fff;
+    padding: 0 24px 0;
+    margin: 160px auto;
+    color: ${darkGrey};
     text-align: center;
-
-    @media (max-width: ${breakpoint}) {
-        margin-bottom: 160px;
-    }
 
     h1 {
         font-family: "PT Serif", serif;

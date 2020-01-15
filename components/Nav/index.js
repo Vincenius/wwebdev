@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'next/link'
-import * as ui from '../../ui'
 import * as S from './styled'
 
 const links = [
@@ -15,8 +14,8 @@ const links = [
 })
 
 const Nav = () => (
-  <ui.Container>
-    <S.Navigation>
+  <S.Container>
+    <S.Navigation as="nav">
       <Link href='/'>
         <a>
           <img src="/logow.png" alt="Logo of Vincent Will"/>
@@ -30,7 +29,7 @@ const Nav = () => (
         ))}
       </ul>
     </S.Navigation>
-  </ui.Container>
+  </S.Container>
 )
 
 export default Nav
