@@ -12,7 +12,7 @@ const Footer = () => (
           </a>
         </Link>
         <S.Copyright>
-          © {new Date().getFullYear()} - Vincent Will
+          © {new Date().getFullYear()} - wweb.dev
         </S.Copyright>
       </div>
 
