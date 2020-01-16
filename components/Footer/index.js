@@ -8,7 +8,7 @@ const Footer = () => (
       <div>
         <Link href='/'>
           <a>
-            <img src="/logo.png" alt="Vincent Will Logo" />
+            <img src="/logo.png" alt="wweb.dev Logo" />
           </a>
         </Link>
         <S.Copyright>

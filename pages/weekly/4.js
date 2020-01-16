@@ -66,8 +66,8 @@ const Post = () => (
             <LinkBox
                 title="Ten Websites For Free SVG Illustrations"
                 description="A list of websites for free SVG icons, I've gather thoughout the years."
-                link="https://vincentwill.com/blog/ten-websites-for-free-svg-illustrations"
-                image="https://vincentwill.com/blog/5/preview.png"
+                link="https://wweb.dev/blog/ten-websites-for-free-svg-illustrations"
+                image="https://wweb.dev/blog/5/preview.png"
                 selfPromoted="New Blogpost"
             />
             <SubscribeForm type="weekly" />

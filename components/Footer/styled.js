@@ -6,8 +6,13 @@ export const Container = styled.footer`
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0px;
-    color: ${darkGrey};
-    border-top: 1px solid ${lightGrey};
+    background: ${darkGrey};
+    color: ${lightGrey};
+    margin-top: 50px;
+
+    svg {
+        fill: ${lightGrey};
+    }
 `
 export const Content = styled(ui.Container)`
     display: flex;
@@ -24,7 +29,7 @@ export const Copyright = styled.div`
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0px;
-    color: ${darkGrey};
+    color: ${lightGrey};
     margin-top: 12px;
 `
 export const Screenreader = styled.span`
@@ -72,7 +77,7 @@ export const FooterLinks = styled.ul`
 
     a {
         text-decoration: none;
-        color: ${darkGrey};
+        color: ${lightGrey};
 
         &:hover {
             text-decoration: underline;

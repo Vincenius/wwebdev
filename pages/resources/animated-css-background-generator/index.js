@@ -17,7 +17,7 @@ const Demo = () => {
                 isArticle={true}
                 title={postMeta.headline}
                 date={postMeta.date}
-                link={`https://vincentwill.com${postMeta.link}`}
+                link={`https://wweb.dev${postMeta.link}`}
                 description={postMeta.description}
                 image="/resources/resources01.jpg"
                 date={new Date(postMeta.date)}
