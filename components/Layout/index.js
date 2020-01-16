@@ -13,6 +13,7 @@ function Layout ({
     link,
     image,
     description,
+    titleNameFirst,
 }) {
     const d = date ? new Date(date) : undefined
 
@@ -25,6 +26,7 @@ function Layout ({
                 description={description}
                 date={d}
                 isArticle={isArticle}
+                titleNameFirst={titleNameFirst}
             />
             <Header>
                 <h1>{title}</h1>

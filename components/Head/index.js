@@ -10,11 +10,16 @@ class MyHead extends React.Component {
             image,
             date,
             isArticle,
+            titleNameFirst,
         } = this.props
+
+        const headTitle = titleNameFirst
+            ? `wweb.dev | ${title}`
+            : `${title} | wweb.dev`
 
         return (
             <Head>
-                <title>{title} | wweb.dev</title>
+                <title>{headTitle}</title>
                 <link rel='icon' href='/favicon.ico' type="image/x-icon" />
                 <meta charSet="utf-8"></meta>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
