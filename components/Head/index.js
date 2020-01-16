@@ -28,7 +28,6 @@ class MyHead extends React.Component {
 
                 { isArticle &&
                     <React.Fragment>
-                        <script async defer src="https://cdn.commento.io/js/commento.js"></script>
                         <link rel="canonical" href={link} />
                         <meta name="twitter:card" content="summary" />
                         <meta name="twitter:site" content={link} />
