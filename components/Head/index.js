@@ -34,12 +34,12 @@ class MyHead extends React.Component {
                         <meta name="twitter:title" content={title} />
                         <meta name="twitter:description" content={description} />
                         <meta name="twitter:creator" content="@VincentWill4" />
-                        <meta name="twitter:image" content={`https://vincentwill.com${image}`} />
+                        <meta name="twitter:image" content={`https://wweb.dev${image}`} />
 
                         <meta name="description" content={description} />
                         <meta property="og:title" content={title} />
-                        <meta property="og:image" content={`https://vincentwill.com${image}`} />
-                        <meta property="og:site_name" content="Vincent Will - Blog" />
+                        <meta property="og:image" content={`https://wweb.dev${image}`} />
+                        <meta property="og:site_name" content="wweb.dev" />
                         <meta property="og:description" content={description} />
                         <meta property="og:url" content={link} />
                         <meta property="og:type" content="article" />
@@ -56,7 +56,7 @@ class MyHead extends React.Component {
                                 "datePublished":"${date}",
                                 "image": {
                                     "@type":"ImageObject",
-                                    "url":"https://vincentwill.com${image}",
+                                    "url":"https://wweb.dev${image}",
                                     "height":646,"width":1300
                                 },
                                 "description":"${description}",
@@ -66,10 +66,10 @@ class MyHead extends React.Component {
                                 },
                                 "publisher": {
                                     "@type":"Organization",
-                                    "name":"Vincent Will",
+                                    "name":"wweb.dev",
                                     "logo":{
                                         "@type":"ImageObject",
-                                        "url":"https://vincentwill.com/images/blog/logo.png",
+                                        "url":"https://wweb.dev/images/blog/logo.png",
                                         "height":64,
                                         "width":64
                                     }

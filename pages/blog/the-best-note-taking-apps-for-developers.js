@@ -11,7 +11,7 @@ const Post = () => (
         isArticle={true}
         title={postMeta.headline}
         date={postMeta.date}
-        link={`https://vincentwill.com${postMeta.link}`}
+        link={`https://wweb.dev${postMeta.link}`}
         description={postMeta.description}
         image="/blog/3-notebook.jpg"
     >
