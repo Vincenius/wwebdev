@@ -13,6 +13,10 @@ export const Container = styled.footer`
     svg {
         fill: ${lightGrey};
     }
+
+    img {
+        width: 100px;
+    }
 `
 export const Content = styled(ui.Container)`
     display: flex;

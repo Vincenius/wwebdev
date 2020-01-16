@@ -1,12 +1,20 @@
 import styled from 'styled-components'
 import * as ui from '../../ui'
-import { darkGrey, breakpointSmall } from '../../ui/constants'
+import { darkGrey, breakpointSmall, breakpoint } from '../../ui/constants'
 
 export const Container = styled.div`
     background: ${darkGrey};
     position: relative;
     padding: 16px 20px;
     margin: 0 auto 30px;
+
+    img {
+        width: 90px;
+
+        @media (max-width: ${breakpoint}) {
+            margin-bottom: 10px;
+        }
+    }
 `
 
 export const Navigation = styled(ui.Container)`
@@ -16,7 +24,7 @@ export const Navigation = styled(ui.Container)`
     align-items: center;
     margin: 0 auto;
 
-    @media (max-width: ${breakpointSmall}) {
+    @media (max-width: ${breakpoint}) {
         flex-direction: column;
     }
 
@@ -43,8 +51,8 @@ export const Navigation = styled(ui.Container)`
             line-height: 16px;
             padding: 8px 24px;
 
-            @media (max-width: ${breakpointSmall}) {
-                line-height: 32px;
+            @media (max-width: ${breakpoint}) {
+                line-height: 50px;
             }
 
             &:hover {

@@ -18,7 +18,7 @@ const Nav = () => (
     <S.Navigation as="nav">
       <Link href='/'>
         <a>
-          <img src="/logow.png" alt="Logo of wweb.dev"/>
+          <img src="/logo-text.png" alt="Logo of wweb.dev"/>
         </a>
       </Link>
       <ul>

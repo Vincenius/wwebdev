@@ -69,7 +69,7 @@ class MyHead extends React.Component {
                                     "name":"wweb.dev",
                                     "logo":{
                                         "@type":"ImageObject",
-                                        "url":"https://wweb.dev/images/blog/logo.png",
+                                        "url":"https://wweb.dev/logo-text.png",
                                         "height":64,
                                         "width":64
                                     }
