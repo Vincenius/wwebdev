@@ -21,7 +21,7 @@ function SubscribeForm({ type }) {
                     id="mce-EMAIL"
                     label="E-Mail"
                     name="EMAIL"
-                    required="true"
+                    required={true}
                     type="email"
                     placeholder="email address"
                 />

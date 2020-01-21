@@ -1,7 +1,16 @@
 const data = [
     {
+        id: 9,
+        title: 'Web development update from 22nd January 2020',
+        date: 'January 22, 2020',
+        link: 'https://vincentwill.com/weekly/9',
+        image: '/weekly/weekly9.jpg',
+        preview: '/weekly/9.jpg',
+        description: 'Hero Patterns, Tiny Helpers, GoatCounter, is-website-vulnerable, JamTemplates and more...',
+    },
+    {
         id: 8,
-        title: 'Weekly web development update from 15th January 2020',
+        title: 'Web development update from 15th January 2020',
         date: 'January 15, 2020',
         link: 'https://wweb.dev/weekly/8',
         image: '/weekly/weekly8.jpg',
@@ -10,7 +19,7 @@ const data = [
     },
     {
         id: 7,
-        title: 'Weekly web development update from 8th January 2020',
+        title: 'Web development update from 8th January 2020',
         date: 'January 08, 2020',
         link: 'https://wweb.dev/weekly/7',
         image: '/weekly/weekly7.jpg',
@@ -19,7 +28,7 @@ const data = [
     },
     {
         id: 6,
-        title: 'Weekly web development update from 1st January 2020',
+        title: 'Web development update from 1st January 2020',
         date: 'January 01, 2020',
         link: 'https://wweb.dev/weekly/6',
         image: '/weekly/weekly6.jpg',
@@ -28,7 +37,7 @@ const data = [
     },
     {
         id: 5,
-        title: 'Weekly web development update from 25th December 2019',
+        title: 'Web development update from 25th December 2019',
         date: 'December 25, 2019',
         link: 'https://wweb.dev/weekly/5',
         image: '/weekly/weekly5.jpg',
@@ -37,7 +46,7 @@ const data = [
     },
     {
         id: 4,
-        title: 'Weekly web development update from 18th December 2019',
+        title: 'Web development update from 18th December 2019',
         date: 'December 18, 2019',
         link: 'https://wweb.dev/weekly/4',
         image: '/weekly/weekly4.jpg',
@@ -46,7 +55,7 @@ const data = [
     },
     {
         id: 3,
-        title: 'Weekly web development update from 11th December 2019',
+        title: 'Web development update from 11th December 2019',
         date: 'December 11, 2019',
         link: 'https://wweb.dev/weekly/3',
         image: '/weekly/weekly3.jpg',
@@ -55,7 +64,7 @@ const data = [
     },
     {
         id: 2,
-        title: 'Weekly web development update from 4th December 2019',
+        title: 'Web development update from 4th December 2019',
         date: 'December 04, 2019',
         link: 'https://wweb.dev/weekly/2',
         image: '/weekly/weekly2.jpg',
@@ -64,7 +73,7 @@ const data = [
     },
     {
         id: 1,
-        title: 'Weekly web development update from 27th November 2019',
+        title: 'Web development update from 27th November 2019',
         date: 'November 27, 2019',
         link: 'https://wweb.dev/weekly/1',
         image: '/resources/resources01.jpg',

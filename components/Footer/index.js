@@ -19,9 +19,15 @@ const Footer = () => (
       <S.RightFooter>
         <S.Social>
           <li>
-            <a href="https://twitter.com/VincentWill4" target="_blank" rel="noopener">
+            <a href="https://twitter.com/wweb_dev" target="_blank" rel="noopener">
               <S.Screenreader>Twitter</S.Screenreader>
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M 24 4.557 c -0.883 0.392 -1.832 0.656 -2.828 0.775 c 1.017 -0.609 1.798 -1.574 2.165 -2.724 c -0.951 0.564 -2.005 0.974 -3.127 1.195 c -0.897 -0.957 -2.178 -1.555 -3.594 -1.555 c -3.179 0 -5.515 2.966 -4.797 6.045 c -4.091 -0.205 -7.719 -2.165 -10.148 -5.144 c -1.29 2.213 -0.669 5.108 1.523 6.574 c -0.806 -0.026 -1.566 -0.247 -2.229 -0.616 c -0.054 2.281 1.581 4.415 3.949 4.89 c -0.693 0.188 -1.452 0.232 -2.224 0.084 c 0.626 1.956 2.444 3.379 4.6 3.419 c -2.07 1.623 -4.678 2.348 -7.29 2.04 c 2.179 1.397 4.768 2.212 7.548 2.212 c 9.142 0 14.307 -7.721 13.995 -14.646 c 0.962 -0.695 1.797 -1.562 2.457 -2.549 Z" /></svg>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/wweb.dev.blog" target="_blank" rel="noopener">
+              <S.Screenreader>Facebook</S.Screenreader>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510" x="0px" y="0px" width="24" height="24" version="1.1"><path d="M 459 0 H 51 C 22.95 0 0 22.95 0 51 v 408 c 0 28.05 22.95 51 51 51 h 408 c 28.05 0 51 -22.95 51 -51 V 51 C 510 22.95 487.05 0 459 0 Z M 433.5 51 v 76.5 h -51 c -15.3 0 -25.5 10.2 -25.5 25.5 v 51 h 76.5 v 76.5 H 357 V 459 h -76.5 V 280.5 h -51 V 204 h 51 v -63.75 C 280.5 91.8 321.3 51 369.75 51 H 433.5 Z" /></svg>
             </a>
           </li>
           <li>
