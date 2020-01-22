@@ -20,7 +20,7 @@ const Post = () => (
                 title="Hero Patterns"
                 description="A cool collection of repeatable SVG pattern backgrounds by Steve Schoger."
                 link="https://www.heropatterns.com"
-                image="http://www.heropatterns.com/img/twitter-preview.png"
+                image="https://www.heropatterns.com/img/twitter-preview.png"
             />
             <LinkBox
                 title="Tiny Helpers"
