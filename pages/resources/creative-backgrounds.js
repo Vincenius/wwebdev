@@ -54,7 +54,7 @@ const Post = () => (
                 image="/resources/creative-backgrounds/svggradientwavegenerator.png"
             />
             <LinkBox
-                title="Naker.Back"
+                title="Naker"
                 description="Create interactive backgrounds on this really cool website."
                 link="https://app.naker.io/back/"
                 image="/resources/creative-backgrounds/naker.png"
