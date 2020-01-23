@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 4,
+        type: 'Resource',
+        date: 'January 23, 2020',
+        headline: "Websites For Creative Backgrounds",
+        description: "A curated list of websites where you can get creative backgrounds for your websites.",
+        link: "/resources/creative-backgrounds",
+        previewImage: "/resources/creative-backgrounds/preview.jpg",
+    },
+    {
         id: 3,
         type: 'Resource',
         date: 'December 29, 2019',

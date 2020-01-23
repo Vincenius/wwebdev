@@ -30,7 +30,7 @@ function Layout ({
             />
             <Header>
                 <h1>{title}</h1>
-                { isArticle && <p><S.Time datetime={d.toISOString()}>{date}</S.Time> by Vincent Will</p> }
+                { isArticle && <p><S.Time datetime={d.toISOString()}>{date}</S.Time></p> }
             </Header>
 
             <main>

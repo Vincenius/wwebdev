@@ -82,3 +82,7 @@ export const SidebarContent = styled.aside`
         }
     }
 `
+
+export const FlexContainer = styled.div`
+    display: flex;
+`
