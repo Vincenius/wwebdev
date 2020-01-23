@@ -1,5 +1,5 @@
 import React from 'react'
-import { SubscribeForm, Layout, LinkBox } from '../../components'
+import { SubscribeForm, Layout, LinkBox, RelatedArticle } from '../../components'
 import meta from '../../content/resources'
 import * as S from '../../styles/weekly'
 
@@ -89,6 +89,8 @@ const Post = () => (
             <SubscribeForm />
 
         </S.Container>
+
+        <RelatedArticle id={4} type="resource" />
     </Layout>
 )
 

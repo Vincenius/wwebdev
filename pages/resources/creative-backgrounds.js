@@ -1,7 +1,8 @@
 import React from 'react'
-import { SubscribeForm, Layout, LinkBox, ImageTextBlock } from '../../components'
+import { SubscribeForm, Layout, LinkBox, ImageTextBlock, RelatedArticle } from '../../components'
 import meta from '../../content/resources'
 import * as S from '../../styles/weekly'
+import * as ui from '../../ui'
 
 const postId = 4
 const postMeta = meta.find(m => m.id === postId)
@@ -88,22 +89,19 @@ const Post = () => (
                 link="https://tympanus.net/Development/AnimatedHeaderBackgrounds/index3.html"
                 image="/resources/creative-backgrounds/animatedbackgroundheaders.png"
             />
+            <LinkBox
+                title="Animated CSS Background Generator"
+                description="A collection of pure css animated backgrounds with the possibility to customize."
+                link="/resources/animated-css-background-generator"
+                image="/resources/resources01-small.jpg"
+                selfPromoted="from wweb.dev"
+            />
 
             <SubscribeForm />
 
         </S.Container>
 
-        <div>
-            TODO styling & use data from meta
-            <ImageTextBlock
-                title="A Curated List Of Websites For Free SVG Illustrations"
-                description="Spice up your next project with beautiful illustrations from these websites."
-                link="/resources/free-svg-illustrations"
-                image="https://wweb.dev/blog/5/preview.jpg"
-            />
-        </div>
-
-
+        <RelatedArticle id={2} type="resource" />
     </Layout>
 )
 
