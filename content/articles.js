@@ -1,14 +1,5 @@
 const data = [
     {
-        id: 5,
-        type: 'Article',
-        date: 'December 16, 2019',
-        headline: 'Ten Websites For Free SVG Illustrations',
-        description: "Spice up your next project with beautiful illustrations from these ten websites.",
-        link: '/blog/ten-websites-for-free-svg-illustrations',
-        previewImage: '/blog/5/preview.png',
-    },
-    {
         id: 4,
         type: 'Article',
         date: 'October 23, 2019',

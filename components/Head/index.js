@@ -38,7 +38,7 @@ class MyHead extends React.Component {
                         <meta name="twitter:site" content={link} />
                         <meta name="twitter:title" content={title} />
                         <meta name="twitter:description" content={description} />
-                        <meta name="twitter:creator" content="@VincentWill4" />
+                        <meta name="twitter:creator" content="@wweb_dev" />
                         <meta name="twitter:image" content={`https://wweb.dev${image}`} />
 
                         <meta name="description" content={description} />
