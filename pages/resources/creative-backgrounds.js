@@ -1,5 +1,5 @@
 import React from 'react'
-import { SubscribeForm, Layout, LinkBox } from '../../components'
+import { SubscribeForm, Layout, LinkBox, ImageTextBlock } from '../../components'
 import meta from '../../content/resources'
 import * as S from '../../styles/weekly'
 
@@ -92,6 +92,18 @@ const Post = () => (
             <SubscribeForm />
 
         </S.Container>
+
+        <div>
+            TODO styling & use data from meta
+            <ImageTextBlock
+                title="A Curated List Of Websites For Free SVG Illustrations"
+                description="Spice up your next project with beautiful illustrations from these websites."
+                link="/resources/free-svg-illustrations"
+                image="https://wweb.dev/blog/5/preview.jpg"
+            />
+        </div>
+
+
     </Layout>
 )
 
