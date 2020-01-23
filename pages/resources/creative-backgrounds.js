@@ -54,6 +54,12 @@ const Post = () => (
                 image="/resources/creative-backgrounds/svggradientwavegenerator.png"
             />
             <LinkBox
+                title="Naker.Back"
+                description="Create interactive backgrounds on this really cool website."
+                link="https://app.naker.io/back/"
+                image="/resources/creative-backgrounds/naker.png"
+            />
+            <LinkBox
                 title="Vanta.js"
                 description="Animated WebGL backgrounds with the possibility to customize."
                 link="https://www.vantajs.com/"
@@ -85,7 +91,7 @@ const Post = () => (
             />
             <LinkBox
                 title="Animated Background Headers"
-                description="Creative website header animations using Canvas and JavaScript-"
+                description="Creative website header animations using Canvas and JavaScript."
                 link="https://tympanus.net/Development/AnimatedHeaderBackgrounds/index3.html"
                 image="/resources/creative-backgrounds/animatedbackgroundheaders.png"
             />
