@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 4,
+        type: 'Resource',
+        date: 'January 23, 2020',
+        headline: "Websites For Creative Backgrounds",
+        description: "A curated list of websites where you can get creative backgrounds for your websites.",
+        link: "/resources/creative-backgrounds",
+        previewImage: "todo",
+    },
+    {
         id: 3,
         type: 'Resource',
         date: 'December 29, 2019',
@@ -15,7 +24,7 @@ const data = [
         headline: 'A Curated List Of Websites For Free SVG Illustrations',
         description: "Spice up your next project with beautiful illustrations from these websites.",
         link: '/resources/free-svg-illustrations',
-        previewImage: '/blog/5/preview.png',
+        previewImage: '/blog/5/preview.jpg',
     },
     {
         id: 1,
