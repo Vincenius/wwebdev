@@ -15,7 +15,7 @@ const data = [
         headline: 'A Curated List Of Websites For Free SVG Illustrations',
         description: "Spice up your next project with beautiful illustrations from these websites.",
         link: '/resources/free-svg-illustrations',
-        previewImage: '/blog/5/preview.png',
+        previewImage: '/blog/5/preview.jpg',
     },
     {
         id: 1,
