@@ -42,6 +42,12 @@ const Post = () => (
                 image="/resources/creative-backgrounds/ambientcanvasbackgrounds.png"
             />
             <LinkBox
+                title="Hero Patterns"
+                description="Repeatable SVG background patterns by Steve Schoger."
+                link="https://www.heropatterns.com/"
+                image="/resources/creative-backgrounds/heropatterns.png"
+            />
+            <LinkBox
                 title="particles.js"
                 description="A lightweight JavaScript library for a particles background."
                 link="https://vincentgarreau.com/particles.js/"
@@ -55,7 +61,7 @@ const Post = () => (
             />
             <LinkBox
                 title="Naker"
-                description="Create interactive backgrounds on this really cool website."
+                description="Create interactive backgrounds on this website."
                 link="https://app.naker.io/back/"
                 image="/resources/creative-backgrounds/naker.png"
             />
