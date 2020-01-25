@@ -6,7 +6,7 @@ const data = [
         headline: 'How to build a static website without frameworks in 2020',
         description: "TODO",
         link: '/blog/how-to-create-static-website-2020',
-        previewImage: '/blog/todo.png',
+        previewImage: '/blog/5-preview.jpg',
     },
     {
         id: 4,
