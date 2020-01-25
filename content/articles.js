@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 5,
+        type: 'Article',
+        date: 'February 01, 2020', // TODO
+        headline: 'How to build a static website without frameworks in 2020',
+        description: "TODO",
+        link: '/blog/how-to-create-static-website-2020',
+        previewImage: '/blog/todo.png',
+    },
+    {
         id: 4,
         type: 'Article',
         date: 'October 23, 2019',
