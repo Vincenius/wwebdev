@@ -37,8 +37,8 @@ export const generateResources = () => {
     />)
 }
 
-export const generateArticleAndResources = () => {
-    const data = [...articleData, ...resourceData]
+export const generateArticleAndResources = maxCount => {
+    const data = [...articleData, ...resourceData].slice(0, maxCount)
     return data.sort((a,b) => {
         return new Date(b.date) - new Date(a.date);
     }).map(d => <ArticlePreview

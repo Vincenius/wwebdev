@@ -44,6 +44,21 @@ export const SidebarContainer = styled.div`
         flex-direction: column;
     }
 `
+export const SidebarMain = styled.div`
+    margin-bottom: 30px;
+
+    > a {
+        display: block;
+        text-align: center;
+        font-weight: bold;
+        color: ${lightBlue};
+        margin-bottom: 20px;
+
+        &:hover {
+            color: ${darkGrey};
+        }
+    }
+`
 export const Sidebar = styled.aside`
     width: 100%;
     max-width: 275px;
