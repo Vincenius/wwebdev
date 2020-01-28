@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
-import FileCopyIcon from '@material-ui/icons/FileCopy';
-import * as S from '../../../../styles/resources/animatedCssBgControls'
+import FileCopyIcon from '@material-ui/icons/FileCopy'
+import * as S from './styles/animatedCssBgControls'
 
 const Controls = ({ children, source, credit, htmlCode, cssCode }) => {
     const [showControl, toggleControl] = useState(true);

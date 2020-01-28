@@ -1,7 +1,7 @@
 import React from 'react'
-import Slider from '@material-ui/core/Slider';
+import Slider from '@material-ui/core/Slider'
 
-import * as S from '../../../../styles/resources/styledBg1'
+import * as S from './styles/styledBg1'
 import Controls from './Controls'
 
 class Background1 extends React.Component {
