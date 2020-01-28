@@ -16,14 +16,16 @@ const today = formatDate(new Date());
 const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     ${Object.keys(pathsObj).map(
-        path => `<url>
-            <loc>https://wweb.dev${path}</loc>
-            <lastmod>${
-            pathsObj[path].lastModified
-                ? formatDate(new Date(pathsObj[path].lastModified))
-                : today
-            }</lastmod>
-        </url>`
+        path => path === '/_document'
+            ? ''
+            : `<url>
+                <loc>https://wweb.dev${path}</loc>
+                <lastmod>${
+                pathsObj[path].lastModified
+                    ? formatDate(new Date(pathsObj[path].lastModified))
+                    : today
+                }</lastmod>
+            </url>`
     )}
 </urlset>`;
 
