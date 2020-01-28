@@ -4,7 +4,7 @@ const formatDate = require("./formatDate");
 
 // ROBOTS.txt
 const robotsTxt = `User-agent: *
-Sitemap: https://embiem.me/sitemap_local.xml
+Sitemap: https://wweb.dev/sitemap_local.xml
 Disallow:`;
 
 fs.writeFileSync("out/robots.txt", robotsTxt);
