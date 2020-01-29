@@ -6,7 +6,7 @@ const data = [
         link: 'https://vincentwill.com/weekly/10',
         image: '/weekly/weekly10.jpg',
         preview: '/weekly/10.jpg',
-        description: 'TODO and more...',
+        description: 'Hoard.fyi, Screen Size Map, Mirage JS, Stock Resources, Vuer, React Libraries and more...',
     },
     {
         id: 9,
