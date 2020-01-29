@@ -20,6 +20,14 @@ export const Container = styled.div`
     }
 `
 export const ArticleContainer = styled(Container)`
+    line-height: 1.4;
+    letter-spacing: 1;
+    font-size: 20px;
+
+    ul li {
+        margin: 10px 0;
+    }
+
     img {
         max-width: 100%;
     }
@@ -100,4 +108,9 @@ export const SidebarContent = styled.aside`
 
 export const FlexContainer = styled.div`
     display: flex;
+`
+
+export const Code = styled.code`
+    margin: 0 4px;
+    background: #f8f8f8f8;
 `
