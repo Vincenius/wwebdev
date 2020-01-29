@@ -5,7 +5,7 @@ function SubscribeForm({ type }) {
     return (
         <S.Container
             id="mc-embedded-subscribe-form"
-            action="https://arcor.us3.list-manage.com/subscribe/post?u=23a611280baff5c6bd68c83e3&amp;id=8dd07d6ca8"
+            action="https://dev.us3.list-manage.com/subscribe/post?u=23a611280baff5c6bd68c83e3&amp;id=8dd07d6ca8"
             method="post"
             name="mc-embedded-subscribe-form"
             novalidate=""
@@ -23,7 +23,8 @@ function SubscribeForm({ type }) {
                     name="EMAIL"
                     required={true}
                     type="email"
-                    placeholder="email address"
+                    placeholder="Email Address"
+                    variant="outlined"
                 />
                 <S.HiddenInput>
                     <input tabIndex="-1" name="b_23a611280baff5c6bd68c83e3_8dd07d6ca8" type="text" />

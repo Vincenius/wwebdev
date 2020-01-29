@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 10,
+        title: 'Web development update from 29th January 2020',
+        date: 'January 29, 2020',
+        link: 'https://vincentwill.com/weekly/10',
+        image: '/weekly/weekly10.jpg',
+        preview: '/weekly/10.jpg',
+        description: 'Hoard.fyi, Screen Size Map, Mirage JS, Stock Resources, Vuer, React Libraries and more...',
+    },
+    {
         id: 9,
         title: 'Web development update from 22nd January 2020',
         date: 'January 22, 2020',

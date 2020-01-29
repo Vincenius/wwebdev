@@ -1,6 +1,6 @@
 import React from 'react'
 import * as ui from '../ui'
-import { Layout } from '../components'
+import { Layout, SubscribeForm } from '../components'
 import { generateWeekly, generateArticleAndResources } from '../content/generator'
 
 const Home = () => (
@@ -10,11 +10,19 @@ const Home = () => (
   >
     <ui.Container>
       <ui.SidebarContainer>
-        <div>
+        <ui.SidebarMain>
           <h2>Latest Articles & Resources</h2>
 
-          { generateArticleAndResources() }
-        </div>
+          { generateArticleAndResources(7) }
+
+          <a href="/blog">
+            See blog posts
+          </a>
+
+          <a href="/resources">
+            See all resources
+          </a>
+        </ui.SidebarMain>
         <ui.Sidebar>
           <h2>Latest News</h2>
 
@@ -27,6 +35,8 @@ const Home = () => (
           </ui.SidebarContent>
         </ui.Sidebar>
       </ui.SidebarContainer>
+
+      <SubscribeForm />
     </ui.Container>
   </Layout>
 )
