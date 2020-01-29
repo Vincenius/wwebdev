@@ -1,10 +1,8 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { Head, Nav } from '../../components'
-import Background1 from '../../components/AnimatedCssBackgroundGenerator/Background1'
-import Background2 from '../../components/AnimatedCssBackgroundGenerator/Background2'
-import Background3 from '../../components/AnimatedCssBackgroundGenerator/Background3'
-import * as S from '../../styles/resources/animatedCssBg'
+import { Head } from '../../components'
+import { Background1, Background2, Background3 } from '../../components/AnimatedCssBackgroundGenerator'
+import * as S from '../../components/AnimatedCssBackgroundGenerator/styles/animatedCssBg'
 import meta from '../../content/resources'
 
 const postMeta = meta.find(m => m.id === 1)
