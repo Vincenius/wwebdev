@@ -1,6 +1,6 @@
 import React from 'react'
 import * as ui from '../ui'
-import { Layout } from '../components'
+import { Layout, SubscribeForm } from '../components'
 import { generateArticles } from '../content/generator'
 
 const Home = () => (
@@ -9,6 +9,7 @@ const Home = () => (
     >
         <ui.Container>
             { generateArticles() }
+            <SubscribeForm />
         </ui.Container>
     </Layout>
 )

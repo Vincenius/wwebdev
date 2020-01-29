@@ -37,7 +37,7 @@ export const generateResources = () => {
     />)
 }
 
-export const generateArticleAndResources = () => {
+export const generateArticleAndResources = maxCount => {
     const data = [...articleData, ...resourceData]
     return data.sort((a,b) => {
         return new Date(b.date) - new Date(a.date);
@@ -49,5 +49,5 @@ export const generateArticleAndResources = () => {
         description={d.description}
         link={d.link}
         previewImage={d.previewImage}
-    />)
+    />).slice(0, maxCount)
 }

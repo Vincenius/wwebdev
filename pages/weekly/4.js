@@ -64,11 +64,11 @@ const Post = () => (
                 image="https://notochrome.org/wp-content/NTC-twitter-blue-big-1200x676.jpg"
             />
             <LinkBox
-                title="Ten Websites For Free SVG Illustrations"
+                title="A Curated List Of Websites For Free SVG Illustrations"
                 description="A list of websites for free SVG icons, I've gather thoughout the years."
-                link="https://wweb.dev/blog/ten-websites-for-free-svg-illustrations"
+                link="https://wweb.dev/resources/free-svg-illustrations"
                 image="https://wweb.dev/blog/5/preview.png"
-                selfPromoted="New Blogpost"
+                selfPromoted="New Resource"
             />
             <SubscribeForm type="weekly" />
         </S.Container>

@@ -1,7 +1,8 @@
 import React from 'react'
-import { SubscribeForm, Layout, LinkBox, ImageTextBlock } from '../../components'
+import { SubscribeForm, Layout, LinkBox, ImageTextBlock, RelatedArticle } from '../../components'
 import meta from '../../content/resources'
 import * as S from '../../styles/weekly'
+import * as ui from '../../ui'
 
 const postId = 4
 const postMeta = meta.find(m => m.id === postId)
@@ -41,6 +42,12 @@ const Post = () => (
                 image="/resources/creative-backgrounds/ambientcanvasbackgrounds.png"
             />
             <LinkBox
+                title="Hero Patterns"
+                description="Repeatable SVG background patterns by Steve Schoger."
+                link="https://www.heropatterns.com/"
+                image="/resources/creative-backgrounds/heropatterns.png"
+            />
+            <LinkBox
                 title="particles.js"
                 description="A lightweight JavaScript library for a particles background."
                 link="https://vincentgarreau.com/particles.js/"
@@ -51,6 +58,12 @@ const Post = () => (
                 description="A generator for SVG wave patterns."
                 link="https://www.outpan.com/app/9aaaf27303/svg-gradient-wave-generator"
                 image="/resources/creative-backgrounds/svggradientwavegenerator.png"
+            />
+            <LinkBox
+                title="Naker"
+                description="Create interactive backgrounds on this website."
+                link="https://app.naker.io/back/"
+                image="/resources/creative-backgrounds/naker.png"
             />
             <LinkBox
                 title="Vanta.js"
@@ -84,26 +97,23 @@ const Post = () => (
             />
             <LinkBox
                 title="Animated Background Headers"
-                description="Creative website header animations using Canvas and JavaScript-"
+                description="Creative website header animations using Canvas and JavaScript."
                 link="https://tympanus.net/Development/AnimatedHeaderBackgrounds/index3.html"
                 image="/resources/creative-backgrounds/animatedbackgroundheaders.png"
+            />
+            <LinkBox
+                title="Animated CSS Background Generator"
+                description="A collection of pure css animated backgrounds with the possibility to customize."
+                link="/resources/animated-css-background-generator"
+                image="/resources/resources01-small.jpg"
+                selfPromoted="from wweb.dev"
             />
 
             <SubscribeForm />
 
         </S.Container>
 
-        <div>
-            TODO styling & use data from meta
-            <ImageTextBlock
-                title="A Curated List Of Websites For Free SVG Illustrations"
-                description="Spice up your next project with beautiful illustrations from these websites."
-                link="/resources/free-svg-illustrations"
-                image="https://wweb.dev/blog/5/preview.jpg"
-            />
-        </div>
-
-
+        <RelatedArticle id={2} type="resource" />
     </Layout>
 )
 
