@@ -3,8 +3,8 @@ const data = [
         id: 5,
         type: 'Article',
         date: 'February 01, 2020', // TODO
-        headline: 'How to build a static website without frameworks in 2020',
-        description: "TODO",
+        headline: 'How to build a static website without frameworks in 2020', // with npm scripts?
+        description: "Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...",
         link: '/blog/how-to-create-static-website-2020',
         previewImage: '/blog/5-preview.jpg',
     },

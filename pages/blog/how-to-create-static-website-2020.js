@@ -33,8 +33,25 @@ const snippet2 = `{
     "devDependencies": {
         "node-sass": "^4.13.1"
     }
-}
-`
+}`
+
+const snippet3 = `@import 'variables.scss';
+
+body {
+    color: $primary;
+}`
+
+const snippet4 = `"css:lint": "stylelint src/scss/*.scss --syntax scss || true",
+"build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer"`
+
+const snippet5 = `"rules": {
+    "block-no-empty": true,
+    "color-hex-case": "lower",
+    "color-hex-length": "short",
+    "color-no-invalid-hex": true,
+    "declaration-colon-space-after": "always",
+    "max-empty-lines": 2
+}`
 
 
 const Post = () => (
@@ -77,6 +94,8 @@ const Post = () => (
                 value={snippet1}
             />
 
+            <p>Now you can just open the <ui.Code>index.html</ui.Code> in your browser.</p>
+
             <h2>The CSS</h2>
 
             <p>
@@ -102,7 +121,7 @@ const Post = () => (
             <h3>Sass</h3>
 
             <p>
-                To be able to use all the fancy features of Sass, open the console and type:
+                To be able to use all the fancy features of Sass, open the console, navigate to your project directory and type:
             </p>
             <p><ui.Code>npm i -D node-sass</ui.Code><br/></p>
             <p>
@@ -144,10 +163,100 @@ const Post = () => (
                 value={`<link rel="stylesheet" type="text/css" href="dist/index.css">`}
             />
 
-            next TODO scss file inclusion in main file
+            <p>
+                To keep the scss organized, add a file <ui.Code>_variables.scss</ui.Code> to your <ui.Code>/src/sass</ui.Code> directory.
+                The underscore at the beginning of the filename will make the file private and not being compiled. Now you can add some
+                variables to this file like this:
+            </p>
+
+            <CodeBlock
+                language="css"
+                value={`$primary: #16a085;`}
+            />
+
+            <p>
+                To be able to use the variable <ui.Code>$primary</ui.Code>, you need to include  <ui.Code>_variables.scss</ui.Code> in
+                your index.scss:
+            </p>
+
+            <CodeBlock
+                language="css"
+                value={snippet3}
+            />
+
+            <p>
+                Now run <ui.Code>npm run css:scss</ui.Code> again and refresh your browser to see the
+                changes (We'll automate this step later). <br />
+                Id recomment to create new files (eg. <ui.Code>_someModule.scss</ui.Code>)
+                for every part you create, to keep the scss organized. But I won't go into detail about the organization of
+                css, as it is a big topic itself.
+            </p>
+
+            <h3>Autoprefixer</h3>
+
+            For implementing the autoprefixer we will use the
+            npm module <a href="https://www.npmjs.com/package/autoprefixer" target="_blank" rel="noopener">autoprefixer</a>, together
+            with <a href="https://www.npmjs.com/package/postcss-cli" target="_blank" rel="noopener">postcss-cli</a>.
+            So go ahead and type in your console:
+
+            <p><ui.Code>npm i -D autoprefixer postcss-cli</ui.Code><br/></p>
+
+            <p>Let's add the autoprefixer script to the scripts of your <ui.Code>package.json</ui.Code></p>
+
+            <CodeBlock
+                language="json"
+                value={'"css:autoprefixer": "postcss -u autoprefixer -r dist/*"'}
+            />
+
+            <p>
+                This will check your css files in the <ui.Code>dist</ui.Code> directory and add the prefixes for them.
+                So you need to run <ui.Code>npm run css:scss</ui.Code> first, to compile your scss into <ui.Code>dist</ui.Code>
+                and afterwards run <ui.Code>npm run css:autoprefixer</ui.Code> to add vendor-prefixes to your compiled
+                css file. As we don't want to run the scripts one after another, let's add another script to the
+                <ui.Code>package.json</ui.Code>, which will run the scripts sequentially.
+            </p>
+
+            <CodeBlock
+                language="json"
+                value={'"build:css": "npm run css:scss && npm run css:autoprefixer"'}
+            />
+
+            <h3>Linting</h3>
+
+            <p>
+                Finally we'll use <a href="https://www.npmjs.com/package/stylelint" target="_blank" rel="noopener">stylelint</a> to
+                make sure we have no errors in our css and to be able to enforce code conventions. <br/>
+                Therefore install the npm module styleling:
+            </p>
+
+            <p><ui.Code>npm i -D stylelint</ui.Code><br/></p>
+
+            <p>
+                Afterwards we can add the script for linting and update our <ui.Code>build:css</ui.Code> to start
+                with linting, so we catch errors before the file is compiled.
+            </p>
+
+            <CodeBlock
+                language="json"
+                value={snippet4}
+            />
+
+            <p>
+                But to make this work we have to add the file <ui.Code>.stylelintrc</ui.Code>. This file will contain
+                the rules, which <ui.Code>stylelint</ui.Code> should apply. For more information about the rules you can use
+                check the <a href="https://stylelint.io/user-guide/rules" target="_blank" rel="noopener">documentation</a>.
+            </p>
+
+            <CodeBlock
+                language="json"
+                value={snippet5}
+            />
+
+            <p>
+                Now <ui.Code>npm run build:css</ui.Code> should run successfully again (except if you have errors in your css).
+            </p>
 
             <PrevNext postId={postId} isArticle={true} />
-
             <Comments />
         </ui.ArticleContainer>
     </Layout>
