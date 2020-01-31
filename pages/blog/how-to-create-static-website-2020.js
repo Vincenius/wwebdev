@@ -53,7 +53,6 @@ const snippet5 = `"rules": {
     "max-empty-lines": 2
 }`
 
-
 const Post = () => (
     <Layout
         isArticle={true}
@@ -205,7 +204,7 @@ const Post = () => (
 
             <CodeBlock
                 language="json"
-                value={'"css:autoprefixer": "postcss -u autoprefixer -r dist/*"'}
+                value={'"css:autoprefixer": "postcss -u autoprefixer -r dist/*.css"'}
             />
 
             <p>
@@ -213,7 +212,8 @@ const Post = () => (
                 So you need to run <ui.Code>npm run css:scss</ui.Code> first, to compile your scss into <ui.Code>dist</ui.Code>
                 and afterwards run <ui.Code>npm run css:autoprefixer</ui.Code> to add vendor-prefixes to your compiled
                 css file. As we don't want to run the scripts one after another, let's add another script to the
-                <ui.Code>package.json</ui.Code>, which will run the scripts sequentially.
+                <ui.Code>package.json</ui.Code>, which will run the scripts sequentially by connecting the scripts with
+                <ui.Code>&&</ui.Code>.
             </p>
 
             <CodeBlock
@@ -254,7 +254,76 @@ const Post = () => (
 
             <p>
                 Now <ui.Code>npm run build:css</ui.Code> should run successfully again (except if you have errors in your css).
+                Next I will add some automation, as we don't want to run the script manually everytime we change something.
             </p>
+
+            <p>
+                First I'll add a script, which will watch the <ui.Code>/src/scss</ui.Code> directory
+                for changes and will run <ui.Code>build:css</ui.Code>, whenever something changes. For that I will
+                use <a href="https://www.npmjs.com/package/onchange" target="_blank" rel="noopener">onchange</a>.
+            </p>
+
+            <p><ui.Code>npm i -D onchange</ui.Code><br/></p>
+
+            <p>Now add the script to the <ui.Code>package.json</ui.Code>:</p>
+
+            <CodeBlock
+                language="json"
+                value={`"watch:css": "onchange \\"src/scss\\" -- npm run build:css"`}
+            />
+
+            <p>
+                If you now run <ui.Code>npm run watch:css</ui.Code> it should automatically run your <ui.Code>build:css</ui.Code> script
+                whenever you change something in a scss file.
+                Let's get rid of the manual browser refresh next. For this we'll
+                add <a href="https://www.npmjs.com/package/browser-sync" target="_blank" rel="noopener">browser-sync</a>, to
+                auto-refresh the browser. This will run a local server, which also enables us to test directly on other devices.<br/>
+                To install it run:
+            </p>
+
+            <p><ui.Code>npm i -D browser-sync</ui.Code><br/></p>
+
+            <p>
+                Afterwards the corresponding script can be added to the <ui.Code>package.json</ui.Code>
+            </p>
+
+            <CodeBlock
+                language="json"
+                value={`"serve": "serve": "browser-sync start --server \\"dist\\" --files \\"dist\\""`}
+            />
+
+            <p>
+                As this will only watch the <ui.Code>dist</ui.Code> directory, we need to move our <ui.Code>index.html</ui.Code> there.
+                No worries, we'll have a better solution later, when we come to the HTML part :) <br /> After moving the
+                <ui.Code>index.html</ui.Code>, we need to update the stylesheet link to <ui.Code>href="/index.css"</ui.Code>.
+                If you now run <ui.Code>npm run serve</ui.Code> your website should automatically open in the browser and
+                you should see something like this in your console:
+            </p>
+
+            <img src="/blog/static-website/browser-sync.png" alt="browser sync console output" />
+
+            <p>
+                This means you don't need to open the <ui.Code>index.html</ui.Code> to preview your website, but can just visit
+                <ui.Code>localhost:3000</ui.Code>. This page will automatically refresh if something in your <ui.Code>dist</ui.Code>
+                directory changes. If you want to see your website on other devices, you can do that now by going to the external url on your device.
+            </p>
+
+            <p>
+                And as a last step for the CSS I will add a script to run the <ui.Code>watch</ui.Code> script and the browser-sync together. Sadly npm
+                doesn't has a native way to run scripts in parallel for all operating systems. (the <ui.Code>&</ui.Code> operator only
+                works on UNIX environments). Thus I'll install <a href="https://www.npmjs.com/package/npm-run-all" target="_blank" rel="noopener">npm-run-all</a>.
+            </p>
+
+            <p><ui.Code>npm i -D npm-run-all</ui.Code><br/></p>
+
+            <p>
+                Afterwards we can add the script to the <ui.Code>package.json</ui.Code>
+            </p>
+
+            <CodeBlock
+                language="json"
+                value={`"watch": "run-p serve watch:css"`}
+            />
 
             <PrevNext postId={postId} isArticle={true} />
             <Comments />

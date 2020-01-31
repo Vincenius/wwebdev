@@ -5,6 +5,7 @@ import {
     breakpointLarge,
     lightBlue,
     darkGrey,
+    blue,
 } from './constants'
 
 export const Container = styled.div`
@@ -30,6 +31,15 @@ export const ArticleContainer = styled(Container)`
 
     img {
         max-width: 100%;
+    }
+
+    a {
+        color: ${blue};
+    }
+
+    h2, h3 {
+        color: ${blue};
+        margin: 1.6em 0 0.6em;
     }
 `
 export const PaddingContainer = styled(Container)`
