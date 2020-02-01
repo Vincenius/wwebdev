@@ -53,6 +53,101 @@ const snippet5 = `"rules": {
     "max-empty-lines": 2
 }`
 
+const snippet6 = `"build:images": "imagemin src/images/**/* --out-dir=dist/images",
+"watch:images": "onchange \\"src/images\\" -- npm run build:images"`
+
+const snippet7 = `"watch": "run-p serve watch:*",
+"build": "run-p build:*"`
+
+const snippet8 = `module.exports = {
+    entry: './src/js/main.js',
+    output: {
+        path: __dirname + '/dist',
+        filename: 'bundle.js'
+    },
+    module: {
+        rules: [{
+            test: /\\.m?js$/,
+            exclude: /node_modules/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['@babel/preset-env']
+                }
+            }
+        }]
+    }
+}`
+
+const snippet9 = `"build:js": "webpack --mode=production",
+"watch:js": "onchange \\"src/js\\" -- webpack --mode=development"`
+
+const snippet10 = `{
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "extends": "eslint:recommended",
+    "globals": {
+        "Atomics": "readonly",
+        "SharedArrayBuffer": "readonly"
+    },
+    "parserOptions": {
+        "ecmaVersion": 2018,
+        "sourceType": "module"
+    },
+    "rules": {
+        "semi": ["error", "always"],
+        "quotes": ["error", "double"]
+    }
+}`
+
+const snippet11 = `module.exports = {
+    entry: './src/js/main.js',
+    output: {
+        path: __dirname + '/dist',
+        filename: 'bundle.js'
+    },
+    module: {
+        rules: [
+            {
+                enforce: 'pre',
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: 'eslint-loader'
+            },
+            {
+            test: /\.m?js$/,
+            exclude: /node_modules/,
+            use: {
+                loader: 'babel-loader',
+                options: {
+                    presets: ['@babel/preset-env']
+                }
+            }
+        }]
+    }
+}`
+
+const snippet12 = `{
+    "input": "src/views/*.html",
+    "output": "dist",
+    "plugins": {
+        "posthtml-modules": {
+            "root": "./src/views",
+            "initial": true
+        },
+        "htmlnano": {}
+    }
+}`
+
+const snippet13 = `"build:html": "posthtml -c posthtml.json",
+"watch:html": "onchange \\"src/views\\" -- npm run build:html"`
+
+const snippet14 = `<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" type="text/css" href="/index.css">`
+
 const Post = () => (
     <Layout
         isArticle={true}
@@ -77,7 +172,29 @@ const Post = () => (
                 </a>
             </p>
 
-            <h2>Initial Setup</h2>
+            <ul>
+                <li><a href="#initialSetup">Initial Setup</a></li>
+                <li>
+                    <a href="#css">The CSS</a>
+                    <ul>
+                        <li><a href="#sass">Sass</a></li>
+                        <li><a href="#autoprefixer">Autoprefixer</a></li>
+                        <li><a href="#csslinting">Linting</a></li>
+                    </ul>
+                </li>
+                <li><a href="#simplifybuild">Simplifying The Build</a></li>
+                <li><a href="#images">The Images</a></li>
+                <li>
+                    <a href="#javascript">The JavaScript</a>
+                    <ul>
+                        <li><a href="#webpackbabel">Webpack & Babel</a></li>
+                        <li><a href="#jslinting">Linting</a></li>
+                    </ul>
+                </li>
+                <li><a href="#html">HTML</a></li>
+            </ul>
+
+            <h2 id="initialSetup">Initial Setup</h2>
             <p>
                 <b>Requirements:</b><br/>
                 Installed node.js / npm
@@ -95,7 +212,7 @@ const Post = () => (
 
             <p>Now you can just open the <ui.Code>index.html</ui.Code> in your browser.</p>
 
-            <h2>The CSS</h2>
+            <h2 id="css">The CSS</h2>
 
             <p>
                 For the CSS I will implement
@@ -117,7 +234,7 @@ const Post = () => (
                 </li>
             </ul>
 
-            <h3>Sass</h3>
+            <h3 id="sass">Sass</h3>
 
             <p>
                 To be able to use all the fancy features of Sass, open the console, navigate to your project directory and type:
@@ -191,7 +308,7 @@ const Post = () => (
                 css, as it is a big topic itself.
             </p>
 
-            <h3>Autoprefixer</h3>
+            <h3 id="autoprefixer">Autoprefixer</h3>
 
             For implementing the autoprefixer we will use the
             npm module <a href="https://www.npmjs.com/package/autoprefixer" target="_blank" rel="noopener">autoprefixer</a>, together
@@ -221,7 +338,7 @@ const Post = () => (
                 value={'"build:css": "npm run css:scss && npm run css:autoprefixer"'}
             />
 
-            <h3>Linting</h3>
+            <h3 id="csslinting">Linting</h3>
 
             <p>
                 Finally we'll use <a href="https://www.npmjs.com/package/stylelint" target="_blank" rel="noopener">stylelint</a> to
@@ -256,6 +373,8 @@ const Post = () => (
                 Now <ui.Code>npm run build:css</ui.Code> should run successfully again (except if you have errors in your css).
                 Next I will add some automation, as we don't want to run the script manually everytime we change something.
             </p>
+
+            <h2 id="simplifybuild">Simplifying The Build</h2>
 
             <p>
                 First I'll add a script, which will watch the <ui.Code>/src/scss</ui.Code> directory
@@ -294,10 +413,13 @@ const Post = () => (
 
             <p>
                 As this will only watch the <ui.Code>dist</ui.Code> directory, we need to move our <ui.Code>index.html</ui.Code> there.
-                No worries, we'll have a better solution later, when we come to the HTML part :) <br /> After moving the
-                <ui.Code>index.html</ui.Code>, we need to update the stylesheet link to <ui.Code>href="/index.css"</ui.Code>.
-                If you now run <ui.Code>npm run serve</ui.Code> your website should automatically open in the browser and
-                you should see something like this in your console:
+                No worries, we'll have a better solution later, when we come to the HTML part :)
+            </p>
+            <p>
+                After moving the <ui.Code>index.html</ui.Code>, we need to update the stylesheet link
+                to <ui.Code>href="/index.css"</ui.Code>. If you now run <ui.Code>npm run serve</ui.Code>
+                your website should automatically open in the browser and you should see something
+                like this in your console:
             </p>
 
             <img src="/blog/static-website/browser-sync.png" alt="browser sync console output" />
@@ -305,7 +427,7 @@ const Post = () => (
             <p>
                 This means you don't need to open the <ui.Code>index.html</ui.Code> to preview your website, but can just visit
                 <ui.Code>localhost:3000</ui.Code>. This page will automatically refresh if something in your <ui.Code>dist</ui.Code>
-                directory changes. If you want to see your website on other devices, you can do that now by going to the external url on your device.
+                directory changes. If you want to see your website on other devices, you can do that now by opening the external url on your device.
             </p>
 
             <p>
@@ -324,6 +446,217 @@ const Post = () => (
                 language="json"
                 value={`"watch": "run-p serve watch:css"`}
             />
+
+            <p>
+                Now we're already in a good state for developing modern websites. By running
+                <ui.Code>npm run watch</ui.Code> we are watching for changes in our directory
+                <ui.Code>src/scss</ui.Code> and compile our <ui.Code>scss</ui.Code> into the
+                <ui.Code>dist</ui.Code> directory. Also we have autoprefixing and linting for
+                our css in place. Additionally the script is running a development server, which
+                automatically refreshes our browser whenever something in <ui.Code>dist</ui.Code>
+                changes.
+            </p>
+
+            <p>
+                Next we'll have a look how to add images to our build process.
+            </p>
+
+            <h2 id="images">The Images</h2>
+
+            <p>
+                The images part is pretty straightforward. The only thing we'll do here is
+                adding a script, which will minify the images. This will improve the pagespeed
+                as the images have a reduced file size. To do this, go to your console again and
+                install <a href="https://www.npmjs.com/package/imagemin-cli" target="_blank" rel="noopener">imagemin-cli</a>.
+            </p>
+
+            <p><ui.Code>npm i -D imagemin-cli</ui.Code><br/></p>
+
+            <p>
+                Afterwards we can add the scripts for building and watching the directory
+                <ui.Code>src/images</ui.Code>.
+            </p>
+
+            <CodeBlock
+                language="json"
+                value={snippet6}
+            />
+
+            <p>
+                If you now run <ui.Code>npm run build:images</ui.Code> it will minify all images
+                in your directory <ui.Code>src/images</ui.Code> and store them in <ui.Code>dist/images</ui.Code>.
+                The watch script will look for changes in <ui.Code>src/images</ui.Code> and will run the build
+                script whenever something changes. Now we'll add a build script. This will run all the scripts,
+                which start with <ui.Code>build:</ui.Code>. Also let's update the <ui.Code>watch</ui.Code> script
+                to run both, the <ui.Code>watch:css</ui.Code> and <ui.Code>watch:images</ui.Code> script.
+            </p>
+
+            <CodeBlock
+                language="json"
+                value={snippet7}
+            />
+
+            <p>
+                If you have your <ui.Code>npm run watch</ui.Code> script still running, you need to restart it.
+            </p>
+
+            <p>
+                Now we're ready to integrate JavaScript on our website.
+            </p>
+
+            <h2 id="javascript">The JavaScript</h2>
+
+            <h3 id="webpackbabel">Webpack & Babel</h3>
+
+            <p>
+                For javascript I want to be able to use modern syntax without having to worry about browser compability. Therefore I'll
+                use <a href="https://www.npmjs.com/package/webpack-cli" target="_blank" rel="noopener">webpack</a> together
+                with <a href="https://babeljs.io" target="_blank" rel="noopener">babel</a>. So let's install the required
+                npm modules:
+            </p>
+
+            <p><ui.Code>npm i -D webpack webpack-cli babel-loader @babel/preset-env</ui.Code><br/></p>
+
+            <p>
+                Afterwards we need to add a configuration file to make this work. So create a
+                file <ui.Code>webpack.config.js</ui.Code> in your project root with following content:
+            </p>
+
+            <CodeBlock
+                language="javascript"
+                value={snippet8}
+            />
+
+            <p>
+                Next let's update the <ui.Code>package.json</ui.Code> with the scripts for our javascript
+                build.
+            </p>
+
+            <CodeBlock
+                language="json"
+                value={snippet9}
+            />
+
+            <p>
+                This will use the development mode when we're watching the files and the production mode
+                when we run <ui.Code>npm run build</ui.Code>. Now we can add our entry point for the js.
+                This will be <ui.Code>src/js/main.js</ui.Code>. I'd recommend to keep the javascript modular by
+                adding the logic into other files and include them in the <ui.Code>main.js</ui.Code> with the
+                import syntax (eg. <ui.Code>import './someModule'</ui.Code>)
+            </p>
+
+            <p>
+                Of course we still need to include the bundled javascript at right before
+                the <ui.Code>{`</body>`}</ui.Code> of our <ui.Code>index.html</ui.Code>.
+            </p>
+
+            <CodeBlock
+                language="html"
+                value={`<script src="./bundle.js"></script>`}
+            />
+
+            <h3 id="jslinting">Linting</h3>
+
+            <p>
+                For javascript it makes also sense to include a linter to keep the code more consistent
+                and to avoid bugs. To introduce linting I'll
+                use <a href="https://www.npmjs.com/package/eslint" target="_blank" rel="noopener">eslint</a>.
+            </p>
+
+            <p><ui.Code>npm i -D eslint eslint-loader</ui.Code><br/></p>
+
+            <p>
+                To enable the linting, we still need to create a configuration file and add the
+                module to our webpack configuration. First let's create the configuration
+                file <ui.Code>.eslintrc</ui.Code> in our project root. The following is the default
+                configuration - you can of course change the rules according to your preferences.
+            </p>
+
+            <CodeBlock
+                language="javascript"
+                value={snippet10}
+            />
+
+            <p>
+                Afterwards we add a new rule to our <ui.Code>webpack.config.js</ui.Code> to check
+                eslint before running the <ui.Code>babel-loader</ui.Code>.
+            </p>
+
+            <CodeBlock
+                language="javascript"
+                value={snippet11}
+            />
+
+            <p>
+                Now our javascript is setup to use modern syntax and to check our code for errors and consistency.
+                As a last thing we will add HTML processing to our project.
+            </p>
+
+            <h2 id="html">The HTML</h2>
+
+            <p>
+                For the HTML I'll introduce <a href="https://www.npmjs.com/package/posthtml" target="_blank" rel="noopener">posthtml</a>, together
+                with <a href="https://www.npmjs.com/package/posthtml-modules" target="_blank" rel="noopener">posthtml-modules</a>. This will
+                enables us to use html partials. This makes most sense if you're building a website
+                with multiple pages, to reduce code duplication. Also we'll
+                add <a href="https://www.npmjs.com/package/htmlnano">htmlnano</a> to minify the HTML and
+                reduce the filesize.
+            </p>
+
+            <p><ui.Code>npm i -D posthtml posthtml-cli posthtml-modules htmlnano</ui.Code><br/></p>
+
+            <p>
+                Then create the file <ui.Code>posthtml.json</ui.Code> in the project root, which will contain the configuration
+                for the posthtml build.
+            </p>
+
+            <CodeBlock
+                language="json"
+                value={snippet12}
+            />
+
+            <p>
+                This will tell posthtml to render all HTML files from <ui.Code>src/views</ui.Code> into dist.
+                Now we only need to move the <ui.Code>index.html</ui.Code> from <ui.Code>dist</ui.Code> to <ui.Code>src/views</ui.Code> and
+                update the <ui.Code>package.json</ui.Code> with the last scripts.
+            </p>
+
+            <CodeBlock
+                language="json"
+                value={snippet13}
+            />
+
+            <p>
+                Now we're able to use split our HTML into modules. For example I'll move the code from the head
+                to a new file in <ui.Code>src/views/components/head.html</ui.Code>.
+            </p>
+
+            <CodeBlock
+                language="html"
+                value={snippet14}
+            />
+
+            <p>
+                Now we can add this module easily in every file by including
+            </p>
+
+            <CodeBlock
+                language="html"
+                value={'<module href="/components/head.html"></module>'}
+            />
+
+            <p>
+                That's it. The final project structure should look something like this:
+            </p>
+
+            <img src="/blog/static-website/finalstructure.png" alt="final structure of the project" />
+
+            <p>
+                The final repository can be found on <a href="https://github.com/Vincenius/static-website-template" target="_blank" rel="noopener">GitHub</a>.
+            </p>
+            <br />
+
+            <hr />
 
             <PrevNext postId={postId} isArticle={true} />
             <Comments />
