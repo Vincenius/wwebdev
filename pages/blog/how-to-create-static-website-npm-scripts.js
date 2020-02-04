@@ -22,13 +22,13 @@ const snippet1 = `<!DOCTYPE html>
 const snippet2 = `{
     "name": "static-website",
     "version": "1.0.0",
-    "description": "",
+    "description": "this is an example for a static website",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
+        "test": "echo \\"Error: no test specified\\" && exit 1",
         "css:scss": "node-sass --output-style compressed -o dist src/scss"
     },
-    "author": "",
+    "author": "you",
     "license": "ISC",
     "devDependencies": {
         "node-sass": "^4.13.1"
@@ -162,7 +162,7 @@ const Post = () => (
                 Sometimes it makes total sense to build an old fashioned static website.
                 It can be not only faster, but also simplier than throwing in a full JavaScript framework
                 just to build a website with only a few pages. In the following I'll create
-                a template with scss, linting, .... using npm scripts.
+                a template with scss, linting, minifying and more using npm scripts.
             </p>
 
             <p>
@@ -201,7 +201,8 @@ const Post = () => (
             </p>
 
             <p>
-                First of all I'll initialize an empty project with <ui.Code>npm init</ui.Code>.<br/>
+                First of all I'll initialize an empty project by opening the console and
+                typing <ui.Code>npm init</ui.Code>.<br/>
                 Then I create the initial <ui.Code>index.html</ui.Code> in the root directory:
             </p>
 
@@ -210,7 +211,10 @@ const Post = () => (
                 value={snippet1}
             />
 
-            <p>Now you can just open the <ui.Code>index.html</ui.Code> in your browser.</p>
+            <p>
+                Now you can just open the <ui.Code>index.html</ui.Code> in your browser. <br/>
+                This doesn't look very exiting yet - so let's add some styling.
+            </p>
 
             <h2 id="css">The CSS</h2>
 
@@ -226,7 +230,8 @@ const Post = () => (
                 </li>
                 <li>
                     <b><a href="https://autoprefixer.github.io/" target="_blank" rel="noopener">Autoprefixer</a>:</b> This
-                    will add vendor prefixes, to improve the compability of your css for different browsers.
+                    will add <a href="https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix" target="_blank" rel="noopener">vendor prefixes</a>, to
+                    improve the compability of your css for different browsers.
                 </li>
                 <li>
                     <b><a href="https://stylelint.io/" target="_blank" rel="noopener">Linting</a>:</b> This
@@ -303,7 +308,7 @@ const Post = () => (
             <p>
                 Now run <ui.Code>npm run css:scss</ui.Code> again and refresh your browser to see the
                 changes (We'll automate this step later). <br />
-                Id recomment to create new files (eg. <ui.Code>_someModule.scss</ui.Code>)
+                I'd recomment to create new files (eg. <ui.Code>_someModule.scss</ui.Code>)
                 for every part you create, to keep the scss organized. But I won't go into detail about the organization of
                 css, as it is a big topic itself.
             </p>
@@ -317,7 +322,7 @@ const Post = () => (
 
             <p><ui.Code>npm i -D autoprefixer postcss-cli</ui.Code><br/></p>
 
-            <p>Let's add the autoprefixer script to the scripts of your <ui.Code>package.json</ui.Code></p>
+            <p>Then let's add the autoprefixer script to the scripts of your <ui.Code>package.json</ui.Code></p>
 
             <CodeBlock
                 language="json"
@@ -338,6 +343,11 @@ const Post = () => (
                 value={'"build:css": "npm run css:scss && npm run css:autoprefixer"'}
             />
 
+            <p>
+                By running <ui.Code>npm run build:css</ui.Code>, you will now run firstly <ui.Code>npm run css:scss</ui.Code> and
+                afterwards <ui.Code>npm run css:autoprefixer</ui.Code>.
+            </p>
+
             <h3 id="csslinting">Linting</h3>
 
             <p>
@@ -347,6 +357,17 @@ const Post = () => (
             </p>
 
             <p><ui.Code>npm i -D stylelint</ui.Code><br/></p>
+
+            <p>
+                Before we're able to add the scripts for linting, we have to add the file <ui.Code>.stylelintrc</ui.Code>. This file will contain
+                the rules, which <ui.Code>stylelint</ui.Code> should apply. For more information about the rules you can use
+                check the <a href="https://stylelint.io/user-guide/rules" target="_blank" rel="noopener">documentation</a>.
+            </p>
+
+            <CodeBlock
+                language="json"
+                value={snippet5}
+            />
 
             <p>
                 Afterwards we can add the script for linting and update our <ui.Code>build:css</ui.Code> to start
@@ -359,18 +380,7 @@ const Post = () => (
             />
 
             <p>
-                But to make this work we have to add the file <ui.Code>.stylelintrc</ui.Code>. This file will contain
-                the rules, which <ui.Code>stylelint</ui.Code> should apply. For more information about the rules you can use
-                check the <a href="https://stylelint.io/user-guide/rules" target="_blank" rel="noopener">documentation</a>.
-            </p>
-
-            <CodeBlock
-                language="json"
-                value={snippet5}
-            />
-
-            <p>
-                Now <ui.Code>npm run build:css</ui.Code> should run successfully again (except if you have errors in your css).
+                Now <ui.Code>npm run build:css</ui.Code> should execute successfully (except if you have errors in your css).
                 Next I will add some automation, as we don't want to run the script manually everytime we change something.
             </p>
 
@@ -408,11 +418,11 @@ const Post = () => (
 
             <CodeBlock
                 language="json"
-                value={`"serve": "serve": "browser-sync start --server \\"dist\\" --files \\"dist\\""`}
+                value={`"serve": "browser-sync start --server \\"dist\\" --files \\"dist\\""`}
             />
 
             <p>
-                As this will only watch the <ui.Code>dist</ui.Code> directory, we need to move our <ui.Code>index.html</ui.Code> there.
+                As this will only watch the <ui.Code>dist</ui.Code> directory, so we need to move our <ui.Code>index.html</ui.Code> there.
                 No worries, we'll have a better solution later, when we come to the HTML part :)
             </p>
             <p>
@@ -464,7 +474,7 @@ const Post = () => (
             <h2 id="images">The Images</h2>
 
             <p>
-                The images part is pretty straightforward. The only thing we'll do here is
+                The only thing we'll do here is
                 adding a script, which will minify the images. This will improve the pagespeed
                 as the images have a reduced file size. To do this, go to your console again and
                 install <a href="https://www.npmjs.com/package/imagemin-cli" target="_blank" rel="noopener">imagemin-cli</a>.
@@ -497,7 +507,8 @@ const Post = () => (
             />
 
             <p>
-                If you have your <ui.Code>npm run watch</ui.Code> script still running, you need to restart it.
+                The <ui.Code>*</ui.Code> operator makes the scripts run all other scripts starting with <ui.Code>watch:</ui.Code> or
+                <ui.Code>build:</ui.Code>. If you have your <ui.Code>npm run watch</ui.Code> script still running, you need to restart it.
             </p>
 
             <p>
