@@ -3,7 +3,7 @@ import * as S from '../../styles/weekly'
 import { SubscribeForm, Layout, LinkBox, PrevNext } from '../../components'
 import meta from '../../content/weekly'
 
-const postId = 10
+const postId = 11
 const postMeta = meta.find(m => m.id === postId)
 
 const Post = () => (
