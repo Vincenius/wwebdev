@@ -148,6 +148,20 @@ const snippet14 = `<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" type="text/css" href="/index.css">`
 
+const snippet15 = `<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <title>Static Website Template</title>
+        <module href="/components/head.html"></module>
+    </head>
+
+    <body>
+        <h1>Static Website Template</h1>
+
+        <script src="./bundle.js"></script>
+    </body>
+</html>`
+
 const Post = () => (
     <Layout
         isArticle={true}
@@ -160,13 +174,13 @@ const Post = () => (
         <ui.ArticleContainer as="article">
             <p>
                 Sometimes it makes total sense to build an old fashioned static website.
-                It can be not only faster, but also simplier than throwing in a full JavaScript framework
-                just to build a website with only a few pages. In the following I'll create
+                It can be not only faster but also simpler than throwing in a full JavaScript framework
+                just to build a website with only a few pages. In the following, I'll create
                 a template with scss, linting, minifying and more using npm scripts.
             </p>
 
             <p>
-                For the finished repository, which can be used as a template go to:&nbsp;
+                For the finished repository, which can be used as a template go to&nbsp;
                 <a href="https://github.com/Vincenius/static-website-template" target="_blank" rel="noopener">
                     https://github.com/Vincenius/static-website-template
                 </a>
@@ -201,7 +215,7 @@ const Post = () => (
             </p>
 
             <p>
-                First of all I'll initialize an empty project by opening the console and
+                First of all, I'll initialize an empty project by opening the console and
                 typing <ui.Code>npm init</ui.Code>.<br/>
                 Then I create the initial <ui.Code>index.html</ui.Code> in the root directory:
             </p>
@@ -224,18 +238,18 @@ const Post = () => (
             <ul>
                 <li>
                     <b><a href="https://sass-lang.com/" target="_blank" rel="noopener">Sass</a>:</b> This
-                    is a preprocessor, which will compile <ui.Code>.scss</ui.Code> files into css. With scss
+                    is a preprocessor, which will compile <ui.Code>.scss</ui.Code> files into CSS. With scss
                     you can use <i>variables</i>, <i>nesting</i>, <i>partials</i>, <i>modules</i> and more.
-                    It makes writing css a lot easier, clearer and more modular.
+                    It makes writing CSS a lot easier, clearer and more modular.
                 </li>
                 <li>
                     <b><a href="https://autoprefixer.github.io/" target="_blank" rel="noopener">Autoprefixer</a>:</b> This
                     will add <a href="https://developer.mozilla.org/en-US/docs/Glossary/Vendor_Prefix" target="_blank" rel="noopener">vendor prefixes</a>, to
-                    improve the compability of your css for different browsers.
+                    improve the compatibility of your CSS for different browsers.
                 </li>
                 <li>
                     <b><a href="https://stylelint.io/" target="_blank" rel="noopener">Linting</a>:</b> This
-                    will help avoiding errors in your css code and to enforce code conventions.
+                    will help to avoid errors in your css code and to enforce code conventions.
                 </li>
             </ul>
 
@@ -247,9 +261,9 @@ const Post = () => (
             <p><ui.Code>npm i -D node-sass</ui.Code><br/></p>
             <p>
                 This will install the package <a href="https://www.npmjs.com/package/node-sass" target="_blank" rel="noopener">node-sass</a>,
-                into the dev dependencies. It enables us to compile .scss files to css.<br/>
+                into the dev dependencies. It enables us to compile .scss files to CSS.<br/>
                 When the installation is done, open the <ui.Code>package.json</ui.Code>
-                and add following script to your scripts:
+                and add the following script to your scripts:
             </p>
             <CodeBlock
                 language="json"
@@ -276,8 +290,10 @@ const Post = () => (
 
             <img src="/blog/static-website/dirStructure1.png" alt="structure of the project" />
 
-            <p>Now you can include the compiled css file in the <ui.Code>{`<head>`}</ui.Code>
-            of your <ui.Code>index.html</ui.Code></p>
+            <p>
+                Now you can include the compiled CSS file in the <ui.Code>{`<head>`}</ui.Code>
+                of your <ui.Code>index.html</ui.Code>
+            </p>
 
             <CodeBlock
                 language="html"
@@ -308,9 +324,9 @@ const Post = () => (
             <p>
                 Now run <ui.Code>npm run css:scss</ui.Code> again and refresh your browser to see the
                 changes (We'll automate this step later). <br />
-                I'd recomment to create new files (eg. <ui.Code>_someModule.scss</ui.Code>)
+                I'd recommend to create new files (eg. <ui.Code>_someModule.scss</ui.Code>)
                 for every part you create, to keep the scss organized. But I won't go into detail about the organization of
-                css, as it is a big topic itself.
+                CSS, as it is a big topic itself.
             </p>
 
             <h3 id="autoprefixer">Autoprefixer</h3>
@@ -330,10 +346,10 @@ const Post = () => (
             />
 
             <p>
-                This will check your css files in the <ui.Code>dist</ui.Code> directory and add the prefixes for them.
+                This will check your CSS files in the <ui.Code>dist</ui.Code> directory and add the prefixes for them.
                 So you need to run <ui.Code>npm run css:scss</ui.Code> first, to compile your scss into <ui.Code>dist</ui.Code>
-                and afterwards run <ui.Code>npm run css:autoprefixer</ui.Code> to add vendor-prefixes to your compiled
-                css file. As we don't want to run the scripts one after another, let's add another script to the
+                and afterward run <ui.Code>npm run css:autoprefixer</ui.Code> to add vendor-prefixes to your compiled
+                CSS file. As we don't want to run the scripts one after another, let's add another script to the
                 <ui.Code>package.json</ui.Code>, which will run the scripts sequentially by connecting the scripts with
                 <ui.Code>&&</ui.Code>.
             </p>
@@ -345,22 +361,22 @@ const Post = () => (
 
             <p>
                 By running <ui.Code>npm run build:css</ui.Code>, you will now run firstly <ui.Code>npm run css:scss</ui.Code> and
-                afterwards <ui.Code>npm run css:autoprefixer</ui.Code>.
+                afterward <ui.Code>npm run css:autoprefixer</ui.Code>.
             </p>
 
             <h3 id="csslinting">Linting</h3>
 
             <p>
-                Finally we'll use <a href="https://www.npmjs.com/package/stylelint" target="_blank" rel="noopener">stylelint</a> to
-                make sure we have no errors in our css and to be able to enforce code conventions. <br/>
-                Therefore install the npm module styleling:
+                Finally, we'll use <a href="https://www.npmjs.com/package/stylelint" target="_blank" rel="noopener">stylelint</a> to
+                make sure we have no errors in our CSS and to be able to enforce code conventions. <br/>
+                Therefore install the npm module stylelint:
             </p>
 
             <p><ui.Code>npm i -D stylelint</ui.Code><br/></p>
 
             <p>
                 Before we're able to add the scripts for linting, we have to add the file <ui.Code>.stylelintrc</ui.Code>. This file will contain
-                the rules, which <ui.Code>stylelint</ui.Code> should apply. For more information about the rules you can use
+                the rules, which <ui.Code>stylelint</ui.Code> should apply. For more information about the rules, you can use
                 check the <a href="https://stylelint.io/user-guide/rules" target="_blank" rel="noopener">documentation</a>.
             </p>
 
@@ -388,7 +404,7 @@ const Post = () => (
 
             <p>
                 First I'll add a script, which will watch the <ui.Code>/src/scss</ui.Code> directory
-                for changes and will run <ui.Code>build:css</ui.Code>, whenever something changes. For that I will
+                for changes and will run <ui.Code>build:css</ui.Code>, whenever something changes. For that, I will
                 use <a href="https://www.npmjs.com/package/onchange" target="_blank" rel="noopener">onchange</a>.
             </p>
 
@@ -403,8 +419,8 @@ const Post = () => (
 
             <p>
                 If you now run <ui.Code>npm run watch:css</ui.Code> it should automatically run your <ui.Code>build:css</ui.Code> script
-                whenever you change something in a scss file.
-                Let's get rid of the manual browser refresh next. For this we'll
+                whenever you change something in an scss file.
+                Let's get rid of the manual browser refresh next. For this, we'll
                 add <a href="https://www.npmjs.com/package/browser-sync" target="_blank" rel="noopener">browser-sync</a>, to
                 auto-refresh the browser. This will run a local server, which also enables us to test directly on other devices.<br/>
                 To install it run:
@@ -436,20 +452,20 @@ const Post = () => (
 
             <p>
                 This means you don't need to open the <ui.Code>index.html</ui.Code> to preview your website, but can just visit
-                <ui.Code>localhost:3000</ui.Code>. This page will automatically refresh if something in your <ui.Code>dist</ui.Code>
-                directory changes. If you want to see your website on other devices, you can do that now by opening the external url on your device.
+                <ui.Code>localhost:3000</ui.Code>. This page will automatically refresh if something in your <ui.Code>dist</ui.Code> directory
+                changes. If you want to see your website on other devices, you can do that now by opening the external url on your device.
             </p>
 
             <p>
-                And as a last step for the CSS I will add a script to run the <ui.Code>watch</ui.Code> script and the browser-sync together. Sadly npm
-                doesn't has a native way to run scripts in parallel for all operating systems. (the <ui.Code>&</ui.Code> operator only
+                And as a last step for the CSS, I will add a script to run the <ui.Code>watch</ui.Code> script and the browser-sync together. Sadly npm
+                doesn't have a native way to run scripts in parallel for all operating systems. (the <ui.Code>&</ui.Code> operator only
                 works on UNIX environments). Thus I'll install <a href="https://www.npmjs.com/package/npm-run-all" target="_blank" rel="noopener">npm-run-all</a>.
             </p>
 
             <p><ui.Code>npm i -D npm-run-all</ui.Code><br/></p>
 
             <p>
-                Afterwards we can add the script to the <ui.Code>package.json</ui.Code>
+                Afterward we can add the script to the <ui.Code>package.json</ui.Code>
             </p>
 
             <CodeBlock
@@ -461,21 +477,21 @@ const Post = () => (
                 Now we're already in a good state for developing modern websites. By running
                 <ui.Code>npm run watch</ui.Code> we are watching for changes in our directory
                 <ui.Code>src/scss</ui.Code> and compile our <ui.Code>scss</ui.Code> into the
-                <ui.Code>dist</ui.Code> directory. Also we have autoprefixing and linting for
-                our css in place. Additionally the script is running a development server, which
+                <ui.Code>dist</ui.Code> directory. Also, we have autoprefixing and linting for
+                our CSS in place. Additionally, the script is running a development server, which
                 automatically refreshes our browser whenever something in <ui.Code>dist</ui.Code>
                 changes.
             </p>
 
             <p>
-                Next we'll have a look how to add images to our build process.
+                Next, we'll have a look at how to add images to our build process.
             </p>
 
             <h2 id="images">The Images</h2>
 
             <p>
                 The only thing we'll do here is
-                adding a script, which will minify the images. This will improve the pagespeed
+                adding a script, which will minify the images. This will improve the page speed
                 as the images have a reduced file size. To do this, go to your console again and
                 install <a href="https://www.npmjs.com/package/imagemin-cli" target="_blank" rel="noopener">imagemin-cli</a>.
             </p>
@@ -483,7 +499,7 @@ const Post = () => (
             <p><ui.Code>npm i -D imagemin-cli</ui.Code><br/></p>
 
             <p>
-                Afterwards we can add the scripts for building and watching the directory
+                Afterward we can add the scripts for building and watching the directory
                 <ui.Code>src/images</ui.Code>.
             </p>
 
@@ -520,7 +536,7 @@ const Post = () => (
             <h3 id="webpackbabel">Webpack & Babel</h3>
 
             <p>
-                For javascript I want to be able to use modern syntax without having to worry about browser compability. Therefore I'll
+                For JavaScript, I want to be able to use modern syntax without having to worry about browser compatibility. Therefore I'll
                 use <a href="https://www.npmjs.com/package/webpack-cli" target="_blank" rel="noopener">webpack</a> together
                 with <a href="https://babeljs.io" target="_blank" rel="noopener">babel</a>. So let's install the required
                 npm modules:
@@ -529,8 +545,8 @@ const Post = () => (
             <p><ui.Code>npm i -D webpack webpack-cli babel-loader @babel/preset-env</ui.Code><br/></p>
 
             <p>
-                Afterwards we need to add a configuration file to make this work. So create a
-                file <ui.Code>webpack.config.js</ui.Code> in your project root with following content:
+                Afterward we need to add a configuration file to make this work. So create a
+                file <ui.Code>webpack.config.js</ui.Code> in your project root with the following content:
             </p>
 
             <CodeBlock
@@ -539,7 +555,7 @@ const Post = () => (
             />
 
             <p>
-                Next let's update the <ui.Code>package.json</ui.Code> with the scripts for our javascript
+                Next let's update the <ui.Code>package.json</ui.Code> with the scripts for our JavaScript
                 build.
             </p>
 
@@ -551,13 +567,13 @@ const Post = () => (
             <p>
                 This will use the development mode when we're watching the files and the production mode
                 when we run <ui.Code>npm run build</ui.Code>. Now we can add our entry point for the js.
-                This will be <ui.Code>src/js/main.js</ui.Code>. I'd recommend to keep the javascript modular by
+                This will be <ui.Code>src/js/main.js</ui.Code>. I'd recommend keeping the JavaScript modular by
                 adding the logic into other files and include them in the <ui.Code>main.js</ui.Code> with the
                 import syntax (eg. <ui.Code>import './someModule'</ui.Code>)
             </p>
 
             <p>
-                Of course we still need to include the bundled javascript at right before
+                Of course, we still need to include the bundled JavaScript at right before
                 the <ui.Code>{`</body>`}</ui.Code> of our <ui.Code>index.html</ui.Code>.
             </p>
 
@@ -569,7 +585,7 @@ const Post = () => (
             <h3 id="jslinting">Linting</h3>
 
             <p>
-                For javascript it makes also sense to include a linter to keep the code more consistent
+                For JavaScript, it makes also sense to include a linter to keep the code more consistent
                 and to avoid bugs. To introduce linting I'll
                 use <a href="https://www.npmjs.com/package/eslint" target="_blank" rel="noopener">eslint</a>.
             </p>
@@ -578,9 +594,14 @@ const Post = () => (
 
             <p>
                 To enable the linting, we still need to create a configuration file and add the
-                module to our webpack configuration. First let's create the configuration
+                module to our webpack configuration. First, let's create the configuration
                 file <ui.Code>.eslintrc</ui.Code> in our project root. The following is the default
-                configuration - you can of course change the rules according to your preferences.
+                configuration - you can, of course, change the rules according to your preferences.
+            </p>
+
+            <p>
+                If you want to read more about JavaScript linting, I'd recommend reading the blog
+                post <a href="https://blog.geographer.fr/eslint-guide?utm_source=wweb.dev" target="_blank" rel="noopener">ESLint configuration and best practices</a>
             </p>
 
             <CodeBlock
@@ -599,7 +620,7 @@ const Post = () => (
             />
 
             <p>
-                Now our javascript is setup to use modern syntax and to check our code for errors and consistency.
+                Now our JavaScript is setup to use modern syntax and to check our code for errors and consistency.
                 As a last thing we will add HTML processing to our project.
             </p>
 
@@ -608,10 +629,10 @@ const Post = () => (
             <p>
                 For the HTML I'll introduce <a href="https://www.npmjs.com/package/posthtml" target="_blank" rel="noopener">posthtml</a>, together
                 with <a href="https://www.npmjs.com/package/posthtml-modules" target="_blank" rel="noopener">posthtml-modules</a>. This will
-                enables us to use html partials. This makes most sense if you're building a website
-                with multiple pages, to reduce code duplication. Also we'll
+                enable us to use HTML partials. This makes most sense if you're building a website
+                with multiple pages, to reduce code duplication. Also, we'll
                 add <a href="https://www.npmjs.com/package/htmlnano">htmlnano</a> to minify the HTML and
-                reduce the filesize.
+                reduce the file size.
             </p>
 
             <p><ui.Code>npm i -D posthtml posthtml-cli posthtml-modules htmlnano</ui.Code><br/></p>
@@ -657,7 +678,16 @@ const Post = () => (
             />
 
             <p>
-                That's it. The final project structure should look something like this:
+                So our final <ui.Code>index.html</ui.Code> for this demo should look like this:
+            </p>
+
+            <CodeBlock
+                language="html"
+                value={snippet15}
+            />
+
+            <p>
+                That's it. The final project structure will look like this:
             </p>
 
             <img src="/blog/static-website/finalstructure.png" alt="final structure of the project" />
