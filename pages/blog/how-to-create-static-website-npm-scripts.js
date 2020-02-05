@@ -1,6 +1,6 @@
 import React from 'react'
 import * as ui from '../../ui'
-import { CodeBlock, Layout, Comments, PrevNext } from '../../components'
+import { CodeBlock, Layout, Comments, PrevNext, SubscribeForm } from '../../components'
 import meta from '../../content/articles'
 
 const postId = 5
@@ -695,9 +695,10 @@ const Post = () => (
             <p>
                 The final repository can be found on <a href="https://github.com/Vincenius/static-website-template" target="_blank" rel="noopener">GitHub</a>.
             </p>
+
             <br />
 
-            <hr />
+            <SubscribeForm />
 
             <PrevNext postId={postId} isArticle={true} />
             <Comments />
