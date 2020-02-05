@@ -26,7 +26,7 @@ const Post = () => (
             <LinkBox
                 title="Vanilla Web Projects"
                 description="A list of 20 projects by Brad Traversy, which are build without frameworks or libraries."
-                link="https://blog.geographer.fr/eslint-guide"
+                link="https://github.com/bradtraversy/vanillawebprojects"
                 image="https://vanillawebprojects.com/img/showcase-bg.png"
             />
 
@@ -52,11 +52,26 @@ const Post = () => (
             />
 
             <LinkBox
+                title="Image Dragging Effects "
+                description="A set of cool dragging effects by Mary Lou from Codrops."
+                link="https://tympanus.net/codrops/2020/02/03/image-dragging-effects/"
+                image="https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2020/02/ImageDragging_featured.jpg"
+            />
+
+            <LinkBox
                 title="Old CSS, new CSS"
                 description="A good read about how CSS used to work and where we are now."
                 link="https://eev.ee/blog/2020/02/01/old-css-new-css/"
                 image="https://eev.ee/media/2020-02-css/html-definitive-guide.png"
             />
+
+            <LinkBox
+                title="Scene.js"
+                description="An animation library. for creatin animated websites."
+                link="https://daybrush.com/scenejs/"
+                image="https://camo.githubusercontent.com/1181b993f880616d54cefc3b8ef576513f53a127/68747470733a2f2f64617962727573682e636f6d2f7363656e656a732f696d616765732f636c6170706572626f6172642e706e67"
+            />
+
 
             <LinkBox
                 title="CesiumJS"
