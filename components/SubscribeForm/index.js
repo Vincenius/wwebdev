@@ -29,7 +29,7 @@ function SubscribeForm({ type }) {
                     variant="outlined"
                 />
 
-                <S.CheckboxContainer class="mc-field-group input-group">
+                <S.CheckboxContainer>
                     <strong>Choose what you want to get informed about</strong>
                     <ul>
                         <li>
