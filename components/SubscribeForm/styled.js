@@ -36,11 +36,7 @@ export const Text = styled.div`
 `
 export const CheckboxContainer = styled.div`
     ul {
-        list-style: none;
-        padding-left: 0;
-    }
-
-    label {
-        margin-left: 5px;
+        list-style: none !important;
+        padding-left: 0 !important;
     }
 `
