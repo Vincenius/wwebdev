@@ -169,7 +169,7 @@ const Post = () => (
         date={postMeta.date}
         link={`https://wweb.dev${postMeta.link}`}
         description={postMeta.description}
-        image="/blog/2-react.jpg"
+        image={postMeta.previewImage}
     >
         <ui.ArticleContainer as="article">
             <p>
