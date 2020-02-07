@@ -34,3 +34,9 @@ export const Text = styled.div`
     color: ${darkGrey};
     margin-bottom: 30px;
 `
+export const CheckboxContainer = styled.div`
+    ul {
+        list-style: none !important;
+        padding-left: 0 !important;
+    }
+`

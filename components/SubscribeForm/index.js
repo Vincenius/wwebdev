@@ -1,4 +1,6 @@
 import React from 'react'
+import Checkbox from '@material-ui/core/Checkbox'
+import FormControlLabel from '@material-ui/core/FormControlLabel'
 import * as S from './styled'
 
 function SubscribeForm({ type }) {
@@ -26,6 +28,51 @@ function SubscribeForm({ type }) {
                     placeholder="Email Address"
                     variant="outlined"
                 />
+
+                <S.CheckboxContainer class="mc-field-group input-group">
+                    <strong>Choose what you want to get informed about</strong>
+                    <ul>
+                        <li>
+                            <FormControlLabel
+                                control={
+                                    <Checkbox
+                                        value="1"
+                                        color="primary"
+                                        name="group[26582][1]"
+                                        id="mce-group[26582]-26582-0"
+                                    />
+                                }
+                                label="Weekly"
+                            />
+                        </li>
+                        <li>
+                            <FormControlLabel
+                                control={
+                                    <Checkbox
+                                        value="2"
+                                        color="primary"
+                                        name="group[26582][2]"
+                                        id="mce-group[26582]-26582-1"
+                                    />
+                                }
+                                label="Blog Posts"
+                            />
+                        </li>
+                        <li>
+                            <FormControlLabel
+                                control={
+                                    <Checkbox
+                                        value="4"
+                                        color="primary"
+                                        name="group[26582][4]"
+                                        id="mce-group[26582]-26582-2"
+                                    />
+                                }
+                                label="Resources"
+                            />
+                        </li>
+                    </ul>
+                </S.CheckboxContainer>
                 <S.HiddenInput>
                     <input tabIndex="-1" name="b_23a611280baff5c6bd68c83e3_8dd07d6ca8" type="text" />
                 </S.HiddenInput>
