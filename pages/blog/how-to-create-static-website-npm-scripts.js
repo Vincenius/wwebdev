@@ -386,7 +386,7 @@ const Post = () => (
             />
 
             <p>
-                Afterwards we can add the script for linting and update our <ui.Code>build:css</ui.Code> to start
+                Afterward, we can add the script for linting and update our <ui.Code>build:css</ui.Code> to start
                 with linting, so we catch errors before the file is compiled.
             </p>
 
@@ -397,7 +397,7 @@ const Post = () => (
 
             <p>
                 Now <ui.Code>npm run build:css</ui.Code> should execute successfully (except if you have errors in your css).
-                Next I will add some automation, as we don't want to run the script manually everytime we change something.
+                Next, I will add some automation, as we don't want to run the script manually everytime we change something.
             </p>
 
             <h2 id="simplifybuild">Simplifying The Build</h2>
@@ -429,7 +429,7 @@ const Post = () => (
             <p><ui.Code>npm i -D browser-sync</ui.Code><br/></p>
 
             <p>
-                Afterwards the corresponding script can be added to the <ui.Code>package.json</ui.Code>
+                Afterward, the corresponding script can be added to the <ui.Code>package.json</ui.Code>
             </p>
 
             <CodeBlock
@@ -465,7 +465,7 @@ const Post = () => (
             <p><ui.Code>npm i -D npm-run-all</ui.Code><br/></p>
 
             <p>
-                Afterward we can add the script to the <ui.Code>package.json</ui.Code>
+                Afterward, we can add the script to the <ui.Code>package.json</ui.Code>
             </p>
 
             <CodeBlock
@@ -499,7 +499,7 @@ const Post = () => (
             <p><ui.Code>npm i -D imagemin-cli</ui.Code><br/></p>
 
             <p>
-                Afterward we can add the scripts for building and watching the directory
+                Afterward, we can add the scripts for building and watching the directory
                 <ui.Code>src/images</ui.Code>.
             </p>
 
@@ -545,7 +545,7 @@ const Post = () => (
             <p><ui.Code>npm i -D webpack webpack-cli babel-loader @babel/preset-env</ui.Code><br/></p>
 
             <p>
-                Afterward we need to add a configuration file to make this work. So create a
+                Afterward, we need to add a configuration file to make this work. So create a
                 file <ui.Code>webpack.config.js</ui.Code> in your project root with the following content:
             </p>
 
@@ -555,7 +555,7 @@ const Post = () => (
             />
 
             <p>
-                Next let's update the <ui.Code>package.json</ui.Code> with the scripts for our JavaScript
+                Next, let's update the <ui.Code>package.json</ui.Code> with the scripts for our JavaScript
                 build.
             </p>
 
@@ -610,7 +610,7 @@ const Post = () => (
             />
 
             <p>
-                Afterwards we add a new rule to our <ui.Code>webpack.config.js</ui.Code> to check
+                Afterward, we add a new rule to our <ui.Code>webpack.config.js</ui.Code> to check
                 eslint before running the <ui.Code>babel-loader</ui.Code>.
             </p>
 
@@ -621,7 +621,7 @@ const Post = () => (
 
             <p>
                 Now our JavaScript is setup to use modern syntax and to check our code for errors and consistency.
-                As a last thing we will add HTML processing to our project.
+                As the last thing, we will add HTML processing to our project.
             </p>
 
             <h2 id="html">The HTML</h2>
