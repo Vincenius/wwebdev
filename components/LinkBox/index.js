@@ -24,7 +24,7 @@ function LinkBox({ title, description, image, link, selfPromoted }) {
             </div>
 
             <S.Visit href={linkWithRef} target="_blank" rel="noopener">
-                visit <ArrowRight />
+                visit <ArrowRight width="1em" height="1em" />
             </S.Visit>
         </S.Content>
     </S.Container>

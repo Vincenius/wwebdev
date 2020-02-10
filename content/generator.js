@@ -1,5 +1,5 @@
 import { WeeklyPreview, ArticlePreview } from '../components'
-import weeklyData from './weekly'
+import { weeklyData } from './weekly'
 import articleData from './articles'
 import resourceData from './resources'
 

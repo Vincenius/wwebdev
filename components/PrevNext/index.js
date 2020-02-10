@@ -17,7 +17,7 @@ const PrevNext = ({ postId, isArticle }) => {
             { !prevMeta ? <span></span>
                 : <S.Link href={prevMeta.link}>
                     <S.Prev>
-                        <ArrowRight />
+                        <ArrowRight width="1em" height="1em" />
                         Previous {linkName}
                     </S.Prev>
                     { isArticle && <span>{prevMeta.headline}</span> }
@@ -27,7 +27,7 @@ const PrevNext = ({ postId, isArticle }) => {
                 <S.Link href={nextMeta.link} right={true}>
                     <S.Next>
                         Next {linkName}
-                        <ArrowRight />
+                        <ArrowRight width="1em" height="1em" />
                     </S.Next>
                     { isArticle && <span>{nextMeta.headline}</span> }
                 </S.Link>

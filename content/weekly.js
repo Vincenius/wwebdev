@@ -320,9 +320,9 @@ const data = [
         id: '5',
         date: 'December 25, 2019',
         description: 'Codepen Most Hearted 2019, V 8.0, lazy-simon.js, GitHub Apps and more...',
-        introText: <p>
+        /* introText: <p>
             Because of holiday and christmas, this weekly and the next one will be a little smaller :)
-        </p>,
+        </p>, */
         items: [{
             title:"The Most Hearted Of 2019",
             description:"The most popular Pens from the year 2019 of Codepen. Definitely worth checking out.",
@@ -528,7 +528,7 @@ const data = [
         id: '1',
         date: 'November 27, 2019',
         description: 'SWR, Fresh Folk, Colors & fonts, Animated CSS Backgrounds, Postwoman, Pika and more',
-        introText: <div>
+        /* introText: <div>
             <p>Today I'm introducing the weekly. This will be a curated list of things I stumbled upon during the previous week.</p>
             <p>
                 I'm reading through lots of various forums and websites related to web development.
@@ -537,7 +537,7 @@ const data = [
             <p>
                 If you have somthing, you think I should mention here, let me know: <a href="mailto:info@wweb.dev">info@wweb.dev</a>
             </p>
-        </div>,
+        </div>, */
         items: [{
             title: "SWR - React Hooks for Remote Data Fetching",
             description: "A lightweight library for remote data fetching using React Hooks. It returns the data from cache, then sends the fetch request and finally comes with the up-to-date data again.",
@@ -593,4 +593,6 @@ const data = [
     }
 ]
 
-export default data
+module.exports = {
+    weeklyData: data,
+}
