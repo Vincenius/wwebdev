@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import * as S from '../../styles/weekly'
 import { SubscribeForm, Layout, LinkBox, PrevNext } from '../../components'
-import meta from '../../content/weekly'
+import { weeklyData as meta } from '../../content/weekly'
 
 const Post = () => {
     const router = useRouter()
