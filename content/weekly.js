@@ -2,7 +2,7 @@ const data = [
     {
         id: '12',
         date: 'February 11, 2020',
-        description: "TODO",
+        description: "Octomments, Neumorphism, Bit, DarkModeJS, Full Stack Open 2019 and more...",
         items: [{
             title:"Octomments",
             description:"A cool alternative to Disqus for comments using GitHub issues.",
