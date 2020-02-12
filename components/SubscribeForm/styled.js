@@ -39,4 +39,7 @@ export const CheckboxContainer = styled.div`
         list-style: none !important;
         padding-left: 0 !important;
     }
+    input {
+        display: none !important;
+    }
 `
