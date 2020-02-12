@@ -22,8 +22,8 @@ module.exports = () => {
 
                 // Add this file to `fileObj`
                 fileObj[`/${cleanFileName}`] = {
-                page: `/${cleanFileName}`,
-                lastModified: fileStat.mtime
+                    page: `/${cleanFileName}`,
+                    lastModified: fileStat.mtime
                 };
             }
         });
