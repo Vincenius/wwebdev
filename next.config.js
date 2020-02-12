@@ -10,7 +10,6 @@ for (const w of weeklyData) {
 module.exports = withCSS({
     exportPathMap: async function(
         defaultPathMap,
-        { dev, dir, outDir, distDir, buildId }
     ) {
         return {
             ...defaultPathMap,
