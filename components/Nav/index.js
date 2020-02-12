@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import * as S from './styled'
 
 const links = [
@@ -16,11 +15,9 @@ const links = [
 const Nav = () => (
   <S.Container>
     <S.Navigation as="nav">
-      <Link href='/'>
-        <a>
-          <img src="/logo-text.png" alt="Logo of wweb.dev"/>
-        </a>
-      </Link>
+      <a href='/'>
+        <img src="/logo-text.png" alt="Logo of wweb.dev"/>
+      </a>
       <ul>
         {links.map(({ key, href, label }) => (
           <li key={key}>

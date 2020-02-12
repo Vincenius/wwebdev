@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import * as S from './styled'
 
 const ArticlePreview = ({
@@ -16,9 +15,9 @@ const ArticlePreview = ({
   return (
     <S.Container>
       { previewImage &&
-        <Link href={link}>
-          <a><S.PreviewImage src={previewImage} alt={headline} /></a>
-        </Link>
+        <a href={link}>
+          <S.PreviewImage src={previewImage} alt={headline} />
+        </a>
       }
       <div>
         <header>
@@ -29,7 +28,7 @@ const ArticlePreview = ({
           }
           <S.Time datetime={d.toISOString()}>{date}</S.Time>
           <S.Headline>
-            <Link href={link}><a>{headline}</a></Link>
+            <a href={link}>{headline}</a>
           </S.Headline>
         </header>
         <p>{description}</p>

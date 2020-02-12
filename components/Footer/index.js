@@ -1,16 +1,13 @@
 import React from 'react'
-import Link from 'next/link'
 import * as S from './styled'
 
 const Footer = () => (
   <S.Container>
     <S.Content>
       <div>
-        <Link href='/'>
-          <a>
+        <a href='/'>
             <img src="/logo.png" alt="wweb.dev Logo" />
-          </a>
-        </Link>
+        </a>
         <S.Copyright>
           © {new Date().getFullYear()} - wweb.dev
         </S.Copyright>
