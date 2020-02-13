@@ -54,6 +54,12 @@ const Post = () => (
                 image="/resources/creative-backgrounds/particlesjs.png"
             />
             <LinkBox
+                title="Pattern Generator"
+                description="A really cool generator for unique, royalty-free, repeatable SVG patterns."
+                link="https://beautifuldingbats.com/pattern-generator/"
+                image="/resources/creative-backgrounds/beautifuldingbats.png"
+            />
+            <LinkBox
                 title="SVG Gradient Wave Generator"
                 description="A generator for SVG wave patterns."
                 link="https://www.outpan.com/app/9aaaf27303/svg-gradient-wave-generator"
