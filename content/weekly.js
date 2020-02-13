@@ -456,7 +456,7 @@ const data = [
             title:"A Curated List Of Websites For Free SVG Illustrations",
             description:"A list of websites for free SVG icons, I've gather thoughout the years.",
             link:"https://wweb.dev/resources/free-svg-illustrations",
-            image:"https://wweb.dev/blog/5/preview.jpg",
+            image:"https://wweb.dev/resources/free-svg-illustrations/preview.jpg",
             selfPromoted:"New Resource",
         }]
     },
