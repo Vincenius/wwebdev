@@ -55,7 +55,7 @@ const Post = () => (
             />
             <LinkBox
                 title="Pattern Generator"
-                description="A really cool generator for unique, royalty-free, repeatable SVG patterns."
+                description="A cool generator for unique, royalty-free, repeatable SVG patterns by John Bartlet."
                 link="https://beautifuldingbats.com/pattern-generator/"
                 image="/resources/creative-backgrounds/beautifuldingbats.png"
             />
