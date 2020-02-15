@@ -6,6 +6,7 @@ import { generateWeekly, generateArticleAndResources } from '../content/generato
 const Home = () => (
   <Layout
     title="News, Resources and Articles about Web-Development"
+    description="Stay up to date with weekly updates, get resources for next project and read articles and tutorials about web development."
     titleNameFirst={true}
   >
     <ui.Container>
