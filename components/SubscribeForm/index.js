@@ -81,6 +81,7 @@ function SubscribeForm({ type }) {
                         id="mc-embedded-subscribe"
                         variant="contained"
                         type="submit"
+                        label="submit button"
                     >
                         Subscribe
                     </S.SubmitButton>
