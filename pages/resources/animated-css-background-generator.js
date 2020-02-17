@@ -46,7 +46,7 @@ const Demo = () => {
             { activeBg === 2 && <Background3 /> }
 
             <S.Footer>
-                Made by <a href="/">wwev.dev</a>
+                Made by <a href="/">wweb.dev</a>
             </S.Footer>
         </S.Container>
     )
