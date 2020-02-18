@@ -1,5 +1,56 @@
 const data = [
     {
+        id: '13',
+        date: 'February 19, 2020',
+        description: "Good first issue, App Ideas, Beautiful Dingbats, GitHub CLI, The JavaScript Way and more...",
+        items: [{
+            title:"Good first issue",
+            description:"A list of issues from popular open-source projects, which helps you make your first contribution.",
+            link:"https://goodfirstissue.dev/",
+            image:"https://goodfirstissue.dev/images/meta.jpg",
+        },{
+            title:"App Ideas",
+            description:"A large list ideas for apps to improve your coding skills.",
+            link:"https://github.com/florinpop17/app-ideas/blob/master/README.md",
+            image:"https://raw.githubusercontent.com/florinpop17/app-ideas/master/app-ideas.png",
+        },{
+            title:"Beautiful Dingbats' Pattern Generator",
+            description:"A nice generator for seamless repeatable background patterns.",
+            link:"https://beautifuldingbats.com/pattern-generator/",
+            image:"/resources/creative-backgrounds/beautifuldingbats.png",
+        },{
+            title:"Learn UI Design Fundamentals",
+            description:"A free course about browser-based user interfaces using HTML and CSS only.",
+            link:"https://scrimba.com/g/gdesign",
+            image:"https://scrimba.com/static/art/castcover-no-header.png",
+        },{
+            title:"GitHub CLI",
+            description:"The article by GitHub, introducing the new GitHub CLI and what it can do.",
+            link:"https://github.blog/2020-02-12-supercharge-your-command-line-experience-github-cli-is-now-in-beta/",
+            image:"https://i1.wp.com/user-images.githubusercontent.com/10404068/74261506-35df4080-4cb0-11ea-9285-c41583009e6c.png",
+        },{
+            title:"The JavaScript Way",
+            description:"A beginner-friendly, open source book about JavaScript.",
+            link:"https://github.com/thejsway/thejsway",
+            image:"https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1501485486l/35875290._SY475_.jpg",
+        },{
+            title:"Turbulence",
+            description:"A cool CodePen using animated SVG filter on hover.",
+            link:"https://codepen.io/janxalot/full/MWwaNzB",
+            image:"https://images.unsplash.com/photo-1580157487709-f66d015033b2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&h=450&fit=crop&ixid=eyJhcHBfaWQiOjF9",
+        },{
+            title:"skillstream.dev",
+            description:"A website to create a timeline of your developer skills in form of a Gantt chart.",
+            link:"https://skillstream.dev/",
+            image:"https://skillstream.dev/open-graph-image.png",
+        },{
+            title:"Stage.js",
+            description:"A 2D JavaScript library for creating HTML5 games.",
+            link:"http://piqnt.com/stage.js/",
+            image:"http://piqnt.com/stage.js/logo.png",
+        }]
+    },
+    {
         id: '12',
         date: 'February 12, 2020',
         description: "Octomments, Neumorphism, Bit, DarkModeJS, Full Stack Open 2019 and more...",
