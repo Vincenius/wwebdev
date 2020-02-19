@@ -9,6 +9,11 @@ const data = [
             link:"https://goodfirstissue.dev/",
             image:"https://goodfirstissue.dev/images/meta.jpg",
         },{
+            title:"cra-template-redux",
+            description:"Yesterday the first release of the redux template for create-react-app was released.",
+            link:"https://github.com/reduxjs/cra-template-redux/releases/tag/v1.0.0",
+            image:"/weekly/screenshots/cra-template-redux.png",
+        },{
             title:"App Ideas",
             description:"A large list ideas for apps to improve your coding skills.",
             link:"https://github.com/florinpop17/app-ideas/blob/master/README.md",
