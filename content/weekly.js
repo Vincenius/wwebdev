@@ -5,7 +5,7 @@ const data = [
         description: "PostHog, JavaScript Interview Questions, Free Programming Books, grep.app and more...",
         items: [{
             title:"PostHog",
-            description:"Open source product analiytics with feature tracking and funnels.",
+            description:"Open source product analytics with feature tracking and funnels.",
             link:"https://posthog.com/",
             image:"https://posthog.com/wp-content/uploads/2020/01/cropped-Frame-1-270x270.png",
         },{
@@ -50,7 +50,7 @@ const data = [
             image:"https://devblogs.microsoft.com/typescript/wp-content/uploads/sites/11/2018/08/typescriptfeature.png",
         },{
             title:"Google Lighthouse for Firefox",
-            description:"Google Lighthouse just published it's plugin for the Firefox browser.",
+            description:"Google Lighthouse just published its plugin for the Firefox browser.",
             link:"https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/reviews/",
             image:"https://addons.cdn.mozilla.net/user-media/previews/full/232/232448.png",
         }]
