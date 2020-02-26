@@ -17,7 +17,7 @@ const data = [
             title:"5 Top Free Programming Books for Front-End Developers",
             description:"A list of books for the self-taught front-end developer.",
             link:"https://booksoncode.com/articles/free-programming-books-for-front-end-developers",
-            image:"http://static1.squarespace.com/static/5e0129c5956b7a5624566864/t/5e541967d04b7d3aa8c668f6/1582569836601/top-free-programming-books-for-front-end-developers-hero.jpeg",
+            image:"https://images.squarespace-cdn.com/content/5e0129c5956b7a5624566864/1582569832031-9EXRDZISJFE1D1IE1HPK/top-free-programming-books-for-front-end-developers-hero.jpeg",
         },{
             title:"grep.app",
             description:"A tool to search across git repos with the ability to use regex.",
