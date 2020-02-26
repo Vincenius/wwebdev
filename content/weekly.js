@@ -39,15 +39,20 @@ const data = [
             link:"https://www.designvalley.club/",
             image:"https://storage.googleapis.com/resources-images/og-images/designvalley-og-image.jpg",
         },{
-            title:"Explorable Explanations",
-            description:"A hub for learning through play. It not only includes programming and science but also art, biology and more.",
-            link:"https://explorabl.es/",
-            image:"http://explorabl.es/-sharing/index.png",
+            title:"Vue.js: The Documentary",
+            description:"A documentary by Honeypot about the story of Vue.js.",
+            link:"https://www.youtube.com/watch?v=OrxmtDw4pVI",
+            image:"https://i.ytimg.com/vi/OrxmtDw4pVI/maxresdefault.jpg",
         },{
             title:"Announcing TypeScript 3.8",
             description:"The article by Microsoft about the new release of TypeScript 3.8.",
             link:"https://devblogs.microsoft.com/typescript/announcing-typescript-3-8/",
             image:"https://devblogs.microsoft.com/typescript/wp-content/uploads/sites/11/2018/08/typescriptfeature.png",
+        },{
+            title:"Google Lighthouse for Firefox",
+            description:"Google Lighthouse just published it's plugin for the Firefox browser.",
+            link:"https://addons.mozilla.org/en-US/firefox/addon/google-lighthouse/reviews/",
+            image:"https://addons.cdn.mozilla.net/user-media/previews/full/232/232448.png",
         }]
     },
     {
