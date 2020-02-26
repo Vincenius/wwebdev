@@ -16,7 +16,7 @@ function SubscribeForm({ type }) {
             <S.Wrapper id="mc_embed_signup_scroll">
                 <h2>Always get the latest updates</h2>
                 <S.Text>
-                    Don't miss { type === 'weekly' ? 'the next weekly' : 'my next post' }. Drop your email below and get it straight in your inbox.
+                    Don't miss { type === 'weekly' ? 'the next weekly' : 'the next post' }. Drop your email below and get it straight in your inbox.
                 </S.Text>
 
                 <S.Input

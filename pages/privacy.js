@@ -9,8 +9,8 @@ const Home = () => (
         <ui.Container>
             <h2>Honest and human readable version</h2>
             <p>
-                I try to keep my website as privacy friendly as possible.
-                I am using a self hosted version of <a href="https://matomo.org/" target="_blank" rel="noopener">Matomo</a> for the only purpose of knowing how many people are visiting my website.
+                I try to keep this website as privacy friendly as possible.
+                I am using a self hosted version of <a href="https://matomo.org/" target="_blank" rel="noopener">Matomo</a> for the only purpose of knowing how many people are visiting this website.
             </p>
             <p><b>If you enable "Do Not Track" in your browser I won't track you</b> (sadly that's not the default).
                 Also AdBlockers will work for blocking the tracking. I'd recomment <i>uBlock Origin</i> for that.
