@@ -14,6 +14,11 @@ const data = [
             link:"https://tailwindui.com/",
             image:"https://tailwindui.com/img/twitter-card.png",
         },{
+            title:"React Hook Form",
+            description:"Use React Hooks to create performant, flexible and extensible forms with easy-to-use validation.",
+            link:"https://react-hook-form.com/",
+            image:"https://repository-images.githubusercontent.com/174038031/01768c80-a4f5-11e9-8007-1dc851d42b5d",
+        },{
             title:"Create Diagonal Layouts Like It's 2020",
             description:"A cool tutorial by Nils Binder how to craft diagonal sections in CSS.",
             link:"https://9elements.com/blog/pure-css-diagonal-layouts/",
@@ -43,11 +48,6 @@ const data = [
             description:"A new experimental JavaScript toolchain that includes a compiler, linter, formatter, bundler, testing framework and more.",
             link:"https://romejs.dev/",
             image:"https://raw.githubusercontent.com/facebookexperimental/rome/master/assets/logo_with_text.png",
-        },{
-            title:"Links to cross-origin destinations are unsafe",
-            description:"A post about the security risks of using target=_blank in your links.",
-            link:"https://web.dev/external-anchors-use-rel-noopener/",
-            image:"https://webdev.imgix.net/images/social.png",
         }]
     },
     {
