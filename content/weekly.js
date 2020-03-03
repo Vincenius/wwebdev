@@ -2,12 +2,17 @@ const data = [
     {
         id: '15',
         date: 'March 04, 2020',
-        description: "CSS Icons, Tailwind UI, simpleParallax.js, Asynchronous programming, Brainstorming business ideas and more...",
+        description: "CSS Icons, Mailbrew, Tailwind UI, simpleParallax.js, Brainstorming business ideas and more...",
         items: [{
             title:"css.gg",
             description:"A library of more than 500 minimalistic CSS icons, which are customizable and retina-ready.",
             link:"https://css.gg/",
             image:"https://css.gg/fav/og.png",
+        },{
+            title:"Mailbrew",
+            description:"Create automated newsletters from your favorite resources on reddit, twitter and other sources.",
+            link:"https://mailbrew.com/",
+            image:"https://mailbrew.com/cards/card.png",
         },{
             title:"Tailwind UI",
             description:"Early access to beautiful UI components by Adam Wathan and Steve Schoger.",
@@ -33,11 +38,6 @@ const data = [
             description:"A tiny Vanilla JS library for adding a parallax effect on any image.",
             link:"https://simpleparallax.com/",
             image:"https://simpleparallax.b-cdn.net/images/og_image.jpg",
-        } ,{
-            title:"JavaScript books for programmers",
-            description:"A bunch of books by Axel Rauschmayer about different aspects of JavaScript.",
-            link:"https://exploringjs.com/",
-            image:"/weekly/screenshots/avantsans.jpg",
         },{
             title:"Revealing Hero Effect",
             description:"A small tutorial by Claudia Romano about adding a reveal on scroll to sections.",
