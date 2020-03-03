@@ -1,5 +1,56 @@
 const data = [
     {
+        id: '15',
+        date: 'March 04, 2020',
+        description: "CSS Icons, Tailwind UI, simpleParallax.js, Asynchronous programming, Brainstorming business ideas and more...",
+        items: [{
+            title:"css.gg",
+            description:"A library of more than 500 minimalistic CSS icons, which are customizable and retina-ready.",
+            link:"https://css.gg/",
+            image:"https://css.gg/fav/og.png",
+        },{
+            title:"Tailwind UI",
+            description:"Early access to beautiful UI components by Adam Wathan and Steve Schoger.",
+            link:"https://tailwindui.com/",
+            image:"https://tailwindui.com/img/twitter-card.png",
+        },{
+            title:"Create Diagonal Layouts Like It's 2020",
+            description:"A cool tutorial by Nils Binder how to craft diagonal sections in CSS.",
+            link:"https://9elements.com/blog/pure-css-diagonal-layouts/",
+            image:"https://9elements.com/blog/content/images/2020/01/diagonal-cover.png",
+        },{
+            title:"How to brainstorm great business ideas",
+            description:"Courtland Allen of Indie Hackers shares his framework for coming up with great business ideas.",
+            link:"https://www.indiehackers.com/post/how-to-brainstorm-great-business-ideas-ab51c3d51c",
+            image:"https://storage.googleapis.com/indie-hackers.appspot.com/shareable-images/posts/ab51c3d51c",
+        },{
+            title:"simpleParallax.js",
+            description:"A tiny Vanilla JS library for adding a parallax effect on any image.",
+            link:"https://simpleparallax.com/",
+            image:"https://simpleparallax.b-cdn.net/images/og_image.jpg",
+        } ,{
+            title:"JavaScript books for programmers",
+            description:"A bunch of books by Axel Rauschmayer about different aspects of JavaScript.",
+            link:"https://exploringjs.com/",
+            image:"/weekly/screenshots/avantsans.jpg",
+        },{
+            title:"Revealing Hero Effect",
+            description:"A small tutorial by Claudia Romano about adding a reveal on scroll to sections.",
+            link:"https://codyhouse.co/tutorials/revealing-hero-effect",
+            image:"/weekly/screenshots/revealingheroeffect.png",
+        },{
+            title:"Rome",
+            description:"A new experimental JavaScript toolchain that includes a compiler, linter, formatter, bundler, testing framework and more.",
+            link:"https://romejs.dev/",
+            image:"https://raw.githubusercontent.com/facebookexperimental/rome/master/assets/logo_with_text.png",
+        },{
+            title:"Links to cross-origin destinations are unsafe",
+            description:"A post about the security risks of using target=_blank in your links.",
+            link:"https://web.dev/external-anchors-use-rel-noopener/",
+            image:"https://webdev.imgix.net/images/social.png",
+        }]
+    },
+    {
         id: '14',
         date: 'February 26, 2020',
         description: "PostHog, JavaScript Interview Questions, Free Programming Books, grep.app and more...",
