@@ -19,6 +19,11 @@ const data = [
             link:"https://tailwindui.com/",
             image:"https://tailwindui.com/img/twitter-card.png",
         },{
+            title:"SaaS landing page examples",
+            description:"A nice list of landing pages to get ideas and inspiration from.",
+            link:"https://saaslandingpage.com/",
+            image:"https://saaslandingpage.com/wp-content/uploads/2020/01/fb-og.png",
+        },{
             title:"React Hook Form",
             description:"Use React Hooks to create performant, flexible and extensible forms with easy-to-use validation.",
             link:"https://react-hook-form.com/",
@@ -33,11 +38,6 @@ const data = [
             description:"Courtland Allen of Indie Hackers shares his framework for coming up with great business ideas.",
             link:"https://www.indiehackers.com/post/how-to-brainstorm-great-business-ideas-ab51c3d51c",
             image:"https://storage.googleapis.com/indie-hackers.appspot.com/shareable-images/posts/ab51c3d51c",
-        },{
-            title:"simpleParallax.js",
-            description:"A tiny Vanilla JS library for adding a parallax effect on any image.",
-            link:"https://simpleparallax.com/",
-            image:"https://simpleparallax.b-cdn.net/images/og_image.jpg",
         },{
             title:"Revealing Hero Effect",
             description:"A small tutorial by Claudia Romano about adding a reveal on scroll to sections.",
