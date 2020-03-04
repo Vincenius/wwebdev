@@ -2,7 +2,7 @@ const data = [
     {
         id: '15',
         date: 'March 04, 2020',
-        description: "CSS Icons, Mailbrew, Tailwind UI, simpleParallax.js, Brainstorming business ideas and more...",
+        description: "CSS Icons, Mailbrew, Tailwind UI, SaaS landing pages, Brainstorming business ideas and more...",
         items: [{
             title:"css.gg",
             description:"A library of more than 500 minimalistic CSS icons, which are customizable and retina-ready.",
