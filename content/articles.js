@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 6,
+        type: 'Article',
+        date: 'March 09, 2020',
+        headline: 'How to kickstart new projects in your cli with Yeoman',
+        description: "TODO...",
+        link: '/blog/how-to-create-yeoman-generator',
+        previewImage: '/blog/todo.png',
+    },
+    {
         id: 5,
         type: 'Article',
         date: 'February 02, 2020',
