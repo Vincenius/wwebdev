@@ -66,6 +66,12 @@ const Post = () => (
                 image="/resources/creative-backgrounds/svggradientwavegenerator.png"
             />
             <LinkBox
+                title="THPACE!"
+                description="A pretty space animation out of triangles using canvas."
+                link="https://www.braedin.com/Thpace/"
+                image="/resources/creative-backgrounds/thpace.jpg"
+            />
+            <LinkBox
                 title="Naker"
                 description="Create interactive backgrounds on this website."
                 link="https://app.naker.io/back/"
@@ -84,8 +90,14 @@ const Post = () => (
                 image="/resources/creative-backgrounds/cssgradient.png"
             />
             <LinkBox
+                title="GeoPattern"
+                description="A generator for beautiful SVG patterns."
+                link="https://btmills.github.io/geopattern/"
+                image="/resources/creative-backgrounds/geopattern.jpg"
+            />
+            <LinkBox
                 title="Decorative WebGL Backgrounds"
-                description="A collection of shapes created using WebGL"
+                description="A collection of shapes created using WebGL."
                 link="https://tympanus.net/Development/DecorativeBackgrounds/index.html"
                 image="/resources/creative-backgrounds/webglbackgrounds.png"
             />
@@ -102,10 +114,22 @@ const Post = () => (
                 image="/resources/creative-backgrounds/gradientanimator.png"
             />
             <LinkBox
+                title="Flat Surface Shader"
+                description="A configurable lightning simulation using canvas or SVG polygons."
+                link="http://matthew.wagerfield.com/flat-surface-shader/"
+                image="/resources/creative-backgrounds/flatsurfaceshader.jpg"
+            />
+            <LinkBox
                 title="Animated Background Headers"
                 description="Creative website header animations using Canvas and JavaScript."
                 link="https://tympanus.net/Development/AnimatedHeaderBackgrounds/index3.html"
                 image="/resources/creative-backgrounds/animatedbackgroundheaders.png"
+            />
+            <LinkBox
+                title="waterpipe.js"
+                description="A plugin for smoky background generation using canvas."
+                link="http://dragdropsite.github.io/waterpipe.js/"
+                image="/resources/creative-backgrounds/waterpipe.jpg"
             />
             <LinkBox
                 title="Animated CSS Background Generator"
