@@ -124,3 +124,7 @@ export const Code = styled.code`
     margin: 0 4px;
     background: #f8f8f8f8;
 `
+export const SmallImage = styled.img`
+    max-width: 400px;
+    max-height: 400px;
+`

@@ -3,10 +3,10 @@ const data = [
         id: 6,
         type: 'Article',
         date: 'March 09, 2020',
-        headline: 'How to kickstart new projects in your cli with Yeoman',
+        headline: 'How to speed up kickstarting new projects in your cli with Yeoman',
         description: "TODO...",
         link: '/blog/how-to-create-yeoman-generator',
-        previewImage: '/blog/todo.png',
+        previewImage: '/blog/yeoman/preview.png',
     },
     {
         id: 5,
