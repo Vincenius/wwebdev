@@ -27,6 +27,33 @@ const snippet1 = `prompting() {
     });
 }`
 
+const snippet2 = `{
+        type: "input",
+        name: "name",
+        message: "Your project name",
+        default: this.appname // Default to current folder name
+}`
+
+const snippet3 = `writing() {
+    this.fs.copy(
+        this.templatePath('dummyfile.txt'),
+        this.destinationPath('dummyfile.txt')
+    );
+}`
+
+const snippet4 = `this.templatePath('**/*'),
+this.destinationPath()`
+
+const snippet5 = `this.fs.copyTpl(
+    this.templatePath('**/*'),
+    this.destinationPath(),
+    { projectName: this.props.projectName }
+);`
+
+const snippet6 = `install() {
+    this.installDependencies();
+}`
+
 const Post = () => (
     <Layout
         isArticle={true}
@@ -44,6 +71,8 @@ const Post = () => (
                 as this is one of my most commonly used base structures.
             </p>
             <img src="/blog/yeoman/demo.gif" alt="yeoman generator demonstration" />
+
+            <h2>Creating your own generator</h2>
             <p>
                 In this post I'll explain how Yeoman works and how you can setup your own generator.
                 First of all you'll have to globally install <a href="https://yeoman.io/" target="blank" rel="noopener noreferrer">Yeoman </a> and
@@ -79,9 +108,89 @@ const Post = () => (
             />
 
             <p>
-                In the beginning the function greets the user with <ui.Code>this.log()</ui.Code>. Afterward, some
+                In the beginning the function greets the user with <ui.Code>this.log()</ui.Code>. Afterward, the
                 questions for the user of the generator are defined in the constant <ui.Code>prompts</ui.Code>.
+                At the end the answers to these prompts are stored in <ui.Code>this.props</ui.Code>.
             </p>
+            <p>
+                To add prompts for the user, you just need to extend the <ui.Code>prompts</ui.Code> array. A question
+                for the name of the project would look like this:
+            </p>
+
+            <CodeBlock
+                language="javascript"
+                value={snippet2}
+            />
+
+            <p>
+                For more information about user interactions check
+                the <a href="https://yeoman.io/authoring/user-interactions.html" target="blank" rel="noopener noreferrer">Yeoman documentation</a>.
+            </p>
+
+            <h3>writing()</h3>
+
+            <CodeBlock
+                language="javascript"
+                value={snippet3}
+            />
+
+            <p>
+                This is where the magic happens. This default code takes the file <ui.Code>dummyfile.txt</ui.Code> from
+                the directory <ui.Code>generators/app/templates</ui.Code> and copies it to the directory from where the
+                the generator is called. If you want to just copy all files from the <ui.Code>templates</ui.Code> folder
+                you can also use wildcard selectors:
+            </p>
+
+            <CodeBlock
+                language="javascript"
+                value={snippet4}
+            />
+
+            <p>
+                Of course we also want to make use of the prompts the user answered. Therefore we have to change
+                the <ui.Code>this.fs.copy</ui.Code> function to <ui.Code>this.fs.copyTpl</ui.Code> and pass the
+                prop to the function:
+            </p>
+
+            <CodeBlock
+                language="javascript"
+                value={snippet5}
+            />
+
+            <p>
+                For the filesystem Yeoman is using
+                the <a href="https://github.com/sboudrias/mem-fs-editor" target="blank" rel="noopener noreferrer">mem-fs-editor</a>,
+                so check their documentation for more details. As templating engine Yeoman is
+                using <a href="https://github.com/mde/ejs" target="blank" rel="noopener noreferrer">ejs</a>. So to make use of the
+                passed variable you can include it in your files (eg. dummyfile.txt) with following syntax:
+            </p>
+
+            <CodeBlock
+                language="html"
+                value="Welcome to your project: <%= projectName %>"
+            />
+
+            <h3>install()</h3>
+            <CodeBlock
+                language="javascript"
+                value={snippet6}
+            />
+            <p>
+                TODO npm and stuff
+                https://yeoman.io/authoring/dependencies.html
+            </p>
+
+            <h2>Handling user options</h2>
+            TODO
+
+            <h3>Overwriting files</h3>
+            TODO
+
+            <h3>Appending files</h3>
+            TODO
+
+            <h2>Publishing your generator to the npm registry</h2>
+            TODO
 
             <PrevNext postId={postId} isArticle={true} />
 
