@@ -5,7 +5,7 @@ const data = [
         description: "Monitoror, Slide to Subscribe, Micromodal, Distorted Link Effects, Docker Essentials and more...",
         items: [{
             title:"Monitoror",
-            description:"Create a monitoring overview for your services with this open source software.",
+            description:"Create a monitoring overview for your services with this open-source software.",
             link:"https://monitoror.com/",
             image:"https://monitoror.com/assets/images/opengraph.png",
         },{
@@ -35,12 +35,12 @@ const data = [
             image:"https://raw.githubusercontent.com/robinloeffel/cosha/master/sample.jpg",
         },{
             title:"Faux Code Generator",
-            description:"A generator which turns real code grom GitHub Gists into faux code SVG images.",
+            description:"A generator that turns real code grom GitHub Gists into faux code SVG images.",
             link:"http://knutsynstad.com/fauxcode/",
             image:"http://knutsynstad.com/fauxcode/thumbnail.png",
         },{
             title:"Essential Docker for Javascript and Front End Developers",
-            description:"A cool guide to get started with Docker.",
+            description:"A cool guide to getting started with Docker.",
             link:"https://nosleepjavascript.com/docker-essentials-for-front-end-developers/",
             image:"https://tr4.cbsistatic.com/hub/i/r/2016/10/18/831f017c-ee68-4bd6-8a5c-ab31b4d35d6d/resize/770x/1cedcf2f03388a9720835a628a8a9765/dockerhero.jpg",
         },{
