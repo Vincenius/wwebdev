@@ -5,7 +5,7 @@ const data = [
         description: "Monitoror, Slide to Subscribe, Micromodal, Distorted Link Effects, Docker Essentials and more...",
         items: [{
             title:"Monitoror",
-            description:"Create a monitoring overview for your services with this open-source software.",
+            description:"Create a monitoring overview of your services with this open-source software.",
             link:"https://monitoror.com/",
             image:"https://monitoror.com/assets/images/opengraph.png",
         },{
