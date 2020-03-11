@@ -1,5 +1,56 @@
 const data = [
     {
+        id: '16',
+        date: 'March 11, 2020',
+        description: "Monitoror, Slide to Subscribe, Micromodal, Distorted Link Effects, Docker Essentials and more...",
+        items: [{
+            title:"Monitoror",
+            description:"Create a monitoring overview of your services with this open-source software.",
+            link:"https://monitoror.com/",
+            image:"https://monitoror.com/assets/images/opengraph.png",
+        },{
+            title:"Slide to Subscribe",
+            description:"A super simple signup form, which can be included with one line of HTML.",
+            link:"https://slidetosubscribe.com/",
+            image:"https://slidetosubscribe.com/assets/img/brand/slidetosubscribe.png",
+        },{
+            title:"Micromodal.js",
+            description:"A javascript library for accessible modal dialogs with less than 2kb.",
+            link:"https://github.com/ghosh/Micromodal",
+            image:"https://micromodal.now.sh/micromodal.a8c419eb.jpg",
+        },{
+            title:"Distorted Link Effects with SVG Filters",
+            description:"Cool ideas for link distortion effects using SVG filters by Mary Lou of Codrops.",
+            link:"https://tympanus.net/codrops/2020/03/04/distorted-link-effects-with-svg-filters/",
+            image:"https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2020/03/DistortedLink_featured.png",
+        },{
+            title:"browser-2020",
+            description:"A list of amazing things modern browsers can do.",
+            link:"https://github.com/luruke/browser-2020",
+            image:"https://raw.githubusercontent.com/luruke/browser-2020/master/images/pip.png",
+        },{
+            title:"cosha",
+            description:"cosha is a nice tool to add colorful shadows to your images.",
+            link:"https://github.com/robinloeffel/cosha",
+            image:"https://raw.githubusercontent.com/robinloeffel/cosha/master/sample.jpg",
+        },{
+            title:"Faux Code Generator",
+            description:"A generator that turns real code grom GitHub Gists into faux code SVG images.",
+            link:"http://knutsynstad.com/fauxcode/",
+            image:"http://knutsynstad.com/fauxcode/thumbnail.png",
+        },{
+            title:"Essential Docker for Javascript and Front End Developers",
+            description:"A cool guide to getting started with Docker.",
+            link:"https://nosleepjavascript.com/docker-essentials-for-front-end-developers/",
+            image:"https://tr4.cbsistatic.com/hub/i/r/2016/10/18/831f017c-ee68-4bd6-8a5c-ab31b4d35d6d/resize/770x/1cedcf2f03388a9720835a628a8a9765/dockerhero.jpg",
+        },{
+            title:"Introduction to D3.js",
+            description:"An introduction to the JavaScript library for manipulating documents based on data.",
+            link:"https://observablehq.com/@mitvis/introduction-to-d3",
+            image:"https://static.observableusercontent.com/thumbnail/b2fc1878eb1c167f411d66e0c9795398308d94fd5b8cd6dddd76ea3ef7d7b52f.jpg",
+        }]
+    },
+    {
         id: '15',
         date: 'March 04, 2020',
         description: "CSS Icons, Mailbrew, Tailwind UI, SaaS landing pages, Brainstorming business ideas and more...",
