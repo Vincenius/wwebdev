@@ -54,6 +54,51 @@ const snippet6 = `install() {
     this.installDependencies();
 }`
 
+const snippet7 = `this.installDependencies({
+    npm: false,
+    bower: true,
+    yarn: true
+});`
+
+const snippet8 = `install() {
+    if (this.props.installLodash) {
+        this.npmInstall(['lodash'], { 'save-dev': true });
+    }
+}`
+
+const snippet9 = `prompting() {
+    // Have Yeoman greet the user.
+    this.log(
+        yosay(\`Welcome to the slick \${chalk.red('generator-yeoman-demo')} generator!\`)
+    );
+
+    const prompts = [
+        {
+            type: "input",
+            name: "name",
+            message: "Your project name",
+            default: this.appname // Default to current folder name
+        },
+        {
+            type: 'confirm',
+            name: 'someAnswer',
+            message: 'Would you like to enable this option?',
+            default: true
+        },
+        {
+            type: 'confirm',
+            name: 'anotherAnswer',
+            message: 'Would you like to enable this option too?',
+            default: true
+        }
+    ];
+
+    return this.prompt(prompts).then(props => {
+        // To access props later use this.props.someAnswer;
+        this.props = props;
+    });
+}`
+
 const Post = () => (
     <Layout
         isArticle={true}
@@ -160,7 +205,7 @@ const Post = () => (
             <p>
                 For the filesystem Yeoman is using
                 the <a href="https://github.com/sboudrias/mem-fs-editor" target="blank" rel="noopener noreferrer">mem-fs-editor</a>,
-                so check their documentation for more details. As templating engine Yeoman is
+                so check their documentation if you want to know more details. As templating engine Yeoman is
                 using <a href="https://github.com/mde/ejs" target="blank" rel="noopener noreferrer">ejs</a>. So to make use of the
                 passed variable you can include it in your files (eg. dummyfile.txt) with following syntax:
             </p>
@@ -175,13 +220,42 @@ const Post = () => (
                 language="javascript"
                 value={snippet6}
             />
+
             <p>
-                TODO npm and stuff
-                https://yeoman.io/authoring/dependencies.html
+                This will run npm and bower install by default. But you can also pass parameter to specify what should be called.
             </p>
 
+            <CodeBlock
+                language="javascript"
+                value={snippet7}
+            />
+
+            <p>
+                It is also possible to install specific packages programatically by
+                using <ui.Code>npmInstall()</ui.Code> or <ui.Code>yarnInstall()</ui.Code>. This makes most sense
+                in combination with a check for what the user selected in the <ui.Code>prompting()</ui.Code> function:
+            </p>
+
+            <CodeBlock
+                language="javascript"
+                value={snippet8}
+            />
+
             <h2>Handling user options</h2>
-            TODO
+            <p>
+                Let's have a look on how to work with user input. For that I'll add two demo options to
+                the <ui.Code>prompting()</ui.Code> function:
+            </p>
+
+            <CodeBlock
+                language="javascript"
+                value={snippet9}
+            />
+
+            <p>
+                Now we'll have <ui.Code>this.props.someAnswer</ui.Code> and <ui.Code>this.props.anotherAnswer</ui.Code> available
+                in our <ui.Code>writing()</ui.Code> function.
+            </p>
 
             <h3>Overwriting files</h3>
             TODO
