@@ -29,7 +29,7 @@ const snippet1 = `prompting() {
 
 const snippet2 = `{
         type: "input",
-        name: "name",
+        name: "projectName",
         message: "Your project name",
         default: this.appname // Default to current folder name
 }`
@@ -75,7 +75,7 @@ const snippet9 = `prompting() {
     const prompts = [
         {
             type: "input",
-            name: "name",
+            name: "projectName",
             message: "Your project name",
             default: this.appname // Default to current folder name
         },
@@ -144,8 +144,8 @@ const Post = () => (
             </p>
             <CodeBlock value="npm install -g yo generator-generator" />
             <p>
-                Now you can scaffold your generator by typing <ui.Code>yo generator</ui.Code> and
-                going through the wizard. Afterward, the structure of your project should look like this:
+                After the installation is done, you can scaffold your generator by typing <ui.Code>yo generator</ui.Code> and
+                going through the wizard. Now the structure of your project should look like this:
             </p>
             <ui.SmallImage src="/blog/yeoman/structure.png" alt="yeoman generator structure" />
             <p>
@@ -158,12 +158,20 @@ const Post = () => (
                 I'd recommend to open a new workspace for that, so you're not messing up your generator project.
             </p>
             <p>
+                If you do that right away you'll might get an error, if you don't have bower installed. That's because yeoman is trying to install
+                dependencies with npm and bower by defaut. But don't worry, we'll cover this later.
+            </p>
+            <p>
                 The interesting part of the generator is happening inside <ui.Code>generators/app/</ui.Code>.
                 Let's have a look at the <ui.Code>index.js</ui.Code> in the app folder first. The exported class
                 includes three functions: <ui.Code>prompting()</ui.Code>, <ui.Code>writing()</ui.Code> and <ui.Code>install()</ui.Code>
             </p>
 
             <h3>prompting()</h3>
+
+            <p>
+                This function is executed first, when running your generator.
+            </p>
 
             <CodeBlock
                 language="javascript"
