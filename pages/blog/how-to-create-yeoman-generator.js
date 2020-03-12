@@ -99,6 +99,24 @@ const snippet9 = `prompting() {
     });
 }`
 
+const snippet10 = `_generateFiles(path) {
+    this.fs.copyTpl(
+        this.templatePath(\`\${path}/**/*\`),
+        this.destinationPath(),
+        { projectName: this.props.projectName },
+    )
+}`
+
+const snippet11 = `writing() {
+    this._generateFiles('base')
+
+    if (this.props.someAnswer)
+        this._generateFiles('option')
+
+    if (this.props.anotherAnswer)
+        this._generateFiles('anotherOption')
+}`
+
 const Post = () => (
     <Layout
         isArticle={true}
@@ -258,13 +276,78 @@ const Post = () => (
             </p>
 
             <h3>Overwriting files</h3>
-            TODO
+            <p>
+                Of course you can just copy file by file depending on the chosen options. But this is not very scalable.
+                So create a new function for copying in your <ui.Code>index.js</ui.Code> file.
+            </p>
 
-            <h3>Appending files</h3>
-            TODO
+            <CodeBlock
+                language="javascript"
+                value={snippet10}
+            />
+
+            <p>
+                This is almost the same function we have in the <ui.Code>writing()</ui.Code> function. The underscore <ui.Code>_</ui.Code> indicates,
+                that this is a private function. It accepts a path parameter and copies everything from the corresponding folder. So
+                if we would call <ui.Code>_generateFiles('base')</ui.Code>, it would copy all files from <ui.Code>generators/app/templates/base</ui.Code>.
+            </p>
+
+            <p>
+                So now let's update our <ui.Code>writing()</ui.Code> function to use <ui.Code>_generateFiles()</ui.Code>.
+            </p>
+
+            <CodeBlock
+                language="javascript"
+                value={snippet11}
+            />
+
+            <p>
+                So this code will first copy everything from <ui.Code>templates/base</ui.Code>. Then it would copy the files <ui.Code>templates/option</ui.Code> if
+                the user selected <ui.Code>someAnswer</ui.Code>. Files with the same path and title will be overwritten. Afterward, it will do the same
+                for <ui.Code>anotherAnswer</ui.Code> and <ui.Code>templates/anotherOption</ui.Code>. Let's take following example:
+            </p>
+
+            <img src="/blog/yeoman/overwriting-example.png" alt="file tree in templates directory with subfolders"/>
+
+            <p>
+                This would mean that we end up with <ui.Code>testFile.txt</ui.Code> from <ui.Code>templates/base</ui.Code> if we answered no to the
+                generators prompts. If we answer yes to the first question (<ui.Code>someAnswer</ui.Code>), we'd end up
+                with <ui.Code>testFile.txt</ui.Code> and <ui.Code>textFile2.txt</ui.Code> from <ui.Code>templates/option</ui.Code>. And if we answered also yes
+                to the third question (<ui.Code>anotherAnswer</ui.Code>), we'd have <ui.Code>testFile.txt</ui.Code> from <ui.Code>option</ui.Code>,
+                but <ui.Code>testFile2.txt</ui.Code> and <ui.Code>testFile3.txt</ui.Code> from <ui.Code>templates/anotherOption</ui.Code>.
+            </p>
 
             <h2>Publishing your generator to the npm registry</h2>
-            TODO
+            <p>
+                When you're done developing your generator, you can push it to the npm registry to be able to install it globally on any machine.
+                If you don't want it to be available on npm you can still always use your generator by cloning your repository and
+                doing <ui.Code>npm link</ui.Code>.
+            </p>
+            <p>
+                First you need to have an npm account. If you don't have one yet, head
+                to <a href="https://www.npmjs.com/signup" target="blank" rel="noopener noreferrer">npmjs.com/signup</a>.
+            </p>
+            <p>
+                Afterward, head back to your project and type in the console
+            </p>
+            <CodeBlock
+                value="npm login"
+            />
+            <p>
+                Now enter the email and password of your npm account. <br/>
+                The last thing you have to do is typing:
+            </p>
+            <CodeBlock
+                value="npm publish"
+            />
+            <p>
+                After up to one day, your generator will then also be listed on
+                the <a href="https://yeoman.io/generators/" target="blank" rel="noopener noreferrer">yeoman website</a> for others to be discovered.
+            </p>
+            <p>
+                To read more about publishing on npm,
+                check this <a href="https://zellwk.com/blog/publish-to-npm/" target="blank" rel="noopener noreferrer">article</a>.
+            </p>
 
             <PrevNext postId={postId} isArticle={true} />
 
