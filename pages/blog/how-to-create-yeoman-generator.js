@@ -128,7 +128,7 @@ const Post = () => (
     >
         <ui.ArticleContainer as="article">
             <p>
-                I found myself often copy pasting code from other projects when starting new projects.
+                I found myself often copy-pasting code from other projects when starting new projects.
                 This is why I created a Yeoman generator, which setups
                 a <a href="https://github.com/Vincenius/generator-next-styled-components" target="blank" rel="noopener noreferrer">nextjs project with styled components</a>,
                 as this is one of my most commonly used base structures.
@@ -137,7 +137,7 @@ const Post = () => (
 
             <h2>Creating your own generator</h2>
             <p>
-                In this post I'll explain how Yeoman works and how you can setup your own generator.
+                In this post I'll explain how Yeoman works and how you can set up your own generator.
                 First of all you'll have to globally install <a href="https://yeoman.io/" target="blank" rel="noopener noreferrer">Yeoman </a> and
                 the <a href="https://github.com/yeoman/generator-generator" target="blank" rel="noopener noreferrer">generator-generator</a> from
                 Yeoman, which helps setting up new generators.
@@ -155,11 +155,11 @@ const Post = () => (
             <CodeBlock value="npm link" />
             <p>
                 Now you'll be able to run your generator by typing <ui.Code>yo name-of-your-generator</ui.Code>.
-                I'd recommend to open a new workspace for that, so you're not messing up your generator project.
+                I'd recommend opening a new workspace for that, so you're not messing up your generator project.
             </p>
             <p>
-                If you do that right away you'll might get an error, if you don't have bower installed. That's because yeoman is trying to install
-                dependencies with npm and bower by defaut. But don't worry, we'll cover this later.
+                If you do that right away you'll get an error, if you don't have bower installed. That's because yeoman is trying to install
+                dependencies with npm and bower by default. But don't worry, we'll cover this later.
             </p>
             <p>
                 The interesting part of the generator is happening inside <ui.Code>generators/app/</ui.Code>.
@@ -170,7 +170,7 @@ const Post = () => (
             <h3>prompting()</h3>
 
             <p>
-                This function is executed first, when running your generator.
+                This function is executed first when running your generator.
             </p>
 
             <CodeBlock
@@ -179,9 +179,10 @@ const Post = () => (
             />
 
             <p>
-                In the beginning the function greets the user with <ui.Code>this.log()</ui.Code>. Afterward, the
+                In the beginning, the function greets the user with <ui.Code>this.log()</ui.Code>. Afterward, the
                 questions for the user of the generator are defined in the constant <ui.Code>prompts</ui.Code>.
-                At the end the answers to these prompts are stored in <ui.Code>this.props</ui.Code>.
+                In the end, the answers to these prompts are stored in <ui.Code>this.props</ui.Code> by their name. So the answer
+                to the question above will be accessible through <ui.Code>this.prompt.someAnswer</ui.Code>.
             </p>
             <p>
                 To add prompts for the user, you just need to extend the <ui.Code>prompts</ui.Code> array. A question
@@ -207,7 +208,7 @@ const Post = () => (
 
             <p>
                 This is where the magic happens. This default code takes the file <ui.Code>dummyfile.txt</ui.Code> from
-                the directory <ui.Code>generators/app/templates</ui.Code> and copies it to the directory from where the
+                the directory <ui.Code>generators/app/templates</ui.Code> and copies it to the directory from where
                 the generator is called. If you want to just copy all files from the <ui.Code>templates</ui.Code> folder
                 you can also use wildcard selectors:
             </p>
@@ -218,7 +219,7 @@ const Post = () => (
             />
 
             <p>
-                Of course we also want to make use of the prompts the user answered. Therefore we have to change
+                Of course, we also want to make use of the prompts the user answered. Therefore we have to change
                 the <ui.Code>this.fs.copy</ui.Code> function to <ui.Code>this.fs.copyTpl</ui.Code> and pass the
                 prop to the function:
             </p>
@@ -233,7 +234,7 @@ const Post = () => (
                 the <a href="https://github.com/sboudrias/mem-fs-editor" target="blank" rel="noopener noreferrer">mem-fs-editor</a>,
                 so check their documentation if you want to know more details. As templating engine Yeoman is
                 using <a href="https://github.com/mde/ejs" target="blank" rel="noopener noreferrer">ejs</a>. So to make use of the
-                passed variable you can include it in your files (eg. dummyfile.txt) with following syntax:
+                passed variable you can include it in your files (eg. dummyfile.txt) with the following syntax:
             </p>
 
             <CodeBlock
@@ -248,7 +249,7 @@ const Post = () => (
             />
 
             <p>
-                This will run npm and bower install by default. But you can also pass parameter to specify what should be called.
+                This will run npm and bower install by default. But you can also pass parameters to specify what should be called.
             </p>
 
             <CodeBlock
@@ -257,8 +258,8 @@ const Post = () => (
             />
 
             <p>
-                It is also possible to install specific packages programatically by
-                using <ui.Code>npmInstall()</ui.Code> or <ui.Code>yarnInstall()</ui.Code>. This makes most sense
+                It is also possible to install specific packages programmatically by
+                using <ui.Code>npmInstall()</ui.Code> or <ui.Code>yarnInstall()</ui.Code>. This makes the most sense
                 in combination with a check for what the user selected in the <ui.Code>prompting()</ui.Code> function:
             </p>
 
@@ -267,9 +268,13 @@ const Post = () => (
                 value={snippet8}
             />
 
+            <p>
+                Also, you can just remove the whole <ui.Code>install()</ui.Code> function if you don't want anything to be installed.
+            </p>
+
             <h2>Handling user options</h2>
             <p>
-                Let's have a look on how to work with user input. For that I'll add two demo options to
+                Let's have a look at how to work with user input. For that I'll add two demo options to
                 the <ui.Code>prompting()</ui.Code> function:
             </p>
 
@@ -285,7 +290,7 @@ const Post = () => (
 
             <h3>Overwriting files</h3>
             <p>
-                Of course you can just copy file by file depending on the chosen options. But this is not very scalable.
+                Of course, you can just copy file by file depending on the chosen options. But this is not very scalable.
                 So create a new function for copying in your <ui.Code>index.js</ui.Code> file.
             </p>
 
@@ -312,14 +317,14 @@ const Post = () => (
             <p>
                 So this code will first copy everything from <ui.Code>templates/base</ui.Code>. Then it would copy the files <ui.Code>templates/option</ui.Code> if
                 the user selected <ui.Code>someAnswer</ui.Code>. Files with the same path and title will be overwritten. Afterward, it will do the same
-                for <ui.Code>anotherAnswer</ui.Code> and <ui.Code>templates/anotherOption</ui.Code>. Let's take following example:
+                for <ui.Code>anotherAnswer</ui.Code> and <ui.Code>templates/anotherOption</ui.Code>. Let's take the following example:
             </p>
 
             <img src="/blog/yeoman/overwriting-example.png" alt="file tree in templates directory with subfolders"/>
 
             <p>
                 This would mean that we end up with <ui.Code>testFile.txt</ui.Code> from <ui.Code>templates/base</ui.Code> if we answered no to the
-                generators prompts. If we answer yes to the first question (<ui.Code>someAnswer</ui.Code>), we'd end up
+                generator's prompts. If we answer yes to the first question (<ui.Code>someAnswer</ui.Code>), we'd end up
                 with <ui.Code>testFile.txt</ui.Code> and <ui.Code>textFile2.txt</ui.Code> from <ui.Code>templates/option</ui.Code>. And if we answered also yes
                 to the third question (<ui.Code>anotherAnswer</ui.Code>), we'd have <ui.Code>testFile.txt</ui.Code> from <ui.Code>option</ui.Code>,
                 but <ui.Code>testFile2.txt</ui.Code> and <ui.Code>testFile3.txt</ui.Code> from <ui.Code>templates/anotherOption</ui.Code>.
@@ -332,7 +337,7 @@ const Post = () => (
                 doing <ui.Code>npm link</ui.Code>.
             </p>
             <p>
-                First you need to have an npm account. If you don't have one yet, head
+                First, you need to have an npm account. If you don't have one yet, head
                 to <a href="https://www.npmjs.com/signup" target="blank" rel="noopener noreferrer">npmjs.com/signup</a>.
             </p>
             <p>
