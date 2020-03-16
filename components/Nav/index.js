@@ -1,4 +1,5 @@
 import React from 'react'
+import { SocialBar } from '../'
 import * as S from './styled'
 
 const links = [
@@ -15,16 +16,20 @@ const links = [
 const Nav = () => (
   <S.Container>
     <S.Navigation as="nav">
-      <a href='/'>
-        <img src="/logo-text.png" alt="Logo of wweb.dev"/>
-      </a>
-      <ul>
-        {links.map(({ key, href, label }) => (
-          <li key={key}>
-            <a href={href}>{label}</a>
-          </li>
-        ))}
-      </ul>
+      <S.Main>
+        <a href='/'>
+          <img src="/logo-text.png" alt="Logo of wweb.dev"/>
+        </a>
+        <ul>
+          {links.map(({ key, href, label }) => (
+            <li key={key}>
+              <a href={href}>{label}</a>
+            </li>
+          ))}
+        </ul>
+      </S.Main>
+
+      <SocialBar />
     </S.Navigation>
   </S.Container>
 )

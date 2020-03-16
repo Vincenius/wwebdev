@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import * as ui from '../../ui'
-import { darkGrey, breakpointSmall, breakpoint } from '../../ui/constants'
+import { darkGrey, breakpointSmall, breakpoint, breakpointLarge } from '../../ui/constants'
 
 export const Container = styled.div`
     background: ${darkGrey};
@@ -10,9 +10,10 @@ export const Container = styled.div`
 
     img {
         width: 90px;
+        margin-right: 30px;
 
-        @media (max-width: ${breakpoint}) {
-            margin-bottom: 10px;
+        @media (max-width: ${breakpointLarge}) {
+            margin-right: 0
         }
     }
 `
@@ -24,7 +25,7 @@ export const Navigation = styled(ui.Container)`
     align-items: center;
     margin: 0 auto;
 
-    @media (max-width: ${breakpoint}) {
+    @media (max-width: ${breakpointLarge}) {
         flex-direction: column;
     }
 
@@ -34,8 +35,35 @@ export const Navigation = styled(ui.Container)`
         padding: 0;
         margin: 0;
 
+        @media (max-width: ${breakpointLarge}) {
+            margin-bottom: 15px;
+            line-height: 50px;
+        }
+
+        li {
+            &:last-child a {
+                @media (max-width: ${breakpointLarge}) {
+                    padding-right: 16px;
+                }
+            }
+        }
+    }
+`
+
+export const Main = styled.div`
+    display: flex;
+    align-items: center;
+
+    @media (max-width: ${breakpointLarge}) {
+        flex-direction: column;
+    }
+
+    ul {
+        @media (max-width: ${breakpointLarge}) {
+            margin: 15px 0;
+        }
+
         @media (max-width: ${breakpointSmall}) {
-            margin-top: 20px;
             flex-wrap: wrap;
             justify-content: center;
         }
@@ -51,10 +79,6 @@ export const Navigation = styled(ui.Container)`
             line-height: 16px;
             padding: 8px 24px;
 
-            @media (max-width: ${breakpoint}) {
-                line-height: 50px;
-            }
-
             &:hover {
                 color: #fff;
             }
@@ -63,7 +87,7 @@ export const Navigation = styled(ui.Container)`
         li:last-child a {
             padding-right: 0;
 
-            @media (max-width: ${breakpointSmall}) {
+            @media (max-width: ${breakpointLarge}) {
                 padding-right: 24px;
             }
         }

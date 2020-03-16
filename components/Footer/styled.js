@@ -10,10 +10,6 @@ export const Container = styled.footer`
     color: ${lightGrey};
     margin-top: 50px;
 
-    svg {
-        fill: ${lightGrey};
-    }
-
     img {
         width: 100px;
     }
@@ -35,27 +31,6 @@ export const Copyright = styled.div`
     letter-spacing: 0px;
     color: ${lightGrey};
     margin-top: 12px;
-`
-export const Screenreader = styled.span`
-    clip: rect(1px, 1px, 1px, 1px);
-    position: absolute !important;
-    height: 1px;
-    width: 1px;
-    overflow: hidden;
-    word-wrap: normal !important;
-`
-export const Social = styled.ul`
-    list-style: none;
-
-    li {
-        a {
-            padding: 16px;
-        }
-
-        &:last-child a {
-            padding-right: 0;
-        }
-    }
 `
 export const RightFooter = styled.div`
     display: flex;
