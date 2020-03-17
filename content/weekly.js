@@ -1,5 +1,56 @@
 const data = [
     {
+        id: '17',
+        date: 'March 18, 2020',
+        description: "midori, Jitsi Meet, Creative Coding Essentials, unscreen, JavaScript CheatSheet and more...",
+        items: [{
+            title:"midory",
+            description:"A cool library for animated image backgrounds.",
+            link:"https://aeroheim.github.io/midori/",
+            image:"/weekly/screenshots/midori.jpg",
+        },{
+            title:"Jitsi Meet",
+            description:"A simple video conferencing solution, which is fully encypted and open source.",
+            link:"https://meet.jit.si/",
+            image:"/weekly/screenshots/jitsimeet.jpg",
+        },{
+            title:"Creative Coding Essentials",
+            description:"A free course about the basics of creative coding by Tim Rodenbröker.",
+            link:"https://timrodenbroeker.de/courses/creative-coding-essentials/",
+            image:"https://timrodenbroeker.de/wp-content/uploads/2019/07/rotate1_alt2-3.gif",
+        },{
+            title:"unscreen",
+            description:"A tool to automatically remove any background from videos.",
+            link:"https://www.unscreen.com/",
+            image:"https://www.unscreen.com/remove_video_background.jpg",
+        },{
+            title:"JavaScript CheatSheet",
+            description:"A nice reference for JavaScript, including the most important concepts of the language.",
+            link:"https://github.com/alhassy/JavaScriptCheatSheet",
+            image:"/weekly/screenshots/jscheetsheet.jpg",
+        },{
+            title:"Background Scale Hover Effect",
+            description:"A cool background scale hover effect by Mary Lou of Codrops.",
+            link:"https://tympanus.net/Development/BackgroundScaleHoverEffect/",
+            image:"https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2020/03/BackgroundScaleClip_featured.jpg",
+        },{
+            title:"Beautiful React Hooks",
+            description:"A collection of useful React hooks to speed-up the development.",
+            link:"https://beautifulinteractions.github.io/beautiful-react-hooks/",
+            image:"/weekly/screenshots/beautifulreacthooks.jpg",
+        },{
+            title:"Stop using isLoading booleans",
+            description:"An article by Kent Dodds about the downsides of isLoading booleans.",
+            link:"https://kentcdodds.com/blog/stop-using-isloading-booleans",
+            image:"https://kentcdodds.com/static/935ea71a36d30ba95ed6252432d07fe3/d6099/banner.webp",
+        },{
+            title:"Photo Stream",
+            description:"A cool self-hosted website to share your photos.",
+            link:"https://github.com/maxvoltar/photo-stream",
+            image:"https://repository-images.githubusercontent.com/244708193/8710f480-6010-11ea-9fd6-41bdaea7ab02",
+        }]
+    },
+    {
         id: '16',
         date: 'March 11, 2020',
         description: "Monitoror, Slide to Subscribe, Micromodal, Distorted Link Effects, Docker Essentials and more...",
