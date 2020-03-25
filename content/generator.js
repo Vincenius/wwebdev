@@ -12,6 +12,7 @@ export const generateWeekly = maxCount => {
         number={d.id}
         date={d.date}
         description={d.description}
+        previewImage={d.previewImage}
     />)
 }
 

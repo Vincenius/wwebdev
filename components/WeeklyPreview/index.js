@@ -6,11 +6,11 @@ const ArticlePreview = ({
     date,
     number,
     description,
+    previewImage,
 }) => {
     const d = new Date(date)
     const headline = `Weekly #${number}`
     const link = `/weekly/${number}`
-    const img = `/weekly/${number}.jpg`
 
     return (
         <S.Container>
@@ -21,7 +21,11 @@ const ArticlePreview = ({
                 <S.Time datetime={d.toISOString()}>{date}</S.Time>
             </header>
             <a href={link}>
-                <S.Image src={img} alt={`number image ${number}`} />
+                <S.Image>
+                    <source media="(max-width: 320px)" srcset={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_320,dpr_auto,c_scale/${previewImage}`} />
+                    <source media="(max-width: 380px)" srcset={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_380,dpr_auto,c_scale/${previewImage}`} />
+                    <img src={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_auto,dpr_auto,c_scale/${previewImage}`} alt={headline} />
+                </S.Image>
             </a>
             <p>{description}</p>
             <a href={link}>

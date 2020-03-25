@@ -12,8 +12,10 @@ export const Container = styled.article`
         align-items: flex-end;
     }
 `
-export const Image = styled.img`
-    width: 100%;
+export const Image = styled.picture`
+    img {
+        width: 100%;
+    }
 `
 export const Time = styled.time`
     color: ${greyBlue};

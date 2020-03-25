@@ -3,6 +3,7 @@ const data = [
         id: '18',
         date: 'March 25, 2020',
         description: "Parametric Color Mixer, Animated Hamburger Icons, TypeScript Particles, simpleParallax.js and more...",
+        previewImage: '/v1585152611/weeklyPreview/18_rzdelu.jpg',
         items: [{
             title:"Parametric Color Mixer",
             description:"An awesome tool for building color palettes, inspired by audio parametric equalizers.",
@@ -54,6 +55,7 @@ const data = [
         id: '17',
         date: 'March 18, 2020',
         description: "midori, Jitsi Meet, Creative Coding Essentials, unscreen, JavaScript CheatSheet and more...",
+        previewImage: '/v1585152609/weeklyPreview/17_pfgylc.jpg',
         items: [{
             title:"midory",
             description:"A cool library for animated image backgrounds.",
@@ -105,6 +107,7 @@ const data = [
         id: '16',
         date: 'March 11, 2020',
         description: "Monitoror, Slide to Subscribe, Micromodal, Distorted Link Effects, Docker Essentials and more...",
+        previewImage: '/v1585152607/weeklyPreview/16_f4xpyo.jpg',
         items: [{
             title:"Monitoror",
             description:"Create a monitoring overview of your services with this open-source software.",
@@ -156,6 +159,7 @@ const data = [
         id: '15',
         date: 'March 04, 2020',
         description: "CSS Icons, Mailbrew, Tailwind UI, SaaS landing pages, Brainstorming business ideas and more...",
+        previewImage: '/v1585152605/weeklyPreview/15_rf3vao.jpg',
         items: [{
             title:"css.gg",
             description:"A library of more than 500 minimalistic CSS icons, which are customizable and retina-ready.",
@@ -207,6 +211,7 @@ const data = [
         id: '14',
         date: 'February 26, 2020',
         description: "PostHog, JavaScript Interview Questions, Free Programming Books, grep.app and more...",
+        previewImage: '/v1585152603/weeklyPreview/14_gunb6j.jpg',
         items: [{
             title:"PostHog",
             description:"Open source product analytics with feature tracking and funnels.",
@@ -263,6 +268,7 @@ const data = [
         id: '13',
         date: 'February 19, 2020',
         description: "Good first issue, App Ideas, Beautiful Dingbats, GitHub CLI, The JavaScript Way and more...",
+        previewImage: '/v1585152601/weeklyPreview/13_jd2esz.jpg',
         items: [{
             title:"Good first issue",
             description:"A list of issues from popular open-source projects, which helps you make your first contribution.",
@@ -319,6 +325,7 @@ const data = [
         id: '12',
         date: 'February 12, 2020',
         description: "Octomments, Neumorphism, Bit, DarkModeJS, Full Stack Open 2019 and more...",
+        previewImage: '/v1585152599/weeklyPreview/12_tbozcv.jpg',
         items: [{
             title:"Octomments",
             description:"A cool alternative to Disqus for comments using GitHub issues.",
@@ -370,6 +377,7 @@ const data = [
         id: '11',
         date: 'February 5, 2020',
         description: "You Don't know JS Yet, Vanilla Web Projects, 24 modern ES6 code snippets and more...",
+        previewImage: '/v1585152597/weeklyPreview/11_zqatr3.jpg',
         items: [{
             title:"You Don't Know JS Yet",
             description:"The 2nd edition of the book series is out. Definetly woth to check it out.",
@@ -431,6 +439,7 @@ const data = [
         id: '10',
         date: 'January 29, 2020',
         description: 'Hoard.fyi, Screen Size Map, Mirage JS, Stock Resources, Vuer, React Libraries and more...',
+        previewImage: '/v1585152595/weeklyPreview/10_ejdvk8.jpg',
         items: [{
             title:"Hoard.fyi",
             description:"A large list of tools and resources for web developers and designers.",
@@ -492,6 +501,7 @@ const data = [
         id: '9',
         date: 'January 22, 2020',
         description: 'Hero Patterns, Tiny Helpers, GoatCounter, is-website-vulnerable, JamTemplates and more...',
+        previewImage: '/v1585152593/weeklyPreview/9_cv1vkp.jpg',
         items: [{
             title:"Hero Patterns",
             description:"A cool collection of repeatable SVG pattern backgrounds by Steve Schoger.",
@@ -548,6 +558,7 @@ const data = [
         id: '8',
         date: 'January 15, 2020',
         description: 'Gradient Magic, Broot, cacolor.co, stencils, 23 VS Code Shortcuts, Craft.js and more...',
+        previewImage: '/v1585152590/weeklyPreview/8_gdhzxz.jpg',
         items: [{
             title:"Gradient Magic",
             description:"A huge collection of beautiful css gradients.",
@@ -594,6 +605,7 @@ const data = [
         id: '7',
         date: 'January 08, 2020',
         description: 'Oh Shit, Git!?!, Colorsinspo, Parcel, Redux Style Guite, Bot Land, Rhubarb and more...',
+        previewImage: '/v1585152588/weeklyPreview/7_yyt5lb.jpg',
         items: [{
             title:"Oh Shit Git!?!",
             description:"It's easy to screw up using Git. This website helps you figuring out how to fix your mistakes.",
@@ -645,6 +657,7 @@ const data = [
         id: '6',
         date: 'January 01, 2020',
         description: 'Just JavaScript, CHL.LI, CoreUI Icons, Convert2Svg, Generative Placeholders and more...',
+        previewImage: '/v1585152586/weeklyPreview/6_ptbho3.jpg',
         items: [{
             title:"Just JavaScript",
             description:"A new email course by Dan Abramov about the JavaScript Mental Models he uses.",
@@ -687,9 +700,7 @@ const data = [
         id: '5',
         date: 'December 25, 2019',
         description: 'Codepen Most Hearted 2019, V 8.0, lazy-simon.js, GitHub Apps and more...',
-        /* introText: <p>
-            Because of holiday and christmas, this weekly and the next one will be a little smaller :)
-        </p>, */
+        previewImage: '/v1585152584/weeklyPreview/5_g6amcx.jpg',
         items: [{
             title:"The Most Hearted Of 2019",
             description:"The most popular Pens from the year 2019 of Codepen. Definitely worth checking out.",
@@ -726,6 +737,7 @@ const data = [
         id: '4',
         date: 'December 18, 2019',
         description: 'Nedux, New CSS “:is()”, Challenging projects, musicForProgramming, No to Chrome and more...',
+        previewImage: '/v1585152582/weeklyPreview/4_ytulxm.jpg',
         items: [{
             title:"Nedux",
             description:"A simplified version of redux. You don't have to create actions & reduces, just the store.",
@@ -780,6 +792,7 @@ const data = [
         id: '3',
         date: 'December 11, 2019',
         description: 'Self Hosted, CSS Layout, Refactoring UI, Deep Sea, react-spring, Leonardo and more...',
+        previewImage: '/v1585152580/weeklyPreview/3_qb4all.jpg',
         items: [{
             title:"Self Hosted",
             description:" An extensive searchable list of the best self hosted software developers.",
@@ -839,6 +852,7 @@ const data = [
         id: '2',
         date: 'December 04, 2019',
         description: 'Bootstrap Icons, SVG Landscapes, roughViz.js, JavaScript Christmas, Curlie, Cell and more..',
+        previewImage: '/v1585152578/weeklyPreview/2_vvy456.jpg',
         items: [{
             title:"Bootstrap Icons",
             description:"Bootstrap is releasing Icons their very first icon set that’s designed entirely by their team. It's open sourced for everyone to use, with or without Bootstrap.",
@@ -895,16 +909,7 @@ const data = [
         id: '1',
         date: 'November 27, 2019',
         description: 'SWR, Fresh Folk, Colors & fonts, Animated CSS Backgrounds, Postwoman, Pika and more',
-        /* introText: <div>
-            <p>Today I'm introducing the weekly. This will be a curated list of things I stumbled upon during the previous week.</p>
-            <p>
-                I'm reading through lots of various forums and websites related to web development.
-                Starting from now I will save the (for me) most interesting resources, tools and reads and will share them here.
-            </p>
-            <p>
-                If you have somthing, you think I should mention here, let me know: <a href="mailto:info@wweb.dev">info@wweb.dev</a>
-            </p>
-        </div>, */
+        previewImage: '/v1585152576/weeklyPreview/1_yxuzjl.jpg',
         items: [{
             title: "SWR - React Hooks for Remote Data Fetching",
             description: "A lightweight library for remote data fetching using React Hooks. It returns the data from cache, then sends the fetch request and finally comes with the up-to-date data again.",
