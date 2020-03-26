@@ -19,6 +19,7 @@
     "next": "9.1.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
+    "react-lazy-load": "^3.0.13",
     "styled-components": "^5.0.0"
   },
   "devDependencies": {
