@@ -33,7 +33,7 @@ const ArticlePreview = ({
             <p>{description}</p>
             <a href={link}>
                 <S.ReadMore>
-                Open Weekly <ArrowRight width="1em" height="1em" />
+                    Open Weekly <ArrowRight width="1em" height="1em" />
                 </S.ReadMore>
             </a>
         </S.Container>
