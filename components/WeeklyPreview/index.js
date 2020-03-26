@@ -22,9 +22,9 @@ const ArticlePreview = ({
             </header>
             <a href={link}>
                 <S.Image>
-                    <source media="(max-width: 320px)" srcset={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_320,dpr_auto,c_scale/${previewImage}`} />
-                    <source media="(max-width: 380px)" srcset={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_380,dpr_auto,c_scale/${previewImage}`} />
-                    <img src={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_auto,dpr_auto,c_scale/${previewImage}`} alt={headline} />
+                    <source media="(max-width: 320px)" srcset={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_640,dpr_auto,c_scale,f_auto/${previewImage}`} />
+                    <source media="(max-width: 380px)" srcset={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_760,dpr_auto,c_scale,f_auto/${previewImage}`} />
+                    <img src={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_auto,dpr_auto,c_scale,f_auto/${previewImage}`} alt={headline} />
                 </S.Image>
             </a>
             <p>{description}</p>

@@ -18,7 +18,7 @@ const Nav = () => (
     <S.Navigation as="nav">
       <S.Main>
         <a href='/'>
-          <img src="/logo-text.png" alt="Logo of wweb.dev"/>
+          <img src="https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_180,dpr_auto,c_scale,f_auto/v1585149959/logo-text_rhuhcl.png" alt="Logo of wweb.dev"/>
         </a>
         <ul>
           {links.map(({ key, href, label }) => (

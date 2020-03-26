@@ -6,7 +6,7 @@ const data = [
         headline: "Websites For Creative Backgrounds",
         description: "A curated list of websites where you can get creative backgrounds for your websites.",
         link: "/resources/creative-backgrounds",
-        previewImage: "/resources/creative-backgrounds/preview.jpg",
+        previewImage: "/v1585203857/resources/preview_blxh58.jpg",
     },
     {
         id: 3,
@@ -15,7 +15,7 @@ const data = [
         headline: "Convert2Svg",
         description: "A free and open-source tool to easily transform any image or photo into a multi colored svg vector file.",
         link: "https://convert2svg.com/",
-        previewImage: "https://convert2svg.com/preview.jpg",
+        previewImage: "/v1585203796/resources/preview_vdfddh.jpg",
     },
     {
         id: 2,
@@ -24,7 +24,7 @@ const data = [
         headline: 'A Curated List Of Websites For Free SVG Illustrations',
         description: "Spice up your next project with beautiful illustrations from these websites.",
         link: '/resources/free-svg-illustrations',
-        previewImage: '/resources/free-svg-illustrations/preview.jpg',
+        previewImage: '/v1585203831/resources/preview_kgmdhp.jpg',
     },
     {
         id: 1,
@@ -33,7 +33,7 @@ const data = [
         headline: "Animated CSS Background Generator",
         description: "A collection of pure css animated backgrounds with the possibility to customize.",
         link: "/resources/animated-css-background-generator",
-        previewImage: "/resources/resources01.jpg",
+        previewImage: "/v1585203815/resources/resources01_qrtcaa.jpg",
     }
 ]
 
