@@ -17,15 +17,9 @@ const ArticlePreview = ({
     <S.Container>
       { previewImage &&
         <a href={link}>
-          <picture>
-            <source media="(max-width: 320px)" srcset={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_640,dpr_auto,c_scale,f_auto/${previewImage}`} />
-            <source media="(max-width: 360px)" srcset={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_720,dpr_auto,c_scale,f_auto/${previewImage}`} />
-            <source media="(max-width: 480px)" srcset={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_960,dpr_auto,c_scale,f_auto/${previewImage}`} />
-            <source media="(max-width: 640px)" srcset={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_400,dpr_auto,c_scale,f_auto/${previewImage}`} />
-            <LazyLoad offsetVertical={1000}>
-              <S.PreviewImage src={`https://res.cloudinary.com/wwebdev/image/upload/q_auto,w_800,dpr_auto,c_scale,f_auto/${previewImage}`} alt={headline} />
-            </LazyLoad>
-          </picture>
+          <LazyLoad offsetVertical={1000}>
+            <S.PreviewImage src={`https://res.cloudinary.com/wwebdev/image/upload/${previewImage}`} alt={headline} />
+          </LazyLoad>
         </a>
       }
       <div>
