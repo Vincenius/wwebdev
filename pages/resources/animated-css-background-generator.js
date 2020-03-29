@@ -13,7 +13,6 @@ const Demo = () => {
             <Head
                 isArticle={true}
                 title={postMeta.headline}
-                date={postMeta.date}
                 link={`https://wweb.dev${postMeta.link}`}
                 description={postMeta.description}
                 image="/resources/resources01.jpg"

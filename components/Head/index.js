@@ -30,7 +30,7 @@ class MyHead extends React.Component {
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" async />
                 <script type="text/javascript" src="/analytics.js" defer async></script>
                 <script type="text/javascript" src="https://analytics.vincentwill.com/hokuspokusj" defer async></script>
-                <style> { 'html, body { margin: 0; }' } </style>
+                <style> { 'html, body { margin: 0; } body svg { width: 32px; }' } </style>
 
                 { isArticle &&
                     <React.Fragment>
