@@ -144,6 +144,10 @@ export const ControlToggle = styled.div`
 
 export const FormControlLabel = styled(MuiFormControlLabel)`
   margin-bottom: 10px;
+
+  input {
+    display: none !important;
+  }
 `
 
 export const SliderContainer = styled.div`
