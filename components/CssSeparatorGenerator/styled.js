@@ -89,6 +89,8 @@ export const Bottom = styled(Section)`
 
 export const Row = styled.div`
   display: flex;
+  position: relative;
+  z-index: 20;
 
   > * {
     margin: 20px;
