@@ -15,7 +15,7 @@ const Demo = () => {
                 title={postMeta.headline}
                 link={`https://wweb.dev${postMeta.link}`}
                 description={postMeta.description}
-                image="/resources/resources01.jpg"
+                image={postMeta.previewImage}
                 date={new Date(postMeta.date)}
             />
 

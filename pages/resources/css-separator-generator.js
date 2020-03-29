@@ -13,7 +13,7 @@ const Demo = () => {
                 title={postMeta.headline}
                 link={`https://wweb.dev${postMeta.link}`}
                 description={postMeta.description}
-                image={'/resources/css-separator-generator.png'}
+                image={postMeta.previewImage}
                 date={new Date(postMeta.date)}
             />
 
