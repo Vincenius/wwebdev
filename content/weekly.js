@@ -142,7 +142,7 @@ const data = [
             title:"Faux Code Generator",
             description:"A generator that turns real code grom GitHub Gists into faux code SVG images.",
             link:"http://knutsynstad.com/fauxcode/",
-            image:"http://knutsynstad.com/fauxcode/thumbnail.png",
+            image:"https://res.cloudinary.com/wwebdev/image/upload/v1585493040/weekly/16/thumbnail_qqwml1.png",
         },{
             title:"Essential Docker for Javascript and Front End Developers",
             description:"A cool guide to getting started with Docker.",
@@ -318,7 +318,7 @@ const data = [
             title:"Stage.js",
             description:"A 2D JavaScript library for creating HTML5 games.",
             link:"http://piqnt.com/stage.js/",
-            image:"http://piqnt.com/stage.js/logo.png",
+            image:"https://res.cloudinary.com/wwebdev/image/upload/v1585492991/weekly/13/logo_qnot4m.png",
         }]
     },
     {

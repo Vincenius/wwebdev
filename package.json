@@ -16,7 +16,7 @@
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
     "highlight.js": "^9.16.2",
-    "next": "9.1.2",
+    "next": "^9.3.2",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-lazy-load": "^3.0.13",

@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 5,
+        type: 'Resource',
+        date: 'April 30, 2020',
+        headline: "CSS Section Separator Generator",
+        description: "A collection of customizable css section separators, with the possiblity to easily copy the code.",
+        link: "/resources/css-separator-generator",
+        previewImage: "/v1585478579/resources/css-separator-generator_gsgzyp.png",
+    },
+    {
         id: 4,
         type: 'Resource',
         date: 'January 23, 2020',

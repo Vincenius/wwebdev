@@ -30,19 +30,19 @@ class MyHead extends React.Component {
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" async />
                 <script type="text/javascript" src="/analytics.js" defer async></script>
                 <script type="text/javascript" src="https://analytics.vincentwill.com/hokuspokusj" defer async></script>
-                <style> { 'html, body { margin: 0; }' } </style>
+                <style> { 'html, body { margin: 0; } body svg { width: 32px; }' } </style>
 
                 { isArticle &&
                     <React.Fragment>
                         <link rel="canonical" href={link} />
-                        <meta name="twitter:card" content="summary" />
+                        <meta name="twitter:card" content="summary_large_image" />
                         <meta name="twitter:site" content={link} />
                         <meta name="twitter:title" content={title} />
                         <meta name="twitter:description" content={description} />
                         <meta name="twitter:creator" content="@wweb_dev" />
-                        <meta name="twitter:image" content={`https://wweb.dev${image}`} />
+                        <meta name="twitter:image" content={`https://res.cloudinary.com/wwebdev/image/upload${image}`} />
                         <meta property="og:title" content={title} />
-                        <meta property="og:image" content={`https://wweb.dev${image}`} />
+                        <meta property="og:image" content={`https://res.cloudinary.com/wwebdev/image/upload${image}`} />
                         <meta property="og:site_name" content="wweb.dev" />
                         <meta property="og:description" content={description} />
                         <meta property="og:url" content={link} />
@@ -60,7 +60,7 @@ class MyHead extends React.Component {
                                 "datePublished":"${date}",
                                 "image": {
                                     "@type":"ImageObject",
-                                    "url":"https://wweb.dev${image}",
+                                    "url":"hhttps://res.cloudinary.com/wwebdev/image/upload${image}",
                                     "height":646,"width":1300
                                 },
                                 "description":"${description}",
@@ -73,7 +73,7 @@ class MyHead extends React.Component {
                                     "name":"wweb.dev",
                                     "logo":{
                                         "@type":"ImageObject",
-                                        "url":"https://wweb.dev/logo-text.png",
+                                        "url":"https://res.cloudinary.com/wwebdev/image/upload/v1585149959/logo-text_rhuhcl.png",
                                         "height":64,
                                         "width":64
                                     }
