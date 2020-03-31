@@ -28,7 +28,7 @@ class MyHead extends React.Component {
                 <meta name="robots" content="index, follow"></meta>
                 { description && <meta name="description" content={description}></meta> }
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" async />
-                <script type="text/javascript" src="/analytics.js" defer async></script>
+                <script type="text/javascript" src="/analytics.js"></script>
                 <style> { 'html, body { margin: 0; overflow-x: hidden; } body svg { width: 32px; }' } </style>
 
                 { isArticle &&
