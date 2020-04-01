@@ -6,7 +6,7 @@ const data = [
         previewImage: '/v1585634018/weeklyPreview/19_e94beb.jpg',
         items: [{
             title:"MVP.css",
-            description:"A CSS library, which styles the basic html elements. No CSS classes needed for a decent website styling.",
+            description:"A CSS library, which styles the basic HTML elements. No CSS classes needed for a decent website styling.",
             link:"https://andybrewer.github.io/mvp/",
             image:"https://andybrewer.github.io/mvp/img/stock.jpg",
         },{
@@ -21,7 +21,7 @@ const data = [
             image:"/weekly/screenshots/puddlejs.jpg",
         },{
             title:"How I Became a Better Programmer",
-            description:"A nice article by James Long, listing what things helped him becoming a better programmer",
+            description:"A nice article by James Long, listing what things helped him becoming a better programmer.",
             link:"https://jlongster.com/How-I-Became-Better-Programmer",
             image:"https://jlongster.com/meta-image.png",
         },{

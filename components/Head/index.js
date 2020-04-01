@@ -8,6 +8,7 @@ class MyHead extends React.Component {
             link,
             description,
             image,
+            localImage,
             date,
             isArticle,
             titleNameFirst,
@@ -16,6 +17,7 @@ class MyHead extends React.Component {
         const headTitle = titleNameFirst
             ? `wweb.dev | ${title}`
             : `${title} | wweb.dev`
+        const imageLink = localImage ? `https://wweb.dev${image}` : `https://res.cloudinary.com/wwebdev/image/upload${image}`
 
         return (
             <Head>
@@ -39,9 +41,9 @@ class MyHead extends React.Component {
                         <meta name="twitter:title" content={title} />
                         <meta name="twitter:description" content={description} />
                         <meta name="twitter:creator" content="@wweb_dev" />
-                        <meta name="twitter:image" content={`https://res.cloudinary.com/wwebdev/image/upload${image}`} />
+                        <meta name="twitter:image" content={imageLink} />
                         <meta property="og:title" content={title} />
-                        <meta property="og:image" content={`https://res.cloudinary.com/wwebdev/image/upload${image}`} />
+                        <meta property="og:image" content={imageLink} />
                         <meta property="og:site_name" content="wweb.dev" />
                         <meta property="og:description" content={description} />
                         <meta property="og:url" content={link} />
@@ -59,7 +61,7 @@ class MyHead extends React.Component {
                                 "datePublished":"${date}",
                                 "image": {
                                     "@type":"ImageObject",
-                                    "url":"hhttps://res.cloudinary.com/wwebdev/image/upload${image}",
+                                    "url":"${imageLink}",
                                     "height":646,"width":1300
                                 },
                                 "description":"${description}",
