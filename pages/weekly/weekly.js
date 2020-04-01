@@ -18,8 +18,6 @@ const Post = () => {
                 title={`Web development update ${postMeta.date}`}
                 date={postMeta.date}
                 link={`https://wweb.dev/weekly/${pid}`}
-                image={`/weekly/weekly${pid}.jpg`}
-                localImage={true}
                 description={postMeta.description}
             >
                 {postMeta.introText &&
