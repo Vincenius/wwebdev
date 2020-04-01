@@ -1,7 +1,7 @@
 const data = [
     {
         id: '19',
-        date: 'March 31, 2020',
+        date: 'April 1, 2020',
         description: "MVP.css, Web Skills, Puddle.js, How I Became a Better Programmer, Motion Layout and more...",
         previewImage: '/v1585634018/weeklyPreview/19_e94beb.jpg',
         items: [{
