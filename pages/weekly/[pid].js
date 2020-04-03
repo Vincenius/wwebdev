@@ -22,7 +22,7 @@ const Post = () => {
                 localImage={true}
                 description={postMeta.description}
             >
-                {postMeta.introText &&
+                { postMeta.introText &&
                     <S.IntroText>
                         {postMeta.introText}
                     </S.IntroText>

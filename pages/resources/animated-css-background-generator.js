@@ -20,33 +20,34 @@ const Demo = () => {
             />
 
             <S.Navigation>
-                <a
-                    onClick={() => changeBg(0)}
-                    className={activeBg === 0 ? 'active' : ''}
-                >
-                    Demo 1
+                <a href='/'>
+                    <img src="https://res.cloudinary.com/wwebdev/image/upload/v1585149959/logo-text_rhuhcl.png" alt="Logo of wweb.dev"/>
                 </a>
-                <a
-                    onClick={() => changeBg(1)}
-                    className={activeBg === 1 ? 'active' : ''}
-                >
-                    Demo 2
-                </a>
-                <a
-                    onClick={() => changeBg(2)}
-                    className={activeBg === 2 ? 'active' : ''}
-                >
-                    Demo 3
-                </a>
+                <span>
+                    <a
+                        onClick={() => changeBg(0)}
+                        className={activeBg === 0 ? 'active' : ''}
+                    >
+                        Demo 1
+                    </a>
+                    <a
+                        onClick={() => changeBg(1)}
+                        className={activeBg === 1 ? 'active' : ''}
+                    >
+                        Demo 2
+                    </a>
+                    <a
+                        onClick={() => changeBg(2)}
+                        className={activeBg === 2 ? 'active' : ''}
+                    >
+                        Demo 3
+                    </a>
+                </span>
             </S.Navigation>
 
             { activeBg === 0 && <Background1 /> }
             { activeBg === 1 && <Background2 /> }
             { activeBg === 2 && <Background3 /> }
-
-            <S.Footer>
-                Made by <a href="/">wweb.dev</a>
-            </S.Footer>
         </S.Container>
     )
 }
