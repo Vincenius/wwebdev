@@ -25,8 +25,8 @@ function SubscribeForm({ type }) {
                     name="EMAIL"
                     required={true}
                     type="email"
-                    placeholder="Email Address"
-                    variant="outlined"
+                    placeholder="E-Mail"
+                    variant="filled"
                 />
 
                 <S.CheckboxContainer>

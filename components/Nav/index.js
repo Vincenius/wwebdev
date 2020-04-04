@@ -17,7 +17,7 @@ const Nav = () => (
   <S.Container>
     <S.Navigation as="nav">
       <S.Main>
-        <a href='/'>
+        <a href='/' title="home link">
           <img src="https://res.cloudinary.com/wwebdev/image/upload/v1585149959/logo-text_rhuhcl.png" alt="Logo of wweb.dev"/>
         </a>
         <ul>

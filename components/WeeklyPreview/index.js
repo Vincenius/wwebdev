@@ -21,7 +21,7 @@ const ArticlePreview = ({
                 </S.Headline>
                 <S.Time datetime={d.toISOString()}>{date}</S.Time>
             </header>
-            <a href={link}>
+            <a href={link} title={headline}>
                 <LazyLoad offsetVertical={1000}>
                     <S.Image src={`https://res.cloudinary.com/wwebdev/image/upload/${previewImage}`} alt={headline} />
                 </LazyLoad>

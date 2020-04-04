@@ -20,7 +20,6 @@ export const Wrapper = styled(Paper)`
 export const Input = styled(TextField)`
     width: 100%;
     margin-bottom: 20px !important;
-    background: ${lightGrey} !important;
 
     fieldset {
         display: none;
