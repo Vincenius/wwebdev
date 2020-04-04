@@ -1,6 +1,7 @@
 import React from 'react'
-import * as S from './styled'
 import LazyLoad from 'react-lazy-load'
+import * as S from './styled'
+import * as ui from '../../ui'
 
 const ArticlePreview = ({
   date,
@@ -17,6 +18,7 @@ const ArticlePreview = ({
     <S.Container>
       { previewImage &&
         <a href={link}>
+          <ui.Screenreader>{headline}</ui.Screenreader>
           <LazyLoad offsetVertical={1000}>
             <S.PreviewImage src={`https://res.cloudinary.com/wwebdev/image/upload/${previewImage}`} alt={headline} />
           </LazyLoad>

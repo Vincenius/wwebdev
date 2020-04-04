@@ -2,6 +2,7 @@ import React from 'react'
 import LazyLoad from 'react-lazy-load'
 import ArrowRight from '@material-ui/icons/ArrowRightAlt'
 import * as S from './styled'
+import * as ui from '../../ui'
 
 const ArticlePreview = ({
     date,
@@ -22,6 +23,7 @@ const ArticlePreview = ({
                 <S.Time datetime={d.toISOString()}>{date}</S.Time>
             </header>
             <a href={link}>
+                <ui.Screenreader>{headline}</ui.Screenreader>
                 <LazyLoad offsetVertical={1000}>
                     <S.Image src={`https://res.cloudinary.com/wwebdev/image/upload/${previewImage}`} alt={headline} />
                 </LazyLoad>

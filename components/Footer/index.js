@@ -2,12 +2,14 @@ import React from 'react'
 import LazyLoad from 'react-lazy-load'
 import { SocialBar } from '../'
 import * as S from './styled'
+import * as ui from '../../ui'
 
 const Footer = () => (
   <S.Container>
     <S.Content>
       <div>
         <a href='/'>
+          <ui.Screenreader>go to home</ui.Screenreader>
           <LazyLoad height={59} offsetVertical={1000}>
             <img src="https://res.cloudinary.com/wwebdev/image/upload/v1585149959/logo_szao9n.png" alt="wweb.dev Logo" />
           </LazyLoad>
