@@ -19,7 +19,7 @@ function Layout ({
     const d = date ? new Date(date) : undefined
 
     return (
-        <S.Container className="content">
+        <S.Container>
             <Head
                 title={title}
                 link={link}

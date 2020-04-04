@@ -74,7 +74,7 @@ function SubscribeForm({ type }) {
                     </ul>
                 </S.CheckboxContainer>
                 <S.HiddenInput>
-                    <label for="b_23a611280baff5c6bd68c83e3_8dd07d6ca8">input</label>
+                    <label htmlFor="b_23a611280baff5c6bd68c83e3_8dd07d6ca8">input</label>
                     <input id="b_23a611280baff5c6bd68c83e3_8dd07d6ca8" tabIndex="-1" name="b_23a611280baff5c6bd68c83e3_8dd07d6ca8" type="text" />
                 </S.HiddenInput>
                 <div>

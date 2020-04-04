@@ -42,9 +42,9 @@ export const generateArticleAndResources = maxCount => {
     const data = [...articleData, ...resourceData]
     return data.sort((a,b) => {
         return new Date(b.date) - new Date(a.date);
-    }).map(d => <ArticlePreview
+    }).map((d, index) => <ArticlePreview
         type={d.type}
-        key={`article-${d.id}`}
+        key={`article-${index}`}
         date={d.date}
         headline={d.headline}
         description={d.description}
