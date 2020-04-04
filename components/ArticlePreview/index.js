@@ -16,7 +16,7 @@ const ArticlePreview = ({
   return (
     <S.Container>
       { previewImage &&
-        <a href={link} title={headline}>
+        <a href={link}>
           <LazyLoad offsetVertical={1000}>
             <S.PreviewImage src={`https://res.cloudinary.com/wwebdev/image/upload/${previewImage}`} alt={headline} />
           </LazyLoad>
