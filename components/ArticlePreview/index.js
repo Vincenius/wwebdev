@@ -39,6 +39,7 @@ const ArticlePreview = ({
         <p>{description}</p>
         <S.ReadMore href={link}>
           { isResource ? 'Open Resource' : 'Read more' }
+          <ui.Screenreader>{headline}</ui.Screenreader>
         </S.ReadMore>
       </div>
     </S.Container>
