@@ -6,7 +6,7 @@ const data = [
         headline: "CSS Section Separator Generator",
         description: "A collection of customizable CSS section separators, with the possibility to easily copy the code.",
         link: "/resources/css-separator-generator",
-        previewImage: "/v1585478579/resources/css-separator-generator_gsgzyp.png",
+        previewImage: "css-separator-generator_ABmeEM8YGkY.png",
     },
     {
         id: 4,
@@ -15,7 +15,7 @@ const data = [
         headline: "Websites For Creative Backgrounds",
         description: "A curated list of websites where you can get creative backgrounds for your websites.",
         link: "/resources/creative-backgrounds",
-        previewImage: "/v1585203857/resources/preview_blxh58.jpg",
+        previewImage: "preview__Vv2BmGiY9U.jpg",
     },
     {
         id: 3,
@@ -24,7 +24,7 @@ const data = [
         headline: "Convert2Svg",
         description: "A free and open-source tool to easily transform any image or photo into a multi colored svg vector file.",
         link: "https://convert2svg.com/",
-        previewImage: "/v1585203796/resources/preview_vdfddh.jpg",
+        previewImage: "preview_vdfddh_IcUnQXodm.jpg",
     },
     {
         id: 2,
@@ -33,7 +33,7 @@ const data = [
         headline: 'A Curated List Of Websites For Free SVG Illustrations',
         description: "Spice up your next project with beautiful illustrations from these websites.",
         link: '/resources/free-svg-illustrations',
-        previewImage: '/v1585203831/resources/preview_kgmdhp.jpg',
+        previewImage: 'preview_XMFz4l4mf.jpg',
     },
     {
         id: 1,
@@ -42,7 +42,7 @@ const data = [
         headline: "Animated CSS Background Generator",
         description: "A collection of pure css animated backgrounds with the possibility to customize.",
         link: "/resources/animated-css-background-generator",
-        previewImage: "/v1585203815/resources/resources01_qrtcaa.jpg",
+        previewImage: "resources01_iPnw6_qGh.jpg",
     }
 ]
 
