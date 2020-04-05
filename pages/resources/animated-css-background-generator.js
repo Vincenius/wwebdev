@@ -21,7 +21,7 @@ const Demo = () => {
 
             <S.Navigation>
                 <a href='/'>
-                    <img src="https://res.cloudinary.com/wwebdev/image/upload/v1585149959/logo-text_rhuhcl.png" alt="Logo of wweb.dev"/>
+                    <img src="https://ik.imagekit.io/wwebdev/tr:w-180/logo-text_51kQarOOiD-.png" alt="Logo of wweb.dev"/>
                 </a>
                 <span>
                     <a

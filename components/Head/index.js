@@ -17,7 +17,7 @@ class MyHead extends React.Component {
         const headTitle = titleNameFirst
             ? `wweb.dev | ${title}`
             : `${title} | wweb.dev`
-        const imageLink = localImage ? `https://wweb.dev${image}` : `https://res.cloudinary.com/wwebdev/image/upload${image}`
+        const imageLink = localImage ? `https://wweb.dev${image}` : `https://ik.imagekit.io/wwebdev/${image}`
 
         return (
             <Head>
@@ -74,7 +74,7 @@ class MyHead extends React.Component {
                                     "name":"wweb.dev",
                                     "logo":{
                                         "@type":"ImageObject",
-                                        "url":"https://res.cloudinary.com/wwebdev/image/upload/v1585149959/logo-text_rhuhcl.png",
+                                        "url":"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png",
                                         "height":64,
                                         "width":64
                                     }

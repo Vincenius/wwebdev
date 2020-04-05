@@ -25,7 +25,11 @@ const ArticlePreview = ({
             <a href={link}>
                 <ui.Screenreader>{headline}</ui.Screenreader>
                 <LazyLoad offsetVertical={1000}>
-                    <S.Image src={`https://res.cloudinary.com/wwebdev/image/upload/${previewImage}`} alt={headline} />
+                    <picture>
+                        <source srcSet={`https://ik.imagekit.io/wwebdev/tr:w-760/${previewImage}`} media="(max-width: 380px)" />
+                        <source srcSet={`https://ik.imagekit.io/wwebdev/tr:w-960/${previewImage}`} media="(max-width: 959px)" />
+                        <S.Image src={`https://ik.imagekit.io/wwebdev/tr:w-800/${previewImage}`} alt={headline} />
+                    </picture>
                 </LazyLoad>
             </a>
             <p>{description}</p>
