@@ -28,7 +28,6 @@ export const Time = styled.time`
 `
 export const Headline = styled.h2`
     font-size: calc(1.29454rem + .17836 * ((100vw - 20rem)/ 100));
-    font-family: "Roboto Condensed",sans-serif;
     font-weight: 700;
     hyphens: manual;
     line-height: 1.2;
