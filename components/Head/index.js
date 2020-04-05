@@ -30,7 +30,21 @@ class MyHead extends React.Component {
                 <meta name="robots" content="index, follow"></meta>
                 { description && <meta name="description" content={description}></meta> }
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" async />
-                <script type="text/javascript" src="/analytics.js"></script>
+                <script type="text/javascript" dangerouslySetInnerHTML={{__html:
+                    `if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
+                        var _paq = window._paq || [];
+                        _paq.push(["setDoNotTrack", true]);
+                        _paq.push(['trackPageView']);
+                        _paq.push(['enableLinkTracking']);
+                        (function() {
+                            var u="https://analytics.vincentwill.com/";
+                            _paq.push(['setTrackerUrl', u+'hokuspokusp']);
+                            _paq.push(['setSiteId', '1']);
+                            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'hokuspokusj'; s.parentNode.insertBefore(g,s);
+                        })();
+                    }`}}>
+                </script>
                 <style> { 'html, body { margin: 0; overflow-x: hidden; } body svg { width: 32px; }' } </style>
 
                 { isArticle &&
