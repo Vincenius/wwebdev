@@ -16,7 +16,7 @@ const RelatedArticle = ({ id, type }) => {
             <hr />
             <h3>Related Article</h3>
             <S.Container>
-                <S.Image src={`https://res.cloudinary.com/wwebdev/image/upload${previewImage}`} alt={headline} />
+                <S.Image src={`https://ik.imagekit.io/wwebdev/${previewImage}`} alt={headline} />
                 <S.Content>
                     <h3>
                         <a href={link}>
