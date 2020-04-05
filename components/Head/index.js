@@ -29,7 +29,7 @@ class MyHead extends React.Component {
                 <meta name="description" content={description || title} />
                 <meta name="robots" content="index, follow"></meta>
                 { description && <meta name="description" content={description}></meta> }
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" async />
+                <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" async="" defer="" />
                 <script type="text/javascript" dangerouslySetInnerHTML={{__html:
                     `if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
                         var _paq = window._paq || [];
