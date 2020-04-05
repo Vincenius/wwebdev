@@ -10,7 +10,7 @@ const Footer = () => (
       <div>
         <a href='/'>
           <ui.Screenreader>go to home</ui.Screenreader>
-          <LazyLoad height={59} offsetVertical={1000}>
+          <LazyLoad height={59}>
             <img src="https://ik.imagekit.io/wwebdev/tr:w-200/logo_RnCn4cnua.png" alt="wweb.dev Logo" />
           </LazyLoad>
         </a>
