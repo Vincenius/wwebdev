@@ -1,5 +1,57 @@
 const data = [
     {
+        id: '20',
+        date: 'April 8, 2020',
+        description: "TODO and more...",
+        previewImage: 'weekly/20_gvhUTeGFThyL.jpg',
+        items: [{
+            title:"Open UI",
+            description:"TODO",
+            link:"https://open-ui.org/",
+            image:"https://open-ui.org/static/logo-green-3d51f73e83d5360e0496c5bffd74865d.png",
+        },{
+            title:"Magic Link",
+            description:"TODO",
+            link:"https://magic.link/",
+            image:"/weekly/screenshots/magiclink.png",
+        },{
+            title:"AllTheFreeStock",
+            description:"TODO",
+            link:"https://allthefreestock.com/",
+            image:"https://allthefreestock.com/assets/images/twitter-banner.png",
+        },{
+            title:"Flowify",
+            description:"TODO",
+            link:"https://etesam.surge.sh/#/flowify",
+            image:"/weekly/screenshots/flowify.png",
+        },{
+            title:"Pluralsight Free April",
+            description:"TODO",
+            link:"https://www.pluralsight.com/",
+            image:"https://www.pluralsight.com/content/pluralsight/en/jcr:content/image-res/file.transform/share-image/image.img.552aecd7-9b29-438a-9329-ab30ac2e772e.jpg",
+        },{
+            title:"Lisan",
+            description:"TODO",
+            link:"https://lisanjs.com/",
+            image:"https://lisanjs.com/img/lisan-og.png",
+        },{
+            title:"How to SSH Properly",
+            description:"TODO.",
+            link:"https://gravitational.com/blog/how-to-ssh-properly/",
+            image:"https://gravitational.com/blog/images/2020/how-to-ssh-properly-header.png",
+        },{
+            title:"HTML DOM",
+            description:"TODO.",
+            link:"https://htmldom.dev/",
+            image:"https://htmldom.dev/assets/screenshot.png",
+        },{
+            title:"Vuln Cost",
+            description:"TODO",
+            link:"https://snyk.io/security-scanner-vuln-cost/",
+            image:"https://snyk.io/wp-content/uploads/vuln-cost-animation.gif",
+        }]
+    },
+    {
         id: '19',
         date: 'April 1, 2020',
         description: "MVP.css, Web Skills, Puddle.js, How I Became a Better Programmer, Motion Layout and more...",
