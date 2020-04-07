@@ -6,6 +6,7 @@ export const Social = styled.ul`
 
     svg {
         fill: ${lightGrey};
+        width: auto;
 
         &:hover {
             fill: #fff;
@@ -14,11 +15,15 @@ export const Social = styled.ul`
 
     li {
         a {
-            padding: 16px;
+            padding: 16px 20px;
         }
 
         &:last-child a {
             padding-right: 0;
+        }
+
+        &:first-child a {
+            padding-left: 0;
         }
     }
 `
