@@ -1,6 +1,6 @@
 import React from 'react'
 import LazyLoad from 'react-lazy-load'
-import { SocialBar } from '../'
+import { SocialBar, BuyMeACoffeeButton } from '../'
 import * as S from './styled'
 import * as ui from '../../ui'
 
@@ -20,7 +20,9 @@ const Footer = () => (
       </div>
 
       <S.RightFooter>
-        <SocialBar />
+        <SocialBar hideCoffee={true} />
+
+        <BuyMeACoffeeButton />
 
         <S.FooterLinks>
           <li><a href="/privacy">Privacy Policy</a></li>

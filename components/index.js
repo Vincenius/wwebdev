@@ -1,4 +1,5 @@
 export { default as ArticlePreview } from './ArticlePreview'
+export { default as BuyMeACoffeeButton } from './BuyMeACoffeeButton'
 export { default as CodeBlock } from './CodeBlock'
 export { default as Comments } from './Comments'
 export { default as CssSeparatorGenerator } from './CssSeparatorGenerator'
