@@ -2,53 +2,53 @@ const data = [
     {
         id: '20',
         date: 'April 8, 2020',
-        description: "TODO and more...",
+        description: "Open UI, AllTheFreeStock, HTML DOM, Magic Link, Flowify, Lisan and more...",
         previewImage: 'weekly/20_gvhUTeGFThyL.jpg',
         items: [{
             title:"Open UI",
-            description:"TODO",
+            description:"An open-source project to maintain for a standard for UI and to promote its adherence and adoption.",
             link:"https://open-ui.org/",
-            image:"https://open-ui.org/static/logo-green-3d51f73e83d5360e0496c5bffd74865d.png",
-        },{
-            title:"Magic Link",
-            description:"TODO",
-            link:"https://magic.link/",
-            image:"/weekly/screenshots/magiclink.png",
+            image:"/weekly/screenshots/openui.png",
         },{
             title:"AllTheFreeStock",
-            description:"TODO",
+            description:"A large list of free stock images, videos, music and more.",
             link:"https://allthefreestock.com/",
             image:"https://allthefreestock.com/assets/images/twitter-banner.png",
         },{
+            title:"HTML DOM",
+            description:"A big list of vanilla JS scripts for the most common DOM interactions.",
+            link:"https://htmldom.dev/",
+            image:"https://htmldom.dev/assets/screenshot.png",
+        },{
+            title:"Magic",
+            description:"A cool project to add passwordless logins to your website.",
+            link:"https://magic.link/",
+            image:"/weekly/screenshots/magiclink.png",
+        },{
             title:"Flowify",
-            description:"TODO",
+            description:"A browser extionsion for creating free flowing startpages.",
             link:"https://etesam.surge.sh/#/flowify",
             image:"/weekly/screenshots/flowify.png",
         },{
-            title:"Pluralsight Free April",
-            description:"TODO",
+            title:"Vuln Cost",
+            description:"A cool VS Code extension to show in-line how many vulnerabilities a package contains.",
+            link:"https://snyk.io/security-scanner-vuln-cost/",
+            image:"https://snyk.io/wp-content/uploads/vuln-cost-animation.gif",
+        },{
+            title:"Pluralsight #FreeApril",
+            description:"Pluralsight is offering all of their video courses for free this april.",
             link:"https://www.pluralsight.com/",
             image:"https://www.pluralsight.com/content/pluralsight/en/jcr:content/image-res/file.transform/share-image/image.img.552aecd7-9b29-438a-9329-ab30ac2e772e.jpg",
         },{
             title:"Lisan",
-            description:"TODO",
+            description:"A fast i18n library for adding multiple languages to your application.",
             link:"https://lisanjs.com/",
             image:"https://lisanjs.com/img/lisan-og.png",
         },{
             title:"How to SSH Properly",
-            description:"TODO.",
+            description:"A good guide about SSH by Gus Luxton on Gravitational.",
             link:"https://gravitational.com/blog/how-to-ssh-properly/",
             image:"https://gravitational.com/blog/images/2020/how-to-ssh-properly-header.png",
-        },{
-            title:"HTML DOM",
-            description:"TODO.",
-            link:"https://htmldom.dev/",
-            image:"https://htmldom.dev/assets/screenshot.png",
-        },{
-            title:"Vuln Cost",
-            description:"TODO",
-            link:"https://snyk.io/security-scanner-vuln-cost/",
-            image:"https://snyk.io/wp-content/uploads/vuln-cost-animation.gif",
         }]
     },
     {
