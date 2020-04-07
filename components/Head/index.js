@@ -28,6 +28,7 @@ class MyHead extends React.Component {
                 <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
                 <meta name="description" content={description || title} />
                 <meta name="robots" content="index, follow"></meta>
+                <link href="https://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" asyc="" defer="" />
                 { description && <meta name="description" content={description}></meta> }
                 <script type="text/javascript" dangerouslySetInnerHTML={{__html:
                     `if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {

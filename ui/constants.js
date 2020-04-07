@@ -5,6 +5,9 @@ export const lightGrey = '#d5d8dc'
 export const middleGrey = '#969fa8'
 export const darkGrey = '#2c3e50'
 export const greyBlue = '#5B6F82'
+export const logoColorLeft = '#1adbff'
+export const logoColorRight = '#42b8ff'
+export const logoGradient = `linear-gradient(57deg, ${logoColorLeft} 0%, ${logoColorRight} 100%)`
 
 export const boxShadow = '0 16px 48px #E3E7EB'
 export const gradient = `linear-gradient(57deg, ${greenBlue} 0%, ${blue} 100%)`
