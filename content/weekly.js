@@ -6,7 +6,7 @@ const data = [
         previewImage: 'weekly/20_gvhUTeGFThyL.jpg',
         items: [{
             title:"Open UI",
-            description:"An open-source project to maintain for a standard for UI and to promote its adherence and adoption.",
+            description:"An open-source project to maintain a standard for UI and to promote its adherence and adoption.",
             link:"https://open-ui.org/",
             image:"/weekly/screenshots/openui.png",
         },{
