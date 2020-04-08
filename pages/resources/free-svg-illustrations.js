@@ -45,6 +45,13 @@ const Post = () => (
             />
 
             <LinkBox
+                image="/resources/free-svg-illustrations/freellustrations.png"
+                title="Freellustrations"
+                link="https://freellustrations.com/"
+                description="A collection of beautiful, high-resolution illustration background images."
+            />
+
+            <LinkBox
                 image="/resources/free-svg-illustrations/glaze.jpg"
                 title="Glaze"
                 link="https://www.glazestock.com/"
@@ -59,6 +66,20 @@ const Post = () => (
             />
 
             <LinkBox
+                image="/resources/free-svg-illustrations/openpeeps.png"
+                title="Open Peeps"
+                link="https://www.openpeeps.com/"
+                description="A handdrawn illustration library mad of building blocks to create your own illustrations."
+            />
+
+            <LinkBox
+                image="/resources/free-svg-illustrations/blackillustrations.png"
+                title="Black Illustrations"
+                link="https://www.blackillustrations.com/"
+                description="A website which focuses on illustrations of black people."
+            />
+
+            <LinkBox
                 image="/resources/free-svg-illustrations/humaaans.jpg"
                 title="Humaaans"
                 link="https://www.humaaans.com"
@@ -70,6 +91,13 @@ const Post = () => (
                 title="Woobro"
                 link="https://woobro.design/"
                 description="Woobro has some very detailed high-quality svgs for some specific use cases."
+            />
+
+            <LinkBox
+                image="/resources/free-svg-illustrations/ouch.png"
+                title="Ouch!"
+                link="https://icons8.com/ouch"
+                description="25 packs of illustrations in various styles, which are free with a credit link."
             />
 
             <LinkBox
@@ -119,6 +147,13 @@ const Post = () => (
                 title="Karthik Srinivas"
                 link="https://www.karthiksrinivas.in/illustrations"
                 description='Multiple sets of illustrations for common use cases like emty and success states.'
+            />
+
+            <LinkBox
+                image="/resources/free-svg-illustrations/smashillustrations.png"
+                title="Smash Illustrations"
+                link="https://usesmash.com/"
+                description='An illustration constructor with colorful and trendy characters.'
             />
 
             <LinkBox
