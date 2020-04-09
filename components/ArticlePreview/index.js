@@ -10,8 +10,10 @@ const ArticlePreview = ({
   description,
   type,
   previewImage,
+  updatedAt,
 }) => {
-  const d = new Date(date)
+  const lastDate = updatedAt || date
+  const d = new Date(lastDate)
   const isResource = type === 'Resource'
 
   return (
@@ -53,7 +55,8 @@ const ArticlePreview = ({
               <b>{type}</b> -&nbsp;
             </S.Type>
           }
-          <S.Time datetime={d.toISOString()}>{date}</S.Time>
+          {updatedAt && <S.Updated>Updated: </S.Updated>}
+          <S.Time datetime={d.toISOString()}>{lastDate}</S.Time>
           <S.Headline>
             <a href={link}>{headline}</a>
           </S.Headline>

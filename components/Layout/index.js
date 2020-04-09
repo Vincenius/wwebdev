@@ -15,8 +15,10 @@ function Layout ({
     localImage,
     description,
     titleNameFirst,
+    updatedAt,
 }) {
     const d = date ? new Date(date) : undefined
+    const ud = updatedAt ? new Date(updatedAt) : undefined
 
     return (
         <S.Container>
@@ -32,7 +34,10 @@ function Layout ({
             />
             <Header>
                 <h1>{title}</h1>
-                { isArticle && <p><S.Time datetime={d.toISOString()}>{date}</S.Time></p> }
+                { isArticle && <S.SDate><S.Time datetime={d.toISOString()}>{date}</S.Time></S.SDate> }
+                { isArticle && updatedAt &&
+                    <S.Updated>Updated: <S.Time datetime={ud.toISOString()}>{updatedAt}</S.Time></S.Updated>
+                }
             </Header>
 
             <main>
