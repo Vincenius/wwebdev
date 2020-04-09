@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import { SocialBar } from '../'
 import * as S from './styled'
 
@@ -17,13 +18,13 @@ const Nav = () => (
   <S.Container>
     <S.Navigation as="nav">
       <S.Main>
-        <a href='/' title="home link">
+        <Link href='/'><a>
           <img src="https://ik.imagekit.io/wwebdev/tr:w-180/logo-text_51kQarOOiD-.png" alt="Logo of wweb.dev"/>
-        </a>
+        </a></Link>
         <ul>
           {links.map(({ key, href, label }) => (
             <li key={key}>
-              <a href={href}>{label}</a>
+              <Link href={href}><a>{label}</a></Link>
             </li>
           ))}
         </ul>

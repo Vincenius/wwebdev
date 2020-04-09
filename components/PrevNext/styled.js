@@ -10,6 +10,7 @@ export const Link = styled.a`
     max-width: 50%;
     margin: ${props => props.right ? '0 0 0 20px' : '0 20px 0 0'};
     text-align: ${props => props.right ? 'right' : 'left'};
+    cursor: pointer;
 
     span {
         display: block;
