@@ -70,14 +70,14 @@ const Post = () => (
                 image="/resources/free-svg-illustrations/openpeeps.png"
                 title="Open Peeps"
                 link="https://www.openpeeps.com/"
-                description="A handdrawn illustration library mad of building blocks to create your own illustrations."
+                description="A hand-drawn illustration library made of building blocks to create your own illustrations."
             />
 
             <LinkBox
                 image="/resources/free-svg-illustrations/blackillustrations.png"
                 title="Black Illustrations"
                 link="https://www.blackillustrations.com/"
-                description="A website which focuses on illustrations of black people."
+                description="A website that focuses on illustrations of black people."
             />
 
             <LinkBox
