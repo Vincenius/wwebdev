@@ -31,7 +31,7 @@ const data = [
         id: 2,
         type: 'Resource',
         date: 'December 16, 2019',
-        updatedAt: 'Februar 14, 2020',
+        updatedAt: 'February 14, 2020',
         headline: 'A Curated List Of Websites For Free SVG Illustrations',
         description: "Spice up your next project with beautiful illustrations from these websites.",
         link: '/resources/free-svg-illustrations',
