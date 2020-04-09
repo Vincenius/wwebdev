@@ -20,6 +20,13 @@ export const Type = styled.span`
         b { color: ${lightBlue}; }
     `}
 `
+export const Updated = styled.span`
+    color: ${greyBlue};
+    font-size: .82397rem;
+    line-height: 1.86667rem;
+    margin-bottom: 8px;
+    font-style: italic;
+`
 export const Time = styled.time`
     color: ${greyBlue};
     font-size: .82397rem;

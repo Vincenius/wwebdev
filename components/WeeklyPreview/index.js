@@ -25,11 +25,24 @@ const ArticlePreview = ({
             <a href={link}>
                 <ui.Screenreader>{headline}</ui.Screenreader>
                 <LazyLoad offsetVertical={1000}>
-                    <picture>
-                        <source srcSet={`https://ik.imagekit.io/wwebdev/tr:w-760/${previewImage}`} media="(max-width: 380px)" />
-                        <source srcSet={`https://ik.imagekit.io/wwebdev/tr:w-960/${previewImage}`} media="(max-width: 959px)" />
-                        <S.Image src={`https://ik.imagekit.io/wwebdev/tr:w-800/${previewImage}`} alt={headline} />
-                    </picture>
+                    <S.Image
+                        sizes={
+                            `(max-width: 320px) 320px,
+                            (max-width: 380px) 380px,
+                            (max-width: 960px) 480px,
+                            275px`
+                        }
+                        srcSet={
+                            `https://ik.imagekit.io/wwebdev/tr:w-275/${previewImage} 275w,
+                            https://ik.imagekit.io/wwebdev/tr:w-320/${previewImage} 320w,
+                            https://ik.imagekit.io/wwebdev/tr:w-380/${previewImage} 380w,
+                            https://ik.imagekit.io/wwebdev/tr:w-480/${previewImage} 480w,
+                            https://ik.imagekit.io/wwebdev/tr:w-550/${previewImage} 550w,
+                            https://ik.imagekit.io/wwebdev/tr:w-960/${previewImage} 960w`
+                        }
+                        src={`https://ik.imagekit.io/wwebdev/${previewImage}`}
+                        alt={headline}
+                    />
                 </LazyLoad>
             </a>
             <p>{description}</p>

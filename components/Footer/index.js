@@ -20,7 +20,7 @@ const Footer = () => (
       </div>
 
       <S.RightFooter>
-        <SocialBar hideCoffee={true} />
+        <SocialBar />
 
         <BuyMeACoffeeButton />
 

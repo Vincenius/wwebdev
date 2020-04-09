@@ -20,6 +20,7 @@ export const generateArticles = () => {
     return articleData.map(d => <ArticlePreview
         key={`article-${d.id}`}
         date={d.date}
+        updatedAt={d.updatedAt}
         headline={d.headline}
         description={d.description}
         link={d.link}
@@ -31,6 +32,7 @@ export const generateResources = () => {
     return resourceData.map(d => <ArticlePreview
         key={`resource-${d.id}`}
         date={d.date}
+        updatedAt={d.updatedAt}
         headline={d.headline}
         description={d.description}
         link={d.link}
@@ -46,6 +48,7 @@ export const generateArticleAndResources = maxCount => {
         type={d.type}
         key={`article-${index}`}
         date={d.date}
+        updatedAt={d.updatedAt}
         headline={d.headline}
         description={d.description}
         link={d.link}
