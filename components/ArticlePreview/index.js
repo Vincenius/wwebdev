@@ -20,7 +20,7 @@ const ArticlePreview = ({
   return (
     <S.Container>
       { previewImage &&
-        <a href={link}>
+        <Link href={link}><a>
           <ui.Screenreader>{headline}</ui.Screenreader>
           <LazyLoad offsetVertical={1000}>
             <S.PreviewImage
@@ -47,7 +47,7 @@ const ArticlePreview = ({
               alt={headline}
             />
           </LazyLoad>
-        </a>
+        </a></Link>
       }
       <div>
         <header>
@@ -65,9 +65,9 @@ const ArticlePreview = ({
           </S.Headline>
         </header>
         <p>{description}</p>
-        <S.ReadMore href={link}>
+        <Link href={link}><S.ReadMore>
           { isResource ? 'Open Resource' : 'Read more' }
-        </S.ReadMore>
+        </S.ReadMore></Link>
       </div>
     </S.Container>
   )

@@ -16,22 +16,32 @@ const PrevNext = ({ postId, isArticle }) => {
     return (
         <S.Container>
             { !prevMeta ? <span></span>
-                : <S.Link href={isArticle ? prevMeta.link : `/weekly/${prevMeta.id}`}>
-                    <S.Prev>
-                        <ArrowRight width="1em" height="1em" />
-                        Previous {linkName}
-                    </S.Prev>
-                    { isArticle && <span>{prevMeta.headline}</span> }
-                </S.Link>
+                : <Link
+                    href={isArticle ? prevMeta.link : '/weekly/[slug]'}
+                    as={!isArticle && `/weekly/${prevMeta.id}`}
+                >
+                    <S.Link>
+                        <S.Prev>
+                            <ArrowRight width="1em" height="1em" />
+                            Previous {linkName}
+                        </S.Prev>
+                        { isArticle && <span>{prevMeta.headline}</span> }
+                    </S.Link>
+                </Link>
             }
             { nextMeta &&
-                <S.Link href={isArticle ? nextMeta.link : `/weekly/${nextMeta.id}`} right={true}>
-                    <S.Next>
-                        Next {linkName}
-                        <ArrowRight width="1em" height="1em" />
-                    </S.Next>
-                    { isArticle && <span>{nextMeta.headline}</span> }
-                </S.Link>
+                <Link
+                    href={isArticle ? nextMeta.link : `/weekly/[slug]`}
+                    as={!isArticle && `/weekly/${nextMeta.id}`}
+                >
+                    <S.Link right={true}>
+                        <S.Next>
+                            Next {linkName}
+                            <ArrowRight width="1em" height="1em" />
+                        </S.Next>
+                        { isArticle && <span>{nextMeta.headline}</span> }
+                    </S.Link>
+                </Link>
             }
         </S.Container>
     )
