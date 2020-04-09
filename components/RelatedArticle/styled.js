@@ -1,7 +1,8 @@
 import styled from 'styled-components'
+import { Card } from '@material-ui/core'
 import { breakpoint } from '../../ui/constants'
 
-export const Container = styled.div`
+export const Container = styled(Card)`
     display: flex;
     margin-bottom: 70px;
     margin-top: 30px;
@@ -22,7 +23,6 @@ export const Image = styled.img`
     width: 34%;
     height: 100%;
     object-fit: cover;
-    margin-right: 20px;
     margin-top: 0;
 
     @media only screen and (max-width: ${breakpoint}) {
@@ -33,6 +33,7 @@ export const Image = styled.img`
 
 export const Content = styled.div`
     width: 66%;
+    padding: 20px;
 
     @media only screen and (max-width: ${breakpoint}) {
         width: 100%;
