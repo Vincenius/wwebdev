@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import LazyLoad from 'react-lazy-load'
 import * as S from './styled'
 import * as ui from '../../ui'
@@ -58,7 +59,9 @@ const ArticlePreview = ({
           {updatedAt && <S.Updated>Updated: </S.Updated>}
           <S.Time datetime={d.toISOString()}>{lastDate}</S.Time>
           <S.Headline>
-            <a href={link}>{headline}</a>
+            <Link href={link}>
+              <a>{headline}</a>
+            </Link>
           </S.Headline>
         </header>
         <p>{description}</p>
