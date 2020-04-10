@@ -122,6 +122,7 @@ const Post = () => (
         isArticle={true}
         title={postMeta.headline}
         date={postMeta.date}
+        updatedAt={postMeta.updatedAt}
         link={`https://wweb.dev${postMeta.link}`}
         description={postMeta.description}
         image={postMeta.previewImage}

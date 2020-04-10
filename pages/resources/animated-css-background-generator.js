@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Link from 'next/link'
 import { Head } from '../../components'
 import { Background1, Background2, Background3 } from '../../components/AnimatedCssBackgroundGenerator'
 import * as S from '../../components/AnimatedCssBackgroundGenerator/styles/animatedCssBg'
@@ -20,9 +21,9 @@ const Demo = () => {
             />
 
             <S.Navigation>
-                <a href='/'>
+                <Link href='/'><a>
                     <img src="https://ik.imagekit.io/wwebdev/tr:w-180/logo-text_51kQarOOiD-.png" alt="Logo of wweb.dev"/>
-                </a>
+                </a></Link>
                 <span>
                     <a
                         onClick={() => changeBg(0)}

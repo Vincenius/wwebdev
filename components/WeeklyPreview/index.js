@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import LazyLoad from 'react-lazy-load'
 import ArrowRight from '@material-ui/icons/ArrowRightAlt'
 import * as S from './styled'
@@ -18,11 +19,11 @@ const ArticlePreview = ({
         <S.Container>
             <header>
                 <S.Headline>
-                    <a href={link}>{headline}</a>
+                    <Link href="/weekly/[slug]" href={link}><a>{headline}</a></Link>
                 </S.Headline>
                 <S.Time datetime={d.toISOString()}>{date}</S.Time>
             </header>
-            <a href={link}>
+            <Link href="/weekly/[slug]" href={link}><a>
                 <ui.Screenreader>{headline}</ui.Screenreader>
                 <LazyLoad offsetVertical={1000}>
                     <S.Image
@@ -44,11 +45,11 @@ const ArticlePreview = ({
                         alt={headline}
                     />
                 </LazyLoad>
-            </a>
+            </a></Link>
             <p>{description}</p>
-            <S.ReadMore href={link}>
+            <Link href="/weekly/[slug]" as={link}><S.ReadMore >
                 Open Weekly <ArrowRight width="1em" height="1em" />
-            </S.ReadMore>
+            </S.ReadMore></Link>
         </S.Container>
     )
 }

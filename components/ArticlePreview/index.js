@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import LazyLoad from 'react-lazy-load'
 import * as S from './styled'
 import * as ui from '../../ui'
@@ -10,14 +11,16 @@ const ArticlePreview = ({
   description,
   type,
   previewImage,
+  updatedAt,
 }) => {
-  const d = new Date(date)
+  const lastDate = updatedAt || date
+  const d = new Date(lastDate)
   const isResource = type === 'Resource'
 
   return (
     <S.Container>
       { previewImage &&
-        <a href={link}>
+        <Link href={link}><a>
           <ui.Screenreader>{headline}</ui.Screenreader>
           <LazyLoad offsetVertical={1000}>
             <S.PreviewImage
@@ -44,7 +47,7 @@ const ArticlePreview = ({
               alt={headline}
             />
           </LazyLoad>
-        </a>
+        </a></Link>
       }
       <div>
         <header>
@@ -53,15 +56,18 @@ const ArticlePreview = ({
               <b>{type}</b> -&nbsp;
             </S.Type>
           }
-          <S.Time datetime={d.toISOString()}>{date}</S.Time>
+          {updatedAt && <S.Updated>Updated: </S.Updated>}
+          <S.Time datetime={d.toISOString()}>{lastDate}</S.Time>
           <S.Headline>
-            <a href={link}>{headline}</a>
+            <Link href={link}>
+              <a>{headline}</a>
+            </Link>
           </S.Headline>
         </header>
         <p>{description}</p>
-        <S.ReadMore href={link}>
+        <Link href={link}><S.ReadMore>
           { isResource ? 'Open Resource' : 'Read more' }
-        </S.ReadMore>
+        </S.ReadMore></Link>
       </div>
     </S.Container>
   )
