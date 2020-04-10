@@ -1,4 +1,5 @@
 import React from 'react'
+import Link from 'next/link'
 import * as ui from '../ui'
 import { Layout, SubscribeForm } from '../components'
 import { generateWeekly, generateArticleAndResources } from '../content/generator'
@@ -16,13 +17,13 @@ const Home = () => (
 
           { generateArticleAndResources(7) }
 
-          <a href="/blog">
+          <Link href="/blog"><a>
             See blog posts
-          </a>
+          </a></Link>
 
-          <a href="/resources">
+          <Link href="/resources"><a>
             See all resources
-          </a>
+          </a></Link>
         </ui.SidebarMain>
         <ui.Sidebar>
           <h2>Latest News</h2>
@@ -30,9 +31,9 @@ const Home = () => (
           <ui.SidebarContent>
             { generateWeekly(6) }
 
-            <a href="/weekly">
+            <Link href="/weekly"><a>
               See all weekly news
-            </a>
+            </a></Link>
           </ui.SidebarContent>
         </ui.Sidebar>
       </ui.SidebarContainer>

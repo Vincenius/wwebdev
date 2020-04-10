@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Link from 'next/link'
 import { Card } from '@material-ui/core'
 import { GitHub } from '@material-ui/icons'
 import Controls from './Controls'
@@ -30,9 +31,9 @@ const Generator = props => {
         <React.Fragment>
             <S.Header>
                 <div>
-                    <a href='https://wweb.dev'>
+                    <Link href='https://wweb.dev'><a>
                         <img src="https://ik.imagekit.io/wwebdev/tr:h-100/logo-text_51kQarOOiD-.png" alt="Logo of wweb.dev"/>
-                    </a>
+                    </a></Link>
                 </div>
                 <a href='https://github.com/wwebdev/separator-generator' target="_blank" rel="noopener noreferrer">
                     <GitHub />
