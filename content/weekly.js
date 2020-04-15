@@ -18,7 +18,7 @@ const data = [
             title:"Linkdash",
             description:"A cool repo to generate a dashboard of your most important links.",
             link:"https://github.com/igimanaloto/linkdash",
-            image:"https://raw.githubusercontent.com/igimanaloto/linkdash/master/readme_assets/demo.gif",
+            image:"/weekly/screenshots/linkdash.jpg",
         },{
             title:"Responsive Images the Simple Way",
             description:"A good article by Scott Vandehey about getting responsive images right.",
