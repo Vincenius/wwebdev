@@ -27,7 +27,7 @@ const Post = () => (
 
             <LinkBox
                 title="Pages"
-                description="A collaborative list of various pages around the web, which is mosty focused on SaaS pages."
+                description="A collaborative list of various pages around the web, which is moslty focused on SaaS pages."
                 link="https://www.pages.xyz/"
                 image="/resources/inspiration-websites/pages.jpg"
             />
