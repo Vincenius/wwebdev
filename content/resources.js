@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 6,
+        type: 'Resource',
+        date: 'April 20, 2020',
+        headline: "Websites For Inspiration",
+        description: "Need some inspiration for your project? With this list of 19 websites, which you can check for inspiration, you'll never run out of ideas for your website again.",
+        link: "/resources/websites-for-inspiration",
+        previewImage: "resources/preview_rDQNhlplI.png",
+    },
+    {
         id: 5,
         type: 'Resource',
         date: 'April 01, 2020',
