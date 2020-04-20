@@ -34,14 +34,14 @@ const Post = () => (
 
             <LinkBox
                 title="Land-book"
-                description="A design gallery with carefully collected websites. It is sortable by landings, portfolios, blogs, stores and other."
+                description="A design gallery with carefully collected websites. It is sortable by landings, portfolios, blogs, stores, and others."
                 link="https://land-book.com/"
                 image="/resources/inspiration-websites/land-book.jpg"
             />
 
             <LinkBox
                 title="Landingfolio"
-                description="A website, which has landing page design inspiration, templates, resources and more. It can be filtered by category, color and device."
+                description="A website, which has landing page design inspiration, templates, resources and more. It can be filtered by category, color, and device."
                 link="https://www.landingfolio.com/"
                 image="/resources/inspiration-websites/landingfolio.jpg"
             />
@@ -62,14 +62,14 @@ const Post = () => (
 
             <LinkBox
                 title="Creative Portfolios"
-                description="Is a small curation of creative portfolios made by designers & developers."
+                description="A small curation of creative portfolios made by designers & developers."
                 link="https://www.creative-portfolios.com/"
                 image="/resources/inspiration-websites/creative-portfolios.jpg"
             />
 
             <LinkBox
                 title="Webdesign Inspiration"
-                description="Hand picked web design inspiration, chosen among different styles and industries. Can be filtered by desktop, mobile and tablet sites."
+                description="Hand-picked web design inspiration, chosen among different styles and industries. It can be filtered by desktop, mobile and tablet sites."
                 link="https://www.webdesign-inspiration.com/"
                 image="/resources/inspiration-websites/webdesign-inspiration.jpg"
             />
@@ -97,7 +97,7 @@ const Post = () => (
 
             <LinkBox
                 title="One Page Love"
-                description="A website design gallery showcasing single page websites, templates and resources."
+                description="A website design gallery showcasing single page websites, templates, and resources."
                 link="https://onepagelove.com/"
                 image="/resources/inspiration-websites/onepagelove.jpg"
             />
@@ -118,7 +118,7 @@ const Post = () => (
 
             <LinkBox
                 title="DesignMunk"
-                description="A list of hand picked landing page inspirations from around the web."
+                description="A list of hand-picked landing page inspirations from around the web."
                 link="https://designmunk.com/"
                 image="/resources/inspiration-websites/designmunk.jpg"
             />
