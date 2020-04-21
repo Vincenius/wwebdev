@@ -11,7 +11,7 @@ const data = [
             image:"https://github.blog/wp-content/uploads/2020/04/GH-Blog-1200-x-630_Option1@2x.png?w=2400",
         },{
             title:"React Query",
-            description:"A really cool React library for handeling server state with fetching, caching and updating.",
+            description:"A really cool React library for handling server state with fetching, caching and updating.",
             link:"https://www.npmjs.com/package/react-query",
             image:"https://raw.githubusercontent.com/tannerlinsley/react-query/master/media/header.png",
         },{
