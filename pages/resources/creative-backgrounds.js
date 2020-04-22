@@ -31,6 +31,12 @@ const Post = () => (
                 image="/resources/creative-backgrounds/gradientmagic.png"
             />
             <LinkBox
+                title="pattern.css"
+                description="A cool css library for background patterns, which can be easily applied to all elements."
+                link="https://bansal.io/pattern-css"
+                image="/resources/creative-backgrounds/patterncss.png"
+            />
+            <LinkBox
                 title="Trianglify"
                 description="A generator for low poly triangle patterns."
                 link="https://trianglify.io/"
