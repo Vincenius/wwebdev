@@ -19,6 +19,36 @@ class MyHead extends React.Component {
             : `${title} | wweb.dev`
         const imageLink = localImage ? `https://wweb.dev${image}` : `https://ik.imagekit.io/wwebdev/${image}`
 
+        const structuredData = `
+            "@context": "http://schema.org",
+            "@type":"Article",
+            "mainEntityOfPage": {
+                "@type": "WebPage",
+                "@id":"${link}"
+            },
+            "headline": "${title}",
+            "datePublished":"${date}",
+            "image": {
+                "@type":"ImageObject",
+                "url":"${imageLink}",
+                "height":646,"width":1300
+            },
+            "description":"${description}",
+            "author": {
+                "@type":"Person",
+                "name":"Vincent Will"
+            },
+            "publisher": {
+                "@type":"Organization",
+                "name":"wweb.dev",
+                "logo":{
+                    "@type":"ImageObject",
+                    "url":"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png",
+                    "height":64,
+                    "width":64
+                }
+            }`
+
         return (
             <Head>
                 <title>{headTitle}</title>
@@ -62,38 +92,7 @@ class MyHead extends React.Component {
                         <meta property="og:url" content={link} />
                         <meta property="og:type" content="article" />
 
-                        <script type="application/ld+json">
-                            {`
-                                '@context': "http://schema.org",
-                                "@type":"Article",
-                                "mainEntityOfPage": {
-                                    "@type": "WebPage",
-                                    "@id":"${link}"
-                                },
-                                "headline": "${title}",
-                                "datePublished":"${date}",
-                                "image": {
-                                    "@type":"ImageObject",
-                                    "url":"${imageLink}",
-                                    "height":646,"width":1300
-                                },
-                                "description":"${description}",
-                                "author": {
-                                    "@type":"Person",
-                                    "name":"Vincent Will"
-                                },
-                                "publisher": {
-                                    "@type":"Organization",
-                                    "name":"wweb.dev",
-                                    "logo":{
-                                        "@type":"ImageObject",
-                                        "url":"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png",
-                                        "height":64,
-                                        "width":64
-                                    }
-                                }
-                            `}
-                        </script>
+                        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredData}} />
                     </React.Fragment>
                 }
             </Head>
