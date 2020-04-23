@@ -173,7 +173,7 @@ const Post = () => (
       <h2>Fetching the data</h2>
 
       <p>
-        First of all, I'll remove all the boilerplate code in the App.js and replace it with following code:
+        First of all, I'll remove all the boilerplate code in the App.js and replace it with the following code:
       </p>
 
       <CodeBlock
@@ -187,7 +187,7 @@ const Post = () => (
       </p>
 
       <p>
-        In the beginning of the <ui.Code>App()</ui.Code> the useQuery hook is called with an identifier for
+        At the beginning of the <ui.Code>App()</ui.Code> the useQuery hook is called with an identifier for
         the data that's being fetched as well as out async function getPosts.
       </p>
 
