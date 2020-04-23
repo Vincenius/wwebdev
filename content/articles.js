@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 7,
+        type: 'Article',
+        date: 'April 24, 2020',
+        headline: 'Getting started with React Query - Easy server state management in React',
+        description: "Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...",
+        link: '/blog/react-query-getting-started-tutorial',
+        previewImage: 'articles/preview_vKvwsCn4S.png',
+    },
+    {
         id: 6,
         type: 'Article',
         date: 'March 09, 2020',
