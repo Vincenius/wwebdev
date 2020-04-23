@@ -143,12 +143,12 @@ const Post = () => (
       <h2>Getting started</h2>
       <p>
         Handling state, which comes from the server can really cause some headaches in React.
-        There is a lot you have to think about when dealing with asynchronous data, like updating, caching or refetching to name a few.
+        There is a lot you have to think about when dealing with asynchronous data, like updating, caching, or re-fetching to name a few.
       </p>
 
       <p>
         This is where <a href="https://www.npmjs.com/package/react-query" target="_blank" rel="noopener noreferrer">react-query</a> comes in.
-        It handles those smoothly and also offers simple solutions for optimistic rendering, infinite scroll, pagination and more.
+        It handles those smoothly and also offers simple solutions for optimistic rendering, infinite scroll, pagination, and more.
       </p>
 
       <p>Here's a small demo of what we'll be building:</p>
@@ -161,12 +161,12 @@ const Post = () => (
       </p>
 
       <p>
-        For this tutorial I'll assume you have node installed. First of all create a new react app with <ui.Code>npx create-react-app</ui.Code>.
+        For this tutorial, I'll assume you have node installed. First of all, create a new react app with <ui.Code>npx create-react-app</ui.Code>.
         Afterward, install react-query with <ui.Code>npm i --save react-query</ui.Code>
       </p>
 
       <p>
-        For demonstrating how react-query works I'll usethe <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer">Json Placeholder API</a> to
+        For demonstrating how react-query works I'll use the <a href="https://jsonplaceholder.typicode.com/" target="_blank" rel="noopener noreferrer">Json Placeholder API</a> to
         create a simple blog.
       </p>
 
@@ -192,7 +192,7 @@ const Post = () => (
       </p>
 
       <p>
-        The hook returns status, data, isFetching and error. Those are pretty self explanatory.
+        The hook returns status, data, isFetching, and error. Those are pretty self-explanatory.
         The status can be either "success", "loading" or "error".
         The rest of the component handles the display of the result on the three possible states.
       </p>
@@ -211,7 +211,7 @@ const Post = () => (
       <h2>Extending the application</h2>
 
       <p>
-        First of all I'll move the code from App.js to a new component <ui.Code>components/Home.js</ui.Code>.
+        First of all, I'll move the code from App.js to a new component <ui.Code>components/Home.js</ui.Code>.
         Therefore I will rename the component and I'll also add a <ui.Code>NavLink</ui.Code> to the post list.
       </p>
 
@@ -231,7 +231,7 @@ const Post = () => (
       />
 
       <p>
-        And finally I'll create a new component <ui.Code>components/Post.js</ui.Code> for displaying
+        And finally, I'll create a new component <ui.Code>components/Post.js</ui.Code> for displaying
         the data of a single post. The explanation will follow after the code.
       </p>
 
@@ -241,9 +241,9 @@ const Post = () => (
       />
 
       <p>
-        So the useQuery in doesn't differ much from the one in Home.js. It adds the <ui.Code>id</ui.Code> to the identifier,
-        so each post has its own state. Additionally I've added a timeout for 1 second to the <ui.Code>getPost</ui.Code> function
-        to make the loading state more visible. Also I've appended a random string to the title to make the refetching visible.
+        So the <ui.Code>useQuery</ui.Code> in here doesn't differ much from the one in Home.js. It adds the <ui.Code>id</ui.Code> to the identifier,
+        so each post has its own state. Additionally, I've added a timeout for 1 second to the <ui.Code>getPost</ui.Code> function
+        to make the loading state more visible. Also, I've appended a random string to the title to make the re-fetching visible.
       </p>
 
       <p>And that's actually the whole code for the gif you saw at the beginning of the post.</p>
