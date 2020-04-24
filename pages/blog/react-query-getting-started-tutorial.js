@@ -1,6 +1,6 @@
 import React from 'react'
 import * as ui from '../../ui'
-import { CodeBlock, Layout, Comments, PrevNext } from '../../components'
+import { CodeBlock, Layout, Comments, PrevNext, SubscribeForm } from '../../components'
 import meta from '../../content/articles'
 
 const postId = 7
@@ -141,6 +141,7 @@ const Post = () => (
   >
     <ui.ArticleContainer as="article">
       <h2>Getting started</h2>
+
       <p>
         Handling state, which comes from the server can really cause some headaches in React.
         There is a lot you have to think about when dealing with asynchronous data, like updating, caching, or re-fetching to name a few.
@@ -262,6 +263,8 @@ const Post = () => (
       </p>
 
       <PrevNext postId={postId} isArticle={true} />
+
+      <SubscribeForm />
 
       <Comments />
     </ui.ArticleContainer>
