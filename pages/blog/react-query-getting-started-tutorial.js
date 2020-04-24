@@ -249,6 +249,12 @@ const Post = () => (
       <p>And that's actually the whole code for the gif you saw at the beginning of the post.</p>
 
       <p>
+        If you start working with react-query, I'd recommend you to check out
+        the <a href="https://github.com/tannerlinsley/react-query-devtools" target="_blank" rel="noopener noreferrer">react-query-devtools</a>, to
+        be able to view the state and the cache.
+      </p>
+
+      <p>
         Feel free to check out the code on <a href="https://github.com/wwebdev/react-query-demo" target="_blank" rel="noopener noreferrer">GitHub</a>.
         Also let me know if you'd like to know more about the usage of react-query for things
         like <ui.Code>initial data</ui.Code>, <ui.Code>pre-fetching</ui.Code>, <ui.Code>optimistic rendering</ui.Code> and I'll
