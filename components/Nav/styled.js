@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import * as ui from '../../ui'
-import { darkGrey, breakpointSmall, breakpoint, breakpointLarge } from '../../ui/constants'
+import { darkGrey, breakpointSmall, breakpoint, breakpointLarge, logoColorLeft } from '../../ui/constants'
 
 export const Container = styled.div`
     background: ${darkGrey};
@@ -74,6 +74,7 @@ export const Main = styled.div`
         }
 
         a {
+            cursor: pointer;
             font-size: 13px;
             line-height: 18px;
             letter-spacing: 0px;
@@ -97,4 +98,8 @@ export const Main = styled.div`
             }
         }
     }
+`
+
+export const Link = styled.a`
+    color: ${props => props.active ? logoColorLeft : 'rgba(255,255,255,0.8)'} !important;
 `
