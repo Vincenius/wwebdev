@@ -4,10 +4,9 @@ import { SubscribeForm, Layout } from '../components'
 import { generateResources } from '../content/generator'
 
 const Home = () => (
-    <Layout
-        title="Free Resources and Tools for your usage"
-    >
+    <Layout title="Free Resources and Tools for your usage">
         <ui.Container>
+            <h2>Latest Resources</h2>
             { generateResources() }
             <SubscribeForm />
         </ui.Container>

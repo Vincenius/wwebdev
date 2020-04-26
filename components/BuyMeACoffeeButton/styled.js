@@ -1,10 +1,11 @@
 import styled from 'styled-components'
 import Button from '@material-ui/core/Button'
-import { lightGrey, breakpointSmall } from '../../ui/constants'
+import { lightGrey, breakpointSmall, darkGrey } from '../../ui/constants'
 
 export const CoffeeButton = styled(Button)`
   margin: 0 0 0 auto !important;
   background-color: ${lightGrey} !important;
+  color: ${darkGrey} !important;
 
   &:hover {
     background-color: #fff !important;

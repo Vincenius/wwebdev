@@ -2,7 +2,7 @@ import React from 'react'
 
 import "../../ui/global.css"
 import '../../ui/code-style/github.css';
-import { Head, Header, Footer } from '../'
+import { Head, Header, Nav, Footer } from '../'
 import * as S from './styled'
 
 function Layout ({
@@ -32,13 +32,16 @@ function Layout ({
                 isArticle={isArticle}
                 titleNameFirst={titleNameFirst}
             />
-            <Header>
+            <Nav
+                title={title}
+                isArticle={isArticle} />
+            { isArticle && <Header>
                 <h1>{title}</h1>
-                { isArticle && <S.SDate><S.Time datetime={d.toISOString()}>{date}</S.Time></S.SDate> }
-                { isArticle && updatedAt &&
+                <S.SDate><S.Time datetime={d.toISOString()}>{date}</S.Time></S.SDate>
+                { updatedAt &&
                     <S.Updated>Updated: <S.Time datetime={ud.toISOString()}>{updatedAt}</S.Time></S.Updated>
                 }
-            </Header>
+            </Header> }
 
             <main>
                 { children }

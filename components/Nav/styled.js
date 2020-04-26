@@ -6,7 +6,8 @@ export const Container = styled.div`
     background: ${darkGrey};
     position: relative;
     padding: 16px 20px;
-    margin: 0 auto 30px;
+    margin: ${props => props.isArticle ? '0 auto' : '0 auto 32px'};
+    width: 100%;
 
     img {
         width: 90px;
@@ -16,6 +17,10 @@ export const Container = styled.div`
             margin-right: 0
         }
     }
+`
+
+export const HeadlineLogo = styled.h1`
+    margin: 0;
 `
 
 export const Navigation = styled(ui.Container)`
