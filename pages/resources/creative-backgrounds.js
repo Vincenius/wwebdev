@@ -43,6 +43,12 @@ const Post = () => (
                 image="/resources/creative-backgrounds/trianglify.png"
             />
             <LinkBox
+                title="Transparent Textures"
+                description="A large collection of CSS patterns, which can be filtered and colorized."
+                link="https://www.transparenttextures.com/"
+                image="/resources/creative-backgrounds/transparent-textures.jpg"
+            />
+            <LinkBox
                 title="Ambient Canvas Backgrounds"
                 description="A bunch of nice backgrounds using the HTML5 Canvas API."
                 link="https://tympanus.net/Development/AmbientCanvasBackgrounds/index2.html"
@@ -53,6 +59,18 @@ const Post = () => (
                 description="Repeatable SVG background patterns by Steve Schoger."
                 link="https://www.heropatterns.com/"
                 image="/resources/creative-backgrounds/heropatterns.png"
+            />
+            <LinkBox
+                title="css-doodle"
+                description="A web component for drawing patterns with CSS."
+                link="https://css-doodle.com/"
+                image="/resources/creative-backgrounds/css-doodle.jpg"
+            />
+            <LinkBox
+                title="CSS3 Patterns Gallery"
+                description="A gallery of CSS patterns, which are also editable right in the browser."
+                link="https://leaverou.github.io/css3patterns/"
+                image="/resources/creative-backgrounds/css3-pattern-gallery.jpg"
             />
             <LinkBox
                 title="particles.js"
@@ -67,16 +85,34 @@ const Post = () => (
                 image="/resources/creative-backgrounds/beautifuldingbats.png"
             />
             <LinkBox
+                title="The Pattern Library"
+                description="A compiled list of beautiful patterns by different designers."
+                link="http://thepatternlibrary.com/"
+                image="/resources/creative-backgrounds/pattern-library.jpg"
+            />
+            <LinkBox
                 title="SVG Gradient Wave Generator"
                 description="A generator for SVG wave patterns."
                 link="https://www.outpan.com/app/9aaaf27303/svg-gradient-wave-generator"
                 image="/resources/creative-backgrounds/svggradientwavegenerator.png"
             />
             <LinkBox
+                title="Subtle Patterns"
+                description=" A huge list of more than 500 subtle background patterns and textures."
+                link="https://www.toptal.com/designers/subtlepatterns/"
+                image="/resources/creative-backgrounds/subtle-patterns.jpg"
+            />
+            <LinkBox
                 title="THPACE!"
                 description="A pretty space animation out of triangles using canvas."
                 link="https://www.braedin.com/Thpace/"
                 image="/resources/creative-backgrounds/thpace.jpg"
+            />
+            <LinkBox
+                title="Background Generator"
+                description="A cool generator, which also has a small list of backgrounds created with it."
+                link="https://background-generator.com/"
+                image="/resources/creative-backgrounds/background-generator.jpg"
             />
             <LinkBox
                 title="Naker"
@@ -131,12 +167,6 @@ const Post = () => (
                 description="Creative website header animations using Canvas and JavaScript."
                 link="https://tympanus.net/Development/AnimatedHeaderBackgrounds/index3.html"
                 image="/resources/creative-backgrounds/animatedbackgroundheaders.png"
-            />
-            <LinkBox
-                title="waterpipe.js"
-                description="A plugin for smoky background generation using canvas."
-                link="http://dragdropsite.github.io/waterpipe.js/"
-                image="/resources/creative-backgrounds/waterpipe.jpg"
             />
             <LinkBox
                 title="Animated CSS Background Generator"
