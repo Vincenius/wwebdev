@@ -7,7 +7,7 @@ import { generateWeekly } from '../content/generator'
 const Home = () => (
     <Layout title="Weekly roundup of resources about web development">
         <ui.Container>
-            <h2>Latest Weekly Updates</h2>
+            <h2>Weekly updates around web development and design</h2>
         </ui.Container>
         <S.Container>
             { generateWeekly() }
