@@ -5,7 +5,7 @@ import {
   TextareaAutosize,
   FormControlLabel as MuiFormControlLabel
 } from '@material-ui/core'
-import { darkGrey } from '../../ui/constants'
+import { darkGrey, greyBlue } from '../../ui/constants'
 import {
   generateSkewCss,
   generateSemiCircleCss,
@@ -192,4 +192,13 @@ export const Copied = styled.span`
     ${props => props.visible && css`
         opacity: 1;
     `}
+`
+
+export const GithubLink = styled.a`
+  padding: 20px;
+  color: ${darkGrey};
+
+  &:hover {
+    color: ${greyBlue};
+  }
 `

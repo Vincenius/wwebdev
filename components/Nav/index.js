@@ -15,12 +15,12 @@ const links = [
   return link
 })
 
-const Nav = ({ isArticle, title }) => {
+const Nav = ({ isArticle, title, transparentBg }) => {
   const router = useRouter()
   const activePath = router.pathname.split('/')[1]
   const logo = alt => <img src="https://ik.imagekit.io/wwebdev/tr:w-180/logo-text_51kQarOOiD-.png" alt={alt} />
   return (
-    <S.Container isArticle={isArticle}>
+    <S.Container isArticle={isArticle} transparentBg={transparentBg}>
       <S.Navigation as="nav">
         <S.Main>
           <Link href='/'><a>

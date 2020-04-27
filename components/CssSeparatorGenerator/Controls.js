@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Paper, Tabs, Tab, Slider, Checkbox } from '@material-ui/core'
-import { ExpandLess, ExpandMore, FileCopy } from '@material-ui/icons'
+import { ExpandLess, ExpandMore, FileCopy, GitHub } from '@material-ui/icons'
 import * as S from './styled'
 import { generateHtmlCode, generateCssCode } from './codeGenerators'
 
@@ -49,6 +49,13 @@ const Controls = props => {
                 <Tab label="Settings" />
                 <Tab label="HTML" />
                 <Tab label="CSS" />
+                <S.GithubLink
+                    href='https://github.com/wwebdev/separator-generator'
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <GitHub />
+                </S.GithubLink>
             </Tabs>
             <S.ControlContent isVisible={isVisible}>
                 { value === 0 &&

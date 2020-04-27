@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { Card } from '@material-ui/core'
-import { GitHub } from '@material-ui/icons'
 import Controls from './Controls'
 import * as S from './styled'
 import { SEPARATORS, SEPARATOR_OPTIONS } from './constants'
