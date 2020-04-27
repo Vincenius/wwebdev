@@ -79,7 +79,6 @@ export const Main = styled.div`
             line-height: 18px;
             letter-spacing: 0px;
             font-weight: 700;
-            color: rgba(255,255,255,0.8);
             text-transform: uppercase;
             text-decoration: none;
             line-height: 16px;
@@ -101,5 +100,9 @@ export const Main = styled.div`
 `
 
 export const Link = styled.a`
-    color: ${props => props.active ? logoColorLeft : 'rgba(255,255,255,0.8)'} !important;
+    color: ${props => props.active ? logoColorLeft : 'rgba(255,255,255,0.8)'};
+
+    &:hover {
+        color: ${logoColorLeft};
+    }
 `
