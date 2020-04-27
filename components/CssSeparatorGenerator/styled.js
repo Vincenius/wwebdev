@@ -17,6 +17,7 @@ import {
 
 export const Container = styled.main`
   height: 100vh;
+  min-height: 768px;
   display: flex;
   flex-direction: column;
 `
@@ -118,7 +119,11 @@ export const Controls = styled(Card)`
 
   @media (max-height: 900px) {
     position: absolute;
-    top: 100px;
+    top: 50px;
+  }
+
+  @media (max-width: 960px) {
+    top: 0;
   }
 `
 

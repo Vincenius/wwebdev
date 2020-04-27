@@ -8,6 +8,7 @@ export const Container = styled.div`
     padding: 16px 20px;
     margin: ${props => props.isArticle ? '0 auto' : '0 auto 32px'};
     width: 100%;
+    z-index: 10;
 
     img {
         width: 90px;

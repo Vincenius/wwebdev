@@ -5,6 +5,7 @@ import { GitHub } from '@material-ui/icons'
 import Controls from './Controls'
 import * as S from './styled'
 import { SEPARATORS, SEPARATOR_OPTIONS } from './constants'
+import { Nav } from '../'
 
 const Generator = props => {
     const defaultSeparator = SEPARATORS.SKEWED
@@ -29,17 +30,8 @@ const Generator = props => {
 
     return (
         <React.Fragment>
-            <S.Header>
-                <div>
-                    <Link href='https://wweb.dev'><a>
-                        <img src="https://ik.imagekit.io/wwebdev/tr:h-100/logo-text_51kQarOOiD-.png" alt="Logo of wweb.dev"/>
-                    </a></Link>
-                </div>
-                <a href='https://github.com/wwebdev/separator-generator' target="_blank" rel="noopener noreferrer">
-                    <GitHub />
-                </a>
-            </S.Header>
             <S.Container>
+                <Nav isArticle={true} />
                 <TopElement options={options} noBgColor={active === SEPARATORS.SKEWED}>
                     <Controls
                         options={options}
