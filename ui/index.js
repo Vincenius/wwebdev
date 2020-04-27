@@ -65,6 +65,10 @@ export const SidebarContainer = styled.div`
 export const SidebarMain = styled.div`
     margin-bottom: 30px;
 
+    > h2 {
+        margin: 0 0 26px;
+    }
+
     > a {
         display: block;
         text-align: center;
@@ -88,7 +92,7 @@ export const Sidebar = styled.aside`
     }
 
     h2 {
-        margin: 6px 0 16px;
+        margin: 0 0 26px;
     }
 `
 

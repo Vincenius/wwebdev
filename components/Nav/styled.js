@@ -1,12 +1,13 @@
 import styled from 'styled-components'
 import * as ui from '../../ui'
-import { darkGrey, breakpointSmall, breakpoint, breakpointLarge } from '../../ui/constants'
+import { darkGrey, breakpointSmall, breakpoint, breakpointLarge, logoColorLeft } from '../../ui/constants'
 
 export const Container = styled.div`
     background: ${darkGrey};
     position: relative;
     padding: 16px 20px;
-    margin: 0 auto 30px;
+    margin: ${props => props.isArticle ? '0 auto' : '0 auto 32px'};
+    width: 100%;
 
     img {
         width: 90px;
@@ -16,6 +17,10 @@ export const Container = styled.div`
             margin-right: 0
         }
     }
+`
+
+export const HeadlineLogo = styled.h1`
+    margin: 0;
 `
 
 export const Navigation = styled(ui.Container)`
@@ -69,6 +74,7 @@ export const Main = styled.div`
         }
 
         a {
+            cursor: pointer;
             font-size: 13px;
             line-height: 18px;
             letter-spacing: 0px;
@@ -92,4 +98,8 @@ export const Main = styled.div`
             }
         }
     }
+`
+
+export const Link = styled.a`
+    color: ${props => props.active ? logoColorLeft : 'rgba(255,255,255,0.8)'} !important;
 `
