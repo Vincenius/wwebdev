@@ -98,7 +98,7 @@ const Post = () => (
             />
             <LinkBox
                 title="Subtle Patterns"
-                description=" A huge list of more than 500 subtle background patterns and textures."
+                description="A huge list of more than 500 subtle background patterns and textures."
                 link="https://www.toptal.com/designers/subtlepatterns/"
                 image="/resources/creative-backgrounds/subtle-patterns.jpg"
             />
