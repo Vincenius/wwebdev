@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { Head } from '../../components'
+import { Head, Nav } from '../../components'
 import { Background1, Background2, Background3 } from '../../components/AnimatedCssBackgroundGenerator'
 import * as S from '../../components/AnimatedCssBackgroundGenerator/styles/animatedCssBg'
 import meta from '../../content/resources'
@@ -9,6 +9,7 @@ const postMeta = meta.find(m => m.id === 1)
 
 const Demo = () => {
     const [activeBg, changeBg] = useState(0);
+
     return (
         <S.Container>
             <Head
@@ -20,35 +21,11 @@ const Demo = () => {
                 date={new Date(postMeta.date)}
             />
 
-            <S.Navigation>
-                <Link href='/'><a>
-                    <img src="https://ik.imagekit.io/wwebdev/tr:w-180/logo-text_51kQarOOiD-.png" alt="Logo of wweb.dev"/>
-                </a></Link>
-                <span>
-                    <a
-                        onClick={() => changeBg(0)}
-                        className={activeBg === 0 ? 'active' : ''}
-                    >
-                        Demo 1
-                    </a>
-                    <a
-                        onClick={() => changeBg(1)}
-                        className={activeBg === 1 ? 'active' : ''}
-                    >
-                        Demo 2
-                    </a>
-                    <a
-                        onClick={() => changeBg(2)}
-                        className={activeBg === 2 ? 'active' : ''}
-                    >
-                        Demo 3
-                    </a>
-                </span>
-            </S.Navigation>
+            <Nav isArticle={true} transparentBg={true} />
 
-            { activeBg === 0 && <Background1 /> }
-            { activeBg === 1 && <Background2 /> }
-            { activeBg === 2 && <Background3 /> }
+            { activeBg === 0 && <Background1 changeBg={changeBg} activeBg={activeBg} /> }
+            { activeBg === 1 && <Background2 changeBg={changeBg} activeBg={activeBg} /> }
+            { activeBg === 2 && <Background3 changeBg={changeBg} activeBg={activeBg} /> }
         </S.Container>
     )
 }

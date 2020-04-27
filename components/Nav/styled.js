@@ -3,7 +3,7 @@ import * as ui from '../../ui'
 import { darkGrey, breakpointSmall, breakpoint, breakpointLarge, logoColorLeft } from '../../ui/constants'
 
 export const Container = styled.div`
-    background: ${props => props.transparentBg ? 'transparent' : darkGrey};
+    background: ${props => props.transparentBg ? 'rgba(44,62,80, 0.6)' : darkGrey};
     position: relative;
     padding: 16px 20px;
     margin: ${props => props.isArticle ? '0 auto' : '0 auto 32px'};
