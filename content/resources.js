@@ -25,7 +25,7 @@ const data = [
         headline: "Websites For Creative Backgrounds",
         description: "A curated list of websites where you can get creative backgrounds for your websites.",
         link: "/resources/creative-backgrounds",
-        previewImage: "resources/preview_gUZCcvg62.jpg",
+        previewImage: "resources/preview_IF4o7Ga9O.jpg",
     },
     {
         id: 3,
