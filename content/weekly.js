@@ -16,7 +16,7 @@ const data = [
             image:"https://wp-assets.wolt.com/wp-content/uploads/sites/3/2019/07/01114118/blur-e1561970702316.jpg",
         },{
             title:"Spaced Time",
-            description:"An application, which helps you remembering stuff - it also has an cli.",
+            description:"An application, which helps you remembering stuff - it also has a cli.",
             link:"https://www.spacedtime.com/",
             image:"https://www.spacedtime.com/spacedtime-logo.png",
         },{
