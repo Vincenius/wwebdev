@@ -56,7 +56,7 @@ const data = [
             image:"https://css.gg/fav/og2.png",
         },{
             title:"67 Free device icons",
-            description:"A free set of 67 device icons in multiple file formats .",
+            description:"A free set of 67 device icons in multiple file formats.",
             link:"https://freebiesbug.com/illustrator-freebies/67-device-icons/",
             image:"https://cdn.freebiesbug.com/wp-content/uploads/2020/04/67-tidee-icons.png",
         },{
