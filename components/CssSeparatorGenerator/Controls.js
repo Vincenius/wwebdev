@@ -82,6 +82,7 @@ const Controls = props => {
                                     aria-labelledby={`${key}-slider`}
                                     min={option.min}
                                     max={option.max}
+                                    step={option.step}
                                     valueLabelDisplay="auto"
                                 />
                             </S.SliderContainer>
