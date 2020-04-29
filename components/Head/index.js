@@ -10,6 +10,7 @@ class MyHead extends React.Component {
             image,
             localImage,
             date,
+            updatedDate,
             isArticle,
             titleNameFirst,
         } = this.props
@@ -29,6 +30,7 @@ class MyHead extends React.Component {
             },
             "headline": "${title}",
             "datePublished":"${date}",
+            "dateModified":"${updatedDate || date}",
             "image": {
                 "@type":"ImageObject",
                 "url":"${imageLink}",

@@ -29,6 +29,7 @@ function Layout ({
                 localImage={localImage}
                 description={description}
                 date={d}
+                updatedDate={ud}
                 isArticle={isArticle}
                 titleNameFirst={titleNameFirst}
             />
