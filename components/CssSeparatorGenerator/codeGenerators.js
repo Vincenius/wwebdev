@@ -93,17 +93,17 @@ ${cssClass}::before, ${cssClass}::after {
 }
 
 ${cssClass}::before {
-  width: 53.5%;
-  height: ${!reversed ? '110%' : '100%'};
+  width: 55%;
+  height: ${!reversed ? '109%' : '100%'};
   background-color: ${!reversed ? '#fff' : darkGrey};
-  right: 0;
+  right: -1.5%;
   top: ${!reversed ? '60%' : '40%'};
 }
 ${cssClass}::after {
-  width: 53.5%;
-  height: ${!reversed ? '100%' : '110%'};
+  width: 55%;
+  height: ${!reversed ? '100%' : '109%'};
   background-color: ${!reversed ? darkGrey : '#fff'};
-  left: 0;
+  left: -1.5%;
   top: ${!reversed ? '40%' : '60%'};
 }`}
 
