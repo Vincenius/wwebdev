@@ -20,6 +20,7 @@ class MyHead extends React.Component {
         const imageLink = localImage ? `https://wweb.dev${image}` : `https://ik.imagekit.io/wwebdev/${image}`
 
         const structuredData = `
+        {
             "@context": "http://schema.org",
             "@type":"Article",
             "mainEntityOfPage": {
@@ -47,7 +48,8 @@ class MyHead extends React.Component {
                     "height":64,
                     "width":64
                 }
-            }`
+            }
+        }`
 
         return (
             <Head>
