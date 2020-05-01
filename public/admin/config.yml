@@ -1,6 +1,6 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: github
+  repo: wwebdev/wwebdev
 media_folder: public/img
 public_folder: img
 collections:
@@ -9,7 +9,7 @@ collections:
     files:
     - label: "Home"
       name: "home"
-      file: "cms/home.md"
+      file: "content/home.md"
       fields:
         - { label: "Title", name: "title", widget: "string"}
         - { label: "Publish Date", name: "date", widget: "datetime" }
