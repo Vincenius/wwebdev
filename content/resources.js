@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 7,
+        type: 'Resource',
+        date: 'May 04, 2020',
+        headline: "Creative Hover Effects",
+        description: "A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.",
+        link: "/resources/creative-hover-effects",
+        previewImage: "resources/hover_ycudmUGE1.png",
+    },
+    {
         id: 6,
         type: 'Resource',
         date: 'April 20, 2020',
