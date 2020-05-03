@@ -48,6 +48,8 @@ export const Wrapper = styled.div`
     }
 
     h1 {
+        margin-top: 0;
+        margin-bottom: 1.1em;
         text-decoration: underline;
 
         @media (max-width: 800px) {
