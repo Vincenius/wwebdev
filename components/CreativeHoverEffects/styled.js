@@ -18,17 +18,6 @@ export const Container = styled.div`
     min-height: 100vh;
     height: 100%;
     width: 100%;
-
-    a {
-        color: #fff;
-        font-weight: bold;
-        text-decoration: none;
-        font-size: 2em;
-
-        @media (max-width: 600px) {
-            font-size: 1.6em;
-        }
-    }
 `
 
 export const Wrapper = styled.div`
@@ -83,6 +72,17 @@ export const Wrapper = styled.div`
         &:hover {
             color: ${linkHoverColor};
             text-decoration: underline;
+        }
+    }
+
+    a {
+        color: #fff;
+        font-weight: bold;
+        text-decoration: none;
+        font-size: 2em;
+
+        @media (max-width: 600px) {
+            font-size: 1.6em;
         }
     }
 `
