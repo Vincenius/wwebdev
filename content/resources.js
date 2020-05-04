@@ -6,7 +6,7 @@ const data = [
         headline: "Creative Hover Effects",
         description: "A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.",
         link: "/resources/creative-hover-effects",
-        previewImage: "resources/hover_ycudmUGE1.png",
+        previewImage: "resources/hover-preview_eieplkIor.jpg",
     },
     {
         id: 6,
