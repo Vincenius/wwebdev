@@ -26,6 +26,7 @@ const Footer = () => (
         <BuyMeACoffeeButton />
 
         <S.FooterLinks>
+          <li><Link href="/about"><a>About</a></Link></li>
           <li><Link href="/privacy"><a>Privacy Policy</a></Link></li>
         </S.FooterLinks>
       </S.RightFooter>

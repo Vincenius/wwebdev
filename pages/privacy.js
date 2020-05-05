@@ -2,7 +2,7 @@ import React from 'react'
 import * as ui from '../ui'
 import { Footer, Layout } from '../components'
 
-const Home = () => (
+const Privacy = () => (
     <Layout
         title="Privacy Policy"
     >
@@ -12,7 +12,7 @@ const Home = () => (
                 I try to keep this website as privacy friendly as possible.
                 I am using a self hosted version of <a href="https://matomo.org/" target="_blank" rel="noopener">Matomo</a> for the only purpose of knowing how many people are visiting this website.
             </p>
-            <p><b>If you enable "Do Not Track" in your browser I won't track you</b> (sadly that's not the default).
+            <p><b>If you enable "Do Not Track" in your browser I won't track you</b>.
                 Also AdBlockers will work for blocking the tracking. I'd recomment <i>uBlock Origin</i> for that.
             </p>
             <p>
@@ -288,4 +288,4 @@ const Home = () => (
     </Layout>
 )
 
-export default Home
+export default Privacy
