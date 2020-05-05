@@ -1,4 +1,7 @@
+import weekly24 from './weeklies/24'
+
 const data = [
+    weekly24,
     {
         id: '23',
         date: 'April 29, 2020',
