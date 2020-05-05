@@ -1,4 +1,4 @@
-import weekly24 from './weeklies/24'
+const weekly24 = require('./weeklies/24')
 
 const data = [
     weekly24,

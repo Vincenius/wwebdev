@@ -1,7 +1,7 @@
 module.exports = {
   id: '24',
   date: 'May 06, 2020',
-  description: "Hero Generator and more...",
+  description: "Hero Generator, Editly, Lit, Pantry, Stylestash, Tara, 1loc and more...",
   previewImage: 'weekly/24_uGLRV7oexoQY.jpg',
   items: [{
     title:"Hero Generator",
@@ -10,7 +10,7 @@ module.exports = {
     image:"https://s3-us-west-2.amazonaws.com/s.cdpn.io/28963/hero-og.png",
   },{
     title:"Editly",
-    description:"A tool and framework for programmatically creating a video from set of clips, images and titles.",
+    description:"A tool and framework for programmatically creating a video from a set of clips, images, and titles.",
     link:"https://github.com/mifi/editly",
     image:"/weekly/screenshots/editly.jpg",
   },{
@@ -85,7 +85,7 @@ module.exports = {
     image:"https://codepen.io/michellebarker/pen/zYvOVjo/image/large.png",
   },{
     title:"10 open source SVG icon libraries",
-    description:"A list of SVG icon libraries discovered in a reddit thread.",
+    description:"A list of SVG icon libraries discovered in a Reddit thread.",
     link:"https://themesberg.com/blog/open-source/10-open-source-free-svg-icon-libraries",
     image:"https://themesberg.s3.us-east-2.amazonaws.com/public/posts/10-open-source-svg-icon-libraries/10-open-source-icon-libraries.jpg",
   },{
