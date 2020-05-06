@@ -1,7 +1,7 @@
 module.exports = {
   id: '24',
   date: 'May 06, 2020',
-  description: "Hero Generator, Editly, Lit, Pantry, Stylestash, Tara, 1loc and more...",
+  description: "Hero Generator, Editly, Lit, Pantry, Stylestash, Tara, 1loc, Next.js Tips and more...",
   previewImage: 'weekly/24_uGLRV7oexoQY.jpg',
   items: [{
     title:"Hero Generator",
