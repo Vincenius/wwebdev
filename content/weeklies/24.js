@@ -57,7 +57,7 @@ module.exports = {
     title:"Create a CSS only image gallery",
     description:"An article on creating an image gallery without the use of JavaScript.",
     link:"https://lubna.dev/create-css-only-image-gallery/",
-    image:"https://codepen.io/Lubna/pen/MWapdjE/image/large.png",
+    image:"/weekly/screenshots/css-only-gallery.jpg",
   },{
     title:"Insomnia Designer",
     description:"A new open-source desktop application that provides a modern workflow for teams to design and collaborate on APIs.",
@@ -82,7 +82,7 @@ module.exports = {
     title:"Responsive CSS Motion Path",
     description:"An article on different approaches how to make motion paths responsive.",
     link:"https://css-irl.info/responsive-css-motion-path/",
-    image:"https://codepen.io/michellebarker/pen/zYvOVjo/image/large.png",
+    image:"/weekly/screenshots/css-motion-path.jpg",
   },{
     title:"10 open source SVG icon libraries",
     description:"A list of SVG icon libraries discovered in a Reddit thread.",
