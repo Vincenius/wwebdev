@@ -62,7 +62,7 @@ module.exports = {
     title:"Insomnia Designer",
     description:"A new open-source desktop application that provides a modern workflow for teams to design and collaborate on APIs.",
     link:"https://insomnia.rest/blog/introducing-designer",
-    image:"https://insomnia.rest/images/twitter-card-icon.png",
+    image:"https://insomnia.rest/images/blog/designer-screens.png",
   },{
     title:"Gooey Text Hover",
     description:"A cool demo of morphing text effects on hover on Codrops.",
