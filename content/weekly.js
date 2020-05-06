@@ -1,4 +1,7 @@
+const weekly24 = require('./weeklies/24')
+
 const data = [
+    weekly24,
     {
         id: '23',
         date: 'April 29, 2020',
