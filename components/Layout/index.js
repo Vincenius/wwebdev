@@ -1,7 +1,6 @@
 import React from 'react'
 
 import "../../ui/global.css"
-import '../../ui/code-style/github.css';
 import { Head, Header, Nav, Footer } from '../'
 import * as S from './styled'
 

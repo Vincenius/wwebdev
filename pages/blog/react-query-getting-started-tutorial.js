@@ -178,7 +178,7 @@ const Post = () => (
       </p>
 
       <CodeBlock
-        language="javascript"
+        language="jsx"
         value={snippet1}
       />
 
@@ -217,7 +217,7 @@ const Post = () => (
       </p>
 
       <CodeBlock
-        language="javascript"
+        language="jsx"
         value={snippet2}
       />
 
@@ -227,7 +227,7 @@ const Post = () => (
       </p>
 
       <CodeBlock
-        language="javascript"
+        language="jsx"
         value={snippet3}
       />
 
