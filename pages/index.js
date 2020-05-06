@@ -13,7 +13,7 @@ const Home = () => (
     <ui.Container>
       <ui.SidebarContainer>
         <ui.SidebarMain>
-          <h2>Latest Articles & Resources</h2>
+          <ui.SectionHeadline>Latest Articles & Resources</ui.SectionHeadline>
 
           { generateArticleAndResources(7) }
 
@@ -26,7 +26,7 @@ const Home = () => (
           </a></Link>
         </ui.SidebarMain>
         <ui.Sidebar>
-          <h2>Latest News</h2>
+          <ui.SectionHeadline>Latest News</ui.SectionHeadline>
 
           <ui.SidebarContent>
             { generateWeekly(6) }

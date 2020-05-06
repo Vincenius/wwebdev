@@ -6,7 +6,7 @@ import { generateArticles } from '../content/generator'
 const Home = () => (
     <Layout title="A Blog about Web-Development">
         <ui.Container>
-            <h2>Latest Blog Posts around Web Development</h2>
+            <ui.SectionHeadline>Latest Blog Posts around Web Development</ui.SectionHeadline>
             { generateArticles() }
             <SubscribeForm />
         </ui.Container>

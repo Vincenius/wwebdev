@@ -6,7 +6,7 @@ import { generateResources } from '../content/generator'
 const Home = () => (
     <Layout title="Free Resources and Tools for your usage">
         <ui.Container>
-            <h2>Resources and Tools around Web Development</h2>
+            <ui.SectionHeadline>Resources and Tools around Web Development</ui.SectionHeadline>
             { generateResources() }
             <SubscribeForm />
         </ui.Container>

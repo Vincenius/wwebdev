@@ -65,10 +65,6 @@ export const SidebarContainer = styled.div`
 export const SidebarMain = styled.div`
     margin-bottom: 30px;
 
-    > h2 {
-        margin: 0 0 26px;
-    }
-
     > a {
         display: block;
         text-align: center;
@@ -89,10 +85,6 @@ export const Sidebar = styled.aside`
     @media (max-width: ${breakpointLarge}) {
         margin: 0;
         max-width: 100%;
-    }
-
-    h2 {
-        margin: 0 0 26px;
     }
 `
 
@@ -140,4 +132,9 @@ export const Screenreader = styled.span`
     width: 1px;
     overflow: hidden;
     word-wrap: normal !important;
+`
+
+export const SectionHeadline = styled.h2`
+    font-size: 2em;
+    margin: 0 0 26px;
 `
