@@ -12,7 +12,8 @@ const Privacy = () => (
                 I try to keep this website as privacy friendly as possible.
                 I am using a self hosted version of <a href="https://matomo.org/" target="_blank" rel="noopener">Matomo</a> for the only purpose of knowing how many people are visiting this website.
             </p>
-            <p><b>If you enable "Do Not Track" in your browser I won't track you</b>.
+            <p>
+                <b>If you enable "Do Not Track" in your browser I won't track you</b>.
                 Also AdBlockers will work for blocking the tracking. I'd recomment <i>uBlock Origin</i> for that.
             </p>
             <p>
@@ -20,7 +21,6 @@ const Privacy = () => (
                 that appear in the console to ensure the website is running correctly on every machine.
             </p>
             <p>
-                I'm also using "Google Fonts", but I'm trying to get rid of that soon. <br />
                 Other than that there is nothing that could track you, as far as I'm aware of. No share links (eg. facebook),
                 no cookies and no other tools.
             </p>
