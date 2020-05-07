@@ -16,7 +16,11 @@ const Privacy = () => (
                 Also AdBlockers will work for blocking the tracking. I'd recomment <i>uBlock Origin</i> for that.
             </p>
             <p>
-                The only external dependency I'm using is "Google Fonts" and I'm trying to get rid of that soon. <br />
+                Furthermore I'm using <a href="https://sentry.io/welcome/" target="_blank" rel="noopener">Sentry</a> for tracking errors
+                that appear in the console to ensure the website is running correctly on every machine.
+            </p>
+            <p>
+                I'm also using "Google Fonts", but I'm trying to get rid of that soon. <br />
                 Other than that there is nothing that could track you, as far as I'm aware of. No share links (eg. facebook),
                 no cookies and no other tools.
             </p>
@@ -30,6 +34,7 @@ const Privacy = () => (
 
             <h2>Version for my legal safety</h2>
             <p>Effective date: January 15, 2020</p>
+            <p>Updated date: May 07 2020</p>
             <p>
                 Vincent Will ('us', 'we', or 'our') operates the
                 https://wweb.dev website (hereinafter referred to
@@ -231,6 +236,17 @@ const Privacy = () => (
                     </p>
                 </li>
             </ul>
+            <h3>Usage of Sentry</h3>
+            <p>
+                On our website we use Sentry, a service from GetSentry, LCC for real-time error tracking.
+                The information about your usage of this website will usually be send to a server in the USA and saved there.
+                The USA is a unsafe third-party country. GetSentry, LLC. has voluntary certified under the US-EU
+                data protection agreement "Privacy Shield" and therefore obliged to apply the EU data privacy standards.
+            </p>
+            <p>
+                You can find the privacy policy of sentry here: https://sentry.io/privacy/.
+            </p>
+
             <h2>Links To Other Sites</h2>
             <p>
                 Our Service may contain links to other sites that are
