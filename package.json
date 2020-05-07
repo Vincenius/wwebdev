@@ -21,7 +21,8 @@
     "react-dom": "16.11.0",
     "react-lazy-load": "^3.0.13",
     "react-syntax-highlighter": "^12.2.1",
-    "styled-components": "^5.1.0"
+    "styled-components": "^5.1.0",
+    "url-loader": "^4.1.0"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6"
