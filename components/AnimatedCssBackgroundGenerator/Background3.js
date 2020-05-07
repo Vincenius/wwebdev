@@ -59,6 +59,8 @@ ${liChildStyle}`
                     credit="Bjorn"
                     htmlCode={htmlCode}
                     cssCode={cssCode}
+                    changeBg={this.props.changeBg}
+                    activeBg={this.props.activeBg}
                 >
                     <label>Count:</label>
                     <Slider

@@ -21,7 +21,7 @@ export const Container = styled.div`
     }
 `
 export const ArticleContainer = styled(Container)`
-    line-height: 1.4;
+    line-height: 1.5;
     letter-spacing: 1;
     font-size: 20px;
 
@@ -86,10 +86,6 @@ export const Sidebar = styled.aside`
         margin: 0;
         max-width: 100%;
     }
-
-    h2 {
-        margin: 6px 0 16px;
-    }
 `
 
 export const SidebarContent = styled.aside`
@@ -123,4 +119,32 @@ export const FlexContainer = styled.div`
 export const Code = styled.code`
     margin: 0 4px;
     background: #f8f8f8f8;
+`
+export const SmallImage = styled.img`
+    max-width: 400px;
+    max-height: 400px;
+`
+
+export const Screenreader = styled.span`
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    word-wrap: normal !important;
+`
+
+export const SectionHeadline = styled.h2`
+    font-size: 2em;
+    margin: 0 0 26px;
+`
+
+export const GridContainer = styled(Container)`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin: 40px auto;
+`
+export const IntroText = styled(Container)`
+    margin: 20px auto 40px;
 `

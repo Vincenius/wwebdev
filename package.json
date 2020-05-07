@@ -10,17 +10,18 @@
     "postexport": "node scripts/postExport.js"
   },
   "dependencies": {
-    "@material-ui/core": "^4.6.1",
-    "@material-ui/icons": "^4.5.1",
+    "@material-ui/core": "^4.9.8",
+    "@material-ui/icons": "^4.9.1",
     "@sentry/browser": "^5.12.1",
     "@zeit/next-css": "^1.0.1",
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
-    "highlight.js": "^9.16.2",
-    "next": "9.1.2",
+    "next": "^9.3.6",
     "react": "16.11.0",
     "react-dom": "16.11.0",
-    "styled-components": "^5.0.0"
+    "react-lazy-load": "^3.0.13",
+    "react-syntax-highlighter": "^12.2.1",
+    "styled-components": "^5.1.0"
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6"

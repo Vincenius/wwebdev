@@ -1,5 +1,8 @@
 import React from 'react'
+import Link from 'next/link'
+import LazyLoad from 'react-lazy-load'
 import * as S from './styled'
+import * as ui from '../../ui'
 
 const ArticlePreview = ({
   date,
@@ -8,16 +11,43 @@ const ArticlePreview = ({
   description,
   type,
   previewImage,
+  updatedAt,
 }) => {
-  const d = new Date(date)
+  const lastDate = updatedAt || date
+  const d = new Date(lastDate)
   const isResource = type === 'Resource'
 
   return (
     <S.Container>
       { previewImage &&
-        <a href={link}>
-          <S.PreviewImage src={previewImage} alt={headline} />
-        </a>
+        <Link href={link}><a>
+          <ui.Screenreader>{headline}</ui.Screenreader>
+          <LazyLoad offsetVertical={1000}>
+            <S.PreviewImage
+              sizes={
+                `(max-width: 320px) 320px,
+                (max-width: 380px) 380px,
+                (max-width: 480px) 480px,
+                (max-width: 640px) 180px,
+                200px`
+              }
+              srcSet={
+                `https://ik.imagekit.io/wwebdev/tr:w-100/${previewImage} 100w,
+                  https://ik.imagekit.io/wwebdev/tr:w-200/${previewImage} 200w,
+                  https://ik.imagekit.io/wwebdev/tr:w-320/${previewImage} 320w,
+                  https://ik.imagekit.io/wwebdev/tr:w-380/${previewImage} 380w,
+                  https://ik.imagekit.io/wwebdev/tr:w-400/${previewImage} 400w,
+                  https://ik.imagekit.io/wwebdev/tr:w-480/${previewImage} 480w,
+                  https://ik.imagekit.io/wwebdev/tr:w-640/${previewImage} 640w,
+                  https://ik.imagekit.io/wwebdev/tr:w-760/${previewImage} 760w,
+                  https://ik.imagekit.io/wwebdev/tr:w-960/${previewImage} 960w
+                `
+              }
+              src={`https://ik.imagekit.io/wwebdev/${previewImage}`}
+              alt={headline}
+            />
+          </LazyLoad>
+        </a></Link>
       }
       <div>
         <header>
@@ -26,15 +56,18 @@ const ArticlePreview = ({
               <b>{type}</b> -&nbsp;
             </S.Type>
           }
-          <S.Time datetime={d.toISOString()}>{date}</S.Time>
+          {updatedAt && <S.Updated>Updated: </S.Updated>}
+          <S.Time datetime={d.toISOString()}>{lastDate}</S.Time>
           <S.Headline>
-            <a href={link}>{headline}</a>
+            <Link href={link}>
+              <a>{headline}</a>
+            </Link>
           </S.Headline>
         </header>
         <p>{description}</p>
-        <S.ReadMore href={link}>
+        <Link href={link}><S.ReadMore>
           { isResource ? 'Open Resource' : 'Read more' }
-        </S.ReadMore>
+        </S.ReadMore></Link>
       </div>
     </S.Container>
   )

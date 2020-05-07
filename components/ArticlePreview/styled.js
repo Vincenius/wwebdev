@@ -20,6 +20,13 @@ export const Type = styled.span`
         b { color: ${lightBlue}; }
     `}
 `
+export const Updated = styled.span`
+    color: ${greyBlue};
+    font-size: .82397rem;
+    line-height: 1.86667rem;
+    margin-bottom: 8px;
+    font-style: italic;
+`
 export const Time = styled.time`
     color: ${greyBlue};
     font-size: .82397rem;
@@ -28,7 +35,6 @@ export const Time = styled.time`
 `
 export const Headline = styled.h2`
     font-size: calc(1.29454rem + .17836 * ((100vw - 20rem)/ 100));
-    font-family: "Roboto Condensed",sans-serif;
     font-weight: 700;
     hyphens: manual;
     line-height: 1.2;

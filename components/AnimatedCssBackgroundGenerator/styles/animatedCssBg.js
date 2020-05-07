@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpointLarge } from '../../../ui/constants'
 
 export const Container = styled.div`
     position: relative;
@@ -9,6 +10,23 @@ export const Navigation = styled.nav`
     position: relative;
     z-index: 2;
     padding: 20px 20px 0;
+
+    @media (max-width: ${breakpointLarge}) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    img {
+        width: 90px;
+        margin-right: 30px;
+        cursor: pointer;
+
+        @media (max-width: ${breakpointLarge}) {
+            margin-right: 0;
+            margin-bottom: 10px;
+        }
+    }
 
     a {
         cursor: pointer;
@@ -23,17 +41,5 @@ export const Navigation = styled.nav`
         &.active, &:hover {
             text-decoration: underline;
         }
-    }
-`
-export const Footer = styled.footer`
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    padding: 10px 20px;
-    color: #fff;
-    letter-spacing: 0rem;
-
-    a {
-        color: #fff;
     }
 `

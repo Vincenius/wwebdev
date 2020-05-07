@@ -12,6 +12,7 @@ export const generateWeekly = maxCount => {
         number={d.id}
         date={d.date}
         description={d.description}
+        previewImage={d.previewImage}
     />)
 }
 
@@ -19,6 +20,7 @@ export const generateArticles = () => {
     return articleData.map(d => <ArticlePreview
         key={`article-${d.id}`}
         date={d.date}
+        updatedAt={d.updatedAt}
         headline={d.headline}
         description={d.description}
         link={d.link}
@@ -30,6 +32,7 @@ export const generateResources = () => {
     return resourceData.map(d => <ArticlePreview
         key={`resource-${d.id}`}
         date={d.date}
+        updatedAt={d.updatedAt}
         headline={d.headline}
         description={d.description}
         link={d.link}
@@ -41,10 +44,11 @@ export const generateArticleAndResources = maxCount => {
     const data = [...articleData, ...resourceData]
     return data.sort((a,b) => {
         return new Date(b.date) - new Date(a.date);
-    }).map(d => <ArticlePreview
+    }).map((d, index) => <ArticlePreview
         type={d.type}
-        key={`article-${d.id}`}
+        key={`article-${index}`}
         date={d.date}
+        updatedAt={d.updatedAt}
         headline={d.headline}
         description={d.description}
         link={d.link}

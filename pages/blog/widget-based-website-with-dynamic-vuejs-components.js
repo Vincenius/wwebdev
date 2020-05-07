@@ -103,6 +103,7 @@ const Post = () => (
         isArticle={true}
         title={postMeta.headline}
         date={postMeta.date}
+        updatedAt={postMeta.updatedAt}
         link={`https://wweb.dev${postMeta.link}`}
         image="/blog/1-vue.jpg"
         description={postMeta.description}

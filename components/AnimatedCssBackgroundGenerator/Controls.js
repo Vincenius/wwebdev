@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import FileCopyIcon from '@material-ui/icons/FileCopy'
 import * as S from './styles/animatedCssBgControls'
 
-const Controls = ({ children, source, credit, htmlCode, cssCode }) => {
+const Controls = ({ children, source, credit, htmlCode, cssCode, changeBg, activeBg }) => {
     const [showControl, toggleControl] = useState(true);
     const [showCode, toggleCode] = useState(false);
     const [copiedCode, showCopied] = useState('')
@@ -23,6 +23,26 @@ const Controls = ({ children, source, credit, htmlCode, cssCode }) => {
     return (
         <div>
             <S.Container>
+                <S.Nav>
+                    <a
+                        onClick={() => changeBg(0)}
+                        className={activeBg === 0 ? 'active' : ''}
+                    >
+                        Demo 1
+                    </a>
+                    <a
+                        onClick={() => changeBg(1)}
+                        className={activeBg === 1 ? 'active' : ''}
+                    >
+                        Demo 2
+                    </a>
+                    <a
+                        onClick={() => changeBg(2)}
+                        className={activeBg === 2 ? 'active' : ''}
+                    >
+                        Demo 3
+                    </a>
+                </S.Nav>
                 <S.Header noMargin={!showControl}>
                     <h3>Controls</h3>
                     <a

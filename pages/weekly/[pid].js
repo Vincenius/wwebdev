@@ -1,8 +1,8 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import * as S from '../../styles/weekly'
 import { SubscribeForm, Layout, LinkBox, PrevNext } from '../../components'
 import { weeklyData as meta } from '../../content/weekly'
+import * as ui from '../../ui'
 
 const Post = () => {
     const router = useRouter()
@@ -19,15 +19,16 @@ const Post = () => {
                 date={postMeta.date}
                 link={`https://wweb.dev/weekly/${pid}`}
                 image={`/weekly/weekly${pid}.jpg`}
+                localImage={true}
                 description={postMeta.description}
             >
-                {postMeta.introText &&
-                    <S.IntroText>
+                { postMeta.introText &&
+                    <ui.IntroText>
                         {postMeta.introText}
-                    </S.IntroText>
+                    </ui.IntroText>
                 }
 
-                <S.Container>
+                <ui.GridContainer>
                     {
                         postMeta.items.map((item, index) =>
                             <LinkBox
@@ -41,7 +42,7 @@ const Post = () => {
                         )
                     }
                     <SubscribeForm type="weekly" />
-                </S.Container>
+                </ui.GridContainer>
 
                 <PrevNext postId={pid} />
             </Layout>

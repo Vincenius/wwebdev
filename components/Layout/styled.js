@@ -12,8 +12,15 @@ export const Container = styled.div`
     min-height: 100vh;
 `
 export const Time = styled.time`
-    color: ${greyBlue};
     font-size: 1rem;
     line-height: 30px;
     margin-right: 3px;
+`
+export const SDate = styled.p`
+    margin-bottom: 0;
+    color: ${greyBlue};
+`
+export const Updated = styled(SDate)`
+    margin: 0 auto;
+    font-style: italic;
 `

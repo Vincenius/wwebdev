@@ -167,6 +167,7 @@ const Post = () => (
         isArticle={true}
         title={postMeta.headline}
         date={postMeta.date}
+        updatedAt={postMeta.updatedAt}
         link={`https://wweb.dev${postMeta.link}`}
         description={postMeta.description}
         image={postMeta.previewImage}
@@ -181,8 +182,8 @@ const Post = () => (
 
             <p>
                 For the finished repository, which can be used as a template go to&nbsp;
-                <a href="https://github.com/Vincenius/static-website-template" target="_blank" rel="noopener">
-                    https://github.com/Vincenius/static-website-template
+                <a href="https://github.com/wwebdev/static-website-template" target="_blank" rel="noopener">
+                    https://github.com/wwebdev/static-website-template
                 </a>
             </p>
 
@@ -693,7 +694,7 @@ const Post = () => (
             <img src="/blog/static-website/finalstructure.png" alt="final structure of the project" />
 
             <p>
-                The final repository can be found on <a href="https://github.com/Vincenius/static-website-template" target="_blank" rel="noopener">GitHub</a>.
+                The final repository can be found on <a href="https://github.com/wwebdev/static-website-template" target="_blank" rel="noopener">GitHub</a>.
             </p>
 
             <br />

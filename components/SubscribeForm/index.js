@@ -16,7 +16,7 @@ function SubscribeForm({ type }) {
             <S.Wrapper id="mc_embed_signup_scroll">
                 <h2>Always get the latest updates</h2>
                 <S.Text>
-                    Don't miss { type === 'weekly' ? 'the next weekly' : 'my next post' }. Drop your email below and get it straight in your inbox.
+                    Don't miss { type === 'weekly' ? 'the next weekly' : 'the next post' }. Drop your email below and get it straight in your inbox.
                 </S.Text>
 
                 <S.Input
@@ -25,8 +25,8 @@ function SubscribeForm({ type }) {
                     name="EMAIL"
                     required={true}
                     type="email"
-                    placeholder="Email Address"
-                    variant="outlined"
+                    placeholder="E-Mail"
+                    variant="filled"
                 />
 
                 <S.CheckboxContainer>
@@ -74,7 +74,8 @@ function SubscribeForm({ type }) {
                     </ul>
                 </S.CheckboxContainer>
                 <S.HiddenInput>
-                    <input tabIndex="-1" name="b_23a611280baff5c6bd68c83e3_8dd07d6ca8" type="text" />
+                    <label htmlFor="b_23a611280baff5c6bd68c83e3_8dd07d6ca8">input</label>
+                    <input id="b_23a611280baff5c6bd68c83e3_8dd07d6ca8" tabIndex="-1" name="b_23a611280baff5c6bd68c83e3_8dd07d6ca8" type="text" />
                 </S.HiddenInput>
                 <div>
                     <S.SubmitButton

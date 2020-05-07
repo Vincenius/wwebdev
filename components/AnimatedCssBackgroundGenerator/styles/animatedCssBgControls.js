@@ -57,3 +57,19 @@ export const Copied = styled.span`
         opacity: 1;
     `}
 `
+
+export const Nav = styled.div`
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    a {
+        color: #fff;
+        cursor: pointer;
+        text-decoration: none;
+
+        &.active, &:hover {
+            text-decoration: underline;
+        }
+    }
+`
