@@ -1,5 +1,5 @@
 import React from 'react'
-import * as S from '../styles/weekly'
+import * as S from '../ui/weekly'
 import * as ui from '../ui'
 import { Layout } from '../components'
 import { generateWeekly } from '../content/generator'

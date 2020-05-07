@@ -1,6 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import * as S from '../../styles/weekly'
+import * as S from '../../ui/weekly'
 import { SubscribeForm, Layout, LinkBox, PrevNext } from '../../components'
 import { weeklyData as meta } from '../../content/weekly'
 

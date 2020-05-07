@@ -1,7 +1,7 @@
 import React from 'react'
 import { SubscribeForm, Layout, LinkBox, RelatedArticle } from '../../components'
 import meta from '../../content/resources'
-import * as S from '../../styles/weekly'
+import * as S from '../../ui/weekly'
 
 const postId = 2
 const postMeta = meta.find(m => m.id === postId)

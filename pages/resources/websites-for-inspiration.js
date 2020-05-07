@@ -1,7 +1,7 @@
 import React from 'react'
 import { SubscribeForm, Layout, LinkBox, ImageTextBlock, RelatedArticle } from '../../components'
 import meta from '../../content/resources'
-import * as S from '../../styles/weekly'
+import * as S from '../../ui/weekly'
 import * as ui from '../../ui'
 
 const postId = 6
