@@ -18,7 +18,7 @@ const PrevNext = ({ postId, isArticle }) => {
             { !prevMeta ? <span></span>
                 : <Link
                     href={isArticle ? prevMeta.link : '/weekly/[slug]'}
-                    as={!isArticle && `/weekly/${prevMeta.id}`}
+                    as={!isArticle ? `/weekly/${prevMeta.id}` : undefined}
                 >
                     <S.Link>
                         <S.Prev>
@@ -32,7 +32,7 @@ const PrevNext = ({ postId, isArticle }) => {
             { nextMeta &&
                 <Link
                     href={isArticle ? nextMeta.link : `/weekly/[slug]`}
-                    as={!isArticle && `/weekly/${nextMeta.id}`}
+                    as={!isArticle ? `/weekly/${nextMeta.id}` : undefined}
                 >
                     <S.Link right={true}>
                         <S.Next>
