@@ -1,6 +1,7 @@
 import React from 'react'
 
 import "../../ui/global.css"
+import "../../ui/fonts.css"
 import { Head, Header, Nav, Footer } from '../'
 import * as S from './styled'
 
