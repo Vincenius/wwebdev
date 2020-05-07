@@ -21,7 +21,7 @@ export const Container = styled.div`
     }
 `
 export const ArticleContainer = styled(Container)`
-    line-height: 1.4;
+    line-height: 1.5;
     letter-spacing: 1;
     font-size: 20px;
 
@@ -137,4 +137,14 @@ export const Screenreader = styled.span`
 export const SectionHeadline = styled.h2`
     font-size: 2em;
     margin: 0 0 26px;
+`
+
+export const GridContainer = styled(Container)`
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin: 40px auto;
+`
+export const IntroText = styled(Container)`
+    margin: 20px auto 40px;
 `

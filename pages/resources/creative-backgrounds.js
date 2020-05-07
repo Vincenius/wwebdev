@@ -1,7 +1,6 @@
 import React from 'react'
 import { SubscribeForm, Layout, LinkBox, ImageTextBlock, RelatedArticle } from '../../components'
 import meta from '../../content/resources'
-import * as S from '../../ui/weekly'
 import * as ui from '../../ui'
 
 const postId = 4
@@ -17,7 +16,7 @@ const Post = () => (
         description={postMeta.description}
         image={postMeta.previewImage}
     >
-        <S.Container>
+        <ui.GridContainer>
             <LinkBox
                 title="SVG Backgrounds"
                 description="A list of easy customizable SVG backgrounds."
@@ -178,7 +177,7 @@ const Post = () => (
 
             <SubscribeForm />
 
-        </S.Container>
+        </ui.GridContainer>
 
         <RelatedArticle id={2} type="resource" />
     </Layout>

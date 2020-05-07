@@ -1,7 +1,6 @@
 import React from 'react'
 import { SubscribeForm, Layout, LinkBox, ImageTextBlock, RelatedArticle } from '../../components'
 import meta from '../../content/resources'
-import * as S from '../../ui/weekly'
 import * as ui from '../../ui'
 
 const postId = 6
@@ -17,7 +16,7 @@ const Post = () => (
         description={postMeta.description}
         image={postMeta.previewImage}
     >
-        <S.Container>
+        <ui.GridContainer>
             <LinkBox
                 title="Dribbble Colors"
                 description="Explore designs on Dribbble by color. This is really useful if you're looking for matching color inspiration."
@@ -153,7 +152,7 @@ const Post = () => (
 
             <SubscribeForm />
 
-        </S.Container>
+        </ui.GridContainer>
 
         <RelatedArticle id={4} type="resource" />
     </Layout>
