@@ -1,11 +1,11 @@
 module.exports = {
   id: '25',
   date: 'May 13, 2020',
-  description: "Codespaces and more...",
+  description: "Codespaces, CSS Grid Generator, Design Resources, endpoints.dev, JavaScript Cheatsheet and more...",
   previewImage: 'weekly/25_47ij0NyvLLlr.jpg',
   items: [{
     title:"Codespaces",
-    description:"GitHub is launching a Visual Studio Code experience inside of GitHub. You can sign up for early request right now.",
+    description:"GitHub is launching a Visual Studio Code experience inside of GitHub. You can sign up for an early request right now.",
     link:"https://github.com/features/codespaces",
     image:"https://github.githubassets.com/images/modules/site/social-cards/codespaces.png",
   },{
@@ -23,11 +23,6 @@ module.exports = {
     description:"Get a unique public url to capture and analyze http request info with this tool.",
     link:"https://www.endpoints.dev/",
     image:"/weekly/screenshots/endpoints-dev.jpg",
-  },{
-    title:"Caddy 2",
-    description:"An open source web server with automatic HTTPS written in Go.",
-    link:"https://caddyserver.com/v2",
-    image:"https://caddyserver.com/resources/images/caddy-open-graph.jpg",
   },{
     title:"Modern JavaScript Cheatsheet",
     description:"A nice Cheatsheet for some modern JavaScript syntax.",
@@ -54,6 +49,11 @@ module.exports = {
     link:"https://github.com/tannerlinsley/react-virtual",
     image:"https://raw.githubusercontent.com/tannerlinsley/react-virtual/master/media/header.png",
   },{
+    title:"Caddy 2",
+    description:"An open source web server with automatic HTTPS written in Go.",
+    link:"https://caddyserver.com/v2",
+    image:"https://caddyserver.com/resources/images/caddy-open-graph.jpg",
+  },{
     title:"How URLs work?",
     description:"A small educational website that explains the counterparts of a URL.",
     link:"https://howurls.work/#/",
@@ -70,7 +70,7 @@ module.exports = {
     image:"https://raw.githubusercontent.com/evanw/esbuild/master/images/benchmark.png",
   },{
     title:"Write Libraries, Not Frameworks",
-    description:"A nice article by Brandon Smith benefits of libraries over frameworks.",
+    description:"A nice article by Brandon Smith benefits from libraries over frameworks.",
     link:"https://www.brandonsmith.ninja/blog/libraries-not-frameworks",
     image:"/weekly/screenshots/libraries-not-frameworks.jpg",
   }]
