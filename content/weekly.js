@@ -1,6 +1,8 @@
 const weekly24 = require('./weeklies/24')
+const weekly25 = require('./weeklies/25')
 
 const data = [
+    weekly25,
     weekly24,
     {
         id: '23',
