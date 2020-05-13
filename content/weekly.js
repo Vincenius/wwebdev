@@ -1234,7 +1234,7 @@ const data = [
     {
         id: '1',
         date: 'November 27, 2019',
-        description: 'SWR, Fresh Folk, Colors & fonts, Animated CSS Backgrounds, Postwoman, Pika and more',
+        description: 'SWR, Fresh Folk, Colors and fonts, Animated CSS Backgrounds, Postwoman, Pika and more',
         previewImage: 'weekly/1_dvGgcZmRx.jpg',
         items: [{
             title: "SWR - React Hooks for Remote Data Fetching",

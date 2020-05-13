@@ -64,4 +64,4 @@ const data = [
     }
 ]
 
-export default data
+module.exports = data
