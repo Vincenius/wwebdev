@@ -12,31 +12,31 @@ const SocialBar = props => (
         <li>
             <a href="https://twitter.com/wweb_dev" target="_blank" rel="noopener">
                 <ui.Screenreader>Twitter</ui.Screenreader>
-                <TwitterIcon />
+                <TwitterIcon width="24px" height="24px" />
             </a>
         </li>
         <li>
             <a href="https://www.facebook.com/wweb.dev.blog" target="_blank" rel="noopener">
                 <ui.Screenreader>Facebook</ui.Screenreader>
-                <FacebookIcon />
+                <FacebookIcon width="24px" height="24px" />
             </a>
         </li>
         <li>
             <a href="https://github.com/wwebdev" target="_blank" rel="noopener">
                 <ui.Screenreader>Github</ui.Screenreader>
-                <GitHubIcon />
+                <GitHubIcon width="24px" height="24px" />
             </a>
         </li>
         <li>
             <a href="https://wweb.dev/rss.xml">
                 <ui.Screenreader>RSS Feed</ui.Screenreader>
-                <RssFeedIcon />
+                <RssFeedIcon width="24px" height="24px" />
             </a>
         </li>
         <li wfd-id="5">
             <a href="mailto:info@wweb.dev">
                 <ui.Screenreader>E-Mail</ui.Screenreader>
-                <MailOutlineIcon />
+                <MailOutlineIcon width="24px" height="24px" />
             </a>
         </li>
     </S.Social>
