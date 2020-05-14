@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
+import { useQuery } from 'react-query'
 import { SubscribeForm, Layout, LinkBox, PrevNext } from '../../components'
 import { weeklyData as meta } from '../../content/weekly'
 import * as ui from '../../ui'
@@ -7,30 +8,33 @@ import * as ui from '../../ui'
 const Post = () => {
     const router = useRouter()
     const { pid } = router.query
-    const postMeta = meta.find(m => m.id === pid)
+    const { status, data, error } = useQuery(`weekly-${pid}`, async () => {
+        const response = await fetch(`/weekly/data/${pid}.json`)
+        return response.json()
+    })
 
-    if (!postMeta) {
-        return <div></div>
+    if (status === 'loading') {
+        return <div></div> // Loading state
     } else {
         return (
             <Layout
                 isArticle={true}
-                title={`Web development update ${postMeta.date}`}
-                date={postMeta.date}
+                title={`Web development update ${data.date}`}
+                date={data.date}
                 link={`https://wweb.dev/weekly/${pid}`}
                 image={`/weekly/weekly${pid}.jpg`}
                 localImage={true}
-                description={postMeta.description}
+                description={data.description}
             >
-                { postMeta.introText &&
+                { data.introText &&
                     <ui.IntroText>
-                        {postMeta.introText}
+                        {data.introText}
                     </ui.IntroText>
                 }
 
                 <ui.GridContainer>
                     {
-                        postMeta.items.map((item, index) =>
+                        data.items.map((item, index) =>
                             <LinkBox
                                 key={`linkbox-${index}`}
                                 title={item.title}
