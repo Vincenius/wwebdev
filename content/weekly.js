@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '26',
+        date: 'May 20, 2020',
+        description: "Deno, JSNation, Modern CSS Solutions, quicklink, animista, styco and more...",
+        previewImage: 'weekly/26_Lb7D2EHl0.jpg',
+    },
+    {
         id: '25',
         date: 'May 13, 2020',
         description: "Codespaces, CSS Grid Generator, Design Resources, endpoints.dev, JavaScript Cheatsheet and more...",

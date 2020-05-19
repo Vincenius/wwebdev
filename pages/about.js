@@ -68,7 +68,7 @@ const About = () => (
               </p>
               <p>
                 Cheers,<br />
-                Vincent Will
+                Vincent
               </p>
             </div>
           </$Flex>
