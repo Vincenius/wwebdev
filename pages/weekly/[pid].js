@@ -8,6 +8,7 @@ import * as ui from '../../ui'
 const Post = () => {
     const router = useRouter()
     const { pid } = router.query
+    const weeklyMeta = meta.find(m => m.id === pid)
     const { status, data, error } = useQuery(`weekly-${pid}`, async () => {
         const response = await fetch(`/weekly/data/${pid}.json`)
         return response.json()
@@ -19,12 +20,12 @@ const Post = () => {
         return (
             <Layout
                 isArticle={true}
-                title={`Web development update ${meta.date}`}
-                date={meta.date}
+                title={`Web development update ${weeklyMeta.date}`}
+                date={weeklyMeta.date}
                 link={`https://wweb.dev/weekly/${pid}`}
                 image={`/weekly/weekly${pid}.jpg`}
                 localImage={true}
-                description={meta.description}
+                description={weeklyMeta.description}
             >
                 { data.introText &&
                     <ui.IntroText>
