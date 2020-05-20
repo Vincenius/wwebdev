@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 9,
+        type: 'Resource',
+        date: 'May 25, 2020',
+        headline: "JavaScript Object Functions CheatSheet",
+        description: "A CheatSheet to quickly find all functions that can be executed on Object. It includes a quick explanation, the syntax, an example, and the browser support.",
+        link: "/resources/js-object-functions-cheatsheet",
+        previewImage: "resources/js-object-cheatsheet_7Dp7Ye7r5Jr.png",
+    },
+    {
         id: 8,
         type: 'Resource',
         date: 'May 22, 2020',
