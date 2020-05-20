@@ -19,12 +19,12 @@ const Post = () => {
         return (
             <Layout
                 isArticle={true}
-                title={`Web development update ${data.date}`}
-                date={data.date}
+                title={`Web development update ${meta.date}`}
+                date={meta.date}
                 link={`https://wweb.dev/weekly/${pid}`}
                 image={`/weekly/weekly${pid}.jpg`}
                 localImage={true}
-                description={data.description}
+                description={meta.description}
             >
                 { data.introText &&
                     <ui.IntroText>
