@@ -2,7 +2,7 @@ const data = [
     {
         id: 8,
         type: 'Resource',
-        date: 'May 22, 2020',
+        date: 'May 21, 2020',
         headline: "JavaScript Array Functions CheatSheet",
         description: "A CheatSheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.",
         link: "/resources/js-array-functions-cheatsheet",
