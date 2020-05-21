@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 8,
+        type: 'Resource',
+        date: 'May 21, 2020',
+        headline: "JavaScript Array Functions CheatSheet",
+        description: "A CheatSheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.",
+        link: "/resources/js-array-functions-cheatsheet",
+        previewImage: "resources/js-array-cheatsheet_hkOub1T9s.png",
+    },
+    {
         id: 7,
         type: 'Resource',
         date: 'May 04, 2020',
