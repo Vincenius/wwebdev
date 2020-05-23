@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 8,
+        type: 'Article',
+        date: 'April 24, 2020',
+        headline: 'How to craft appealing websites',
+        description: "TODO ...",
+        link: '/blog/howto-craft-appealing-websites',
+        previewImage: 'TODO',
+    },
+    {
         id: 7,
         type: 'Article',
         date: 'April 24, 2020',
