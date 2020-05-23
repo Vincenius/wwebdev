@@ -14,46 +14,41 @@ const Post = () => {
         return response.json()
     })
 
-    if (status === 'loading') {
-        return <div></div> // Loading state
-    } else {
-        return (
-            <Layout
-                isArticle={true}
-                title={`Web development update ${weeklyMeta.date}`}
-                date={weeklyMeta.date}
-                link={`https://wweb.dev/weekly/${pid}`}
-                image={`/weekly/weekly${pid}.jpg`}
-                localImage={true}
-                description={weeklyMeta.description}
-            >
-                { data.introText &&
-                    <ui.IntroText>
-                        {data.introText}
-                    </ui.IntroText>
+    return (
+        <Layout
+            isArticle={true}
+            title={`Web development update ${weeklyMeta.date}`}
+            date={weeklyMeta.date}
+            link={`https://wweb.dev/weekly/${pid}`}
+            image={`/weekly/weekly${pid}.jpg`}
+            localImage={true}
+            description={weeklyMeta.description}
+        >
+            { status !== 'loading' && data.introText &&
+                <ui.IntroText>
+                    {data.introText}
+                </ui.IntroText>
+            }
+
+            { status !== 'loading' && <ui.GridContainer>
+                {
+                    data.items.map((item, index) =>
+                        <LinkBox
+                            key={`linkbox-${index}`}
+                            title={item.title}
+                            description={item.description}
+                            link={item.link}
+                            image={item.image}
+                            selfPromoted={item.selfPromoted}
+                        />
+                    )
                 }
+                <SubscribeForm type="weekly" />
+            </ui.GridContainer> }
 
-                <ui.GridContainer>
-                    {
-                        data.items.map((item, index) =>
-                            <LinkBox
-                                key={`linkbox-${index}`}
-                                title={item.title}
-                                description={item.description}
-                                link={item.link}
-                                image={item.image}
-                                selfPromoted={item.selfPromoted}
-                            />
-                        )
-                    }
-                    <SubscribeForm type="weekly" />
-                </ui.GridContainer>
-
-                <PrevNext postId={pid} />
-            </Layout>
-        )
-    }
-
+            <PrevNext postId={pid} />
+        </Layout>
+    )
 }
 
 export default Post
