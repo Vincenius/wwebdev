@@ -2,11 +2,11 @@ const data = [
     {
         id: 8,
         type: 'Article',
-        date: 'April 24, 2020',
+        date: 'May 29, 2020',
         headline: 'How to craft appealing websites',
-        description: "TODO ...",
-        link: '/blog/howto-craft-appealing-websites',
-        previewImage: 'TODO',
+        description: "When I started developing websites I never knew where to start, when creating a new one. Over time I came up with a process that helped me not only getting started, but also making the websites...",
+        link: '/blog/how-to-craft-appealing-websites',
+        previewImage: 'articles/craft-website_NKUJDYwLo.png',
     },
     {
         id: 7,
