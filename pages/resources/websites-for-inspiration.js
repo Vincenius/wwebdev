@@ -60,6 +60,13 @@ const Post = () => (
             />
 
             <LinkBox
+                title="Awwwards"
+                description="Website Awards that for the best developers, designers and web agencies in the world."
+                link="https://www.awwwards.com/"
+                image="/resources/inspiration-websites/awwwards.jpg"
+            />
+
+            <LinkBox
                 title="Creative Portfolios"
                 description="A small curation of creative portfolios made by designers & developers."
                 link="https://www.creative-portfolios.com/"
@@ -78,6 +85,13 @@ const Post = () => (
                 description="Web Design & UI Inspiration with Code Snippets, which is focused on specific elements."
                 link="https://codemyui.com/"
                 image="/resources/inspiration-websites/codemyui.jpg"
+            />
+
+            <LinkBox
+                title="CSS Awards"
+                description="An inspiration gallery, with high quality of CSS websites from around the world."
+                link="https://www.cssawards.net/"
+                image="/resources/inspiration-websites/cssawards.jpg"
             />
 
             <LinkBox
@@ -116,6 +130,13 @@ const Post = () => (
             />
 
             <LinkBox
+                title="CSS Design Awards"
+                description="A panel of websites from 200+ international web designers and developers."
+                link="https://www.cssdesignawards.com/"
+                image="/resources/inspiration-websites/cssdesignawards.jpg"
+            />
+
+            <LinkBox
                 title="DesignMunk"
                 description="A list of hand-picked landing page inspirations from around the web."
                 link="https://designmunk.com/"
@@ -134,6 +155,13 @@ const Post = () => (
                 description="A collection of landing pages with a focus on copywriting and design. It can be filtered by blocks like hero, navbar, cta and more."
                 link="https://saaspages.xyz/"
                 image="/resources/inspiration-websites/saaspages.jpg"
+            />
+
+            <LinkBox
+                title="Design Systems Repo"
+                description="A frequently updated collection of Design System examples, articles, tools and talks."
+                link="https://designsystemsrepo.com/"
+                image="/resources/inspiration-websites/designsystemsrepo.jpg"
             />
 
             <LinkBox
