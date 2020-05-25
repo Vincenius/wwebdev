@@ -18,7 +18,7 @@ const Post = () => (
   >
     <ui.ArticleContainer as="article">
       <p>
-        When I started developing websites I never knew where to start, when creating a new one.
+        When I got started in web-development, I never knew where to start when creating a new website.
         I was overwhelmed by possibilities, as if I was looking at a blank canvas and didn't know what to draw.
       </p>
       <p>
@@ -31,7 +31,7 @@ const Post = () => (
 
       <h2>The Preparation</h2>
       <p>
-        As a first thing I force myself to close the code editor, as I'm always tempted to
+        As a first thing, I force myself to close the code editor, as I'm always tempted to
         just dive into coding right away.
       </p>
       <p>
@@ -40,7 +40,7 @@ const Post = () => (
       </p>
       <p>
         Now having this in mind, I'll think of what people most probably visit this site for. This can be
-        things like <b>business hours</b>, <b>pricing</b>, <b>follow-up links</b> or just <b>information</b>.
+        things like <b>business hours</b>, <b>pricing</b>, <b>follow-up links</b> or any other kind of <b>information</b>.
       </p>
       <p>
         Afterward, I write down what I want to say on my website. This doesn't have to be the final version of your texts.
@@ -62,10 +62,13 @@ const Post = () => (
       <p>
         I don't look at the whole website for inspiration, but at specific structures I came up with when I wrote
         down the content. This way I don't force my content into some template, which doesn't really match.
+        This could look like this:
       </p>
 
-      TODO EXAMPLE SCREENSHOTS
-      (eg. list, look how others solved the list (some screenshots))
+      <img
+        alt="example on how a list get's transfered into a design"
+        src="/blog/craft-websites-example.jpg"
+      />
 
       <p>
         Then I take a paper and draw the structure of my site by roughly sketching the elements I have in mind
@@ -95,8 +98,7 @@ const Post = () => (
       </p>
       <p>
         I normally start with the desktop version and do the mobile version afterwards.
-        But that's just my personal preference, as I it's easier for me, because
-        for mobile normally I just remove some elements and put them underneath each other.
+        But that's just my personal preference. Just do what feels more comfortable for you.
       </p>
 
       <h2>Finalizing it</h2>
