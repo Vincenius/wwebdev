@@ -24,12 +24,6 @@ const Post = () => {
             localImage={true}
             description={weeklyMeta.description}
         >
-            { status !== 'loading' && data.introText &&
-                <ui.IntroText>
-                    {data.introText}
-                </ui.IntroText>
-            }
-
             { status !== 'loading' && <ui.GridContainer>
                 {
                     data.items.map((item, index) =>
