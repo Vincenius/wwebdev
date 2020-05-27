@@ -1,8 +1,11 @@
+const fs = require('fs')
 const { weeklyData } = require('../content/weekly')
+const id = weeklyData[0].id
+const data = JSON.parse(fs.readFileSync(`../public/weekly/data/${id}.json`, 'utf8'))
 
 let markDown = ``
 
-for (const item of weeklyData[0].items) {
+for (const item of data.items) {
   const imageLink = item.image.startsWith('/weekly/')
     ? `https://wweb.dev${item.image}`
     : item.image
