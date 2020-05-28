@@ -10,7 +10,7 @@
     "postexport": "node scripts/postExport.js"
   },
   "dependencies": {
-    "@material-ui/core": "^4.9.8",
+    "@material-ui/core": "^4.9.10",
     "@material-ui/icons": "^4.9.1",
     "@sentry/browser": "^5.12.1",
     "@zeit/next-css": "^1.0.1",
