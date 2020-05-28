@@ -1,7 +1,10 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
+import SearchIcon from '@material-ui/icons/Search'
+
 import { SocialBar } from '../'
+import * as ui from '../../ui'
 import * as S from './styled'
 
 const links = [
@@ -40,7 +43,14 @@ const Nav = ({ isArticle, title, transparentBg }) => {
           </ul>
         </S.Main>
 
-        <SocialBar />
+        <SocialBar>
+          <li>
+            <a href="/search">
+              <ui.Screenreader>Search</ui.Screenreader>
+              <SearchIcon width="24px" height="24px" />
+            </a>
+          </li>
+        </SocialBar>
       </S.Navigation>
     </S.Container>
   )

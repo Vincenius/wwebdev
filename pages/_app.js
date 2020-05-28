@@ -1,7 +1,7 @@
 import App from 'next/app'
 import * as Sentry from '@sentry/browser'
 
-Sentry.init({dsn: "https://ed1be4917ab6402993d53089c71aad96@sentry.io/2012376"})
+// Sentry.init({dsn: "https://ed1be4917ab6402993d53089c71aad96@sentry.io/2012376"})
 
 function MyApp({ Component, pageProps }) {
     return <Component {...pageProps} />
