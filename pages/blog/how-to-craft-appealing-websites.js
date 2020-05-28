@@ -43,7 +43,7 @@ const Post = () => (
         things like <b>business hours</b>, <b>pricing</b>, <b>follow-up links</b>, or any other kind of <b>information</b>.
       </p>
       <p>
-        Afterward, I write down what I want to say on my website. This doesn't have to be the final version of your texts.
+        Afterward, I write down what I want to say/show on my website. This doesn't have to be the final version of your texts.
         Normally I spend time in the end to polish copywriting.
       </p>
       <p>
@@ -76,8 +76,8 @@ const Post = () => (
       </p>
       <p>
         Afterwards, it depends on the scope of the project if I convert this drawing into a proper design by
-        using design tools like Figma, Sketch, or Adobe XD. Usually I skip this step as I mostly work on small
-        private projects.
+        using design tools like Figma, Sketch, or Adobe XD. Usually, I skip this step as I mostly work on small
+        projects.
       </p>
 
       <h2>The Coding</h2>
@@ -92,9 +92,9 @@ const Post = () => (
         comments in the code or in the README, while I'm in the flow of coding.
       </p>
       <p>
-        This helps to get back into the project when you don't feel motivated.
-        Just pick up a small refactoring instead and you'll often
-        end up coding more than you originally planned to.
+        This helps me to get back into the project when I don't feel motivated.
+        I just pick up a small refactoring and often
+        end up coding more than I originally planned to.
       </p>
       <p>
         I normally start with the desktop version and do the mobile version afterward.
