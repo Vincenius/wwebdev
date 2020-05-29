@@ -90,15 +90,9 @@ const Post = () => (
       <p>
         I rarely finish the whole website in one take. That's why I always leave <i>TODOs</i> and refactoring
         comments in the code or in the README, while I'm in the flow of coding.
-      </p>
-      <p>
         This helps me to get back into the project when I don't feel motivated.
         I just pick up a small refactoring and often
         end up coding more than I originally planned to.
-      </p>
-      <p>
-        I normally start with the desktop version and do the mobile version afterward.
-        But that's just my personal preference. Just do what feels more comfortable for you.
       </p>
 
       <h2>Finalizing it</h2>
