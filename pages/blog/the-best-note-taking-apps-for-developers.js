@@ -4,6 +4,7 @@ import CodeBlock from '../../components/CodeBlock'
 import Layout from '../../components/Layout'
 import Comments from '../../components/Comments'
 import PrevNext from '../../components/PrevNext'
+import SubscribeForm from '../../components/SubscribeForm'
 import meta from '../../content/articles'
 
 const postId = 3
