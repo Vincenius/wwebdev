@@ -1,6 +1,11 @@
 import React from 'react'
+
 import * as ui from '../../ui'
-import { CodeBlock, Layout, Comments, PrevNext, SubscribeForm } from '../../components'
+import CodeBlock from '../../components/CodeBlock'
+import Layout from '../../components/Layout'
+import Comments from '../../components/Comments'
+import PrevNext from '../../components/PrevNext'
+import SubscribeForm from '../../components/SubscribeForm'
 import meta from '../../content/articles'
 
 const postId = 5
@@ -222,7 +227,7 @@ const Post = () => (
             </p>
 
             <CodeBlock
-                language="html"
+                language="markup"
                 value={snippet1}
             />
 
@@ -297,7 +302,7 @@ const Post = () => (
             </p>
 
             <CodeBlock
-                language="html"
+                language="markup"
                 value={`<link rel="stylesheet" type="text/css" href="dist/index.css">`}
             />
 
@@ -579,7 +584,7 @@ const Post = () => (
             </p>
 
             <CodeBlock
-                language="html"
+                language="markup"
                 value={`<script src="./bundle.js"></script>`}
             />
 
@@ -665,7 +670,7 @@ const Post = () => (
             </p>
 
             <CodeBlock
-                language="html"
+                language="markup"
                 value={snippet14}
             />
 
@@ -674,7 +679,7 @@ const Post = () => (
             </p>
 
             <CodeBlock
-                language="html"
+                language="markup"
                 value={'<module href="/components/head.html"></module>'}
             />
 
@@ -683,7 +688,7 @@ const Post = () => (
             </p>
 
             <CodeBlock
-                language="html"
+                language="markup"
                 value={snippet15}
             />
 

@@ -1,8 +1,8 @@
 import React from 'react'
-
-import "../../ui/global.css"
-import "../../ui/fonts.css"
-import { Head, Header, Nav, Footer } from '../'
+import Head from '../Head'
+import Header from '../Header'
+import Nav from '../Nav'
+import Footer from '../Footer'
 import * as S from './styled'
 
 function Layout ({

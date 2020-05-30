@@ -3,7 +3,8 @@ import Link from 'next/link'
 import LazyLoad from 'react-lazy-load'
 import MailOutlineIcon from '@material-ui/icons/MailOutline'
 
-import { SocialBar, BuyMeACoffeeButton } from '../'
+import SocialBar from '../SocialBar'
+import BuyMeACoffeeButton from '../BuyMeACoffeeButton'
 import * as S from './styled'
 import * as ui from '../../ui'
 

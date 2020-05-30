@@ -1,7 +1,11 @@
 import React from 'react'
 import { useRouter } from 'next/router'
 import { useQuery } from 'react-query'
-import { SubscribeForm, Layout, LinkBox, PrevNext } from '../../components'
+
+import SubscribeForm from '../../components/SubscribeForm'
+import Layout from '../../components/Layout'
+import LinkBox from '../../components/LinkBox'
+import PrevNext from '../../components/PrevNext'
 import { weeklyData as meta } from '../../content/weekly'
 import * as ui from '../../ui'
 

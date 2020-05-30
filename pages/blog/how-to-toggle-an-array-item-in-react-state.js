@@ -1,6 +1,10 @@
 import React from 'react'
+
 import * as ui from '../../ui'
-import { CodeBlock, Layout, Comments, PrevNext } from '../../components'
+import CodeBlock from '../../components/CodeBlock'
+import Layout from '../../components/Layout'
+import Comments from '../../components/Comments'
+import PrevNext from '../../components/PrevNext'
 import meta from '../../content/articles'
 
 const postId = 2

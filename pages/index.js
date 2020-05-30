@@ -1,7 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 import * as ui from '../ui'
-import { Layout, SubscribeForm } from '../components'
+import Layout from '../components/Layout'
+import SubscribeForm from '../components/SubscribeForm'
 import { generateWeekly, generateArticleAndResources } from '../content/generator'
 
 const Home = () => (

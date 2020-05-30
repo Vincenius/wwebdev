@@ -1,4 +1,6 @@
-import { WeeklyPreview, ArticlePreview } from '../components'
+import WeeklyPreview from '../components/WeeklyPreview'
+import ArticlePreview from '../components/ArticlePreview'
+
 import { weeklyData } from './weekly'
 import articleData from './articles'
 import resourceData from './resources'

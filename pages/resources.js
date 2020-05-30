@@ -1,6 +1,7 @@
 import React from 'react'
 import * as ui from '../ui'
-import { SubscribeForm, Layout } from '../components'
+import SubscribeForm from '../components/SubscribeForm'
+import Layout from '../components/Layout'
 import { generateResources } from '../content/generator'
 
 const Home = () => (
