@@ -2,9 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
+
 import * as ui from '../ui'
 import { breakpointLarge, darkGrey } from '../ui/constants'
-import { Footer, Layout } from '../components'
+import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 
 const $CardContent = styled(CardContent)`
   padding: 36px !important;

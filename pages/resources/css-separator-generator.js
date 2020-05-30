@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import { Head, CssSeparatorGenerator } from '../../components'
+import Head from '../../components/Head'
+import CssSeparatorGenerator from '../../components/CssSeparatorGenerator'
 import meta from '../../content/resources'
 
 const postMeta = meta.find(m => m.id === 5)

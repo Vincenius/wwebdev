@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import { TextareaAutosize } from '@material-ui/core';
+import TextareaAutosize from '@material-ui/core/TextareaAutosize';
 
 export const Container = styled.div`
     position: relative;

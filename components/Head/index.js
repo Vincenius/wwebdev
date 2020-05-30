@@ -1,5 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
+import "../../ui/global.css"
+import "../../ui/fonts.css"
 
 class MyHead extends React.Component {
     render() {

@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import SearchIcon from '@material-ui/icons/Search'
 
-import { SocialBar } from '../'
+import SocialBar from '../SocialBar'
 import * as ui from '../../ui'
 import * as S from './styled'
 

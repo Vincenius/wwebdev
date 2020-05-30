@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import * as ui from '../ui'
-import { Layout, Search } from '../components'
+import Search from '../components/Search'
+import Layout from '../components/Layout'
 
 const SearchPage = () => {
   return (

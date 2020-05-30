@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { Head, Nav } from '../../components'
+import Head from '../../components/Head'
+import Nav from '../../components/Nav'
 import CreativeHoverEffects from '../../components/CreativeHoverEffects'
 import * as S from '../../components/CreativeHoverEffects/styled'
 import meta from '../../content/resources'

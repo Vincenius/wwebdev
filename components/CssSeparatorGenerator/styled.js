@@ -1,10 +1,8 @@
 import styled, { css } from 'styled-components'
 import _get from 'lodash/get'
-import {
-  Card,
-  TextareaAutosize,
-  FormControlLabel as MuiFormControlLabel
-} from '@material-ui/core'
+import Card from '@material-ui/core/Card'
+import TextareaAutosize from '@material-ui/core/TextareaAutosize'
+import MuiFormControlLabel from '@material-ui/core/FormControlLabel'
 import { darkGrey, greyBlue } from '../../ui/constants'
 import {
   generateSkewCss,

@@ -1,5 +1,9 @@
 import React from 'react'
-import { SubscribeForm, Layout, LinkBox, RelatedArticle } from '../../components'
+
+import SubscribeForm from '../../components/SubscribeForm'
+import Layout from '../../components/Layout'
+import LinkBox from '../../components/LinkBox'
+import RelatedArticle from '../../components/RelatedArticle'
 import meta from '../../content/resources'
 import * as ui from '../../ui'
 

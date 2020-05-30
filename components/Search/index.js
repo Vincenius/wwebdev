@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
-import { CircularProgress, InputAdornment } from '@material-ui/core'
+import CircularProgress from '@material-ui/core/CircularProgress'
+import InputAdornment from '@material-ui/core/InputAdornment'
 import SearchIcon from '@material-ui/icons/Search'
 
-import { ArticlePreview } from '../'
+import ArticlePreview from '../ArticlePreview'
 import * as S from './styled'
 import searchFunc from '../../utils/search'
 
