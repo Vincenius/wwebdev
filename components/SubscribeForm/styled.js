@@ -6,6 +6,10 @@ import { lightBlue, darkGrey, lightGrey } from '../../ui/constants'
 
 export const Container = styled.form`
     margin-bottom: 30px;
+
+    h2 {
+        margin: 0 0 0.6em;
+    }
 `
 export const HiddenInput = styled.div`
     position: absolute;
