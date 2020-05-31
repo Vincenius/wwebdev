@@ -1,6 +1,9 @@
 import React from 'react'
 import * as ui from '../../ui'
-import { CodeBlock, Layout, Comments, PrevNext } from '../../components'
+import CodeBlock from '../../components/CodeBlock'
+import Layout from '../../components/Layout'
+import Comments from '../../components/Comments'
+import PrevNext from '../../components/PrevNext'
 import meta from '../../content/articles'
 
 const postId = 1
@@ -134,13 +137,13 @@ const Post = () => (
                 &nbsp;exept the &lt;h1&gt;.
             </p>
             <CodeBlock
-                language="html"
+                language="markup"
                 value={snippet1}
             />
             <p>Then remove everything in <code>src/App.vue</code> template inside of app div. Then add ref="main" to the div.</p>
 
             <CodeBlock
-                language="html"
+                language="markup"
                 value={snippet2}
             />
 

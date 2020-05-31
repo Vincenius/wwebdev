@@ -1,7 +1,10 @@
 import React from 'react'
 import Link from 'next/link'
 import LazyLoad from 'react-lazy-load'
-import { SocialBar, BuyMeACoffeeButton } from '../'
+import MailOutlineIcon from '@material-ui/icons/MailOutline'
+
+import SocialBar from '../SocialBar'
+import BuyMeACoffeeButton from '../BuyMeACoffeeButton'
 import * as S from './styled'
 import * as ui from '../../ui'
 
@@ -21,7 +24,14 @@ const Footer = () => (
       </div>
 
       <S.RightFooter>
-        <SocialBar />
+        <SocialBar>
+          <li>
+            <a href="mailto:info@wweb.dev">
+              <ui.Screenreader>E-Mail</ui.Screenreader>
+              <MailOutlineIcon width="24px" height="24px" />
+            </a>
+          </li>
+        </SocialBar>
 
         <BuyMeACoffeeButton />
 

@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { Card } from '@material-ui/core'
+import Card from '@material-ui/core/Card'
 import Controls from './Controls'
 import * as S from './styled'
 import { SEPARATORS, SEPARATOR_OPTIONS } from './constants'
-import { Nav } from '../'
+import Nav from '../Nav'
 
 const Generator = props => {
     const defaultSeparator = SEPARATORS.SKEWED

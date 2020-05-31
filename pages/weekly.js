@@ -1,5 +1,5 @@
 import React from 'react'
-import { Layout } from '../components'
+import Layout from '../components/Layout'
 import { generateWeekly } from '../content/generator'
 import * as ui from '../ui'
 

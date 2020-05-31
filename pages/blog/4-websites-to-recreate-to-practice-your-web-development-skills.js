@@ -1,6 +1,9 @@
 import React from 'react'
 import * as ui from '../../ui'
-import { SubscribeForm, Layout, Comments, PrevNext } from '../../components'
+import SubscribeForm from '../../components/SubscribeForm'
+import Layout from '../../components/Layout'
+import Comments from '../../components/Comments'
+import PrevNext from '../../components/PrevNext'
 import meta from '../../content/articles'
 
 const postId = 4

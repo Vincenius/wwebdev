@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '27',
+        date: 'May 27, 2020',
+        description: "Norde Source, Appy Dev, Keyframes, SEO Cheat Sheet, Marketing for Engineer and more...",
+        previewImage: 'weekly/27_QVZWND3ef9.jpg',
+    },
+    {
         id: '26',
         date: 'May 20, 2020',
         description: "Deno, JSNation, Modern CSS Solutions, quicklink, animista, styco and more...",

@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
-import { Head, Nav } from '../../components'
+import Head from '../../components/Head'
+import Nav from '../../components/Nav'
+
 import { Background1, Background2, Background3 } from '../../components/AnimatedCssBackgroundGenerator'
 import * as S from '../../components/AnimatedCssBackgroundGenerator/styles/animatedCssBg'
 import meta from '../../content/resources'
