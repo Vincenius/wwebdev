@@ -118,6 +118,8 @@ const Post = () => (
         </li>
       </ul>
 
+      <br />
+      <Comments />
     </ui.ArticleContainer>
   </Layout>
 )
