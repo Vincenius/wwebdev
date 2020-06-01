@@ -100,7 +100,7 @@ export const Main = styled.div`
     }
 `
 
-export const Link = styled.a`
+export const Link = styled.span`
     color: ${props => props.active ? logoColorLeft : 'rgba(255,255,255,0.8)'};
 
     &:hover {

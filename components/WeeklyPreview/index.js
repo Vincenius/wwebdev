@@ -47,9 +47,9 @@ const ArticlePreview = ({
                 </LazyLoad>
             </a></Link>
             <p>{description}</p>
-            <Link href="/weekly/[slug]" as={link}><S.ReadMore >
+            <Link href="/weekly/[slug]" as={link}><a><S.ReadMore>
                 Open Weekly <ArrowRight width="1em" height="1em" />
-            </S.ReadMore></Link>
+            </S.ReadMore></a></Link>
         </S.Container>
     )
 }

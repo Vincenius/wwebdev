@@ -50,7 +50,7 @@ export const Headline = styled.h2`
         }
     }
 `
-export const ReadMore = styled.a`
+export const ReadMore = styled.span`
     display: block;
     font-size: .77248rem;
     font-weight: 700;

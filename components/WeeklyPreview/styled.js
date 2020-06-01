@@ -37,7 +37,7 @@ export const Headline = styled.h3`
         }
     }
 `
-export const ReadMore = styled.a`
+export const ReadMore = styled.span`
     display: inline-flex;
     align-items: center;
     line-height: 1;

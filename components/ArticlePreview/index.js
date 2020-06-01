@@ -65,9 +65,9 @@ const ArticlePreview = ({
           </S.Headline>
         </header>
         <p>{description}</p>
-        <Link href={link}><S.ReadMore>
+        <Link href={link}><a><S.ReadMore>
           { isResource ? 'Open Resource' : 'Read more' }
-        </S.ReadMore></Link>
+        </S.ReadMore></a></Link>
       </div>
     </S.Container>
   )

@@ -33,11 +33,11 @@ const Nav = ({ isArticle, title, transparentBg }) => {
           <ul>
             {links.map(({ key, href, label }) => (
               <li key={key}>
-                <Link href={`/${href}`}>
+                <Link href={`/${href}`}><a>
                   <S.Link active={activePath === href}>
                     {label}
                   </S.Link>
-                </Link>
+                </a></Link>
               </li>
             ))}
           </ul>
