@@ -41,10 +41,15 @@ export const ReadMore = styled.span`
     display: inline-flex;
     align-items: center;
     line-height: 1;
+    font-size: .77248rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: ${lightBlue};
 
     &:hover {
-        color: ${lightBlue};
-        text-decoration: none;
+        color: ${darkGrey};
+        text-decoration: underline;
         cursor: pointer;
     }
 `

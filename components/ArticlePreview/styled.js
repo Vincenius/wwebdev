@@ -51,11 +51,14 @@ export const Headline = styled.h2`
     }
 `
 export const ReadMore = styled.span`
-    display: block;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
     font-size: .77248rem;
     font-weight: 700;
     margin-top: calc(1.06667rem + .25vw);
     text-transform: uppercase;
+    text-decoration: underline;
     color: ${lightBlue};
 
     &:hover {
