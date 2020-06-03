@@ -591,7 +591,7 @@ const Post = () => (
 
         <p>
             If you want to read more about JavaScript linting, I'd recommend reading the blog
-            post <a href="https://blog.geographer.fr/eslint-guide?utm_source=wweb.dev" target="_blank" rel="noopener">ESLint configuration and best practices</a>
+            post <a href="https://blog.geographer.fr/eslint-guide" target="_blank" rel="noopener">ESLint configuration and best practices</a>
         </p>
 
         <CodeBlock
