@@ -53,6 +53,12 @@ const Post = () => (
                 image="/resources/creative-backgrounds/transparent-textures.jpg"
             />
             <LinkBox
+                title="SVG Pattern Generator"
+                description="A tool to create unique, seamless, royalty-free svg patterns."
+                link="https://doodad.dev/pattern-generator/"
+                image="/resources/creative-backgrounds/svg-pattern-generator.jpg"
+            />
+            <LinkBox
                 title="Ambient Canvas Backgrounds"
                 description="A bunch of nice backgrounds using the HTML5 Canvas API."
                 link="https://tympanus.net/Development/AmbientCanvasBackgrounds/index2.html"
