@@ -1,5 +1,6 @@
 import WeeklyPreview from '../components/WeeklyPreview'
 import ArticlePreview from '../components/ArticlePreview'
+import LinkBox from '../components/LinkBox'
 
 import { weeklyData } from './weekly'
 import articleData from './articles'
@@ -15,6 +16,17 @@ export const generateWeekly = maxCount => {
         date={d.date}
         description={d.description}
         previewImage={d.previewImage}
+    />)
+}
+
+export const generateWeeklyContent = (data, filter) => {
+    return data.map((item, index) => <LinkBox
+        key={`linkbox-${index}`}
+        title={item.title}
+        description={item.description}
+        link={item.link}
+        image={item.image}
+        selfPromoted={item.selfPromoted}
     />)
 }
 

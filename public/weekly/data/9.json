@@ -1,1 +1,98 @@
-{"items":[{"title":"Hero Patterns","description":"A cool collection of repeatable SVG pattern backgrounds by Steve Schoger.","link":"https://www.heropatterns.com","image":"https://www.heropatterns.com/img/twitter-preview.png"},{"title":"Tiny Helpers","description":"A collection of free tools for web developers.","link":"https://tiny-helpers.dev","image":"https://tiny-helpers.dev/large-media-image.jpg"},{"title":"GoatCounter","description":"Simple, open source and privacy aware web statistics.","link":"https://www.goatcounter.com","image":"https://gc.zgo.at/screenshot.png"},{"title":"is-website-vulnerable","description":"A cli tool to find vulnerabilities in your website npm wouldn't find.","link":"https://github.com/lirantal/is-website-vulnerable","image":"https://raw.githubusercontent.com/lirantal/is-website-vulnerable/master/.github/is-website-vulnerable-logo.png"},{"title":"JamTemplates","description":"A curated collection of free Gatsby templates.","link":"https://jamtemplates.com/","image":"https://jamtemplates.com/static/social-300826671967cbacd95e5e63623d190f.jpg"},{"title":"CSS Gradient Animator","description":"A website to generate an animated gradient background.","link":"https://www.gradient-animator.com/","image":"https://www.gradient-animator.com/img/screen.png"},{"title":"ImageHues","description":"Get generated color palettes from random images.","link":"https://imagehues.com/","image":"https://ph-files.imgix.net/7d42e9a0-9d69-4393-a1aa-de02bf832680?"},{"title":"30 seconds of code","description":"A collection of short code snippets for JavaScript, CSS, Python and React.","link":"https://www.30secondsofcode.org/","image":"https://www.30secondsofcode.org/static/logo-cb53e02c026a68cd4a2574f40168073c.png"},{"title":"Proton Native","description":"Create cross-platform desktop applications with React syntax.","link":"https://proton-native.js.org/#/","image":"https://camo.githubusercontent.com/c730125da08fdf1e78595c891449933616e566d5/687474703a2f2f70726f746f6e6e61746976652d616635312e6b7863646e2e636f6d2f696d616765732f6c6f676f5f626c61636b2e7376673f"},{"title":"Next.js 9.2","description":"Read about the latest release of Next.js and it's new features.","link":"https://nextjs.org/blog/next-9-2","image":"https://nextjs.org/static/blog/next-9-2/twitter-card.png"}]}
+{
+  "items": [
+    {
+      "title": "Hero Patterns",
+      "description": "A cool collection of repeatable SVG pattern backgrounds by Steve Schoger.",
+      "link": "https://www.heropatterns.com",
+      "image": "https://www.heropatterns.com/img/twitter-preview.png",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Tiny Helpers",
+      "description": "A collection of free tools for web developers.",
+      "link": "https://tiny-helpers.dev",
+      "image": "https://tiny-helpers.dev/large-media-image.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "GoatCounter",
+      "description": "Simple, open source and privacy aware web statistics.",
+      "link": "https://www.goatcounter.com",
+      "image": "https://gc.zgo.at/screenshot.png",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "is-website-vulnerable",
+      "description": "A cli tool to find vulnerabilities in your website npm wouldn't find.",
+      "link": "https://github.com/lirantal/is-website-vulnerable",
+      "image": "https://raw.githubusercontent.com/lirantal/is-website-vulnerable/master/.github/is-website-vulnerable-logo.png",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "JamTemplates",
+      "description": "A curated collection of free Gatsby templates.",
+      "link": "https://jamtemplates.com/",
+      "image": "https://jamtemplates.com/static/social-300826671967cbacd95e5e63623d190f.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "CSS Gradient Animator",
+      "description": "A website to generate an animated gradient background.",
+      "link": "https://www.gradient-animator.com/",
+      "image": "https://www.gradient-animator.com/img/screen.png",
+      "tags": [
+        "CSS",
+        "Generator"
+      ]
+    },
+    {
+      "title": "ImageHues",
+      "description": "Get generated color palettes from random images.",
+      "link": "https://imagehues.com/",
+      "image": "https://ph-files.imgix.net/7d42e9a0-9d69-4393-a1aa-de02bf832680?",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "30 seconds of code",
+      "description": "A collection of short code snippets for JavaScript, CSS, Python and React.",
+      "link": "https://www.30secondsofcode.org/",
+      "image": "https://www.30secondsofcode.org/static/logo-cb53e02c026a68cd4a2574f40168073c.png",
+      "tags": [
+        "Resource",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Proton Native",
+      "description": "Create cross-platform desktop applications with React syntax.",
+      "link": "https://proton-native.js.org/#/",
+      "image": "https://camo.githubusercontent.com/c730125da08fdf1e78595c891449933616e566d5/687474703a2f2f70726f746f6e6e61746976652d616635312e6b7863646e2e636f6d2f696d616765732f6c6f676f5f626c61636b2e7376673f",
+      "tags": [
+        "React",
+        "Tool"
+      ]
+    },
+    {
+      "title": "Next.js 9.2",
+      "description": "Read about the latest release of Next.js and it's new features.",
+      "link": "https://nextjs.org/blog/next-9-2",
+      "image": "https://nextjs.org/static/blog/next-9-2/twitter-card.png",
+      "tags": [
+        "Article"
+      ]
+    }
+  ]
+}
