@@ -18,9 +18,9 @@ for (const item of data.items) {
 <hr style="border: 1px solid #e0e0e0" />
 <br />
 
-<h2><a href="${item.link}?utm_source=wweb.dev">${item.title}</a></h2>
+<h2><a href="${item.link}">${item.title}</a></h2>
 
-<p><a href="${item.link}/?utm_source=wweb.dev"><img alt="${item.title}" loading="lazy" src="${imageLink}" style="border: 0px; width: 400px; height: auto; margin: 0px 0px 15px;" width="400" /></a><br />
+<p><a href="${item.link}"><img alt="${item.title}" loading="lazy" src="${imageLink}" style="border: 0px; width: 400px; height: auto; margin: 0px 0px 15px;" width="400" /></a><br />
 ${item.description}</p>
 &nbsp;`
 }

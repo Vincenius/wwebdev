@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '28',
+        date: 'June 03, 2020',
+        description: "Supabase, Obsidian, MDN React, htmx, Rough Notation, Tailblocks, Lander and more...",
+        previewImage: 'weekly/28_6VOsvFSISkN.jpg',
+    },
+    {
         id: '27',
         date: 'May 27, 2020',
         description: "Norde Source, Appy Dev, Keyframes, SEO Cheat Sheet, Marketing for Engineer and more...",

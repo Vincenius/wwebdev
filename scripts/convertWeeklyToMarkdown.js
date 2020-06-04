@@ -13,8 +13,8 @@ for (const item of data.items) {
 
 ______
 
-##[${item.title}](${item.link}?utm_source=wweb.dev)
-[![${item.title}](${imageLink})](${item.link}?utm_source=wweb.dev)
+##[${item.title}](${item.link})
+[![${item.title}](${imageLink})](${item.link})
 ${item.description}`
 }
 

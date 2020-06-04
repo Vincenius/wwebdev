@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import LazyLoad from 'react-lazy-load'
+import ArrowRight from '@material-ui/icons/ArrowRightAlt'
 import * as S from './styled'
 import * as ui from '../../ui'
 
@@ -65,9 +66,10 @@ const ArticlePreview = ({
           </S.Headline>
         </header>
         <p>{description}</p>
-        <Link href={link}><S.ReadMore>
-          { isResource ? 'Open Resource' : 'Read more' }
-        </S.ReadMore></Link>
+        <Link href={link}><a><S.ReadMore>
+          { isResource ? 'Open Resource ' : 'Read more ' }
+          <ArrowRight width="1em" height="1em" />
+        </S.ReadMore></a></Link>
       </div>
     </S.Container>
   )

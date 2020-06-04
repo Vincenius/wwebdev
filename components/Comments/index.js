@@ -1,8 +1,7 @@
 import React from 'react'
 
 const Comments = props => (
-    <div>
-    </div>
+    <div id="commento"></div>
 )
 
 export default Comments

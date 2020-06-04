@@ -31,7 +31,7 @@ function SubscribeForm({ type }) {
 
                 <S.CheckboxContainer>
                     <strong>Choose what you want to get informed about</strong>
-                    <ul>
+                    <S.CheckboxList type={type}>
                         <li>
                             <FormControlLabel
                                 control={
@@ -71,7 +71,7 @@ function SubscribeForm({ type }) {
                                 label="Resources"
                             />
                         </li>
-                    </ul>
+                    </S.CheckboxList>
                 </S.CheckboxContainer>
                 <S.HiddenInput>
                     <label htmlFor="b_23a611280baff5c6bd68c83e3_8dd07d6ca8">input</label>
