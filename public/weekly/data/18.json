@@ -1,1 +1,89 @@
-{"items":[{"title":"Parametric Color Mixer","description":"An awesome tool for building color palettes, inspired by audio parametric equalizers.","link":"https://colormixer.web.app/","image":"/weekly/screenshots/colormixer.jpg"},{"title":"Animated Hamburger Icons","description":"A nice React library for animated hamburger menus.","link":"https://hamburger-react.netlify.com/","image":"https://hamburger-react.netlify.com/hamburger-react.jpg"},{"title":"TypeScript Particles","description":"A lightweight TypeScript library for creating particles by Matteo Bruni.","link":"https://particles.matteobruni.it/#virus","image":"https://particles.matteobruni.it/images/demo.png"},{"title":"How to Build HTML Forms Right: Semantics","description":"The start of a series of articles about getting HTML Forms right.","link":"https://stegosource.com/how-to-build-html-forms-right-semantics/","image":"https://cdn.statically.io/img/stegosource.com/wp-content/uploads/html-blog-cover.svg"},{"title":"simpleParallax.js","description":"A tiny Vanilla JS library for adding a parallax effect on any image.","link":"https://simpleparallax.com/","image":"https://simpleparallax.b-cdn.net/images/og_image.jpg"},{"title":"CI/CD - Serverless Ebook","description":"A tutorial on how to publish eBooks with Gitbook CLI, Github Pages, Github Actions CI/CD, and Calibre.","link":"https://devops.novalagung.com/en/cicd-serverless-ebook-gitbook-github-pages-actions-calibre.html","image":"/weekly/screenshots/serverlessEbook.jpg"},{"title":"Tabler Icons","description":"A set of over 300 free MIT-licensed high-quality SVG icons for you to use in your web projects.","link":"https://github.com/tabler/tabler-icons","image":"https://raw.githubusercontent.com/tabler/tabler-icons/master/.github/icons.png"},{"title":"How to animate CSS and SVG's with AnimeJS","description":"An article about working with SVG's and CSS in AnimeJS.","link":"https://developerbacon.ca/articles/how-to-animate-css-and-svg-s-with-anime-js","image":"https://developerbacon.ca/assets/static/how-to-css-svg-animejs.c1fbd9b.e72c41f9af146eb2215c4e1f0bf6bd73.jpeg"},{"title":"Awesome Javascript","description":"A big list of Blogs, Books, People, Podcasts, Conferences, NewsLetters, Videos and Documentaries about JS.","link":"https://dev.to/datastructures/awesome-javascript-best-blogs-books-people-podcasts-conferences-newsletters-videos-and-documentaries-on-the-web-updated-3ank","image":"https://res.cloudinary.com/practicaldev/image/fetch/s--jwvW0E3E--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--5u_yibg8--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/fakmhzmgu7hmz0qzgb6n.png"}]}
+{
+  "items": [
+    {
+      "title": "Parametric Color Mixer",
+      "description": "An awesome tool for building color palettes, inspired by audio parametric equalizers.",
+      "link": "https://colormixer.web.app/",
+      "image": "/weekly/screenshots/colormixer.jpg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Animated Hamburger Icons",
+      "description": "A nice React library for animated hamburger menus.",
+      "link": "https://hamburger-react.netlify.com/",
+      "image": "https://hamburger-react.netlify.com/hamburger-react.jpg",
+      "tags": [
+        "React",
+        "Library"
+      ]
+    },
+    {
+      "title": "TypeScript Particles",
+      "description": "A lightweight TypeScript library for creating particles by Matteo Bruni.",
+      "link": "https://particles.matteobruni.it/#virus",
+      "image": "https://particles.matteobruni.it/images/demo.png",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    },
+    {
+      "title": "How to Build HTML Forms Right: Semantics",
+      "description": "The start of a series of articles about getting HTML Forms right.",
+      "link": "https://stegosource.com/how-to-build-html-forms-right-semantics/",
+      "image": "https://cdn.statically.io/img/stegosource.com/wp-content/uploads/html-blog-cover.svg",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "simpleParallax.js",
+      "description": "A tiny Vanilla JS library for adding a parallax effect on any image.",
+      "link": "https://simpleparallax.com/",
+      "image": "https://simpleparallax.b-cdn.net/images/og_image.jpg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    },
+    {
+      "title": "CI/CD - Serverless Ebook",
+      "description": "A tutorial on how to publish eBooks with Gitbook CLI, Github Pages, Github Actions CI/CD, and Calibre.",
+      "link": "https://devops.novalagung.com/en/cicd-serverless-ebook-gitbook-github-pages-actions-calibre.html",
+      "image": "/weekly/screenshots/serverlessEbook.jpg",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Tabler Icons",
+      "description": "A set of over 300 free MIT-licensed high-quality SVG icons for you to use in your web projects.",
+      "link": "https://github.com/tabler/tabler-icons",
+      "image": "https://raw.githubusercontent.com/tabler/tabler-icons/master/.github/icons.png",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "How to animate CSS and SVG's with AnimeJS",
+      "description": "An article about working with SVG's and CSS in AnimeJS.",
+      "link": "https://developerbacon.ca/articles/how-to-animate-css-and-svg-s-with-anime-js",
+      "image": "https://developerbacon.ca/assets/static/how-to-css-svg-animejs.c1fbd9b.e72c41f9af146eb2215c4e1f0bf6bd73.jpeg",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Awesome Javascript",
+      "description": "A big list of Blogs, Books, People, Podcasts, Conferences, NewsLetters, Videos and Documentaries about JS.",
+      "link": "https://dev.to/datastructures/awesome-javascript-best-blogs-books-people-podcasts-conferences-newsletters-videos-and-documentaries-on-the-web-updated-3ank",
+      "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--jwvW0E3E--/c_imagga_scale,f_auto,fl_progressive,h_420,q_auto,w_1000/https://res.cloudinary.com/practicaldev/image/fetch/s--5u_yibg8--/c_imagga_scale%2Cf_auto%2Cfl_progressive%2Ch_420%2Cq_auto%2Cw_1000/https://dev-to-uploads.s3.amazonaws.com/i/fakmhzmgu7hmz0qzgb6n.png",
+      "tags": [
+        "JavaScript",
+        "Resource"
+      ]
+    }
+  ]
+}

@@ -37,16 +37,6 @@
       ]
     },
     {
-      "title": "Beautiful React Hooks",
-      "description": "A collection of React Hooks to speed-up the development.",
-      "link": "https://github.com/antonioru/beautiful-react-hooks",
-      "image": "https://raw.githubusercontent.com/antonioru/beautiful-react-hooks/master/usage_example.png",
-      "tags": [
-        "React",
-        "Resource"
-      ]
-    },
-    {
       "title": "Bot Land",
       "description": "A fun online strategy game, where you have to build and programm your own bot.",
       "link": "https://bot.land/",

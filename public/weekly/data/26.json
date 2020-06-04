@@ -4,73 +4,112 @@
       "title": "Deno 1.0",
       "description": "Deno is a secure runtime for JavaScript and TypeScript and an alternative to node.js.",
       "link": "https://deno.land/v1",
-      "image": "https://deno.land/v1_wide.jpg"
+      "image": "https://deno.land/v1_wide.jpg",
+      "tags": [
+        "JavaScript"
+      ]
     },
     {
       "title": "JSNation",
       "description": "A 2-day JavaScript conference to stay up-to-date on the latest JS tech. It has a free Ticket.",
       "link": "https://live.jsnation.com/",
-      "image": "https://live.jsnation.com/img/og-v1.png"
+      "image": "https://live.jsnation.com/img/og-v1.png",
+      "tags": [
+        "Other"
+      ]
     },
     {
       "title": "Modern CSS Solutions",
       "description": "A cool series of articles by Stephanie Eckles on solving old CSS problems with modern CSS.",
       "link": "https://moderncss.dev/",
-      "image": "https://moderncss.dev/img/home.png"
+      "image": "https://moderncss.dev/img/home.png",
+      "tags": [
+        "Resource",
+        "CSS"
+      ]
     },
     {
       "title": "quicklink",
       "description": "A drop-in solution for sites to prefetch links based on what is in the user's viewport.",
       "link": "https://getquick.link/",
-      "image": "https://camo.githubusercontent.com/d9e978c30d6e62fa13b4aea5af2560eebb67e20f/68747470733a2f2f692e696d6775722e636f6d2f4e56525a4c48762e706e67"
+      "image": "https://camo.githubusercontent.com/d9e978c30d6e62fa13b4aea5af2560eebb67e20f/68747470733a2f2f692e696d6775722e636f6d2f4e56525a4c48762e706e67",
+      "tags": [
+        "Tool"
+      ]
     },
     {
       "title": "Animista",
       "description": "A collection of ready to use CSS animations you can play around with online.",
       "link": "https://animista.net",
-      "image": "https://animista.net/animista-media-img.gif"
+      "image": "https://animista.net/animista-media-img.gif",
+      "tags": [
+        "CSS",
+        "Resource"
+      ]
     },
     {
       "title": "Treact",
       "description": "Free Modern React Templates for every need.",
       "link": "https://treact.owaiskhan.me/",
-      "image": "https://treact.owaiskhan.me/react-landing-pages-and-components-free-tailwindcss.png"
+      "image": "https://treact.owaiskhan.me/react-landing-pages-and-components-free-tailwindcss.png",
+      "tags": [
+        "React",
+        "Resource"
+      ]
     },
     {
       "title": "styco",
       "description": "A VS Code plugin to transform JSX-Tags with style-props to styled components.",
       "link": "https://github.com/agreon/styco",
-      "image": "https://raw.githubusercontent.com/Agreon/styco/master/demo.gif"
+      "image": "https://raw.githubusercontent.com/Agreon/styco/master/demo.gif",
+      "tags": [
+        "Tool"
+      ]
     },
     {
       "title": "Tiny helpers",
       "description": "A collection of free single-purpose online tools for web developers.",
       "link": "https://tiny-helpers.dev/",
-      "image": "https://tiny-helpers.dev/large-media-image.jpg"
+      "image": "https://tiny-helpers.dev/large-media-image.jpg",
+      "tags": [
+        "Resource"
+      ]
     },
     {
       "title": "Real-Time Debugging",
       "description": "An extension for VS Code that visualizes how a program is being executed in real time.",
       "link": "https://github.com/hediet/vscode-realtime-debugging",
-      "image": "https://raw.githubusercontent.com/hediet/vscode-realtime-debugging/master/docs/demo-web.gif"
+      "image": "https://raw.githubusercontent.com/hediet/vscode-realtime-debugging/master/docs/demo-web.gif",
+      "tags": [
+        "Tool"
+      ]
     },
     {
       "title": "new.css",
       "description": "A classless CSS framework to write modern websites using only HTML.",
       "link": "https://github.com/xz/new.css",
-      "image": "https://newcss.net/_assets/og.png"
+      "image": "https://newcss.net/_assets/og.png",
+      "tags": [
+        "CSS"
+      ]
     },
     {
       "title": "WebGL guide",
       "description": "A complete, summarized WebGL tutorial with interactive demos.",
       "link": "https://xem.github.io/articles/webgl-guide.html",
-      "image": "/weekly/screenshots/webgl-guide.jpg"
+      "image": "/weekly/screenshots/webgl-guide.jpg",
+      "tags": [
+        "Article"
+      ]
     },
     {
       "title": "React Native for Windows + macOS",
       "description": "React Native adds support for the Windows 10 SDK as well as the macOS 10.12 SDK.",
       "link": "https://microsoft.github.io/react-native-windows/",
-      "image": "https://microsoft.github.io/react-native-windows/img/homepage/cross-platform.png"
+      "image": "https://microsoft.github.io/react-native-windows/img/homepage/cross-platform.png",
+      "tags": [
+        "React"
+      ]
     }
   ]
 }
