@@ -54,7 +54,7 @@ const Post = () => (
             />
             <LinkBox
                 title="SVG Pattern Generator"
-                description="A tool to create unique, seamless, royalty-free svg patterns."
+                description="A tool to create unique, seamless, royalty-free SVG patterns."
                 link="https://doodad.dev/pattern-generator/"
                 image="/resources/creative-backgrounds/svg-pattern-generator.jpg"
             />

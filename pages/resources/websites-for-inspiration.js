@@ -66,7 +66,7 @@ const Post = () => (
 
             <LinkBox
                 title="Awwwards"
-                description="Website Awards that for the best developers, designers and web agencies in the world."
+                description="Website Awards for the best developers, designers, and web agencies in the world."
                 link="https://www.awwwards.com/"
                 image="/resources/inspiration-websites/awwwards.jpg"
             />
@@ -164,7 +164,7 @@ const Post = () => (
 
             <LinkBox
                 title="Design Systems Repo"
-                description="A frequently updated collection of Design System examples, articles, tools and talks."
+                description="A frequently updated collection of Design System examples, articles, tools, and talks."
                 link="https://designsystemsrepo.com/"
                 image="/resources/inspiration-websites/designsystemsrepo.jpg"
             />

@@ -137,7 +137,7 @@ const Post = () => (
                 image="/resources/free-svg-illustrations/getillustrations.jpg"
                 title="Getillustrations"
                 link="https://getillustrations.com/illustration-packs/freebie"
-                description="Free packs of high quality Royalty free vector illustrations."
+                description="Free packs of high-quality, royalty-free vector illustrations."
             />
 
             <LinkBox
@@ -183,7 +183,7 @@ const Post = () => (
             />
 
             <LinkBox
-                image="/resources/free-svg-illustrations/flaticon.jpg"
+                image="/resources/free-svg-illustrations/scribbbles.jpg"
                 title="Scribbbles"
                 link="https://www.scribbbles.design/"
                 description="100+ vectorized scribbbles, which can be added to existing images and illustrations."
