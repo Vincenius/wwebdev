@@ -224,7 +224,7 @@ const Post = () => (
                 description='Generate an illustrated avatar based on a string. Great for profile picture placeholders.'
             />
 
-            <SubscribeForm />
+            <SubscribeForm type="weekly" />
 
         </ui.GridContainer>
 

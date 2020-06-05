@@ -183,7 +183,7 @@ const Post = () => (
                 image="/resources/inspiration-websites/saaslandingpage.jpg"
             />
 
-            <SubscribeForm />
+            <SubscribeForm type="weekly" />
 
         </ui.GridContainer>
 

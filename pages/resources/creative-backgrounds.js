@@ -186,7 +186,7 @@ const Post = () => (
                 selfPromoted="from wweb.dev"
             />
 
-            <SubscribeForm />
+            <SubscribeForm type="weekly" />
 
         </ui.GridContainer>
 
