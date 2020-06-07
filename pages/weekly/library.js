@@ -13,13 +13,13 @@ import { weeklyData } from '../../content/weekly'
 import { generateWeeklyContent, generateLinkBoxLoading } from '../../content/generator'
 
 const weeklyTags = [
-  'Tool',
-  'Article',
   'React',
   'JavaScript',
+  'CSS',
+  'Tool',
+  'Article',
   'Library',
   'Resource',
-  'CSS',
   'Generator',
   'Guide',
   'Other',
