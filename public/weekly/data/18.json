@@ -12,8 +12,8 @@
     {
       "title": "Animated Hamburger Icons",
       "description": "A nice React library for animated hamburger menus.",
-      "link": "https://hamburger-react.netlify.com/",
-      "image": "https://hamburger-react.netlify.com/hamburger-react.jpg",
+      "link": "https://hamburger-react.netlify.app/",
+      "image": "https://hamburger-react.netlify.app/hamburger-react.jpg",
       "tags": [
         "React",
         "Library"

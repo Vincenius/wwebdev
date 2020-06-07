@@ -21,7 +21,6 @@ const weeklyTags = [
   'Resource',
   'CSS',
   'Generator',
-  'Resources',
   'Guide',
   'Other',
 ]
