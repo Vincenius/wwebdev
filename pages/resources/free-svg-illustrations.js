@@ -50,13 +50,6 @@ const Post = () => (
             />
 
             <LinkBox
-                image="/resources/free-svg-illustrations/freellustrations.png"
-                title="Freellustrations"
-                link="https://freellustrations.com/"
-                description="A collection of beautiful, high-resolution illustration background images."
-            />
-
-            <LinkBox
                 image="/resources/free-svg-illustrations/glaze.jpg"
                 title="Glaze"
                 link="https://www.glazestock.com/"
@@ -71,10 +64,31 @@ const Post = () => (
             />
 
             <LinkBox
+                image="/resources/free-svg-illustrations/blush.jpg"
+                title="Blush"
+                link="https://blush.design/"
+                description="A website to create, mix, and customize illustrations made by artists around the world."
+            />
+
+            <LinkBox
+                image="/resources/free-svg-illustrations/delesign.jpg"
+                title="Delesign"
+                link="https://delesign.com/free-designs/graphics"
+                description="Royalty-free illustrations, which are customizable by color."
+            />
+
+            <LinkBox
                 image="/resources/free-svg-illustrations/openpeeps.png"
                 title="Open Peeps"
                 link="https://www.openpeeps.com/"
                 description="A hand-drawn illustration library made of building blocks to create your own illustrations."
+            />
+
+            <LinkBox
+                image="/resources/free-svg-illustrations/pixeltrue.jpg"
+                title="Pixeltrue"
+                link="https://www.pixeltrue.com/free-illustrations"
+                description="A bunch of cool vector illustrations & animations under the MIT License."
             />
 
             <LinkBox
@@ -120,6 +134,20 @@ const Post = () => (
             />
 
             <LinkBox
+                image="/resources/free-svg-illustrations/getillustrations.jpg"
+                title="Getillustrations"
+                link="https://getillustrations.com/illustration-packs/freebie"
+                description="Free packs of high-quality, royalty-free vector illustrations."
+            />
+
+            <LinkBox
+                image="/resources/free-svg-illustrations/uistore.jpg"
+                title="UI Store Design"
+                link="https://www.uistore.design/categories/illustrations/"
+                description="43 illustrations resources, which are accumulated from different websites."
+            />
+
+            <LinkBox
                 image="/resources/free-svg-illustrations/ira-design.png"
                 title="IRA Design"
                 link="https://iradesign.io/"
@@ -134,6 +162,13 @@ const Post = () => (
             />
 
             <LinkBox
+                image="/resources/free-svg-illustrations/flaticon.jpg"
+                title="Flaticon"
+                link="https://www.flaticon.com/"
+                description="A huge database of vector icons and illustrations."
+            />
+
+            <LinkBox
                 image="/resources/free-svg-illustrations/drawkit.png"
                 title="DrawKit"
                 link="https://www.drawkit.io/"
@@ -145,6 +180,13 @@ const Post = () => (
                 title="Mega Doodles Pack"
                 link="https://github.com/MariaLetta/mega-doodles-pack"
                 description="A collection of over 160 hand-drawn doodle elemens as vector illustrations."
+            />
+
+            <LinkBox
+                image="/resources/free-svg-illustrations/scribbbles.jpg"
+                title="Scribbbles"
+                link="https://www.scribbbles.design/"
+                description="100+ vectorized scribbbles, which can be added to existing images and illustrations."
             />
 
             <LinkBox
@@ -182,7 +224,7 @@ const Post = () => (
                 description='Generate an illustrated avatar based on a string. Great for profile picture placeholders.'
             />
 
-            <SubscribeForm />
+            <SubscribeForm type="weekly" />
 
         </ui.GridContainer>
 
