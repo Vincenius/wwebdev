@@ -78,7 +78,7 @@
       "title": "Rome",
       "description": "A new experimental JavaScript toolchain that includes a compiler, linter, formatter, bundler, testing framework and more.",
       "link": "https://romejs.dev/",
-      "image": "https://raw.githubusercontent.com/facebookexperimental/rome/master/assets/logo_with_text.png",
+      "image": "https://romejs.dev/img/undraw_mind_map_cwng.svg",
       "tags": [
         "JavaScript",
         "Tool"

@@ -1,19 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import LazyLoad from 'react-lazy-load'
 import ArrowRight from '@material-ui/icons/ArrowRightAlt'
+import Skeleton from '@material-ui/lab/Skeleton'
 import * as S from './styled'
 
 function LinkBox({ title, description, image, link, selfPromoted }) {
+    const [imageLoaded, setImageLoaded] = useState(false)
+
     return <S.Container>
         { selfPromoted && <div>
             <S.PromoBg></S.PromoBg>
             <S.PromoLabel>{selfPromoted}</S.PromoLabel>
-        </div>
-        }
+        </div> }
         <S.Content>
             <div>
                 { image && <a href={link} target="_blank" rel="noopener">
-                    <LazyLoad offsetVertical={1000}>
+                    { !imageLoaded && <Skeleton variant="rect" height={203} /> }
+                    <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
                         <img src={image} alt={title} />
                     </LazyLoad>
                 </a> }

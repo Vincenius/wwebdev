@@ -1,6 +1,7 @@
 import WeeklyPreview from '../components/WeeklyPreview'
 import ArticlePreview from '../components/ArticlePreview'
 import LinkBox from '../components/LinkBox'
+import LinkBoxLoading from '../components/LinkBox/Loading'
 
 import { weeklyData } from './weekly'
 import articleData from './articles'
@@ -68,4 +69,12 @@ export const generateArticleAndResources = maxCount => {
         link={d.link}
         previewImage={d.previewImage}
     />).slice(0, maxCount)
+}
+
+export const generateLinkBoxLoading = (maxCount = 6) => {
+    const previews = []
+    for (let i = 0; i < maxCount; i++) {
+        previews.push(<LinkBoxLoading key={`loading-${i}`} />)
+    }
+    return previews
 }
