@@ -4,73 +4,114 @@
       "title": "Eloquent JavaScript",
       "description": "A very well written Book and great re-introduction to JS/programming fundamentals.",
       "link": "https://eloquentjavascript.net/",
-      "image": "https://eloquentjavascript.net/img/cover.jpg"
+      "image": "https://eloquentjavascript.net/img/cover.jpg",
+      "tags": [
+        "JavaScript",
+        "Resource"
+      ]
     },
     {
       "title": "BlurHash",
       "description": "A cool way of showing a nice placeholder for an image while it's loading.",
       "link": "https://blurha.sh/",
-      "image": "https://wp-assets.wolt.com/wp-content/uploads/sites/3/2019/07/01114118/blur-e1561970702316.jpg"
+      "image": "https://wp-assets.wolt.com/wp-content/uploads/sites/3/2019/07/01114118/blur-e1561970702316.jpg",
+      "tags": [
+        "Tool"
+      ]
     },
     {
       "title": "Spaced Time",
       "description": "An application, which helps you remembering stuff - it also has a cli.",
       "link": "https://www.spacedtime.com/",
-      "image": "https://www.spacedtime.com/spacedtime-logo.png"
+      "image": "https://www.spacedtime.com/spacedtime-logo.png",
+      "tags": [
+        "Tool"
+      ]
     },
     {
       "title": "Kanmail",
       "description": "An email client that functions like a kanban board, for Mac/Windows/Linux/Docker.",
       "link": "https://github.com/Oxygem/Kanmail",
-      "image": "https://raw.githubusercontent.com/Oxygem/Kanmail/master/screenshot.png"
+      "image": "https://raw.githubusercontent.com/Oxygem/Kanmail/master/screenshot.png",
+      "tags": [
+        "Tool"
+      ]
     },
     {
       "title": "next-dark-mode",
       "description": "A package for enabeling dark mode in Next.js apps.",
       "link": "https://github.com/xeoneux/next-dark-mode",
-      "image": "/weekly/screenshots/next-dark-mode.jpg"
+      "image": "/weekly/screenshots/next-dark-mode.jpg",
+      "tags": [
+        "React",
+        "Library"
+      ]
     },
     {
       "title": "react-see-through",
       "description": "Draw attention to the important parts of your website with this react package.",
       "link": "https://github.com/andrew4699/react-see-through",
-      "image": "https://raw.githubusercontent.com/andrew4699/react-see-through/master/example.png"
+      "image": "https://raw.githubusercontent.com/andrew4699/react-see-through/master/example.png",
+      "tags": [
+        "React",
+        "Library"
+      ]
     },
     {
       "title": "40 Free HTML landing page templates",
       "description": "A nice list of landing templates, written on dev.to by Davide Pacilio.",
       "link": "https://dev.to/davidepacilio/40-free-html-landing-page-templates-3gfp/",
-      "image": "https://dev-to-uploads.s3.amazonaws.com/i/y575g6eyce1nwpq3wy5p.png"
+      "image": "https://dev-to-uploads.s3.amazonaws.com/i/y575g6eyce1nwpq3wy5p.png",
+      "tags": [
+        "Resource"
+      ]
     },
     {
       "title": "pattern.css",
       "description": "A CSS only library to fill your empty background with beautiful patterns.",
       "link": "https://bansal.io/pattern-css",
-      "image": "https://bansal.io/assets/images/pattern-css-preview.jpg"
+      "image": "https://bansal.io/assets/images/pattern-css-preview.jpg",
+      "tags": [
+        "CSS",
+        "Library"
+      ]
     },
     {
       "title": "98.css",
       "description": "A  CSS library for building interfaces that look like Windows 98.",
       "link": "https://jdan.github.io/98.css/",
-      "image": "https://github.com/jdan/98.css/raw/master/docs/window.png?raw=true"
+      "image": "https://github.com/jdan/98.css/raw/master/docs/window.png?raw=true",
+      "tags": [
+        "CSS",
+        "Library"
+      ]
     },
     {
       "title": "CSS.gg",
       "description": "A list of Icons, which just released their second version.",
       "link": "https://css.gg/",
-      "image": "https://css.gg/fav/og2.png"
+      "image": "https://css.gg/fav/og2.png",
+      "tags": [
+        "Resource"
+      ]
     },
     {
       "title": "67 Free device icons",
       "description": "A free set of 67 device icons in multiple file formats.",
       "link": "https://freebiesbug.com/illustrator-freebies/67-device-icons/",
-      "image": "https://cdn.freebiesbug.com/wp-content/uploads/2020/04/67-tidee-icons.png"
+      "image": "https://cdn.freebiesbug.com/wp-content/uploads/2020/04/67-tidee-icons.png",
+      "tags": [
+        "Resource"
+      ]
     },
     {
       "title": "background generator",
       "description": "A cool generator, which also has a small list of backgrounds created with it.",
       "link": "https://background-generator.com/",
-      "image": "/resources/creative-backgrounds/background-generator.jpg"
+      "image": "/resources/creative-backgrounds/background-generator.jpg",
+      "tags": [
+        "Generator"
+      ]
     }
   ]
 }

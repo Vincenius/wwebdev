@@ -1,1 +1,79 @@
-{"items":[{"title":"Nedux","description":"A simplified version of redux. You don't have to create actions & reduces, just the store.","link":"https://github.com/lucasmrdt/nedux","image":"/weekly/screenshots/nedux.jpg"},{"title":"How to Use New CSS “:is()” for Easy Element Targeting","description":"A nice article by tutspoint, about the usage of the new CSS \":is()\".","link":"https://webdesign.tutsplus.com/articles/new-css-is-for-easy-element-targeting--cms-34223","image":"https://cms-assets.tutsplus.com/uploads/users/30/posts/34223/image/is.jpg"},{"title":"Challenging projects every programmer should try","description":"A list of projects to get started, when you're learning a new programming language or framework.","link":"https://web.eecs.utk.edu/~azh/blog/challengingprojects.html","image":"https://web.eecs.utk.edu/~azh/blog/images/peaybasic.png"},{"title":"Things end users care about but programmers don't","description":"A list if things that end users would often like to see.","link":"https://instadeq.com/blog/posts/things-end-users-care-about-but-programmers-dont/","image":"/weekly/screenshots/enduserscare.jpg"},{"title":"musicForProgramming","description":"57 hours of non disturbing music to help you concentrate.","link":"https://musicforprogramming.net/","image":"/weekly/screenshots/musicforprogramming.jpg"},{"title":"20 ways to become a better Node.js developer in 2020","description":"A good read by Yoni Goldberg skills, technologies and considerations for Node.js in 2020.","link":"https://medium.com/@me_37286/20-ways-to-become-a-better-node-js-developer-in-2020-d6bd73fcf424","image":"https://miro.medium.com/max/2114/1*PYBhcIuCopivLOiBBvG0cw.png"},{"title":"No to Chrome","description":"They are raising awareness of how Google is shaping the internet, your present and future for its own ends.","link":"https://notochrome.org/","image":"https://notochrome.org/wp-content/NTC-twitter-blue-big-1200x676.jpg"},{"title":"A Curated List Of Websites For Free SVG Illustrations","description":"A list of websites for free SVG icons, I've gather thoughout the years.","link":"https://wweb.dev/resources/free-svg-illustrations","image":"https://wweb.dev/resources/free-svg-illustrations/preview.jpg","selfPromoted":"New Resource"}]}
+{
+  "items": [
+    {
+      "title": "Nedux",
+      "description": "A simplified version of redux. You don't have to create actions & reduces, just the store.",
+      "link": "https://github.com/lucasmrdt/nedux",
+      "image": "/weekly/screenshots/nedux.jpg",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "title": "How to Use New CSS “:is()” for Easy Element Targeting",
+      "description": "A nice article by tutspoint, about the usage of the new CSS \":is()\".",
+      "link": "https://webdesign.tutsplus.com/articles/new-css-is-for-easy-element-targeting--cms-34223",
+      "image": "https://cms-assets.tutsplus.com/uploads/users/30/posts/34223/image/is.jpg",
+      "tags": [
+        "CSS",
+        "Article"
+      ]
+    },
+    {
+      "title": "Challenging projects every programmer should try",
+      "description": "A list of projects to get started, when you're learning a new programming language or framework.",
+      "link": "https://web.eecs.utk.edu/~azh/blog/challengingprojects.html",
+      "image": "https://web.eecs.utk.edu/~azh/blog/images/peaybasic.png",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Things end users care about but programmers don't",
+      "description": "A list if things that end users would often like to see.",
+      "link": "https://instadeq.com/blog/posts/things-end-users-care-about-but-programmers-dont/",
+      "image": "/weekly/screenshots/enduserscare.jpg",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "musicForProgramming",
+      "description": "57 hours of non disturbing music to help you concentrate.",
+      "link": "https://musicforprogramming.net/",
+      "image": "/weekly/screenshots/musicforprogramming.jpg",
+      "tags": [
+        "Other"
+      ]
+    },
+    {
+      "title": "20 ways to become a better Node.js developer in 2020",
+      "description": "A good read by Yoni Goldberg skills, technologies and considerations for Node.js in 2020.",
+      "link": "https://medium.com/@me_37286/20-ways-to-become-a-better-node-js-developer-in-2020-d6bd73fcf424",
+      "image": "https://miro.medium.com/max/2114/1*PYBhcIuCopivLOiBBvG0cw.png",
+      "tags": [
+        "Article",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "No to Chrome",
+      "description": "They are raising awareness of how Google is shaping the internet, your present and future for its own ends.",
+      "link": "https://notochrome.org/",
+      "image": "https://notochrome.org/wp-content/NTC-twitter-blue-big-1200x676.jpg",
+      "tags": [
+        "Other"
+      ]
+    },
+    {
+      "title": "A Curated List Of Websites For Free SVG Illustrations",
+      "description": "A list of websites for free SVG icons, I've gather thoughout the years.",
+      "link": "https://wweb.dev/resources/free-svg-illustrations",
+      "image": "https://wweb.dev/resources/free-svg-illustrations/preview.jpg",
+      "selfPromoted": "New Resource",
+      "tags": [
+        "Resource"
+      ]
+    }
+  ]
+}
