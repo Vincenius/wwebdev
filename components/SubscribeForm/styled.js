@@ -48,7 +48,7 @@ export const CheckboxContainer = styled.div`
 `
 export const CheckboxList = styled.ul`
     display: flex;
-    flex-direction: ${props => props.type === 'weekly' ? 'column' : 'row'};
+    flex-direction: ${props => props.isSmall ? 'column' : 'row'};
 
     @media (max-width: ${breakpointSmall}) {
         flex-direction: column;

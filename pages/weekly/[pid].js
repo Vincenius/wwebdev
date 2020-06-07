@@ -41,7 +41,7 @@ const Post = () => {
                         />
                     )
                 }
-                <SubscribeForm type="weekly" />
+                <SubscribeForm type="weekly" isSmall={true} />
             </ui.GridContainer> }
 
             <PrevNext postId={pid} />

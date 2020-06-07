@@ -1,7 +1,9 @@
+import React from 'react'
 import WeeklyPreview from '../components/WeeklyPreview'
 import ArticlePreview from '../components/ArticlePreview'
 import LinkBox from '../components/LinkBox'
 import LinkBoxLoading from '../components/LinkBox/Loading'
+import SubscribeForm from '../components/SubscribeForm'
 
 import { weeklyData } from './weekly'
 import articleData from './articles'
@@ -21,14 +23,18 @@ export const generateWeekly = maxCount => {
 }
 
 export const generateWeeklyContent = (data, filter) => {
-    return data.map((item, index) => <LinkBox
-        key={`linkbox-${index}`}
-        title={item.title}
-        description={item.description}
-        link={item.link}
-        image={item.image}
-        selfPromoted={item.selfPromoted}
-    />)
+    return data.map((item, index) =>
+        <React.Fragment key={`linkbox-${item.id}`}>
+            <LinkBox
+                key={`linkbox-${index}`}
+                title={item.title}
+                description={item.description}
+                link={item.link}
+                image={item.image}
+                selfPromoted={item.selfPromoted}
+            />
+            { index === 2 && <SubscribeForm type="weekly" isSmall={true} /> }
+        </React.Fragment>)
 }
 
 export const generateArticles = () => {
@@ -44,15 +50,16 @@ export const generateArticles = () => {
 }
 
 export const generateResources = () => {
-    return resourceData.map(d => <ArticlePreview
-        key={`resource-${d.id}`}
-        date={d.date}
-        updatedAt={d.updatedAt}
-        headline={d.headline}
-        description={d.description}
-        link={d.link}
-        previewImage={d.previewImage}
-    />)
+    return resourceData.map(d =>
+        <ArticlePreview
+            date={d.date}
+            updatedAt={d.updatedAt}
+            headline={d.headline}
+            description={d.description}
+            link={d.link}
+            previewImage={d.previewImage}
+        />
+    )
 }
 
 export const generateArticleAndResources = maxCount => {
