@@ -65,7 +65,7 @@ const WeeklyLibrary = () => {
       setSearchValDebounced.cancel
 
       setInputVal(value)
-      setSearchValDebounced(value)
+      setSearchValDebounced(value.toLowerCase())
     }
 
     const activeFilter = chipData
@@ -75,9 +75,13 @@ const WeeklyLibrary = () => {
     const filteredData = flatData.length && activeFilter.length
       ? flatData
         .filter(d => d.tags.some(tag => activeFilter.includes(tag)))
-        .filter(d => searchVal === '' || d.title.includes(searchVal) || d.description.includes(searchVal))
+        .filter(d => searchVal === '' ||
+          d.title.toLowerCase().includes(searchVal) ||
+          d.description.toLowerCase().includes(searchVal))
       : flatData
-        .filter(d => searchVal === '' || d.title.includes(searchVal) || d.description.includes(searchVal))
+        .filter(d => searchVal === '' ||
+          d.title.toLowerCase().includes(searchVal) ||
+          d.description.toLowerCase().includes(searchVal))
 
     return (
         <Layout title="Library of previous weekly content">
