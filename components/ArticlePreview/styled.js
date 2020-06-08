@@ -1,4 +1,5 @@
 import styled, { css } from 'styled-components'
+import Skeleton from '@material-ui/lab/Skeleton'
 import { lightGrey, greyBlue, darkGrey, lightBlue, breakpoint, breakpointSmall } from '../../ui/constants'
 
 export const Container = styled.article`
@@ -67,9 +68,9 @@ export const ReadMore = styled.span`
         cursor: pointer;
     }
 `
-export const PreviewImage = styled.img`
+const imageStyle = css`
     width: 200px;
-    height: 200px;
+    height: 200px !important;
     object-fit: cover;
     margin-right: 20px;
     margin-top: 15px;
@@ -83,4 +84,10 @@ export const PreviewImage = styled.img`
         width: 100%;
         height: 200px;
     }
+`
+export const PreviewImage = styled.img`
+    ${imageStyle}
+`
+export const ImageSkeleton = styled(Skeleton)`
+    ${imageStyle}
 `

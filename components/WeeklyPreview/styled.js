@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import Skeleton from '@material-ui/lab/Skeleton'
 import { lightGrey, darkGrey, lightBlue, greyBlue } from '../../ui/constants'
 
 export const Container = styled.article`
+    position: relative;
     border-bottom: 1px solid ${lightGrey};
     margin-bottom: 1.6rem;
     padding-bottom: 1.6rem;
@@ -13,6 +15,10 @@ export const Container = styled.article`
     }
 `
 export const Image = styled.img`
+    width: 100%;
+`
+export const ImageSkeleton = styled(Skeleton)`
+    padding-top: 63.125%;
     width: 100%;
 `
 export const Time = styled.time`
