@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '29',
+        date: 'June 09, 2020',
+        description: "Shape Dividers, Pattern Generator, GitHub Classroom, No Design Development and more...",
+        previewImage: 'weekly/29_kYFHDLMCny.jpg',
+    },
+    {
         id: '28',
         date: 'June 03, 2020',
         description: "Supabase, Obsidian, MDN React, htmx, Rough Notation, Tailblocks, Lander and more...",

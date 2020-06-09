@@ -1,0 +1,126 @@
+{
+  "items": [
+    {
+      "title": "Shape Dividers",
+      "description": "A generator for beautiful SVG shape dividers.",
+      "link": "https://www.shapedivider.app/",
+      "image": "https://shapedivider.app/static/assets/images/shape_divider_app_share.png",
+      "tags": [
+        "Generator"
+      ]
+    },
+    {
+      "title": "Pattern Generator",
+      "description": "A tool to create unique, seamless, royalty-free patterns..",
+      "link": "https://doodad.dev/pattern-generator/",
+      "image": "/weekly/screenshots/svg-pattern-generator.jpg",
+      "tags": [
+        "Generator"
+      ]
+    },
+    {
+      "title": "GitHub Classroom",
+      "description": "A tool for teachers to automate repository creation and access control to distribute code and collect assignments on GitHub.",
+      "link": "https://classroom.github.com/",
+      "image": "https://classroom.github.com/images/og-image.png",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "No Design Development",
+      "description": "A collection of tools for developers who have little to no artistic talent.",
+      "link": "https://nodesign.dev/",
+      "image": "/weekly/screenshots/nodesign.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Soon Launch",
+      "description": "A bundle of Coming Soon, Product Launch, and Under Construction HTML Templates, Themes, and Pages",
+      "link": "https://soonlaunch.com/",
+      "image": "https://soonlaunch.com/assets/images/free-coming-soon.png",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "GitHub Etiquette",
+      "description": "A small guideline on how to communicate on GitHub.",
+      "link": "https://github.com/kossnocorp/etiquette",
+      "image": "/weekly/screenshots/github-etiquette.jpg",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Grid.js",
+      "description": "An open-source HTML table plugin written in TypeScript. It works with most JavaScript frameworks.",
+      "link": "https://gridjs.io/",
+      "image": "https://gridjs.io/img/social.png",
+      "tags": [
+        "Library",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Best GitHub Repos for Web Developers",
+      "description": "A list of GitHub repositories, which can greatly enhance your skills and also help you write better code.",
+      "link": "https://dev.to/sayanide/best-github-repos-for-web-developers-9id",
+      "image": "https://dev-to-uploads.s3.amazonaws.com/i/097d4d9cpfmx23s36bxo.png",
+      "tags": [
+        "Article",
+        "Resource"
+      ]
+    },
+    {
+      "title": "Basic.css",
+      "description": "Classless CSS Starter File with basic CSS formatting and ability to make basic grids with only HTML5 syntax.",
+      "link": "https://github.com/vladocar/Basic.css",
+      "image": "/weekly/screenshots/basic-css.jpg",
+      "tags": [
+        "CSS",
+        "Library"
+      ]
+    },
+    {
+      "title": "Blunt",
+      "description": "A CSS framework that helps with layouts and leaves your styling alone.",
+      "link": "https://github.com/f-prime/Blunt",
+      "image": "/weekly/screenshots/blunt.jpg",
+      "tags": [
+        "CSS",
+        "Library"
+      ]
+    },
+    {
+      "title": "ScrollTrigger",
+      "description": "A plugin for scroll-based animations with minimal code.",
+      "link": "https://greensock.com/scrolltrigger",
+      "image": "https://greensock.com/uploads/monthly_2020_05/scrolltrigger-thumb.png.eb7f15da1128db13dc6457a1dbf17011.png",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    },
+    {
+      "title": "Twin",
+      "description": "A library to use Tailwind classes within css-in-js libraries.",
+      "link": "https://github.com/ben-rogerson/twin.macro",
+      "image": "/weekly/screenshots/twin.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "New in Firefox 77",
+      "description": "DevTool improvements and web platform updates in Firefox 77.",
+      "link": "https://hacks.mozilla.org/2020/06/new-in-firefox-77-devtool-improvements-and-web-platform-updates/",
+      "image": "https://hacks.mozilla.org/files/2020/06/Set.png",
+      "tags": [
+        "Article"
+      ]
+    }
+  ]
+}
