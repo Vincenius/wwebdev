@@ -40,7 +40,7 @@ const Post = () => (
     </ol>
 
     <p>
-      In this series, we're going through the main parts of a serverless stack using AWS.<br/>
+      In this series, we're working on a serverless stack using AWS.<br/>
       In this part, I'll show how to serve a static website through an S3 Bucket and how to
       deploy from your local machine.
     </p>
@@ -50,7 +50,7 @@ const Post = () => (
       For that go to <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">https://aws.amazon.com/</a>.
     </p>
 
-    <img src="/blog/aws1/aws1-login.jpg" alt="aws wesbite login top right" />
+    <img src="/blog/aws1/aws1-login.jpg" alt="aws wesbite login top-right" />
 
     <p>
       Afterward, go to the Management Console if you're not already there. <br />
@@ -59,7 +59,7 @@ const Post = () => (
 
     <img src="/blog/aws1/aws2-management-console.jpg" alt="aws where to find the management console" />
 
-    <img src="/blog/aws1/aws3-s3-service.jpg" alt="aws s3 service on the top right menu" />
+    <img src="/blog/aws1/aws3-s3-service.jpg" alt="aws s3 service on the top-right menu" />
 
     <p>
       Now you should see the S3 bucket overview. S3 stands for "simple storage service",
@@ -91,7 +91,7 @@ const Post = () => (
     </p>
     <p>
       Open the newly created one and go to the Tabs <ui.Code>Permissions</ui.Code> -> <ui.Code>Bucket Policy</ui.Code>.
-      Then enter the following code and replace <ui.Code>your-bucket-name</ui.Code> with the name of your bucket. Afterward hit save.
+      Then enter the following code and replace <ui.Code>your-bucket-name</ui.Code> with the name of your bucket. Then hit save.
     </p>
 
     <CodeBlock
@@ -183,7 +183,7 @@ const Post = () => (
     <img src="/blog/aws1/aws13-iam-create.jpg" alt="aws iam user create settings" />
 
     <p>
-      As a next step we need to grant that users the required permissions.<br/>
+      As a next step, we need to grant that user the required permissions.<br/>
       So go to <ui.Code>Attach existing policies directly</ui.Code> and select <ui.Code>AdministratorAccess</ui.Code>.
     </p>
 
@@ -193,7 +193,7 @@ const Post = () => (
       You can skip the next tag of setting tags and straight create the user.
     </p>
     <p>
-      In the last step you'll see your <ui.Code>Access key ID</ui.Code> and <ui.Code>Secret access key</ui.Code>.<br/>
+      In the last step, you'll see your <ui.Code>Access key ID</ui.Code> and <ui.Code>Secret access key</ui.Code>.<br/>
       Note them somewhere or keep this page open.
     </p>
 
@@ -228,7 +228,7 @@ const Post = () => (
     </p>
 
     <p>
-      Afterward, you should see a success message for all the files that have been uploaded in the console.
+      Now you should see a success message for all the files that have been uploaded in the console.
       The files should be available in your bucket.
     </p>
 
@@ -238,7 +238,7 @@ const Post = () => (
       which are not in your source directory.
     </p>
 
-    <p>For example I'd use following command to upload the export of an next.js app.</p>
+    <p>For example, I'd use the following command to upload the export of a next.js app.</p>
 
     <CodeBlock value="aws s3 sync ./out s3://your_bucket_name --delete" />
 
