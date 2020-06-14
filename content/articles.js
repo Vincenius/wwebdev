@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 9,
+        type: 'Article',
+        date: 'June 15, 2020',
+        headline: 'Getting Started with Serverless AWS (1/3) - Deploying a Static Website to S3',
+        description: "In this series, we're going through the main parts of a serverless stack using AWS. In this part, I'll show how to serve a static website through an S3 Bucket and how to deploy from your local...",
+        link: '/blog/aws-getting-started-deploy-static-website-s3',
+        previewImage: 'articles/awsPreview1_zUMTQvOKFJX.png',
+    },
+    {
         id: 8,
         type: 'Article',
         date: 'May 29, 2020',

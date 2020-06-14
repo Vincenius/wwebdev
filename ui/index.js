@@ -118,7 +118,7 @@ export const FlexContainer = styled.div`
 
 export const Code = styled.code`
     margin: 0 4px;
-    background: #f8f8f8f8;
+    background: rgb(245, 242, 240) none repeat scroll 0% 0%;
 `
 export const SmallImage = styled.img`
     max-width: 400px;

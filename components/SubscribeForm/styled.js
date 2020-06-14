@@ -8,7 +8,7 @@ export const Container = styled.form`
     margin-bottom: 30px;
 
     h2 {
-        margin: 0 0 0.6em;
+        margin: 0 0 0.6em !important;
     }
 `
 export const HiddenInput = styled.div`
