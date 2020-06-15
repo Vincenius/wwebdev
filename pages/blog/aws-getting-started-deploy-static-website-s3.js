@@ -40,7 +40,7 @@ const Post = () => (
     </ol>
 
     <p>
-      In this series, we're working on a serverless stack using AWS.<br/>
+      In this series, we're creating a serverless stack using AWS.<br/>
       In this part, I'll show how to serve a static website through an S3 Bucket and how to
       deploy from your local machine.
     </p>
