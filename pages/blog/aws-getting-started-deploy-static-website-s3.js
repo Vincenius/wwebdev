@@ -34,7 +34,7 @@ const snippet2 = `<!DOCTYPE html>
 const Post = () => (
   <ArticleLayout id={9}>
     <ol>
-      <a href="/blog/aws-getting-started-deploy-static-website-s3"><li>Deploy a Static Website to S3</li></a>
+      <a href="/blog/aws-getting-started-deploy-static-website-s3"><li>Deploying a Static Website to S3</li></a>
       <li>Distribute your S3 Bucket with Cloudfront and add a Domain</li>
       <li>Micro Services using Lambda, DynamoDB & API Gateway</li>
     </ol>
