@@ -208,7 +208,7 @@ const Post = () => (
       After the installation, type
     </p>
 
-    <CodeBlock value="aws configuration" />
+    <CodeBlock value="aws configure" />
 
     <p>
       It will ask you for your access key and your secret. Use the ones we've just created.<br/>
