@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '30',
+        date: 'June 17, 2020',
+        description: "Blob generator, keen-slider, Collected Notes, Sitejoy, Code Notes, FeedFox and more...",
+        previewImage: 'weekly/30_ALcrO6vxmW.png',
+    },
+    {
         id: '29',
         date: 'June 10, 2020',
         description: "Shape Dividers, Pattern Generator, GitHub Classroom, No Design Development and more...",
