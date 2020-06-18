@@ -6,7 +6,7 @@ const data = [
         headline: 'Getting Started with Serverless AWS (1/3) - Deploying a Static Website to S3',
         description: "In this series, we're creating a serverless stack using AWS. In this part, I'll show how to serve a static website through an S3 Bucket and how to deploy from your local machine...",
         link: '/blog/aws-getting-started-deploy-static-website-s3',
-        previewImage: 'articles/awsPreview1_zUMTQvOKFJX.png',
+        previewImage: 'articles/preview1_m7Ax3L81CxHA.png',
     },
     {
         id: 8,
