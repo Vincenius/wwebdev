@@ -1,7 +1,7 @@
 import React from 'react'
 import * as ui from '../../ui'
 import ArticleLayout from '../../components/ArticleLayout'
-// import CodeBlock from '../../components/CodeBlock'
+import CodeBlock from '../../components/CodeBlock'
 
 const Post = () => (
   <ArticleLayout id={10}>
@@ -61,8 +61,62 @@ const Post = () => (
     <img src="/blog/aws2/7-cloudfront-create.jpg" alt="create cloudfront" />
 
     <p>
-
+      It will take a moment until your distribution is created.
+      When it's done, you can open the domain, which you can see in the list.
     </p>
+
+    <img src="/blog/aws2/8-cloudfront-url.jpg" alt="url of cloudfront distribution" />
+
+    <p>
+      For more details on your CloudFront distribution, you can click the ID.
+      You can also set the error page there if you want to.
+    </p>
+
+    <img src="/blog/aws2/9-cloudfront-details.jpg" alt="cloudfront details" />
+
+    <p>
+      If you now deploy to your bucket again, you'll notice, that the content won't change.
+      This is because CloudFront is caching your content.
+      To invalidate the cache you have to additionally run following command in your console:
+    </p>
+
+    <CodeBlock value="aws cloudfront create-invalidation --distribution-id=YOUR_DISTRIBUTION_ID --paths /"/>
+
+    <p>
+      Where you have to replace <ui.Code>YOUR_DISTRIBUTION_ID</ui.Code> with the ID of your CloudFront distribution.
+    </p>
+
+    <h2>Add a domain with HTTPs</h2>
+
+    <p>
+      If you don't have a domain yet, you can buy one on the AWS service <ui.Code>Route 53</ui.Code>.
+      If you already have a domain you can skip this step.
+      Don't worry if your domain is sitting somewhere else then Route 53.
+      I'll also go through the process for that as well.
+    </p>
+
+    <img src="/blog/aws2/10-route53-service.jpg" alt="route 53 service" />
+    <br />
+    <img src="/blog/aws2/11-domain-registration.jpg" alt="route 53 domain registration" />
+
+    <p>
+      I won't go into detail about the purchase process. Choose a domain name and then follow the steps.
+    </p>
+    <p>
+      Next, go to the certificate manager to get an SSL certificate for your website.
+    </p>
+
+    <img src="/blog/aws2/12-certificate-service.jpg" alt="certificate service" />
+    <br />
+    <img src="/blog/aws2/13-certificate-get-started.jpg" alt="certificate get started page" />
+
+    <p>
+      Before clicking "Request public certificate", make sure you switch
+      regions to <ui.Code>us-east-1</ui.Code>. This is necessary,because CloudFront only supports the
+      US East region for certificates.
+    </p>
+
+    <img src="/blog/aws2/14-certificate-region.jpg" alt="certificate switch region" />
   </ArticleLayout>
 )
 
