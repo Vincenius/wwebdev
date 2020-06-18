@@ -6,7 +6,7 @@ const data = [
         headline: 'Getting Started with Serverless AWS (2/3) - Distribute an S3 Bucket with CloudFront and add a Domain',
         description: "In this part we're going to add CloudFront to deliver our website content with low latency to the user. Afterward, we'll add a domain with HTTPs for our website...",
         link: '/blog/aws-getting-started-cloudfront-and-domain',
-        previewImage: 'articles/aws2__MKrCwCRP_J.png',
+        previewImage: 'articles/preview2_04XU2zCoj.png',
     },
     {
         id: 9,
