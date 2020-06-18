@@ -35,7 +35,7 @@ const Post = () => (
   <ArticleLayout id={9}>
     <ol>
       <a href="/blog/aws-getting-started-deploy-static-website-s3"><li>Deploying a Static Website to S3</li></a>
-      <li>Distribute your S3 Bucket with Cloudfront and add a Domain</li>
+      <a href="/blog/aws-getting-started-cloudfront-and-domain"><li>Distribute an S3 Bucket with CloudFront and add a Domain</li></a>
       <li>Micro Services using Lambda, DynamoDB & API Gateway</li>
     </ol>
 
