@@ -77,7 +77,7 @@ const Post = () => (
     <p>
       If you now deploy to your bucket again, you'll notice, that the content won't change.
       This is because CloudFront is caching your content.
-      To invalidate the cache you have to additionally run following command in your console:
+      To invalidate the cache you have to run following command in your console:
     </p>
 
     <CodeBlock value="aws cloudfront create-invalidation --distribution-id=YOUR_DISTRIBUTION_ID --paths /"/>
@@ -111,8 +111,8 @@ const Post = () => (
     <img src="/blog/aws2/13-certificate-get-started.jpg" alt="certificate get started page" />
 
     <p>
-      Before clicking "Request public certificate", make sure you switch
-      regions to <ui.Code>us-east-1</ui.Code>. This is necessary,because CloudFront only supports the
+      Before clicking <ui.Code>Request public certificate</ui.Code>, make sure you switch
+      regions to <ui.Code>us-east-1</ui.Code>. This is necessary, because CloudFront only supports the
       US East region for certificates.
     </p>
 
@@ -136,7 +136,7 @@ const Post = () => (
 
     <p>
       Afterward, I'll go for DNS validation. This has some advantages over Email validation, like automatic
-      renewal.
+      renewal of the certificates.
     </p>
 
     <img src="/blog/aws2/16-dns-validation.jpg" alt="certificate dns validation" />
@@ -150,13 +150,13 @@ const Post = () => (
 
     <p>
       On the next page, expand your domain by clicking that small arrow next to it.
-      Here we have two options, depending on if your domain is hosted on Route53 or not.
+      Here we have two options, depending on your domain being hosted on Route53 or not.
     </p>
 
     <p>
-      <b>Option 1)</b> If your domain is hosted on "Route 53" you will see a button,
+      <b>Option 1)</b> If your domain is hosted on Route 53 you will see a button,
       saying <ui.Code>Create record in Route 53</ui.Code>. Click that button.
-      Then in the opened modal, hit <ui.Code>Create</ui.Code>.
+      Then in the modal, hit <ui.Code>Create</ui.Code>.
     </p>
 
     <img src="/blog/aws2/18-route53-dns.jpg" alt="certificate for route53" />
@@ -221,7 +221,7 @@ const Post = () => (
     <img src="/blog/aws2/27-cloudfront-redirect.jpg" alt="cloudfront add redirect" />
 
     <p>
-      Now as the last step we need to point our domain to CloudFront. Here we have two possible options.
+      Now as the last step we need to point our domain to CloudFront. Here we have two possible options again.
       You either have your domain on Route 53 or you have it hosted somewhere else.
     </p>
 
