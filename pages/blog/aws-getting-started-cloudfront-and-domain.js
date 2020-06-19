@@ -117,6 +117,163 @@ const Post = () => (
     </p>
 
     <img src="/blog/aws2/14-certificate-region.jpg" alt="certificate switch region" />
+
+    <p>
+      Then continue and enter the domain you want to use on the next page. You can also use multiple ones like
+    </p>
+
+    <ul>
+      <li><ui.Code>wweb.dev</ui.Code></li>
+      <li><ui.Code>*.wweb.dev</ui.Code></li>
+    </ul>
+
+    <p>
+      With this, you will secure the main domain, as well as <ui.Code>www.wweb.dev</ui.Code> and all sub-domains. <br/>
+      I will go for only adding a certificate for the specific sub-domain <ui.Code>aws.wweb.dev</ui.Code>
+    </p>
+
+    <img src="/blog/aws2/15-certificate-domain.jpg" alt="certificate choose domain" />
+
+    <p>
+      Afterward, I'll go for DNS validation. This has some advantages over Email validation, like automatic
+      renewal.
+    </p>
+
+    <img src="/blog/aws2/16-dns-validation.jpg" alt="certificate dns validation" />
+
+    <p>
+      Click <ui.Code>Next</ui.Code>. We can skip setting tags, so click <ui.Code>Review</ui.Code> on the next page.
+      On the following page, you can click <ui.Code>Confirm and request</ui.Code> if the data you see there is correct.
+    </p>
+
+    <img src="/blog/aws2/17-confirm.jpg" alt="certificate confirm screen" />
+
+    <p>
+      On the next page, expand your domain by clicking that small arrow next to it.
+      Here we have two options, depending on if your domain is hosted on Route53 or not.
+    </p>
+
+    <p>
+      <b>Option 1)</b> If your domain is hosted on "Route 53" you will see a button,
+      saying <ui.Code>Create record in Route 53</ui.Code>. Click that button.
+      Then in the opened modal, hit <ui.Code>Create</ui.Code>.
+    </p>
+
+    <img src="/blog/aws2/18-route53-dns.jpg" alt="certificate for route53" />
+    <img src="/blog/aws2/19-route53-dns-2.jpg" alt="certificate for route53 modal" />
+
+    <p>
+      <b>Option 2)</b> If you have your domain somewhere else it will look like this:
+    </p>
+
+    <img src="/blog/aws2/20-cname-details.jpg" alt="certificate with cname validation" />
+
+    <p>
+      Now you have to go to your domain provider and open the DNS settings.
+      There you have to create a new CNAME record for your domain.
+    </p>
+    <p>
+      How you create the CNAME record might differ for different providers.
+      I had to remove the main domain from the host (<ui.Code>.wweb.dev</ui.Code>) as
+      this is appended automatically by Namecheap (where I have my domain).
+    </p>
+
+    <img src="/blog/aws2/21-namecheap.jpg" alt="adding CNAME to namecheap" />
+
+    <p>
+      You have to do this for all the domains you've added.<br/>
+      Now, wait until the status of your certificate turned to <ui.Code>Issued</ui.Code>.
+      This can take 5-10 minutes.
+    </p>
+
+    <img src="/blog/aws2/22-verified.jpg" alt="issued certificate" />
+
+    <h2>Add your domain to CloudFront</h2>
+
+    <p>
+      Go back to your CloudFront distribution.
+      Go into the distribution details by clicking the ID and then click the <ui.Code>Edit</ui.Code> button.
+    </p>
+
+    <img src="/blog/aws2/23-cloudfront-details.jpg" alt="cloudfront details" />
+    <img src="/blog/aws2/24-cloudfront-edit.jpg" alt="cloudfront edit" />
+
+    <p>
+      Add the domain to <ui.Code>Alternate Domain Names</ui.Code>. Then click on <ui.Code>Custom SSL Certificate</ui.Code> and
+      select your new certificate from the dropdown.<br/>
+      Afterward, scroll down and hit <ui.Code>Yes, Edit</ui.Code>.
+    </p>
+
+    <img src="/blog/aws2/25-cloudfront-add-url.jpg" alt="cloudfront add ssl and url" />
+
+    <p>
+      Now let's create a redirect from HTTP to HTTPS. Therefor go to <ui.Code>Behaviours</ui.Code>, select
+      the behavior on top and click <ui.Code>Edit</ui.Code>.
+    </p>
+
+    <img src="/blog/aws2/26-cloudfront-behaviour.jpg" alt="cloudfront edit behaviour" />
+
+    <p>
+      In the edit view, select <ui.Code>Redirect HTTP to HTTPS</ui.Code> and then again scroll
+      down and click <ui.Code>Yes, Edit</ui.Code>.
+    </p>
+
+    <img src="/blog/aws2/27-cloudfront-redirect.jpg" alt="cloudfront add redirect" />
+
+    <p>
+      Now as the last step we need to point our domain to CloudFront. Here we have two possible options.
+      You either have your domain on Route 53 or you have it hosted somewhere else.
+    </p>
+
+    <h3>Option 1) Route 53</h3>
+    <p>
+      Go back to the <ui.Code>Route 53</ui.Code> service. Then select <ui.Code>Hosted zones</ui.Code> in the
+      left menu and click on your domain.
+    </p>
+
+    <img src="/blog/aws2/28-route53-hosted-zone.jpg" alt="route 53 hosted zone" />
+
+    <p>
+      Now click <ui.Code>Create Record Set</ui.Code>. A menu on the right will open.
+      You can leave the <ui.Code>Name</ui.Code> blank if you want to use your main URL.
+      You can also use www or a subdomain in that field.
+    </p>
+
+    <p>
+      Select <ui.Code>Yes</ui.Code> for Alias. Then select your CloudFront distribution in
+      the menu for the <ui.Code>Alias Target</ui.Code>.
+    </p>
+
+    <img src="/blog/aws2/29-route53-record.jpg" alt="route 53 add record" />
+
+    <p>
+      You can add IPv6 support by creating another record with the same settings,
+      but with <ui.Code>AAAA - IPv6 address</ui.Code> as the type.
+    </p>
+
+    <h3>Option 2) Other Providers</h3>
+
+    <p>
+      For any other provider, you have to create another CNAME DNS entry.
+      This one should point from your domain to the CloudFront URL.
+      For example, on Namecheap, it would look like this for my <ui.Code>aws</ui.Code> subdomain.
+    </p>
+
+    <img src="/blog/aws2/30-namecheap-cname.jpg" alt="namecheap cloudfront CNAME" />
+
+    <p>
+      For both options, it may take up to an hour until the new DNS is applied.<br/>
+      Then your Domain should be set up correctly and point to your CloudFront.
+    </p>
+
+    <p>
+      In the next and last part of this series, I'll show you how to create a microservice with AWS Lambda,
+      DynamoDB, and the API Gateway.
+    </p>
+
+    <p>
+      Did you had problems following along at some point? Please let me know, so I can improve this tutorial :)
+    </p>
   </ArticleLayout>
 )
 
