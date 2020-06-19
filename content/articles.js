@@ -66,6 +66,7 @@ const data = [
         id: 3,
         type: 'Article',
         date: 'October 16, 2019',
+        updatedAt: 'June 19, 2020',
         headline: 'The best note taking apps for developers',
         description: "There are tons of note taking apps out there. But which ones are best suitable for developers? In the following I'll introduce three note taking apps for developers with good code support. + Available for: Mac, Windows, Android, iOS + Nice Code editor with a…",
         link: '/blog/the-best-note-taking-apps-for-developers',
