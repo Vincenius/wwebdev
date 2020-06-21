@@ -90,7 +90,7 @@ const Post = () => (
 
     <p>
       If you don't have a domain yet, you can buy one on the AWS service <ui.Code>Route 53</ui.Code>.
-      If you already have a domain you can skip this step.
+      Otherwise you can skip this step.
       Don't worry if your domain is sitting somewhere else then Route 53.
       I'll also go through the process for that as well.
     </p>
