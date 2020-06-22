@@ -31,19 +31,19 @@ const ArticlePreview = ({
                 `(max-width: 320px) 320px,
                 (max-width: 380px) 380px,
                 (max-width: 480px) 480px,
-                (max-width: 640px) 180px,
+                (max-width: 640px) 640px,
                 200px`
               }
               srcSet={
-                `https://ik.imagekit.io/wwebdev/tr:w-100/${previewImage} 100w,
-                  https://ik.imagekit.io/wwebdev/tr:w-200/${previewImage} 200w,
+                `https://ik.imagekit.io/wwebdev/tr:w-200/${previewImage} 200w,
                   https://ik.imagekit.io/wwebdev/tr:w-320/${previewImage} 320w,
                   https://ik.imagekit.io/wwebdev/tr:w-380/${previewImage} 380w,
                   https://ik.imagekit.io/wwebdev/tr:w-400/${previewImage} 400w,
                   https://ik.imagekit.io/wwebdev/tr:w-480/${previewImage} 480w,
                   https://ik.imagekit.io/wwebdev/tr:w-640/${previewImage} 640w,
                   https://ik.imagekit.io/wwebdev/tr:w-760/${previewImage} 760w,
-                  https://ik.imagekit.io/wwebdev/tr:w-960/${previewImage} 960w
+                  https://ik.imagekit.io/wwebdev/tr:w-960/${previewImage} 960w,
+                  https://ik.imagekit.io/wwebdev/tr:w-1280/${previewImage} 1280w
                 `
               }
               src={`https://ik.imagekit.io/wwebdev/${previewImage}`}

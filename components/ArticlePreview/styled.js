@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
 import Skeleton from '@material-ui/lab/Skeleton'
-import { lightGrey, greyBlue, darkGrey, lightBlue, breakpoint, breakpointSmall } from '../../ui/constants'
+import { lightGrey, greyBlue, darkGrey, lightBlue, breakpoint } from '../../ui/constants'
 
 export const Container = styled.article`
     border-bottom: 1px solid ${lightGrey};
@@ -8,7 +8,7 @@ export const Container = styled.article`
     padding-bottom: 3.2rem;
     display: flex;
 
-    @media only screen and (max-width: ${breakpointSmall}) {
+    @media only screen and (max-width: ${breakpoint}) {
         flex-direction: column;
     }
 `
@@ -70,19 +70,16 @@ export const ReadMore = styled.span`
 `
 const imageStyle = css`
     width: 200px;
-    height: 200px !important;
+    height: 133px;
     object-fit: cover;
     margin-right: 20px;
     margin-top: 15px;
 
     @media only screen and (max-width: ${breakpoint}) {
-        width: 100px;
-        height: 100px;
-    }
-
-    @media only screen and (max-width: ${breakpointSmall}) {
         width: 100%;
-        height: 200px;
+        height: auto;
+        min-height: 250px;
+        max-height: 300px;
     }
 `
 export const PreviewImage = styled.img`
