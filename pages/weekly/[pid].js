@@ -28,7 +28,7 @@ const Post = () => {
             localImage={true}
             description={weeklyMeta.description}
         >
-            { status !== 'loading' && <ui.GridContainer>
+            { data && <ui.GridContainer>
                 {
                     data.items.map((item, index) =>
                         <LinkBox

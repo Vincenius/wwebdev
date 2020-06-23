@@ -48,6 +48,7 @@ const WeeklyLibrary = () => {
       const response = await Promise.all(weeklyPromises)
       return response
     })
+    const loadingOrIdle = status === 'loading' || status === 'idle'
     const flatData = data ? data.flat() : []
 
     const toggleActive = value => {
@@ -108,14 +109,14 @@ const WeeklyLibrary = () => {
               <FilterBar
                 chipData={chipData}
                 toggleActive={toggleActive}
-                loading={status === 'loading'}
+                loading={loadingOrIdle}
                 count={filteredData.length}
               />
           </ui.Container>
           <ui.GridContainer>
-            { status === 'loading' && generateLinkBoxLoading() }
-            { status !== 'loading' && generateWeeklyContent(filteredData) }
-            { status !== 'loading' && filteredData.length === 0 &&
+            { loadingOrIdle && generateLinkBoxLoading() }
+            { !loadingOrIdle && generateWeeklyContent(filteredData) }
+            { !loadingOrIdle && filteredData.length === 0 &&
               <p>Couldn't find anything...</p>
             }
           </ui.GridContainer>
