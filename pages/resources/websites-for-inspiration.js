@@ -51,6 +51,13 @@ const Post = () => (
             />
 
             <LinkBox
+                title="Sitejoy"
+                description="A list of inspirational websites, with the focus that they are also fast and responsive."
+                link="https://www.sitejoy.dev/"
+                image="/resources/inspiration-websites/sitejoy.jpg"
+            />
+
+            <LinkBox
                 title="Interfaces"
                 description="Brand-focused collection of UI design examples. Sorted by categories like 404 pages, pricing pages, form pages and more."
                 link="https://interfaces.convertux.com/"
