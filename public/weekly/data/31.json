@@ -1,0 +1,126 @@
+{
+  "items": [
+    {
+      "title": "Beam Cafe",
+      "description": "A fast file transfer app, which can be also self-hosted.",
+      "link": "https://github.com/dot-cafe/beam.cafe",
+      "image": "https://user-images.githubusercontent.com/30767528/84598299-057bfe80-ae6a-11ea-9605-5151ec71b214.png",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Gradient Generator",
+      "description": "A cool gradient generator on CodePen.",
+      "link": "https://codepen.io/j-w-v/full/pogEaON",
+      "image": "/weekly/screenshots/gradient-generator.jpg",
+      "tags": [
+        "Generator",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Tutorialist",
+      "description": "A good collection of free software development tutorials.",
+      "link": "https://www.tutorialist.io/",
+      "image": "https://www.tutorialist.io/og-image.png",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Application State Management with React",
+      "description": "An article by Kent C. Dodds about managing your application state in React.",
+      "link": "https://kentcdodds.com/blog/application-state-management-with-react",
+      "image": "https://kentcdodds.com/static/5e68938dfc2a21c7de99a1142fdad6a4/d6099/banner.webp",
+      "tags": [
+        "Article",
+        "React"
+      ]
+    },
+    {
+      "title": "GitHub Super Linter",
+      "description": "A new GitHub action to automate the linting.",
+      "link": "https://github.blog/2020-06-18-introducing-github-super-linter-one-linter-to-rule-them-all/",
+      "image": "https://github.blog/wp-content/uploads/2020/06/github-super-linter-white.png?w=1200",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Bootstrap 5 alpha",
+      "description": "The new bootstrap version, dropping jQuery and IE support, goes into alpha",
+      "link": "https://blog.getbootstrap.com/2020/06/16/bootstrap-5-alpha/",
+      "image": "https://blog.getbootstrap.com/assets/img/2020/06/v5-new-logo.png",
+      "tags": [
+        "CSS",
+        "Article"
+      ]
+    },
+    {
+      "title": "Static Hosting Benchmark 2020",
+      "description": "A benchmark of the most popular static hosting services in 2020.",
+      "link": "https://www.pierbover.com/posts/static-hosting-benchmark-2020/",
+      "image": "http://pierbover.com/img/static-hosting-benchmark-2020/hero.jpg",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Understanding client-side web development tools",
+      "description": "Another good guide by MDN about client-side tooling.",
+      "link": "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Understanding_client-side_tools",
+      "image": "https://developer.mozilla.org/static/img/opengraph-logo.72382e605ce3.png",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Snipsnap",
+      "description": "A snippets collection and VS Code extension that exposes all available snippets.",
+      "link": "https://github.com/snipsnapdev/snipsnap/blob/master/README.md",
+      "image": "/weekly/screenshots/snipsnap.jpg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Lightweight alternatives to Google Analytics",
+      "description": "An article reviewing alternatives to Google Analytics.",
+      "link": "https://lwn.net/SubscriberLink/822568/61d29096a4012e06/",
+      "image": "https://static.lwn.net/images/2020/wa-plausible-sm.png",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Mozilla VPN",
+      "description": "Mozilla is announcing their own VPN. The Beta is available for U.S.",
+      "link": "https://blog.mozilla.org/futurereleases/2020/06/18/introducing-firefox-private-network-vpns-official-product-the-mozilla-vpn/",
+      "image": "https://blog.mozilla.org/futurereleases/files/2020/06/MozillaVPN_future-release-1400x770.jpg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "How to Compare Objects in JavaScript",
+      "description": "Learn how to check for equality in JavaScript with this article.",
+      "link": "https://dmitripavlutin.com/how-to-compare-objects-in-javascript/",
+      "image": "https://dmitripavlutin.com/static/28536a7466b2eec72b7c20040478860b/5b41b/cover-3.webp",
+      "tags": [
+        "Article",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "React Query 2.0",
+      "description": "Tanner Linsley just released the new version of React Query with a lot of improvements.",
+      "link": "https://github.com/tannerlinsley/react-query/releases/tag/v2.0.0",
+      "image": "https://raw.githubusercontent.com/tannerlinsley/react-query/master/media/header.png",
+      "tags": [
+        "React",
+        "Library"
+      ]
+    }
+  ]
+}

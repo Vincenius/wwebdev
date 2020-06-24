@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '31',
+        date: 'June 24, 2020',
+        description: "Beam Cafe, Gradient Generator, Tutorialist Application State Management and more...",
+        previewImage: 'weekly/31_Gb6XqN_at.png',
+    },
+    {
         id: '30',
         date: 'June 17, 2020',
         description: "Blob generator, keen-slider, Collected Notes, Sitejoy, Code Notes, FeedFox and more...",
