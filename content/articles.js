@@ -6,7 +6,7 @@ const data = [
         headline: 'Getting Started with Serverless AWS (2/3) - Distribute an S3 Bucket with CloudFront and add a Domain',
         description: "In this part we're going to add CloudFront to deliver our website content with low latency to the user. Afterward, we'll add a domain with HTTPs for our website...",
         link: '/blog/aws-getting-started-cloudfront-and-domain',
-        previewImage: 'articles/preview2_04XU2zCoj.png',
+        previewImage: 'articles/preview2_8ljU3AStslZ.png',
     },
     {
         id: 9,
@@ -15,7 +15,7 @@ const data = [
         headline: 'Getting Started with Serverless AWS (1/3) - Deploying a Static Website to S3',
         description: "In this series, we're creating a serverless stack using AWS. In this part, I'll show how to serve a static website through an S3 Bucket and how to deploy from your local machine...",
         link: '/blog/aws-getting-started-deploy-static-website-s3',
-        previewImage: 'articles/preview1_m7Ax3L81CxHA.png',
+        previewImage: 'articles/preview1_bCXvzLuCixG.png',
     },
     {
         id: 8,

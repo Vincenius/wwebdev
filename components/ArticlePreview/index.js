@@ -32,7 +32,7 @@ const ArticlePreview = ({
                 (max-width: 380px) 380px,
                 (max-width: 480px) 480px,
                 (max-width: 640px) 640px,
-                200px`
+                300px`
               }
               srcSet={
                 `https://ik.imagekit.io/wwebdev/tr:w-200/${previewImage} 200w,

@@ -69,8 +69,8 @@ export const ReadMore = styled.span`
     }
 `
 const imageStyle = css`
-    width: 200px;
-    height: 133px;
+    width: 300px;
+    height: 200px;
     object-fit: cover;
     margin-right: 20px;
     margin-top: 15px;
