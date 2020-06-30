@@ -21,6 +21,7 @@
     "fs-extra": "^8.1.0",
     "lodash": "^4.17.15",
     "next": "^9.3.6",
+    "next-pwa": "^3.0.1",
     "react": "16.11.0",
     "react-dom": "16.11.0",
     "react-lazy-load": "^3.0.13",

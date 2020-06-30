@@ -1,0 +1,16 @@
+{
+  "name": "wweb.dev",
+  "short_name": "wweb.dev",
+  "icons": [
+    {
+      "src": "/app-logo.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#2c3e50",
+  "background_color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "orientation": "portrait"
+}

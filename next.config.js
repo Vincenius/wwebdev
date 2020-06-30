@@ -1,5 +1,6 @@
 // next.config.js
 const withCSS = require('@zeit/next-css')
+const withPWA = require('next-pwa')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
     enabled: process.env.ANALYZE === 'true'
 })
@@ -12,7 +13,10 @@ for (const w of weeklyData) {
     weeklyPages[`/weekly/${w.id}`] = { page: '/weekly/[pid]', query: { pid: `${w.id}` } }
 }
 
-module.exports = withBundleAnalyzer(withCSS({
+module.exports = withBundleAnalyzer(withPWA(withCSS({
+    pwa: {
+        dest: 'public'
+    },
     exportPathMap: async function(
         defaultPathMap,
     ) {
@@ -40,4 +44,4 @@ module.exports = withBundleAnalyzer(withCSS({
         config.plugins.push()
         return config
     }
-}))
+})))

@@ -61,9 +61,22 @@ class MyHead extends React.Component {
                 <link rel='icon' href='/favicon.ico' type="image/x-icon" />
                 <meta charSet="utf-8"></meta>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
-                <meta name="viewport" content="minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no"></meta>
-                <meta name="description" content={description || title} />
+                <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover' />                <meta name="description" content={description || title} />
                 <meta name="robots" content="index, follow"></meta>
+
+                <meta name='application-name' content='wweb.dev' />
+                <meta name='apple-mobile-web-app-capable' content='yes' />
+                <meta name='apple-mobile-web-app-status-bar-style' content='default' />
+                <meta name='apple-mobile-web-app-title' content='wweb.dev' />
+                <meta name='description' content='News, Resources and Articles about Web-Development' />
+                <meta name='format-detection' content='telephone=no' />
+                <meta name='mobile-web-app-capable' content='yes' />
+                <meta name='msapplication-config' content='/static/icons/browserconfig.xml' />
+                <meta name='msapplication-TileColor' content='#fff' />
+                <meta name='msapplication-tap-highlight' content='no' />
+                <meta name='theme-color' content='#2c3e50' />
+                <link rel='manifest' href='/manifest.json' />
+
                 { description && <meta name="description" content={description}></meta> }
                 <script type="text/javascript" dangerouslySetInnerHTML={{__html:
                     `if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
