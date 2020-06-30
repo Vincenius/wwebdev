@@ -6,6 +6,12 @@
       "src": "/app-logo.png",
       "sizes": "1024x1024",
       "type": "image/png"
+    },
+    {
+      "src": "maskable_icon.png",
+      "sizes": "196x196",
+      "type": "image/png",
+      "purpose": "any maskable"
     }
   ],
   "theme_color": "#2c3e50",

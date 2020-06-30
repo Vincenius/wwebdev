@@ -75,6 +75,7 @@ class MyHead extends React.Component {
                 <meta name='msapplication-TileColor' content='#fff' />
                 <meta name='msapplication-tap-highlight' content='no' />
                 <meta name='theme-color' content='#2c3e50' />
+                <link rel='apple-touch-icon' sizes='192x192' href='apple-icon.png' />
                 <link rel='manifest' href='/manifest.json' />
 
                 { description && <meta name="description" content={description}></meta> }
