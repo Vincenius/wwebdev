@@ -2,7 +2,7 @@
   "items": [
     {
       "title": "Grid Cheatsheet",
-      "description": "A cool cheatsheet for everything you can do with CSS Grid.",
+      "description": "A cool cheat sheet for everything you can do with CSS Grid.",
       "link": "https://yoksel.github.io/grid-cheatsheet/",
       "image": "https://yoksel.github.io/grid-cheatsheet/screenshot.png",
       "tags": [
@@ -20,7 +20,7 @@
     },
     {
       "title": "Selection controls — UI component series",
-      "description": "A good overview of selection controlls and when to use them.",
+      "description": "A good overview of selection controls and when to use them.",
       "link": "https://uxdesign.cc/selection-controls-ui-component-series-3badc0bdb546",
       "image": "https://miro.medium.com/max/2000/1*eu7j_z2jyUOU7XJSgVxOIA.jpeg",
       "tags": [
