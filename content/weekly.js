@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '32',
+        date: 'July 01, 2020',
+        description: "Grid Cheatsheet, tree.nathanfriend.io, Reflex.js, Textures.js, Whole page slider and more...",
+        previewImage: 'weekly/32_8Mxo47KDM7oA.png',
+    },
+    {
         id: '31',
         date: 'June 24, 2020',
         description: "Beam Cafe, Gradient Generator, Tutorialist Application State Management and more...",
