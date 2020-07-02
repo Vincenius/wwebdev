@@ -61,7 +61,7 @@ class MyHead extends React.Component {
                 <link rel='icon' href='/favicon.ico' type="image/x-icon" />
                 <meta charSet="utf-8"></meta>
                 <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
-                <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover' />                <meta name="description" content={description || title} />
+                <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, viewport-fit=cover' />                <meta name="description" content={description || title} />
                 <meta name="robots" content="index, follow"></meta>
 
                 <meta name='application-name' content='wweb.dev' />
