@@ -1,5 +1,14 @@
 const data = [
-        {
+    {
+        id: 11,
+        type: 'Article',
+        date: 'July 06, 2020',
+        headline: 'Getting Started with Serverless AWS (3/3) - Micro Services using Lambda, DynamoDB & API Gateway',
+        description: "TODO DESCRIPTIONS",
+        link: '/blog/aws-getting-started-micro-service-lambda-dynamodb',
+        previewImage: 'articles/preview3_iZ3HECZAt.png',
+    },
+    {
         id: 10,
         type: 'Article',
         date: 'June 22, 2020',

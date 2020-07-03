@@ -8,7 +8,7 @@ const Post = () => (
     <ol>
       <a href="/blog/aws-getting-started-deploy-static-website-s3"><li>Deploying a Static Website to S3</li></a>
       <a href="/blog/aws-getting-started-cloudfront-and-domain"><li>Distribute an S3 Bucket with CloudFront and add a Domain</li></a>
-      <li>Micro Services using Lambda, DynamoDB & API Gateway</li>
+      <a href="/blog/aws-getting-started-micro-service-lambda-dynamodb"><li>Micro Services using Lambda, DynamoDB & API Gateway</li></a>
     </ol>
 
     <p>
@@ -269,6 +269,10 @@ const Post = () => (
     <p>
       In the next and last part of this series, I'll show you how to create a microservice with AWS Lambda,
       DynamoDB, and the API Gateway.
+    </p>
+
+      <p>
+      <a href="/blog/aws-getting-started-cloudfront-and-domain">Getting Started with Serverless AWS (3/3) - Distribute an S3 Bucket with CloudFront and add a Domain</a>
     </p>
 
     <p>
