@@ -272,7 +272,7 @@ const Post = () => (
     </p>
 
       <p>
-      <a href="/blog/aws-getting-started-cloudfront-and-domain">Getting Started with Serverless AWS (3/3) - Distribute an S3 Bucket with CloudFront and add a Domain</a>
+      <a href="/blog/aws-getting-started-micro-service-lambda-dynamodb">Getting Started with Serverless AWS (3/3) - Distribute an S3 Bucket with CloudFront and add a Domain</a>
     </p>
 
     <p>
