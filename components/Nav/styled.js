@@ -5,7 +5,7 @@ import { darkGrey, breakpointSmall, breakpoint, breakpointLarge, logoColorLeft }
 export const Container = styled.div`
     background: ${props => props.transparentBg ? 'rgba(44,62,80, 0.6)' : darkGrey};
     position: relative;
-    padding: 16px 20px;
+    padding: 16px 0;
     margin: ${props => props.isArticle ? '0 auto' : '0 auto 32px'};
     width: 100%;
     z-index: 10;

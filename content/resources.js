@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 9,
+        type: 'Resource',
+        date: 'July 31, 2020',
+        headline: "Navigation Generator",
+        description: "TODO.",
+        link: "/resources/navigation-generator",
+        previewImage: "TODO",
+    },
+    {
         id: 8,
         type: 'Resource',
         date: 'May 21, 2020',

@@ -9,6 +9,7 @@ function Layout ({
     title,
     children,
     isArticle,
+    hideHeader = false,
     date,
     link,
     image,
@@ -33,16 +34,16 @@ function Layout ({
                 isArticle={isArticle}
                 titleNameFirst={titleNameFirst}
             />
-            <Nav
-                title={title}
-                isArticle={isArticle} />
-            { isArticle && <Header>
-                <h1>{title}</h1>
-                <S.SDate><S.Time datetime={d.toISOString()}>{date}</S.Time></S.SDate>
-                { updatedAt &&
-                    <S.Updated>Updated: <S.Time datetime={ud.toISOString()}>{updatedAt}</S.Time></S.Updated>
-                }
-            </Header> }
+            <Nav title={title} isArticle={isArticle} />
+            { isArticle && !hideHeader &&
+                <Header>
+                    <h1>{title}</h1>
+                    <S.SDate><S.Time datetime={d.toISOString()}>{date}</S.Time></S.SDate>
+                    { updatedAt &&
+                        <S.Updated>Updated: <S.Time datetime={ud.toISOString()}>{updatedAt}</S.Time></S.Updated>
+                    }
+                </Header>
+            }
 
             <main>
                 { children }
