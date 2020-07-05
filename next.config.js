@@ -13,7 +13,7 @@ for (const w of weeklyData) {
     weeklyPages[`/weekly/${w.id}`] = { page: '/weekly/[pid]', query: { pid: `${w.id}` } }
 }
 
-module.exports = withBundleAnalyzer(withPWA(withCSS({
+const settings = withBundleAnalyzer(withCSS({
     pwa: {
         dest: 'public'
     },
@@ -44,4 +44,6 @@ module.exports = withBundleAnalyzer(withPWA(withCSS({
         config.plugins.push()
         return config
     }
-})))
+}))
+
+module.exports = process.env.NODE_ENV === 'development' ? settings : withPWA(settings);
