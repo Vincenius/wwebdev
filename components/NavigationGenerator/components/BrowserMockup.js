@@ -7,16 +7,18 @@ const BrowserMockup = styled.div`
   position: relative;
   background: #fff;
   border-radius: 10px;
-  overflow: hidden;
+  overflow-x: hidden;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   margin: 20px;
   height: 400px;
+  resize: both;
 `
 const BrowserHead = styled.div`
-  position: relative;
+  position: sticky;
   z-index: 10;
   height: 30px;
   width: 100%;
+  top: 0;
   background: #e8e8e8;
   display: flex;
   align-items: center;

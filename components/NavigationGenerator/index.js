@@ -8,14 +8,14 @@ const NavigationGenerator = props => {
     <ui.Container>
       <BrowserMockup>
         <S.Navigation>
-          <div id="menuToggle">
+          <div className="menuToggle">
             <input type="checkbox" />
 
             <span></span>
             <span></span>
             <span></span>
 
-            <ul id="menu">
+            <ul className="menu">
               <a href="#"><li>Home</li></a>
               <a href="#"><li>About</li></a>
               <a href="#"><li>Info</li></a>
@@ -23,6 +23,9 @@ const NavigationGenerator = props => {
             </ul>
           </div>
         </S.Navigation>
+        <S.Center>
+          This window is resizable.
+        </S.Center>
       </BrowserMockup>
     </ui.Container>
   )
