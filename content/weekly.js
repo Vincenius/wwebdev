@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '33',
+        date: 'July 08, 2020',
+        description: "hyperapp, html.systems, Knopf.css, Tailwind cheat sheet, shareon, DecentDrops and more...",
+        previewImage: 'weekly/33_1VLKcyR7bH.png',
+    },
+    {
         id: '32',
         date: 'July 01, 2020',
         description: "Grid Cheatsheet, tree.nathanfriend.io, Reflex.js, Textures.js, Whole page slider and more...",
