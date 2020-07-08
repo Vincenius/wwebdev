@@ -26,7 +26,9 @@
     "react-dom": "16.11.0",
     "react-lazy-load": "^3.0.13",
     "react-query": "^2.0.0",
+    "react-sizeme": "^2.6.12",
     "react-syntax-highlighter": "^12.2.1",
+    "resize-polyfill": "^1.1.1",
     "styled-components": "^5.1.0",
     "url-loader": "^4.1.0"
   },

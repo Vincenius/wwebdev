@@ -1,34 +1,46 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 const mainPadding = 20;
+const breakpoint = 760;
+const backgroundColor = '#232323'
+const textColor = '#cdcdcd'
+const hoverColor = 'tomato'
 
 export const Navigation = styled.nav`
   position: relative;
   display: flex;
   justify-content: flex-end;
   margin-bottom: 20px;
-  background: #232323;
-  color: #cdcdcd;
+  background: ${backgroundColor};
+  color: ${textColor};
   padding: ${mainPadding}px;
 
-  .menuToggle {
+  .menuContainer {
     position: relative;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
+
+    ${props => props.width > breakpoint && css`
+      width: 100%;
+    `}
   }
 
-  .menuToggle a {
+  .menuContainer a {
     text-decoration: none;
-    color: #232323;
+    color: ${backgroundColor};
     transition: color 0.3s ease;
+
+    ${props => props.width > breakpoint && css`
+      color: ${textColor};
+    `}
   }
 
-  .menuToggle a:hover {
-    color: tomato;
+  .menuContainer a:hover {
+    color: ${hoverColor};
   }
 
-  .menuToggle input {
+  .menuContainer input {
     display: block;
     width: 35px;
     height: 25px;
@@ -38,72 +50,104 @@ export const Navigation = styled.nav`
     opacity: 0; /* hide this */
     z-index: 2; /* and place it over the hamburger */
     -webkit-touch-callout: none;
+
+    ${props => props.width > breakpoint && css`
+      display: none;
+    `}
   }
 
   /*
   * Just a quick hamburger
   */
-  .menuToggle span {
+  .menuContainer span {
     display: block;
     width: 33px;
     height: 4px;
     margin-bottom: 5px;
     position: relative;
-    background: #cdcdcd;
+    background: ${textColor};
     border-radius: 3px;
     z-index: 1;
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
+
+    ${props => props.width > breakpoint && css`
+      display: none;
+    `}
   }
 
-  .menuToggle span:first-child {
+  .menuContainer span:first-child {
     transform-origin: 0% 0%;
   }
 
-  .menuToggle span:nth-last-child(2) {
+  .menuContainer span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
 
-  .menuToggle input:checked ~ span {
+  .menuContainer input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
-    background: #232323;
+    background: ${backgroundColor};
   }
 
-  .menuToggle input:checked ~ span:nth-last-child(3) {
+  .menuContainer input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 
-  .menuToggle input:checked ~ span:nth-last-child(2) {
+  .menuContainer input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
   .menu {
-    position: absolute;
-    width: 300px;
-    right: 0;
-    top: 0;
-    margin: -${mainPadding}px;
-    padding: 75px 50px 50px;
-    background: #ededed;
-    list-style-type: none;
-    -webkit-font-smoothing: antialiased;
-    /* to stop flickering of text in safari */
-    transform-origin: 0% 0%;
-    transform: translate(100%, 0);
-    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    /* BURGER MENU */
+    ${props => props.width <= breakpoint && css`
+      position: absolute;
+      width: 300px;
+      right: -300px;
+      top: 0;
+      margin: -${mainPadding}px;
+      padding: 75px 50px 50px;
+      background: ${textColor};
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
+      transform-origin: 0% 0%;
+      transform: translateX(0%);
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    `}
+
+    ${props => props.width > breakpoint && css`
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    `}
+  }
+
+  .menu ul {
+    list-style: none;
+
+    ${props => props.width > breakpoint && css`
+      display: flex;
+      padding: 0;
+    `}
   }
 
   .menu li {
     padding: 10px 0;
     font-size: 22px;
+
+    ${props => props.width > breakpoint && css`
+      padding: 0 20px;
+    `}
   }
 
-  .menuToggle input:checked ~ ul {
-    transform: none;
+  .menuContainer input:checked ~ .menu {
+    ${props => props.width <= breakpoint && css`
+      transform: translateX(-100%);
+    `}
   }
 `
 
