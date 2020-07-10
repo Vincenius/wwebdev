@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components'
-import resizePolyfill from 'resize-polyfill'
 
 const dotSize = 12;
+const headHeight = 30;
 
 const BrowserMockup = styled.div`
   position: relative;
@@ -11,15 +11,16 @@ const BrowserMockup = styled.div`
   overflow-x: hidden;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   margin: 0;
-  height: 400px;
+  height: 450px;
   resize: horizontal;
   min-width: 320px;
   max-width: 1080px;
+  margin-bottom: 50px;
 `
 const BrowserHead = styled.div`
   position: sticky;
   z-index: 10;
-  height: 30px;
+  height: ${headHeight}px;
   width: 100%;
   top: 0;
   background: #e8e8e8;
@@ -52,19 +53,21 @@ const BrowserDots = styled.div`
   }
 `
 
+const BrowserContent = styled.div`
+  height: calc(100% - ${headHeight}px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
+
 const NavigationPreview = ({ children }) => (
-  <BrowserMockup ref={(el) => {
-    // IF !CSS.supports
-    if (el && (!CSS.supports || !CSS.supports('resize', 'horizontal'))) {
-      resizePolyfill(el, true);
-    }
-  }}>
+  <BrowserMockup>
     <BrowserHead>
       <BrowserDots></BrowserDots>
     </BrowserHead>
-    <div>
+    <BrowserContent>
       { children }
-    </div>
+    </BrowserContent>
   </BrowserMockup>
 )
 

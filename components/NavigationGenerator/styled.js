@@ -1,4 +1,6 @@
 import styled, { css } from 'styled-components'
+import Tab from '@material-ui/core/Tab'
+import { lightGrey } from '../../ui/constants'
 
 const mainPadding = 20;
 const breakpoint = 760;
@@ -15,7 +17,7 @@ export const Navigation = styled.nav`
   color: ${textColor};
   padding: ${mainPadding}px;
 
-  .menuContainer {
+  .menu-container {
     position: relative;
     z-index: 1;
     -webkit-user-select: none;
@@ -26,7 +28,7 @@ export const Navigation = styled.nav`
     `}
   }
 
-  .menuContainer a {
+  .menu-container a {
     text-decoration: none;
     color: ${backgroundColor};
     transition: color 0.3s ease;
@@ -36,11 +38,11 @@ export const Navigation = styled.nav`
     `}
   }
 
-  .menuContainer a:hover {
+  .menu-container a:hover {
     color: ${hoverColor};
   }
 
-  .menuContainer input {
+  .menu-container input {
     display: block;
     width: 35px;
     height: 25px;
@@ -59,7 +61,7 @@ export const Navigation = styled.nav`
   /*
   * Just a quick hamburger
   */
-  .menuContainer span {
+  .menu-container span {
     display: block;
     width: 33px;
     height: 4px;
@@ -78,26 +80,26 @@ export const Navigation = styled.nav`
     `}
   }
 
-  .menuContainer span:first-child {
+  .menu-container span:first-child {
     transform-origin: 0% 0%;
   }
 
-  .menuContainer span:nth-last-child(2) {
+  .menu-container span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
 
-  .menuContainer input:checked ~ span {
+  .menu-container input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
     background: ${backgroundColor};
   }
 
-  .menuContainer input:checked ~ span:nth-last-child(3) {
+  .menu-container input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
 
-  .menuContainer input:checked ~ span:nth-last-child(2) {
+  .menu-container input:checked ~ span:nth-last-child(2) {
     transform: rotate(-45deg) translate(0, -1px);
   }
 
@@ -144,7 +146,7 @@ export const Navigation = styled.nav`
     `}
   }
 
-  .menuContainer input:checked ~ .menu {
+  .menu-container input:checked ~ .menu {
     ${props => props.width <= breakpoint && css`
       transform: translateX(-100%);
     `}
@@ -156,5 +158,11 @@ export const Center = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 200px;
+  height: 100%;
+  text-align: center;
 `
+
+export const TabButton = styled(Tab)`&&{
+  background: ${lightGrey};
+  min-width: 100px;
+}`

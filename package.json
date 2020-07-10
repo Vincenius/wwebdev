@@ -11,7 +11,7 @@
     "postexport": "node scripts/postExport.js"
   },
   "dependencies": {
-    "@material-ui/core": "^4.9.10",
+    "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.55",
     "@next/bundle-analyzer": "^9.4.4",
@@ -24,6 +24,7 @@
     "next-pwa": "^3.0.1",
     "react": "16.11.0",
     "react-dom": "16.11.0",
+    "react-html-parser": "^2.0.2",
     "react-lazy-load": "^3.0.13",
     "react-query": "^2.0.0",
     "react-sizeme": "^2.6.12",
