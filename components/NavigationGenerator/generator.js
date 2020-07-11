@@ -6,7 +6,7 @@ const generateMenu = items =>
       </a>`).join('')
 
 export const htmlGenerator = menuItems =>
-`<div class="menu-container">
+`<nav class="menu-container">
   <input type="checkbox" />
 
   <span></span>
@@ -19,4 +19,4 @@ export const htmlGenerator = menuItems =>
     <ul>${generateMenu(menuItems.right)}
     </ul>
   </div>
-</div>`
+</nav>`

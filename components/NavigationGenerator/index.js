@@ -27,6 +27,8 @@ const defaultMenu = {
   ]
 }
 
+const cssCode = S.generateNavigationCss()
+
 const NavigationGenerator = props => {
   const [activeTab, setActiveTab] = useState(0)
   const [menuItems, setMenuItems] = useState(defaultMenu)
@@ -39,6 +41,8 @@ const NavigationGenerator = props => {
 
   return (
     <ui.Container>
+      <h2>Preview</h2>
+
         <BrowserMockup>
           <SizeMe>{({ size }) =>
             <S.Navigation width={size.width}>
@@ -74,6 +78,8 @@ const NavigationGenerator = props => {
         <h2>Code</h2>
 
         <CodeBlock language="html" value={htmlCode}/>
+        <br />
+        <CodeBlock language="css" value={cssCode}/>
     </ui.Container>
   )
 }

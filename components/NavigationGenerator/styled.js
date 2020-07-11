@@ -8,24 +8,36 @@ const backgroundColor = '#232323'
 const textColor = '#cdcdcd'
 const hoverColor = 'tomato'
 
-export const Navigation = styled.nav`
-  position: relative;
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 20px;
-  background: ${backgroundColor};
-  color: ${textColor};
-  padding: ${mainPadding}px;
+const mediaQueryOrCode = ({ width, isMobile, code }) => {
+  if (!!width) {
+    return isMobile
+      ? width <= breakpoint && code
+      : width > breakpoint && code
+  } else {
+    const mediaSelector = isMobile
+      ? `max-width: ${breakpoint - 1}px`
+      : `min-width: ${breakpoint}px`
+    return `@media only screen and (${mediaSelector}) { ${code}}`
+  }
+}
 
+export const generateNavigationCss = width => `
   .menu-container {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 20px;
+    background: ${backgroundColor};
+    color: ${textColor};
+    padding: ${mainPadding}px;
     z-index: 1;
     -webkit-user-select: none;
     user-select: none;
 
-    ${props => props.width > breakpoint && css`
+    ${mediaQueryOrCode({ width, isMobile: false, code: `
       width: 100%;
-    `}
+    `})}
   }
 
   .menu-container a {
@@ -33,9 +45,9 @@ export const Navigation = styled.nav`
     color: ${backgroundColor};
     transition: color 0.3s ease;
 
-    ${props => props.width > breakpoint && css`
+    ${mediaQueryOrCode({ width, isMobile: false, code: `
       color: ${textColor};
-    `}
+    `})}
   }
 
   .menu-container a:hover {
@@ -53,14 +65,12 @@ export const Navigation = styled.nav`
     z-index: 2; /* and place it over the hamburger */
     -webkit-touch-callout: none;
 
-    ${props => props.width > breakpoint && css`
+    ${mediaQueryOrCode({ width, isMobile: false, code: `
       display: none;
-    `}
+    `})}
   }
 
-  /*
-  * Just a quick hamburger
-  */
+  /* Burger menu */
   .menu-container span {
     display: block;
     width: 33px;
@@ -75,9 +85,9 @@ export const Navigation = styled.nav`
                 background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
                 opacity 0.55s ease;
 
-    ${props => props.width > breakpoint && css`
+    ${mediaQueryOrCode({ width, isMobile: false, code: `
       display: none;
-    `}
+    `})}
   }
 
   .menu-container span:first-child {
@@ -105,7 +115,7 @@ export const Navigation = styled.nav`
 
   .menu {
     /* BURGER MENU */
-    ${props => props.width <= breakpoint && css`
+    ${mediaQueryOrCode({ width, isMobile: true, code: `
       position: absolute;
       width: 300px;
       right: -300px;
@@ -118,39 +128,45 @@ export const Navigation = styled.nav`
       transform-origin: 0% 0%;
       transform: translateX(0%);
       transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-    `}
+    `})}
 
-    ${props => props.width > breakpoint && css`
+    ${mediaQueryOrCode({ width, isMobile: false, code: `
       position: relative;
       width: 100%;
       display: flex;
       justify-content: space-between;
-    `}
+    `})}
   }
 
   .menu ul {
     list-style: none;
 
-    ${props => props.width > breakpoint && css`
+    ${mediaQueryOrCode({ width, isMobile: false, code: `
       display: flex;
       padding: 0;
-    `}
+    `})}
   }
 
   .menu li {
     padding: 10px 0;
     font-size: 22px;
 
-    ${props => props.width > breakpoint && css`
+    ${mediaQueryOrCode({ width, isMobile: false, code: `
       padding: 0 20px;
-    `}
+    `})}
   }
 
   .menu-container input:checked ~ .menu {
-    ${props => props.width <= breakpoint && css`
+    ${mediaQueryOrCode({ width, isMobile: true, code: `
       transform: translateX(-100%);
-    `}
+    `})}
   }
+`
+
+export const Navigation = styled.div`
+  ${props => css`${
+    generateNavigationCss(props.width)
+  }`}
 `
 
 export const Center = styled.div`

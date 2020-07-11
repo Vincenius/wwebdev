@@ -1,5 +1,5 @@
 import React from 'react'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 
 import Card from '@material-ui/core/Card'
 import CardContent from '@material-ui/core/CardContent'
@@ -8,16 +8,27 @@ import TextField from '@material-ui/core/TextField'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import Checkbox from '@material-ui/core/Checkbox'
 import IconButton from '@material-ui/core/IconButton'
+import Button from '@material-ui/core/Button'
 import DeleteForeverIcon from '@material-ui/icons/DeleteForever'
+import AddCircleIcon from '@material-ui/icons/AddCircle'
+
+const Container = styled.div`
+  width: 100%;
+`
 
 const StyledRow = styled(Paper)`
-  margin: 10px 0;
+  margin: 20px 0;
   padding: 10px;
   display: flex;
 
   @media (max-width: 560px) {
     flex-direction: column;
   }
+
+  ${props => props.center && css`
+    justify-content: center;
+    align-items: center;
+  `}
 
   > div {
     margin-right: 30px;
@@ -39,6 +50,12 @@ const MenuItemsControl = ({ menuItems, setMenuItems }) => {
   const deleteItem = (menuPart, index) => {
     const newMenuItems = menuItems
     newMenuItems[menuPart].splice(index, 1)
+    setMenuItems(prevItems => ({ ...prevItems, ...newMenuItems }))
+  }
+
+  const addItem = menuPart => {
+    const newMenuItems = menuItems
+    newMenuItems[menuPart].push({ caption: '', link: '' })
     setMenuItems(prevItems => ({ ...prevItems, ...newMenuItems }))
   }
 
@@ -76,14 +93,19 @@ const MenuItemsControl = ({ menuItems, setMenuItems }) => {
   )
 
   return (
-    <div>
+    <Container>
       <h3>Left Menu</h3>
       { generateItems('left') }
-      { /* TODO add new row */ }
+      <Button variant="outlined" onClick={() => { addItem('left') }}>
+        <AddCircleIcon /> &nbsp;Add Item
+      </Button>
 
       <h3>Right Menu</h3>
       { generateItems('right') }
-    </div>
+      <Button variant="outlined" onClick={() => { addItem('right') }}>
+        <AddCircleIcon /> &nbsp;Add Item
+      </Button>
+    </Container>
   )
 }
 
