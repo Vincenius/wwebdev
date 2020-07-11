@@ -40,6 +40,10 @@ const StyledRow = styled(Paper)`
   }
 `
 
+const DeleteIcon = styled(DeleteForeverIcon)`
+  color: #b71c1c;
+`
+
 const MenuItemsControl = ({ menuItems, setMenuItems }) => {
   const updateMenu = (key, value, menuPart, index) => {
     const newMenuItems = menuItems
@@ -87,7 +91,7 @@ const MenuItemsControl = ({ menuItems, setMenuItems }) => {
         component="span"
         onClick={() => { deleteItem(menuPart, index) }}
       >
-        <DeleteForeverIcon />
+        <DeleteIcon />
       </IconButton>
     </StyledRow>
   )

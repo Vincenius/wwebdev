@@ -9,10 +9,11 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore'
 
 import * as ui from '../../ui'
 import * as S from './styled'
+import CodeBlock from '../CodeBlock'
 import BrowserMockup from './components/BrowserMockup'
 import MenuItemsControl from './components/MenuItemsControl'
+import StylingControl from './components/StylingControl'
 import { htmlGenerator } from './generator'
-import CodeBlock from '../CodeBlock'
 
 const defaultMenu = {
   left: [
@@ -27,17 +28,29 @@ const defaultMenu = {
   ]
 }
 
-const cssCode = S.generateNavigationCss()
+const stylingOptions = {
+  primaryColor: '#232323',
+  secondaryColor: '#cdcdcd',
+  hoverColor: '#00C6A7',
+  burgerMenuPosition: 'right', // or "left"
+  breakpoint: 760,
+}
 
 const NavigationGenerator = props => {
-  const [activeTab, setActiveTab] = useState(0)
   const [menuItems, setMenuItems] = useState(defaultMenu)
+  const [menuStyle, setMenuStyle] = useState(stylingOptions)
   const [htmlCode, setHtmlCode] = useState(htmlGenerator(menuItems))
+  const [cssCode, setCssCode] = useState(S.generateNavigationCss(stylingOptions))
 
   useEffect(() => {
-    const htmlCode = htmlGenerator(menuItems)
-    setHtmlCode(htmlCode)
+    const newHtmlCode = htmlGenerator(menuItems)
+    setHtmlCode(newHtmlCode)
   }, [menuItems])
+
+  useEffect(() => {
+    const newCssCode = S.generateNavigationCss(menuStyle)
+    setCssCode(newCssCode)
+  }, [menuStyle])
 
   return (
     <ui.Container>
@@ -45,7 +58,7 @@ const NavigationGenerator = props => {
 
         <BrowserMockup>
           <SizeMe>{({ size }) =>
-            <S.Navigation width={size.width}>
+            <S.Navigation width={size.width} {...menuStyle}>
               { ReactHtmlParser(htmlCode) }
             </S.Navigation>
           }</SizeMe>
@@ -74,12 +87,45 @@ const NavigationGenerator = props => {
             />
           </AccordionDetails>
         </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="menu items configuration"
+          >
+            Styling
+          </AccordionSummary>
+          <AccordionDetails>
+            <StylingControl
+              menuStyle={menuStyle}
+              setMenuStyle={setMenuStyle}
+            />
+          </AccordionDetails>
+        </Accordion>
 
         <h2>Code</h2>
 
-        <CodeBlock language="html" value={htmlCode}/>
-        <br />
-        <CodeBlock language="css" value={cssCode}/>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="expand HTML Code"
+          >
+            HTML Code [todo copy]
+          </AccordionSummary>
+          <AccordionDetails>
+            <CodeBlock language="html" value={htmlCode} />
+          </AccordionDetails>
+        </Accordion>
+        <Accordion>
+          <AccordionSummary
+            expandIcon={<ExpandMoreIcon />}
+            aria-controls="expand CSS Code"
+          >
+            CSS Code [todo copy]
+          </AccordionSummary>
+          <AccordionDetails>
+            <CodeBlock language="css" value={cssCode} />
+          </AccordionDetails>
+        </Accordion>
     </ui.Container>
   )
 }
