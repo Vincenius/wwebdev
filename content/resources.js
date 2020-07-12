@@ -6,7 +6,7 @@ const data = [
         headline: "Responsive Navigation Generator",
         description: "Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile.",
         link: "/resources/navigation-generator",
-        previewImage: "TODO",
+        previewImage: "resources/navigation-generator_flkQB-LbDQ-.png",
     },
     {
         id: 8,

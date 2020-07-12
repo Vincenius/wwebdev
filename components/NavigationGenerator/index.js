@@ -55,7 +55,7 @@ const NavigationGenerator = props => {
   const [menuStyle, setMenuStyle] = useState(stylingOptions)
   const [htmlCode, setHtmlCode] = useState(htmlGenerator(menuItems))
   const [cssCode, setCssCode] = useState(S.generateNavigationCss({
-    ...stylingOptions,
+    ...menuStyle,
     useLogo: menuItems.logo.isUsed,
   }))
   const [copySuccessOpen, setCopySuccessOpen] = useState(false)
@@ -67,7 +67,7 @@ const NavigationGenerator = props => {
 
   useEffect(() => {
     const newCssCode = S.generateNavigationCss({
-      ...stylingOptions,
+      ...menuStyle,
       useLogo: menuItems.logo.isUsed,
     })
     setCssCode(newCssCode)
@@ -84,11 +84,10 @@ const NavigationGenerator = props => {
           </S.Navigation>
         }</SizeMe>
         <S.Center>
-          { // CSS.supports && CSS.supports('resize', 'horizontal') &&
-              <span>
-                This window is resizable.<br/>
-                Scroll down for customization & code.
-              </span> }
+          <span>
+            This window is resizable.<br/>
+            Scroll down for customization & code.
+          </span>
         </S.Center>
       </BrowserMockup>
 
