@@ -7,6 +7,7 @@ import RadioGroup from '@material-ui/core/RadioGroup'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import FormControl from '@material-ui/core/FormControl'
 import FormLabel from '@material-ui/core/FormLabel'
+import Slider from '@material-ui/core/Slider'
 
 const Container = styled.div`
   width: 100%;
@@ -25,6 +26,7 @@ const ColorPickers = styled.div`
 
     @media (max-width: 800px) {
       margin-right: 0;
+      margin-bottom: 40px;
     }
   }
 
@@ -80,7 +82,18 @@ const MenuItemsControl = ({ menuStyle, setMenuStyle }) => {
         </RadioGroup>
       </FormControl>
 
-      {/* TODO breakpoint */}
+      <br/><br/><br/>
+
+      <FormLabel component="legend">Burger Menu Breakpoint</FormLabel>
+      <Slider
+        value={menuStyle.breakpoint}
+        onChange={(e, value) => updateStyle('breakpoint', value)}
+        aria-labelledby="breakpoint slider"
+        min={480}
+        max={1200}
+        step={1}
+        valueLabelDisplay="auto"
+      />
     </Container>
   )
 }

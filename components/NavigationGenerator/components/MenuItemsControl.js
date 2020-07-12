@@ -63,6 +63,12 @@ const MenuItemsControl = ({ menuItems, setMenuItems }) => {
     setMenuItems(prevItems => ({ ...prevItems, ...newMenuItems }))
   }
 
+  const updateLogo = (key, value, menuPart) => {
+    const newMenuItems = menuItems
+    newMenuItems.logo[key] = value
+    setMenuItems(prevItems => ({ ...prevItems, ...newMenuItems }))
+  }
+
   const generateItems = menuPart => menuItems[menuPart].map((item, index) =>
     <StyledRow key={`${menuPart}-${index}`}>
       <TextField
@@ -98,11 +104,49 @@ const MenuItemsControl = ({ menuItems, setMenuItems }) => {
 
   return (
     <Container>
+      <h3>Logo</h3>
+      { menuItems.logo.isUsed && <StyledRow>
+        <TextField
+          label="Link to logo"
+          value={menuItems.logo.url}
+          onChange={e => updateLogo('url', e.target.value)}
+        />
+        <TextField
+          label="Link"
+          value={menuItems.logo.link}
+          onChange={e => updateLogo('link', e.target.value)}
+        />
+
+        <TextField
+          label="Alt caption"
+          value={menuItems.logo.alt}
+          onChange={e => updateLogo('alt', e.target.value)}
+        />
+
+        <IconButton
+          aria-label="delete row"
+          component="span"
+          onClick={() => updateLogo('isUsed', false)}
+        >
+          <DeleteIcon />
+        </IconButton>
+      </StyledRow> }
+
+      { !menuItems.logo.isUsed &&
+        <Button variant="outlined" onClick={() => { updateLogo('isUsed', true) }}>
+          <AddCircleIcon /> &nbsp;Add Logo
+        </Button>
+      }
+
+      <br/>
+
       <h3>Left Menu</h3>
       { generateItems('left') }
       <Button variant="outlined" onClick={() => { addItem('left') }}>
         <AddCircleIcon /> &nbsp;Add Item
       </Button>
+
+      <br/><br/>
 
       <h3>Right Menu</h3>
       { generateItems('right') }

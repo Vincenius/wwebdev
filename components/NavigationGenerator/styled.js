@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
 import Tab from '@material-ui/core/Tab'
+import AccordionSummary from '@material-ui/core/AccordionSummary'
 import { lightGrey } from '../../ui/constants'
 
 const mainPadding = 20;
@@ -24,12 +25,18 @@ export const generateNavigationCss = ({
   hoverColor,
   burgerMenuPosition,
   breakpoint,
+  useLogo,
 }) =>
-`.menu-container {
+`body {
+  overflow-x: hidden;
+  font-family: Sans-Serif;
+  margin: 0;
+}
+
+.menu-container {
   position: relative;
   display: flex;
-  flex-direction: column;
-  align-items: ${burgerMenuPosition === 'right' ? 'flex-end' : 'flex-start'};
+  align-items: center;
   margin-bottom: 20px;
   background: ${primaryColor};
   color: ${secondaryColor};
@@ -39,7 +46,18 @@ export const generateNavigationCss = ({
   user-select: none;
   box-sizing: border-box;
 }
+${useLogo ? `
+.menu-logo {
+  line-height: 0;
+  margin: 0 20px;
+}
 
+.menu-logo img {
+  max-height: 40px;
+  max-width: 100px;
+  flex-shrink: 0;
+}
+` : ''}
 .menu-container a {
   text-decoration: none;
   color: ${primaryColor};
@@ -82,23 +100,23 @@ export const generateNavigationCss = ({
   transform-origin: 0% 0%;
 }
 
-.menu-container span:nth-last-child(2) {
+.menu-container span:nth-child(3) {
   transform-origin: 0% 100%;
 }
 
 .menu-container input:checked ~ span {
   opacity: 1;
-  transform: rotate(45deg) translate(-2px, -1px);
+  transform: rotate(45deg) translate(3px,-1px);
   background: ${primaryColor};
 }
 
-.menu-container input:checked ~ span:nth-last-child(3) {
+.menu-container input:checked ~ span:nth-child(4) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-.menu-container input:checked ~ span:nth-last-child(2) {
-  transform: rotate(-45deg) translate(0, -1px);
+.menu-container input:checked ~ span:nth-child(3) {
+  transform: rotate(-45deg) translate(-5px,11px);
 }
 
 .menu ul {
@@ -112,9 +130,22 @@ export const generateNavigationCss = ({
 
 /* mobile styles */
 ${mediaQueryOrCode({ width, breakpoint, isMobile: true, code: `
-  body {
-    overflow-x: hidden;
+  .menu-container {
+    flex-direction: column;
+    align-items: ${burgerMenuPosition === 'right' ? 'flex-end' : 'flex-start'};
   }
+  ${useLogo ? `
+  .menu-logo {
+    position: absolute;
+    ${burgerMenuPosition === 'left' ? 'right' : 'left'}: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .menu-logo img {
+    max-height: 30px;
+  }
+` : ''}
   .menu {
     position: absolute;
     box-sizing: border-box;
@@ -191,3 +222,14 @@ export const TabButton = styled(Tab)`&&{
   background: ${lightGrey};
   min-width: 100px;
 }`
+
+export const ButtonAccordionSummary = styled(AccordionSummary)`
+  > div {
+    display: flex;
+    align-items: center;
+
+    > button {
+      margin-left: 40px;
+    }
+  }
+`
