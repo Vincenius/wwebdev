@@ -20,7 +20,9 @@ class MyHead extends React.Component {
         const headTitle = titleNameFirst
             ? `wweb.dev | ${title}`
             : `${title} | wweb.dev`
-        const imageLink = localImage ? `https://wweb.dev${image}` : `https://ik.imagekit.io/wwebdev/${image}`
+        const imageLink = isArticle
+            ? localImage ? `https://wweb.dev${image}` : `https://ik.imagekit.io/wwebdev/${image}`
+            : 'https://wweb.dev/share.png'
 
         const structuredData = `
         {
@@ -31,8 +33,8 @@ class MyHead extends React.Component {
                 "@id":"${link}"
             },
             "headline": "${title}",
-            "datePublished":"${date}",
-            "dateModified":"${updatedDate || date}",
+            ${ date && '"datePublished":"${date}",' }
+            ${ updatedDate && `"dateModified":"${updatedDate}",` }
             "image": {
                 "@type":"ImageObject",
                 "url":"${imageLink}",
@@ -96,26 +98,24 @@ class MyHead extends React.Component {
                 </script>
                 <style> { 'html, body { margin: 0; overflow-x: hidden; } body svg { width: 32px; }' } </style>
 
-                { isArticle &&
-                    <React.Fragment>
-                        <link rel="canonical" href={link} />
-                        <meta name="twitter:card" content="summary_large_image" />
-                        <meta name="twitter:site" content={link} />
-                        <meta name="twitter:title" content={title} />
-                        <meta name="twitter:description" content={description} />
-                        <meta name="twitter:creator" content="@wweb_dev" />
-                        <meta name="twitter:image" content={imageLink} />
-                        <meta property="og:title" content={title} />
-                        <meta property="og:image" content={imageLink} />
-                        <meta property="og:site_name" content="wweb.dev" />
-                        <meta property="og:description" content={description} />
-                        <meta property="og:url" content={link} />
-                        <meta property="og:type" content="article" />
+                <React.Fragment>
+                    <link rel="canonical" href={link} />
+                    <meta name="twitter:card" content="summary_large_image" />
+                    <meta name="twitter:site" content={link} />
+                    <meta name="twitter:title" content={title} />
+                    <meta name="twitter:description" content={description} />
+                    <meta name="twitter:creator" content="@wweb_dev" />
+                    <meta name="twitter:image" content={imageLink} />
+                    <meta property="og:title" content={title} />
+                    <meta property="og:image" content={imageLink} />
+                    <meta property="og:site_name" content="wweb.dev" />
+                    <meta property="og:description" content={description} />
+                    <meta property="og:url" content={link} />
+                    <meta property="og:type" content="article" />
 
-                        <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredData}} />
-                        <script defer src="https://cdn.commento.io/js/commento.js"></script>
-                    </React.Fragment>
-                }
+                    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredData}} />
+                    <script defer src="https://cdn.commento.io/js/commento.js"></script>
+                </React.Fragment>
             </Head>
         )
     }
