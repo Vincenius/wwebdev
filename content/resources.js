@@ -4,7 +4,7 @@ const data = [
         type: 'Resource',
         date: 'July 13, 2020',
         headline: "Responsive Navigation Generator",
-        description: "Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile.",
+        description: "Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.",
         link: "/resources/navigation-generator",
         previewImage: "resources/navigation-generator_flkQB-LbDQ-.png",
     },
