@@ -20,7 +20,7 @@
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
     "lodash": "^4.17.19",
-    "next": "^9.3.6",
+    "next": "^9.4.4",
     "next-pwa": "^3.0.1",
     "react": "16.11.0",
     "react-color": "^2.18.1",
