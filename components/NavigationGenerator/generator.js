@@ -1,9 +1,11 @@
 const generateMenu = items =>
   items.map(item =>
 `
-      <a href="${item.link}"${item.blank ? ' target="_blank" rel="noopener noreferrer"' : '' }>
-        <li>${item.caption}</li>
-      </a>`).join('')
+      <li>
+        <a href="${item.link}"${item.blank ? ' target="_blank" rel="noopener noreferrer"' : '' }>
+          ${item.caption}
+        </a>
+      </li>`).join('')
 
 export const htmlGenerator = menuItems =>
 `<nav class="menu-container">
