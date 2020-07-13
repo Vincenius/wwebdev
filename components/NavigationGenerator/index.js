@@ -25,7 +25,7 @@ function Alert(props) {
 
 const defaultMenu = {
   logo: {
-    url: '/resources/navigation-generator/logo-placeholder.png',
+    url: 'https://wweb.dev/resources/navigation-generator/logo-placeholder.png',
     alt: 'My Awesome Website',
     link: '#',
     isUsed: true,
