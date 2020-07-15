@@ -30,7 +30,7 @@
     },
     {
       "title": "Squircley",
-      "description": "A generator for creating organic SVG shapes ready to use for logos, icons and background images.",
+      "description": "A generator for creating organic SVG shapes ready to use for logos, icons, and background images.",
       "link": "https://squircley.app/",
       "image": "https://squircley.app/og-image.png",
       "tags": [
@@ -68,7 +68,7 @@
     },
     {
       "title": "Web Monetization",
-      "description": "A JavaScript browser API which allows the creation of a payment stream from the user agent to the website.",
+      "description": "A JavaScript browser API, that allows the creation of a payment stream from the user agent to the website.",
       "link": "https://webmonetization.org/",
       "image": "/weekly/screenshots/web-monetization.jpg",
       "tags": [
@@ -77,7 +77,7 @@
     },
     {
       "title": "Hex Color Blender",
-      "description": "A tool, that blends two hex colors by giving specified number of intermediates between them.",
+      "description": "A tool, that blends two hex colors by giving a specified number of intermediates between them.",
       "link": "https://hexcolorblender.now.sh/",
       "image": "/weekly/screenshots/hex-color-blender.jpg",
       "tags": [
