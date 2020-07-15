@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '34',
+        date: 'July 15, 2020',
+        description: "Tabler Icons, 1-Line Layouts, Squircley, Capsize, Developer Handbook 2020 and more...",
+        previewImage: 'weekly/34_aZGM3Wn6X.png',
+    },
+    {
         id: '33',
         date: 'July 08, 2020',
         description: "hyperapp, html.systems, Knopf.css, Tailwind cheat sheet, shareon, DecentDrops and more...",
