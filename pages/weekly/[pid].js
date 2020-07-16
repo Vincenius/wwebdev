@@ -24,7 +24,7 @@ const Post = () => {
             title={`Web development update ${weeklyMeta.date}`}
             date={weeklyMeta.date}
             link={`https://wweb.dev/weekly/${pid}`}
-            image={`/weekly/weekly${pid}.jpg`}
+            image={`/weekly/preview/weekly${pid}.jpg`}
             localImage={true}
             description={weeklyMeta.description}
         >
