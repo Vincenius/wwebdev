@@ -1,6 +1,6 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
-import { SketchPicker } from 'react-color' // https://casesandberg.github.io/react-color/
+import SketchPicker from 'react-color/lib/Sketch' // https://casesandberg.github.io/react-color/
 
 import Radio from '@material-ui/core/Radio'
 import RadioGroup from '@material-ui/core/RadioGroup'
