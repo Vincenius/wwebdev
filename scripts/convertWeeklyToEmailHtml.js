@@ -20,7 +20,7 @@ for (const item of data.items) {
 
 <h2><a href="${item.link}">${item.title}</a></h2>
 
-<p><a href="${item.link}"><img alt="${item.title}" loading="lazy" src="${imageLink}" style="border: 0px; width: 400px; height: auto; margin: 0px 0px 15px;" width="400" /></a><br />
+<p><a href="${item.link}"><img alt="${item.title}" loading="lazy" src="${imageLink}" style="border: 0px; : 400px; height: auto; margin: 0px 0px 15px;" ="400" /></a><br />
 ${item.description}</p>
 &nbsp;`
 }

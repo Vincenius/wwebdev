@@ -19,6 +19,7 @@
     "@zeit/next-css": "^1.0.1",
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
+    "hamburger-react": "^2.1.1",
     "lodash": "^4.17.19",
     "next": "^9.4.4",
     "next-pwa": "^3.0.1",
