@@ -114,7 +114,6 @@ class MyHead extends React.Component {
                     <meta property="og:type" content="article" />
 
                     <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: structuredData}} />
-                    <script defer src="https://cdn.commento.io/js/commento.js"></script>
                 </React.Fragment>
             </Head>
         )

@@ -25,6 +25,10 @@ export const Input = styled(TextField)`
     width: 100%;
     margin-bottom: 20px !important;
 
+    label {
+        color: ${darkGrey};
+    }
+
     fieldset {
         display: none;
     }

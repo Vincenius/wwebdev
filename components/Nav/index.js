@@ -91,6 +91,7 @@ const Mobile = ({ isArticle, title, activePath }) => {
             toggled={isOpen}
             toggle={setOpen}
             color={lightGrey}
+            label="Toggle menu"
           />
         </S.Right>
       </S.Navigation>
