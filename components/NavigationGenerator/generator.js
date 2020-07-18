@@ -10,7 +10,7 @@ const generateMenu = items =>
 export const htmlGenerator = menuItems =>
 `<nav class="menu-container">
   <!-- burger menu -->
-  <input type="checkbox" />
+  <input type="checkbox" aria-label="Toggle menu" />
   <span></span>
   <span></span>
   <span></span>
