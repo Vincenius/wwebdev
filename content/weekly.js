@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '35',
+        date: 'July 22, 2020',
+        description: "TODO and more...",
+        previewImage: 'weekly/35_NjpCYmVH1E9.png',
+    },
+    {
         id: '34',
         date: 'July 15, 2020',
         description: "Tabler Icons, 1-Line Layouts, Squircley, Capsize, Developer Handbook 2020 and more...",
