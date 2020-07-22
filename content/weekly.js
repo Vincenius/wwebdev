@@ -2,7 +2,7 @@ const data = [
     {
         id: '35',
         date: 'July 22, 2020',
-        description: "TODO and more...",
+        description: "this vs that, Super Expressive, CSS Effects Snippets, The WET Codebase and more...",
         previewImage: 'weekly/35_NjpCYmVH1E9.png',
     },
     {
