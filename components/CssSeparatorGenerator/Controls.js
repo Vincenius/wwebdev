@@ -1,6 +1,15 @@
 import React, { useState } from 'react'
-import { Paper, Tabs, Tab, Slider, Checkbox } from '@material-ui/core'
-import { ExpandLess, ExpandMore, FileCopy, GitHub } from '@material-ui/icons'
+
+import Paper from '@material-ui/core/Paper'
+import Tabs from '@material-ui/core/Tabs'
+import Tab from '@material-ui/core/Tab'
+import Slider from '@material-ui/core/Slider'
+import Checkbox from '@material-ui/core/Checkbox'
+import ExpandLess from '@material-ui/icons/ExpandLess'
+import ExpandMore from '@material-ui/icons/ExpandMore'
+import FileCopy from '@material-ui/icons/FileCopy'
+import GitHub from '@material-ui/icons/GitHub'
+
 import * as S from './styled'
 import { generateHtmlCode, generateCssCode } from './codeGenerators'
 

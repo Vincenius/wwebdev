@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Card } from '@material-ui/core'
+import Card from '@material-ui/core/Card'
 import { breakpoint } from '../../ui/constants'
 
 export const Container = styled(Card)`

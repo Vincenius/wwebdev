@@ -1,6 +1,7 @@
 import React from 'react'
 import * as ui from '../ui'
-import { Footer, Layout } from '../components'
+import Footer from '../components/Footer'
+import Layout from '../components/Layout'
 
 const Privacy = () => (
     <Layout

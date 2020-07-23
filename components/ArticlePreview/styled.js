@@ -1,5 +1,6 @@
 import styled, { css } from 'styled-components'
-import { lightGrey, greyBlue, darkGrey, lightBlue, breakpoint, breakpointSmall } from '../../ui/constants'
+import Skeleton from '@material-ui/lab/Skeleton'
+import { lightGrey, greyBlue, darkGrey, lightBlue, breakpoint } from '../../ui/constants'
 
 export const Container = styled.article`
     border-bottom: 1px solid ${lightGrey};
@@ -7,7 +8,7 @@ export const Container = styled.article`
     padding-bottom: 3.2rem;
     display: flex;
 
-    @media only screen and (max-width: ${breakpointSmall}) {
+    @media only screen and (max-width: ${breakpoint}) {
         flex-direction: column;
     }
 `
@@ -50,12 +51,15 @@ export const Headline = styled.h2`
         }
     }
 `
-export const ReadMore = styled.a`
-    display: block;
+export const ReadMore = styled.span`
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
     font-size: .77248rem;
     font-weight: 700;
     margin-top: calc(1.06667rem + .25vw);
     text-transform: uppercase;
+    text-decoration: underline;
     color: ${lightBlue};
 
     &:hover {
@@ -64,20 +68,23 @@ export const ReadMore = styled.a`
         cursor: pointer;
     }
 `
-export const PreviewImage = styled.img`
-    width: 200px;
-    height: 200px;
+const imageStyle = css`
+    width: 300px;
+    height: 200px !important; /* to overwrite skeleton default */
     object-fit: cover;
     margin-right: 20px;
-    margin-top: 15px;
+    margin-top: 10px;
 
     @media only screen and (max-width: ${breakpoint}) {
-        width: 100px;
-        height: 100px;
-    }
-
-    @media only screen and (max-width: ${breakpointSmall}) {
         width: 100%;
-        height: 200px;
+        height: auto;
+        min-height: 250px;
+        max-height: 300px;
     }
+`
+export const PreviewImage = styled.img`
+    ${imageStyle}
+`
+export const ImageSkeleton = styled(Skeleton)`
+    ${imageStyle}
 `

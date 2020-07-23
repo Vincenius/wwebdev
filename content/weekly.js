@@ -1,5 +1,59 @@
 const data = [
     {
+        id: '35',
+        date: 'July 22, 2020',
+        description: "this vs that, Super Expressive, CSS Effects Snippets, The WET Codebase and more...",
+        previewImage: 'weekly/35_NjpCYmVH1E9.png',
+    },
+    {
+        id: '34',
+        date: 'July 15, 2020',
+        description: "Tabler Icons, 1-Line Layouts, Squircley, Capsize, Developer Handbook 2020 and more...",
+        previewImage: 'weekly/34_aZGM3Wn6X.png',
+    },
+    {
+        id: '33',
+        date: 'July 08, 2020',
+        description: "hyperapp, html.systems, Knopf.css, Tailwind cheat sheet, shareon, DecentDrops and more...",
+        previewImage: 'weekly/33_1VLKcyR7bH.png',
+    },
+    {
+        id: '32',
+        date: 'July 01, 2020',
+        description: "Grid Cheatsheet, tree.nathanfriend.io, Reflex.js, Textures.js, Whole page slider and more...",
+        previewImage: 'weekly/32_8Mxo47KDM7oA.png',
+    },
+    {
+        id: '31',
+        date: 'June 24, 2020',
+        description: "Beam Cafe, Gradient Generator, Tutorialist Application State Management and more...",
+        previewImage: 'weekly/31_Gb6XqN_at.png',
+    },
+    {
+        id: '30',
+        date: 'June 17, 2020',
+        description: "Blob generator, keen-slider, Collected Notes, Sitejoy, Code Notes, FeedFox and more...",
+        previewImage: 'weekly/30_ALcrO6vxmW.png',
+    },
+    {
+        id: '29',
+        date: 'June 10, 2020',
+        description: "Shape Dividers, Pattern Generator, GitHub Classroom, No Design Development and more...",
+        previewImage: 'weekly/29_kYFHDLMCny.jpg',
+    },
+    {
+        id: '28',
+        date: 'June 03, 2020',
+        description: "Supabase, Obsidian, MDN React, htmx, Rough Notation, Tailblocks, Lander and more...",
+        previewImage: 'weekly/28_6VOsvFSISkN.jpg',
+    },
+    {
+        id: '27',
+        date: 'May 27, 2020',
+        description: "Norde Source, Appy Dev, Keyframes, SEO Cheat Sheet, Marketing for Engineer and more...",
+        previewImage: 'weekly/27_QVZWND3ef9.jpg',
+    },
+    {
         id: '26',
         date: 'May 20, 2020',
         description: "Deno, JSNation, Modern CSS Solutions, quicklink, animista, styco and more...",

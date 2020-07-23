@@ -1,80 +1,117 @@
 {
-  "id": "22",
-  "date": "April 22, 2020",
-  "description": "GitHub is free, React Query, BEM Cheat Sheet, Crank.js, Meanderer.js and more...",
-  "previewImage": "weekly/22_-r_G7t1TmMM-.jpg",
   "items": [
     {
       "title": "GitHub is free for teams",
       "description": "GitHub just made all of the core features free for everyone. Here's their blog post announcing it.",
       "link": "https://github.blog/2020-04-14-github-is-now-free-for-teams/",
-      "image": "https://github.blog/wp-content/uploads/2020/04/GH-Blog-1200-x-630_Option1@2x.png?w=2400"
+      "image": "https://github.blog/wp-content/uploads/2020/04/GH-Blog-1200-x-630_Option1@2x.png?w=2400",
+      "tags": [
+        "Article"
+      ]
     },
     {
       "title": "React Query",
       "description": "A really cool React library for handling server state with fetching, caching and updating.",
       "link": "https://www.npmjs.com/package/react-query",
-      "image": "https://raw.githubusercontent.com/tannerlinsley/react-query/master/media/header.png"
+      "image": "https://raw.githubusercontent.com/tannerlinsley/react-query/master/media/header.png",
+      "tags": [
+        "React",
+        "Library"
+      ]
     },
     {
       "title": "BEM Cheat Sheet",
       "description": "A nice cheat sheet for all of you who are using BEM for naming their CSS classes.",
       "link": "https://9elements.com/bem-cheat-sheet/",
-      "image": "https://9elements.com/bem-cheat-sheet/src/img/bem-cheat-sheet.png"
+      "image": "https://9elements.com/bem-cheat-sheet/src/img/bem-cheat-sheet.png",
+      "tags": [
+        "Resource"
+      ]
     },
     {
       "title": "Crank.js",
       "description": "A new JS framework for writing JSX-driven components with functions, promises and generators.",
       "link": "https://crank.js.org/",
-      "image": "/weekly/screenshots/crankjs.jpg"
+      "image": "/weekly/screenshots/crankjs.jpg",
+      "tags": [
+        "JavaScript"
+      ]
     },
     {
       "title": "Image compare viewer",
       "description": "A vanilla JS library for adding a before and after compare slider to images.",
       "link": "https://image-compare-viewer.netlify.app/",
-      "image": "/weekly/screenshots/imagecompareviewer.jpg"
+      "image": "/weekly/screenshots/imagecompareviewer.jpg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
     },
     {
       "title": "Meanderer.js",
       "description": "A JavaScript micro-library for responsive CSS motion paths",
       "link": "https://meanderer.netlify.app/",
-      "image": "/weekly/screenshots/meanderer.jpg"
+      "image": "/weekly/screenshots/meanderer.jpg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
     },
     {
       "title": "Vue.js v3.0-beta",
       "description": "The new Vue.js version 3.0 is going beta. Check their blog post for more information.",
       "link": "https://news.vuejs.org/issues/179",
-      "image": "https://news.vuejs.org/logo.png"
+      "image": "https://news.vuejs.org/logo.png",
+      "tags": [
+        "Article"
+      ]
     },
     {
       "title": "AHA Programming",
       "description": "AHA stands for 'Avoid Hasty Abstraction' and is a design principle by Kent C. Dodds. It deals with problems caused by the DRY principle.",
       "link": "https://kentcdodds.com/blog/aha-programming",
-      "image": "https://kentcdodds.com/static/7fa12e9387c0fc00c2ec7b8444d5cf91/3e561/banner.jpg"
+      "image": "https://kentcdodds.com/static/7fa12e9387c0fc00c2ec7b8444d5cf91/3e561/banner.jpg",
+      "tags": [
+        "Article"
+      ]
     },
     {
       "title": "React landing page template",
       "description": "A free React landing page template for creating quick landing pages.",
       "link": "https://github.com/cruip/open-react-template",
-      "image": "https://user-images.githubusercontent.com/2683512/78789364-545e7100-79ad-11ea-9e3c-9528c99cda8e.png"
+      "image": "https://user-images.githubusercontent.com/2683512/78789364-545e7100-79ad-11ea-9e3c-9528c99cda8e.png",
+      "tags": [
+        "React",
+        "Resource"
+      ]
     },
     {
       "title": "Stripe Connect: behind the front-end experience",
       "description": "A blog post by Benjamin De Cock about the front-end design of Stripe's Connect.",
       "link": "https://stripe.com/de/blog/connect-front-end-experience",
-      "image": "https://b.stripecdn.com/site-srv/assets/img/blog/posts/connect-frontend/header-background-fca7c86a3378d48e2f3bf0ccda9e7fbfa2bebe96.png"
+      "image": "https://b.stripecdn.com/site-srv/assets/img/blog/posts/connect-frontend/header-background-fca7c86a3378d48e2f3bf0ccda9e7fbfa2bebe96.png",
+      "tags": [
+        "Article"
+      ]
     },
     {
       "title": "Splitlist",
       "description": "A website to create, share and collaborate on to-do lists, shopping lists and more.",
       "link": "https://splitlist.mikkelsvartveit.com/",
-      "image": "/weekly/screenshots/splitlist.jpg"
+      "image": "/weekly/screenshots/splitlist.jpg",
+      "tags": [
+        "Tool"
+      ]
     },
     {
       "title": "Mock Service Worker",
       "description": "A client-side API mocking library that intercepts outgoing requests using Service Workers.",
       "link": "https://github.com/open-draft/msw",
-      "image": "https://raw.githubusercontent.com/open-draft/msw/master/logo.png"
+      "image": "https://raw.githubusercontent.com/open-draft/msw/master/logo.png",
+      "tags": [
+        "Library",
+        "JavaScript"
+      ]
     }
   ]
 }

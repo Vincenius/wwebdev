@@ -3,7 +3,7 @@ import Checkbox from '@material-ui/core/Checkbox'
 import FormControlLabel from '@material-ui/core/FormControlLabel'
 import * as S from './styled'
 
-function SubscribeForm({ type }) {
+function SubscribeForm({ type, isSmall }) {
     return (
         <S.Container
             id="mc-embedded-subscribe-form"
@@ -31,7 +31,7 @@ function SubscribeForm({ type }) {
 
                 <S.CheckboxContainer>
                     <strong>Choose what you want to get informed about</strong>
-                    <ul>
+                    <S.CheckboxList isSmall={isSmall}>
                         <li>
                             <FormControlLabel
                                 control={
@@ -71,7 +71,7 @@ function SubscribeForm({ type }) {
                                 label="Resources"
                             />
                         </li>
-                    </ul>
+                    </S.CheckboxList>
                 </S.CheckboxContainer>
                 <S.HiddenInput>
                     <label htmlFor="b_23a611280baff5c6bd68c83e3_8dd07d6ca8">input</label>

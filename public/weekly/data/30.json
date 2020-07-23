@@ -1,0 +1,116 @@
+{
+  "items": [
+    {
+      "title": "Blob generator",
+      "description": "A cool generator for SVGs in blop shape.",
+      "link": "https://blobs.app/",
+      "image": "https://blobs.app/posters/blobs_app_poster.png",
+      "tags": [
+        "Generator"
+      ]
+    },
+    {
+      "title": "keen-slider",
+      "description": "A library agnostic touch slider with native touch/swipe behavior and great performance.",
+      "link": "https://keen-slider.io/",
+      "image": "/weekly/screenshots/keen-slider.jpg",
+      "tags": [
+        "Library",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Collected Notes",
+      "description": "A note-taking app, with markdown support. It uploads the taken notes to a blog.",
+      "link": "https://collectednotes.com/",
+      "image": "https://photos.collectednotes.com/embed.png",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Sitejoy",
+      "description": "A website that lists inspirational websites, which are also fast and responsive.",
+      "link": "https://www.sitejoy.dev/",
+      "image": "https://www.sitejoy.dev/images/social-card.png",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Code Notes",
+      "description": "A Gatsby theme for publishing code-related notes to your website.",
+      "link": "https://github.com/mrmartineau/gatsby-theme-code-notes",
+      "image": "https://raw.githubusercontent.com/mrmartineau/gatsby-theme-code-notes/master/assets/opengraph.png",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "FeedFox",
+      "description": "A modern RSS reader that allows you to play youtube videos, listen to podcasts, browser reddit, twitter and more.",
+      "link": "https://github.com/manikandanraji/feedfox",
+      "image": "https://raw.githubusercontent.com/manikandanraji/feedfox/master/screenshots/dark-theme-stuckmann.png",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Chakra UI",
+      "description": "A modern component library for React that gives you all the building blocks you need.",
+      "link": "https://chakra-ui.com/",
+      "image": "https://res.cloudinary.com/adebayosegun/image/upload/v1567591645/Chakra%20UI/og-image.png",
+      "tags": [
+        "Library",
+        "React"
+      ]
+    },
+    {
+      "title": "Grid for layout, Flexbox for components",
+      "description": "A good article by Ahmad Shadeed about when to use flexbox or grid.",
+      "link": "https://ishadeed.com/article/grid-layout-flexbox-components/",
+      "image": "https://ishadeed.com/assets/grid-flex/grid-vs-flexbox-1.png",
+      "tags": [
+        "Article",
+        "CSS"
+      ]
+    },
+    {
+      "title": "PRSS",
+      "description": "A static site generator for blogs, doc sites and more.",
+      "link": "https://github.com/hodgef/PRSS",
+      "image": "https://camo.githubusercontent.com/f9d91847ce9dbfa2a2f758590863a18ed149b1ab/68747470733a2f2f692e696d6775722e636f6d2f786f65784556672e706e67",
+      "tags": [
+        "Generator",
+        "Tool"
+      ]
+    },
+    {
+      "title": "discharge",
+      "description": "A simple, easy way to deploy static websites to Amazon S3.",
+      "link": "https://github.com/brandonweiss/discharge",
+      "image": "/weekly/screenshots/discharge.jpg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Image Grid Motion",
+      "description": "A cool demo by Codrops of a motion hover effect on a background image grid.",
+      "link": "https://tympanus.net/Tutorials/ImageGridMotionEffect/",
+      "image": "https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2020/06/MotionGrid_featured.jpg",
+      "tags": [
+        "CSS"
+      ]
+    },
+    {
+      "title": "Artvee",
+      "description": "A huge library of paintings, drawings and illustrations with no license restrictions.",
+      "link": "https://artvee.com/",
+      "image": "/weekly/screenshots/artvee.jpg",
+      "tags": [
+        "Resource"
+      ]
+    }
+  ]
+}

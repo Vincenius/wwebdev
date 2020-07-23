@@ -1,12 +1,13 @@
 import styled from 'styled-components'
+import SocialBar from '../SocialBar'
 import * as ui from '../../ui'
 import { darkGrey, breakpointSmall, breakpoint, breakpointLarge, logoColorLeft } from '../../ui/constants'
 
 export const Container = styled.div`
-    background: ${props => props.transparentBg ? 'rgba(44,62,80, 0.6)' : darkGrey};
     position: relative;
-    padding: 16px 20px;
     margin: ${props => props.isArticle ? '0 auto' : '0 auto 32px'};
+    background: ${props => props.transparentBg ? 'rgba(44,62,80, 0.6)' : darkGrey};
+    padding: 16px 0;
     width: 100%;
     z-index: 10;
 
@@ -27,13 +28,10 @@ export const HeadlineLogo = styled.h1`
 export const Navigation = styled(ui.Container)`
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     margin: 0 auto;
-
-    @media (max-width: ${breakpointLarge}) {
-        flex-direction: column;
-    }
+    z-index: 10000;
 
     ul {
         display: inline-flex;
@@ -100,10 +98,60 @@ export const Main = styled.div`
     }
 `
 
-export const Link = styled.a`
+export const Right = styled.div`
+    margin-left: auto;
+`
+
+export const Link = styled.span`
     color: ${props => props.active ? logoColorLeft : 'rgba(255,255,255,0.8)'};
 
     &:hover {
         color: ${logoColorLeft};
+    }
+`
+
+export const MobileNavigation = styled.nav`
+    position: fixed;
+    transition: transform 0.2s ease-out;
+    transform: ${props => props.isOpen ? 'translateY(0)' : 'translateY(100%)'};
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    padding-top: 90px;
+    background: ${darkGrey};
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+`
+
+export const MobileLink = styled.a`
+    display: block;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 32px;
+    background: ${props => props.active ? logoColorLeft : 'transparent'};
+    color: ${props => props.active ? darkGrey : 'rgba(255,255,255,0.8)'};
+
+    &:hover {
+        color: #fff;
+    }
+`
+
+export const MobileSocialBar = styled.div`
+    ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding: 0 32px;
     }
 `

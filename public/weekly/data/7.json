@@ -1,1 +1,77 @@
-{"id":"7","date":"January 08, 2020","description":"Oh Shit, Git!?!, Colorsinspo, Parcel, Redux Style Guite, Bot Land, Rhubarb and more...","previewImage":"weekly/7_jWievUsU94.jpg","items":[{"title":"Oh Shit Git!?!","description":"It's easy to screw up using Git. This website helps you figuring out how to fix your mistakes.","link":"https://ohshitgit.com/","image":"/weekly/screenshots/ohshitgit.jpg"},{"title":"Colorsinspo","description":"A cool website around colors - including palettes, tools, gradients, inspiration, tutorials and more.","link":"https://colorsinspo.com/","image":"https://colorsinspo.com/resources/img/twitter/colorsinspo-twitter-sumary-image.png"},{"title":"Parcel","description":"A faster alternative to webpack for web application bundling.","link":"https://parceljs.org/","image":"https://user-images.githubusercontent.com/19409/31321658-f6aed0f2-ac3d-11e7-8100-1587e676e0ec.png"},{"title":"Redux Style Guide","description":"The new list of recommended patterns, best practices, and suggested approaches for writing Redux applications.","link":"https://redux.js.org/style-guide/style-guide/","image":"https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png"},{"title":"Beautiful React Hooks","description":"A collection of React Hooks to speed-up the development.","link":"https://github.com/antonioru/beautiful-react-hooks","image":"https://raw.githubusercontent.com/antonioru/beautiful-react-hooks/master/usage_example.png"},{"title":"Bot Land","description":"A fun online strategy game, where you have to build and programm your own bot.","link":"https://bot.land/","image":"https://bot.land/dist/logo.png"},{"title":"Rhubarb","description":"A lightweight WebSocket library optimized for multiplayer JS games, which works on WebWorkers with binary data.","link":"https://github.com/oguzeroglu/Rhubarb","image":"https://raw.githubusercontent.com/oguzeroglu/Rhubarb/master/rhubarb.gif"},{"title":"DarkModeDesign","description":"A list of resources for designing and building dark mode experiences.","link":"https://darkmodedesign.xyz","image":"/weekly/screenshots/darkmodedesign.jpg"},{"title":"astuto","description":"An open source customer feedback tool, helping to collect, manage and prioritize feedback from users.","link":"https://github.com/riggraz/astuto","image":"https://raw.githubusercontent.com/riggraz/astuto/master/images/logo-and-name.png"}]}
+{
+  "items": [
+    {
+      "title": "Oh Shit Git!?!",
+      "description": "It's easy to screw up using Git. This website helps you figuring out how to fix your mistakes.",
+      "link": "https://ohshitgit.com/",
+      "image": "/weekly/screenshots/ohshitgit.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Colorsinspo",
+      "description": "A cool website around colors - including palettes, tools, gradients, inspiration, tutorials and more.",
+      "link": "https://colorsinspo.com/",
+      "image": "https://colorsinspo.com/resources/img/twitter/colorsinspo-twitter-sumary-image.png",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Parcel",
+      "description": "A faster alternative to webpack for web application bundling.",
+      "link": "https://parceljs.org/",
+      "image": "https://user-images.githubusercontent.com/19409/31321658-f6aed0f2-ac3d-11e7-8100-1587e676e0ec.png",
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Redux Style Guide",
+      "description": "The new list of recommended patterns, best practices, and suggested approaches for writing Redux applications.",
+      "link": "https://redux.js.org/style-guide/style-guide/",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "title": "Bot Land",
+      "description": "A fun online strategy game, where you have to build and programm your own bot.",
+      "link": "https://bot.land/",
+      "image": "https://bot.land/dist/logo.png",
+      "tags": [
+        "Other"
+      ]
+    },
+    {
+      "title": "Rhubarb",
+      "description": "A lightweight WebSocket library optimized for multiplayer JS games, which works on WebWorkers with binary data.",
+      "link": "https://github.com/oguzeroglu/Rhubarb",
+      "image": "https://raw.githubusercontent.com/oguzeroglu/Rhubarb/master/rhubarb.gif",
+      "tags": [
+        "Library",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "DarkModeDesign",
+      "description": "A list of resources for designing and building dark mode experiences.",
+      "link": "https://darkmodedesign.xyz",
+      "image": "/weekly/screenshots/darkmodedesign.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "astuto",
+      "description": "An open source customer feedback tool, helping to collect, manage and prioritize feedback from users.",
+      "link": "https://github.com/riggraz/astuto",
+      "image": "https://raw.githubusercontent.com/riggraz/astuto/master/images/logo-and-name.png",
+      "tags": [
+        "Tool"
+      ]
+    }
+  ]
+}

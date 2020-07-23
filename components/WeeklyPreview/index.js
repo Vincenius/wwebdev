@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import LazyLoad from 'react-lazy-load'
 import ArrowRight from '@material-ui/icons/ArrowRightAlt'
@@ -14,6 +14,7 @@ const ArticlePreview = ({
     const d = new Date(date)
     const headline = `Weekly #${number}`
     const link = `/weekly/${number}`
+    const [imageLoaded, setImageLoaded] = useState(false)
 
     return (
         <S.Container>
@@ -25,7 +26,8 @@ const ArticlePreview = ({
             </header>
             <Link href="/weekly/[slug]" href={link}><a>
                 <ui.Screenreader>{headline}</ui.Screenreader>
-                <LazyLoad offsetVertical={1000}>
+                { !imageLoaded && <S.ImageSkeleton variant="rect" /> }
+                <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
                     <S.Image
                         sizes={
                             `(max-width: 320px) 320px,
@@ -47,9 +49,9 @@ const ArticlePreview = ({
                 </LazyLoad>
             </a></Link>
             <p>{description}</p>
-            <Link href="/weekly/[slug]" as={link}><S.ReadMore >
+            <Link href="/weekly/[slug]" as={link}><a><S.ReadMore>
                 Open Weekly <ArrowRight width="1em" height="1em" />
-            </S.ReadMore></Link>
+            </S.ReadMore></a></Link>
         </S.Container>
     )
 }

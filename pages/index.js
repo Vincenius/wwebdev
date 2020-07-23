@@ -1,13 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
 import * as ui from '../ui'
-import { Layout, SubscribeForm } from '../components'
+import Layout from '../components/Layout'
+import SubscribeForm from '../components/SubscribeForm'
 import { generateWeekly, generateArticleAndResources } from '../content/generator'
 
 const Home = () => (
   <Layout
     title="News, Resources and Articles about Web-Development"
-    description="Stay up to date with weekly updates, get resources for next project and read articles and tutorials about web development."
+    description="Stay up to date with weekly updates, get resources for your next projects abd read articles and tutorials about web development."
     titleNameFirst={true}
   >
     <ui.Container>

@@ -1,7 +1,9 @@
 import styled from 'styled-components'
+import Skeleton from '@material-ui/lab/Skeleton'
 import { lightGrey, darkGrey, lightBlue, greyBlue } from '../../ui/constants'
 
 export const Container = styled.article`
+    position: relative;
     border-bottom: 1px solid ${lightGrey};
     margin-bottom: 1.6rem;
     padding-bottom: 1.6rem;
@@ -13,6 +15,10 @@ export const Container = styled.article`
     }
 `
 export const Image = styled.img`
+    width: 100%;
+`
+export const ImageSkeleton = styled(Skeleton)`
+    padding-top: 63.125%;
     width: 100%;
 `
 export const Time = styled.time`
@@ -37,14 +43,19 @@ export const Headline = styled.h3`
         }
     }
 `
-export const ReadMore = styled.a`
+export const ReadMore = styled.span`
     display: inline-flex;
     align-items: center;
     line-height: 1;
+    font-size: .77248rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: ${lightBlue};
 
     &:hover {
-        color: ${lightBlue};
-        text-decoration: none;
+        color: ${darkGrey};
+        text-decoration: underline;
         cursor: pointer;
     }
 `
