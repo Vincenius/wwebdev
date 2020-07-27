@@ -6,7 +6,7 @@ import CodeBlock from '../../components/CodeBlock'
 import Layout from '../../components/Layout'
 import meta from '../../content/resources'
 
-const postId = 8
+const postId = 10
 const postMeta = meta.find(m => m.id === postId)
 
 const HeadlineContainer = styled.div`
@@ -44,10 +44,10 @@ const definePropExample = `Object.defineProperty({ a: 1, b: 2 }, 'a', {
   writable: true
 }); // { a: 3, b: 2 }`
 
-const freezeExample = `const obj = { a: 1 };
-Object.freeze(obj);
-obj.prop = 2; // error in strict mode
-console.log(obj.prop); // 1`
+const freezeExample = `const obj = { a: 1 }
+Object.freeze(obj)
+obj.prop = 2 // error in strict mode
+console.log(obj.prop) // 1`
 
 const getOwnPropertyDescriptorExample = `const obj = { a: 1 }
 Object.getOwnPropertyDescriptor(obj, 'a') // { value: 1, writable: true, enumerable: true, configurable: true }`
@@ -104,17 +104,16 @@ obj.propertyIsEnumerable('a') // true
 arr.propertyIsEnumerable(0) // true
 arr.propertyIsEnumerable('length') // false`
 
-const toLocaleStringExample = `const d = new Date()
-d.toLocaleString() // "7/24/2020, 8:45:13 AM"
-const n = 12345.67
-n.toLocaleString('DE-de') // "12.345,67"`
-
 const toStringExample = `const obj = {}
 obj.toString() // "[object Object]"
 const arr = ['a', 'b']
 arr.toString() // "a,b"`
 
-const valueOfExample = 'TODO'
+const sealExample = `const obj = { a: 1 }
+Object.seal(obj)
+obj.a = 2 // { a: 2 }
+obj.b = 3 // error in strict mode
+delete obj.a // error in strict mode`
 
 const ObjFunctionElem = ({ name, amount, link, desc, example, syntax, mdnLink }) =>
   <React.Fragment>
@@ -129,7 +128,6 @@ const ObjFunctionElem = ({ name, amount, link, desc, example, syntax, mdnLink })
     <CodeBlock language="javascript" value={example} label="example" />
     <CodeBlock language="javascript" value={syntax} label="syntax" />
   </React.Fragment>
-
 
 const Post = () => (
     <Layout
@@ -311,14 +309,6 @@ const Post = () => (
           />
 
           <ObjFunctionElem
-            name="Object.prototype.toLocaleString()"
-            mdnLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toLocaleString"
-            desc="returns a string representing the object"
-            syntax="obj.toLocaleString()"
-            example={toLocaleStringExample}
-          />
-
-          <ObjFunctionElem
             name="Object.prototype.toString()"
             mdnLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString"
             desc="returns a string representing the object"
@@ -327,11 +317,19 @@ const Post = () => (
           />
 
           <ObjFunctionElem
-            name="Object.prototype.valueOf()"
-            mdnLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/valueOf"
-            desc="returns the primitive value of the specified object"
-            syntax="object.valueOf()"
-            example={valueOfExample}
+            name="Object.seal()"
+            mdnLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal"
+            desc="prevents new properties from being added and marks all existing properties as non-configurable"
+            syntax="Object.seal(obj)"
+            example={sealExample}
+          />
+
+          <ObjFunctionElem
+            name="Object.values()"
+            mdnLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values"
+            desc="returns array of object's own enumerable property values"
+            syntax="Object.values(obj)"
+            example={`Object.values({ a: 1, b: 'a'}) // [ 1, "a" ]`}
           />
         </ui.ArticleContainer>
       </Layout>
