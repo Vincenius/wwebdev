@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '36',
+        date: 'July 29, 2020',
+        description: "useHooks, Differences Between SSG And SSR, Warp SVG Online, Rows n' Columns and more...",
+        previewImage: 'weekly/36_YgGZG6Ia8Pg.png',
+    },
+    {
         id: '35',
         date: 'July 22, 2020',
         description: "this vs that, Super Expressive, CSS Effects Snippets, The WET Codebase and more...",

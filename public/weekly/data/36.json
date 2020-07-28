@@ -1,0 +1,107 @@
+{
+  "items": [
+    {
+      "title": "useHooks",
+      "description": "A list of aasy to understand React Hooks.",
+      "link": "https://usehooks.com/",
+      "image": "https://usehooks.com/static/og-image-2-831e08abba54e27c3949847790422bec.png",
+      "tags": [
+        "Resource",
+        "React"
+      ]
+    },
+    {
+      "title": "Differences Between Static Generated Sites And Server-Side Rendered Apps",
+      "description": "A nice article by Timi Omoyeni about the differences between SSR and SSG.",
+      "link": "https://www.smashingmagazine.com/2020/07/differences-static-generated-sites-server-side-rendered-apps/",
+      "image": "https://cloud.netlifyusercontent.com/assets/344dbf88-fdf9-42bb-adb4-46f01eedd629/3f6d94e9-5c75-438c-9016-b5d33ffd4a1e/differences-static-generated-sites-server-side-rendered-apps.png",
+      "tags": [
+        "JavaScript",
+        "Article"
+      ]
+    },
+    {
+      "title": "Warp SVG Online",
+      "description": "A simple online tool that allows you to warp, bend, and distort SVG files.",
+      "link": "https://pavellaptev.github.io/warp-svg/",
+      "image": "https://raw.githubusercontent.com/PavelLaptev/warp-svg/master/src/images/web-preview.jpg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Rows n' Columns",
+      "description": "An Excel-like DataGrid component for React. Built for high performance rendering similar to google sheets.",
+      "link": "https://rowsncolumns.app/",
+      "image": "/weekly/screenshots/rows-n-columns.jpg",
+      "tags": [
+        "React",
+        "Library"
+      ]
+    },
+    {
+      "title": "First Contrib",
+      "description": "A search for issues to contribute to. It makes it easy to get involved in Open-Source.",
+      "link": "https://firstcontrib.herokuapp.com/",
+      "image": "/weekly/screenshots/first-contrib.jpg",
+      "tags": [
+        "Other"
+      ]
+    },
+    {
+      "title": "A CSS-only, animated, wrapping underline.",
+      "description": "A tutorial by Nicky Meuleman on creating an animated underline.",
+      "link": "https://nickymeuleman.netlify.app/blog/css-animated-wrapping-underline",
+      "image": "https://nickymeuleman.netlify.app/static/49469c00e91dbb59f07efd2f25b7a571/7c22d/cover.webp",
+      "tags": [
+        "Article",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Bar chart race generator",
+      "description": "A fun generator for bar chart races based on CSV data.",
+      "link": "https://fabdevgit.github.io/barchartrace/",
+      "image": "https://fabdevgit.github.io/barchartrace/css/demo.png",
+      "tags": [
+        "Generator"
+      ]
+    },
+    {
+      "title": "Building a self-updating profile README for GitHub",
+      "description": "An article by Simon Willison on automating GitHub your GitHub profile README",
+      "link": "https://simonwillison.net/2020/Jul/10/self-updating-profile-readme/",
+      "image": "https://static.simonwillison.net/static/2020/simonw-github.png",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Build JavaScript applications with Node.js",
+      "description": "A course about building Node.js apps by Microsoft.",
+      "link": "https://docs.microsoft.com/en-gb/learn/paths/build-javascript-applications-nodejs/",
+      "image": "https://docs.microsoft.com/learn/achievements/build-javascript-applications-nodejs-social.png",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Invert, always, invert",
+      "description": "Not strictly programming related, but an interesting article about the mental modal around inverting.",
+      "link": "https://www.anup.io/2020/07/20/invert-always-invert/",
+      "image": "https://www.anup.io/content/images/size/w2000/2020/07/nine-kopfer-tJC6I9S3nBw-unsplash.jpg",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "emoji-picker-element",
+      "description": "A lightweight emoji picker, distributed as a web component.",
+      "link": "https://github.com/nolanlawson/emoji-picker-element",
+      "image": "https://camo.githubusercontent.com/fd4769e9ac24747f4aba0575e9879f0a65b6a941/68747470733a2f2f6e6f6c616e776c6177736f6e2e66696c65732e776f726470726573732e636f6d2f323032302f30362f6f75742e706e67",
+      "tags": [
+        "Library"
+      ]
+    }
+  ]
+}
