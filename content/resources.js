@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 10,
+        type: 'Resource',
+        date: 'July 27, 2020',
+        headline: "JavaScript Object Functions Cheat Sheet",
+        description: "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax, an example, and the browser support.",
+        link: "/resources/js-object-functions-cheatsheet",
+        previewImage: "resources/js-object-cheatsheet-preview_urYtz7hxD8d.png",
+    },
+    {
         id: 9,
         type: 'Resource',
         date: 'July 13, 2020',
@@ -12,10 +21,10 @@ const data = [
         id: 8,
         type: 'Resource',
         date: 'May 21, 2020',
-        headline: "JavaScript Array Functions CheatSheet",
-        description: "A CheatSheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.",
+        headline: "JavaScript Array Functions Cheat Sheet",
+        description: "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.",
         link: "/resources/js-array-functions-cheatsheet",
-        previewImage: "resources/js-array-cheatsheet_hkOub1T9s.png",
+        previewImage: "resources/js-array-cheatsheet-preview_vpuXKzM9s.png",
     },
     {
         id: 7,
