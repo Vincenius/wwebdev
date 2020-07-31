@@ -4,7 +4,7 @@ const data = [
         type: 'Resource',
         date: 'July 31, 2020',
         headline: "JavaScript Object Functions Cheat Sheet",
-        description: "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax, an example, and the browser support.",
+        description: "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.",
         link: "/resources/js-object-functions-cheatsheet",
         previewImage: "resources/js-object-cheatsheet-preview_urYtz7hxD8d.png",
     },
