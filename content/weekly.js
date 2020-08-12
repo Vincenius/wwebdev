@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '38',
+        date: 'August 12, 2020',
+        description: "Bumbag, Magnetic Buttons, moment-guess, PurgeCSS, content-visibility, Papercups and more...",
+        previewImage: 'weekly/38_Bgtd4VvbQk.png',
+    },
+    {
         id: '37',
         date: 'August 05, 2020',
         description: "Shoelace, CSS3 loaders, tinykeys, useImageColor, Laws of UX, Teenyicons and more...",
