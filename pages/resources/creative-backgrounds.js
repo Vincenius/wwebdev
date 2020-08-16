@@ -83,6 +83,12 @@ const Post = () => (
                 image="/resources/creative-backgrounds/css3-pattern-gallery.jpg"
             />
             <LinkBox
+                title="Triangle Pattern Maker"
+                description="A cool generator for triangle patterns with light effects."
+                link="https://msurguy.github.io/triangles/"
+                image="/resources/creative-backgrounds/triangle-pattern-maker.jpg"
+            />
+            <LinkBox
                 title="particles.js"
                 description="A lightweight JavaScript library for a particles background."
                 link="https://vincentgarreau.com/particles.js/"
