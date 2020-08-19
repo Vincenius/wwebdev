@@ -40,7 +40,7 @@
     },
     {
       "title": "Kor",
-      "description": "An open source Design System and lightweight UI Component Library.",
+      "description": "An open-source Design System and lightweight UI Component Library.",
       "link": "https://kor-ui.com/introduction/welcome",
       "image": "/weekly/screenshots/kor.jpg",
       "tags": [
@@ -49,7 +49,7 @@
     },
     {
       "title": "Docusaurus",
-      "description": "A project for building, deploying, and maintaining open source project websites easily.",
+      "description": "A project for building, deploying and maintaining open source project websites easily.",
       "link": "https://github.com/facebook/docusaurus",
       "image": "https://camo.githubusercontent.com/a6f668c84f6487fbc1a860626b3fc83a93c7481f/68747470733a2f2f646f63757361757275732e696f2f696d672f736c6173682d696e74726f647563696e672e737667",
       "tags": [
@@ -58,7 +58,7 @@
     },
     {
       "title": "Embla Carousel",
-      "description": "A library agnostic, dependency free carousel library with good swipe precision.",
+      "description": "A library agnostic, dependency-free carousel library with good swipe precision.",
       "link": "https://davidcetinkaya.github.io/embla-carousel/",
       "image": "/weekly/screenshots/embla-carousel.jpg",
       "tags": [
