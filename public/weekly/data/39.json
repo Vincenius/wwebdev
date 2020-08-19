@@ -1,0 +1,125 @@
+{
+  "items": [
+    {
+      "title": "Elder.js",
+      "description": "A Svelte Framework & Static Site Generator with focus on SEO.",
+      "link": "https://elderguide.com/tech/elderjs/",
+      "image": "/weekly/screenshots/elderjs.jpg",
+      "tags": [
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Responsively",
+      "description": "An app to preview all target screens in a single window side-by-side.",
+      "link": "https://responsively.app/",
+      "image": "https://responsively.app/assets/img/screenshot.png",
+      "tags": [
+        "CSS",
+        "Tool"
+      ]
+    },
+    {
+      "title": "Storybook 6.0",
+      "description": "The release notes for the new version of Storybook.",
+      "link": "https://medium.com/storybookjs/storybook-6-0-1e14a2071000",
+      "image": "https://miro.medium.com/max/1400/1*KdnVhd40uekdWYtaIsrOpg.gif",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "zustand",
+      "description": "A small and fast and bearbones state-management solution.",
+      "link": "https://github.com/react-spring/zustand",
+      "image": "/weekly/screenshots/zustand.jpg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    },
+    {
+      "title": "Kor",
+      "description": "An open source Design System and lightweight UI Component Library.",
+      "link": "https://kor-ui.com/introduction/welcome",
+      "image": "/weekly/screenshots/kor.jpg",
+      "tags": [
+        "Library"
+      ]
+    },
+    {
+      "title": "Docusaurus",
+      "description": "A project for building, deploying, and maintaining open source project websites easily.",
+      "link": "https://github.com/facebook/docusaurus",
+      "image": "https://camo.githubusercontent.com/a6f668c84f6487fbc1a860626b3fc83a93c7481f/68747470733a2f2f646f63757361757275732e696f2f696d672f736c6173682d696e74726f647563696e672e737667",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Embla Carousel",
+      "description": "A library agnostic, dependency free carousel library with good swipe precision.",
+      "link": "https://davidcetinkaya.github.io/embla-carousel/",
+      "image": "/weekly/screenshots/embla-carousel.jpg",
+      "tags": [
+        "Library"
+      ]
+    },
+    {
+      "title": "Enhancing User Experience With CSS Animations",
+      "description": "A nice article by Stephanie Walter about implementing decent CSS Animations.",
+      "link": "https://stephaniewalter.design/blog/enhancing-user-experience-with-css-animations",
+      "image": "https://stephaniewalter.design/wp-content/uploads/2020/08/enhance-user-experience-css-animations-@2x.jpg",
+      "tags": [
+        "Tool",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Aeon",
+      "description": "A lightweight date time picker built with web components that can be used anywhere.",
+      "link": "https://github.com/lamplightdev/aeon",
+      "image": "/weekly/screenshots/aeon.jpg",
+      "tags": [
+        "Library"
+      ]
+    },
+    {
+      "title": "How I Structure My CSS (for Now)",
+      "description": "Matthias Ott writes about his methodologies for structuring CSS.",
+      "link": "https://matthiasott.com/notes/how-i-structure-my-css",
+      "image": "/weekly/screenshots/how-structure-css.jpg",
+      "tags": [
+        "Article",
+        "CSS"
+      ]
+    },
+    {
+      "title": "linkinator",
+      "description": "An API and CLI for crawling websites and validating links.",
+      "link": "https://github.com/JustinBeckwith/linkinator",
+      "image": "/weekly/screenshots/linkinator.jpg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Supercharging <input type=number>",
+      "description": "Kilian Valkhof writes about how to build a better input type=number.",
+      "link": "https://kilianvalkhof.com/2020/javascript/supercharging-input-type-number/",
+      "image": "/weekly/screenshots/supercharging-number.jpg",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Lite YouTube Embed",
+      "description": "A custom element, that renders youtube embeds approximately 224x faster.",
+      "link": "https://github.com/paulirish/lite-youtube-embed",
+      "image": "/weekly/screenshots/lite-youtube-embed.jpg",
+      "tags": [
+        "Library"
+      ]
+    }
+  ]
+}

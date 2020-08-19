@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '39',
+        date: 'August 19, 2020',
+        description: "Elder.js, Responsively, Storybook 6.0, zustand, Kor, Docusaurus, Embla Carousel and more...",
+        previewImage: 'weekly/39_yclY9FNWMWFT.png',
+    },
+    {
         id: '38',
         date: 'August 12, 2020',
         description: "Bumbag, Magnetic Buttons, moment-guess, PurgeCSS, content-visibility, Papercups and more...",
