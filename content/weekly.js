@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '40',
+        date: 'August 26, 2020',
+        description: "umami, Deviceful, heroicons, handwritten.js, GitDuck, The Animated Web and more...",
+        previewImage: 'weekly/40_mNfRsV1ZX.png',
+    },
+    {
         id: '39',
         date: 'August 19, 2020',
         description: "Elder.js, Responsively, Storybook 6.0, zustand, Kor, Docusaurus, Embla Carousel and more...",
