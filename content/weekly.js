@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '41',
+        date: 'September 9, 2020',
+        description: "Shortcuts.design, Omatsuri, ztext.js, Previewed, Morphing SVG, Selecto.js and more...",
+        previewImage: 'weekly/41_mvXr14kwS.png',
+    },
+    {
         id: '40',
         date: 'August 26, 2020',
         description: "umami, Deviceful, heroicons, handwritten.js, GitDuck, The Animated Web and more...",
