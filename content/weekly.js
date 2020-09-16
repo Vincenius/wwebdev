@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '42',
+        date: 'September 16, 2020',
+        description: "lookup.design, Capsule, Stitches, Beyond Media Queries, Vanilla Colorful and more...",
+        previewImage: 'weekly/42_BU72AiDGUqQ.png',
+    },
+    {
         id: '41',
         date: 'September 9, 2020',
         description: "Shortcuts.design, Omatsuri, ztext.js, Previewed, Morphing SVG, Selecto.js and more...",
