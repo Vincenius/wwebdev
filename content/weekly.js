@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '43',
+        date: 'September 23, 2020',
+        description: "How HTTPS Works, GitHub CLI 1.0, Domains for the Rest of Us, content-visibility and more...",
+        previewImage: 'weekly/43_9hR5fi7POY.png',
+    },
+    {
         id: '42',
         date: 'September 16, 2020',
         description: "lookup.design, Capsule, Stitches, Beyond Media Queries, Vanilla Colorful and more...",
