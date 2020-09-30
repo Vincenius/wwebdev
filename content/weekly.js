@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '44',
+        date: 'September 30, 2020',
+        description: "Box-Shadow Generator, Check Browsers Support, Learn Git Branching, Headless UI and more...",
+        previewImage: 'weekly/44_wAgruZyhEbk.png',
+    },
+    {
         id: '43',
         date: 'September 23, 2020',
         description: "How HTTPS Works, GitHub CLI 1.0, Domains for the Rest of Us, content-visibility and more...",
