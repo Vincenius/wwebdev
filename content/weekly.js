@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '45',
+        date: 'October 07, 2020',
+        description: "IconPark, CSS Grid Layout, visx, a11yresources, CSS font-size-adjust and more...",
+        previewImage: 'weekly/45_jkPZXPkYZXT.png',
+    },
+    {
         id: '44',
         date: 'September 30, 2020',
         description: "Box-Shadow Generator, Check Browsers Support, Learn Git Branching, Headless UI and more...",
