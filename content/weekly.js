@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '46',
+        date: 'October 14, 2020',
+        description: "hola svg, Design Resources, JavaScript Iterators, vime, clamp, Phelia and more...",
+        previewImage: 'weekly/46_yRejOfy5w.png',
+    },
+    {
         id: '45',
         date: 'October 07, 2020',
         description: "IconPark, CSS Grid Layout, visx, a11yresources, CSS font-size-adjust and more...",
