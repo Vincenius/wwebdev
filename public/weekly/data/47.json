@@ -1,0 +1,129 @@
+{
+  "items": [
+    {
+      "title": "ScreenBean",
+      "description": "A tool to add colorful backgrounds to screenshots.",
+      "link": "https://www.screenbean.brunnerliv.io/",
+      "image": "/weekly/screenshots/screenbean.jpg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Coded Mails",
+      "description": "A list of free responsive HTML email templates.",
+      "link": "https://codedmails.com/",
+      "image": "https://codedmails.com/images/banner-codedemails.png",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "CSS Background Patterns",
+      "description": "A bunch of cool pure CSS background patterns.",
+      "link": "https://www.magicpattern.design/tools/css-backgrounds/",
+      "image": "https://storage.googleapis.com/brandflow-bucket/magipattern/css-backgrounds.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "dragmove.js",
+      "description": "A tiny Javascript library to make DOM elements draggable and movable.",
+      "link": "https://github.com/knadh/dragmove.js",
+      "image": "/weekly/screenshots/dragmove.jpg",
+      "tags": [
+        "Library",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "How to Recreate the Ripple Effect of Material Design Buttons",
+      "description": "Learn to make the ripple effect of Material Design's button component.",
+      "link": "https://css-tricks.com/how-to-recreate-the-ripple-effect-of-material-design-buttons/",
+      "image": "https://i2.wp.com/css-tricks.com/wp-content/uploads/2020/10/unsplash-alihartmann-ripples.png?fit=1200%2C600&ssl=1",
+      "tags": [
+        "Article",
+        "CSS",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "cssbuttons",
+      "description": "A Collection of HTML and CSS Buttons",
+      "link": "https://cssbuttons.vercel.app/",
+      "image": "https://raw.githubusercontent.com/r1/cssbuttons/master/img/main.png",
+      "tags": [
+        "CSS",
+        "Resource"
+      ]
+    },
+    {
+      "title": "handwritten.js",
+      "description": "A JavaScript library to convert typed text to realistic handwriting.",
+      "link": "https://github.com/alias-rahil/handwritten.js",
+      "image": "https://raw.githubusercontent.com/alias-rahil/handwritten.js/master/screenshots/lorem-ipsum.jpeg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    },
+    {
+      "title": "Preload late-discovered Hero images faster",
+      "description": "A nice article on how preloading your images can boost your image display speed.",
+      "link": "https://addyosmani.com/blog/preload-hero-images/",
+      "image": "https://addyosmani.com/assets/images/preload-late-images.jpg",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "thefuck",
+      "description": "A CLI tool that corrects errors in previous console commands.",
+      "link": "https://github.com/nvbn/thefuck",
+      "image": "/weekly/screenshots/thefuck.jpg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Yogurt CSS",
+      "description": "A CSS framework for user interfaces at an atomic level without writing CSS.",
+      "link": "https://yogurtcss.netlify.app/",
+      "image": "https://yogurtcss.netlify.app/images/meta/yogurt-twitter-profile-bg.png",
+      "tags": [
+        "CSS"
+      ]
+    }
+    ,
+    {
+      "title": "smooth DOC",
+      "description": "A ready to use documentation theme for Gatsby.",
+      "link": "https://github.com/gregberge/smooth-doc",
+      "image": "https://master--smooth-doc.netlify.app/static/05c784adb666cbd4f9c30f9d52d0f564/f2866/social.jpg",
+      "tags": [
+        "Resource"
+      ]
+    }
+    ,
+    {
+      "title": "Butter Slider",
+      "description": "A lightweight vanilla JS drag and hold slider made for easy setup.",
+      "link": "https://github.com/armandsalle/butter-slider",
+      "image": "/weekly/screenshots/butter-slider.jpg",
+      "tags": [
+        "JavaScript"
+      ]
+    }
+    ,
+    {
+      "title": "TALKR",
+      "description": "A super small i18n provider for React applications.",
+      "link": "https://www.npmjs.com/package/talkr",
+      "image": "/weekly/screenshots/talkr.jpg",
+      "tags": [
+        "React"
+      ]
+    }
+  ]
+}

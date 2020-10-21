@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '47',
+        date: 'October 21, 2020',
+        description: "ScreenBean, Coded Mails, CSS Background Patterns, dragmove.js, cssbuttons and more...",
+        previewImage: 'weekly/47_MKi6jzo-ArOx.png',
+    },
+    {
         id: '46',
         date: 'October 14, 2020',
         description: "hola svg, Design Resources, JavaScript Iterators, vime, clamp, Phelia and more...",
