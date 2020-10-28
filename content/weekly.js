@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '48',
+        date: 'October 28, 2020',
+        description: "Phosphor Icons, SVG Favicon Maker, State Of CSS 2020, Checka11y.css and more...",
+        previewImage: 'weekly/48_py2zHCdiwg-.png',
+    },
+    {
         id: '47',
         date: 'October 21, 2020',
         description: "ScreenBean, Coded Mails, CSS Background Patterns, dragmove.js, cssbuttons and more...",
