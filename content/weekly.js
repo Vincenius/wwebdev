@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '49',
+        date: 'November 4, 2020',
+        description: "Next.js 10, Placeholder Logos, link-to-qr, React Flow, Merlin and more...",
+        previewImage: 'weekly/49_KzsNc-7Vnf.png',
+    },
+    {
         id: '48',
         date: 'October 28, 2020',
         description: "Phosphor Icons, SVG Favicon Maker, State Of CSS 2020, Checka11y.css and more...",
