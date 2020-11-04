@@ -23,7 +23,7 @@ const Post = () => (
         <ui.GridContainer>
             <LinkBox
                 title="Hola SVG"
-                description="A set of SVG icons, where you can customize the stroke width, the colors and more."
+                description="A set of SVG icons, where you can customize the stroke width, the colors, and more."
                 link="https://holasvg.com/icons/"
                 image="/resources/free-icon-sets/holasvg.jpg"
             />
@@ -65,14 +65,14 @@ const Post = () => (
 
             <LinkBox
                 title="CSS.gg"
-                description="700 Open-source CSS, SVG and Figma UI Icons."
+                description="700 Open-source CSS, SVG, and Figma UI Icons."
                 link="https://css.gg/"
                 image="/resources/free-icon-sets/cssgg.jpg"
             />
 
             <LinkBox
                 title="CoreUI Icons"
-                description="Free icon set with marks in SVG, Webfont and raster formats."
+                description="Free icon set with marks in SVG, Webfont, and raster formats."
                 link="https://icons.coreui.io/icons/"
                 image="/resources/free-icon-sets/coreuiicons.jpg"
             />
@@ -121,14 +121,14 @@ const Post = () => (
 
             <LinkBox
                 title="Ikonate"
-                description="An adaptable set of optimised, customizable, accessible SVG icons Ready to use as images, inline SVGs or SVG sprites."
+                description="An adaptable set of optimized, customizable, accessible SVG icons Ready to use as images, inline SVGs, or SVG sprites."
                 link="https://ikonate.com/"
                 image="/resources/free-icon-sets/ikonate.jpg"
             />
 
             <LinkBox
                 title="Feather"
-                description="A collection of open source icons, with an emphasis on simplicity, consistency and readability."
+                description="A collection of open source icons, with an emphasis on simplicity, consistency, and readability."
                 link="https://feathericons.com/"
                 image="/resources/free-icon-sets/feather.jpg"
             />
