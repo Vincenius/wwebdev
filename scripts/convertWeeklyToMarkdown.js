@@ -24,4 +24,8 @@ ______
 
 To see all the weeklies check: [wweb.dev/weekly](https://wweb.dev/weekly)`
 
-console.log(markDown)
+// only osx??
+var proc = require('child_process').spawn('pbcopy');
+proc.stdin.write(markDown); proc.stdin.end();
+
+console.log('copied')
