@@ -16,7 +16,7 @@ const RelatedArticle = ({ id, type }) => {
             <hr />
             <h3>Related Article</h3>
             <S.Container>
-                <S.Image src={`https://ik.imagekit.io/wwebdev/${previewImage}`} alt={headline} />
+                <S.PreviewImage src={previewImage} alt={headline} unsized />
                 <S.Content>
                     <h3>
                         <a href={link}>

@@ -70,7 +70,7 @@ const getImagesAndUpdate = async () => {
                         }
                     }).on('error', (e) => {
                         console.error('E2', e, imageLink);
-                    });;
+                    });
                     // DOWNLOAD
                 } catch(e) {
                     console.log('ERROR:', e)

@@ -19,23 +19,20 @@ const getImagesAndUpdate = async () => {
         }
 
         for (const weeklyItem of data.items) {
-            if (weeklyItem.image.startsWith('https://wwebdev-images.s3.')) {
-                urlExists(weeklyItem.image, function(err, exists) {
-                    if (!exists) {
-                        count++
-                        // console.log()
+            urlExists(weeklyItem.image, function(err, exists) {
+                if (!exists) {
+                    // console.log()
 
-                        // weeklyItem.image = weeklyItem.image.replace('wwebdev-images.s3.eu-central-1.amazonaws.com', 'wwebdev-images.s3.amazonaws.com')
+                    // weeklyItem.image = weeklyItem.image.replace('wwebdev-images.s3.eu-central-1.amazonaws.com', 'wwebdev-images.s3.amazonaws.com')
 
-                        // UPDATE JSON
-                        // const jsonData = JSON.stringify(data)
-                        // fs.writeFileSync(`../public/weekly/data/${id}.json`, jsonData);
-                        console.log(exists, weeklyItem.image)
-                    } else {
-                        // console.log(exists, weeklyItem.image)
-                    }
-                });
-            }
+                    // UPDATE JSON
+                    // const jsonData = JSON.stringify(data)
+                    // fs.writeFileSync(`../public/weekly/data/${id}.json`, jsonData);
+
+                    const oldData = JSON.parse(fs.readFileSync(`../public/weekly/data_old/${id}.json`, 'utf8'))
+                    console.log(oldData.items.find(i => i.title === weeklyItem.title).image, weeklyItem.image)
+                }
+            });
         }
     }
 }
