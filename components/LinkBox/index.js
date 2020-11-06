@@ -4,8 +4,6 @@ import ArrowRight from '@material-ui/icons/ArrowRightAlt'
 import * as S from './styled'
 
 function LinkBox({ title, description, image, link, selfPromoted }) {
-    const [imageLoaded, setImageLoaded] = useState(false)
-
     return <S.Container>
         { selfPromoted && <div>
             <S.PromoBg></S.PromoBg>
