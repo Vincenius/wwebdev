@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Image from 'next/image'
+import Skeleton from '@material-ui/lab/Skeleton'
 import { lightGrey, darkGrey, lightBlue, greyBlue } from '../../ui/constants'
 
 export const Container = styled.article`
@@ -14,7 +14,11 @@ export const Container = styled.article`
         align-items: flex-end;
     }
 `
-export const PreviewImage = styled(Image)`
+export const Image = styled.img`
+    width: 100%;
+`
+export const ImageSkeleton = styled(Skeleton)`
+    padding-top: 63.125%;
     width: 100%;
 `
 export const Time = styled.time`

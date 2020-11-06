@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
-import Image from 'next/image'
+import LazyLoad from 'react-lazy-load'
 import ArrowRight from '@material-ui/icons/ArrowRightAlt'
+import Skeleton from '@material-ui/lab/Skeleton'
 import * as S from './styled'
 
 function LinkBox({ title, description, image, link, selfPromoted }) {
@@ -14,7 +15,10 @@ function LinkBox({ title, description, image, link, selfPromoted }) {
         <S.Content>
             <div>
                 { image && <a href={link} target="_blank" rel="noopener">
-                    <Image src={image} alt={title} unsized />
+                    { !imageLoaded && <Skeleton variant="rect" height={203} /> }
+                    <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
+                        <img src={image} alt={title} />
+                    </LazyLoad>
                 </a> }
                 <S.Description>
                     <a href={link} target="_blank" rel="noopener">
