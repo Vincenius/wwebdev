@@ -21,7 +21,7 @@ class MyHead extends React.Component {
             ? `wweb.dev | ${title}`
             : `${title} | wweb.dev`
         const imageLink = isArticle
-            ? localImage ? `https://wweb.dev${image}` : `https://ik.imagekit.io/wwebdev/${image}`
+            ? localImage ? `https://wweb.dev${image}` : image
             : 'https://wweb.dev/share.png'
 
         const structuredData = `

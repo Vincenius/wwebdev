@@ -43,7 +43,10 @@ const settings = withBundleAnalyzer(withCSS({
         })
         config.plugins.push()
         return config
-    }
+    },
+    images: {
+        domains: ['wwebdev-images.s3.eu-central-1.amazonaws.com'],
+    },
 }))
 
 module.exports = process.env.NODE_ENV === 'development' ? settings : withPWA(settings);
