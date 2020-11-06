@@ -26,11 +26,13 @@ const ArticlePreview = ({
             </header>
             <Link href="/weekly/[slug]" href={link}><a>
                 <ui.Screenreader>{headline}</ui.Screenreader>
-                <S.PreviewImage
-                    src={previewImage}
-                    alt={headline}
-                    unsized
-                />
+                { !imageLoaded && <S.ImageSkeleton variant="rect" /> }
+                <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
+                    <S.Image
+                        src={previewImage}
+                        alt={headline}
+                    />
+                </LazyLoad>
             </a></Link>
             <p>{description}</p>
             <Link href="/weekly/[slug]" as={link}><a><S.ReadMore>

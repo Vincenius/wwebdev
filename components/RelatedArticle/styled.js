@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import Image from 'next/image'
 import Card from '@material-ui/core/Card'
 import { breakpoint } from '../../ui/constants'
 
@@ -20,7 +19,7 @@ export const Container = styled(Card)`
         a { text-decoration: none; }
     }
 `
-export const PreviewImage = styled(Image)`
+export const Image = styled.img`
     width: 34%;
     height: 100%;
     object-fit: cover;

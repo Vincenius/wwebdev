@@ -16,7 +16,7 @@ const RelatedArticle = ({ id, type }) => {
             <hr />
             <h3>Related Article</h3>
             <S.Container>
-                <S.PreviewImage src={previewImage} alt={headline} unsized />
+                <S.Image src={previewImage} alt={headline} />
                 <S.Content>
                     <h3>
                         <a href={link}>
