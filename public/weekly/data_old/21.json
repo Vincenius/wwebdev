@@ -1,0 +1,113 @@
+{
+  "items": [
+    {
+      "title": "Level Up Your CSS Animation Skills",
+      "description": "A four hour youtube course about bringing animation to your websites with CSS animations.",
+      "link": "https://www.youtube.com/playlist?list=PLHKH6Uj0Seea4gnA8A80PvW9XAQkT37bD",
+      "image": "/weekly/screenshots/level-up-css-animation.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Snapfont",
+      "description": "A browser extension to test fonts directly on your website.",
+      "link": "https://getsnapfont.com/",
+      "image": "https://getsnapfont.com/favicons/fb-cover.png",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Linkdash",
+      "description": "A cool repo to generate a dashboard of your most important links.",
+      "link": "https://github.com/igimanaloto/linkdash",
+      "image": "/weekly/screenshots/linkdash.jpg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Responsive Images the Simple Way",
+      "description": "A good article by Scott Vandehey about getting responsive images right.",
+      "link": "https://cloudfour.com/thinks/responsive-images-the-simple-way/",
+      "image": "https://29comwzoq712ml5vj5gf479x-wpengine.netdna-ssl.com/wp-content/uploads/2020/03/summary.png",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "multicopy",
+      "description": "A VS Code extension that lets you copy and paste multiple snippets of code in your workspace.",
+      "link": "https://github.com/adoi/multicopy",
+      "image": "https://raw.githubusercontent.com/adoi/multicopy/master/media/gifmulticopy.gif?token=AFTRRNUSNKFCK7WFPKB5GHC6TI4OW",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "React Summit - Remote Edition 2020",
+      "description": "The remote version of the React Summit conference this friday is offering free tickets.",
+      "link": "https://remote.reactsummit.com/",
+      "image": "https://remote.reactsummit.com/img/og-v1.png",
+      "tags": [
+        "Other"
+      ]
+    },
+    {
+      "title": "themer",
+      "description": "Generate matching color themes for your terminal, IDE, slack and other applications.",
+      "link": "https://themer.dev/",
+      "image": "https://camo.githubusercontent.com/60f4572ed0826f0aed765af64f09bdd1ba9bfe28/68747470733a2f2f63646e2e6a7364656c6976722e6e65742f67682f6d6a7377656e73656e2f7468656d657240346537386239613530613030626162373630356234393936653432386239613663346130303062302f6173736574732f69636f6e2e706e67",
+      "tags": [
+        "Generator"
+      ]
+    },
+    {
+      "title": "Winddown",
+      "description": "A VS Code extension, which reminds you to take a break by slowly fading out the colors.",
+      "link": "https://github.com/schneefux/vscode-winddown",
+      "image": "https://raw.githubusercontent.com/schneefux/vscode-winddown/master/demo.gif",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Rapid Image Layers Animation",
+      "description": "A rapid animation of multiple layers of images for intros or page transitions.",
+      "link": "https://tympanus.net/Development/RapidLayersAnimation/",
+      "image": "https://codropspz-tympanus.netdna-ssl.com/codrops/wp-content/uploads/2020/04/RapidLayerAnimation_featured.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Wireframer Font",
+      "description": "An open source typeface made of purposely redacted letters, which is presenting content as abstract bars.",
+      "link": "https://wireframer.design/",
+      "image": "https://wireframer.design/static/images/social-share.png",
+      "tags": [
+        "Other"
+      ]
+    },
+    {
+      "title": "hCaptcha",
+      "description": "A privacy friendly alternative to Googles reCaptcha.",
+      "link": "https://www.hcaptcha.com/",
+      "image": "https://assets.website-files.com/5c73e7ea3f8bb2a85d2781db/5c7d3345314d16473adbe413_funny%20robots%20stopped_1.svg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "<css-doodle />",
+      "description": "A web component for drawing patterns with CSS",
+      "link": "https://css-doodle.com/",
+      "image": "/weekly/screenshots/css-doodle.jpg",
+      "tags": [
+        "CSS",
+        "Library"
+      ]
+    }
+  ]
+}

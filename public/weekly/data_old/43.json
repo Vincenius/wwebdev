@@ -1,0 +1,116 @@
+{
+  "items": [
+    {
+      "title": "How HTTPS Works",
+      "description": "A cool comic that explains why HTTPS is important and how it works.",
+      "link": "https://howhttps.works/",
+      "image": "https://howhttps.works/assets/images/how-https-works-open-graph.png",
+      "tags": [
+        "Other"
+      ]
+    },
+    {
+      "title": "UX Design for Navigation Menus",
+      "description": "A nice article about creating a better user experience for navigations.",
+      "link": "https://learnuxd.io/posts/ux-design-for-navigation-menus",
+      "image": "https://www.learnuxd.io/img/posts/ux-design-for-navigation-menus/share.png",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "GitHub CLI 1.0",
+      "description": "An article introducing GitHub for your terminal.",
+      "link": "https://github.blog/2020-09-17-github-cli-1-0-is-now-available/",
+      "image": "https://github.blog/wp-content/uploads/2020/09/GitHubCLI_SocialCard_VersionNumber_NoSubLine_v2.png?fit=1200%2C630",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Domains for the Rest of Us",
+      "description": "A website that generates domain names, which are always available.",
+      "link": "https://www.domainsfortherestofus.com/",
+      "image": "/weekly/screenshots/domainsfortherestofus.jpg",
+      "tags": [
+        "Tool",
+        "Resource"
+      ]
+    },
+    {
+      "title": "content-visibility",
+      "description": "Chris Coyier writes about how the new CSS property can boost your rendering performance.",
+      "link": "https://css-tricks.com/content-visibility-the-new-css-property-that-boosts-your-rendering-performance/",
+      "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/09/content-visibility-perf.png?fit=1200%2C600&ssl=1",
+      "tags": [
+        "Article",
+        "CSS"
+      ]
+    },
+    {
+      "title": "BGJar",
+      "description": "A free SVG background generator for your websites, blogs, and app",
+      "link": "https://bgjar.com/",
+      "image": "/weekly/screenshots/bgjar.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Halfmoon",
+      "description": "A front-end framework with a built-in dark mode and full customizability using CSS variables.",
+      "link": "https://www.gethalfmoon.com/",
+      "image": "https://res.cloudinary.com/halfmoon-ui/image/upload/v1599770364/halfmoon-og-image-1.1.0_uofgby.png",
+      "tags": [
+        "CSS"
+      ]
+    },
+    {
+      "title": "Size My Image",
+      "description": "A fast image resizer and compressor, identical to exports of Figma and Sketch apps.",
+      "link": "https://sizemyimage.com/",
+      "image": "https://sizemyimage.com/assets/images/og-image.png",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Form design",
+      "description": "Best practice, research insights and, examples for forms.",
+      "link": "https://gerireid.com/forms.html",
+      "image": "/weekly/screenshots/form-design.jpg",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Front-end JavaScript performance",
+      "description": "An article on how to investigate and fix JavaScript performance problems.",
+      "link": "https://www.debugbear.com/blog/front-end-javascript-performance",
+      "image": "https://www.debugbear.com/public/blog/front-end-javascript-performance/performance-tab.png",
+      "tags": [
+        "Article",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "Web Design and Carbon Impact",
+      "description": "An article on how can we, as web professionals, help to make the web more energy efficient.",
+      "link": "https://cmhb.de/web-design-and-carbon-impact",
+      "image": "https://cmhb.de/content/1-blog/37-web-design-and-carbon-impact/37.jpg",
+      "tags": [
+        "Article",
+        "Other"
+      ]
+    },
+    {
+      "title": "QreditRoll",
+      "description": "A fun project, that lets you add movie-like credits to your website.",
+      "link": "https://www.qreditroll.com/",
+      "image": "https://www.qreditroll.com/qreditroll.png",
+      "tags": [
+        "Resource"
+      ]
+    }
+  ]
+}

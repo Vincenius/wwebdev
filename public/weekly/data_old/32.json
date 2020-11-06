@@ -1,0 +1,119 @@
+{
+  "items": [
+    {
+      "title": "Grid Cheatsheet",
+      "description": "A cool cheat sheet for everything you can do with CSS Grid.",
+      "link": "https://yoksel.github.io/grid-cheatsheet/",
+      "image": "https://yoksel.github.io/grid-cheatsheet/screenshot.png",
+      "tags": [
+        "CSS"
+      ]
+    },
+    {
+      "title": "tree.nathanfriend.io",
+      "description": "An online tree-like utility for generating ASCII folder structure diagrams.",
+      "link": "https://tree.nathanfriend.io/",
+      "image": "/weekly/screenshots/tree-nathanfriend-io.jpg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Selection controls — UI component series",
+      "description": "A good overview of selection controls and when to use them.",
+      "link": "https://uxdesign.cc/selection-controls-ui-component-series-3badc0bdb546",
+      "image": "https://miro.medium.com/max/2000/1*eu7j_z2jyUOU7XJSgVxOIA.jpeg",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "Reflex.js",
+      "description": "A collection of themes and plugins to help you build Gatsby sites faster.",
+      "link": "https://reflexjs.org/",
+      "image": "https://reflexjs.org/reflex-blocks.jpg",
+      "tags": [
+        "Tool",
+        "JavaScript"
+      ]
+    },
+    {
+      "title": "React Boilerplate meets CRA",
+      "description": "The React Boilerplate as a Create React App template.",
+      "link": "https://github.com/react-boilerplate/react-boilerplate-cra-template/",
+      "image": "https://user-images.githubusercontent.com/3495307/80274591-2d5daa00-86e4-11ea-8fba-404f1cdba87e.png",
+      "tags": [
+        "React"
+      ]
+    },
+    {
+      "title": "Textures.js",
+      "description": "A library to add SVG patterns for data visualization on top of d3.js.",
+      "link": "https://riccardoscalco.it/textures/",
+      "image": "/weekly/screenshots/textures-js.jpg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    },
+    {
+      "title": "Rando.js",
+      "description": "An easy, and powerful random function for JavaScript.",
+      "link": "https://github.com/nastyox/Rando.js",
+      "image": "/weekly/screenshots/randojs.jpg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    },
+    {
+      "title": "Whole page slider",
+      "description": "A JavaScript library for scrolling through whole pages vertically or horizontally.",
+      "link": "https://github.com/elansx/Wholepage-Slider",
+      "image": "/weekly/screenshots/wholepage-slider.jpg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    },
+    {
+      "title": "Creating my logo animation",
+      "description": "A good article on animating SVGs with CSS.",
+      "link": "https://www.cassie.codes/posts/creating-my-logo-animation/",
+      "image": "https://cassie.codes/images/meta.jpg",
+      "tags": [
+        "Article",
+        "CSS"
+      ]
+    },
+    {
+      "title": "whenipress",
+      "description": "A simple JavaScript package to add keyboard bindings to your application.",
+      "link": "https://github.com/lukeraymonddowning/whenipress",
+      "image": "/weekly/screenshots/whenipress.jpg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    },
+    {
+      "title": "Slides for Programming Courses",
+      "description": "A collection of slides for programming courses, created from markdown sources.",
+      "link": "https://marko-knoebl.github.io/slides/",
+      "image": "/weekly/screenshots/slides-for-programming.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Elevator.js",
+      "description": "A fun demo of a \"scroll to top\" button, that works like a real elevator",
+      "link": "http://tholman.com/elevator.js/",
+      "image": "/weekly/screenshots/elevatorjs.jpg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    }
+  ]
+}

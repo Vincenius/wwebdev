@@ -1,0 +1,107 @@
+{
+  "items": [
+    {
+      "title": "Shortcuts.design",
+      "description": "A shortcut reference for the most important tools of designers.",
+      "link": "https://shortcuts.design/",
+      "image": "https://shortcuts.design/Shortcuts.designlaunch01.png",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "Omatsuri",
+      "description": "A nice collection of open-source browser tools.",
+      "link": "https://omatsuri.app/",
+      "image": "/weekly/screenshots/omatsuri.jpg",
+      "tags": [
+        "Resource"
+      ]
+    },
+    {
+      "title": "ztext.js",
+      "description": "Easy to implement, 3D typography for the web, which works with every font.",
+      "link": "https://bennettfeely.com/ztext/",
+      "image": "/weekly/screenshots/ztextjs.jpg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    },
+    {
+      "title": "Previewed",
+      "description": "A website to generate mockup previews on various devices.",
+      "link": "https://previewed.app/",
+      "image": "/weekly/screenshots/previewed.jpg",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "Morphing SVG With react-spring",
+      "description": "A nice article by Mikael Ainalem about SVG animations in React.",
+      "link": "https://css-tricks.com/morphing-svg-with-react-spring/",
+      "image": "https://i0.wp.com/css-tricks.com/wp-content/uploads/2020/08/react-spring-svg-morph.gif",
+      "tags": [
+        "Article",
+        "React"
+      ]
+    },
+    {
+      "title": "Selecto.js",
+      "description": "A component that allows you to select elements in the drag area using the mouse or touch.",
+      "link": "https://github.com/daybrush/selecto",
+      "image": "/weekly/screenshots/selecto.jpg",
+      "tags": [
+        "JavaScript",
+        "Library"
+      ]
+    },
+    {
+      "title": "Arwes",
+      "description": "A futuristic sci-fi and cyberpunk graphical user interface framework for web apps.",
+      "link": "https://arwes.dev/",
+      "image": "https://arwes.dev/static/img/arwes.jpg",
+      "tags": [
+        "CSS"
+      ]
+    },
+    {
+      "title": "Meta Tags",
+      "description": "A website to edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter, and more.",
+      "link": "https://metatags.io/",
+      "image": "https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png",
+      "tags": [
+        "Tool"
+      ]
+    },
+    {
+      "title": "7 Practical Tips for Better Microcopy",
+      "description": "Some good tips for improving the copywriting of your website.",
+      "link": "https://learnuxd.io/posts/7-practical-tips-for-better-microcopy",
+      "image": "https://www.learnuxd.io/img/7-tips-for-better-microcopy/share.png",
+      "tags": [
+        "Article"
+      ]
+    },
+    {
+      "title": "CSS Values",
+      "description": "A web app to search the syntax and all possible values for any valid CSS property.",
+      "link": "https://cssvalues.com/",
+      "image": "https://cssvalues.com/images/social.png",
+      "tags": [
+        "Tool",
+        "CSS"
+      ]
+    },
+    {
+      "title": "Tailwind Ink",
+      "description": "An AI palette generator trained with the Tailwindcss colors.",
+      "link": "https://tailwind.ink/",
+      "image": "/weekly/screenshots/tailwind-ink.jpg",
+      "tags": [
+        "Tool"
+      ]
+    }
+  ]
+}
