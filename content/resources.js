@@ -2,8 +2,8 @@ const data = [
     {
         id: 11,
         type: 'Resource',
-        date: 'November 5, 2020',
-        headline: "Free Icon Sets",
+        date: 'November 6, 2020',
+        headline: "Websites For Free Icon Sets",
         description: "A curated list of websites that offer collections of free icons.",
         link: "/resources/free-icon-sets",
         previewImage: "resources/preview_S4rXKoliGYiB.png",
