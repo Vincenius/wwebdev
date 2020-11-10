@@ -147,6 +147,27 @@ const Post = () => (
                 image="/resources/free-icon-sets/radixicons.jpg"
             />
 
+            <LinkBox
+                title="UXWing"
+                description="A lot of icons that are free for any personal and commercial use and available as .svg and .png."
+                link="https://icons.modulz.app/"
+                image="/resources/free-icon-sets/uxwing.png"
+            />
+
+            <LinkBox
+                title="Noun Project"
+                description="A website to search for over 3 million icons, which can be used for free with attribution."
+                link="https://thenounproject.com/"
+                image="/resources/free-icon-sets/nounproject.png"
+            />
+
+            <LinkBox
+                title="Icons8"
+                description="A collection of 147,500 free icons in various styles."
+                link="https://icons8.com/icons"
+                image="/resources/free-icon-sets/icons8.png"
+            />
+
             <SubscribeForm isSmall={true} />
 
         </ui.GridContainer>
