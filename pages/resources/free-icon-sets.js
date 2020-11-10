@@ -150,7 +150,7 @@ const Post = () => (
             <LinkBox
                 title="UXWing"
                 description="A lot of icons that are free for any personal and commercial use and available as .svg and .png."
-                link="https://icons.modulz.app/"
+                link="https://uxwing.com/"
                 image="/resources/free-icon-sets/uxwing.png"
             />
 
