@@ -1,0 +1,108 @@
+{
+    "items": [
+        {
+            "title": "Cirrus.CSS",
+            "description": "A component and utility centric SCSS framework designed for rapid prototyping.",
+            "link": "https://cirrus-ui.netlify.app/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/50/cirrus.jpg",
+            "tags": [
+                "CSS"
+            ]
+        },
+        {
+            "title": "Device Shots",
+            "description": "Create high-resolution device mockups with the screenshot of your website.",
+            "link": "https://deviceshots.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/50/deviceshots.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "Pattern Monster",
+            "description": "An online pattern generator to create repeatable SVG patterns.",
+            "link": "https://pattern.monster/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/50/patternmonster.jpg",
+            "tags": [
+                "Generator"
+            ]
+        },
+        {
+            "title": "CSS Spider",
+            "description": "A browser extension to copy, visualize, edit and export CSS.",
+            "link": "https://cssspider.fresalabs.com/home",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/50/cssspider.jpg",
+            "tags": [
+                "React",
+                "Library"
+            ]
+        },
+        {
+            "title": "Font Of Web",
+            "description": "Find the fonts a website uses, see where they are used, download fonts used by the website.",
+            "link": "https://fontofweb.now.sh/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/50/fontofweb.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "Chonky",
+            "description": "A file browser component for React.",
+            "link": "https://chonky.io/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/50/chonky.jpg",
+            "tags": [
+                "Library",
+                "React"
+            ]
+        },
+        {
+            "title": "Super Tiny Icons",
+            "description": "SVG versions of logos, which are under 1KB each",
+            "link": "https://github.com/edent/SuperTinyIcons",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/50/supertinyicons.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "PRESENTA Lib",
+            "description": "A javascript library that generates web presentations from config objects.",
+            "link": "https://lib.presenta.cc/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/50/presenta.jpg",
+            "tags": [
+                "Library",
+                "JavaScript"
+            ]
+        },
+        {
+            "title": "My Side Project Rocks",
+            "description": "A website to post your side projects and to discover side projects by others.",
+            "link": "https://mysideproject.rocks/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/50/sideproject.jpg",
+            "tags": [
+                "Article",
+                "CSS"
+            ]
+        },
+        {
+            "title": "A Nerd’s Guide to Color on the Web ",
+            "description": "A list of some lighter CSS frameworks out there.",
+            "link": "https://css-tricks.com/nerds-guide-color-web/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/50/colorguide.jpg",
+            "tags": [
+                "CSS"
+            ]
+        },
+        {
+            "title": "Comparing Various Ways to Hide Things in CSS",
+            "description": "A nice article explaining different ways to hide things in CSS.",
+            "link": "https://css-tricks.com/comparing-various-ways-to-hide-things-in-css/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/50/hidecss.jpg",
+            "tags": [
+                "Article",
+                "CSS"
+            ]
+        }
+    ]
+}

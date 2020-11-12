@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '50',
+        date: 'November 4, 2020',
+        description: "Cirrus.CSS, Device Shots, Pattern Monster, CSS Spider, Font Of Web and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/50.png',
+    },
+    {
         id: '49',
         date: 'November 4, 2020',
         description: "Next.js 10, Placeholder Logos, link-to-qr, React Flow, Merlin and more...",
