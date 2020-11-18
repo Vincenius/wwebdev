@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '51',
+        date: 'November 18, 2020',
+        description: "Socialify, Effective Skeleton Screens, Notion Clone, Seasonal.css and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/51.png',
+    },
+    {
         id: '50',
         date: 'November 12, 2020',
         description: "Cirrus.CSS, Device Shots, Pattern Monster, CSS Spider, Font Of Web and more...",

@@ -1,0 +1,107 @@
+{
+    "items": [
+        {
+            "title": "Socialify",
+            "description": "Generate a beautiful project image including a custom logo, description, badges, fonts, and background patterns.",
+            "link": "https://socialify.git.ci/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/51/socialify.jpg",
+            "tags": [
+                "Generator"
+            ]
+        },
+        {
+            "title": "Effective Skeleton Screens",
+            "description": "A nice article on the performance and UX of skeleton screens.",
+            "link": "https://timkadlec.com/remembers/2020-11-02-skeleton-screens/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/51/skeleton-screen.jpg",
+            "tags": [
+                "Article"
+            ]
+        },
+        {
+            "title": "Notion Clone",
+            "description": "An open-source version of the note-taking app Notion, built with Next.js.",
+            "link": "https://github.com/konstantinmuenster/notion-clone",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/51/notion-clone.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "Seasonal.css",
+            "description": "A CSS library that supplies a seasonal colour scheme based on the day of the year.",
+            "link": "https://seasonal-css.incoherency.co.uk/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/51/seasonal-css.jpg",
+            "tags": [
+                "CSS",
+                "Library"
+            ]
+        },
+        {
+            "title": "What's Missing From CSS?",
+            "description": "The answers of 2,000 participants of the State Of CSS Survey 2020.",
+            "link": "https://whatsmissingfromcss.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/51/whatsmissing.jpg",
+            "tags": [
+                "Other"
+            ]
+        },
+        {
+            "title": "vue-float-menu",
+            "description": "A customizable floating menu for Vue.",
+            "link": "https://github.com/prabhuignoto/vue-float-menu",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/51/vue-float-menu.jpg",
+            "tags": [
+                "Library"
+            ]
+        },
+        {
+            "title": "beautiful-react-diagrams",
+            "description": "A tiny collection of lightweight React components for building diagrams with ease",
+            "link": "https://antonioru.github.io/beautiful-react-diagrams/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/51/beautiful-react-diagrams.jpg",
+            "tags": [
+                "React",
+                "Libaray"
+            ]
+        },
+        {
+            "title": "Operator Lookup",
+            "description": "A simple website where you can enter a JavaScript operator to learn more about it.",
+            "link": "https://joshwcomeau.com/operator-lookup/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/51/operator-lookup.jpg",
+            "tags": [
+                "JavaScript"
+            ]
+        },
+        {
+            "title": "Inline Menu Layout",
+            "description": "An inline menu layout with a playful hover animation and a gallery content preview panel.",
+            "link": "https://tympanus.net/Development/InlineMenuLayout/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/51/InlineMenuLayout.jpg",
+            "tags": [
+                "JavaScript",
+                "CSS"
+            ]
+        },
+        {
+            "title": "22120",
+            "description": "An archivist browser controller that caches everything you browse and makes it searchable.",
+            "link": "https://github.com/c9fe/22120",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/51/22120.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "Dsgn.link",
+            "description": "A list of tools and resources for designers and coders, which is updated daily.",
+            "link": "https://dsgn.link/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/51/dsgnlink.jpg",
+            "tags": [
+                "Article",
+                "CSS"
+            ]
+        }
+    ]
+}
