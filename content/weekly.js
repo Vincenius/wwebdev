@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '52',
+        date: 'November 24, 2020',
+        description: "Upptime, Pretty Snap, Browsh, Wasp, Pattern Collect, 1MB Club and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/52.png',
+    },
+    {
         id: '51',
         date: 'November 18, 2020',
         description: "Socialify, Effective Skeleton Screens, Notion Clone, Seasonal.css and more...",
