@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '53',
+        date: 'December 02, 2020',
+        description: "Advent of Code, Etebase, Text Gradients, Building Your Color Palette and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/53.png',
+    },
+    {
         id: '52',
         date: 'November 25, 2020',
         description: "Upptime, Pretty Snap, Browsh, Wasp, Pattern Collect, 1MB Club and more...",

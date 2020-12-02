@@ -1,0 +1,89 @@
+{
+    "items": [
+        {
+            "title": "Building Your Color Palette",
+            "description": "A nice article with practical tips & tricks for building your color palette",
+            "link": "https://uxmisfit.com/2019/05/21/ui-design-in-practice-colors/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/53/color-palette.jpg",
+            "tags": [
+                "Article"
+            ]
+        },
+        {
+            "title": "Use console.log() like a pro",
+            "description": "An article about advanced usage of console.log",
+            "link": "https://denic.hashnode.dev/use-consolelog-like-a-pro",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/53/console-log.jpg",
+            "tags": [
+                "Article",
+                "JavaScript"
+            ]
+        },
+        {
+            "title": "Advent of Code",
+            "description": "An Advent calendar of small programming puzzles for a variety of skill sets and skill levels.",
+            "link": "https://adventofcode.com/2020",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/53/advent-of-code.jpg",
+            "tags": [
+                "Other"
+            ]
+        },
+        {
+            "title": "React Emotion Multi-step Form",
+            "description": "An interactive multi-step form library with concise declarative code.",
+            "link": "https://z2lai.github.io/react-emotion-multi-step-form/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/53/multi-step-form.jpg",
+            "tags": [
+                "React",
+                "Library"
+            ]
+        },
+        {
+            "title": "Etebase",
+            "description": "An open-source and end-to-end encrypted SDK and backend",
+            "link": "https://www.etebase.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/53/etebase.jpg",
+            "tags": [
+                "Other"
+            ]
+        },
+        {
+            "title": "React hover animation effect with React Spring",
+            "description": "A nice tutorial by Josh Comeau on hover transitions with React",
+            "link": "https://www.joshwcomeau.com/react/boop/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/53/boop.jpg",
+            "tags": [
+                "React",
+                "Article"
+            ]
+        },
+        {
+            "title": "Text Gradients",
+            "description": "An article on how to create text gradients in CSS.",
+            "link": "https://codyhouse.co/nuggets/text-gradients",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/53/text-gradients.jpg",
+            "tags": [
+                "CSS",
+                "Article"
+            ]
+        },
+        {
+            "title": "Thinking Like a Front-end Developer",
+            "description": "How to think as a front-end developer and account for edge cases you might have missed.",
+            "link": "https://ishadeed.com/article/thinking-like-a-front-end-developer/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/53/thinking-frontend.jpg",
+            "tags": [
+                "Article"
+            ]
+        },
+        {
+            "title": "Scale",
+            "description": "Free customizable illustrations, that can be used without attribution.",
+            "link": "https://2.flexiple.com/scale/all-illustrations",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/53/scale.jpg",
+            "tags": [
+                "Resource"
+            ]
+        }
+    ]
+}
