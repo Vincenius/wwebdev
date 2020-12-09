@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '54',
+        date: 'December 09, 2020',
+        description: "css.lab, React is slow, Beautiful Codes, micro-frontends and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/54.png',
+    },
+    {
         id: '53',
         date: 'December 02, 2020',
         description: "Advent of Code, Etebase, Text Gradients, Building Your Color Palette and more...",
