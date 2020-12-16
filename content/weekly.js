@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '55',
+        date: 'December 16, 2020',
+        description: "Checklist Design, shotr, GIF Maker, Social Image Generator and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/55.png',
+    },
+    {
         id: '54',
         date: 'December 09, 2020',
         description: "css.lab, React is slow, Beautiful Codes, micro-frontends and more...",
