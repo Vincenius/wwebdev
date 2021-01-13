@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '57',
+        date: 'January 13, 2020',
+        description: "TODO and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/57.png',
+    },
+    {
         id: '56',
         date: 'December 23, 2020',
         description: "useAuth, Polotno Studio, EStimator, Scrollytelling with React and more...",

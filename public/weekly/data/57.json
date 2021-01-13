@@ -1,0 +1,115 @@
+{
+    "items": [
+        {
+            "title": "Write code. Not too much. Mostly functions.",
+            "description": "A nice small read about writing code by Brandon Smith.",
+            "link": "https://www.brandonsmith.ninja/blog/write-code-not-too-much-mostly-functions",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/write-code.jpg",
+            "tags": [
+                "Article"
+            ]
+        },
+        {
+            "title": "Hotwire",
+            "description": "An alternative approach to building modern web applications by sending HTML instead of JSON.",
+            "link": "https://hotwire.dev/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/hotwire.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "AnimXYZ",
+            "description": "A library that helps you create, customize, and compose animations for your website.",
+            "link": "https://animxyz.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/animxyz.jpg",
+            "tags": [
+                "Library",
+                "JavaScript"
+            ]
+        },
+        {
+            "title": "10 KB Club",
+            "description": "A curated collection of websites whose home pages do not exceed 10 KB compressed size.",
+            "link": "https://10kbclub.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/10kb.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "Pattern Generator",
+            "description": "A generator for seamless, unique, royalty-free patterns, which are exportable as SVG, JPEG, or PNG.",
+            "link": "https://doodad.dev/pattern-generator/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/doodad.jpg",
+            "tags": [
+                "Generator"
+            ]
+        },
+        {
+            "title": "Scale",
+            "description": "A list of customizable high-quality, open-source illustrations, which gets updated every day.",
+            "link": "https://2.flexiple.com/scale/all-illustrations",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/scale.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "Tailwind-kit",
+            "description": "A collection of over 200 CSS responsive components, based on Tailwind CSS 2.0 and Font Awesome.",
+            "link": "https://www.tailwind-kit.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/tailwind-kit.jpg",
+            "tags": [
+                "Resource",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Khushmeen",
+            "description": "A bunch of nice illustrations.",
+            "link": "https://khushmeen.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/khushmeen.jpg",
+            "tags": [
+                "JavaScript",
+                "Library"
+            ]
+        },
+        {
+            "title": "tailwindshades",
+            "description": "A tool to help generate color shades for Tailwind CSS.",
+            "link": "https://www.tailwindshades.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/tailwindshades.jpg",
+            "tags": [
+                "Generator"
+            ]
+        },
+        {
+            "title": "Search Engine Optimization Checklist",
+            "description": "A nice checklist for implementing best SEO practices.",
+            "link": "https://www.smashingmagazine.com/search-engine-optimization-checklist/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/search-engine-optimization-checklist.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "The Complete CSS Flex Tutorial",
+            "description": "A good tutorial for getting started with CSS Flex.",
+            "link": "https://semicolon.dev/tutorial/css/complete-css-flex-tutorial",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/css-flex-tutorial.jpg",
+            "tags": [
+                "Article"
+            ]
+        },
+        {
+            "title": "The React Cheatsheet for 2021",
+            "description": "A comprehensive visual cheatsheet of all the major concepts and features of the React library in 2021.",
+            "link": "https://www.freecodecamp.org/news/react-cheatsheet-with-real-world-examples/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/the-react-cheatsheet-for-2021.jpg",
+            "tags": [
+                "Resource"
+            ]
+        }
+    ]
+}
