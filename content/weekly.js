@@ -2,7 +2,7 @@ const data = [
     {
         id: '57',
         date: 'January 13, 2020',
-        description: "TODO and more...",
+        description: "Hotwire, AnimXYZ, 10 KB Club, Pattern Generator, Scale and more...",
         previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/57.png',
     },
     {
