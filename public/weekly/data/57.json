@@ -86,7 +86,7 @@
         },
         {
             "title": "Search Engine Optimization Checklist",
-            "description": "A nice checklist for implementing best SEO practices.",
+            "description": "A nice checklist for implementing the best SEO practices.",
             "link": "https://www.smashingmagazine.com/search-engine-optimization-checklist/",
             "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/search-engine-optimization-checklist.jpg",
             "tags": [
@@ -104,7 +104,7 @@
         },
         {
             "title": "The React Cheatsheet for 2021",
-            "description": "A comprehensive visual cheatsheet of all the major concepts and features of the React library in 2021.",
+            "description": "A comprehensive visual cheat sheet of all the major concepts and features of the React library in 2021.",
             "link": "https://www.freecodecamp.org/news/react-cheatsheet-with-real-world-examples/",
             "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/57/the-react-cheatsheet-for-2021.jpg",
             "tags": [
