@@ -1,0 +1,106 @@
+{
+    "items": [
+        {
+            "title": "Figma Crash Course",
+            "description": "A deep dives into powerful Figma features like prototyping, auto-layout, systems, and illustration.",
+            "link": "https://www.figmacrashcourse.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/58/figma.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "The future of CSS: Higher Level Custom Properties",
+            "description": "An article on having one CSS Custom Property control a varying set of other properties by using Higher Level Custom Properties.",
+            "link": "https://www.bram.us/2020/12/30/the-future-of-css-higher-level-custom-properties-to-control-multiple-declarations/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/58/higher-level-custom-properties.jpg",
+            "tags": [
+                "CSS",
+                "Article"
+            ]
+        },
+        {
+            "title": "LinkAce",
+            "description": "A self-hosted bookmark archive, which is free and open source.",
+            "link": "https://www.linkace.org/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/58/linkace.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "useAnimations",
+            "description": "A library for animated icons in the Lottie Framework for immediate implementation to your apps or websites.",
+            "link": "https://useanimations.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/58/useAnimationsImage.jpg",
+            "tags": [
+                "JavaScript",
+                "Library"
+            ]
+        },
+        {
+            "title": "new.css",
+            "description": "A classless CSS framework to write modern websites using only HTML.",
+            "link": "https://newcss.net/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/58/newcss.jpg",
+            "tags": [
+                "CSS",
+                "Library"
+            ]
+        },
+        {
+            "title": "Openbase",
+            "description": "Find and compare open-source packages with user reviews, categorization, and more",
+            "link": "https://openbase.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/58/openbase.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "OpenScan",
+            "description": "An open-source app to scan hard copies of documents or notes and convert them into a PDF file.",
+            "link": "https://github.com/Ethereal-Developers-Inc/OpenScan",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/58/openscan.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "2020 JavaScript Rising Stars",
+            "description": "The annual round-up of the JavaScript landscape, comparing the number of stars added on GitHub.",
+            "link": "https://risingstars.js.org/2020/en",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/58/rising-stars.jpg",
+            "tags": [
+                "JavaScript"
+            ]
+        },
+        {
+            "title": "Test for accessibility",
+            "description": "A nice article with seven ways to test for accessibility of your web site with browser Developer Tools.",
+            "link": "https://christianheilmann.com/2021/01/11/seven-ways-to-test-for-accessibility-of-your-web-site-with-browser-developer-tools/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/58/test-accessibility.jpg",
+            "tags": [
+                "Article"
+            ]
+        },
+        {
+            "title": "IDEA",
+            "description": "A series of nonverbal algorithm assembly instructions, that explain how various popular algorithms work.",
+            "link": "https://idea-instructions.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/58/idea.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "Snapcode",
+            "description": "A nice code snippets manager, which is free to use and open-source.",
+            "link": "https://snapcode.now.sh/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/58/snapcode.jpg",
+            "tags": [
+                "Resource"
+            ]
+        }
+    ]
+}

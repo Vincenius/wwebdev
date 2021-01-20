@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '58',
+        date: 'January 20, 2020',
+        description: "Figma Crash Course, The future of CSS, LinkAce, useAnimations and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/58.png',
+    },
+    {
         id: '57',
         date: 'January 13, 2020',
         description: "Hotwire, AnimXYZ, 10 KB Club, Pattern Generator, Scale and more...",
