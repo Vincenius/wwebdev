@@ -1,0 +1,105 @@
+{
+    "items": [
+        {
+            "title": "Glyphs",
+            "description": "A dynamic design system for creating icon sets in Figma and using them on the web.",
+            "link": "https://glyphs.fyi/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/59/glyphs.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "Ojoy",
+            "description": "A nice tool to enlarge low-res images and improve their quality.",
+            "link": "https://ojoy.netlify.app/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/59/ojoy.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "Nested Media Queries",
+            "description": "A small article about nesting media queries.",
+            "link": "https://www.bram.us/2021/01/11/nested-media-queries/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/59/nested-media-queries.jpg",
+            "tags": [
+                "Article"
+            ]
+        },
+        {
+            "title": "On-Scroll Letter Animations",
+            "description": "A small set of examples showing how letters can be animated on scroll.",
+            "link": "https://tympanus.net/codrops/2021/01/20/on-scroll-letter-animations/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/59/OnScrollLetterAnimations.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "CSS Clamp Wrapper",
+            "description": "An article on how to use CSS Clamp to create a more flexible wrapper utility.",
+            "link": "https://piccalil.li/quick-tip/use-css-clamp-to-create-a-more-flexible-wrapper-utility",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/59/clamp.jpg",
+            "tags": [
+                "CSS",
+                "Article"
+            ]
+        },
+        {
+            "title": "MagicTween",
+            "description": "A tool that converts SVGs into exportable 3D videos.",
+            "link": "https://app.tweentoast.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/59/magic-tween.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "ButtonBuddy",
+            "description": "A generator for buttons with accessible colors.",
+            "link": "https://buttonbuddy.dev/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/59/button-gen.jpg",
+            "tags": [
+                "Generator"
+            ]
+        },
+        {
+            "title": "vim.so",
+            "description": "Interactive exercises for learning Vim faster.",
+            "link": "https://www.vim.so/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/59/vim.jpg",
+            "tags": [
+                "JavaScript"
+            ]
+        },
+        {
+            "title": "JPEG.rocks",
+            "description": "A Privacy-aware JPEG optimizer that does all the processing entirely in the browser.",
+            "link": "https://jpeg.rocks/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/59/jpeg-rocks.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "Understanding Clip Path in CSS",
+            "description": "An introduction about CSS clip-path, how it works, with example and use-cases.",
+            "link": "https://ishadeed.com/article/clip-path/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/59/clip-path.jpg",
+            "tags": [
+                "Article",
+                "CSS"
+            ]
+        },
+        {
+            "title": "State of JS 2020",
+            "description": "The results of the annual survey about the latest trends in the JavaScript ecosystem.",
+            "link": "https://2020.stateofjs.com/en-US/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/59/stateofjs2020.jpg",
+            "tags": [
+                "Resource"
+            ]
+        }
+    ]
+}

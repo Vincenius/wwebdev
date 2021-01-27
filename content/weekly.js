@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '59',
+        date: 'January 27, 2020',
+        description: "Glyphs, Ojoy, Nested Media Queries, MagicTween, ButtonBuddy and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/59.png',
+    },
+    {
         id: '58',
         date: 'January 20, 2020',
         description: "Figma Crash Course, The future of CSS, LinkAce, useAnimations and more...",
