@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '60',
+        date: 'February 3, 2020',
+        description: "John Doe Webpage, Deskreen, Pills, Vue Native, Dev Containers and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/60.png',
+    },
+    {
         id: '59',
         date: 'January 27, 2020',
         description: "Glyphs, Ojoy, Nested Media Queries, MagicTween, ButtonBuddy and more...",
