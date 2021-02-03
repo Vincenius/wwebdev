@@ -29,7 +29,7 @@
         },
         {
             "title": "Vue Native",
-            "description": "A framework to build cross platform native mobile apps using JavaScript .",
+            "description": "A framework to build cross-platform native mobile apps using JavaScript.",
             "link": "https://vue-native.io/",
             "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/60/vue-native.jpg",
             "tags": [
@@ -85,7 +85,7 @@
         },
         {
             "title": "Cyberpunk 2077 Buttons",
-            "description": "A cool demo of pure css buttons in cyberpunk 2077 look.",
+            "description": "A cool demo of pure CSS buttons in cyberpunk 2077 look.",
             "link": "https://codepen.io/jh3y/pen/PoGbxLp",
             "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/60/cyberpunk.jpg",
             "tags": [
@@ -95,7 +95,7 @@
         },
         {
             "title": "Create App",
-            "description": "A config generator for webpack, parcel and snowpack with React, Vue, Typescript and more.",
+            "description": "A config generator for webpack, parcel, and snowpack with React, Vue, Typescript, and more.",
             "link": "https://createapp.dev/",
             "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/60/create-app.jpg",
             "tags": [
