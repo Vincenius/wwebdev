@@ -1,0 +1,100 @@
+{
+    "items": [
+        {
+            "title": "Free Animated Headers",
+            "description": "A generator for beautiful, animated headers with gradients.",
+            "link": "https://www.finisher.co/lab/header/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/61/animated-headers.jpg",
+            "tags": [
+                "Generator"
+            ]
+        },
+        {
+            "title": "Archivy",
+            "description": "A self-hosted knowledge repository that allows you to preserve content that contributes to your own searchable and extensible wiki.",
+            "link": "https://archivy.github.io/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/61/archivy.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "SVG Shape Generator",
+            "description": "A free SVG shape generator to create SVG blob shapes for your web design with gradient, complexity levels, and more!",
+            "link": "https://www.softr.io/tools/svg-shape-generator",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/61/svg-blog-gen.jpg",
+            "tags": [
+                "Generator"
+            ]
+        },
+        {
+            "title": "The Complete Guide to Centering in CSS",
+            "description": "An article about centering in CSS using grid, flexbox, and classic block element layout.",
+            "link": "https://moderncss.dev/complete-guide-to-centering-in-css/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/61/css-center.jpg",
+            "tags": [
+                "Article",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Free JavaScript Resources",
+            "description": "A collection of the latest and up to date resources to learn JavaScript.",
+            "link": "https://www.java5cript.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/61/java5cript.jpg",
+            "tags": [
+                "Resource",
+                "JavaScript"
+            ]
+        },
+        {
+            "title": "SVG Crop",
+            "description": "A tool to remove blank space from around any SVG instantly.",
+            "link": "https://svgcrop.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/61/svg-crop.jpg",
+            "tags": [
+                "CSS",
+                "Library"
+            ]
+        },
+        {
+            "title": "CSS Stripes Generator",
+            "description": "A generator to create striped backgrounds using only CSS.",
+            "link": "https://stripesgenerator.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/61/css-stripes.jpg",
+            "tags": [
+                "Generator",
+                "CSS"
+            ]
+        },
+        {
+            "title": "Akar Icons",
+            "description": "A rounded icon library made for designers and developers.",
+            "link": "https://akaricons.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/61/akar.jpg",
+            "tags": [
+                "Article",
+                "React"
+            ]
+        },
+        {
+            "title": "React Upload Box",
+            "description": "A minimal Upload component for React.",
+            "link": "https://cheersmas.github.io/react-upload-box",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/61/react-upload.jpg",
+            "tags": [
+                "React",
+                "Library"
+            ]
+        },
+        {
+            "title": "Windows 10 calendar effect CSS",
+            "description": "A codepen for a cool hover effect that looks like the Windows 10 calendar.",
+            "link": "https://codepen.io/gubb/pen/PdZqKy",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/61/css-calendar.jpg",
+            "tags": [
+                "Other"
+            ]
+        }
+    ]
+}
