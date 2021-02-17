@@ -1,0 +1,115 @@
+{
+    "items": [
+        {
+            "title": "svgwaves.io",
+            "description": "A cool generator for svg wave shapes.",
+            "link": "https://www.svgwaves.io/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/svgwaves.jpg",
+            "tags": [
+                "Generator"
+            ]
+        },
+        {
+            "title": "Remotion",
+            "description": "A tool to create MP4 motion graphics in React. Use CSS, SVG, and WebGL to render videos programmatically.",
+            "link": "https://www.remotion.dev/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/remotion.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "github1s",
+            "description": "A cool project to display the github code on a visual studio like website.",
+            "link": "https://github.com/conwnet/github1s",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/github1s.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "An Interactive Guide to CSS Transitions",
+            "description": "A guide that shows the basics of how to use CSS transitions",
+            "link": "https://www.joshwcomeau.com/animation/css-transitions/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/css-transitions.jpg",
+            "tags": [
+                "Article",
+                "CSS"
+            ]
+        },
+        {
+            "title": "️Fusuma",
+            "description": "A collection of the latest and up to date resources to learn JavaScript.",
+            "link": "https://hiroppy.github.io/fusuma/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/fusuma.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "CSS Polygon Shapes",
+            "description": "A bunch of shapes generated with css-doodle and clip-path.",
+            "link": "https://codepen.io/yuanchuan/full/QWGWXPz",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/css-polygon-shapes.jpg",
+            "tags": [
+                "CSS"
+            ]
+        },
+        {
+            "title": "Pika",
+            "description": "An open-source colour picker app for macOS.",
+            "link": "https://superhighfives.com/pika",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/pika.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "Pace",
+            "description": "A JavaScript library for beautiful, automatic page load progress bars.",
+            "link": "https://codebyzach.github.io/pace/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/pace.jpg",
+            "tags": [
+                "JavaScript",
+                "Library"
+            ]
+        },
+        {
+            "title": "PSone.css",
+            "description": "A PS1 style CSS Framework, inspired by NES.css.",
+            "link": "https://github.com/micah5/PSone.css",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/psone-css.jpg",
+            "tags": [
+                "CSS",
+                "Library"
+            ]
+        },
+        {
+            "title": "Front-End Performance Checklist 2021",
+            "description": " An annual front-end performance checklist, with everything you need to know to create fast experiences on the web.",
+            "link": "https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/adaptive-media-serving.jpg",
+            "tags": [
+                "Article"
+            ]
+        },
+        {
+            "title": "Illustration Kit",
+            "description": "A collection of illustrations, which gets updated daily.",
+            "link": "https://illustrationkit.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/illustrationkit.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "SVG Repo",
+            "description": "A collection of 300.000+ free SVG Vectors and Icons.",
+            "link": "https://www.svgrepo.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/62/svgrepo.jpg",
+            "tags": [
+                "Resource"
+            ]
+        }
+    ]
+}

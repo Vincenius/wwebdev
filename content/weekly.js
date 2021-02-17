@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '62',
+        date: 'February 17, 2020',
+        description: "svgwaves.io, Remotion, github1s, ️Fusuma, CSS Polygon Shapes and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/62.png',
+    },
+    {
         id: '61',
         date: 'February 10, 2020',
         description: "Free Animated Headers, Archivy, SVG Shape Generator, SVG Crop and more...",
