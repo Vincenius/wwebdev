@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '63',
+        date: 'February 24, 2020',
+        description: "Charts.css, Zsh Tricks, Responsive Design Patterns and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/63.png',
+    },
+    {
         id: '62',
         date: 'February 17, 2020',
         description: "svgwaves.io, Remotion, github1s, ️Fusuma, CSS Polygon Shapes and more...",
