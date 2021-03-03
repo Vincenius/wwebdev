@@ -1,0 +1,113 @@
+{
+    "items": [
+        {
+            "title": "Code",
+            "description": "A platform to create interactive code questions for testing your knowledge and preparing for interviews.",
+            "link": "https://code.devtools.tech/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/code.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "Getting Deep into Shadows",
+            "description": "A nice in-depth article about shadows in web design.",
+            "link": "https://css-tricks.com/getting-deep-into-shadows/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/shadows.jpg",
+            "tags": [
+                "Article"
+            ]
+        },
+        {
+            "title": "Blobmixer",
+            "description": "A toy for creating and sharing 3D blobs.",
+            "link": "https://blobmixer.14islands.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/blobmixer.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "Front-End Tips",
+            "description": "Super tiny, quick tips, tricks, and best practices of front-end development.",
+            "link": "https://getfrontend.tips/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/frondendtips.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "HTML Boilerplates",
+            "description": "A website to create a custom HTML Boilerplate.",
+            "link": "https://htmlboilerplates.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/html-boilerplates.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "Inclusive Components",
+            "description": "A blog about designing inclusive web interfaces, piece by piece.",
+            "link": "https://inclusive-components.design/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/inclusive-components.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "Cron jobs as a hack",
+            "description": "A nice article about cron jobs.",
+            "link": "https://www.parthean.com/blog/cron-jobs-as-a-hack",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/cron.jpg",
+            "tags": [
+                "Article"
+            ]
+        },
+        {
+            "title": "ray.so",
+            "description": "A generator to turn your code into beautiful images.",
+            "link": "https://ray.so/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/rayso.jpg",
+            "tags": [
+                "Generator"
+            ]
+        },
+        {
+            "title": "Before You memo()",
+            "description": "An article about rendering optimizations in React with memo().",
+            "link": "https://overreacted.io/before-you-memo/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/memo.jpg",
+            "tags": [
+                "Article",
+                "React"
+            ]
+        },
+        {
+            "title": "RactivePlayer",
+            "description": "A library for creating interactive videos in React.",
+            "link": "https://ractive-player.org/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/RactivePlayer.jpg",
+            "tags": [
+                "React"
+            ]
+        },
+        {
+            "title": "simple-keyboard",
+            "description": "A fast, dependency-free and customizable virtual keyboard for web applications.",
+            "link": "https://virtual-keyboard.js.org/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/keyboard.jpg",
+            "tags": [
+                "React"
+            ]
+        },
+        {
+            "title": "Easing Gradients",
+            "description": "An article on how you can improve your gradients with non-linear color mix and custom color spaces.",
+            "link": "https://larsenwork.com/easing-gradients/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/64/gradient.jpg",
+            "tags": [
+                "Article"
+            ]
+        }
+    ]
+}

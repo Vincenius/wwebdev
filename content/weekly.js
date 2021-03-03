@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '64',
+        date: 'March 02, 2020',
+        description: "Code, Shadows, Blobmixer, Front-End Tips, HTML Boilerplates and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/64.png',
+    },
+    {
         id: '63',
         date: 'February 24, 2020',
         description: "Charts.css, Zsh Tricks, Responsive Design Patterns and more...",
