@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '65',
+        date: 'March 09, 2020',
+        description: "Local PDF Tools, Generative SVG Social Images, Parvus, Griddy and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/65.png',
+    },
+    {
         id: '64',
         date: 'March 02, 2020',
         description: "Code, Shadows, Blobmixer, Front-End Tips, HTML Boilerplates and more...",
