@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '66',
+        date: 'March 17, 2020',
+        description: "Clone Wars, StartupToolbox, react-use, amigos, conic.css and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/66.png',
+    },
+    {
         id: '65',
         date: 'March 10, 2020',
         description: "Local PDF Tools, Generative SVG Social Images, Parvus, Griddy and more...",
