@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '67',
+        date: 'March 24, 2020',
+        description: "Splite, Focalboard, Learn LaTeX, chatwoot, Sorted CSS Colors and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/67.png',
+    },
+    {
         id: '66',
         date: 'March 17, 2020',
         description: "Clone Wars, StartupToolbox, react-use, amigos, conic.css and more...",

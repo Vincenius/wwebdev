@@ -1,0 +1,87 @@
+{
+    "items": [
+        {
+            "title": "Splite",
+            "description": "A tool to aasily create and publish 3D web experiences.",
+            "link": "https://spline.design/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/spline.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "Focalboard",
+            "description": "A open source, self-hosted alternative to Trello, Notion, and Asana. ",
+            "link": "https://www.focalboard.com/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/focalboard.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "Learn LaTeX",
+            "description": "A website to get started with LaTeX: the basics, installation, writing code and more.",
+            "link": "https://www.learnlatex.org/en/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/learnlatex.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "chatwoot",
+            "description": "An Open-source customer engagement suite as an alternative to tools like Intercom or Zendesk.",
+            "link": "https://github.com/chatwoot/chatwoot",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/chatwoot.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "Sorted CSS Colors",
+            "description": "A tool that sorts the named CSS colors in a way that it shows related colors together.",
+            "link": "https://enes.in/sorted-colors/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/sorted-colors.jpg",
+            "tags": [
+                "Resource",
+                "CSS"
+            ]
+        },
+        {
+            "title": "JavaScript Visualizer 9000",
+            "description": "A tool to interactively visualize JavaScript's Event Loop.",
+            "link": "https://www.jsv9000.app/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/visualizer-9000.jpg",
+            "tags": [
+                "Tool"
+            ]
+        },
+        {
+            "title": "Creating Patterns With SVG Filters",
+            "description": "A cool article about generating patterns with a few lines of SVG.",
+            "link": "https://css-tricks.com/creating-patterns-with-svg-filters/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/svg-feturbulence-patterns.jpg",
+            "tags": [
+                "Article"
+            ]
+        },
+        {
+            "title": "ipsm.io",
+            "description": "A collection of productivity tools for developers and designers.",
+            "link": "https://ipsm.io/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/ipsm.jpg",
+            "tags": [
+                "Resource"
+            ]
+        },
+        {
+            "title": "Fluid Space Calculator",
+            "description": "A calculator for space value pairs, with a nice visualisation and a CSS generator.",
+            "link": "https://utopia.fyi/space/calculator/",
+            "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/fluid-calc.jpg",
+            "tags": [
+                "Article",
+                "CSS"
+            ]
+        }
+    ]
+}
