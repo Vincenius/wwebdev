@@ -2,7 +2,7 @@
     "items": [
         {
             "title": "Splite",
-            "description": "A tool to aasily create and publish 3D web experiences.",
+            "description": "A tool to easily create and publish 3D web experiences.",
             "link": "https://spline.design/",
             "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/spline.jpg",
             "tags": [
@@ -11,7 +11,7 @@
         },
         {
             "title": "Focalboard",
-            "description": "A open source, self-hosted alternative to Trello, Notion, and Asana. ",
+            "description": "An open-source, self-hosted alternative to Trello, Notion, and Asana. ",
             "link": "https://www.focalboard.com/",
             "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/focalboard.jpg",
             "tags": [
@@ -75,7 +75,7 @@
         },
         {
             "title": "Fluid Space Calculator",
-            "description": "A calculator for space value pairs, with a nice visualisation and a CSS generator.",
+            "description": "A calculator for space value pairs, with a nice visualization and a CSS generator.",
             "link": "https://utopia.fyi/space/calculator/",
             "image": "https://wwebdev-images.s3.eu-central-1.amazonaws.com/content/weekly/67/fluid-calc.jpg",
             "tags": [
