@@ -27,38 +27,25 @@ const weeklyTags = [
 let setSearchValDebounced
 
 const WeeklyLibrary = () => {
-    const [chipData, setChipData] = useState([])
     const [searchVal, setSearchVal] = useState('') // whats used for search (debounced)
     const [inputVal, setInputVal] = useState('') // whats displayed in input field
+    const fetchWeekly = async (page = 0, search) => {
+      const json = search
+        ? { search }
+        : { weekly: '1' } // TODO fetch all and paginate
+      console.log(search)
+      const stringified = JSON.stringify(json)
+      const query = encodeURI(stringified)
+      const response = await fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}`)
+      return response.json()
+    }
 
     useEffect(() => {
       setSearchValDebounced = _debounce(value => setSearchVal(value), 500)
-      setChipData(weeklyTags.map(tag => ({
-        label: tag,
-        active: false,
-      })))
     }, [])
 
-    const { status, data, error } = useQuery(`allWeeklies`, async () => {
-      const weeklyPromises = weeklyData.map(async w => {
-        const response = await fetch(`/weekly/data/${w.id}.json`)
-        const result = await response.json()
-        return result.items
-      })
-      const response = await Promise.all(weeklyPromises)
-      return response
-    })
+    const { status, data, error } = useQuery(['allWeeklies', searchVal], () => fetchWeekly(0, searchVal), { keepPreviousData: false })
     const loadingOrIdle = status === 'loading' || status === 'idle'
-    const flatData = data ? data.flat() : []
-
-    const toggleActive = value => {
-      const newChipData = chipData.map(data =>
-        data.label === value
-          ? { label: data.label, active: !data.active }
-          : data
-      )
-      setChipData(newChipData)
-    }
 
     const changeSearchInput = e => {
       const { value } = e.target
@@ -67,21 +54,6 @@ const WeeklyLibrary = () => {
       setInputVal(value)
       setSearchValDebounced(value.toLowerCase())
     }
-
-    const activeFilter = chipData
-      .filter(d => d.active)
-      .map(d => d.label)
-
-    const filteredData = flatData.length && activeFilter.length
-      ? flatData
-        .filter(d => d.tags.some(tag => activeFilter.includes(tag)))
-        .filter(d => searchVal === '' ||
-          d.title.toLowerCase().includes(searchVal) ||
-          d.description.toLowerCase().includes(searchVal))
-      : flatData
-        .filter(d => searchVal === '' ||
-          d.title.toLowerCase().includes(searchVal) ||
-          d.description.toLowerCase().includes(searchVal))
 
     return (
         <Layout title="Library of previous weekly content">
@@ -105,18 +77,11 @@ const WeeklyLibrary = () => {
                   ),
                 }}
               />
-
-              <FilterBar
-                chipData={chipData}
-                toggleActive={toggleActive}
-                loading={loadingOrIdle}
-                count={filteredData.length}
-              />
           </ui.Container>
           <ui.GridContainer>
             { loadingOrIdle && generateLinkBoxLoading() }
-            { !loadingOrIdle && generateWeeklyContent(filteredData) }
-            { !loadingOrIdle && filteredData.length === 0 &&
+            { !loadingOrIdle && generateWeeklyContent(data) }
+            { !loadingOrIdle && data.length === 0 &&
               <p>Couldn't find anything...</p>
             }
           </ui.GridContainer>

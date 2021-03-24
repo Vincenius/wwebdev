@@ -7,6 +7,7 @@ import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
 import PrevNext from '../../components/PrevNext'
 import { weeklyData as meta } from '../../content/weekly'
+import { generateLinkBoxLoading } from '../../content/generator'
 import * as ui from '../../ui'
 
 const Post = () => {
@@ -14,7 +15,10 @@ const Post = () => {
     const { pid } = router.query
     const weeklyMeta = meta.find(m => m.id === pid)
     const { status, data, error } = useQuery(`weekly-${pid}`, async () => {
-        const response = await fetch(`/weekly/data/${pid}.json`)
+        const json = { weekly: pid }
+        const stringified = JSON.stringify(json)
+        const query = encodeURI(stringified)
+        const response = await fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}`)
         return response.json()
     })
 
@@ -28,9 +32,15 @@ const Post = () => {
             localImage={true}
             description={weeklyMeta.description}
         >
+
+            {
+                !data && <ui.GridContainer>
+                    { generateLinkBoxLoading(9) }
+                </ui.GridContainer>
+            }
             { data && <ui.GridContainer>
                 {
-                    data.items.map((item, index) =>
+                    data.map((item, index) =>
                         <LinkBox
                             key={`linkbox-${index}`}
                             title={item.title}
