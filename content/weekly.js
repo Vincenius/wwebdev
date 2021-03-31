@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '68',
+        date: 'March 31, 2020',
+        description: "transition.css, use-local-storage-state, Re:factor, FicusJS and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/68.png',
+    },
+    {
         id: '67',
         date: 'March 24, 2020',
         description: "Splite, Focalboard, Learn LaTeX, chatwoot, Sorted CSS Colors and more...",
