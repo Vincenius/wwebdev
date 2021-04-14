@@ -1,5 +1,23 @@
 const data = [
     {
+        id: '69',
+        date: 'April 14, 2020',
+        description: "Coolify, React + D3.js, Fontshare, Gradient Generator, moovie.js and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/69.png',
+    },
+    {
+        id: '68',
+        date: 'March 31, 2020',
+        description: "transition.css, use-local-storage-state, Re:factor, FicusJS and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/68.png',
+    },
+    {
+        id: '67',
+        date: 'March 24, 2020',
+        description: "Splite, Focalboard, Learn LaTeX, chatwoot, Sorted CSS Colors and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/67.png',
+    },
+    {
         id: '66',
         date: 'March 17, 2020',
         description: "Clone Wars, StartupToolbox, react-use, amigos, conic.css and more...",
