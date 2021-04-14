@@ -2,7 +2,7 @@ import { weeklyData } from '../content/weekly'
 import articleData from '../content/articles'
 import resourceData from '../content/resources'
 
-export default async searchWord => {
+export default async (searchWord) => {
   const articleResourceData = [...articleData, ...resourceData]
   const articleResourceResults = articleResourceData
     .map(

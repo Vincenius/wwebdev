@@ -22,6 +22,21 @@ const Post = () => {
         return response.json()
     })
 
+    if (!weeklyMeta || !weeklyMeta.date) {
+        return <Layout
+            isArticle={true}
+            title={`Web development update of the future`}
+            link={`https://wweb.dev/weekly/${pid}`}
+            image={`/weekly/preview/weekly/1.jpg`}
+            localImage={true}
+            description="This weekly does not exist yet"
+        >
+            <ui.Container>
+                This weekly does not exist yet...
+            </ui.Container>
+        </Layout>
+    }
+
     return (
         <Layout
             isArticle={true}

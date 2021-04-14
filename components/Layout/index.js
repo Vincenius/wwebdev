@@ -38,7 +38,7 @@ function Layout ({
             { isArticle && !hideHeader &&
                 <Header>
                     <h1>{title}</h1>
-                    <S.SDate><S.Time datetime={d.toISOString()}>{date}</S.Time></S.SDate>
+                    {d && <S.SDate><S.Time datetime={d.toISOString()}>{date}</S.Time></S.SDate> }
                     { updatedAt &&
                         <S.Updated>Updated: <S.Time datetime={ud.toISOString()}>{updatedAt}</S.Time></S.Updated>
                     }
