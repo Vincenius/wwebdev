@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '69',
+        date: 'April 14, 2020',
+        description: "Coolify, React + D3.js, Fontshare, Gradient Generator, moovie.js and more...",
+        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/69.png',
+    },
+    {
         id: '68',
         date: 'March 31, 2020',
         description: "transition.css, use-local-storage-state, Re:factor, FicusJS and more...",
