@@ -8,7 +8,9 @@
     "build": "next build",
     "start": "next start",
     "export": "npm run build && next export",
-    "postexport": "node scripts/postExport.js"
+    "postexport": "node scripts/postExport.js",
+    "deploy": "aws s3 sync ./out s3://wwebdev-static-website-bucket --delete",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id=E32J3ET4M6TIBY --paths /"
   },
   "dependencies": {
     "@babel/core": "^7.13.15",

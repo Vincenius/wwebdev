@@ -24,3 +24,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# service worker
+
+/public/sw.js
+/public/workbox-*
