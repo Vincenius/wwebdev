@@ -24,7 +24,7 @@ export const generateWeekly = maxCount => {
 
 export const generateWeeklyContent = (data, filter) => {
     return data.map((item, index) =>
-        <React.Fragment key={`linkbox-${item.id}`}>
+        <React.Fragment key={`linkbox-${item._id}`}>
             <LinkBox
                 key={`linkbox-${index}`}
                 title={item.title}

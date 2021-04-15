@@ -11,6 +11,7 @@
     "postexport": "node scripts/postExport.js"
   },
   "dependencies": {
+    "@babel/core": "^7.13.15",
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
     "@material-ui/lab": "^4.0.0-alpha.55",
@@ -25,7 +26,7 @@
     "hamburger-react": "^2.1.1",
     "image-downloader": "^4.0.1",
     "lodash": "^4.17.19",
-    "next": "^10.0.0",
+    "next": "^10.1.3",
     "next-pwa": "^3.0.1",
     "react": "16.11.0",
     "react-color": "^2.18.1",
