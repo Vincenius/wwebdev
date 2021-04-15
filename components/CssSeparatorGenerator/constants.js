@@ -1,6 +1,6 @@
 export const SEPARATORS = {
     SKEWED: 'skewed',
-    SEMI_CIRCLE: 'semiCircle',
+    SEMI_CIRCLE: 'semicircle',
     WAVE: 'wave',
     SPIKES: 'spikes',
     TRIANGLE: 'triangle',

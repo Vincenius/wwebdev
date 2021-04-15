@@ -14,6 +14,7 @@ for (const w of weeklyData) {
 }
 
 const settings = withBundleAnalyzer(withCSS({
+    trailingSlash: true,
     pwa: {
         dest: 'public'
     },

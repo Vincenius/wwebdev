@@ -9,7 +9,9 @@
     "start": "next start",
     "export": "npm run build && next export",
     "postexport": "node scripts/postExport.js",
-    "deploy": "aws s3 sync ./out s3://wwebdev-static-website-bucket --delete",
+    "cleandeploy": "aws s3 sync ./out s3://wwebdev-static-website-bucket --delete",
+    "deploy": "aws s3 sync ./out s3://wwebdev-static-website-bucket",
+    "postcleandeploy": "aws cloudfront create-invalidation --distribution-id=E32J3ET4M6TIBY --paths /",
     "postdeploy": "aws cloudfront create-invalidation --distribution-id=E32J3ET4M6TIBY --paths /"
   },
   "dependencies": {
