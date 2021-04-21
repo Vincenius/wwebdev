@@ -1,7 +1,7 @@
 const data = [
     {
         id: '70',
-        date: 'April 14, 2020',
+        date: 'April 21, 2020',
         description: "Design Resources, browser cookies, GitHub Theme, DirectShare and more...",
         previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/weekly/70.png',
     },
