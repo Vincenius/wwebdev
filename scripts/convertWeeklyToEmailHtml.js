@@ -1,7 +1,7 @@
 const fs = require('fs')
 const { weeklyData } = require('../content/weekly')
 const id = weeklyData[0].id
-const data = JSON.parse(fs.readFileSync(`../public/weekly/data/${id}.json`, 'utf8'))
+const data = JSON.parse(fs.readFileSync(`./${id}.json`, 'utf8'))
 
 let markDown = `<!--[if !mso]><!-- --><meta http-equiv="X-UA-Compatible" content="IE=edge" /><!--<![endif]--><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 <style type="text/css">#outlook a {

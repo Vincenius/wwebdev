@@ -1,7 +1,7 @@
 const fs = require('fs')
 const { weeklyData } = require('../content/weekly')
 const id = weeklyData[0].id
-const data = JSON.parse(fs.readFileSync(`../public/weekly/data/${id}.json`, 'utf8'))
+const data = JSON.parse(fs.readFileSync(`./${id}.json`, 'utf8'))
 
 let markDown = ``
 
