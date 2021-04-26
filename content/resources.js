@@ -6,7 +6,7 @@ const data = [
         headline: "Websites For Free Icon Sets",
         description: "A curated list of websites that offer collections of free icons.",
         link: "/resources/free-icon-sets",
-        previewImage: "https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/articles/preview_S4rXKoliGYiB.png",
+        previewImage: "/preview/preview_S4rXKoliGYiB.png",
     },
     {
         id: 10,
@@ -15,7 +15,7 @@ const data = [
         headline: "JavaScript Object Functions Cheat Sheet",
         description: "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.",
         link: "/resources/js-object-functions-cheatsheet",
-        previewImage: "https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/articles/js-object-cheatsheet-preview_urYtz7hxD8d.png",
+        previewImage: "/preview/js-object-cheatsheet-preview_urYtz7hxD8d.png",
     },
     {
         id: 9,
@@ -24,7 +24,7 @@ const data = [
         headline: "Responsive Navigation Generator",
         description: "Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.",
         link: "/resources/navigation-generator",
-        previewImage: "https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/articles/navigation-generator_flkQB-LbDQ-.png",
+        previewImage: "/preview/navigation-generator_flkQB-LbDQ-.png",
     },
     {
         id: 8,
@@ -33,7 +33,7 @@ const data = [
         headline: "JavaScript Array Functions Cheat Sheet",
         description: "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.",
         link: "/resources/js-array-functions-cheatsheet",
-        previewImage: "https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/articles/js-array-cheatsheet-preview_vpuXKzM9s.png",
+        previewImage: "/preview/js-array-cheatsheet-preview_vpuXKzM9s.png",
     },
     {
         id: 7,
@@ -42,7 +42,7 @@ const data = [
         headline: "Creative Hover Effects",
         description: "A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.",
         link: "/resources/creative-hover-effects",
-        previewImage: "https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/articles/hover-preview_eieplkIor.jpg",
+        previewImage: "/preview/hover-preview_eieplkIor.jpg",
     },
     {
         id: 6,
@@ -52,7 +52,7 @@ const data = [
         headline: "Websites For Inspiration",
         description: "Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.",
         link: "/resources/websites-for-inspiration",
-        previewImage: "https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/articles/preview_rDQNhlplI.png",
+        previewImage: "/preview/preview_rDQNhlplI.png",
     },
     {
         id: 5,
@@ -61,7 +61,7 @@ const data = [
         headline: "CSS Section Separator Generator",
         description: "A collection of customizable CSS section separators, with the possibility to easily copy the code.",
         link: "/resources/css-separator-generator",
-        previewImage: "https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/articles/css-separator-generator_7lds84DdzGW.png",
+        previewImage: "/preview/css-separator-generator_7lds84DdzGW.png",
     },
     {
         id: 4,
@@ -71,7 +71,7 @@ const data = [
         headline: "Websites For Creative Backgrounds",
         description: "A curated list of websites where you can get creative backgrounds for your websites.",
         link: "/resources/creative-backgrounds",
-        previewImage: "https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/articles/preview_IF4o7Ga9O.jpg",
+        previewImage: "/preview/preview_IF4o7Ga9O.jpg",
     },
     {
         id: 3,
@@ -80,7 +80,7 @@ const data = [
         headline: "Convert2Svg",
         description: "A free and open-source tool to easily transform any image or photo into a multi colored svg vector file.",
         link: "https://convert2svg.com/",
-        previewImage: "https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/articles/preview_vdfddh_Zb7zB92EJ.jpg",
+        previewImage: "/preview/preview_vdfddh_Zb7zB92EJ.jpg",
     },
     {
         id: 2,
@@ -90,7 +90,7 @@ const data = [
         headline: 'A Curated List Of Websites For Free SVG Illustrations',
         description: "Spice up your next project with beautiful illustrations from these websites.",
         link: '/resources/free-svg-illustrations',
-        previewImage: 'https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/articles/preview_C-krc8PbLyM.jpg',
+        previewImage: '/preview/preview_C-krc8PbLyM.jpg',
     },
     {
         id: 1,
@@ -99,7 +99,7 @@ const data = [
         headline: "Animated CSS Background Generator",
         description: "A collection of pure css animated backgrounds with the possibility to customize.",
         link: "/resources/animated-css-background-generator",
-        previewImage: "https://wwebdev-images.s3.eu-central-1.amazonaws.com/preview/articles/resources01_zAtYo6WzY.jpg",
+        previewImage: "/preview/resources01_zAtYo6WzY.jpg",
     }
 ]
 
