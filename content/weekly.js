@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '71',
+        date: 'April 28, 2020',
+        description: "SimpleR State, Cusdis, HTML boilerplate, Awesome-Selfhosted and more...",
+        previewImage: '/weekly/preview/71.png',
+    },
+    {
         id: '70',
         date: 'April 21, 2020',
         description: "Design Resources, browser cookies, GitHub Theme, DirectShare and more...",
