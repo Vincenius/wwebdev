@@ -1,31 +1,42 @@
 const fs = require('fs')
+const fetch = require('node-fetch')
 const { weeklyData } = require('../content/weekly')
 const id = weeklyData[0].id
-const data = JSON.parse(fs.readFileSync(`./${id}.json`, 'utf8'))
 
-let markDown = ``
+const json = { weekly: id }
+const stringified = JSON.stringify(json)
+const query = encodeURI(stringified)
 
-for (const item of data.items) {
-  const imageLink = item.image.startsWith('/weekly/')
-    ? `https://wweb.dev${item.image}`
-    : item.image
-  markDown = `${markDown}
+fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}`)
+  .then(res => res.json())
+  .then(data => {
 
-______
+    let markDown = ``
 
-##[${item.title}](${item.link})
-[![${item.title}](${imageLink})](${item.link})
-${item.description}`
-}
+    for (const item of data) {
+      const imageLink = item.image.startsWith('/weekly/')
+        ? `https://wweb.dev${item.image}`
+        : item.image
+      markDown = `${markDown}
 
-markDown = `${markDown}
+    ______
 
-______
+    ##[${item.title}](${item.link})
+    [![${item.title}](${imageLink})](${item.link})
+    ${item.description}`
+    }
 
-To see all the weeklies check: [wweb.dev/weekly](https://wweb.dev/weekly)`
+    markDown = `${markDown}
 
-// only osx??
-var proc = require('child_process').spawn('pbcopy');
-proc.stdin.write(markDown); proc.stdin.end();
+    ______
 
-console.log('copied')
+    To see all the weeklies check: [wweb.dev/weekly](https://wweb.dev/weekly)`
+
+    // only osx??
+    var proc = require('child_process').spawn('pbcopy');
+    proc.stdin.write(markDown); proc.stdin.end();
+
+    console.log('copied')
+  })
+
+
