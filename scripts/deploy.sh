@@ -7,6 +7,8 @@ pip install --user awscli
 
 export TF_VAR_build_number=$TRAVIS_BUILD_NUMBER
 
-# DEPLOY
+# EXPORT
 npm run export
+
+# DEPLOY
 npm run deploy
