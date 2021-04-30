@@ -6,7 +6,7 @@ node_js:
 jobs:
   include:
     - stage: "Deploy"
-      name: "Deploy to QA"
+      name: "Deploy to PROD"
       if: fork = false AND branch = master AND (type = push OR type = api)
       skip_cleanup: true
       env:
