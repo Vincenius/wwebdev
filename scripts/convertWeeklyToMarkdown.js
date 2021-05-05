@@ -19,18 +19,18 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
         : item.image
       markDown = `${markDown}
 
-    ______
+______
 
-    ##[${item.title}](${item.link})
-    [![${item.title}](${imageLink})](${item.link})
-    ${item.description}`
-    }
+##[${item.title}](${item.link})
+[![${item.title}](${imageLink})](${item.link})
+${item.description}`
+}
 
-    markDown = `${markDown}
+markDown = `${markDown}
 
-    ______
+______
 
-    To see all the weeklies check: [wweb.dev/weekly](https://wweb.dev/weekly)`
+To see all the weeklies check: [wweb.dev/weekly](https://wweb.dev/weekly)`
 
     // only osx??
     var proc = require('child_process').spawn('pbcopy');
