@@ -96,12 +96,6 @@ export const SidebarContent = styled.aside`
         margin: 40px auto;
     }
 
-    ${'' /* > * {
-        @media (max-width: ${breakpointLarge}) {
-            max-width: 480px;
-        }
-    } */}
-
     > a:last-child {
         display: block;
         text-align: center;
