@@ -90,15 +90,17 @@ export const Sidebar = styled.aside`
 
 export const SidebarContent = styled.aside`
     @media (max-width: ${breakpointLarge}) {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(auto-fill,minmax(280px,1fr));
+        grid-gap: 40px;
+        margin: 40px auto;
     }
 
-    > * {
+    ${'' /* > * {
         @media (max-width: ${breakpointLarge}) {
             max-width: 480px;
         }
-    }
+    } */}
 
     > a:last-child {
         display: block;
