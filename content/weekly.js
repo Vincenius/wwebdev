@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '74',
+        date: 'May 19, 2021',
+        description: "mmm.page, PINTR, Codewell, Modern JavaScript, Mantine and more...",
+        previewImage: '/weekly/preview/74.png',
+    },
+    {
         id: '73',
         date: 'May 12, 2021',
         description: "How React hooks work, ClearURLs, Bootstrap 5, Oslo, HTML Tips and more...",
