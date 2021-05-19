@@ -74,7 +74,7 @@ for (const item of sortedData) {
 
     rss = rss +`
     <item>
-        <title>${headline}</title>
+        <title>${headline.replace("&", "&amp;")}</title>
         <link>${link}</link>
         <description>${item.description}</description>
         <pubDate>${new Date(item.date).toUTCString()}</pubDate>
