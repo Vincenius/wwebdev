@@ -60,7 +60,7 @@ const About = () => (
                 to <i>wweb.dev</i>, as I wanted to separate it from my other content.
               </p>
               <p>
-                It's important for me to keep this website privacy-friendly,
+                It's important to me to keep this website privacy-friendly,
                 ad-free, and <a  href="https://github.com/wwebdev" target="_blank" rel="noopener">open-source</a>.
                 I would be super happy if you could <a href="https://www.buymeacoffee.com/wwebdev" target="_blank" rel="noopener">support me in doing so</a>.
               </p>
