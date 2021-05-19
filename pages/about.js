@@ -30,9 +30,9 @@ const $Flex = styled.div`
     border-radius: 100%;
     margin-right: 36px;
     height: 100%;
+    max-width: 200px;
 
     @media (max-width: ${breakpointLarge}) {
-      max-width: 200px;
       margin-right: 0;
       margin-bottom: 18px;
     }
