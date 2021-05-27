@@ -81,21 +81,7 @@ class MyHead extends React.Component {
                 <link rel='manifest' href='/manifest.json' />
 
                 { description && <meta name="description" content={description}></meta> }
-                <script type="text/javascript" dangerouslySetInnerHTML={{__html:
-                    `if (location.hostname !== "localhost" && location.hostname !== "127.0.0.1") {
-                        var _paq = window._paq || [];
-                        _paq.push(["setDoNotTrack", true]);
-                        _paq.push(['trackPageView']);
-                        _paq.push(['enableLinkTracking']);
-                        (function() {
-                            var u="https://analytics.vincentwill.com/";
-                            _paq.push(['setTrackerUrl', u+'hokuspokusp']);
-                            _paq.push(['setSiteId', '1']);
-                            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-                            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'hokuspokusj'; s.parentNode.insertBefore(g,s);
-                        })();
-                    }`}}>
-                </script>
+                <script async defer data-website-id="208d46a4-6fc6-4947-954c-e7940d9b0fe6" src="https://analytics.vincentwill.com/umami.js"></script>
                 <style> { 'html, body { margin: 0; overflow-x: hidden; } body svg { width: 32px; }' } </style>
 
                 <React.Fragment>

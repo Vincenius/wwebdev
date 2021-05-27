@@ -11,7 +11,7 @@ const Privacy = () => (
             <h2>Honest and human readable version</h2>
             <p>
                 I try to keep this website as privacy friendly as possible.
-                I am using a self hosted version of <a href="https://matomo.org/" target="_blank" rel="noopener">Matomo</a> for the only purpose of knowing how many people are visiting this website.
+                I am using a self hosted version of <a href="https://umami.is/" target="_blank" rel="noopener">umami</a> for the only purpose of knowing how many people are visiting this website.
             </p>
             <p>
                 <b>If you enable "Do Not Track" in your browser I won't track you</b>.
@@ -225,11 +225,10 @@ const Privacy = () => (
             </p>
             <ul>
                 <li>
-                    <p><strong>Piwik or Matomo</strong></p>
+                    <p><strong>Umami</strong></p>
                     <p>
-                        Piwik or Matomo is a web analytics service. You
-                        can visit their Privacy Policy page here:
-                        <a href="https://matomo.org/privacy-policy">https://matomo.org/privacy-policy</a>
+                        Umami is a web analytics service. Umami does not use any cookies in the tracking code.
+                        It does not collect any personally identifiable information and anonymizes all data collected.
                     </p>
                 </li>
             </ul>
