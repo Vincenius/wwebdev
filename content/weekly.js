@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '76',
+        date: 'June 02, 2021',
+        description: "Awesome Privacy, Color Gradient, Boring Avatars, NocoDB and more...",
+        previewImage: '/weekly/preview/76.png',
+    },
+    {
         id: '75',
         date: 'May 26, 2021',
         description: "Iconoir, Learn CSS, pmndrs market, Tail Blend, AImages and more...",
