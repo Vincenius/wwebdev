@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '77',
+        date: 'June 09, 2021',
+        description: "mermaid, Links on Performance, Mastershot, macOCR and more...",
+        previewImage: '/weekly/preview/77.png',
+    },
+    {
         id: '76',
         date: 'June 02, 2021',
         description: "Awesome Privacy, Color Gradient, Boring Avatars, NocoDB and more...",
