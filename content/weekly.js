@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '78',
+        date: 'June 16, 2021',
+        description: "Astro, BootStarters, GitHub Flat Data, Open Tags and more...",
+        previewImage: '/weekly/preview/78.png',
+    },
+    {
         id: '77',
         date: 'June 09, 2021',
         description: "mermaid, Links on Performance, Mastershot, macOCR and more...",
