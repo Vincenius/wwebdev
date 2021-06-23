@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '79',
+        date: 'June 23, 2021',
+        description: "nushell, Utopia, ReScript, DenoDB, Super Agent and more...",
+        previewImage: '/weekly/preview/79.png',
+    },
+    {
         id: '78',
         date: 'June 16, 2021',
         description: "Astro, BootStarters, GitHub Flat Data, Open Tags and more...",
