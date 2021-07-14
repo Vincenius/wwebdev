@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '80',
+        date: 'July 14, 2021',
+        description: "Copy & Paste CSS, UI Snippets, Nextra, use-color and more...",
+        previewImage: '/weekly/preview/80.png',
+    },
+    {
         id: '79',
         date: 'June 23, 2021',
         description: "nushell, Utopia, ReScript, DenoDB, Super Agent and more...",
