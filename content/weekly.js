@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '81',
+        date: 'July 21, 2021',
+        description: "Sa11y, gridless.design, Glass UI, Line Icons, Rooks and more...",
+        previewImage: '/weekly/preview/81.png',
+    },
+    {
         id: '80',
         date: 'July 14, 2021',
         description: "Copy & Paste CSS, UI Snippets, Nextra, use-color and more...",
