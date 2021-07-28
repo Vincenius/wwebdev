@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '82',
+        date: 'July 28, 2021',
+        description: "SVG Gobbler, Salvia-kit, graphlatte, Maker Stations and more...",
+        previewImage: '/weekly/preview/82.png',
+    },
+    {
         id: '81',
         date: 'July 21, 2021',
         description: "Sa11y, gridless.design, Glass UI, Line Icons, Rooks and more...",
