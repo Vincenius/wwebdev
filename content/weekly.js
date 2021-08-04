@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '83',
+        date: 'August 04, 2021',
+        description: "Instahues, Wicked Backgrounds, Piped, Welcome UI and more...",
+        previewImage: '/weekly/preview/83.png',
+    },
+    {
         id: '82',
         date: 'July 28, 2021',
         description: "SVG Gobbler, Salvia-kit, graphlatte, Maker Stations and more...",
