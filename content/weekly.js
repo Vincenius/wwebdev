@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '84',
+        date: 'August 11, 2021',
+        description: "Jotai, LÖVR, LiveKit, AVPress, StackFinder, Gradients and more...",
+        previewImage: '/weekly/preview/84.png',
+    },
+    {
         id: '83',
         date: 'August 04, 2021',
         description: "Instahues, Wicked Backgrounds, Piped, Welcome UI and more...",
