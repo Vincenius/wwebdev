@@ -1,8 +1,7 @@
-import { weeklyData } from '../content/weekly'
 import articleData from '../content/articles'
 import resourceData from '../content/resources'
 
-export default async (searchWord) => {
+const search = async (searchWord) => {
   const articleResourceData = [...articleData, ...resourceData]
   const articleResourceResults = articleResourceData
     .map(
@@ -11,26 +10,7 @@ export default async (searchWord) => {
     )
     .filter(Boolean)
 
-  const weeklyPromises = weeklyData.map(async w => {
-    const res = await fetch(`/weekly/data/${w.id}.json`)
-    const resData = await res.json()
-    return {
-      ...w,
-      ...resData,
-    }
-  })
-
-  const weeklyDetailData = await Promise.all(weeklyPromises)
-  const weeklyResult = weeklyDetailData
-    .map(w =>
-      w.items.find(item => item.title.includes(searchWord)) ||
-      w.items.find(item => item.description.includes(searchWord))
-        ? w : null
-    )
-    .filter(Boolean)
-
-  return [
-    ...articleResourceResults,
-    ...weeklyResult,
-  ]
+  return articleResourceResults
 }
+
+export default search
