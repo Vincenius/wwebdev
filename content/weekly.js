@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '85',
+        date: 'August 19, 2021',
+        description: "Blokada, CSS Modules, daisyUI, Imba, Progressive Tooling and more...",
+        previewImage: '/weekly/preview/85.png',
+    },
+    {
         id: '84',
         date: 'August 11, 2021',
         description: "Jotai, LÖVR, LiveKit, AVPress, StackFinder, Gradients and more...",
