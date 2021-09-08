@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '86',
+        date: 'September 07, 2021',
+        description: "OpenMoji, Buttons Generator, Devboard, couleur.io and more...",
+        previewImage: '/weekly/preview/86.png',
+    },
+    {
         id: '85',
         date: 'August 19, 2021',
         description: "Blokada, CSS Modules, daisyUI, Imba, Progressive Tooling and more...",
