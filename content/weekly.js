@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '87',
+        date: 'September 15, 2021',
+        description: "Design Junction, Figen, Gokarna, SpeedVitals, Solid and more...",
+        previewImage: '/weekly/preview/87.png',
+    },
+    {
         id: '86',
         date: 'September 08, 2021',
         description: "OpenMoji, Buttons Generator, Devboard, couleur.io and more...",
