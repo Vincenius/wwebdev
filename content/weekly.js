@@ -1,5 +1,11 @@
 const data = [
     {
+        id: '88',
+        date: 'September 22, 2021',
+        description: "ToolJet, Doodle Ipsum, Dopefolio, Theatre.js, Grainy Gradients...",
+        previewImage: '/weekly/preview/88.png',
+    },
+    {
         id: '87',
         date: 'September 15, 2021',
         description: "Design Junction, Figen, Gokarna, SpeedVitals, Solid and more...",
