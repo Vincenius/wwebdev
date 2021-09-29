@@ -1,8 +1,14 @@
 const data = [
     {
+        id: '89',
+        date: 'September 29, 2021',
+        description: "Burdy, Basic Pattern Repository, cccreate, Saveddit and more...",
+        previewImage: '/weekly/preview/89.png',
+    },
+    {
         id: '88',
         date: 'September 22, 2021',
-        description: "ToolJet, Doodle Ipsum, Dopefolio, Theatre.js, Grainy Gradients...",
+        description: "ToolJet, Doodle Ipsum, Theatre.js, Grainy Gradients and more...",
         previewImage: '/weekly/preview/88.png',
     },
     {
