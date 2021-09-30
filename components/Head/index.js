@@ -10,7 +10,6 @@ class MyHead extends React.Component {
             link,
             description,
             image,
-            localImage,
             date,
             updatedDate,
             isArticle,
@@ -21,7 +20,7 @@ class MyHead extends React.Component {
             ? `wweb.dev | ${title}`
             : `${title} | wweb.dev`
         const imageLink = isArticle
-            ? localImage ? `https://wweb.dev${image}` : image
+            ? `https://wweb.dev${image}`
             : 'https://wweb.dev/share.png'
 
         const structuredData = `

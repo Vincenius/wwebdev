@@ -13,7 +13,6 @@ function Layout ({
     date,
     link,
     image,
-    localImage,
     description,
     titleNameFirst,
     updatedAt,
@@ -27,7 +26,6 @@ function Layout ({
                 title={title}
                 link={link}
                 image={image}
-                localImage={localImage}
                 description={description}
                 date={d}
                 updatedDate={ud}

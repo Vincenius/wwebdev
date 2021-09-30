@@ -28,7 +28,6 @@ const Post = () => {
             title={`Web development update of the future`}
             link={`https://wweb.dev/weekly/${pid}`}
             image={`/weekly/preview/weekly/1.jpg`}
-            localImage={true}
             description="This weekly does not exist yet"
         >
             <ui.Container>
@@ -44,7 +43,6 @@ const Post = () => {
             date={weeklyMeta.date}
             link={`https://wweb.dev/weekly/${pid}`}
             image={`/weekly/social/weekly${pid}.jpg`}
-            localImage={true}
             description={weeklyMeta.description}
         >
 
