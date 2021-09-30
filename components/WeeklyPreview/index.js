@@ -9,7 +9,6 @@ const ArticlePreview = ({
     date,
     number,
     description,
-    previewImage,
 }) => {
     const d = new Date(date)
     const headline = `Weekly #${number}`
@@ -29,7 +28,7 @@ const ArticlePreview = ({
                 { !imageLoaded && <S.ImageSkeleton variant="rect" /> }
                 <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
                     <S.Image
-                        src={previewImage}
+                        src={`/weekly/preview/${number}.jpg`}
                         alt={headline}
                     />
                 </LazyLoad>
