@@ -76,7 +76,7 @@ for (const item of sortedData) {
     <item>
         <title>${headline.replace("&", "&amp;")}</title>
         <link>${link}</link>
-        <description>${item.description}</description>
+        <description>${item.description.replace("&", "&amp;")}}</description>
         <pubDate>${new Date(item.date).toUTCString()}</pubDate>
         <guid>${link}</guid>
     </item>`
