@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '92',
+        date: 'October 20, 2021',
+        description: "LocalStack, MJML, CSS backgrounds, 3D Icons, Vizzu and more...",
+    },
+    {
         id: '91',
         date: 'October 13, 2021',
         description: "redact.photo, Refine, Fette­Palette, Atropos, TinyJson and more...",
