@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '93',
+        date: 'October 27, 2021',
+        description: "Analyze CSS, useAwsui, Linaria, Water.css, Magit and more...",
+    },
+    {
         id: '92',
         date: 'October 20, 2021',
         description: "LocalStack, MJML, CSS backgrounds, 3D Icons, Vizzu and more...",
