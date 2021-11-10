@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '95',
+        date: 'November 10, 2021',
+        description: "Image Upscaler, Notifire, MistQL, Codeamigo, Iconscout and more...",
+    },
+    {
         id: '94',
         date: 'November 03, 2021',
         description: "LT Browser, Life of Discipline, nice-waves, Blobity and more...",
