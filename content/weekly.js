@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '97',
+        date: 'November 24, 2021',
+        description: "Shadow Palette Generator, tldraw, RegEx Learn MicroDiff, and more...",
+    },
+    {
         id: '96',
         date: 'November 17, 2021',
         description: "bbburst, Can I Include, Morphing Submit Button, Splide and more...",
