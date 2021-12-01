@@ -1,8 +1,13 @@
 const data = [
     {
+        id: '98',
+        date: 'December 01, 2021',
+        description: "Twind, nnnoise, Image Optimizer, a11y myths, EmailTimer and more...",
+    },
+    {
         id: '97',
         date: 'November 24, 2021',
-        description: "Shadow Palette Generator, tldraw, RegEx Learn MicroDiff, and more...",
+        description: "Shadow Palette Generator, tldraw, RegEx Learn MicroDiff and more...",
     },
     {
         id: '96',
