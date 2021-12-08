@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '99',
+        date: 'December 08, 2021',
+        description: "Code Hike, Nice Modal, PickBetterPack, Open Props and more...",
+    },
+    {
         id: '98',
         date: 'December 01, 2021',
         description: "Twind, nnnoise, Image Optimizer, a11y myths, EmailTimer and more...",
