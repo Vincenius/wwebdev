@@ -25,7 +25,7 @@ const Post = () => {
     if (!weeklyMeta || !weeklyMeta.date) {
         return <Layout
             isArticle={true}
-            title={`Web development update of the future`}
+            title={`Web development resources of the future`}
             link={`https://wweb.dev/weekly/${pid}`}
             image={`/weekly/preview/weekly/1.jpg`}
             description="This weekly does not exist yet"
@@ -39,7 +39,7 @@ const Post = () => {
     return (
         <Layout
             isArticle={true}
-            title={`Web development update ${weeklyMeta.date}`}
+            title={`Web development resources #${pid} ${weeklyMeta.date}`}
             date={weeklyMeta.date}
             link={`https://wweb.dev/weekly/${pid}`}
             image={`/weekly/social/weekly${pid}.jpg`}

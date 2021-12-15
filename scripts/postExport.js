@@ -67,7 +67,7 @@ let rss =
     <atom:link href="https://wweb.dev/rss.xml" rel="self" type="application/rss+xml" />`
 
 for (const item of sortedData) {
-    const headline = item.headline || `Web development update ${item.date}`
+    const headline = item.headline || `Web development resources #${item.id} ${item.date}`
     const link = item.link
         ? `https://wweb.dev${item.link}`
         : `https://wweb.dev/weekly/${item.id}`

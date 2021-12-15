@@ -79,7 +79,7 @@ export const SidebarMain = styled.div`
 `
 export const Sidebar = styled.aside`
     width: 100%;
-    max-width: 275px;
+    max-width: 300px;
     margin-left: 50px;
 
     @media (max-width: ${breakpointLarge}) {
