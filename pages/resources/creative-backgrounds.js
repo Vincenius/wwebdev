@@ -53,7 +53,7 @@ const Post = () => (
             />
             <LinkBox
                 title="pocoloco"
-                description="A nice background generator for dynamic backgrounds."
+                description="A nice generator for dynamic backgrounds."
                 link="https://pocoloco.io/"
                 image="/resources/creative-backgrounds/pocoloco.jpg"
             />
