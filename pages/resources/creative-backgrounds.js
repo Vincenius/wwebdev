@@ -3,7 +3,6 @@ import React from 'react'
 import SubscribeForm from '../../components/SubscribeForm'
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
-import ImageTextBlock from '../../components/ImageTextBlock'
 import RelatedArticle from '../../components/RelatedArticle'
 import meta from '../../content/resources'
 import * as ui from '../../ui'
@@ -41,10 +40,22 @@ const Post = () => (
                 image="/resources/creative-backgrounds/patterncss.png"
             />
             <LinkBox
+                title="CSS Backgrounds"
+                description="A collection of 100+ free css patterns with easy customizable colors."
+                link="https://superdesigner.co/tools/css-backgrounds"
+                image="/resources/creative-backgrounds/css-background-patterns.jpg"
+            />
+            <LinkBox
                 title="Trianglify"
                 description="A generator for low poly triangle patterns."
                 link="https://trianglify.io/"
                 image="/resources/creative-backgrounds/trianglify.png"
+            />
+            <LinkBox
+                title="pocoloco"
+                description="A nice generator for dynamic backgrounds."
+                link="https://pocoloco.io/"
+                image="/resources/creative-backgrounds/pocoloco.jpg"
             />
             <LinkBox
                 title="Transparent Textures"

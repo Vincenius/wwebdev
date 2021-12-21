@@ -67,7 +67,7 @@ const data = [
         id: 4,
         type: 'Resource',
         date: 'January 23, 2020',
-        updatedAt: 'June 05, 2020',
+        updatedAt: 'December 21, 2021',
         headline: "Websites For Creative Backgrounds",
         description: "A curated list of websites where you can get creative backgrounds for your websites.",
         link: "/resources/creative-backgrounds",
