@@ -41,7 +41,7 @@ const Post = () => (
             />
             <LinkBox
                 title="CSS Backgrounds"
-                description="A collection of 100+ free css patterns with easy customizable colors."
+                description="A collection of 100+ free CSS patterns with easily customizable colors."
                 link="https://superdesigner.co/tools/css-backgrounds"
                 image="/resources/creative-backgrounds/css-background-patterns.jpg"
             />
@@ -53,7 +53,7 @@ const Post = () => (
             />
             <LinkBox
                 title="pocoloco"
-                description="A nice generator for dynamic backgrounds."
+                description="A nice background generator for dynamic backgrounds."
                 link="https://pocoloco.io/"
                 image="/resources/creative-backgrounds/pocoloco.jpg"
             />
