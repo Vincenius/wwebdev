@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '101',
+        date: 'December 22, 2021',
+        description: "Patterns, Glitch effect, Guess CSS, Doodle CSS and more...",
+    },
+    {
         id: '100',
         date: 'December 15, 2021',
         description: "Floating UI, Deta, Dracula, Defensive CSS, ffflux and more...",
