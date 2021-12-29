@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '102',
+        date: 'December 29, 2021',
+        description: "ColorHuddle, Vitest, Intab Resources, BlackMagic and more...",
+    },
+    {
         id: '101',
         date: 'December 22, 2021',
         description: "Patterns, Glitch effect, Guess CSS, Doodle CSS and more...",
