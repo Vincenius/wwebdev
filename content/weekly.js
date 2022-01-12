@@ -1,12 +1,12 @@
 const data = [
     {
         id: '104',
-        date: 'January 12, 2021',
+        date: 'January 12, 2022',
         description: "Typed.css, Cobe, Slowfil.es, Vanilla List, Icônes and more...",
     },
     {
         id: '103',
-        date: 'January 05, 2021',
+        date: 'January 05, 2022',
         description: "CSS Diner, Tech blogs, Zotero, Atomic Habits and more...",
     },
     {
