@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 12,
+        type: 'Resource',
+        date: 'January 17, 2022',
+        headline: "CSS Speedrun",
+        description: "A small fun app to test your CSS knowledge. Find the correct CSS selectors for the 10 puzzles as fast as possible.",
+        link: "https://css-speedrun.netlify.app/",
+        previewImage: "/preview/css-speedrun.png",
+    },
+    {
         id: 11,
         type: 'Resource',
         date: 'November 6, 2020',
