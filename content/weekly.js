@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '105',
+        date: 'January 19, 2022',
+        description: "hue.tools, clay.css, Plock, Parcel CSS, Simple.css and more...",
+    },
+    {
         id: '104',
         date: 'January 12, 2022',
         description: "Typed.css, Cobe, Slowfil.es, Vanilla List, Icônes and more...",
