@@ -29,7 +29,7 @@ export const ArticleContainer = styled(Container)`
         margin: 10px 0;
     }
 
-    img {
+    img, video {
         max-width: 100%;
     }
 
