@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '107',
+        date: 'February 02, 2022',
+        description: "Cool Backgrounds, Favicon Generator, NextUI, SVGOMG and more...",
+    },
+    {
         id: '106',
         date: 'January 26, 2022',
         description: "TinyBase, edit.photo, Tidy Free, Charm, Beercss and more...",
