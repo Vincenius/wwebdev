@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 12,
+        type: 'Article',
+        date: 'February 03, 2022',
+        headline: 'A guide to debugging JavaScript in Visual Studio Code',
+        description: "In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...",
+        link: '/blog/debugging-javascript-vscode',
+        previewImage: '/preview/debugging-javascript-vscode.png',
+    },
+    {
         id: 11,
         type: 'Article',
         date: 'July 06, 2020',
