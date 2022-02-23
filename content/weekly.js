@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '110',
+        date: 'February 23, 2022',
+        description: "Fonts, RegEx Library, tinydomain, privacy-redirect and more...",
+    },
+    {
         id: '109',
         date: 'February 16, 2022',
         description: "cccreate, ToolJet, CSSUI, Partytown, DevToysMac and more...",
