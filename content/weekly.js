@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '111',
+        date: 'March 02, 2022',
+        description: "Flowbite, SuperShields, SPCSS, React Shimmer, v8n and more...",
+    },
+    {
         id: '110',
         date: 'February 23, 2022',
         description: "Fonts, RegEx Library, tinydomain, privacy-redirect and more...",
