@@ -1,5 +1,4 @@
 // next.config.js
-const withCSS = require('@zeit/next-css')
 const withPWA = require('next-pwa')
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
     enabled: process.env.ANALYZE === 'true'
@@ -13,7 +12,7 @@ for (const w of weeklyData) {
     weeklyPages[`/weekly/${w.id}`] = { page: '/weekly/[pid]', query: { pid: `${w.id}` } }
 }
 
-const settings = withBundleAnalyzer(withCSS({
+const settings = withBundleAnalyzer({
     trailingSlash: true,
     pwa: {
         dest: 'public'
@@ -45,6 +44,6 @@ const settings = withBundleAnalyzer(withCSS({
         config.plugins.push()
         return config
     },
-}))
+})
 
 module.exports = process.env.NODE_ENV === 'development' ? settings : withPWA(settings);

@@ -1,5 +1,8 @@
 import App from 'next/app'
 
+import "../ui/global.css"
+import "../ui/fonts.css"
+
 function MyApp({ Component, pageProps }) {
     return <Component {...pageProps} />
 }

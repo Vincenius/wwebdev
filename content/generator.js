@@ -52,6 +52,7 @@ export const generateArticles = () => {
 export const generateResources = () => {
     return resourceData.map(d =>
         <ArticlePreview
+            key={d.headline}
             date={d.date}
             updatedAt={d.updatedAt}
             headline={d.headline}
