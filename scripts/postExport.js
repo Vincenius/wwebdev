@@ -74,9 +74,9 @@ for (const item of sortedData) {
 
     rss = rss +`
     <item>
-        <title>${headline.replace("&", "&amp;")}</title>
+        <title>${headline.split("&").join("&amp;")}</title>
         <link>${link}</link>
-        <description>${item.description.replace("&", "&amp;")}}</description>
+        <description>${item.description.split("&").join("&amp;")}}</description>
         <pubDate>${new Date(item.date).toUTCString()}</pubDate>
         <guid>${link}</guid>
     </item>`
@@ -85,7 +85,7 @@ for (const item of sortedData) {
 rss = rss +
 `</channel>
 
-</rss>`.replace("&", "and")
+</rss>`
 
 fs.writeFileSync("out/rss.xml", rss);
 
