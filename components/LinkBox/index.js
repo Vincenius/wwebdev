@@ -5,9 +5,9 @@ import ArrowRight from '@material-ui/icons/ArrowRightAlt'
 import Skeleton from '@material-ui/lab/Skeleton'
 import * as S from './styled'
 
-const LinkComp = ({ isExternal, href, children }) => !isExternal
-    ? <Link href={href}><a>{children}</a></Link>
-    : <a href={href} target="_blank" rel="noopener">{children}</a>
+const LinkComp = ({ isExternal, link, children }) => !isExternal
+    ? <Link href={link}><a>{children}</a></Link>
+    : <a href={link} target="_blank" rel="noopener">{children}</a>
 
 function LinkBox({ title, description, image, link, selfPromoted, fullHeight, isExternal = true }) {
     const [imageLoaded, setImageLoaded] = useState(false)
@@ -19,21 +19,21 @@ function LinkBox({ title, description, image, link, selfPromoted, fullHeight, is
         </div> }
         <S.Content fullHeight={fullHeight}>
             <div>
-                { image && <LinkComp href={link} isExternal={isExternal}>
+                { image && <LinkComp link={link} isExternal={isExternal}>
                     { !imageLoaded && <Skeleton variant="rect" height={203} /> }
                     <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
                         <img src={image} alt={title} />
                     </LazyLoad>
                 </LinkComp> }
                 <S.Description>
-                    <LinkComp href={link} isExternal={isExternal}>
+                    <LinkComp link={link} isExternal={isExternal}>
                         <h2>{title}</h2>
                     </LinkComp>
                     <p>{description}</p>
                 </S.Description>
             </div>
 
-            {isExternal && <S.Visit href={href} target="_blank" rel="noopener noreferrer">
+            {isExternal && <S.Visit href={link} target="_blank" rel="noopener noreferrer">
                 visit <ArrowRight width="1em" height="1em" />
             </S.Visit> }
         </S.Content>
