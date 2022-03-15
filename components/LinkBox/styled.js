@@ -16,7 +16,7 @@ export const Content = styled.article`
 
     img {
         width: 100%;
-        height: 200px;
+        height: ${props => props.fullHeight ? '100%' : '200px'};
         object-fit: cover;
     }
 

@@ -68,7 +68,7 @@ function SubscribeForm({ type, isSmall }) {
                                         id="mce-group[26582]-26582-2"
                                     />
                                 }
-                                label="Resources"
+                                label="Resources & Templates"
                             />
                         </li>
                     </S.CheckboxList>

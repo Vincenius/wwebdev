@@ -8,6 +8,7 @@ import SubscribeForm from '../components/SubscribeForm'
 import { weeklyData } from './weekly'
 import articleData from './articles'
 import resourceData from './resources'
+import templateData from './templates'
 
 export const generateWeekly = maxCount => {
     const data = maxCount
@@ -64,7 +65,7 @@ export const generateResources = () => {
 }
 
 export const generateArticleAndResources = maxCount => {
-    const data = [...articleData, ...resourceData]
+    const data = [...articleData, ...resourceData, ...templateData]
     return data.sort((a,b) => {
         return new Date(b.date) - new Date(a.date);
     }).map((d, index) => <ArticlePreview

@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import Layout from '../components/Layout'
 import WeeklyTabs from '../components/WeeklyTabs'
 import * as ui from '../ui'
-import { weeklyData } from '../content/weekly'
-import { generateWeekly } from '../content/generator'
+import { generateWeekly } from '../content/generator'
 
 const Weekly = () => (
     <Layout title="Weekly roundup of resources about web development">

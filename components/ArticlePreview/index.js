@@ -17,6 +17,7 @@ const ArticlePreview = ({
   const lastDate = updatedAt || date
   const d = new Date(lastDate)
   const isResource = type === 'Resource'
+  const isTemplate = type === 'Template'
   const [imageLoaded, setImageLoaded] = useState(false)
 
   return (
@@ -36,7 +37,7 @@ const ArticlePreview = ({
       <div>
         <header>
           { type &&
-            <S.Type highlight={isResource}>
+            <S.Type highlight={isResource || isTemplate}>
               <b>{type}</b> -&nbsp;
             </S.Type>
           }
@@ -50,7 +51,9 @@ const ArticlePreview = ({
         </header>
         <p>{description}</p>
         <Link href={link}><a><S.ReadMore>
-          { isResource ? 'Open Resource ' : 'Read more ' }
+          { isResource
+            ? 'Open Resource '
+            : isTemplate ? 'Open Template' : 'Read more ' }
           <ArrowRight width="1em" height="1em" />
         </S.ReadMore></a></Link>
       </div>

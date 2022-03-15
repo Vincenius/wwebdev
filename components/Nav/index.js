@@ -16,6 +16,7 @@ const links = [
   { href: 'blog', label: 'Blog' },
   { href: 'resources', label: 'Resources' },
   { href: 'weekly', label: 'Weekly' },
+  { href: 'templates', label: 'Templates' },
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`
   return link

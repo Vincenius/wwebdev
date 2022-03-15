@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
+import Link from 'next/link'
 import LazyLoad from 'react-lazy-load'
 import ArrowRight from '@material-ui/icons/ArrowRightAlt'
 import Skeleton from '@material-ui/lab/Skeleton'
 import * as S from './styled'
 
-function LinkBox({ title, description, image, link, selfPromoted }) {
+const LinkComp = ({ isExternal, href, children }) => !isExternal
+    ? <Link href={href}><a>{children}</a></Link>
+    : <a href={href} target="_blank" rel="noopener">{children}</a>
+
+function LinkBox({ title, description, image, link, selfPromoted, fullHeight, isExternal = true }) {
     const [imageLoaded, setImageLoaded] = useState(false)
 
     return <S.Container>
@@ -12,25 +17,25 @@ function LinkBox({ title, description, image, link, selfPromoted }) {
             <S.PromoBg></S.PromoBg>
             <S.PromoLabel>{selfPromoted}</S.PromoLabel>
         </div> }
-        <S.Content>
+        <S.Content fullHeight={fullHeight}>
             <div>
-                { image && <a href={link} target="_blank" rel="noopener">
-                    { !imageLoaded && <Skeleton variant="rect" height={203} /> }
+                { image && <LinkComp href={link} isExternal={isExternal}>
+                    { !imageLoaded && <Skeleton variant="rect" height={203} /> }
                     <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
                         <img src={image} alt={title} />
                     </LazyLoad>
-                </a> }
+                </LinkComp> }
                 <S.Description>
-                    <a href={link} target="_blank" rel="noopener">
+                    <LinkComp href={link} isExternal={isExternal}>
                         <h2>{title}</h2>
-                    </a>
+                    </LinkComp>
                     <p>{description}</p>
                 </S.Description>
             </div>
 
-            <S.Visit href={link} target="_blank" rel="noopener">
+            {isExternal && <S.Visit href={href} target="_blank" rel="noopener noreferrer">
                 visit <ArrowRight width="1em" height="1em" />
-            </S.Visit>
+            </S.Visit> }
         </S.Content>
     </S.Container>
 }
