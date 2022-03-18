@@ -67,7 +67,7 @@ class MyHead extends React.Component {
                 <meta name='apple-mobile-web-app-capable' content='yes' />
                 <meta name='apple-mobile-web-app-status-bar-style' content='default' />
                 <meta name='apple-mobile-web-app-title' content='wweb.dev' />
-                <meta name='description' content='News, Resources and Articles about Web-Development' />
+                <meta name='description' content='News, Resources, Templates and Articles about Web-Development' />
                 <meta name='format-detection' content='telephone=no' />
                 <meta name='mobile-web-app-capable' content='yes' />
                 <meta name='msapplication-config' content='/static/icons/browserconfig.xml' />
