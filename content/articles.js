@@ -66,6 +66,7 @@ const data = [
         id: 5,
         type: 'Article',
         date: 'February 02, 2020',
+        updatedAt: 'March 18, 2022',
         headline: 'How to build a static website without frameworks using npm scripts',
         description: "Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...",
         link: '/blog/how-to-create-static-website-npm-scripts',

@@ -39,7 +39,7 @@ body {
     color: $primary;
 }`
 
-const snippet4 = `"css:lint": "stylelint src/scss/*.scss --syntax scss || true",
+const snippet4 = `"css:lint": "stylelint src/scss/*.scss  --custom-syntax postcss-scss",
 "build:css": "npm run css:lint && npm run css:scss && npm run css:autoprefixer"`
 
 const snippet5 = `"rules": {
@@ -96,25 +96,22 @@ const snippet10 = `{
     },
     "rules": {
         "semi": ["error", "always"],
-        "quotes": ["error", "double"]
+        "quotes": ["error", "single"]
     }
 }`
 
-const snippet11 = `module.exports = {
+const snippet11 = `/* eslint-disable no-undef */
+const ESLintPlugin = require('eslint-webpack-plugin');
+
+module.exports = {
     entry: './src/js/main.js',
+    plugins: [new ESLintPlugin()],
     output: {
         path: __dirname + '/dist',
         filename: 'bundle.js'
     },
     module: {
-        rules: [
-            {
-                enforce: 'pre',
-                test: /\.js$/,
-                exclude: /node_modules/,
-                loader: 'eslint-loader'
-            },
-            {
+        rules: [{
             test: /\.m?js$/,
             exclude: /node_modules/,
             use: {
@@ -125,7 +122,7 @@ const snippet11 = `module.exports = {
             }
         }]
     }
-}`
+};`
 
 const snippet12 = `{
     "input": "src/views/*.html",
@@ -167,6 +164,11 @@ const Post = () => (
             It can be not only faster but also simpler than throwing in a full JavaScript framework
             just to build a website with only a few pages. In the following, I'll create
             a template with scss, linting, minifying and more using npm scripts.
+        </p>
+
+        <p>
+            This not only helps you building a static website. It also helps understanding the
+            tools that are used by frameworks and why. So let’s get started.
         </p>
 
         <p>
@@ -239,7 +241,7 @@ const Post = () => (
             </li>
             <li>
                 <b><a href="https://stylelint.io/" target="_blank" rel="noopener">Linting</a>:</b> This
-                will help to avoid errors in your css code and to enforce code conventions.
+                will help to avoid errors in your CSS code and to enforce code conventions.
             </li>
         </ul>
 
@@ -359,10 +361,10 @@ const Post = () => (
         <p>
             Finally, we'll use <a href="https://www.npmjs.com/package/stylelint" target="_blank" rel="noopener">stylelint</a> to
             make sure we have no errors in our CSS and to be able to enforce code conventions. <br/>
-            Therefore install the npm module stylelint:
+            Therefore install the npm module stylelint together with postcss-scss as we're using scss:
         </p>
 
-        <p><ui.Code>npm i -D stylelint</ui.Code><br/></p>
+        <p><ui.Code>npm i -D stylelint postcss-scss</ui.Code><br/></p>
 
         <p>
             Before we're able to add the scripts for linting, we have to add the file <ui.Code>.stylelintrc</ui.Code>. This file will contain
@@ -580,7 +582,7 @@ const Post = () => (
             use <a href="https://www.npmjs.com/package/eslint" target="_blank" rel="noopener">eslint</a>.
         </p>
 
-        <p><ui.Code>npm i -D eslint eslint-loader</ui.Code><br/></p>
+        <p><ui.Code>npm i -D eslint eslint-webpack-plugin</ui.Code><br/></p>
 
         <p>
             To enable the linting, we still need to create a configuration file and add the
@@ -600,7 +602,7 @@ const Post = () => (
         />
 
         <p>
-            Afterward, we add a new rule to our <ui.Code>webpack.config.js</ui.Code> to check
+            Afterward, we the ESLintPlugin to our <ui.Code>webpack.config.js</ui.Code> to check
             eslint before running the <ui.Code>babel-loader</ui.Code>.
         </p>
 
