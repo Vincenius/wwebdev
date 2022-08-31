@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Link from 'next/link'
 import Head from '../../components/Head'
 import Nav from '../../components/Nav'
+import AbsoluteAd from '../../components/Ads/AbsoluteAd'
 
 import { Background1, Background2, Background3 } from '../../components/AnimatedCssBackgroundGenerator'
 import * as S from '../../components/AnimatedCssBackgroundGenerator/styles/animatedCssBg'
@@ -24,6 +24,8 @@ const Demo = () => {
             />
 
             <Nav isArticle={true} transparentBg={true} />
+
+            <AbsoluteAd />
 
             { activeBg === 0 && <Background1 changeBg={changeBg} activeBg={activeBg} /> }
             { activeBg === 1 && <Background2 changeBg={changeBg} activeBg={activeBg} /> }

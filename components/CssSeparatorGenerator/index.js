@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
-import Link from 'next/link'
 import Card from '@material-ui/core/Card'
 import Controls from './Controls'
 import * as S from './styled'
 import { SEPARATORS, SEPARATOR_OPTIONS } from './constants'
 import Nav from '../Nav'
+import AbsoluteAd from '../Ads/AbsoluteAd'
 
 const Generator = props => {
     const defaultSeparator = SEPARATORS.SKEWED
@@ -31,6 +31,7 @@ const Generator = props => {
         <React.Fragment>
             <S.Container>
                 <Nav isArticle={true} />
+                <AbsoluteAd />
                 <TopElement options={options} noBgColor={active === SEPARATORS.SKEWED}>
                     <Controls
                         options={options}
@@ -38,10 +39,10 @@ const Generator = props => {
                         active={active}
                     />
 
-                    { active === SEPARATORS.SKEWED &&
+                    { active === SEPARATORS.SKEWED &&
                         <S.SkewBg options={options}></S.SkewBg>
                     }
-                    { active === SEPARATORS.WAVE &&
+                    { active === SEPARATORS.WAVE &&
                         <S.Wave options={options}></S.Wave>
                     }
                 </TopElement>
