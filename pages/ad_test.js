@@ -6,8 +6,8 @@ import { generateArticles } from '../content/generator'
 
 const Home = () => {
     useEffect(() => {
-        console.log('Called')
-        ezstandalone.define(102,103);
+        ezstandalone.DEBUG = true;
+        ezstandalone.define(102);
         if (!ezstandalone.enabled) {
             ezstandalone.enable();
             ezstandalone.display();
@@ -22,7 +22,6 @@ const Home = () => {
             <ui.Container>
                 <ui.SidebarContainer>
                     <ui.SidebarMain>
-                        <div id="ezoic-pub-ad-placeholder-103"> </div>
                         <ui.SectionHeadline>Latest Blog Posts around Web Development</ui.SectionHeadline>
                         { generateArticles() }
                         <SubscribeForm />
