@@ -5,6 +5,18 @@ import SubscribeForm from '../components/SubscribeForm'
 import { generateArticles } from '../content/generator'
 
 const Home = () => {
+    useEffect(() => {
+        console.log('Called')
+        ezstandalone.define(102,103);
+        if (!ezstandalone.enabled) {
+            ezstandalone.enable();
+            ezstandalone.display();
+        }
+        else {
+            ezstandalone.refresh();
+        }
+    },[])
+
     return (
         <Layout title="A Blog about Web-Development">
             <ui.Container>
