@@ -6,14 +6,16 @@ import { generateArticles } from '../content/generator'
 
 const Home = () => {
     useEffect(() => {
-        ezstandalone.DEBUG = true;
-        ezstandalone.define(102);
-        if (!ezstandalone.enabled) {
-            ezstandalone.enable();
-            ezstandalone.display();
-        }
-        else {
-            ezstandalone.refresh();
+        if (ezstandalone) {
+            ezstandalone.DEBUG = true;
+            ezstandalone.define(102);
+            if (!ezstandalone.enabled) {
+                ezstandalone.enable();
+                ezstandalone.display();
+            }
+            else {
+                ezstandalone.refresh();
+            }
         }
     },[])
 
