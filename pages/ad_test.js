@@ -6,7 +6,7 @@ import { generateArticles } from '../content/generator'
 
 const Home = () => {
     useEffect(() => {
-        if (ezstandalone) {
+        if (window.ezstandalone) {
             ezstandalone.DEBUG = true;
             ezstandalone.define(102);
             if (!ezstandalone.enabled) {
