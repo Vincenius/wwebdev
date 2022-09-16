@@ -6,6 +6,10 @@ export const Container = styled.div`
     min-height: 100vh;
     height: 100%;
 `
+export const BottomContainer = styled.div`
+    background: #fff;
+    margin: 40px 0;
+`
 export const Navigation = styled.nav`
     position: relative;
     z-index: 2;
