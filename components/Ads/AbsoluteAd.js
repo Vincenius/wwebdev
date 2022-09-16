@@ -7,6 +7,7 @@ export const Container = styled.div`
     right: 20px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 2;
 `
 
 const AbsoluteAd = () => {
