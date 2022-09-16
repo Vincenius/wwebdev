@@ -2,11 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import Chip from '@material-ui/core/Chip'
 import * as ui from '../../ui'
-import SubscribeForm from '../../components/SubscribeForm'
 import Layout from '../../components/Layout'
-import LinkBox from '../../components/LinkBox'
 import CodeBlock from '../../components/CodeBlock'
-import RelatedArticle from '../../components/RelatedArticle'
 import meta from '../../content/resources'
 
 const postId = 8

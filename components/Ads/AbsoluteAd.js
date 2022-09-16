@@ -5,7 +5,8 @@ import Ad, { ids } from './Ad'
 export const Container = styled.div`
     position: absolute;
     right: 20px;
-    bottom: 20px;
+    top: 50%;
+    transform: translateY(-50%);
 `
 
 const AbsoluteAd = () => {

@@ -1,16 +1,9 @@
 import React, { useEffect } from 'react'
-import { useRouter } from 'next/router';
 
 const Ad = ({ id }) => {
-  const router = useRouter();
-
-  const { ads } = router.query;
-
   useEffect(() => {
-    console.log('DBG1', window.ezstandalone, ads)
     if (window.ezstandalone && ads === 'enable') {
         ezstandalone.DEBUG = true;
-        console.log('define', id)
         ezstandalone.define(id);
         if (!ezstandalone.enabled) {
           ezstandalone.setDisablePersonalizedStatistics(true); // disable for now
@@ -34,6 +27,8 @@ export const ids = {
   absolute: 105,
   firstParagraph: 106,
   secondParagraph: 107,
+  sidebarBottom: 108,
+  sidebarMiddle: 109,
 }
 
 export default Ad

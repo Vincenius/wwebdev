@@ -3,6 +3,7 @@ import React from 'react'
 import * as ui from '../../ui'
 import Layout from '../../components/Layout'
 import templateMeta from '../../content/templates'
+import Ad, { ids } from '../../components/Ads/Ad'
 
 const postMeta = templateMeta[0]
 
@@ -26,8 +27,9 @@ const Post = () => (
       <p>
         This is a simple blog template to quickly get started with writing.
         It has a clean design and provides a lot of flexibility.
-
       </p>
+
+      <Ad id={ids.firstParagraph} />
 
       <b>Features</b>
       <ul>
@@ -40,6 +42,8 @@ const Post = () => (
         <li>Responsive Design</li>
         <li>Best practices and accessibility</li>
       </ul>
+
+      <Ad id={ids.secondParagraph} />
 
       <p>
         <img src="/resources/blog-template-lighthouse.png" alt="lighthouse score 100"/>
