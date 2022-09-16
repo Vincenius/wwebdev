@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 const Ad = ({ id }) => {
   useEffect(() => {
-    if (window.ezstandalone && ads === 'enable') {
+    if (window.ezstandalone) {
         ezstandalone.DEBUG = true;
         ezstandalone.define(id);
         if (!ezstandalone.enabled) {

@@ -31,6 +31,8 @@ const Demo = () => {
             { activeBg === 1 && <Background2 changeBg={changeBg} activeBg={activeBg} /> }
             { activeBg === 2 && <Background3 changeBg={changeBg} activeBg={activeBg} /> }
         </S.Container>
+
+        // animated css backgrounds, background generator css, css animated backgrounds, animate background css, css backgrounds animated
     )
 }
 
