@@ -8,7 +8,7 @@ const Privacy = () => (
         title="Privacy Policy"
     >
         <ui.Container>
-            <h2>Honest and human readable version</h2>
+            <h2>TLDR</h2>
             <p>
                 I try to keep this website as privacy friendly as possible.
                 I am using a self hosted version of <a href="https://umami.is/" target="_blank" rel="noopener">umami</a> for the only purpose of knowing how many people are visiting this website.
@@ -17,10 +17,7 @@ const Privacy = () => (
                 <b>If you enable "Do Not Track" in your browser I won't track you</b>.
                 Also AdBlockers will work for blocking the tracking. I'd recomment <i>uBlock Origin</i> for that.
             </p>
-            <p>
-                Other than that there is nothing that could track you, as far as I'm aware of. No share links (eg. facebook),
-                no cookies and no other tools.
-            </p>
+            <p>I use Ezoic for displaying ads. I disabled personalized ads, so no cookies stored.</p>
             <p>
                 If you think I'm missing something here - please let me know: info@wweb.dev
             </p>
@@ -232,6 +229,11 @@ const Privacy = () => (
                     </p>
                 </li>
             </ul>
+
+            <h3>Ezoic</h3>
+            <p>
+            We use Ezoic to provide personalization and analytic services on this website, as such Ezoic's privacy policy is in effect and can be reviewed <a href="https://g.ezoic.net/privacy/wweb.dev">here</a>.
+            </p>
 
             <h2>Links To Other Sites</h2>
             <p>

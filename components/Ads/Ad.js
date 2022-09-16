@@ -9,13 +9,16 @@ const Ad = ({ id }) => {
   useEffect(() => {
     if (window.ezstandalone && ads === 'enable') {
         ezstandalone.DEBUG = true;
+        console.log('define', id)
         ezstandalone.define(id);
         if (!ezstandalone.enabled) {
-            ezstandalone.enable();
-            ezstandalone.display();
+          ezstandalone.setDisablePersonalizedStatistics(true); // disable for now
+          ezstandalone.setDisablePersonalizedAds(true); // disable for now
+          ezstandalone.enable();
+          ezstandalone.display();
         }
         else {
-            ezstandalone.refresh();
+          ezstandalone.refresh();
         }
     }
   },[])
