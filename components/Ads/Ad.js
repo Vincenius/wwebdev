@@ -7,6 +7,7 @@ const Ad = ({ id }) => {
   const { ads } = router.query;
 
   useEffect(() => {
+    console.log('DBG1', window.ezstandalone, ads)
     if (window.ezstandalone && ads === 'enable') {
         ezstandalone.DEBUG = true;
         console.log('define', id)
