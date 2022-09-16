@@ -3,14 +3,16 @@ import Link from 'next/link'
 import LazyLoad from 'react-lazy-load'
 import MailOutlineIcon from '@material-ui/icons/MailOutline'
 
-import SocialBar from '../SocialBar'
+import Ad, { ids } from '../Ads/Ad'
+import SocialBar from '../SocialBar'
 import BuyMeACoffeeButton from '../BuyMeACoffeeButton'
 import * as S from './styled'
 import * as ui from '../../ui'
 
 const Footer = () => (
   <React.Fragment>
-    <div id="ezoic-pub-ad-placeholder-104"> </div>
+    <Ad id={ids.footer} />
+
     <S.Container>
       <S.Content>
         <div>
