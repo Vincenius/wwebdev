@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Head from '../../components/Head'
 import Nav from '../../components/Nav'
+import Footer from '../../components/Footer'
 import SubscribeForm from '../../components/SubscribeForm'
 import AbsoluteAd from '../../components/Ads/AbsoluteAd'
 import Ad, { ids } from '../../components/Ads/Ad'
@@ -39,7 +40,43 @@ const Demo = () => {
             <S.BottomContainer>
                 <ui.SidebarContainer>
                     <ui.ArticleContainer as="article">
-                        <h1></h1>
+                        <h1>Animated CSS Background</h1>
+
+                        <p>
+                            With this tool you can quickly create and customize animated CSS backgrounds for your website.
+                            It includes a total of three different background generators.
+                        </p>
+
+                        <h2>Bokeh effect animation background</h2>
+
+                        <img alt="Bokeh effect animation background screenshot" src="/resources/animated-bg-generator/bg1.jpg" />
+
+                        <p>
+                            The first animated CSS background is taken from <a href="https://codepen.io/Mamboleoo/pen/BxMQYQ" target="_blank" rel="noopener noreferrer">Louis Hoebregts Codepen</a>.
+                            It consists of blurry bubbles of one or multiple colors moving in circular shapes.
+                            You can adjust the speed, the size and the colors of the bubbles that move around. Afterward you can easily copy the HTML and the CSS and insert it anywhere on your website.
+                            For each bubble a span is inserted into the dom. Each of them are then positioned randomly. Afterwards they are animated based on the speed variable defined by you.
+                        </p>
+
+                        <h2>Pure CSS animation background</h2>
+
+                        <img alt="Pure CSS animation background screenshot" src="/resources/animated-bg-generator/bg2.jpg" />
+
+                        <p>
+                            The second one of the animated CSS backgrounds is inspired by <a href="https://codepen.io/mohaiman/pen/MQqMyo" target="_blank" rel="noopener noreferrer">Mohammad Abdul Mohaimans Codepen</a>.
+                            This one has spinning rectangles that move up and turn into circles. Here you can adjust the count of the rectangles, the speed, the size and the color as well.
+                            In this case every rectangle is added as a list item to an unordered list. They are positioned randomly on the X-Axis and move up after different delays.
+                        </p>
+
+                        <h2>Rectangle animate background CSS</h2>
+
+                        <img alt="Rectangle animate background CSS screenshot" src="/resources/animated-bg-generator/bg3.jpg" />
+
+                        <p>
+                            The last animated background generator is by <a href="https://codepen.io/BjornRombaut/pen/mOLGgX" target="_blank" rel="noopener noreferrer">Bjorns Codepen</a>.
+                            It has cubes that are spinning and growing until they fade. You can adjust the count and the size as well as the color of the cubes.
+                            The cubes are positioned randomly on the screen and have different shades of the given background color. In the HTML they are also added as list items.
+                        </p>
 
                         <br />
                         <SubscribeForm />
@@ -52,7 +89,7 @@ const Demo = () => {
                 </ui.SidebarContainer>
             </S.BottomContainer>
 
-            TODO FOOTER
+            {/* <Footer /> */}
         </React.Fragment>
 
         // animated css backgrounds, background generator css, css animated backgrounds, animate background css, css backgrounds animated
