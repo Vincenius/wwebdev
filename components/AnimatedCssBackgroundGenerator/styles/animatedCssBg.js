@@ -8,7 +8,7 @@ export const Container = styled.div`
 `
 export const BottomContainer = styled.div`
     background: #fff;
-    padding: 50px 0;
+    padding: 50px 0 0;
     position: relative
 `
 export const Navigation = styled.nav`

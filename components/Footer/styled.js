@@ -3,6 +3,7 @@ import { darkGrey, lightGrey } from '../../ui/constants'
 import * as ui from '../../ui'
 
 export const Container = styled.footer`
+    position: relative;
     font-size: 14px;
     line-height: 20px;
     letter-spacing: 0px;
@@ -18,8 +19,9 @@ export const Content = styled(ui.Container)`
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0 auto;
 
     > * {
         width: 50%;

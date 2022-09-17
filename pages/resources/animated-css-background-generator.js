@@ -87,12 +87,9 @@ const Demo = () => {
                         <Ad id={ids.sidebarBottom} />
                     </ui.Sidebar>
                 </ui.SidebarContainer>
+                <Footer />
             </S.BottomContainer>
-
-            {/* <Footer /> */}
         </React.Fragment>
-
-        // animated css backgrounds, background generator css, css animated backgrounds, animate background css, css backgrounds animated
     )
 }
 
