@@ -18,6 +18,8 @@ const Home = () => {
                     </ui.SidebarMain>
                     <ui.Sidebar>
                         <Ad id={ids.sidebar} />
+                        <Ad id={ids.sidebarMiddle} />
+                        <Ad id={ids.sidebarBottom} />
                     </ui.Sidebar>
                 </ui.SidebarContainer>
             </ui.Container>

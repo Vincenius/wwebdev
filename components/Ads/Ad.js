@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react'
+import { getCookieConsentValue } from "react-cookie-consent"
 
 const Ad = ({ id }) => {
   useEffect(() => {
@@ -6,8 +7,9 @@ const Ad = ({ id }) => {
         ezstandalone.DEBUG = true;
         ezstandalone.define(id);
         if (!ezstandalone.enabled) {
-          ezstandalone.setDisablePersonalizedStatistics(true); // disable for now
-          ezstandalone.setDisablePersonalizedAds(true); // disable for now
+          const allowCookies = getCookieConsentValue()
+          ezstandalone.setDisablePersonalizedStatistics(!allowCookies)
+          ezstandalone.setDisablePersonalizedAds(!allowCookies)
           ezstandalone.enable();
           ezstandalone.display();
         }
@@ -29,6 +31,8 @@ export const ids = {
   secondParagraph: 107,
   sidebarBottom: 108,
   sidebarMiddle: 109,
+  inContent1: 110,
+  inContent2: 111,
 }
 
 export default Ad
