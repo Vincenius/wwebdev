@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 
 const Ad = ({ id }) => {
   useEffect(() => {
-    if (window.ezstandalone) {
+    if (window.ezstandalone && location.hostname !== 'localhost') {
         ezstandalone.DEBUG = true;
         ezstandalone.define(id);
         if (!ezstandalone.enabled) {

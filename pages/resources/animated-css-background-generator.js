@@ -39,11 +39,10 @@ const Demo = () => {
             <S.BottomContainer>
                 <ui.SidebarContainer>
                     <ui.ArticleContainer as="article">
-                    TEXT
+                        <h1></h1>
 
-                    <br />
-                    <SubscribeForm />
-
+                        <br />
+                        <SubscribeForm />
                     </ui.ArticleContainer>
                     <ui.Sidebar>
                         <Ad id={ids.sidebar} />
@@ -53,6 +52,7 @@ const Demo = () => {
                 </ui.SidebarContainer>
             </S.BottomContainer>
 
+            TODO FOOTER
         </React.Fragment>
 
         // animated css backgrounds, background generator css, css animated backgrounds, animate background css, css backgrounds animated
