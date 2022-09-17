@@ -50,6 +50,7 @@
   },
   "devDependencies": {
     "babel-plugin-styled-components": "^1.10.6",
-    "cross-env": "^7.0.2"
+    "cross-env": "^7.0.2",
+    "mjml": "^4.13.0"
   }
 }
