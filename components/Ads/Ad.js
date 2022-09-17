@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react'
+import { getCookieConsentValue } from "react-cookie-consent"
 
 const Ad = ({ id }) => {
   useEffect(() => {
-    if (window.ezstandalone) {
+    if (window.ezstandalone && location.hostname !== 'localhost') {
         ezstandalone.DEBUG = true;
         ezstandalone.define(id);
         if (!ezstandalone.enabled) {
-          ezstandalone.setDisablePersonalizedStatistics(true); // disable for now
-          ezstandalone.setDisablePersonalizedAds(true); // disable for now
+          const allowCookies = getCookieConsentValue()
+          ezstandalone.setDisablePersonalizedStatistics(!allowCookies)
+          ezstandalone.setDisablePersonalizedAds(!allowCookies)
           ezstandalone.enable();
           ezstandalone.display();
         }

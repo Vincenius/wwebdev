@@ -11,7 +11,6 @@ import * as ui from '../../ui'
 
 const Footer = () => (
   <React.Fragment>
-    <script id="CookieDeclaration" src="https://consent.cookiebot.com/eaeacd21-8db2-4684-931f-a81fbead00b0/cd.js" type="text/javascript" async></script>
     <Ad id={ids.footer} />
 
     <S.Container>

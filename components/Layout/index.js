@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import CookieConsent from 'react-cookie-consent'
+
 import Head from '../Head'
 import Header from '../Header'
 import Nav from '../Nav'
@@ -17,6 +19,13 @@ function Layout ({
     titleNameFirst,
     updatedAt,
 }) {
+    const [hasAdblock, setHasAdblock] = useState(true)
+    useEffect(() => {
+        if (window.ezstandalone) {
+            setHasAdblock(false)
+        }
+    },[])
+
     const d = date ? new Date(date) : undefined
     const ud = updatedAt ? new Date(updatedAt) : undefined
 
@@ -48,6 +57,20 @@ function Layout ({
             </main>
 
             <Footer />
+
+            { !hasAdblock && <CookieConsent
+                enableDeclineButton
+                buttonText="I accept"
+                onAccept={() => {
+                    try {
+                        window.ezstandalone.setDisablePersonalizedStatistics(false);
+                        window.ezstandalone.setDisablePersonalizedAds(false);
+                    } catch (e) {
+                        console.log(e)
+                    }
+                }}>
+                <span style={{ fontSize: "14px" }}> This website uses cookies to enhance the user experience.</span>
+            </CookieConsent> }
         </S.Container>
     )
 }

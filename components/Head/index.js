@@ -78,13 +78,9 @@ class MyHead extends React.Component {
                 <link rel='manifest' href='/manifest.json' />
 
                 { description && <meta name="description" content={description}></meta> }
-                <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="eaeacd21-8db2-4684-931f-a81fbead00b0" data-blockingmode="auto" type="text/javascript"></script>
-                {/* https://manage.cookiebot.com/en/manage#, https://pubdash.ezoic.com/privacy */}
                 <script async defer data-website-id="208d46a4-6fc6-4947-954c-e7940d9b0fe6" src="https://analytics.vincentwill.com/umami.js"></script>
-                <script>var ezoicId = 373444; </script>
+                <script>var ezoicId = 373444;</script>
                 <script src="//www.ezojs.com/ezoic/sa.min.js"></script>
-
-
                 <style> { 'html, body { margin: 0; overflow-x: hidden; } body svg { width: 32px; }' } </style>
 
                 <React.Fragment>
