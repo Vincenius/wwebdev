@@ -29,6 +29,8 @@ export const ids = {
   secondParagraph: 107,
   sidebarBottom: 108,
   sidebarMiddle: 109,
+  inContent1: 110,
+  inContent2: 111,
 }
 
 export default Ad

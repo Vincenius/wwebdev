@@ -4,6 +4,7 @@ import SubscribeForm from '../../components/SubscribeForm'
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
 import RelatedArticle from '../../components/RelatedArticle'
+import Ad, { ids } from '../../components/Ads/Ad'
 import meta from '../../content/resources'
 import * as ui from '../../ui'
 
@@ -33,6 +34,7 @@ const Post = () => (
                 link="https://www.gradientmagic.com/"
                 image="/resources/creative-backgrounds/gradientmagic.png"
             />
+            <Ad id={ids.inContent1}/>
             <LinkBox
                 title="pattern.css"
                 description="A cool css library for background patterns, which can be easily applied to all elements."
@@ -69,6 +71,7 @@ const Post = () => (
                 link="https://doodad.dev/pattern-generator/"
                 image="/resources/creative-backgrounds/svg-pattern-generator.jpg"
             />
+            <Ad id={ids.inContent2}/>
             <LinkBox
                 title="Ambient Canvas Backgrounds"
                 description="A bunch of nice backgrounds using the HTML5 Canvas API."
