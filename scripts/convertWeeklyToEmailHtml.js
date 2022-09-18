@@ -18,6 +18,11 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
         <mj-text font-size="16px" font-family="helvetica" />
         <mj-button font-family="helvetica" />
       </mj-attributes>
+      <mj-style>
+        a {
+          color: #017a8c;
+        }
+      </mj-style>
     </mj-head>
     <mj-body>
       <mj-section>
@@ -25,8 +30,6 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
           <mj-image src="https://wweb.dev/weekly/social/weekly${id}.jpg" fluid-on-mobile="true" />
           <mj-text>Here's the weekly update from ${weeklyData[0].date}.</mj-text>
           <mj-text>If you have any feedback or you want to share tools and resources for the next newsletter - just answer to this email.</mj-text>
-
-          <mj-divider border-width="3px" border-color="#00C6A7" />
         </mj-column>
       </mj-section>
       `
@@ -37,24 +40,24 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
         markdown= `${markdown}
         <mj-section>
           <mj-column>
-            <mj-image src="https://wweb.dev${item.image}" href="${item.link}" fluid-on-mobile="true" />
+            <mj-image src="https://wweb.dev${item.image}" href="${item.link}" fluid-on-mobile="true" border="1px solid #BDBDBD" />
             <mj-button align="left" text-align="left" font-weight="bold" font-size="24px" background-color="#fff" color="#000" padding="0" href="${item.link}">${item.title}</mj-button>
-            <mj-text>${item.description}</mj-text>
-            <mj-button align="left" background-color="#00C6A7" href="${item.link}" color="white">
-              Visit!
-            </mj-button>
+            <mj-text>
+              <p>${item.description}</p>
+              <a href="${item.link}">Visit!</a>
+            </mj-text>
             <mj-spacer height="20px" />
             <mj-divider border-width="1px" border-color="lightgrey" />
             <mj-spacer height="40px" />
           </mj-column>
           ${item2
             ? `<mj-column>
-            <mj-image src="https://wweb.dev${item2.image}" href="${item2.link}" fluid-on-mobile="true" />
+            <mj-image src="https://wweb.dev${item2.image}" href="${item2.link}" fluid-on-mobile="true" border="1px solid #BDBDBD" />
             <mj-button align="left" text-align="left" font-weight="bold" font-size="24px" background-color="#fff" color="#000" padding="0" href="${item2.link}">${item2.title}</mj-button>
-            <mj-text>${item2.description}</mj-text>
-            <mj-button align="left" background-color="#00C6A7" href="${item2.link}" color="white">
-              Visit!
-            </mj-button>
+            <mj-text>
+              <p>${item2.description}</p>
+              <a href="${item2.link}">Visit!</a>
+            </mj-text>
             <mj-spacer height="20px" />
             <mj-divider border-width="1px" border-color="lightgrey" />
           </mj-column>`
