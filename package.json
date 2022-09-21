@@ -22,7 +22,7 @@
     "@next/bundle-analyzer": "^9.4.4",
     "@sentry/browser": "^5.12.1",
     "axios": "^0.21.1",
-    "file-type": "^16.0.1",
+    "file-type": "^16.5.4",
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
     "got": "^11.8.0",
