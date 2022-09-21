@@ -106,7 +106,7 @@ const data = [
         type: 'Resource',
         date: 'November 27, 2019',
         headline: "Animated CSS Background Generator",
-        description: "A collection of pure css animated backgrounds with the possibility to customize.",
+        description: "With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.",
         link: "/resources/animated-css-background-generator",
         previewImage: "/preview/resources01_zAtYo6WzY.jpg",
     }
