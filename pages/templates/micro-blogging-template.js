@@ -28,6 +28,11 @@ const Post = () => (
         You can write in markdown and upload images and videos.
       </p>
 
+      <p>
+        During my travels, I created a small blog to inform my friends and family about what I'm up to.
+        Now I've turned it into a template.
+      </p>
+
       <b>Features</b>
       <ul>
         <li>Next.js 12</li>
