@@ -5,7 +5,7 @@ import Layout from '../../components/Layout'
 import templateMeta from '../../content/templates'
 import Ad, { ids } from '../../components/Ads/Ad'
 
-const postMeta = templateMeta[0]
+const postMeta = templateMeta.find(m => m.id === 1)
 
 const Post = () => (
   <Layout

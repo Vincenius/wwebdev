@@ -1,5 +1,14 @@
 const data = [
   {
+    id: 2,
+    type: 'Template',
+    date: 'September 29, 2022',
+    headline: "Micro-blogging Template",
+    description: "A Next.js template for a twitter-like blog. You can write in markdown and upload images and videos.",
+    link: "/templates/micro-blogging-template",
+    previewImage: "/preview/modest-blog.jpg",
+  },
+  {
       id: 1,
       type: 'Template',
       date: 'March 15, 2022',

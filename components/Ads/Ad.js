@@ -1,25 +1,26 @@
 import React, { useEffect } from 'react'
-import { getCookieConsentValue } from "react-cookie-consent"
+// import { getCookieConsentValue } from "react-cookie-consent"
 
 const Ad = ({ id }) => {
-  useEffect(() => {
-    if (window.ezstandalone && location.hostname !== 'localhost') {
-        ezstandalone.DEBUG = true;
-        ezstandalone.define(id);
-        if (!ezstandalone.enabled) {
-          const allowCookies = getCookieConsentValue()
-          ezstandalone.setDisablePersonalizedStatistics(!allowCookies)
-          ezstandalone.setDisablePersonalizedAds(!allowCookies)
-          ezstandalone.enable();
-          ezstandalone.display();
-        }
-        else {
-          ezstandalone.refresh();
-        }
-    }
-  },[])
+  // useEffect(() => {
+  //   if (window.ezstandalone && location.hostname !== 'localhost') {
+  //       ezstandalone.DEBUG = true;
+  //       ezstandalone.define(id);
+  //       if (!ezstandalone.enabled) {
+  //         const allowCookies = getCookieConsentValue()
+  //         ezstandalone.setDisablePersonalizedStatistics(!allowCookies)
+  //         ezstandalone.setDisablePersonalizedAds(!allowCookies)
+  //         ezstandalone.enable();
+  //         ezstandalone.display();
+  //       }
+  //       else {
+  //         ezstandalone.refresh();
+  //       }
+  //   }
+  // },[])
 
-  return <div id={`ezoic-pub-ad-placeholder-${id}`}> </div>
+  // return <div id={`ezoic-pub-ad-placeholder-${id}`}> </div>
+  return <div></div>
 }
 
 export const ids = {

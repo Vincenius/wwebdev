@@ -76,11 +76,11 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
       </mj-body>
     </mjml>`
 
-    // const htmlOutput = mjml2html(markdown)
+    const htmlOutput = mjml2html(markdown)
 
     // only osx??
     var proc = require('child_process').spawn('pbcopy');
-    proc.stdin.write(markdown); proc.stdin.end();
+    proc.stdin.write(htmlOutput.html); proc.stdin.end();
 
     console.log('copied')
   })
