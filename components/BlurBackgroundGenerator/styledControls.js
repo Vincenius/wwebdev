@@ -1,14 +1,19 @@
 import styled, { css } from 'styled-components'
 import TextareaAutosize from '@material-ui/core/TextareaAutosize'
+import Button from '@material-ui/core/Button'
+
+export const Controls = styled.div`
+    position: relative;
+    z-index: 1;
+    height: 100%;
+`
 
 export const Container = styled.div`
-    position: relative;
     background: rgba(0,0,0,0.8);
     color: #fff;
-    margin: 20px;
     padding: 20px;
-    max-width: 300px;
-    z-index: 1;
+    width: 260px;
+    margin: 20px;
 
     h3 {
         margin: 0;
@@ -72,4 +77,16 @@ export const Nav = styled.div`
             text-decoration: underline;
         }
     }
+`
+
+export const CircleContainer = styled.div`
+    display: flex;
+`
+export const CircleControls = styled.div`
+    width: 100%;
+    margin: 0 6px;
+`
+export const NavButton = styled(Button)`
+    padding: 0 !important;
+    min-width: 32px !important;
 `

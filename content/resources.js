@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 13,
+        type: 'Resource',
+        date: 'October 15, 2022',
+        headline: "Blur Background CSS Generator",
+        description: "A tool to generate the CSS for a blur background.",
+        link: "/resources/blur-background-css-generator",
+        previewImage: "/preview/css-speedrun.png",
+    },
+    {
         id: 12,
         type: 'Resource',
         date: 'January 17, 2022',
