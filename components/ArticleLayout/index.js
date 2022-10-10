@@ -2,7 +2,7 @@ import React from 'react'
 import * as ui from '../../ui' // TODO move to styled?
 import Layout from '../Layout'
 import Comments from '../Comments'
-import Ad, { ids } from '../Ads/Ad'
+import Ad from '../Ads/Ad'
 import PrevNext from '../PrevNext'
 import SubscribeForm from '../SubscribeForm'
 import meta from '../../content/articles'
@@ -31,9 +31,7 @@ const ArticleLayout = ({ id, children }) => {
           <PrevNext postId={id} isArticle={true} />
         </ui.ArticleContainer>
         <ui.Sidebar>
-            <Ad id={ids.sidebar} />
-            <Ad id={ids.sidebarMiddle} />
-            <Ad id={ids.sidebarBottom} />
+            <Ad />
         </ui.Sidebar>
       </ui.SidebarContainer>
     </Layout>

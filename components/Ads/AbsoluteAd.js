@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Ad, { ids } from './Ad'
+import Ad from './Ad'
 
 export const Container = styled.div`
     position: absolute;
@@ -12,7 +12,7 @@ export const Container = styled.div`
 
 const AbsoluteAd = () => {
     return <Container>
-      <Ad id={ids.absolute} />
+      <Ad />
     </Container>
 }
 

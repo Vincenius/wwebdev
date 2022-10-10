@@ -3,6 +3,7 @@ import React from 'react'
 import * as ui from '../../ui'
 import Layout from '../../components/Layout'
 import templateMeta from '../../content/templates'
+import Ad from '../../components/Ads/Ad'
 
 const postMeta = templateMeta.find(m => m.id === 2)
 
@@ -17,6 +18,7 @@ const Post = () => (
     image={postMeta.previewImage}
   >
     <ui.ArticleContainer as="article">
+    <Ad />
     <p>
         <a href="https://modest-blog.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>{' '}
         | <a href="https://github.com/Vincenius/modest" target="_blank" rel="noopener noreferrer">GitHub</a>

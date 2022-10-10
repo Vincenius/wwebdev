@@ -3,7 +3,7 @@ import React from 'react'
 import * as ui from '../../ui'
 import Layout from '../../components/Layout'
 import templateMeta from '../../content/templates'
-import Ad, { ids } from '../../components/Ads/Ad'
+import Ad from '../../components/Ads/Ad'
 
 const postMeta = templateMeta.find(m => m.id === 1)
 
@@ -18,6 +18,7 @@ const Post = () => (
     image={postMeta.previewImage}
   >
     <ui.ArticleContainer as="article">
+      <Ad />
       <p>
         <a href="https://wwebdev-nextjs-blog-template.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>{' '}
         | <a href="https://github.com/wwebdev/nextjs-blog-template" target="_blank" rel="noopener noreferrer">GitHub</a>
@@ -28,8 +29,6 @@ const Post = () => (
         This is a simple blog template to quickly get started with writing.
         It has a clean design and provides a lot of flexibility.
       </p>
-
-      <Ad id={ids.firstParagraph} />
 
       <b>Features</b>
       <ul>
@@ -42,8 +41,6 @@ const Post = () => (
         <li>Responsive Design</li>
         <li>Best practices and accessibility</li>
       </ul>
-
-      <Ad id={ids.secondParagraph} />
 
       <p>
         <img src="/resources/blog-template-lighthouse.png" alt="lighthouse score 100"/>

@@ -4,7 +4,7 @@ import Chip from '@material-ui/core/Chip'
 import * as ui from '../../ui'
 import Layout from '../../components/Layout'
 import CodeBlock from '../../components/CodeBlock'
-import Ad, { ids } from '../../components/Ads/Ad'
+import Ad from '../../components/Ads/Ad'
 import meta from '../../content/resources'
 
 const postId = 8
@@ -123,7 +123,7 @@ const Post = () => (
             mdnLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin"
           />
 
-          <Ad id={ids.inContent1}/>
+          <Ad />
 
           <ArrFunctionElem
             name="entries()"
@@ -204,8 +204,6 @@ const Post = () => (
             syntax={flatMapSyntax}
             mdnLink="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap"
           />
-
-          <Ad id={ids.inContent2}/>
 
           <ArrFunctionElem
             name="forEach()"

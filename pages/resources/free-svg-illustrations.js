@@ -3,7 +3,7 @@ import React from 'react'
 import SubscribeForm from '../../components/SubscribeForm'
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
-import Ad, { ids } from '../../components/Ads/Ad'
+import Ad from '../../components/Ads/Ad'
 import RelatedArticle from '../../components/RelatedArticle'
 import meta from '../../content/resources'
 import * as ui from '../../ui'
@@ -35,7 +35,7 @@ const Post = () => (
                 link="https://www.manypixels.co/gallery/"
                 description="ManyPixels offer free svg illustrations with the possibility to customize the color as well."
             />
-            <Ad id={ids.inContent1}/>
+            <Ad />
 
             <LinkBox
                 image="/resources/free-svg-illustrations/illlustrations.jpg"
@@ -99,7 +99,6 @@ const Post = () => (
                 link="https://www.blackillustrations.com/"
                 description="A website that focuses on illustrations of black people."
             />
-            <Ad id={ids.inContent2}/>
 
             <LinkBox
                 image="/resources/free-svg-illustrations/humaaans.jpg"
