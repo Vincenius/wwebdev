@@ -82,7 +82,7 @@ const Demo = () => {
                         <SubscribeForm />
                     </ui.ArticleContainer>
                     <ui.Sidebar>
-                        <Ad />
+                        {/* <Ad /> */}
                     </ui.Sidebar>
                 </ui.SidebarContainer>
                 <Footer />
