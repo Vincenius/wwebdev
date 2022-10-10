@@ -2,9 +2,7 @@ import React, { useEffect } from 'react'
 
 const Ad = () => {
   useEffect(() => {
-    console.log('CALLED', window._carbonads)
     if (window._carbonads) {
-      console.log('CALLED')
       window._carbonads.refresh()
     }
   }, [])
