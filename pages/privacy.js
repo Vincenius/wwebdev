@@ -230,9 +230,23 @@ const Privacy = () => (
                 </li>
             </ul>
 
-            <h3>Ezoic</h3>
+            <h3>Advertising</h3>
             <p>
-            We use Ezoic to provide personalization and analytic services on this website, as such Ezoic's privacy policy is in effect and can be reviewed <a href="https://g.ezoic.net/privacy/wweb.dev">here</a>.
+                This type of service allows User Data to be utilized for advertising communication purposes displayed in the form of banners and other advertisements on this Website, possibly based on User interests.
+                This does not mean that all Personal Data are used for this purpose. Information and conditions of use are shown below.
+                Some of the services listed below may use Cookies to identify Users or they may use the behavioral retargeting technique, i.e. displaying ads tailored to the User’s interests and behavior, including those detected outside this Website. For more information, please check the privacy policies of the relevant services.
+                The User may opt out of a third-party service’s use of cookies by visiting the Network Advertising Initiative opt-out page.
+                BuySellAds (BuySellAds.com Inc.)
+            </p>
+
+            <p>
+                BuySellAds is an advertising service provided by BuySellAds.com Inc.<br/>
+                Personal Data collected:<br/>
+                Cookies; Usage Data.<br/>
+                Place of processing:<br/>
+                United States<br/>
+                –<br/>
+                <a href="https://www.buysellads.com/about/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
             </p>
 
             <h2>Links To Other Sites</h2>
