@@ -4,7 +4,7 @@ import Controls from './Controls'
 import * as S from './styled'
 import { SEPARATORS, SEPARATOR_OPTIONS } from './constants'
 import Nav from '../Nav'
-import AbsoluteAd from '../Ads/AbsoluteAd'
+import Ad from '../Ads/Ad'
 
 const Generator = props => {
     const defaultSeparator = SEPARATORS.SKEWED
@@ -16,7 +16,6 @@ const Generator = props => {
         setOptions(SEPARATOR_OPTIONS[val])
     }
 
-    const reversedClass = options.reversed ? 'reverse' : ''
     const TopElement = active === SEPARATORS.SEMI_CIRCLE
         ? S.SemiCircle
         : active === SEPARATORS.SPIKES
@@ -27,11 +26,17 @@ const Generator = props => {
                     ? S.Curved
                     : S.Top
 
+    console.log(options)
+
     return (
         <React.Fragment>
             <S.Container>
                 <Nav isArticle={true} />
-                <AbsoluteAd />
+
+                <S.AdContainer bgColor={!options.reversed}>
+                    <Ad />
+                </S.AdContainer>
+
                 <TopElement options={options} noBgColor={active === SEPARATORS.SKEWED}>
                     <Controls
                         options={options}

@@ -28,9 +28,9 @@ const Demo = () => {
                     date={new Date(postMeta.date)}
                 />
 
-                <Nav isArticle={true} transparentBg={true} />
+                <Nav isArticle={true} transparentBg={true} />
 
-                <AbsoluteAd />
+                <AbsoluteAd position="bottom" />
 
                 { activeBg === 0 && <Background1 changeBg={changeBg} activeBg={activeBg} /> }
                 { activeBg === 1 && <Background2 changeBg={changeBg} activeBg={activeBg} /> }

@@ -56,6 +56,20 @@ export const Top = styled(Section)`
   background: ${props => props.noBgColor ? 'transparent' : darkGrey};
 `
 
+export const AdContainer = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 10px;
+  z-index: 1;
+  background: ${props => props.bgColor ? darkGrey : 'transparent' };
+  margin: 0 auto;
+
+
+
+`
+
 export const SkewBg = styled.div`
   ${props => generateSkewCss(props.options)}
 `
