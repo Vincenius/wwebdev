@@ -1,13 +1,13 @@
-#carbonads * {
+#carbonads *, #carbon * {
   margin: initial;
   padding: initial;
 }
-#carbonads {
+#carbonads, #carbon {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', Helvetica, Arial,
     sans-serif;
 }
-#carbonads {
+#carbonads, #carbon {
   display: flex;
   max-width: 330px;
   background-color: hsl(0, 0%, 98%);
@@ -21,30 +21,34 @@
 #carbonads a:hover {
   color: inherit;
 }
-#carbonads span {
+#carbonads span, #carbon span {
   position: relative;
   display: block;
   overflow: hidden;
 }
-#carbonads .carbon-wrap {
+#carbonads .carbon-wrap, #carbon .carbon-wrap {
   display: flex;
 }
-#carbonads .carbon-img {
+#carbonads .carbon-img, #carbon .carbon-img {
   display: block;
   margin: 0;
   line-height: 1;
+  flex-shrink: 0;
 }
-#carbonads .carbon-img img {
+#carbonads .carbon-img img, #carbon .carbon-img img{
   display: block;
 }
-#carbonads .carbon-text {
+#carbonads .carbon-text, #carbon .carbon-text {
   font-size: 13px;
   padding: 10px;
   margin-bottom: 16px;
   line-height: 1.5;
   text-align: left;
 }
-#carbonads .carbon-poweredby {
+#carbon .carbon-text {
+  margin-bottom: 0;
+}
+#carbonads .carbon-poweredby, #carbon .carbon-poweredby {
   display: block;
   padding: 6px 8px;
   background: #f1f1f2;
