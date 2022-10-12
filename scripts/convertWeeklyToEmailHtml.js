@@ -13,7 +13,6 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
   .then(data => {
     let markdown = `<mjml>
     <mj-head>
-      <mj-title>wweb.dev weekly #${id}</mj-title>
       <mj-attributes>
         <mj-text font-size="16px" font-family="helvetica" />
         <mj-button font-family="helvetica" />
@@ -80,7 +79,7 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
 
     // only osx??
     var proc = require('child_process').spawn('pbcopy');
-    proc.stdin.write(htmlOutput.html); proc.stdin.end();
+    proc.stdin.write(markdown); proc.stdin.end();
 
     console.log('copied')
   })
