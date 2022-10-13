@@ -45,7 +45,7 @@ const BlurBackgroundGenerator = () => {
                     </p>
                     <p>
                         If you like the generated blur backgrounds or use them anywhere in your project, I'd be happy if you'd let me know.
-                        Also feedback for this generator is always welcome. Just pass me a message on <a href="https://twitter.com/wweb_dev" target="_blank" rel="noopener noreferrer">Twitter</a> or via email: <a href="mailto:info@wweb.dev">info@wweb.dev</a>.
+                        Also, feedback for this generator is always welcome. Just pass me a message on <a href="https://twitter.com/wweb_dev" target="_blank" rel="noopener noreferrer">Twitter</a> or via email: <a href="mailto:info@wweb.dev">info@wweb.dev</a>.
                     </p>
                 </ui.ArticleContainer>
             </ui.SidebarContainer>
