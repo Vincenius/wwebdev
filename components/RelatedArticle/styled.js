@@ -5,7 +5,8 @@ import { breakpoint } from '../../ui/constants'
 export const Container = styled(Card)`
     display: flex;
     margin-bottom: 70px;
-    margin-top: 30px;
+    margin-top: 0;
+    flex-direction: ${props => props.small ? 'column' : 'row'};
 
     @media only screen and (max-width: ${breakpoint}) {
         flex-direction: column;
@@ -14,16 +15,18 @@ export const Container = styled(Card)`
     h3 {
         margin-top: 0;
         margin-bottom: 0;
-        font-size: 32px;
+        font-size: 24px;
+        line-height: 1.2;
 
         a { text-decoration: none; }
     }
 `
 export const Image = styled.img`
-    width: 34%;
+    width: ${props => props.small ? '100%' : '34%;'};
     height: 100%;
     object-fit: cover;
     margin-top: 0;
+    margin-bottom: ${props => props.small ? '20px' : '0'};
 
     @media only screen and (max-width: ${breakpoint}) {
         width: 100%;
@@ -32,7 +35,7 @@ export const Image = styled.img`
 `
 
 export const Content = styled.div`
-    width: 66%;
+    width: ${props => props.small ? '100%' : '66%;'};
     padding: 20px;
 
     @media only screen and (max-width: ${breakpoint}) {

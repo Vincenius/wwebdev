@@ -5,7 +5,7 @@ import * as ui from '../../ui'
 import resourcesMeta from '../../content/resources'
 import articlesMeta from '../../content/articles'
 
-const RelatedArticle = ({ id, type }) => {
+const RelatedArticle = ({ id, type, hideHeadline = false, small = false }) => {
     const meta = type === 'article'
         ? articlesMeta
         : resourcesMeta
@@ -13,11 +13,11 @@ const RelatedArticle = ({ id, type }) => {
 
     return (
         <ui.Container>
-            <hr />
-            <h3>Related Article</h3>
-            <S.Container>
-                <S.Image src={previewImage} alt={headline} />
-                <S.Content>
+            { !hideHeadline && <hr /> }
+            { !hideHeadline && <h3>Related Article</h3> }
+            <S.Container small={small}>
+                <S.Image src={previewImage} alt={headline} small={small} />
+                <S.Content small={small}>
                     <h3>
                         <a href={link}>
                             {headline}
@@ -25,6 +25,7 @@ const RelatedArticle = ({ id, type }) => {
                     </h3>
 
                     <p>{description}</p>
+                    <a href={link}>Visit!</a>
                 </S.Content>
             </S.Container>
         </ui.Container>

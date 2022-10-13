@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { breakpoint } from '../../ui/constants'
 
 export const backgroundCss = ({ bgColor }) =>
 `
@@ -59,4 +60,12 @@ export const Background = styled.div`
     }
 
     ${props => props.values.circles.map((c, i) => circleCss({ index: i+1, ...c }) )}
+`
+
+export const RelatedContainer = styled.div`
+    display: flex;
+
+    @media (max-width: ${breakpoint}) {
+        flex-direction: column;
+    }
 `
