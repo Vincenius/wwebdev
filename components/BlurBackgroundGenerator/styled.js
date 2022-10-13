@@ -4,11 +4,15 @@ import { breakpoint } from '../../ui/constants'
 export const backgroundCss = ({ bgColor }) =>
 `
     position: absolute;
+    overflow: hidden;
     width: 100%;
     height: 100%;
+    top: 0;
+    left: 0;
     background: linear-gradient(to right, ${bgColor[0]}, ${bgColor[1]});
     display: flex;
     flex-grow: 1;
+    z-index: -1;
 `
 
 export const generalCircleCss = () =>

@@ -6,7 +6,7 @@ export const Container = styled(Card)`
     display: flex;
     margin-bottom: 70px;
     margin-top: 0;
-    flex-direction: ${props => props.small ? 'column' : 'row'};
+    flex-direction: ${props => props.isSmall ? 'column' : 'row'};
 
     @media only screen and (max-width: ${breakpoint}) {
         flex-direction: column;

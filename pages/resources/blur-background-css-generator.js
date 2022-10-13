@@ -33,12 +33,12 @@ const BlurBackgroundGenerator = () => {
                     <h1>Blur Background CSS Generator</h1>
 
                     <p>
-                        This is a tool to generate the CSS for a customized blur background.
+                        This is a tool to generate the CSS for a customizable blur background.
                         Afterward, you can easily copy the code and use it on your website.
                     </p>
                     <p>
                         You can customize the gradient background color as well as the gradient color of the circles.
-                        Then you can set the position and the size of the circles.
+                        You can set the position and the size of the circles as well.
                     </p>
                     <p>
                         As everything on wweb.dev this tool is under the <a href="https://choosealicense.com/licenses/mit/" target="_blank" rel="noopener noreferrer">MIT license</a>.

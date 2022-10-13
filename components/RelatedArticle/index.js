@@ -15,7 +15,7 @@ const RelatedArticle = ({ id, type, hideHeadline = false, small = false }) => {
         <ui.Container>
             { !hideHeadline && <hr /> }
             { !hideHeadline && <h3>Related Article</h3> }
-            <S.Container small={small}>
+            <S.Container isSmall={small}>
                 <S.Image src={previewImage} alt={headline} small={small} />
                 <S.Content small={small}>
                     <h3>
