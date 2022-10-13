@@ -15,7 +15,7 @@ const Ad = () => {
     : <div id="carbon">
         <span className="carbon-wrap">
           <span className="carbon-img">
-            <img src="/adblock.jpg" alt="support me" style={{ maxWidth: '130px' }} width="130" height="100" border="0" />
+            <img src="/adblock.jpg" alt="illustration of a desk with laptop" style={{ maxWidth: '130px' }} width="130" height="100" border="0" />
           </span>
           <span className="carbon-text">Help me to keep wweb.dev free and open-source by disabling AdBlock.</span>
         </span>
