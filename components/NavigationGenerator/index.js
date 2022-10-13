@@ -17,7 +17,6 @@ import { copyToClipboard } from '../../utils/copyToClipboard'
 import BrowserMockup from './components/BrowserMockup'
 import MenuItemsControl from './components/MenuItemsControl'
 import StylingControl from './components/StylingControl'
-import Ad, { ids } from '../Ads/Ad'
 import { htmlGenerator } from './generator'
 
 function Alert(props) {
@@ -123,8 +122,6 @@ const NavigationGenerator = props => {
         </AccordionDetails>
       </Accordion>
 
-      <Ad id={ids.firstParagraph}/>
-
       <h2>Code</h2>
 
       <Accordion>
@@ -181,8 +178,6 @@ const NavigationGenerator = props => {
           Copied
         </Alert>
       </Snackbar>
-
-      <Ad id={ids.secondParagraph}/>
     </ui.Container>
   )
 }

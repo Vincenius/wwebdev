@@ -2,6 +2,7 @@ import App from 'next/app'
 
 import "../ui/global.css"
 import "../ui/fonts.css"
+import "../ui/ads.css"
 
 function MyApp({ Component, pageProps }) {
     return <Component {...pageProps} />

@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import NavigationGenerator from '../../components/NavigationGenerator'
 import SubscribeForm from '../../components/SubscribeForm'
-import Ad, { ids } from '../../components/Ads/Ad'
+import Ad from '../../components/Ads/Ad'
 import meta from '../../content/resources'
 import * as ui from '../../ui'
 

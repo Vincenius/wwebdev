@@ -4,7 +4,7 @@ import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import SubscribeForm from '../../components/SubscribeForm'
 import AbsoluteAd from '../../components/Ads/AbsoluteAd'
-import Ad, { ids } from '../../components/Ads/Ad'
+import Ad from '../../components/Ads/Ad'
 import * as ui from '../../ui'
 
 import { Background1, Background2, Background3 } from '../../components/AnimatedCssBackgroundGenerator'
@@ -28,9 +28,9 @@ const Demo = () => {
                     date={new Date(postMeta.date)}
                 />
 
-                <Nav isArticle={true} transparentBg={true} />
+                <Nav isArticle={true} transparentBg={true} />
 
-                <AbsoluteAd />
+                <AbsoluteAd position="bottom" />
 
                 { activeBg === 0 && <Background1 changeBg={changeBg} activeBg={activeBg} /> }
                 { activeBg === 1 && <Background2 changeBg={changeBg} activeBg={activeBg} /> }
@@ -82,9 +82,7 @@ const Demo = () => {
                         <SubscribeForm />
                     </ui.ArticleContainer>
                     <ui.Sidebar>
-                        <Ad id={ids.sidebar} />
-                        <Ad id={ids.sidebarMiddle} />
-                        <Ad id={ids.sidebarBottom} />
+                        {/* TODO remove sidebar */}
                     </ui.Sidebar>
                 </ui.SidebarContainer>
                 <Footer />

@@ -4,7 +4,7 @@ import SubscribeForm from '../../components/SubscribeForm'
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
 import RelatedArticle from '../../components/RelatedArticle'
-import Ad, { ids } from '../../components/Ads/Ad'
+import Ad from '../../components/Ads/Ad'
 import meta from '../../content/resources'
 import * as ui from '../../ui'
 
@@ -35,7 +35,7 @@ const Post = () => (
                 link="https://github.com/bytedance/IconPark"
                 image="/resources/free-icon-sets/iconpark.jpg"
             />
-            <Ad id={ids.inContent1}/>
+            <Ad />
             <LinkBox
                 title="Tabler Icons"
                 description="895 Fully customizable free SVG icons."
@@ -63,7 +63,6 @@ const Post = () => (
                 link="https://teenyicons.com/"
                 image="/resources/free-icon-sets/teenyicons.jpg"
             />
-            <Ad id={ids.inContent2}/>
             <LinkBox
                 title="CSS.gg"
                 description="700 Open-source CSS, SVG, and Figma UI Icons."

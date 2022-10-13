@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Chip from '@material-ui/core/Chip'
 import * as ui from '../../ui'
 import CodeBlock from '../../components/CodeBlock'
-import Ad, { ids } from '../../components/Ads/Ad'
+import Ad from '../../components/Ads/Ad'
 import Layout from '../../components/Layout'
 import meta from '../../content/resources'
 
@@ -157,7 +157,7 @@ const Post = () => (
             syntax="Object.create(proto, [propertiesObject])"
           />
 
-          <Ad id={ids.inContent1}/>
+          <Ad />
 
           <ObjFunctionElem
             name="Object.defineProperties()"
@@ -206,8 +206,6 @@ const Post = () => (
             syntax="Object.getOwnPropertyDescriptor(obj, prop)"
             example={getOwnPropertyDescriptorExample}
           />
-
-          <Ad id={ids.inContent2}/>
 
           <ObjFunctionElem
             name="Object.getOwnPropertyDescriptors()"

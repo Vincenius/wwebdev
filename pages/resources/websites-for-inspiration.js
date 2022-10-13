@@ -5,7 +5,7 @@ import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
 import ImageTextBlock from '../../components/ImageTextBlock'
 import RelatedArticle from '../../components/RelatedArticle'
-import Ad, { ids } from '../../components/Ads/Ad'
+import Ad from '../../components/Ads/Ad'
 import meta from '../../content/resources'
 import * as ui from '../../ui'
 
@@ -37,7 +37,7 @@ const Post = () => (
                 image="/resources/inspiration-websites/pages.jpg"
             />
 
-            <Ad id={ids.inContent1}/>
+            <Ad />
 
             <LinkBox
                 title="Land-book"
@@ -94,8 +94,6 @@ const Post = () => (
                 link="https://www.webdesign-inspiration.com/"
                 image="/resources/inspiration-websites/webdesign-inspiration.jpg"
             />
-
-            <Ad id={ids.inContent2}/>
 
             <LinkBox
                 title="CodeMyUI"
