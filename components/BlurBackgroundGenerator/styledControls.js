@@ -6,6 +6,10 @@ export const Controls = styled.div`
     position: relative;
     z-index: 1;
     height: 100%;
+
+    @media (max-width: 640px) {
+        margin-top: 120px;
+    }
 `
 
 export const Container = styled.div`
