@@ -1,7 +1,7 @@
 // next.config.js
-const withPWA = require('next-pwa')
+const withPWA = require('next-pwa')({ dest: 'public' })
 const withBundleAnalyzer = require('@next/bundle-analyzer')({
-    enabled: process.env.ANALYZE === 'true'
+    enabled: process.env.ANALYZE === 'true',
 })
 
 const { weeklyData } = require('./content/weekly')
@@ -14,9 +14,6 @@ for (const w of weeklyData) {
 
 const settings = withBundleAnalyzer({
     trailingSlash: true,
-    pwa: {
-        dest: 'public'
-    },
     exportPathMap: async function(
         defaultPathMap,
     ) {
