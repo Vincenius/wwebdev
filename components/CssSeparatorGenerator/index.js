@@ -26,11 +26,9 @@ const Generator = props => {
                     ? S.Curved
                     : S.Top
 
-    console.log(options)
-
     return (
         <React.Fragment>
-            <S.Container>
+            <S.Container large={active === SEPARATORS.SEMI_CIRCLE || active === SEPARATORS.TRIANGLE}>
                 <Nav isArticle={true} />
 
                 <S.AdContainer>

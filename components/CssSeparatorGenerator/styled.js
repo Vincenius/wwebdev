@@ -15,7 +15,7 @@ import {
 
 export const Container = styled.main`
   height: 100vh;
-  min-height: 768px;
+  min-height: ${props => !props.large ? '768px' : '950px'};
   display: flex;
   flex-direction: column;
 `
@@ -65,9 +65,6 @@ export const AdContainer = styled.div`
   z-index: 1;
   background: ${darkGrey};
   margin: 0 auto;
-
-
-
 `
 
 export const SkewBg = styled.div`
