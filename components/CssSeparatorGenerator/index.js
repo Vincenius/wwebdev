@@ -33,7 +33,7 @@ const Generator = props => {
             <S.Container>
                 <Nav isArticle={true} />
 
-                <S.AdContainer bgColor={!options.reversed}>
+                <S.AdContainer>
                     <Ad />
                 </S.AdContainer>
 

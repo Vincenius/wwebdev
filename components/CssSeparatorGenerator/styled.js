@@ -63,7 +63,7 @@ export const AdContainer = styled.div`
   margin: 0 auto;
   padding: 10px;
   z-index: 1;
-  background: ${props => props.bgColor ? darkGrey : 'transparent' };
+  background: ${darkGrey};
   margin: 0 auto;
 
 
