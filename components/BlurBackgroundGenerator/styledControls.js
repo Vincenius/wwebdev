@@ -21,6 +21,7 @@ export const Container = styled.div`
 
     h3 {
         margin: 0;
+        color: #fff;
     }
     label {
         display: block;
