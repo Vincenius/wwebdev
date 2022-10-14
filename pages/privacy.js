@@ -17,7 +17,7 @@ const Privacy = () => (
                 <b>If you enable "Do Not Track" in your browser I won't track you</b>.
                 Also AdBlockers will work for blocking the tracking. I'd recomment <i>uBlock Origin</i> for that.
             </p>
-            <p>I use Ezoic for displaying ads. I disabled personalized ads, so no cookies stored.</p>
+            <p>I use BuySellAds for displaying ads. It has no personalized ads, so no cookies stored.</p>
             <p>
                 If you think I'm missing something here - please let me know: info@wweb.dev
             </p>
@@ -272,7 +272,7 @@ const Privacy = () => (
                 information from anyone under the age of 18. If you are
                 a parent or guardian and you are aware that your
                 Children has provided us with Personal Data, please
-                contact us. If we become aware that we have collected
+                contact me. If we become aware that we have collected
                 Personal Data from children without verification of
                 parental consent, we take steps to remove that
                 information from our servers.
@@ -294,10 +294,10 @@ const Privacy = () => (
                 periodically for any changes. Changes to this Privacy
                 Policy are effective when they are posted on this page.
             </p>
-            <h2>Contact Us</h2>
+            <h2>Contact me</h2>
             <p>
                 If you have any questions about this Privacy Policy,
-                please contact us:
+                please contact me:
             </p>
             <ul>
                 <li>By email: info@wweb.dev</li>
