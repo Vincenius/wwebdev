@@ -137,20 +137,19 @@ export const Screenreader = styled.span`
 export const SectionHeadline = styled.h2`
     position: relative;
     font-size: 2em;
-    margin: 0 0 46px;
+    margin: 0 0 20px;
     font-weight: 300;
-    text-align: center;
+    padding-bottom: 10px;
 
     &::after {
         content: '';
         display: block;
         width: 1.5em;
-        height: 1px;
+        height: 2px;
         position: absolute;
-        left: 50%;
+        left: 0;
         top: 100%;
         background: ${lightBlue};
-        transform: translateX(-50%);
     }
 `
 

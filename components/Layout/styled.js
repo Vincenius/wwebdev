@@ -11,6 +11,11 @@ export const Container = styled.div`
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
+
+    @media (min-width: 1441px) {
+        margin: 20px auto;
+        border-radius: 10px;
+    }
 `
 export const Time = styled.time`
     font-size: 1rem;

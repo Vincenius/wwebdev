@@ -4,6 +4,7 @@ import { breakpointSmall, lightBlue, darkGrey } from '../../ui/constants'
 export const Container = styled.div`
   display: flex;
   margin-bottom: 62px;
+  padding-top: 10px;
   font-size: 1rem;
 
   @media (max-width: ${breakpointSmall}) {
