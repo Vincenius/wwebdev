@@ -7,6 +7,7 @@ export const Container = styled.article`
     margin-bottom: 3.2rem;
     padding-bottom: 3.2rem;
     display: flex;
+    margin-top: -10px;
 
     @media only screen and (max-width: ${breakpoint}) {
         flex-direction: column;

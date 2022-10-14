@@ -137,7 +137,7 @@ export const Screenreader = styled.span`
 export const SectionHeadline = styled.h2`
     position: relative;
     font-size: 2em;
-    margin: 0 0 20px;
+    margin: 0 0 30px;
     font-weight: 300;
     padding-bottom: 10px;
 
