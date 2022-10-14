@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import Chip from '@material-ui/core/Chip'
 import * as ui from '../../ui'
 import CodeBlock from '../../components/CodeBlock'
-import Ad from '../../components/Ads/Ad'
 import Layout from '../../components/Layout'
 import meta from '../../content/resources'
 
@@ -156,8 +155,6 @@ const Post = () => (
             example="Object.create({ a: 1 }) // <prototype>: Object { a: 1 }"
             syntax="Object.create(proto, [propertiesObject])"
           />
-
-          <Ad />
 
           <ObjFunctionElem
             name="Object.defineProperties()"

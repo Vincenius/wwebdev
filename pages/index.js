@@ -3,6 +3,7 @@ import Link from 'next/link'
 import * as ui from '../ui'
 import Layout from '../components/Layout'
 import SubscribeForm from '../components/SubscribeForm'
+import Featured from '../components/Featured'
 import Ad from '../components/Ads/Ad'
 import { generateWeekly, generateArticleAndResources } from '../content/generator'
 
@@ -15,6 +16,9 @@ const Home = () => (
     <ui.Container>
       <ui.SidebarContainer>
         <ui.SidebarMain>
+          <ui.SectionHeadline>Featured</ui.SectionHeadline>
+          <Featured />
+
           <ui.SectionHeadline>Latest Articles & Resources</ui.SectionHeadline>
 
           { generateArticleAndResources(7) }
@@ -28,9 +32,10 @@ const Home = () => (
           </a></Link>
         </ui.SidebarMain>
         <ui.Sidebar>
+          <ui.SectionHeadline>Latest News</ui.SectionHeadline>
+
           <Ad />
           <br />
-          <ui.SectionHeadline>Latest News</ui.SectionHeadline>
 
           <ui.SidebarContent>
             { generateWeekly(6) }

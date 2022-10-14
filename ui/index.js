@@ -82,6 +82,7 @@ export const SidebarMain = styled.div`
 export const Sidebar = styled.aside`
     width: 100%;
     max-width: 300px;
+    min-width: 300px;
     margin-left: 50px;
 
     @media (max-width: ${breakpointLarge}) {
@@ -133,8 +134,23 @@ export const Screenreader = styled.span`
 `
 
 export const SectionHeadline = styled.h2`
+    position: relative;
     font-size: 2em;
-    margin: 0 0 26px;
+    margin: 0 0 32px;
+    font-weight: 300;
+    text-align: center;
+
+    &::after {
+        content: '';
+        display: block;
+        width: 1.5em;
+        height: 1px;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        background: ${lightBlue};
+        transform: translateX(-50%);
+    }
 `
 
 export const GridContainer = styled(Container)`

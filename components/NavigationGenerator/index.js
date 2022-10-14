@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { SizeMe } from 'react-sizeme'
-import ReactHtmlParser from 'react-html-parser'
+import parse from 'html-react-parser'
 
 import Accordion from '@material-ui/core/Accordion'
 import AccordionSummary from '@material-ui/core/AccordionSummary'
@@ -80,7 +80,7 @@ const NavigationGenerator = props => {
       <BrowserMockup>
         <SizeMe>{({ size }) =>
           <S.Navigation width={size.width} useLogo={menuItems.logo.isUsed} {...menuStyle}>
-            { ReactHtmlParser(htmlCode) }
+            { parse(htmlCode) }
           </S.Navigation>
         }</SizeMe>
         <S.Center>
