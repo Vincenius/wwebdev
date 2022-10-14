@@ -1,11 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import resources from '../../content/resources'
+import templates from '../../content/templates'
 import * as S from './styled'
 
-const articles = resources.filter(r => r.id === 1 || r.id === 5 || r.id === 12)
-
-// TODOs mobile style, link headline hover, general styles?
+const articles = [
+  ...resources.filter(r => r.id === 1 || r.id === 5),
+  ...templates.filter(t => t.id === 1)
+]
 
 const Featured = () => {
   return <S.Container>
