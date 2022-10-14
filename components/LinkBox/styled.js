@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Paper from '@material-ui/core/Paper'
-import { lightBlue, gradient, boxShadow } from '../../ui/constants'
+import { lightBlue, gradient, boxShadow, darkGrey } from '../../ui/constants'
 
 export const Container = styled(Paper)`
     position: relative;
@@ -14,6 +14,16 @@ export const Content = styled.article`
     flex-direction: column;
     justify-content: space-between;
 
+    h2 {
+        font-weight: 500;
+        color: ${darkGrey};
+        margin: 0.25em 0 1em;
+
+        &:hover {
+            color: ${lightBlue}
+        }
+    }
+
     img {
         width: 100%;
         height: ${props => props.fullHeight ? '100%' : '200px'};
@@ -22,10 +32,6 @@ export const Content = styled.article`
 
     a {
         text-decoration: none;
-
-        &:hover {
-            color: ${lightBlue}
-        }
     }
 
     p {

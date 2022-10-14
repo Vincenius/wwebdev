@@ -40,7 +40,8 @@ export const ArticleContainer = styled(Container)`
     }
 
     h2, h3 {
-        color: ${blue};
+        color: ${darkGrey};
+        font-weight: 500;
         margin: 1.6em 0 0.6em;
     }
 `
@@ -136,7 +137,7 @@ export const Screenreader = styled.span`
 export const SectionHeadline = styled.h2`
     position: relative;
     font-size: 2em;
-    margin: 0 0 32px;
+    margin: 0 0 46px;
     font-weight: 300;
     text-align: center;
 

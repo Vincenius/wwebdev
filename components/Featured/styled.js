@@ -1,9 +1,9 @@
 import styled from 'styled-components'
-import { breakpointSmall, lightBlue } from '../../ui/constants'
+import { breakpointSmall, lightBlue, darkGrey } from '../../ui/constants'
 
 export const Container = styled.div`
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 62px;
   font-size: 1rem;
 
   @media (max-width: ${breakpointSmall}) {
@@ -36,6 +36,8 @@ export const Article = styled.div`
   h3 {
     margin: 0;
     font-weight: normal;
+    color: ${darkGrey};
+    font-size: 1.1em;
 
     &:hover {
       color: ${lightBlue};

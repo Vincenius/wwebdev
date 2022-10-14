@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { darkGrey, breakpoint } from '../../ui/constants'
+import { darkGrey, breakpoint, lightBlue } from '../../ui/constants'
 
 export const Container = styled.header`
     position: relative;
@@ -23,21 +23,33 @@ export const Content = styled.div`
     max-width: 848px;
     width: 100%;
     padding: 0 24px 0;
-    margin: 160px auto;
+    margin: 120px auto;
     color: ${darkGrey};
     text-align: center;
 
     h1 {
-        font-family: "PT Serif", serif;
-        font-size: 42px;
-        line-height: 52px;
+        position: relative;
+        font-size: 2.5em;
+        line-height: 1.5em;
         letter-spacing: -0.2px;
+        font-weight: 500;
         margin-top: 48px;
         margin-bottom: 16px;
 
+        &::after {
+            content: '';
+            display: block;
+            width: 1.5em;
+            height: 1px;
+            position: absolute;
+            left: 50%;
+            top: 100%;
+            background: ${lightBlue};
+            transform: translateX(-50%);
+        }
+
         @media (max-width: ${breakpoint}) {
-            font-size: 36px;
-            line-height: 46px;
+            font-size: 2em;
         }
     }
 `

@@ -27,8 +27,8 @@ export const Time = styled.time`
     margin-bottom: 8px;
 `
 export const Headline = styled.h3`
-    font-size: calc(1.29454rem + .17836 * ((100vw - 20rem)/ 100));
-    font-weight: 700;
+    font-size: 1.3em;
+    font-weight: 500;
     hyphens: manual;
     line-height: 1.2;
     margin: 0 0 6px;
