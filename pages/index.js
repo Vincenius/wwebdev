@@ -32,10 +32,10 @@ const Home = () => (
           </a></Link>
         </ui.SidebarMain>
         <ui.Sidebar>
-          <ui.SectionHeadline>Latest News</ui.SectionHeadline>
-
           <Ad />
-          <br />
+          <br /><br />
+
+          <ui.SectionHeadline>Latest News</ui.SectionHeadline>
 
           <ui.SidebarContent>
             { generateWeekly(6) }
