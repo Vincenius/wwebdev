@@ -35,6 +35,7 @@ export const Article = styled.div`
 
   h3 {
     margin: 0;
+    font-weight: normal;
 
     &:hover {
       color: ${lightBlue};
