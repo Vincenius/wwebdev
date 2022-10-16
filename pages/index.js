@@ -2,8 +2,8 @@ import React from 'react'
 import Link from 'next/link'
 import * as ui from '../ui'
 import Layout from '../components/Layout'
-import SubscribeForm from '../components/SubscribeForm'
 import Featured from '../components/Featured'
+import NewsletterLink from '../components/NewsletterLink'
 import Ad from '../components/Ads/Ad'
 import { generateWeekly, generateArticleAndResources } from '../content/generator'
 
@@ -34,6 +34,7 @@ const Home = () => (
         <ui.Sidebar>
           <Ad />
           <br /><br />
+          <NewsletterLink />
 
           <ui.SectionHeadline>Latest News</ui.SectionHeadline>
 
@@ -46,8 +47,6 @@ const Home = () => (
           </ui.SidebarContent>
         </ui.Sidebar>
       </ui.SidebarContainer>
-
-      <SubscribeForm />
     </ui.Container>
   </Layout>
 )

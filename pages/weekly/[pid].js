@@ -2,10 +2,11 @@ import React from 'react'
 import { useRouter } from 'next/router'
 import { useQuery } from 'react-query'
 
-import SubscribeForm from '../../components/SubscribeForm'
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
 import PrevNext from '../../components/PrevNext'
+import NewsletterLink from '../../components/NewsletterLink'
+import Ad from '../../components/Ads/Ad'
 import { weeklyData as meta } from '../../content/weekly'
 import { generateLinkBoxLoading } from '../../content/generator'
 import * as ui from '../../ui'
@@ -54,17 +55,23 @@ const Post = () => {
             { data && <ui.GridContainer>
                 {
                     data.map((item, index) =>
-                        <LinkBox
-                            key={`linkbox-${index}`}
-                            title={item.title}
-                            description={item.description}
-                            link={item.link}
-                            image={item.image}
-                            selfPromoted={item.selfPromoted}
-                        />
+                        <React.Fragment>
+                            <LinkBox
+                                key={`linkbox-${index}`}
+                                title={item.title}
+                                description={item.description}
+                                link={item.link}
+                                image={item.image}
+                                selfPromoted={item.selfPromoted}
+                            />
+                            { index === 1 && <div>
+                                <Ad />
+                                <br /> <br />
+                                <NewsletterLink />
+                            </div>}
+                        </React.Fragment>
                     )
                 }
-                <SubscribeForm type="weekly" isSmall={true} />
             </ui.GridContainer> }
 
             <PrevNext postId={pid} />

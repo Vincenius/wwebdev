@@ -1,10 +1,10 @@
 import React from 'react'
 
-import SubscribeForm from '../../components/SubscribeForm'
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
 import RelatedArticle from '../../components/RelatedArticle'
 import Ad from '../../components/Ads/Ad'
+import NewsletterLink from '../../components/NewsletterLink'
 import meta from '../../content/resources'
 import * as ui from '../../ui'
 
@@ -34,7 +34,11 @@ const Post = () => (
                 link="https://www.gradientmagic.com/"
                 image="/resources/creative-backgrounds/gradientmagic.png"
             />
-            <Ad />
+            <div>
+                <Ad />
+                <br /> <br />
+                <NewsletterLink />
+            </div>
             <LinkBox
                 title="pattern.css"
                 description="A cool css library for background patterns, which can be easily applied to all elements."
@@ -204,8 +208,6 @@ const Post = () => (
                 image="/resources/resources01-small.jpg"
                 selfPromoted="from wweb.dev"
             />
-
-            <SubscribeForm isSmall={true} />
 
         </ui.GridContainer>
 

@@ -1,9 +1,9 @@
 import React from 'react'
 
-import SubscribeForm from '../../components/SubscribeForm'
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
 import Ad from '../../components/Ads/Ad'
+import NewsletterLink from '../../components/NewsletterLink'
 import RelatedArticle from '../../components/RelatedArticle'
 import meta from '../../content/resources'
 import * as ui from '../../ui'
@@ -35,7 +35,12 @@ const Post = () => (
                 link="https://www.manypixels.co/gallery/"
                 description="ManyPixels offer free svg illustrations with the possibility to customize the color as well."
             />
-            <Ad />
+
+            <div>
+                <Ad />
+                <br /> <br />
+                <NewsletterLink />
+            </div>
 
             <LinkBox
                 image="/resources/free-svg-illustrations/illlustrations.jpg"
@@ -225,9 +230,6 @@ const Post = () => (
                 link="https://joeschmoe.io/"
                 description='Generate an illustrated avatar based on a string. Great for profile picture placeholders.'
             />
-
-            <SubscribeForm isSmall={true} />
-
         </ui.GridContainer>
 
         <RelatedArticle id={4} type="resource" />

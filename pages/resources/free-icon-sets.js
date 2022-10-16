@@ -1,8 +1,8 @@
 import React from 'react'
 
-import SubscribeForm from '../../components/SubscribeForm'
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
+import NewsletterLink from '../../components/NewsletterLink'
 import RelatedArticle from '../../components/RelatedArticle'
 import Ad from '../../components/Ads/Ad'
 import meta from '../../content/resources'
@@ -35,7 +35,12 @@ const Post = () => (
                 link="https://github.com/bytedance/IconPark"
                 image="/resources/free-icon-sets/iconpark.jpg"
             />
-            <Ad />
+            <div>
+                <Ad />
+                <br /> <br />
+                <NewsletterLink />
+            </div>
+
             <LinkBox
                 title="Tabler Icons"
                 description="895 Fully customizable free SVG icons."
@@ -167,9 +172,6 @@ const Post = () => (
                 link="https://icons8.com/icons"
                 image="/resources/free-icon-sets/icons8.png"
             />
-
-            <SubscribeForm isSmall={true} />
-
         </ui.GridContainer>
 
         <RelatedArticle id={4} type="resource" />

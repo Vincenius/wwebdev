@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
-import { breakpointLarge } from '../../ui/constants'
 
-import * as ui from '../../ui' // TODO move to styled?
+import { breakpointLarge } from '../../ui/constants'
+import * as ui from '../../ui'
 import Layout from '../Layout'
 import Comments from '../Comments'
 import Ad from '../Ads/Ad'
+import NewsletterLink from '../NewsletterLink'
 import PrevNext from '../PrevNext'
-import SubscribeForm from '../SubscribeForm'
 import meta from '../../content/articles'
 
 const Sidebar = styled(ui.Sidebar)`
@@ -45,14 +45,14 @@ const ArticleLayout = ({ id, children }) => {
         <ui.ArticleContainer as="article">
           { children }
 
-          <br />
-          <SubscribeForm />
           <Comments />
 
           <PrevNext postId={id} isArticle={true} />
         </ui.ArticleContainer>
         <Sidebar>
           <Ad />
+          <br /><br />
+          <NewsletterLink />
         </Sidebar>
       </SidebarContainer>
     </Layout>

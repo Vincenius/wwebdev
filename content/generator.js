@@ -3,7 +3,6 @@ import WeeklyPreview from '../components/WeeklyPreview'
 import ArticlePreview from '../components/ArticlePreview'
 import LinkBox from '../components/LinkBox'
 import LinkBoxLoading from '../components/LinkBox/Loading'
-import SubscribeForm from '../components/SubscribeForm'
 
 import { weeklyData } from './weekly'
 import articleData from './articles'
@@ -34,7 +33,6 @@ export const generateWeeklyContent = (data, filter) => {
                 image={item.image}
                 selfPromoted={item.selfPromoted}
             />
-            { index === 2 && <SubscribeForm type="weekly" isSmall={true} /> }
         </React.Fragment>)
 }
 

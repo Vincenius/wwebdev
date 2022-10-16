@@ -2,7 +2,6 @@ import React, { useState } from 'react'
 import Head from '../../components/Head'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
-import SubscribeForm from '../../components/SubscribeForm'
 import AbsoluteAd from '../../components/Ads/AbsoluteAd'
 import Ad from '../../components/Ads/Ad'
 import * as ui from '../../ui'
@@ -79,7 +78,6 @@ const Demo = () => {
                         </p>
 
                         <br />
-                        <SubscribeForm />
                     </ui.ArticleContainer>
                     <ui.Sidebar>
                         {/* TODO remove sidebar */}

@@ -1,11 +1,10 @@
 import React from 'react'
 
-import SubscribeForm from '../../components/SubscribeForm'
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
-import ImageTextBlock from '../../components/ImageTextBlock'
 import RelatedArticle from '../../components/RelatedArticle'
 import Ad from '../../components/Ads/Ad'
+import NewsletterLink from '../../components/NewsletterLink'
 import meta from '../../content/resources'
 import * as ui from '../../ui'
 
@@ -37,7 +36,11 @@ const Post = () => (
                 image="/resources/inspiration-websites/pages.jpg"
             />
 
-            <Ad />
+            <div>
+                <Ad />
+                <br /> <br />
+                <NewsletterLink />
+            </div>
 
             <LinkBox
                 title="Land-book"
@@ -192,9 +195,6 @@ const Post = () => (
                 link="https://saaslandingpage.com/"
                 image="/resources/inspiration-websites/saaslandingpage.jpg"
             />
-
-            <SubscribeForm isSmall={true} />
-
         </ui.GridContainer>
 
         <RelatedArticle id={4} type="resource" />

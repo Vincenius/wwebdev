@@ -1,6 +1,5 @@
 import React from 'react'
 import * as ui from '../ui'
-import SubscribeForm from '../components/SubscribeForm'
 import Layout from '../components/Layout'
 import LinkBox from '../components/LinkBox'
 import templates from '../content/templates'
@@ -21,8 +20,6 @@ const Templates = () => (
                 image={item.previewImage}
                 isExternal={false}
             />)}
-
-            <SubscribeForm isSmall={true} />
         </ui.GridContainer>
     </Layout>
 )

@@ -1,8 +1,8 @@
 import React from 'react'
 import * as ui from '../ui'
-import SubscribeForm from '../components/SubscribeForm'
 import Layout from '../components/Layout'
 import Ad from '../components/Ads/Ad'
+import NewsletterLink from '../components/NewsletterLink'
 import { generateResources } from '../content/generator'
 
 const Home = () => (
@@ -12,10 +12,11 @@ const Home = () => (
                 <ui.SidebarMain>
                     <ui.SectionHeadline>Resources and Tools around Web Development</ui.SectionHeadline>
                     { generateResources() }
-                    <SubscribeForm />
                 </ui.SidebarMain>
                 <ui.Sidebar>
                     <Ad />
+                    <br /><br />
+                    <NewsletterLink />
                 </ui.Sidebar>
             </ui.SidebarContainer>
         </ui.Container>
