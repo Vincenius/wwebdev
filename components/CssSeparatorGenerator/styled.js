@@ -1,9 +1,12 @@
 import styled, { css } from 'styled-components'
 import _get from 'lodash/get'
 import Card from '@material-ui/core/Card'
+import MuiCheckbox from '@material-ui/core/Checkbox'
+import MuiSlider from '@material-ui/core/Slider'
 import TextareaAutosize from '@material-ui/core/TextareaAutosize'
 import MuiFormControlLabel from '@material-ui/core/FormControlLabel'
-import { darkGrey, greyBlue } from '../../ui/constants'
+import { darkGrey, greyBlue, lightGrey, logoColorLeft, breakpointLarge } from '../../ui/constants'
+import * as ui from '../../ui'
 import {
   generateSkewCss,
   generateSemiCircleCss,
@@ -12,12 +15,10 @@ import {
   generateTriangleCss,
   generateCurvedCss,
 } from './codeGenerators'
+import { MobileFriendly } from '@material-ui/icons'
 
 export const Container = styled.main`
-  height: 100vh;
-  min-height: ${props => !props.large ? '768px' : '950px'};
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 `
 
 export const Header = styled.header`
@@ -42,10 +43,15 @@ export const Header = styled.header`
     font-size: 32px;
   }
 `
-
+export const SidebarContainer = styled(ui.SidebarContainer)`
+  @media (max-width: ${breakpointLarge}) {
+    flex-direction: column-reverse;
+  }
+`
 const Section = styled.section`
   position: relative;
-  height: 100%;
+  height: 50%;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -54,17 +60,6 @@ const Section = styled.section`
 export const Top = styled(Section)`
   color: #fff;
   background: ${props => props.noBgColor ? 'transparent' : darkGrey};
-`
-
-export const AdContainer = styled.div`
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto;
-  padding: 10px;
-  z-index: 1;
-  background: ${darkGrey};
-  margin: 0 auto;
 `
 
 export const SkewBg = styled.div`
@@ -91,22 +86,22 @@ export const Curved = styled(Top)`
   ${props => generateCurvedCss(props.options)}
 `
 
-export const Bottom = styled(Section)`
-  color: ${darkGrey};
-  display: flex;
-  align-items: flex-end;
-`
-
 export const Row = styled.div`
   display: flex;
-  position: relative;
-  z-index: 20;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  @media (max-width: ${breakpointLarge}) {
+    margin-bottom: 15px;
+  }
 
   > * {
-    margin: 20px;
+    width: 100%;
+    flex-basis: calc(50% - 20px);
+    margin: 20px 0;
 
-    @media (max-width: 768px) {
-      margin: 5px;
+    @media (max-width: ${breakpointLarge}) {
+      flex-basis: calc(33% - 20px);
     }
 
     &.active,
@@ -121,19 +116,35 @@ export const Row = styled.div`
   }
 `
 
+export const ControlContainer = styled.div`
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  background: rgba(0,0,0,0.8);
+  color: #fff;
+  margin: 20px;
+  padding: 20px;
+  max-width: 300px;
+  z-index: 100;
+
+  h3 {
+    margin: 0;
+    color: #fff;
+  }
+
+  label {
+    color: ${lightGrey};
+  }
+`
+export const SliderContainer = styled.div`
+  label {
+    text-transform: capitalize;
+  }
+`
+
 export const Controls = styled(Card)`
   position: relative;
-  background-color: rgba(255,255,255,0.7) !important;
-  z-index: 20;
-
-  @media (max-height: 900px) {
-    position: absolute;
-    top: 50px;
-  }
-
-  @media (max-width: 960px) {
-    top: 0;
-  }
+  margin-top: 30px;
 `
 
 export const ControlContent = styled.div`
@@ -141,36 +152,14 @@ export const ControlContent = styled.div`
   display: ${props => props.isVisible ? 'block' : 'none'};
 `
 
-export const ControlToggle = styled.div`
-  @media (min-height: 899px) {
-    display: none;
-  }
-
-  padding: 10px;
-  border-top: 1px solid rgba(0,0,0,0.23);
-  cursor: pointer;
-
-  > span {
-    color: rgba(0, 0, 0, 0.54);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-`
-
 export const FormControlLabel = styled(MuiFormControlLabel)`
   margin-bottom: 10px;
-
-  input {
-    display: none !important;
-  }
 `
-
-export const SliderContainer = styled.div`
-  label {
-    text-transform: capitalize;
-    color: ${darkGrey};
-  }
+export const Checkbox = styled(MuiCheckbox)`
+    color: ${lightGrey} !important;
+`
+export const Slider = styled(MuiSlider)`
+  color: ${logoColorLeft} !important;
 `
 export const CodeArea = styled(TextareaAutosize)`
     width: 100%;
@@ -202,12 +191,20 @@ export const Copied = styled.span`
         opacity: 1;
     `}
 `
-
 export const GithubLink = styled.a`
   padding: 20px;
   color: ${darkGrey};
 
   &:hover {
     color: ${greyBlue};
+  }
+`
+export const Subheadline = styled(ui.SectionHeadline)`
+  margin: 30px 0 0;
+  font-size: 1.5em;
+`
+export const MobileHide = styled.div`
+  @media (max-width: ${breakpointLarge}) {
+    display: none;
   }
 `

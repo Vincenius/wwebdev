@@ -4,8 +4,6 @@ import Tabs from '@material-ui/core/Tabs'
 import Tab from '@material-ui/core/Tab'
 import Slider from '@material-ui/core/Slider'
 import Checkbox from '@material-ui/core/Checkbox'
-import ExpandLess from '@material-ui/icons/ExpandLess'
-import ExpandMore from '@material-ui/icons/ExpandMore'
 import FileCopy from '@material-ui/icons/FileCopy'
 import GitHub from '@material-ui/icons/GitHub'
 
@@ -34,17 +32,6 @@ const Controls = props => {
         }, 2000);
     }
 
-    const handleCheck = e => {
-        setOptions({ ...options, [e.target.name]: e.target.checked });
-    }
-
-    const handleChange = (key, newVal) => {
-        setOptions({ ...options, [key]: {
-            ...options[key],
-            value: newVal,
-        } });
-    }
-
     return (
         <S.Controls>
             <Tabs
@@ -54,7 +41,6 @@ const Controls = props => {
                 onChange={(event, newValue) => { setValue(newValue) }}
                 aria-label="controls for customizing the separator"
             >
-                <Tab label="Settings" />
                 <Tab label="HTML" />
                 <Tab label="CSS" />
                 <S.GithubLink
@@ -67,38 +53,6 @@ const Controls = props => {
             </Tabs>
             <S.ControlContent isVisible={isVisible}>
                 { value === 0 &&
-                    <div>
-                        { options.reversed !== undefined &&
-                            <S.FormControlLabel
-                                label="Reversed"
-                                control={
-                                    <Checkbox
-                                        checked={options.reversed}
-                                        onChange={handleCheck}
-                                        name="reversed"
-                                        color="primary"
-                                    />
-                                }
-                            />
-                        }
-                        { Object.entries(options).map(([key, option]) =>
-                            key !== 'reversed' && <S.SliderContainer key={`${key}-slider`}>
-                                <label>{key}</label>
-                                <Slider
-                                    value={option.value}
-                                    onChange={(e, newVal) => handleChange(key, newVal)}
-                                    aria-labelledby={`${key}-slider`}
-                                    min={option.min}
-                                    max={option.max}
-                                    step={option.step}
-                                    valueLabelDisplay="auto"
-                                    size="small"
-                                />
-                            </S.SliderContainer>
-                        )}
-                    </div>
-                }
-                { value === 1 &&
                     <div>
                         <S.CopyContainer onClick={() => copyToClipboard(htmlTextArea, 'html')} >
                             <FileCopy />
@@ -113,7 +67,7 @@ const Controls = props => {
                         />
                     </div>
                 }
-                { value === 2 &&
+                { value === 1 &&
                     <div>
                         <S.CopyContainer onClick={() => copyToClipboard(cssTextArea, 'css')} >
                             <FileCopy />
@@ -129,10 +83,6 @@ const Controls = props => {
                     </div>
                 }
             </S.ControlContent>
-            <S.ControlToggle onClick={() => setVisible(!isVisible)}>
-                { isVisible && <span><ExpandLess /> Hide</span>}
-                { !isVisible && <span><ExpandMore /> Show</span> }
-            </S.ControlToggle>
         </S.Controls>
     )
 }

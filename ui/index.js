@@ -67,6 +67,7 @@ export const SidebarContainer = styled.div`
 `
 export const SidebarMain = styled.div`
     margin-bottom: 30px;
+    width: 100%;
 
     > a {
         display: block;
@@ -165,4 +166,12 @@ export const GridContainer = styled(Container)`
 `
 export const IntroText = styled(Container)`
     margin: 20px auto 40px;
+`
+export const RelatedContainer = styled.div`
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: ${breakpoint}) {
+        flex-direction: column;
+    }
 `

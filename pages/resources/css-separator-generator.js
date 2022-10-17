@@ -1,25 +1,24 @@
 import React, { useState } from 'react'
-import Head from '../../components/Head'
 import CssSeparatorGenerator from '../../components/CssSeparatorGenerator'
+import Layout from '../../components/Layout'
 import meta from '../../content/resources'
 
 const postMeta = meta.find(m => m.id === 5)
 
 const Demo = () => {
-    const [activeBg, changeBg] = useState(0);
     return (
-        <div>
-            <Head
-                isArticle={true}
-                title={postMeta.headline}
-                link={`https://wweb.dev${postMeta.link}`}
-                description={postMeta.description}
-                image={postMeta.previewImage}
-                date={new Date(postMeta.date)}
-            />
-
+        <Layout
+            isArticle={true}
+            hideHeader={true}
+            title={postMeta.headline}
+            date={postMeta.date}
+            updatedAt={postMeta.updatedAt}
+            link={`https://wweb.dev${postMeta.link}`}
+            description={postMeta.description}
+            image={postMeta.previewImage}
+        >
             <CssSeparatorGenerator />
-        </div>
+        </Layout>
     )
 }
 

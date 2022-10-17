@@ -30,7 +30,7 @@ const BlurBackgroundGenerator = () => {
         <S.BottomContainer>
             <ui.SidebarContainer>
                 <ui.ArticleContainer as="article">
-                    <h1>Blur Background CSS Generator</h1>
+                    <ui.SectionHeadline>Blur Background CSS Generator</ui.SectionHeadline>
 
                     <p>
                         This is a tool to generate the CSS for a customizable blur background.
@@ -48,11 +48,11 @@ const BlurBackgroundGenerator = () => {
                         If you like the generated blur backgrounds or use them anywhere in your project, I'd be happy if you'd let me know.
                         Also, feedback for this generator is always welcome. Just pass me a message on <a href="https://twitter.com/wweb_dev" target="_blank" rel="noopener noreferrer">Twitter</a> or via email: <a href="mailto:info@wweb.dev">info@wweb.dev</a>.
                     </p>
-                    <h2 style={{ marginBottom: 0 }}>You might also like</h2>
-                    <S.RelatedContainer>
+                    <S.Subheadline as="h2">You might also like</S.Subheadline>
+                    <ui.RelatedContainer>
                         <RelatedArticle id={1} type="resource" hideHeadline={true} small={true} />
                         <RelatedArticle id={5} type="resource" hideHeadline={true} small={true} />
-                    </S.RelatedContainer>
+                    </ui.RelatedContainer>
                 </ui.ArticleContainer>
             </ui.SidebarContainer>
             <Footer />

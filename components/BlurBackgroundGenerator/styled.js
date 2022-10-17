@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { breakpoint } from '../../ui/constants'
+import * as ui from '../../ui'
 
 export const backgroundCss = ({ bgColor }) =>
 `
@@ -45,7 +45,6 @@ export const Container = styled.div`
 `
 export const BottomContainer = styled.div`
     background: #fff;
-    padding: 50px 0 0;
     position: relative
 `
 
@@ -65,11 +64,7 @@ export const Background = styled.div`
 
     ${props => props.values.circles.map((c, i) => circleCss({ index: i+1, ...c }) )}
 `
-
-export const RelatedContainer = styled.div`
-    display: flex;
-
-    @media (max-width: ${breakpoint}) {
-        flex-direction: column;
-    }
+export const Subheadline = styled(ui.SectionHeadline)`
+    margin: 30px 0 0;
+    font-size: 1.5em;
 `

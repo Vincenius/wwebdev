@@ -13,11 +13,11 @@ import MuiAlert from '@material-ui/lab/Alert'
 import * as ui from '../../ui'
 import * as S from './styled'
 import CodeBlock from '../CodeBlock'
-import { copyToClipboard } from '../../utils/copyToClipboard'
-import BrowserMockup from './components/BrowserMockup'
+import { copyToClipboard } from '../../utils/copyToClipboard'
+import BrowserMockup from '../BrowserMockup'
 import MenuItemsControl from './components/MenuItemsControl'
 import StylingControl from './components/StylingControl'
-import { htmlGenerator } from './generator'
+import { htmlGenerator } from './generator'
 
 function Alert(props) {
   return <MuiAlert elevation={6} variant="filled" {...props} />

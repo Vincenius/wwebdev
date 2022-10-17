@@ -8,18 +8,18 @@ const BrowserMockup = styled.div`
   position: relative;
   background: #fff;
   border-radius: 10px;
-  overflow-x: hidden;
+  overflow: hidden;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   margin: 0;
   height: 450px;
   resize: horizontal;
   min-width: 320px;
-  max-width: 1080px;
+  max-width: ${props => props.maxWidth}px;
   margin-bottom: 50px;
 `
 const BrowserHead = styled.div`
   position: sticky;
-  z-index: 10;
+  z-index: 100;
   height: ${headHeight}px;
   width: 100%;
   top: 0;
@@ -60,8 +60,8 @@ const BrowserContent = styled.div`
   justify-content: space-between;
 `
 
-const NavigationPreview = ({ children }) => (
-  <BrowserMockup>
+const NavigationPreview = ({ children, maxWidth = 1080 }) => (
+  <BrowserMockup maxWidth={maxWidth}>
     <BrowserHead>
       <BrowserDots></BrowserDots>
     </BrowserHead>
