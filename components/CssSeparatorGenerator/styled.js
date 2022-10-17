@@ -199,8 +199,3 @@ export const GithubLink = styled.a`
     color: ${greyBlue};
   }
 `
-export const MobileHide = styled.div`
-  @media (max-width: ${breakpointLarge}) {
-    display: none;
-  }
-`
