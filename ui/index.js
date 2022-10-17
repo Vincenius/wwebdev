@@ -185,3 +185,8 @@ export const RelatedContainer = styled.div`
         flex-direction: column;
     }
 `
+export const MobileHide = styled.div`
+    @media (max-width: ${breakpointLarge}) {
+        display: none;
+    }
+`

@@ -124,7 +124,7 @@ const Generator = props => {
                             </Card>
                         )}
                     </S.Row>
-                    <S.MobileHide><br/><NewsletterLink /></S.MobileHide>
+                    <ui.MobileHide><br/><NewsletterLink /></ui.MobileHide>
                 </ui.Sidebar>
             </S.SidebarContainer>
         </ui.Container>
