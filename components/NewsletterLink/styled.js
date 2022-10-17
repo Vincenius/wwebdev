@@ -33,12 +33,13 @@ export const Content = styled.div`
   display: flex;
 
   img {
-    width: 100%;
+    width: 50%;
     margin-right: 10px;
     object-fit: contain;
   }
 
   p {
+    width: 50%;
     font-size: 0.8em;
   }
 `
