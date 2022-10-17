@@ -110,7 +110,7 @@ const Generator = props => {
                     <S.Subheadline>You might also like</S.Subheadline>
                     <ui.RelatedContainer>
                         <RelatedArticle id={1} type="resource" hideHeadline={true} small={true} />
-                        <RelatedArticle id={5} type="resource" hideHeadline={true} small={true} />
+                        <RelatedArticle id={13} type="resource" hideHeadline={true} small={true} />
                     </ui.RelatedContainer>
                 </ui.SidebarMain>
                 <ui.Sidebar>
