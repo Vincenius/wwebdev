@@ -6,7 +6,7 @@ import * as ui from '../../ui/'
 import { SEPARATORS, SEPARATOR_OPTIONS } from './constants'
 import BrowserMockup from '../BrowserMockup'
 import Ad from '../Ads/Ad'
-import RelatedArticle from '../RelatedArticle'
+import Featured from '../Featured'
 import NewsletterLink from '../NewsletterLink'
 
 const Generator = props => {
@@ -44,7 +44,7 @@ const Generator = props => {
         <ui.Container>
             <ui.SectionHeadline as="h1">CSS Section Separator Generator</ui.SectionHeadline>
             <S.SidebarContainer>
-                <ui.SidebarMain as="article">
+                <ui.SidebarArticle as="article">
                     <BrowserMockup maxWidth={730}>
                         <TopElement options={options} noBgColor={active === SEPARATORS.SKEWED}>
                             { active === SEPARATORS.SKEWED &&
@@ -87,14 +87,14 @@ const Generator = props => {
                         </S.ControlContainer>
                     </BrowserMockup>
 
-                    <S.Subheadline>Get the separator code</S.Subheadline>
+                    <ui.Subheadline>Get the separator code</ui.Subheadline>
                     <Controls
                         options={options}
                         setOptions={setOptions}
                         active={active}
                     />
 
-                    <S.Subheadline>CSS section divider description</S.Subheadline>
+                    <ui.Subheadline>CSS section divider description</ui.Subheadline>
                     <p>
                         With this CSS Section Separator Generator, you can choose between 6 different dividers.
                         Each of them can be customized by using the controls in the preview field.
@@ -107,15 +107,12 @@ const Generator = props => {
                         If you enjoyed this tool, subscribe to my newsletter below to get notified when I release something new.
                     </p>
 
-                    <S.Subheadline>You might also like</S.Subheadline>
-                    <ui.RelatedContainer>
-                        <RelatedArticle id={1} type="resource" hideHeadline={true} small={true} />
-                        <RelatedArticle id={13} type="resource" hideHeadline={true} small={true} />
-                    </ui.RelatedContainer>
-                </ui.SidebarMain>
+                    <ui.Subheadline>You might also like</ui.Subheadline>
+                    <Featured resourceIds={[1, 4, 13]} />
+                </ui.SidebarArticle>
                 <ui.Sidebar>
                     <Ad />
-                    <S.Subheadline>Choose a section divider</S.Subheadline>
+                    <ui.Subheadline noMarginBottom>Choose a section divider</ui.Subheadline>
                     <S.Row>
                         { Object.entries(SEPARATORS).map(([key, val]) =>
                             <Card

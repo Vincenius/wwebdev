@@ -64,7 +64,3 @@ export const Background = styled.div`
 
     ${props => props.values.circles.map((c, i) => circleCss({ index: i+1, ...c }) )}
 `
-export const Subheadline = styled(ui.SectionHeadline)`
-    margin: 30px 0 0;
-    font-size: 1.5em;
-`

@@ -41,7 +41,7 @@ export const ArticleContainer = styled(Container)`
 
     h2, h3 {
         color: ${darkGrey};
-        font-weight: 500;
+        font-weight: 300;
         margin: 1.6em 0 0.6em;
     }
 `
@@ -80,6 +80,11 @@ export const SidebarMain = styled.div`
             color: ${darkGrey};
         }
     }
+`
+export const SidebarArticle = styled(SidebarMain)`
+    line-height: 1.5;
+    letter-spacing: 1;
+    font-size: 20px;
 `
 export const Sidebar = styled.aside`
     width: 100%;
@@ -152,6 +157,11 @@ export const SectionHeadline = styled.h2`
         top: 100%;
         background: ${lightBlue};
     }
+`
+
+export const Subheadline = styled(SectionHeadline)`
+    font-size: 1.5em !important;
+    margin: ${props => !!props.noMarginBottom ? '30px 0 0' : '30px 0'} !important;
 `
 
 export const GridContainer = styled(Container)`

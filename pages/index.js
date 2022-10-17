@@ -17,7 +17,7 @@ const Home = () => (
       <ui.SidebarContainer>
         <ui.SidebarMain>
           <ui.SectionHeadline>Featured</ui.SectionHeadline>
-          <Featured />
+          <Featured templateIds={[1]} resourceIds={[5,1]}/>
 
           <ui.SectionHeadline>Latest Articles & Resources</ui.SectionHeadline>
 

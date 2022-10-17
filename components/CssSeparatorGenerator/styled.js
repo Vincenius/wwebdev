@@ -199,10 +199,6 @@ export const GithubLink = styled.a`
     color: ${greyBlue};
   }
 `
-export const Subheadline = styled(ui.SectionHeadline)`
-  margin: 30px 0 0;
-  font-size: 1.5em;
-`
 export const MobileHide = styled.div`
   @media (max-width: ${breakpointLarge}) {
     display: none;

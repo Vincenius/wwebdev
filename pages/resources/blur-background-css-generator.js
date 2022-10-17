@@ -5,7 +5,7 @@ import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
 import meta from '../../content/resources'
 import BlurBgGenerator from '../../components/BlurBackgroundGenerator'
-import RelatedArticle from '../../components/RelatedArticle'
+import Featured from '../../components/Featured'
 import * as S from '../../components/BlurBackgroundGenerator/styled.js'
 import * as ui from '../../ui'
 
@@ -48,11 +48,8 @@ const BlurBackgroundGenerator = () => {
                         If you like the generated blur backgrounds or use them anywhere in your project, I'd be happy if you'd let me know.
                         Also, feedback for this generator is always welcome. Just pass me a message on <a href="https://twitter.com/wweb_dev" target="_blank" rel="noopener noreferrer">Twitter</a> or via email: <a href="mailto:info@wweb.dev">info@wweb.dev</a>.
                     </p>
-                    <S.Subheadline as="h2">You might also like</S.Subheadline>
-                    <ui.RelatedContainer>
-                        <RelatedArticle id={1} type="resource" hideHeadline={true} small={true} />
-                        <RelatedArticle id={5} type="resource" hideHeadline={true} small={true} />
-                    </ui.RelatedContainer>
+                    <ui.Subheadline as="h2">You might also like</ui.Subheadline>
+                    <Featured resourceIds={[1, 5, 4]} />
                 </ui.ArticleContainer>
             </ui.SidebarContainer>
             <Footer />

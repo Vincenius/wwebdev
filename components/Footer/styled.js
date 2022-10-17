@@ -109,6 +109,7 @@ export const Newsletter = styled(ui.Container)`
         font-size: 2em;
         font-weight: 300;
         margin-bottom: 0;
+        line-height: 1;
     }
     p {
         margin: 10px 0;

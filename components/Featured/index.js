@@ -4,12 +4,12 @@ import resources from '../../content/resources'
 import templates from '../../content/templates'
 import * as S from './styled'
 
-const articles = [
-  ...resources.filter(r => r.id === 1 || r.id === 5),
-  ...templates.filter(t => t.id === 1)
-]
-
-const Featured = () => {
+const Featured = ({ articleIds = [], templateIds = [], resourceIds = [] }) => {
+  const articles = [
+    ...resources.filter(r => resourceIds.includes(r.id)),
+    ...templates.filter(t => templateIds.includes(t.id)),
+    ...articleIds.filter(a => articleIds.includes(a.id))
+  ]
   return <S.Container>
     { articles.map((a, i) =>
       <S.Article key={`featured-${a.headline}`} margin={i === 1}>
