@@ -13,7 +13,7 @@ import { lightGrey, breakpointLargeNumber } from '../../ui/constants'
 const links = [
   // { href: '/about', label: 'About' },
   { href: '', label: 'Home' },
-  { href: 'blog', label: 'Blog' },
+  { href: 'blog', label: 'Articles' },
   { href: 'resources', label: 'Resources' },
   { href: 'weekly', label: 'Weekly' },
   { href: 'templates', label: 'Templates' },

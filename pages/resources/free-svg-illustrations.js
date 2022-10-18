@@ -4,7 +4,7 @@ import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
 import Ad from '../../components/Ads/Ad'
 import NewsletterLink from '../../components/NewsletterLink'
-import RelatedArticle from '../../components/RelatedArticle'
+import Featured from '../../components/Featured'
 import meta from '../../content/resources'
 import * as ui from '../../ui'
 
@@ -232,7 +232,10 @@ const Post = () => (
             />
         </ui.GridContainer>
 
-        <RelatedArticle id={4} type="resource" />
+        <ui.Container>
+            <ui.Subheadline as="h2">You might also like</ui.Subheadline>
+            <Featured resourceIds={[2, 4, 11]} />
+        </ui.Container>
     </Layout>
 )
 

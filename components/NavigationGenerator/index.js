@@ -15,6 +15,8 @@ import * as S from './styled'
 import CodeBlock from '../CodeBlock'
 import { copyToClipboard } from '../../utils/copyToClipboard'
 import BrowserMockup from '../BrowserMockup'
+import Featured from '../Featured'
+import Ad from '../Ads/Ad'
 import MenuItemsControl from './components/MenuItemsControl'
 import StylingControl from './components/StylingControl'
 import { htmlGenerator } from './generator'
@@ -75,8 +77,20 @@ const NavigationGenerator = props => {
 
   return (
     <ui.Container>
-      <h2>Preview</h2>
+      <S.SidebarContainer>
+        <ui.SidebarArticle as="article">
+          <ui.SectionHeadline as="h1">Responsive Navigation Generator</ui.SectionHeadline>
+          <p>
+            This is a tool to quickly generate a responsive navigation. You can adjust the menu items, the logo, the colors and the breakpoint.
+            When the breakpoint is reached, the navigation turns into a burger menu.
+          </p>
+        </ui.SidebarArticle>
+        <ui.Sidebar>
+          <Ad />
+        </ui.Sidebar>
+      </S.SidebarContainer>
 
+      <ui.Subheadline as="h2">Preview</ui.Subheadline>
       <BrowserMockup>
         <SizeMe>{({ size }) =>
           <S.Navigation width={size.width} useLogo={menuItems.logo.isUsed} {...menuStyle}>
@@ -91,7 +105,7 @@ const NavigationGenerator = props => {
         </S.Center>
       </BrowserMockup>
 
-      <h2>Configuration</h2>
+      <ui.Subheadline as="h2">Configuration</ui.Subheadline>
 
       <Accordion>
         <AccordionSummary
@@ -122,7 +136,7 @@ const NavigationGenerator = props => {
         </AccordionDetails>
       </Accordion>
 
-      <h2>Code</h2>
+      <ui.Subheadline as="h2">Code</ui.Subheadline>
 
       <Accordion>
         <S.ButtonAccordionSummary
@@ -178,6 +192,10 @@ const NavigationGenerator = props => {
           Copied
         </Alert>
       </Snackbar>
+
+      <br />
+      <ui.Subheadline as="h2">You might also like</ui.Subheadline>
+      <Featured resourceIds={[1, 5, 13]} />
     </ui.Container>
   )
 }

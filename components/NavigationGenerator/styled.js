@@ -2,6 +2,7 @@ import styled, { css } from 'styled-components'
 import Tab from '@material-ui/core/Tab'
 import AccordionSummary from '@material-ui/core/AccordionSummary'
 import { lightGrey } from '../../ui/constants'
+import * as ui from '../../ui'
 
 const mainPadding = 20;
 
@@ -231,5 +232,12 @@ export const ButtonAccordionSummary = styled(AccordionSummary)`
     > button {
       margin-left: 40px;
     }
+  }
+`
+export const SidebarContainer = styled(ui.SidebarContainer)`
+  margin-bottom: 0;
+
+  p {
+    margin-bottom: 0;
   }
 `

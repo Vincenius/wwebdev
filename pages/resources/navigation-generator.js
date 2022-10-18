@@ -18,8 +18,6 @@ const NavigationResource = () => {
       image={postMeta.previewImage}
     >
       <NavigationGenerator />
-
-      <br /> <br /> <br />
     </Layout>
   )
 }
