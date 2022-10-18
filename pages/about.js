@@ -29,8 +29,7 @@ const $Flex = styled.div`
   img {
     border-radius: 100%;
     margin-right: 36px;
-    height: 100%;
-    max-width: 200px;
+    max-width: 150px;
 
     @media (max-width: ${breakpointLarge}) {
       margin-right: 0;
@@ -46,9 +45,11 @@ const About = () => (
     <ui.Container>
       <Card>
         <$CardContent>
-          <h1>About</h1>
           <$Flex>
-            <img src="/me.jpg" alt="picture of vincent will" />
+            <div>
+              <ui.SectionHeadline>About</ui.SectionHeadline>
+              <img src="/me.jpg" alt="picture of vincent will" />
+            </div>
             <div>
               <p>
                 <i>wweb.dev</i> - That's actually just me.
@@ -61,7 +62,7 @@ const About = () => (
               </p>
               <p>
                 It's important to me to keep this website privacy-friendly,
-                ad-free, and <a  href="https://github.com/wwebdev" target="_blank" rel="noopener">open-source</a>.
+                free, and <a  href="https://github.com/wwebdev" target="_blank" rel="noopener">open-source</a>.
                 I would be super happy if you could <a href="https://www.buymeacoffee.com/wwebdev" target="_blank" rel="noopener">support me in doing so</a>.
               </p>
               <p>
