@@ -11,8 +11,8 @@
     "postexport": "node scripts/postExport.js",
     "cleandeploy": "aws s3 sync ./out s3://wwebdev-static-website-bucket --delete",
     "deploy": "aws s3 sync ./out s3://wwebdev-static-website-bucket",
-    "postcleandeploy": "aws cloudfront create-invalidation --distribution-id=E32J3ET4M6TIBY --paths /*",
-    "postdeploy": "aws cloudfront create-invalidation --distribution-id=E32J3ET4M6TIBY --paths /*"
+    "postcleandeploy": "aws cloudfront create-invalidation --distribution-id=E32J3ET4M6TIBY --paths *",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id=E32J3ET4M6TIBY --paths *"
   },
   "dependencies": {
     "@babel/core": "^7.13.15",
