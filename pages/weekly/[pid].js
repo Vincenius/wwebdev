@@ -40,7 +40,7 @@ const Post = () => {
     return (
         <Layout
             isArticle={true}
-            title={`Web development resources #${pid} ${weeklyMeta.date}`}
+            title={`Weekly Web Development Resources #${pid}`}
             date={weeklyMeta.date}
             link={`https://wweb.dev/weekly/${pid}`}
             image={`/weekly/social/weekly${pid}.jpg`}
