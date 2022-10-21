@@ -14,10 +14,6 @@ export const Container = styled.footer`
     color: ${lightGrey};
     margin-top: 0;
     padding: 30px 0;
-
-    img {
-        width: 100px;
-    }
 `
 export const Content = styled(ui.Container)`
     display: flex;
@@ -38,6 +34,21 @@ export const Copyright = styled.div`
     color: ${lightGrey};
     margin-top: 12px;
 `
+export const LeftFooter = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    img {
+        height: 60px;
+        width: auto;
+        margin-top: 30px;
+
+        @media (max-width: ${breakpoint}) {
+            height: 50px;
+        }
+    }
+`
 export const RightFooter = styled.div`
     display: flex;
     flex-direction: column;
@@ -51,6 +62,7 @@ export const RightFooter = styled.div`
 `
 export const FooterLinks = styled.ul`
     list-style: none;
+    margin-bottom: 0;
 
     li {
         margin-right: 16px;
