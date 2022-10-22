@@ -3,7 +3,8 @@ import MuiButton from '@material-ui/core/Button'
 
 export const Container = styled.div`
   box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);
-  margin-bottom: 40px;
+  margin: 0 auto 40px;
+  max-width: 330px;
 `
 
 export const TopContainer = styled.div`
