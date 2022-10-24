@@ -16,7 +16,7 @@ const About = () => (
 
       <h2>What does it include?</h2>
       <ul style={{ listStyle: 'none' }}>
-        <li>📧 A spot in the E-Mail newsletter with <i>460+</i> subscribers, An opening rate of <b>40-45%</b>, and <b>30-45%</b> clicks per unique open</li>
+        <li>📧 A spot in the E-Mail newsletter with <b>460+</b> subscribers, An opening rate of <b>40-45%</b>, and <b>30-45%</b> clicks per unique open</li>
         <li>🖥 A link on <a href="https://dev.to/vincenius/weekly-web-development-resources-120-4clh" target="_blank" rel="noopener noreferrer">Dev.to</a> with around <b>250-400</b> clicks in the first week</li>
         <li>🌐 A permanent link on the <a href="https://wweb.dev/weekly/120/" target="_blank" rel="noopener noreferrer">wweb.dev weekly</a> with usually around <b>50-100</b> clicks in the first week and more over time</li>
         <li>🐤 A shoutout on the weekly announcement on <a href="https://twitter.com/wweb_dev/status/1582606878630379521" target="_blank" rel="noopener noreferrer">Twitter</a> to <b>520+</b> followers</li>
