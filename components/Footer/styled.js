@@ -2,7 +2,7 @@ import styled from 'styled-components'
 import TextField from '@material-ui/core/TextField'
 import MuiCheckbox from '@material-ui/core/Checkbox'
 import Button from '@material-ui/core/Button'
-import { darkGrey, lightGrey, lightBlue, middleDarkGrey, breakpoint, logoColorLeft, middleGrey } from '../../ui/constants'
+import { darkGrey, lightGrey, lightBlue, middleDarkGrey, breakpoint, breakpointSmall, logoColorLeft, middleGrey } from '../../ui/constants'
 import * as ui from '../../ui'
 
 export const Container = styled.footer`
@@ -64,11 +64,20 @@ export const FooterLinks = styled.ul`
     list-style: none;
     margin-bottom: 0;
 
+    @media (max-width: ${breakpointSmall}) {
+        flex-direction: column;
+        text-align: right;
+    }
+
     li {
         margin-right: 16px;
 
         &:last-child {
             margin-right: 0;
+
+            @media (max-width: ${breakpointSmall}) {
+                margin-right: 16px;
+            }
         }
     }
 
