@@ -9,7 +9,7 @@ const LinkComp = ({ isExternal, link, children }) => !isExternal
     ? <Link href={link}><a>{children}</a></Link>
     : <a href={link} target="_blank" rel="noopener">{children}</a>
 
-function LinkBox({ title, description, image, link, selfPromoted, fullHeight, isExternal = true }) {
+function LinkBox({ title, description, image, link, selfPromoted, fullHeight, isExternal = true, sponsored }) {
     const [imageLoaded, setImageLoaded] = useState(false)
 
     return <S.Container>
@@ -26,6 +26,7 @@ function LinkBox({ title, description, image, link, selfPromoted, fullHeight, is
                     </LazyLoad>
                 </LinkComp> }
                 <S.Description>
+                    { sponsored && <S.Sponsored>Sponsored</S.Sponsored> }
                     <LinkComp link={link} isExternal={isExternal}>
                         <h2>{title}</h2>
                     </LinkComp>

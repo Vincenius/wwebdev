@@ -63,6 +63,7 @@ const Post = () => {
                                 link={item.link}
                                 image={item.image}
                                 selfPromoted={item.selfPromoted}
+                                sponsored={item.sponsored}
                             />
                             { index === 1 && <div>
                                 <Ad />

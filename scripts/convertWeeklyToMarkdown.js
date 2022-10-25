@@ -10,7 +10,6 @@ const query = encodeURI(stringified)
 fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}`)
   .then(res => res.json())
   .then(data => {
-
     let markDown = ``
 
     for (const item of data) {
@@ -21,6 +20,7 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
 
 ______
 
+${item.sponsored ? '*Sponsored*' : ''}
 ##[${item.title}](${item.link})
 [![${item.title}](${imageLink})](${item.link})
 ${item.description}`

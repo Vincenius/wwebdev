@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import Paper from '@material-ui/core/Paper'
-import { lightBlue, gradient, boxShadow, darkGrey } from '../../ui/constants'
+import { lightBlue, gradient, boxShadow, darkGrey, middleGrey } from '../../ui/constants'
 
 export const Container = styled(Paper)`
     position: relative;
@@ -71,4 +71,7 @@ export const Visit = styled.a`
     display: inline-flex;
     align-items: center;
     line-height: 1;
+`
+export const Sponsored = styled.span`
+    color: #616161;
 `

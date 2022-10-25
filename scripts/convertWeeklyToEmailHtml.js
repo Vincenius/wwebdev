@@ -40,8 +40,9 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
         <mj-section>
           <mj-column>
             <mj-image src="https://wweb.dev${item.image}" href="${item.link}" fluid-on-mobile="true" border="1px solid #BDBDBD" />
-            <mj-button align="left" text-align="left" font-weight="bold" font-size="24px" background-color="#fff" color="#000" padding="0" href="${item.link}">${item.title}</mj-button>
             <mj-text>
+              ${item.sponsored ? '<p style="margin: 0; color: #616161">Sponsored</p>' : ''}
+              <h2 style="margin-top:5px;"><a href="${item.link}" style="color: #000; text-decoration: none;">${item.title}</a></h2>
               <p>${item.description}</p>
               <a href="${item.link}">Visit!</a>
             </mj-text>
@@ -52,8 +53,9 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
           ${item2
             ? `<mj-column>
             <mj-image src="https://wweb.dev${item2.image}" href="${item2.link}" fluid-on-mobile="true" border="1px solid #BDBDBD" />
-            <mj-button align="left" text-align="left" font-weight="bold" font-size="24px" background-color="#fff" color="#000" padding="0" href="${item2.link}">${item2.title}</mj-button>
             <mj-text>
+              ${item2.sponsored ? '<p style="margin: 0; color: #616161">Sponsored</p>' : ''}
+              <h2 style="margin-top:5px;"><a href="${item2.link}" style="color: #000; text-decoration: none;">${item2.title}</a></h2>
               <p>${item2.description}</p>
               <a href="${item2.link}">Visit!</a>
             </mj-text>
