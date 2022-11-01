@@ -2,7 +2,7 @@ const data = [
   {
     id: 3,
     type: 'Template',
-    date: 'October 31, 2022',
+    date: 'September 01, 2022',
     headline: "Next.js Web App Template",
     description: "A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.",
     link: "/templates/web-app-template",
