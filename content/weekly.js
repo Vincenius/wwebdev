@@ -1,7 +1,7 @@
 const data = [
     {
         id: '122',
-        date: 'October 26, 2022',
+        date: 'November 02, 2022',
         description: "gistlib, Bolt.css, Turbo, AnimatiSS, uiverse and more...",
     },
     {
