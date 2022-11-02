@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '122',
+        date: 'October 26, 2022',
+        description: "gistlib, Bolt.css, Turbo, AnimatiSS, uiverse and more...",
+    },
+    {
         id: '121',
         date: 'October 26, 2022',
         description: "Lucide, Linen, WebC, Outstatic, CSS Shapes and more...",
