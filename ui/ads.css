@@ -1,3 +1,15 @@
+.ea-content {
+  margin: 0 auto !important;
+  background: hsl(0, 0%, 98%) !important;
+}
+.ea-content.bordered {
+  border: 1px solid rgba(0,0,0,0.1);
+}
+.ea-callout {
+  margin-right: 0 !important;
+}
+
+/* TODO move to Ad.js component */
 #carbonads *, #carbon * {
   margin: initial;
   padding: initial;

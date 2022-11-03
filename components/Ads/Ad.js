@@ -1,17 +1,18 @@
 import React, { useEffect, useState } from 'react'
+// https://ethical-ad-client.readthedocs.io/en/latest/
 
 const Ad = () => {
   const [hasAdblocker, setHasAdblocker] = useState(false)
   useEffect(() => {
-    if (window._carbonads) {
-      window._carbonads.refresh()
+    if (window.ethicalads) {
+      window.ethicalads.load()
     } else {
       setHasAdblocker(true)
     }
   }, [])
 
   return !hasAdblocker
-    ? <script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CEAILKQW&placement=wwebdev" id="_carbonads_js"></script>
+    ? <div className="bordered horizontal adaptive" data-ea-publisher="wwebdev" data-ea-type="image" data-ea-manual="true"></div>
     : <div id="carbon">
         <span className="carbon-wrap">
           <span className="carbon-img">
