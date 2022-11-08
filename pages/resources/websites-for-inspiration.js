@@ -23,26 +23,6 @@ const Post = () => (
     >
         <ui.GridContainer>
             <LinkBox
-                title="Dribbble Colors"
-                description="Explore designs on Dribbble by color. This is really useful if you're looking for matching color inspiration."
-                link="https://dribbble.com/colors"
-                image="/resources/inspiration-websites/dribbble.jpg"
-            />
-
-            <LinkBox
-                title="Pages"
-                description="A collaborative list of various pages around the web, which is moslty focused on SaaS pages."
-                link="https://www.pages.xyz/"
-                image="/resources/inspiration-websites/pages.jpg"
-            />
-
-            <div>
-                <Ad />
-                <br /> <br />
-                <NewsletterLink />
-            </div>
-
-            <LinkBox
                 title="Land-book"
                 description="A design gallery with carefully collected websites. It is sortable by landings, portfolios, blogs, stores, and others."
                 link="https://land-book.com/"
@@ -56,6 +36,12 @@ const Post = () => (
                 image="/resources/inspiration-websites/landingfolio.jpg"
             />
 
+            <div>
+                <Ad />
+                <br /> <br />
+                <NewsletterLink />
+            </div>
+
             <LinkBox
                 title="Sitejoy"
                 description="A list of inspirational websites, with the focus that they are also fast and responsive."
@@ -64,10 +50,10 @@ const Post = () => (
             />
 
             <LinkBox
-                title="Interfaces"
-                description="Brand-focused collection of UI design examples. Sorted by categories like 404 pages, pricing pages, form pages and more."
-                link="https://interfaces.convertux.com/"
-                image="/resources/inspiration-websites/interfaces.jpg"
+                title="Dribbble Shots"
+                description="Explore designs on Dribbble by color. This is really useful if you're looking for matching color inspiration."
+                link="https://dribbble.com/shots"
+                image="/resources/inspiration-websites/dribbble.jpg"
             />
 
             <LinkBox
@@ -75,13 +61,6 @@ const Post = () => (
                 description="A search engine for design inspiration. The search works with colors, keywords or style."
                 link="https://search.muz.li/"
                 image="/resources/inspiration-websites/muzli.jpg"
-            />
-
-            <LinkBox
-                title="Awwwards"
-                description="Website Awards for the best developers, designers, and web agencies in the world."
-                link="https://www.awwwards.com/"
-                image="/resources/inspiration-websites/awwwards.jpg"
             />
 
             <LinkBox
@@ -183,17 +162,24 @@ const Post = () => (
             />
 
             <LinkBox
-                title="Hyperpixel"
-                description="A curated list of landing pages, sortable by landing pages and pricing pages."
-                link="https://hyperpixel.io/"
-                image="/resources/inspiration-websites/hyperpixel.jpg"
-            />
-
-            <LinkBox
                 title="SaaS Landing Page"
                 description="A list of landing page examples created by SaaS companies."
                 link="https://saaslandingpage.com/"
                 image="/resources/inspiration-websites/saaslandingpage.jpg"
+            />
+
+            <LinkBox
+                title="Bestfolios"
+                description="A gallery featuring 498 portfolios, 200 resumes and many more design inspirations."
+                link="https://www.bestfolios.com/"
+                image="/resources/inspiration-websites/bestfolios.jpg"
+            />
+
+            <LinkBox
+                title="Lapa Ninja"
+                description="A gallery featuring the best 5314 landing page examples, free books for designers and free UI kits from around the web. "
+                link="https://www.lapa.ninja/"
+                image="/resources/inspiration-websites/lapaninja.jpg"
             />
         </ui.GridContainer>
 
