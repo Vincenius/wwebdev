@@ -16,10 +16,10 @@ const About = () => (
 
       <h2>What does it include?</h2>
       <ul style={{ listStyle: 'none' }}>
-        <li>📧 A spot in the <a href="https://mailchi.mp/d6aa18e6e1d4/weekly-web-development-resources-121" target="_blank" rel="noopener noreferrer">E-Mail newsletter</a> with <b>460+</b> subscribers, An opening rate of <b>40-45%</b>, and <b>30-45%</b> clicks per unique open</li>
+        <li>📧 A spot in the <a href="https://mailchi.mp/d6aa18e6e1d4/weekly-web-development-resources-121" target="_blank" rel="noopener noreferrer">E-Mail newsletter</a> with <b>475+</b> subscribers, An opening rate of <b>40-45%</b>, and <b>30-45%</b> clicks per unique open</li>
         <li>🖥 A link on <a href="https://dev.to/vincenius/weekly-web-development-resources-121-4h5a" target="_blank" rel="noopener noreferrer">Dev.to</a> with around <b>250-400</b> clicks in the first week</li>
         <li>🌐 A permanent link on the <a href="https://wweb.dev/weekly/121/" target="_blank" rel="noopener noreferrer">wweb.dev weekly</a> with usually around <b>50-100</b> clicks in the first week and more over time</li>
-        <li>🐤 A shoutout on the weekly <a href="https://twitter.com/wweb_dev/status/1585143891938115584" target="_blank" rel="noopener noreferrer">Twitter</a> announcement to <b>520+</b> followers</li>
+        <li>🐤 A shoutout on the weekly <a href="https://twitter.com/wweb_dev/status/1585143891938115584" target="_blank" rel="noopener noreferrer">Twitter</a> announcement to <b>540+</b> followers</li>
       </ul>
 
       <h2>How much is it?</h2>
