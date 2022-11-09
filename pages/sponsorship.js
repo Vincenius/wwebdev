@@ -10,7 +10,7 @@ const About = () => (
     <ui.ArticleContainer>
       <h1>Become a Sponsor of the Weekly</h1>
       <p>
-        Do you have a product, ebook, or SaaS you want to promote to 460+ devs?
+        Do you have a product, ebook, or SaaS you want to promote to a lot of devs?
         Pass me an email at <a href="mailto:info@wweb.dev">info@wweb.dev</a> if you are interested.
       </p>
 
