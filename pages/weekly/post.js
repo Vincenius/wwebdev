@@ -11,17 +11,10 @@ import { weeklyData as meta } from '../../content/weekly'
 import { generateLinkBoxLoading } from '../../content/generator'
 import * as ui from '../../ui'
 
-const Post = () => {
+const Post = ({ weekly }) => {
     const router = useRouter()
     const { pid } = router.query
     const weeklyMeta = meta.find(m => m.id === pid)
-    const { status, data, error } = useQuery(`weekly-${pid}`, async () => {
-        const json = { weekly: pid }
-        const stringified = JSON.stringify(json)
-        const query = encodeURI(stringified)
-        const response = await fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}`)
-        return response.json()
-    })
 
     if (!weeklyMeta || !weeklyMeta.date) {
         return <Layout
@@ -48,16 +41,16 @@ const Post = () => {
         >
 
             {
-                !data && <ui.GridContainer>
+                !weekly && <ui.GridContainer>
                     { generateLinkBoxLoading(9) }
                 </ui.GridContainer>
             }
-            { data && <ui.GridContainer>
+            { weekly && <ui.GridContainer>
                 {
-                    data.map((item, index) =>
-                        <React.Fragment>
+                    weekly.map((item, index) =>
+                        <React.Fragment key={`linkbox-${index}`}>
                             <LinkBox
-                                key={`linkbox-${index}`}
+                                // key={`linkbox-${index}`}
                                 title={item.title}
                                 description={item.description}
                                 link={item.link}
@@ -78,6 +71,19 @@ const Post = () => {
             <PrevNext postId={pid} />
         </Layout>
     )
+}
+
+Post.getInitialProps = async (context) => {
+    const { pid = '' } = context.query
+    const json = { weekly: pid }
+    const stringified = JSON.stringify(json)
+    const query = encodeURI(stringified)
+    const response = await fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}`)
+    const weekly = await response.json()
+
+    return {
+        weekly, // will be passed to the page component as props
+    }
 }
 
 export default Post

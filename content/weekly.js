@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '124',
+        date: 'November 16, 2022',
+        description: "nfty.sh, Katana, Postcard, Starter Tab, JSON Crack and more...",
+    },
+    {
         id: '123',
         date: 'November 09, 2022',
         description: "Clips, missing.css, Futuristic CSS, Kodemo and more...",

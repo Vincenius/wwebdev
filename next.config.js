@@ -7,9 +7,9 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 const { weeklyData } = require('./content/weekly')
 
 const weeklyPages = {}
-const ignorePages = ['/weekly/[pid]']
+const ignorePages = ['/weekly/post']
 for (const w of weeklyData) {
-    weeklyPages[`/weekly/${w.id}`] = { page: '/weekly/[pid]', query: { pid: `${w.id}` } }
+    weeklyPages[`/weekly/${w.id}`] = { page: '/weekly/post', query: { pid: `${w.id}`, __nextDefaultLocale: 'en', } }
 }
 
 const settings = withBundleAnalyzer({
