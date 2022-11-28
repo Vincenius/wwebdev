@@ -4,7 +4,7 @@ const data = [
         type: 'Resource',
         date: 'November 27, 2022',
         headline: "Best of Weekly Resources 2019-2022",
-        description: "Exactly three years ago I published my first weekly newsletter. Since then I've send out 125 Emails with a total of 1345 resources. Here are the 110 most clicked resources.",
+        description: "Exactly three years ago I published my first weekly newsletter. Since then I've sent out 125 Emails with a total of 1345 resources. Here are the 110 most clicked links.",
         link: "/resources/best-of-weekly-2022",
         previewImage: "/resources/best-of-weekly-2019-2022.jpg",
     },
