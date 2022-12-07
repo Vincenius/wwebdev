@@ -9,11 +9,11 @@ import BuyMeACoffeeButton from '../BuyMeACoffeeButton'
 import * as S from './styled'
 import * as ui from '../../ui'
 
-const Footer = () => (
+const Footer = ({ hideNewsletter }) => (
   <React.Fragment>
-    <S.NewsletterContainer>
+    { !hideNewsletter && <S.NewsletterContainer>
       <Newsletter />
-    </S.NewsletterContainer>
+    </S.NewsletterContainer> }
     <S.Container>
       <S.Content>
         <S.LeftFooter>

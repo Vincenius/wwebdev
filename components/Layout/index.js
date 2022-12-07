@@ -12,6 +12,7 @@ function Layout ({
     children,
     isArticle,
     hideHeader = false,
+    hideNewsletter = false,
     date,
     link,
     image,
@@ -56,7 +57,7 @@ function Layout ({
                 { children }
             </main>
 
-            <Footer />
+            <Footer hideNewsletter={hideNewsletter} />
 
             { !hasAdblock && <CookieConsent
                 enableDeclineButton

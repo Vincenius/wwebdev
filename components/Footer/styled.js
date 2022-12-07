@@ -121,8 +121,8 @@ export const NewsletterContainer = styled(Container)`
 `
 
 export const Newsletter = styled(ui.Container)`
-    padding-top: 50px;
-    padding-bottom: 70px;
+    padding-top: ${props => props.type === 'inline' ? '30px' : '50px'};
+    padding-bottom: ${props => props.type === 'inline' ? '10px' : '70px'};
     margin: 0 auto;
 
     h2 {

@@ -3,7 +3,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel'
 
 import * as S from './styled'
 
-const Newsletter = () => {
+const Newsletter = ({ type = '' }) => {
   return <S.Newsletter
       as="form"
       id="mc-embedded-subscribe-form"
@@ -12,9 +12,10 @@ const Newsletter = () => {
       name="mc-embedded-subscribe-form"
       novalidate=""
       target="_blank"
+      type={type}
     >
-    <h2>Subscribe to the Newsletter</h2>
-    <p>Don't miss the next update. Drop your email below and get it straight in your inbox.</p>
+    { type !== 'inline' && <h2>Subscribe to the Newsletter</h2> }
+    { type !== 'inline' && <p>Don't miss the next update. Drop your email below and get it straight in your inbox.</p> }
     <S.InputContainer>
       <S.Input
         id="mce-EMAIL"
