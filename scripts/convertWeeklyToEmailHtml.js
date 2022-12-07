@@ -69,7 +69,7 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
       markdown = `${markdown}
         <mj-section>
           <mj-column>
-            <mj-text>You can support this newsletter by</mj-text>
+            <mj-text>Support this newsletter by</mj-text>
             <mj-text>• booking a <a href="https://wweb.dev/sponsorship/">sponsored post</a> or <br/>• helping me grow by sharing it with your friends and colleagues<br/></mj-text>
             <mj-text line-height="0">Cheers,</mj-text>
             <mj-text line-height="0">Vincent from wweb.dev</mj-text>

@@ -10,7 +10,7 @@ const NewsletterLink = () => {
     <S.TopContainer>
       <h2>Newsletter</h2>
       <S.Content>
-        <img src="/email.png"/>
+        <img src="/email.png" alt="email postbox illustration"/>
         <p>Don't miss the next update. Drop your email below and get it straight in your inbox.</p>
       </S.Content>
     </S.TopContainer>

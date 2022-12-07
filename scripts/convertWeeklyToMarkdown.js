@@ -30,7 +30,11 @@ markDown = `${markDown}
 
 ______
 
-To see all the weeklies check: [wweb.dev/weekly](https://wweb.dev/weekly)`
+To see all the weeklies check: [wweb.dev/weekly](https://wweb.dev/weekly)
+
+Enjoyed this newsletter? Help me grow by sharing it with your friends and colleagues.
+Cheers,
+Vincent from [wweb.dev](https://wweb.dev)`
 
     // only osx??
     var proc = require('child_process').spawn('pbcopy');
