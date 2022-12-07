@@ -30,7 +30,7 @@ const Weekly = () => (
                 We scour the internet to bring you the most fascinating and useful links in the world of web development.<br/>
             </p>
 
-            <p>Don't miss the next update. Drop your email below and get it straight in your inbox.</p>
+            <p style={{ fontSize: '20px' }}>Don't miss the next update. Drop your email below and get it straight in your inbox.</p>
 
             <NewsletterContainer>
                 <Newsletter type="inline" />
