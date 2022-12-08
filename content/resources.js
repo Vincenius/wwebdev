@@ -75,7 +75,7 @@ const data = [
         id: 6,
         type: 'Resource',
         date: 'April 20, 2020',
-        updatedAt: 'November 08, 2022',
+        updatedAt: 'December 08, 2022',
         headline: "Websites For Inspiration",
         description: "Need some inspiration for your project? With this list of 22 websites, which you can check for inspiration, you'll never run out of ideas for your website again.",
         link: "/resources/websites-for-inspiration",

@@ -30,10 +30,10 @@ const Post = () => (
             />
 
             <LinkBox
-                title="Landingfolio"
-                description="A website, which has landing page design inspiration, templates, resources and more. It can be filtered by category, color, and device."
-                link="https://www.landingfolio.com/"
-                image="/resources/inspiration-websites/landingfolio.jpg"
+                title="Landingexam"
+                description="Landing page examples to inspire your next promotional web page project. App, webinar, real estate and more categories to choose from."
+                link="https://landingexam.com/"
+                image="/resources/inspiration-websites/landingexam.jpg"
             />
 
             <div>
@@ -41,6 +41,13 @@ const Post = () => (
                 <br /> <br />
                 <NewsletterLink />
             </div>
+
+            <LinkBox
+                title="Landingfolio"
+                description="A website, which has landing page design inspiration, templates, resources and more. It can be filtered by category, color, and device."
+                link="https://www.landingfolio.com/"
+                image="/resources/inspiration-websites/landingfolio.jpg"
+            />
 
             <LinkBox
                 title="Sitejoy"
