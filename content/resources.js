@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 15,
+        type: 'Resource',
+        date: 'December 19, 2022',
+        headline: "IMG Quest",
+        description: "Last weekend I've built this small side project. It's an open-source API to generate Open Graph images.",
+        link: "https://img.quest/",
+        previewImage: "/resources/img-quest.png",
+    },
+    {
         id: 14,
         type: 'Resource',
         date: 'November 27, 2022',
