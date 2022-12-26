@@ -12,6 +12,10 @@ export const affiliates = [{
     link: 'https://links.wweb.dev/UbnpO',
     img: '/affiliate/lambdatest.png',
     text: 'Lambdatest - test across 3000+ different browsers, real devices & operating systems.'
+  }, {
+    link: 'https://links.wweb.dev/ZV0Wd',
+    img: '/affiliate/digitalocean.jpg',
+    text: 'Digital Ocean - the simple cloud. Sign up now and get 200$ in credit.'
   }
 ]
 
@@ -26,7 +30,7 @@ const AffiliateAd = ({ affiliateAd = 0 }) => {
     <div id="carbon">
       <span className="carbon-wrap">
         <span className="carbon-img">
-          <img src={affiliate.img} alt="todo" style={{ maxWidth: '130px' }} width="130" height="100" border="0" />
+          <img src={affiliate.img} alt={affiliate.text} style={{ maxWidth: '130px', objectFit: 'cover' }} width="130" height="100" border="0" />
         </span>
         <span className="carbon-text">
           <span>{affiliate.text}</span>
