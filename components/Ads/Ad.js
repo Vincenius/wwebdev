@@ -1,20 +1,22 @@
 import React, { useEffect, useState } from 'react'
-import AffiliateAd from './AffiliateAd'
+import AffiliateAd, { affiliates } from './AffiliateAd'
 // https://ethical-ad-client.readthedocs.io/en/latest/
 
 const Ad = () => {
-  const [hasAdblocker, setHasAdblocker] = useState(false)
+  const [affiliateAd, setAffiliateAd] = useState(null)
+
   useEffect(() => {
     if (window.ethicalads) {
       window.ethicalads.load()
     } else {
-      setHasAdblocker(true)
+      const random = Math.floor(Math.random() * affiliates.length)
+      setAffiliateAd(random)
     }
   }, [])
 
-  return !hasAdblocker
+  return affiliateAd === null
     ? <div className="bordered horizontal adaptive" data-ea-publisher="wwebdev" data-ea-type="image" data-ea-manual="true"></div>
-    : <AffiliateAd />
+    : <AffiliateAd affiliateAd={affiliateAd}/>
 }
 
 export default Ad

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const affiliates = [{
+export const affiliates = [{
     link: 'https://links.wweb.dev/M7vHb',
     img: '/affiliate/tower.png',
     text: 'Git Tower - the most powerful Git client for Mac and Windows.'
@@ -15,9 +15,12 @@ const affiliates = [{
   }
 ]
 
-const AffiliateAd = () => {
-  const random = Math.floor(Math.random() * affiliates.length)
-  const affiliate = affiliates[random]
+const AffiliateAd = ({ affiliateAd = 0 }) => {
+  const affiliate = affiliates[affiliateAd]
+
+  if (!affiliate) {
+    return <div></div>
+  }
 
   return <a href={affiliate.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
     <div id="carbon">
@@ -30,7 +33,7 @@ const AffiliateAd = () => {
         </span>
       </span>
     </div>
-    <div style={{ fontSize: '0.6em', fontStyle: 'italic', textAlign: 'right', padding: '.5em 1em 0' }}>Sponsored</div>
+    <div style={{ fontSize: '0.65em', fontStyle: 'italic', textAlign: 'right', padding: '.5em 1em 0', maxWidth: '320px' }}>Sponsored</div>
   </a>
 }
 
