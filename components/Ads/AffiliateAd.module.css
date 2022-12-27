@@ -1,0 +1,11 @@
+.title {
+  display: inline !important;
+  text-decoration: underline;
+  font-weight: bold;
+  color: #1E4D92;
+}
+
+.title:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
