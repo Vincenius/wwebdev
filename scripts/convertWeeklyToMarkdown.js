@@ -30,9 +30,15 @@ markDown = `${markDown}
 
 ______
 
-To see all the weeklies check: [wweb.dev/weekly](https://wweb.dev/weekly)
+_Enjoyed this newsletter? You can support me by:_
 
-Enjoyed this newsletter? Help me grow by sharing it with your friends and colleagues.
+💸 booking a [sponsored post](https://wweb.dev/sponsorship)
+
+☕ donating via [BuyMeACoffee](https://www.buymeacoffee.com/wwebdev)
+
+🚀 helping me grow by sharing it with your friends and colleagues
+
+
 Cheers,
 Vincent from [wweb.dev](https://wweb.dev)`
 

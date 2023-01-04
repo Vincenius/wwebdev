@@ -69,8 +69,11 @@ fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}
       markdown = `${markdown}
         <mj-section>
           <mj-column>
-            <mj-text>Support this newsletter by</mj-text>
-            <mj-text>• booking a <a href="https://wweb.dev/sponsorship/">sponsored post</a> or <br/>• helping me grow by sharing it with your friends and colleagues<br/></mj-text>
+            <mj-text>You can support this newsletter by</mj-text>
+            <mj-text>💸 booking a <a href="https://wweb.dev/sponsorship/">sponsored post</a></mj-text>
+            <mj-text>☕ donating via <a href="https://www.buymeacoffee.com/wwebdev">BuyMeACoffee</a></mj-text>
+            <mj-text>🚀 helping me grow by sharing it with your friends and colleagues</mj-text>
+            <mj-text></mj-text>
             <mj-text line-height="0">Cheers,</mj-text>
             <mj-text line-height="0">Vincent from wweb.dev</mj-text>
           </mj-column>
