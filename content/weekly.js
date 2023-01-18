@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '133',
+        date: 'January 18, 2023',
+        description: "Radix, val town, Lorem Faces, Alpine.js, FeatBit and more...",
+    },
+    {
         id: '132',
         date: 'January 11, 2023',
         description: "Sailboat UI, UpDownQuest, Boringer Avatars and more...",
