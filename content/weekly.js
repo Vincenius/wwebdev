@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '134',
+        date: 'January 25, 2023',
+        description: "waitlist.rsvp, Legitify, ImaginAIry, OKLCH and more...",
+    },
+    {
         id: '133',
         date: 'January 18, 2023',
         description: "Radix, val town, Lorem Faces, Alpine.js, FeatBit and more...",
