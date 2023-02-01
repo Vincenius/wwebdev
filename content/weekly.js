@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '135',
+        date: 'February 01, 2023',
+        description: "Pico.css, Rete.js, Logggos, HTMLrev, SST and more...",
+    },
+    {
         id: '134',
         date: 'January 25, 2023',
         description: "waitlist.rsvp, Legitify, ImaginAIry, OKLCH and more...",
