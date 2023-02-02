@@ -5,7 +5,8 @@ set -o pipefail
 # INSTALL AWSCLI
 pip install --user awscli
 
-export TF_VAR_build_number=$TRAVIS_BUILD_NUMBER
+# INSTALL DEPENDENCIES
+npm i
 
 # EXPORT
 npm run export
