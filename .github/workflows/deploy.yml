@@ -13,5 +13,10 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
+      - name: Configure AWS credentials from Test account
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          role-to-assume: arn:aws:iam::658680537871:user/github-actions
+          aws-region: eu-central-1
       - name: run deploy script
         run: ./scripts/deploy.sh
