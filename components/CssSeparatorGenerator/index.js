@@ -8,6 +8,7 @@ import BrowserMockup from '../BrowserMockup'
 import Ad from '../Ads/Ad'
 import Featured from '../Featured'
 import NewsletterLink from '../NewsletterLink'
+import SponsorNinjaWidget from '../SponsorNinja'
 
 const Generator = props => {
     const defaultSeparator = SEPARATORS.SKEWED
@@ -124,6 +125,8 @@ const Generator = props => {
                             </Card>
                         )}
                     </S.Row>
+                    <br/>
+                    <SponsorNinjaWidget />
                     <ui.MobileHide><br/><NewsletterLink /></ui.MobileHide>
                 </ui.Sidebar>
             </S.SidebarContainer>

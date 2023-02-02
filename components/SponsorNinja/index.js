@@ -7,6 +7,26 @@ const Container = styled.div`
   padding: 0 !important;
 `
 
+const Label = styled.h3`
+  position: relative;
+  font-size: 1.2em;
+  margin: 0 0 1em;
+  padding-bottom: 5px;
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 1.5em;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: #017a8c;
+  }
+`
+
 const SponsorNinjaWidget = () => {
   useEffect(() => {
     new SponsorNinja({
@@ -19,7 +39,7 @@ const SponsorNinjaWidget = () => {
   })
 
   return <div>
-    <span>This roject is sponsored by:</span>
+    <Label>Sponsors</Label>
     <Container id="sponsor-ninja-container"></Container>
   </div>
 }

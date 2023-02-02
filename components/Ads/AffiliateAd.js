@@ -31,7 +31,7 @@ const AffiliateAd = ({ affiliateAd = 0 }) => {
     return <div></div>
   }
 
-  return <a href={affiliate.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none' }}>
+  return <a href={affiliate.link} target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', marginBottom: '1em', display: 'block' }}>
     <div id="carbon">
       <span className="carbon-wrap">
         <span className="carbon-img">

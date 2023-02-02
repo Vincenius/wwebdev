@@ -2,6 +2,7 @@ import React from 'react'
 import * as ui from '../ui'
 import Ad  from '../components/Ads/Ad'
 import NewsletterLink from '../components/NewsletterLink'
+import SponsorNinjaWidget from '../components/SponsorNinja'
 import Layout from '../components/Layout'
 import { generateArticles } from '../content/generator'
 
@@ -15,8 +16,8 @@ const Home = () => {
                         { generateArticles() }
                     </ui.SidebarMain>
                     <ui.Sidebar>
+                        <SponsorNinjaWidget />
                         <Ad />
-                        <br /><br />
                         <NewsletterLink />
                     </ui.Sidebar>
                 </ui.SidebarContainer>
