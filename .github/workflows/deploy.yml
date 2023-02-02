@@ -6,9 +6,6 @@ on:
 jobs:
   Deploy:
     runs-on: ubuntu-latest
-    permissions:
-      id-token: write
-      contents: read
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
@@ -16,10 +13,8 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16
-      - name: Configure AWS credentials from Test account
-        uses: aws-actions/configure-aws-credentials@v1
-        with:
-          role-to-assume: arn:aws:iam::658680537871:user/github-actions
-          aws-region: eu-central-1
       - name: run deploy script
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         run: ./scripts/deploy.sh
