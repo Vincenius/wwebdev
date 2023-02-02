@@ -1,0 +1,17 @@
+name: Deploy to AWS
+run-name: ${{ github.actor }} started a deployment
+on:
+  push:
+    branches: [ master ]
+jobs:
+  Deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: setup node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16
+      - name: run deploy script
+        run: ./scripts/deploy.sh

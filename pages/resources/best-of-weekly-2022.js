@@ -41,7 +41,6 @@ const Post = () => (
       />
       <div>
         <Ad />
-        <br /> <br />
         <NewsletterLink />
       </div>
 

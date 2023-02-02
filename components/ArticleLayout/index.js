@@ -7,6 +7,7 @@ import Layout from '../Layout'
 import Comments from '../Comments'
 import Ad from '../Ads/Ad'
 import NewsletterLink from '../NewsletterLink'
+import SponsorNinjaWidget from '../SponsorNinja'
 import PrevNext from '../PrevNext'
 import meta from '../../content/articles'
 
@@ -50,8 +51,8 @@ const ArticleLayout = ({ id, children }) => {
           <PrevNext postId={id} isArticle={true} />
         </ui.ArticleContainer>
         <Sidebar>
+          <SponsorNinjaWidget />
           <Ad />
-          <br /><br />
           <NewsletterLink />
         </Sidebar>
       </SidebarContainer>

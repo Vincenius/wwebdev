@@ -3,6 +3,7 @@ import * as ui from '../ui'
 import Layout from '../components/Layout'
 import Ad from '../components/Ads/Ad'
 import NewsletterLink from '../components/NewsletterLink'
+import SponsorNinjaWidget from '../components/SponsorNinja'
 import { generateResources } from '../content/generator'
 
 const Home = () => (
@@ -14,8 +15,8 @@ const Home = () => (
                     { generateResources() }
                 </ui.SidebarMain>
                 <ui.Sidebar>
+                    <SponsorNinjaWidget />
                     <Ad />
-                    <br /><br />
                     <NewsletterLink />
                 </ui.Sidebar>
             </ui.SidebarContainer>

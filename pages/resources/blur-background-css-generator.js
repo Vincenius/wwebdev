@@ -3,6 +3,7 @@ import React from 'react'
 import Head from '../../components/Head'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
+import SponsorNinjaWidget from '../../components/SponsorNinja'
 import meta from '../../content/resources'
 import BlurBgGenerator from '../../components/BlurBackgroundGenerator'
 import Featured from '../../components/Featured'
@@ -54,7 +55,10 @@ const BlurBackgroundGenerator = () => {
                         <Featured resourceIds={[1, 5, 4]} />
                     </ui.SidebarArticle>
                     <ui.Sidebar>
-                        <ui.MobileHide><br/><NewsletterLink /></ui.MobileHide>
+                        <ui.MobileHide>
+                            <br/><NewsletterLink />
+                            <SponsorNinjaWidget />
+                        </ui.MobileHide>
                     </ui.Sidebar>
                 </ui.SidebarContainer>
             </ui.Container>
