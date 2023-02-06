@@ -1,6 +1,7 @@
 import styled from 'styled-components'
 import TextField from '@material-ui/core/TextField'
 import Button from '@material-ui/core/Button'
+import FormGroup from '@material-ui/core/FormGroup'
 import { greyBlue } from '../../ui/constants'
 
 export const SearchInput = styled(TextField)`
@@ -27,4 +28,10 @@ export const NoResults = styled.main`
 
 export const ResultContainer = styled.main`
   margin: 50px 0;
+`
+
+export const CheckboxContainer = styled(FormGroup)`
+  display: flex;
+  flex-direction: row !important;
+  margin: 20px 0;
 `

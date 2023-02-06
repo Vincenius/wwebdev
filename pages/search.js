@@ -8,11 +8,7 @@ const SearchPage = () => {
     <Layout
       title="Search"
     >
-      <ui.Container>
-        <ui.SectionHeadline>Search</ui.SectionHeadline>
-
-        <Search />
-      </ui.Container>
+      <Search />
     </Layout>
   )
 }
