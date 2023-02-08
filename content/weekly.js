@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '136',
+        date: 'February 08, 2023',
+        description: "Atlas Icons, Yopta Editor, Design rules, Termzy and more...",
+    },
+    {
         id: '135',
         date: 'February 01, 2023',
         description: "Pico.css, Rete.js, Logggos, HTMLrev, SST and more...",
