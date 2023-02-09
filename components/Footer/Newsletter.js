@@ -6,20 +6,17 @@ import * as S from './styled'
 const Newsletter = ({ type = '' }) => {
   return <S.Newsletter
       as="form"
-      id="mc-embedded-subscribe-form"
-      action="https://dev.us3.list-manage.com/subscribe/post?u=23a611280baff5c6bd68c83e3&amp;id=8dd07d6ca8"
-      method="post"
-      name="mc-embedded-subscribe-form"
-      novalidate=""
-      target="_blank"
+      action="https://email.vincenius.com/subscription/form"
+      className="listmonk-form"
       type={type}
+      method="post"
+      id="listmonk-newsletter-form"
     >
     { type !== 'inline' && <h2>Subscribe to the Newsletter</h2> }
     { type !== 'inline' && <p>Don't miss the next update. Drop your email below and get it straight in your inbox.</p> }
     <S.InputContainer>
       <S.Input
-        id="mce-EMAIL"
-        name="EMAIL"
+        name="email"
         required={true}
         type="email"
         placeholder="E-Mail"
@@ -27,7 +24,6 @@ const Newsletter = ({ type = '' }) => {
         fullWidth
       />
       <S.SubmitButton
-        id="mc-embedded-subscribe"
         variant="contained"
         type="submit"
         label="submit button"
@@ -41,45 +37,38 @@ const Newsletter = ({ type = '' }) => {
         <FormControlLabel
           control={
             <S.Checkbox
-              value="1"
-              name="group[26582][1]"
-              id="mce-group[26582]-26582-0"
+              id="3ed85" type="checkbox" name="l" value="3ed857fa-efc9-4f26-9a66-ab85ed8e2b09"
               defaultChecked
             />
           }
-          label="Weekly Resources"
+          label="Weekly Resources" htmlFor="3ed85"
         />
       </li>
       <li>
         <FormControlLabel
           control={
             <S.Checkbox
-              value="4"
-              name="group[26582][4]"
-              id="mce-group[26582]-26582-2"
+              id="f3443" type="checkbox" name="l" value="f3443ac3-a941-47d2-9111-298844aec14e"
               defaultChecked
             />
           }
-          label="Resources & Templates"
+          label="Resources & Templates" htmlFor="f3443"
         />
       </li>
       <li>
         <FormControlLabel
           control={
             <S.Checkbox
-              value="2"
-              name="group[26582][2]"
-              id="mce-group[26582]-26582-1"
+              id="6a18b" type="checkbox" name="l" value="6a18ba09-fc2f-48c5-b78b-0aa731915149"
               defaultChecked
             />
           }
-          label="Articles"
+          label="Articles" htmlFor="6a18b"
         />
       </li>
     </S.CheckboxList>
     <S.HiddenInput>
-      <label htmlFor="b_23a611280baff5c6bd68c83e3_8dd07d6ca8">input</label>
-      <input id="b_23a611280baff5c6bd68c83e3_8dd07d6ca8" tabIndex="-1" name="b_23a611280baff5c6bd68c83e3_8dd07d6ca8" type="text" />
+      <input type="hidden" name="nonce" />
     </S.HiddenInput>
   </S.Newsletter>
 }

@@ -34,7 +34,7 @@ _Enjoyed this newsletter? You can support me by:_
 
 💸 booking a [sponsored post](https://wweb.dev/sponsorship)
 
-☕ donating via [BuyMeACoffee](https://www.buymeacoffee.com/wwebdev)
+🥷 donating via [Sponsor Ninja](https://app.sponsor.ninja/projects/63d7dd38d907a8ed61dca67f)
 
 🚀 helping me grow by sharing it with your friends and colleagues
 

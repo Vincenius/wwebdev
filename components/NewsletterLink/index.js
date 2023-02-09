@@ -3,7 +3,7 @@ import * as S from './styled'
 
 const NewsletterLink = () => {
   const scrollToNewsletter = () => {
-    document.querySelector('#mc-embedded-subscribe-form').scrollIntoView({ behavior: 'smooth' });
+    document.querySelector('#listmonk-newsletter-form').scrollIntoView({ behavior: 'smooth' });
   }
 
   return <S.Container>
