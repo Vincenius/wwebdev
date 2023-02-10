@@ -63,7 +63,7 @@ const About = () => (
               <p>
                 It's important to me to keep this website privacy-friendly,
                 free, and <a  href="https://github.com/wwebdev" target="_blank" rel="noopener">open-source</a>.
-                I would be super happy if you could <a href="https://www.buymeacoffee.com/wwebdev" target="_blank" rel="noopener">support me in doing so</a>.
+                I would be super happy if you could <a href="https://app.sponsor.ninja/projects/63d7dd38d907a8ed61dca67f" target="_blank" rel="noopener">support me in doing so</a>.
               </p>
               <p>
                 If you want to get in touch, feel free to pass me a message on <a href="mailto:info@wweb.dev">info@wweb.dev</a> or

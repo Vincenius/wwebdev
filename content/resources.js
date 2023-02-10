@@ -1,14 +1,5 @@
 const data = [
     {
-        id: 15,
-        type: 'Resource',
-        date: 'December 19, 2022',
-        headline: "IMG Quest",
-        description: "Last weekend I've built this small side project. It's an open-source API to generate Open Graph images.",
-        link: "https://img.quest/",
-        previewImage: "/resources/img-quest.png",
-    },
-    {
         id: 14,
         type: 'Resource',
         date: 'November 27, 2022',
@@ -25,15 +16,6 @@ const data = [
         description: "A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.",
         link: "/resources/blur-background-css-generator",
         previewImage: "/resources/blur-background-generator.png",
-    },
-    {
-        id: 12,
-        type: 'Resource',
-        date: 'January 17, 2022',
-        headline: "CSS Speedrun",
-        description: "A small fun app to test your CSS knowledge. Find the correct CSS selectors for the 10 puzzles as fast as possible.",
-        link: "https://css-speedrun.netlify.app/",
-        previewImage: "/preview/css-speedrun.png",
     },
     {
         id: 11,
@@ -108,15 +90,6 @@ const data = [
         description: "A curated list of websites where you can get creative backgrounds for your websites.",
         link: "/resources/creative-backgrounds",
         previewImage: "/preview/preview_IF4o7Ga9O.jpg",
-    },
-    {
-        id: 3,
-        type: 'Resource',
-        date: 'December 29, 2019',
-        headline: "Convert2Svg",
-        description: "A free and open-source tool to easily transform any image or photo into a multi colored svg vector file.",
-        link: "https://convert2svg.com/",
-        previewImage: "/preview/preview_vdfddh_Zb7zB92EJ.jpg",
     },
     {
         id: 2,

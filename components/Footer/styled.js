@@ -7,13 +7,18 @@ import * as ui from '../../ui'
 
 export const Container = styled.footer`
     position: relative;
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     letter-spacing: 0px;
     background: ${darkGrey};
     color: ${lightGrey};
     margin-top: 0;
     padding: 30px 0;
+
+    h2 {
+        color: ${lightGrey};
+        margin-top: 0;
+    }
 `
 export const Content = styled(ui.Container)`
     display: flex;
@@ -26,59 +31,77 @@ export const Content = styled(ui.Container)`
     > * {
         width: 50%;
     }
+
+    @media (max-width: ${breakpoint}) {
+        flex-direction: column-reverse;
+
+        > * {
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
 `
 export const Copyright = styled.div`
-    font-size: 14px;
+    font-size: 15px;
     line-height: 20px;
     letter-spacing: 0px;
     color: ${lightGrey};
     margin-top: 12px;
+    text-align: center;
 `
 export const LeftFooter = styled.div`
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
-    img {
-        height: 60px;
+    a img {
+        height: 40px;
         width: auto;
-        margin-top: 30px;
 
         @media (max-width: ${breakpoint}) {
             height: 50px;
         }
     }
 `
+export const Logo = styled.img`
+    max-width: 125px;
+    height: auto;
+    margin: 20px 0 0;
+
+    @media (max-width: ${breakpointSmall}) {
+        margin: 30px auto;
+    }
+`
+export const SocialContainer = styled.div`
+    margin: 20px 0 10px;
+
+    ul {
+        margin: 20px 0 0;
+        padding: 0;
+        display: inline-flex;
+    }
+
+    @media (max-width: ${breakpointSmall}) {
+        margin: 0 auto;
+    }
+`
 export const RightFooter = styled.div`
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     margin: 0;
-
-    > * {
-        display: inline-flex;
-        justify-content: flex-end;
-    }
 `
 export const FooterLinks = styled.ul`
     list-style: none;
     margin-bottom: 0;
+    padding: 0;
 
     @media (max-width: ${breakpointSmall}) {
         flex-direction: column;
         text-align: right;
     }
 
-    li {
-        margin-right: 16px;
-
-        &:last-child {
-            margin-right: 0;
-
-            @media (max-width: ${breakpointSmall}) {
-                margin-right: 16px;
-            }
-        }
+    li, img {
+        margin: 10px 0;
     }
 
     a {
