@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <Layout
       title="News, Resources and Articles, Templates about Web-Development"
-      description="Stay up to date with weekly updates, get resources for your next projects abd read articles and tutorials about web development."
+      description="Stay up to date with weekly updates, get resources for your next projects and read articles and tutorials about web development."
       titleNameFirst={true}
     >
       <ui.Container>

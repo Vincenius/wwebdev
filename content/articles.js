@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 13,
+        type: 'Article',
+        date: 'February 15, 2023',
+        headline: 'Coding your own AI in 2023: A Guide for Web Developers',
+        description: "TODO...",
+        link: '/blog/coding-your-own-ai-2023-guide-for-web-developers',
+        previewImage: '/preview/coding-your-own-ai-2023-guide-for-web-developers.jpg',
+    },
+    {
         id: 12,
         type: 'Article',
         date: 'February 03, 2022',

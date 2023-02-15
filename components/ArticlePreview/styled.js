@@ -71,7 +71,7 @@ export const ReadMore = styled.span`
 `
 const imageStyle = css`
     width: 300px;
-    height: 200px !important; /* to overwrite skeleton default */
+    height: 170px !important; /* to overwrite skeleton default */
     object-fit: cover;
     margin-right: 20px;
     margin-top: 10px;
