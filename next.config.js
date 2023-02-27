@@ -13,7 +13,7 @@ for (const w of weeklyData) {
 }
 
 const settings = withBundleAnalyzer({
-    // trailingSlash: true,
+    trailingSlash: true,
     exportPathMap: async function(
         defaultPathMap,
     ) {
