@@ -2,7 +2,7 @@ const data = [
     {
         id: 13,
         type: 'Article',
-        date: 'February 28, 2023',
+        date: 'February 27, 2023',
         headline: 'Coding your own AI in 2023 with fastai',
         description: "This is a guide, which focuses on the critical parts of the fastai course. I'll cover how to set up the ecosystem and how to create, train and deploy an AI model.",
         link: '/blog/coding-your-own-ai-2023-with-fastai',
