@@ -7,6 +7,7 @@ import js from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript'
 import json from 'react-syntax-highlighter/dist/cjs/languages/prism/json'
 import css from 'react-syntax-highlighter/dist/cjs/languages/prism/css'
 import markup from 'react-syntax-highlighter/dist/cjs/languages/prism/markup'
+import python from 'react-syntax-highlighter/dist/cjs/languages/prism/python'
 
 import * as S from './styled'
 
@@ -15,6 +16,7 @@ SyntaxHighlighter.registerLanguage('javascript', js)
 SyntaxHighlighter.registerLanguage('json', json)
 SyntaxHighlighter.registerLanguage('css', css)
 SyntaxHighlighter.registerLanguage('markup', markup)
+SyntaxHighlighter.registerLanguage('python', python)
 
 const CodeBlock = ({ language, value, label }) => (
     <S.Container hasLabel={!!label}>
