@@ -2,11 +2,11 @@ const data = [
     {
         id: 13,
         type: 'Article',
-        date: 'February 15, 2023',
-        headline: 'Coding your own AI in 2023: A Guide for Web Developers',
-        description: "TODO...",
-        link: '/blog/coding-your-own-ai-2023-guide-for-web-developers',
-        previewImage: '/preview/coding-your-own-ai-2023-guide-for-web-developers.jpg',
+        date: 'February 28, 2023',
+        headline: 'Coding your own AI in 2023 with fastai',
+        description: "This is a guide, which focuses on the critical parts of the fastai course. I'll cover how to set up the ecosystem and how to create, train and deploy an AI model.",
+        link: '/blog/coding-your-own-ai-2023-with-fastai',
+        previewImage: '/preview/coding-your-own-ai-2023-with-fastai.png',
     },
     {
         id: 12,
