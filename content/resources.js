@@ -1,5 +1,14 @@
 const data = [
     {
+        id: 15,
+        type: 'Resource',
+        date: 'March 11, 2023',
+        headline: "todo",
+        description: "todo.",
+        link: "/resources/loader-generator",
+        previewImage: "/resources/best-of-weekly-2019-2022.jpg",
+    },
+    {
         id: 14,
         type: 'Resource',
         date: 'November 27, 2022',
