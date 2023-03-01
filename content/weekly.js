@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '138',
+        date: 'March 01, 2023',
+        description: "Poet.so, PrimeReact, StatiCrypt, Bun, Openverse and more...",
+    },
+    {
         id: '137',
         date: 'February 15, 2023',
         description: "PhotoPrism, PairDrop, Screenstab, ColorSpace and more...",
