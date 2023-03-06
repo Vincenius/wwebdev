@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import Skeleton from '@material-ui/lab/Skeleton'
+import Image from 'next/image'
 import { lightGrey, greyBlue, darkGrey, lightBlue, breakpoint } from '../../ui/constants'
 
 export const Container = styled.article`
@@ -71,7 +71,7 @@ export const ReadMore = styled.span`
 `
 const imageStyle = css`
     width: 300px;
-    height: 170px !important; /* to overwrite skeleton default */
+    height: 170px;
     object-fit: cover;
     margin-right: 20px;
     margin-top: 10px;
@@ -83,9 +83,9 @@ const imageStyle = css`
         max-height: 300px;
     }
 `
-export const PreviewImage = styled.img`
+export const PreviewImage = styled(Image)`
     ${imageStyle}
 `
-export const ImageSkeleton = styled(Skeleton)`
-    ${imageStyle}
+export const Link = styled.a`
+    width: 100%;
 `

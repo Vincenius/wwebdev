@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Link from 'next/link'
-import LazyLoad from 'react-lazy-load'
 import ArrowRight from '@material-ui/icons/ArrowRightAlt'
 import * as S from './styled'
-import * as ui from '../../ui'
 
 const ArticlePreview = ({
   date,
@@ -18,21 +16,18 @@ const ArticlePreview = ({
   const d = new Date(lastDate)
   const isResource = type === 'Resource'
   const isTemplate = type === 'Template'
-  const [imageLoaded, setImageLoaded] = useState(false)
 
   return (
     <S.Container>
       { previewImage &&
-        <Link href={link}><a>
-          <ui.Screenreader>{headline}</ui.Screenreader>
-          { !imageLoaded && <S.ImageSkeleton variant="rect" /> }
-          <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
-            <S.PreviewImage
-              src={previewImage}
-              alt={headline}
-            />
-          </LazyLoad>
-        </a></Link>
+        <Link href={link}><S.Link>
+          <S.PreviewImage
+            src={previewImage}
+            alt={headline}
+            width={300}
+            height={170}
+          />
+        </S.Link></Link>
       }
       <div>
         <header>
