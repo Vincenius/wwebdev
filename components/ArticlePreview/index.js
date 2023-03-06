@@ -3,7 +3,6 @@ import Link from 'next/link'
 import LazyLoad from 'react-lazy-load'
 import ArrowRight from '@material-ui/icons/ArrowRightAlt'
 import * as S from './styled'
-import * as ui from '../../ui'
 
 const ArticlePreview = ({
   date,
@@ -24,8 +23,7 @@ const ArticlePreview = ({
     <S.Container>
       { previewImage &&
         <Link href={link}><a>
-          <ui.Screenreader>{headline}</ui.Screenreader>
-          { !imageLoaded && <S.ImageSkeleton variant="rect" /> }
+          { !imageLoaded && <S.ImageSkeleton variant="rect" /> }
           <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
             <S.PreviewImage
               src={previewImage}

@@ -1,4 +1,5 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
+import Skeleton from '@material-ui/lab/Skeleton'
 import { breakpointSmall, lightBlue, darkGrey } from '../../ui/constants'
 
 export const Container = styled.div`
@@ -23,16 +24,6 @@ export const Article = styled.div`
     cursor: pointer;
   }
 
-  img {
-    width: 100%;
-    height: 100px;
-    object-fit: cover;
-
-    @media (max-width: ${breakpointSmall}) {
-      height: 140px;
-    }
-  }
-
   h3 {
     margin: 0;
     font-weight: normal;
@@ -43,4 +34,21 @@ export const Article = styled.div`
       color: ${lightBlue};
     }
   }
+`
+
+const imageStyle = css`
+  width: 100%;
+  height: 100px !important; /* to overwrite skeleton default */
+  object-fit: cover;
+
+  @media (max-width: ${breakpointSmall}) {
+    height: 140px;
+  }
+`
+
+export const PreviewImage = styled.img`
+    ${imageStyle}
+`
+export const ImageSkeleton = styled(Skeleton)`
+    ${imageStyle}
 `
