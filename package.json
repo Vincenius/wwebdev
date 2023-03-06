@@ -43,7 +43,7 @@
     "react-syntax-highlighter": "^15.4.5",
     "request": "^2.88.2",
     "resize-polyfill": "^1.1.1",
-    "sponsor-ninja-widget": "^1.0.6",
+    "sponsor-ninja-widget": "^1.0.8",
     "styled-components": "^5.1.0",
     "url-exists": "^1.0.3",
     "url-loader": "^4.1.0",
