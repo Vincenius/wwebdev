@@ -2,32 +2,51 @@ import React, { useState } from 'react'
 import SketchPicker from 'react-color/lib/Sketch'
 import FormLabel from '@material-ui/core/FormLabel'
 import Slider from '@material-ui/core/Slider'
+import FileCopyIcon from '@material-ui/icons/FileCopy'
+import CodeBlock from '../CodeBlock'
+import { blue } from '../../ui/constants'
 import * as S from './styled'
 
-// https://codepen.io/t_afif/pen/PoJyaNy
-// https://loading.io/button/generator/#top
-// https://mui.com/material-ui/react-progress/#circular
+const CopyButton = ({ cssString }) => {
+  const [showCopied, setShowCopied] = useState(false)
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(cssString)
+    setShowCopied(true)
+
+    setTimeout( () => {
+      setShowCopied(false)
+    }, 2000);
+  }
+
+  return <S.CopyLink
+    onClick={() => copyToClipboard()}
+    showCopied={showCopied}
+  >
+    <FileCopyIcon style={{ fontSize: '0.7em' }}/> Copy Code
+  </S.CopyLink>
+}
 
 const LoaderGenerator = () => {
   const [settings, setSettings] = useState({
-    color: 'blue',
+    color: blue,
     count: 10,
+    size: 10,
+    gap: 10,
+    speed: 1000,
   })
-  console.log(settings)
-  return <div>
-    <S.Container>
-      <S.LoaderContainer>
-        <S.Loader settings={settings} />
-      </S.LoaderContainer>
+  const [activeLoader, setActiveLoader] = useState(0)
+  const cssString = S.getCssString({ settings, variant: activeLoader })
 
+  return <div>
+    <S.ControlContainer>
       <div>
-        <div>
-          <SketchPicker
-            color={ settings.color }
-            onChangeComplete={color => setSettings({ ...settings, color: color.hex })}
-          />
-        </div>
-        <FormLabel component="legend">Dash count</FormLabel>
+        <SketchPicker
+          color={ settings.color }
+          onChangeComplete={color => setSettings({ ...settings, color: color.hex })}
+        />
+      </div>
+      <S.SliderContainer>
+        <FormLabel component="legend">Count</FormLabel>
         <Slider
           value={settings.count}
           onChange={(e, value) => setSettings({ ...settings, count: value })}
@@ -37,12 +56,63 @@ const LoaderGenerator = () => {
           step={1}
           valueLabelDisplay="auto"
         />
-      </div>
-    </S.Container>
 
-    <div>
-      {/* code */}
-    </div>
+        <FormLabel component="legend">Size</FormLabel>
+        <Slider
+          value={settings.size}
+          onChange={(e, value) => setSettings({ ...settings, size: value })}
+          aria-labelledby="breakpoint slider"
+          min={2}
+          max={20}
+          step={1}
+          valueLabelDisplay="auto"
+        />
+
+        <FormLabel component="legend">Gap</FormLabel>
+        <Slider
+          value={settings.gap}
+          onChange={(e, value) => setSettings({ ...settings, gap: value })}
+          aria-labelledby="breakpoint slider"
+          min={2}
+          max={30}
+          step={1}
+          valueLabelDisplay="auto"
+        />
+
+        <FormLabel component="legend">Animation duration</FormLabel>
+        <Slider
+          value={settings.speed}
+          onChange={(e, value) => setSettings({ ...settings, speed: value })}
+          aria-labelledby="breakpoint slider"
+          min={500}
+          max={2000}
+          step={50}
+          valueLabelDisplay="auto"
+        />
+      </S.SliderContainer>
+    </S.ControlContainer>
+
+    <S.LoaderContainer>
+      <S.LoaderCard active={activeLoader === 0} onClick={() => setActiveLoader(0)}>
+        <S.Loader settings={settings} />
+      </S.LoaderCard>
+      <S.LoaderCard active={activeLoader === 1} onClick={() => setActiveLoader(1)}>
+        <S.LoaderDots settings={settings} />
+      </S.LoaderCard>
+      <S.LoaderCard active={activeLoader === 2} onClick={() => setActiveLoader(2)}>
+        <S.LoaderRing settings={settings} />
+      </S.LoaderCard>
+      <S.LoaderCard active={activeLoader === 3} onClick={() => setActiveLoader(3)}>
+        <S.LoaderHourglas settings={settings} />
+      </S.LoaderCard>
+    </S.LoaderContainer>
+
+    <CodeBlock
+      language="css"
+      value={cssString}
+      wrapLongLines={true}
+      label={<CopyButton cssString={cssString}/>}
+    />
   </div>
 }
 

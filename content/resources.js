@@ -2,11 +2,11 @@ const data = [
     {
         id: 15,
         type: 'Resource',
-        date: 'March 11, 2023',
-        headline: "todo",
-        description: "todo.",
+        date: 'March 07, 2023',
+        headline: "Pure CSS Loader Generator",
+        description: "A code generator helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.",
         link: "/resources/loader-generator",
-        previewImage: "/resources/best-of-weekly-2019-2022.jpg",
+        previewImage: "/resources/pure-css-loader-generator.png",
     },
     {
         id: 14,

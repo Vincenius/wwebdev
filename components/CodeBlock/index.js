@@ -18,10 +18,10 @@ SyntaxHighlighter.registerLanguage('css', css)
 SyntaxHighlighter.registerLanguage('markup', markup)
 SyntaxHighlighter.registerLanguage('python', python)
 
-const CodeBlock = ({ language, value, label }) => (
+const CodeBlock = ({ language, value, label, wrapLongLines = false }) => (
     <S.Container hasLabel={!!label}>
         {label && <S.Label>{label}</S.Label> }
-        <SyntaxHighlighter language={language} style={prism}>
+        <SyntaxHighlighter language={language} style={prism} wrapLongLines={wrapLongLines}>
             {value}
         </SyntaxHighlighter>
     </S.Container>

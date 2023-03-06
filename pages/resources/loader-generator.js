@@ -23,22 +23,21 @@ const Demo = () => {
             image={postMeta.previewImage}
         >
           <ui.Container>
-              <ui.SectionHeadline as="h1">CSS Loader Generator</ui.SectionHeadline>
+              <ui.SectionHeadline as="h1">Pure CSS Loader Generator</ui.SectionHeadline>
               <ui.SidebarContainer>
                 <ui.SidebarArticle as="article">
                   <p>
-                    Adjust the options below to customize your CSS loading animation.
+                    This CSS generator helps you to create simple CSS spinners.
+                    You can choose between four different types of CSS spinners and adjust the settings.
+                  </p>
+                  <p>
+                    Afterward, you can easily copy the CSS code for usage on your website.
                   </p>
 
                   <LoaderGenerator />
 
-                  {/* <ui.Subheadline>some sub-headline</ui.Subheadline>
-                  <p>
-                    some additional info
-                  </p> */}
-
                   <ui.Subheadline>You might also like</ui.Subheadline>
-                  <Featured resourceIds={[1, 4, 13]} />
+                  <Featured resourceIds={[1, 5, 13]} />
                 </ui.SidebarArticle>
                 <ui.Sidebar>
                   <Ad />
