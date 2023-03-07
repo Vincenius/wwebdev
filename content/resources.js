@@ -4,7 +4,7 @@ const data = [
         type: 'Resource',
         date: 'March 07, 2023',
         headline: "Pure CSS Loader Generator",
-        description: "A code generator helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.",
+        description: "A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.",
         link: "/resources/loader-generator",
         previewImage: "/resources/pure-css-loader-generator.png",
     },
