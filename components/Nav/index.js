@@ -69,10 +69,10 @@ const Desktop = ({ title, isArticle, activePath }) => (
     <S.Right>
       <SocialBar>
         <li>
-          <a href="/search">
+          <Link href="/search">
             <ui.Screenreader>Search</ui.Screenreader>
             <SearchIcon width="24px" height="24px" />
-          </a>
+          </Link>
         </li>
       </SocialBar>
     </S.Right>

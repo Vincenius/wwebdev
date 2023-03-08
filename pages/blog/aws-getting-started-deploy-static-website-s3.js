@@ -90,7 +90,7 @@ const Post = () => (
       Click <ui.Code>Create Bucket</ui.Code>. Afterward, you'll see an overview of all your buckets.
     </p>
     <p>
-      Open the newly created one and go to the Tabs <ui.Code>Permissions</ui.Code> -> <ui.Code>Bucket Policy</ui.Code>.
+      Open the newly created one and go to the Tabs <ui.Code>Permissions</ui.Code> and to <ui.Code>Bucket Policy</ui.Code>.
       Then enter the following code and replace <ui.Code>your-bucket-name</ui.Code> with the name of your bucket. Then hit save.
     </p>
 

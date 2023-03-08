@@ -129,7 +129,7 @@ export const MobileNavigation = styled.nav`
     }
 `
 
-export const MobileLink = styled.a`
+export const MobileLink = styled.span`
     display: block;
     cursor: pointer;
     font-size: 18px;
