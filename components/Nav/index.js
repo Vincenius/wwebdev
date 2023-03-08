@@ -25,10 +25,10 @@ const links = [
 const Logo = ({ title, isArticle }) => {
   const logoUrl = "https://ik.imagekit.io/wwebdev/tr:w-180/logo-text_51kQarOOiD-.png"
   return (
-    <Link href='/'><a>
+    <Link href='/'>
       { isArticle && <img src={logoUrl} alt="Logo of wweb.dev" />}
       { !isArticle && <img src={logoUrl} alt={title} /> }
-    </a></Link>
+    </Link>
   )
 }
 
@@ -57,11 +57,11 @@ const Desktop = ({ title, isArticle, activePath }) => (
       <ul>
         {links.map(({ key, href, label }) => (
           <li key={key}>
-            <Link href={`/${href}`}><a>
+            <Link href={`/${href}`}>
               <S.Link active={activePath === href}>
                 {label}
               </S.Link>
-            </a></Link>
+            </Link>
           </li>
         ))}
       </ul>

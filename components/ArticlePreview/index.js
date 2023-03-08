@@ -22,7 +22,7 @@ const ArticlePreview = ({
   return (
     <S.Container>
       { previewImage &&
-        <Link href={link}><a>
+        <Link href={link}>
           { !imageLoaded && <S.ImageSkeleton variant="rect" /> }
           <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
             <S.PreviewImage
@@ -30,7 +30,7 @@ const ArticlePreview = ({
               alt={headline}
             />
           </LazyLoad>
-        </a></Link>
+        </Link>
       }
       <div>
         <header>
@@ -42,18 +42,16 @@ const ArticlePreview = ({
           {updatedAt && <S.Updated>Updated: </S.Updated>}
           <S.Time datetime={d.toISOString()}>{lastDate}</S.Time>
           <S.Headline>
-            <Link href={link}>
-              <a>{headline}</a>
-            </Link>
+            <Link href={link}>{headline}</Link>
           </S.Headline>
         </header>
         <p>{description}</p>
-        <Link href={link}><a><S.ReadMore>
+        <Link href={link}><S.ReadMore>
           { isResource
             ? 'Open Resource '
             : isTemplate ? 'Open Template' : 'Read more ' }
           <ArrowRight width="1em" height="1em" />
-        </S.ReadMore></a></Link>
+        </S.ReadMore></Link>
       </div>
     </S.Container>
   )

@@ -25,13 +25,13 @@ const Home = () => {
 
             { generateArticleAndResources(7) }
 
-            <Link href="/blog"><a>
+            <Link href="/blog">
               See blog posts
-            </a></Link>
+            </Link>
 
-            <Link href="/resources"><a>
+            <Link href="/resources">
               See all resources
-            </a></Link>
+            </Link>
           </ui.SidebarMain>
           <ui.Sidebar>
             <SponsorNinjaWidget />
@@ -43,9 +43,9 @@ const Home = () => {
             <ui.SidebarContent>
               { generateWeekly(6) }
 
-              <Link href="/weekly"><a>
+              <Link href="/weekly">
                 See all weekly news
-              </a></Link>
+              </Link>
             </ui.SidebarContent>
           </ui.Sidebar>
         </ui.SidebarContainer>

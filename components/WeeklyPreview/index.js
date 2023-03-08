@@ -19,11 +19,11 @@ const ArticlePreview = ({
         <S.Container>
             <header>
                 <S.Headline>
-                    <Link href="/weekly/[slug]" href={link}><a>{headline}</a></Link>
+                    <Link href="/weekly/[slug]" href={link}>{headline}</Link>
                 </S.Headline>
                 <S.Time datetime={d.toISOString()}>{date}</S.Time>
             </header>
-            <Link href="/weekly/[slug]" href={link}><a>
+            <Link href="/weekly/[slug]" href={link}>
                 <ui.Screenreader>{headline}</ui.Screenreader>
                 { !imageLoaded && <S.ImageSkeleton variant="rect" /> }
                 <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
@@ -32,11 +32,11 @@ const ArticlePreview = ({
                         alt={headline}
                     />
                 </LazyLoad>
-            </a></Link>
+            </Link>
             <p>{description}</p>
-            <Link href="/weekly/[slug]" as={link}><a><S.ReadMore>
+            <Link href="/weekly/[slug]" as={link}><S.ReadMore>
                 Open Weekly <ArrowRight width="1em" height="1em" />
-            </S.ReadMore></a></Link>
+            </S.ReadMore></Link>
         </S.Container>
     )
 }

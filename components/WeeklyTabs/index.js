@@ -14,10 +14,10 @@ const Test = ({ activeTab }) => {
       aria-label="disabled tabs example"
     >
       <Link href="/weekly" scroll={false}>
-        <a><Tab label="by Week" /></a>
+        <Tab label="by Week" />
       </Link>
       <Link href="/weekly/library" scroll={false}>
-      <a><Tab label="by Content" /></a>
+        <Tab label="by Content" />
       </Link>
     </Tabs>
   )

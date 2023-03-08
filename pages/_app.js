@@ -1,11 +1,18 @@
 import App from 'next/app'
+import { Lato } from 'next/font/google'
 
 import "../ui/global.css"
-import "../ui/fonts.css"
 import "../ui/ads.css"
 
+const lato = Lato({
+    subsets: ['latin'],
+    weight: ['300', '400', '700', '900']
+})
+
 function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />
+    return <div className={lato.className}>
+        <Component {...pageProps} />
+    </div>
 }
 
 // Only uncomment this method if you have blocking data requirements for

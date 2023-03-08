@@ -15,12 +15,12 @@ const Featured = ({ articleIds = [], templateIds = [], resourceIds = [] }) => {
   return <S.Container>
     { articles.map((a, i) =>
       <S.Article key={`featured-${a.headline}`} margin={i === 1}>
-        <Link href={a.link}><a>
+        <Link href={a.link}>
           { !imageLoaded && <S.ImageSkeleton variant="rect" /> }
           <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
             <S.PreviewImage src={a.previewImage} alt={a.headline} />
           </LazyLoad>
-        </a></Link>
+        </Link>
         <Link href={a.link}><h3>{a.headline}</h3></Link>
       </S.Article>
     )}

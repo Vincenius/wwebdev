@@ -16,6 +16,10 @@ export const Article = styled.div`
   width: 100%;
   margin: ${props => props.margin ? '0 30px' : '0'};
 
+  a {
+    text-decoration: none;
+  }
+
   @media (max-width: ${breakpointSmall}) {
     margin: 0 0 30px;
   }

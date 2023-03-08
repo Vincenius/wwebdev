@@ -6,7 +6,7 @@ import Skeleton from '@material-ui/lab/Skeleton'
 import * as S from './styled'
 
 const LinkComp = ({ isExternal, link, children }) => !isExternal
-    ? <Link href={link}><a>{children}</a></Link>
+    ? <Link href={link}>{children}</Link>
     : <a href={link} target="_blank" rel="noopener">{children}</a>
 
 function LinkBox({ title, description, image, link, selfPromoted, fullHeight, isExternal = true, sponsored }) {
