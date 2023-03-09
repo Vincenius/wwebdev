@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import styled from 'styled-components'
-import { SponsorNinja } from 'sponsor-ninja-widget'
+import dynamic from 'next/dynamic'
 
 const Container = styled.div`
   margin-bottom: 40px;
@@ -29,12 +29,14 @@ const Label = styled.h3`
 
 const SponsorNinjaWidget = () => {
   useEffect(() => {
-    new SponsorNinja({
-      id: '63d7dd38d907a8ed61dca67f',
-      target: '#sponsor-ninja-container',
-      position: 'bottom',
-      alignment: 'left',
-      color: '#017a8c'
+    import('sponsor-ninja-widget').then(({ SponsorNinja }) => {
+      new SponsorNinja({
+        id: '63d7dd38d907a8ed61dca67f',
+        target: '#sponsor-ninja-container',
+        position: 'bottom',
+        alignment: 'left',
+        color: '#017a8c'
+      })
     })
   })
 

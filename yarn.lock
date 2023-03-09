@@ -4949,10 +4949,10 @@ space-separated-tokens@^1.0.0:
   resolved "https://registry.npmjs.org/space-separated-tokens/-/space-separated-tokens-1.1.5.tgz"
   integrity sha512-q/JSVd1Lptzhf5bkYm4ob4iWPjx0KiRe3sRFBNrVqbJkFaBm5vbbowy1mymoPNLRa52+oadOhJ+K49wsSeSjTA==
 
-sponsor-ninja-widget@^1.0.8:
-  version "1.0.8"
-  resolved "https://registry.npmjs.org/sponsor-ninja-widget/-/sponsor-ninja-widget-1.0.8.tgz"
-  integrity sha512-D4L2pMJm4kCCzc4Qjq4r8t0Z0UcHLuHaIs10lcRz3FtzR3wZhL8jtvceScfcwXHelbDsuHknlEZbtmegssh2kA==
+sponsor-ninja-widget@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/sponsor-ninja-widget/-/sponsor-ninja-widget-1.0.9.tgz#fb1dac239ce20ef212d31e4e58713699a69b8069"
+  integrity sha512-rURUe+1Ilw95b/jOsvB6PHzsiwp6z8eN+igFQBOze0kPW695FV8c+fLfZAddSVDVtfLwhXXmRRkmmH0mjxdnQw==
   dependencies:
     "@dicebear/collection" "^5.0.2"
     "@dicebear/core" "^5.0.2"
