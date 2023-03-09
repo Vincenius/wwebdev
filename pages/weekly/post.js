@@ -1,6 +1,5 @@
 import React from 'react'
 import { useRouter } from 'next/router'
-import { useQuery } from 'react-query'
 
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
