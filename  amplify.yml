@@ -1,7 +1,11 @@
 version: 1
 frontend:
   phases:
-    build:
+    preBuild:
       commands:
+        - yarn install
+    postBuild:
+      commands:
+        - npm run build
         - allfiles=$(ls -al ./.next/standalone/**/*.js)
         - npx esbuild $allfiles --minify --outdir=.next/standalone --platform=node --target=node16 --format=cjs --allow-overwrite
