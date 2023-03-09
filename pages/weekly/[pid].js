@@ -71,7 +71,7 @@ const Post = ({ weekly }) => {
     )
 }
 
-Post.getInitialProps = async (context) => {
+export async function getServerSideProps(context) {
     const { pid = '' } = context.query
     const json = { weekly: pid }
     const stringified = JSON.stringify(json)
@@ -80,7 +80,7 @@ Post.getInitialProps = async (context) => {
     const weekly = await response.json()
 
     return {
-        weekly, // will be passed to the page component as props
+        props: { weekly }, // will be passed to the page component as props
     }
 }
 
