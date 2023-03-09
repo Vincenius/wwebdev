@@ -1,0 +1,2 @@
+- allfiles=$(ls -al ./.next/standalone/**/*.js)
+- npx esbuild $allfiles --minify --outdir=.next/standalone --platform=node --target=node16 --format=cjs --allow-overwrite
