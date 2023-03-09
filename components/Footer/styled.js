@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import TextField from '@material-ui/core/TextField'
-import MuiCheckbox from '@material-ui/core/Checkbox'
-import Button from '@material-ui/core/Button'
+import TextField from '@mui/material/TextField'
+import MuiCheckbox from '@mui/material/Checkbox'
+import Button from '@mui/material/Button'
 import { darkGrey, lightGrey, lightBlue, middleDarkGrey, breakpoint, breakpointSmall, logoColorLeft, middleGrey } from '../../ui/constants'
 import * as ui from '../../ui'
 

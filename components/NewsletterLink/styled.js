@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import MuiButton from '@material-ui/core/Button'
+import MuiButton from '@mui/material/Button'
 
 export const Container = styled.div`
   box-shadow: 0 1px 4px 1px hsla(0, 0%, 0%, 0.1);

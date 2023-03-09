@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
-import TextareaAutosize from '@material-ui/core/TextareaAutosize'
-import Button from '@material-ui/core/Button'
+import TextareaAutosize from '@mui/material/TextareaAutosize'
+import Button from '@mui/material/Button'
 
 export const Controls = styled.div`
     position: relative;

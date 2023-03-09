@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import LazyLoad from 'react-lazy-load'
-import ArrowRight from '@material-ui/icons/ArrowRightAlt'
+import ArrowRight from '@mui/icons-material/ArrowRightAlt'
 import * as S from './styled'
 import * as ui from '../../ui'
 

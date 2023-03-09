@@ -1,8 +1,7 @@
 import React from 'react'
 import Document, { Head, Main, NextScript, Html } from 'next/document'
 import { ServerStyleSheet } from 'styled-components'
-import { ServerStyleSheets } from '@material-ui/styles'
-import theme from '../ui/theme'
+import { ServerStyleSheets } from '@mui/styles'
 
 class MyDocument extends Document {
   static async getInitialProps (ctx) {

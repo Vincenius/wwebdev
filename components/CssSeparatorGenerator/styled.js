@@ -1,10 +1,10 @@
 import styled, { css } from 'styled-components'
 import _get from 'lodash/get'
-import Card from '@material-ui/core/Card'
-import MuiCheckbox from '@material-ui/core/Checkbox'
-import MuiSlider from '@material-ui/core/Slider'
-import TextareaAutosize from '@material-ui/core/TextareaAutosize'
-import MuiFormControlLabel from '@material-ui/core/FormControlLabel'
+import Card from '@mui/material/Card'
+import MuiCheckbox from '@mui/material/Checkbox'
+import MuiSlider from '@mui/material/Slider'
+import TextareaAutosize from '@mui/material/TextareaAutosize'
+import MuiFormControlLabel from '@mui/material/FormControlLabel'
 import { darkGrey, greyBlue, lightGrey, logoColorLeft, breakpointLarge } from '../../ui/constants'
 import * as ui from '../../ui'
 import {
@@ -15,7 +15,7 @@ import {
   generateTriangleCss,
   generateCurvedCss,
 } from './codeGenerators'
-import { MobileFriendly } from '@material-ui/icons'
+import { MobileFriendly } from '@mui/icons-material'
 
 export const Container = styled.main`
   height: 100%;

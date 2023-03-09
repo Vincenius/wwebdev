@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Slider from '@material-ui/core/Slider'
-import FileCopyIcon from '@material-ui/icons/FileCopy'
-import ArrowRight from '@material-ui/icons/ArrowRight'
-import ArrowLeft from '@material-ui/icons/ArrowLeft'
+import Slider from '@mui/material/Slider'
+import FileCopyIcon from '@mui/icons-material/FileCopy'
+import ArrowRight from '@mui/icons-material/ArrowRight'
+import ArrowLeft from '@mui/icons-material/ArrowLeft'
 
 import * as S from './styledControls'
 

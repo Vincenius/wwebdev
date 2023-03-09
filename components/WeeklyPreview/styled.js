@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Skeleton from '@material-ui/lab/Skeleton'
+import Skeleton from '@mui/material/Skeleton'
 import { lightGrey, darkGrey, lightBlue, greyBlue } from '../../ui/constants'
 
 export const Container = styled.article`

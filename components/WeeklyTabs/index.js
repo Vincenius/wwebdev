@@ -1,8 +1,8 @@
 import React from 'react'
 import Link from 'next/link'
 
-import Tabs from '@material-ui/core/Tabs'
-import Tab from '@material-ui/core/Tab'
+import Tabs from '@mui/material/Tabs'
+import Tab from '@mui/material/Tab'
 
 const Test = ({ activeTab }) => {
   return (

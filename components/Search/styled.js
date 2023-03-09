@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import TextField from '@material-ui/core/TextField'
-import Button from '@material-ui/core/Button'
-import FormGroup from '@material-ui/core/FormGroup'
+import TextField from '@mui/material/TextField'
+import Button from '@mui/material/Button'
+import FormGroup from '@mui/material/FormGroup'
 import { greyBlue } from '../../ui/constants'
 
 export const SearchInput = styled(TextField)`

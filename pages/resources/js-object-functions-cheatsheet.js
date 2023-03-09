@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Chip from '@material-ui/core/Chip'
+import Chip from '@mui/material/Chip'
 import * as ui from '../../ui'
 import CodeBlock from '../../components/CodeBlock'
 import Layout from '../../components/Layout'

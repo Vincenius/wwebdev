@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Card from '@material-ui/core/Card'
+import Card from '@mui/material/Card'
 import Controls from './Controls'
 import * as S from './styled'
 import * as ui from '../../ui/'

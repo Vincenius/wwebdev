@@ -1,11 +1,11 @@
 import React, { useState } from 'react'
 
-import Tabs from '@material-ui/core/Tabs'
-import Tab from '@material-ui/core/Tab'
-import Slider from '@material-ui/core/Slider'
-import Checkbox from '@material-ui/core/Checkbox'
-import FileCopy from '@material-ui/icons/FileCopy'
-import GitHub from '@material-ui/icons/GitHub'
+import Tabs from '@mui/material/Tabs'
+import Tab from '@mui/material/Tab'
+import Slider from '@mui/material/Slider'
+import Checkbox from '@mui/material/Checkbox'
+import FileCopy from '@mui/icons-material/FileCopy'
+import GitHub from '@mui/icons-material/GitHub'
 
 import * as S from './styled'
 import { generateHtmlCode, generateCssCode } from './codeGenerators'

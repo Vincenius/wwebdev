@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import Skeleton from '@material-ui/lab/Skeleton'
+import Skeleton from '@mui/material/Skeleton'
 import { breakpointSmall, lightBlue, darkGrey } from '../../ui/constants'
 
 export const Container = styled.div`

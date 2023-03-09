@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import MailOutlineIcon from '@material-ui/icons/MailOutline'
+import MailOutlineIcon from '@mui/icons-material/MailOutline'
 
 import Newsletter from './Newsletter'
 import SocialBar from '../SocialBar'

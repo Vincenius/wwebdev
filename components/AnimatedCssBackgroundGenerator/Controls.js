@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import FileCopyIcon from '@material-ui/icons/FileCopy'
+import FileCopyIcon from '@mui/icons-material/FileCopy'
 import * as S from './styles/animatedCssBgControls'
 
 const Controls = ({ children, source, credit, htmlCode, cssCode, changeBg, activeBg }) => {

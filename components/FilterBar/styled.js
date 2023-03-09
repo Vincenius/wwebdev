@@ -1,7 +1,7 @@
 import styled from 'styled-components'
-import Paper from '@material-ui/core/Paper'
-import Chip from '@material-ui/core/Chip'
-import Skeleton from '@material-ui/lab/Skeleton'
+import Paper from '@mui/material/Paper'
+import Chip from '@mui/material/Chip'
+import Skeleton from '@mui/material/Skeleton'
 import { darkGrey, greyBlue } from '../../ui/constants'
 
 export const Container = styled(Paper)`

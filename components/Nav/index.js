@@ -3,7 +3,7 @@ import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Hamburger from 'hamburger-react'
 import { SizeMe } from 'react-sizeme'
-import SearchIcon from '@material-ui/icons/Search'
+import SearchIcon from '@mui/icons-material/Search'
 
 import SocialBar from '../SocialBar'
 import * as ui from '../../ui'

@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import Paper from '@material-ui/core/Paper'
+import Paper from '@mui/material/Paper'
 import { blue } from '../../ui/constants'
 
 export const ControlContainer = styled.div`

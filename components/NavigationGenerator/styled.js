@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components'
-import Tab from '@material-ui/core/Tab'
-import AccordionSummary from '@material-ui/core/AccordionSummary'
+import Tab from '@mui/material/Tab'
+import AccordionSummary from '@mui/material/AccordionSummary'
 import { lightGrey } from '../../ui/constants'
 import * as ui from '../../ui'
 

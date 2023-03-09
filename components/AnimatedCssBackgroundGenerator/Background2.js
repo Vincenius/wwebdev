@@ -1,6 +1,6 @@
 import React from 'react'
 import Controls from './Controls'
-import Slider from '@material-ui/core/Slider'
+import Slider from '@mui/material/Slider'
 
 import * as S from './styles/styledBg2'
 

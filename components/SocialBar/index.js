@@ -1,9 +1,9 @@
 import React from 'react'
 import * as S from './styled'
 import * as ui from '../../ui'
-import RssFeedIcon from '@material-ui/icons/RssFeed'
-import TwitterIcon from '@material-ui/icons/Twitter'
-import GitHubIcon from '@material-ui/icons/GitHub'
+import RssFeedIcon from '@mui/icons-material/RssFeed'
+import TwitterIcon from '@mui/icons-material/Twitter'
+import GitHubIcon from '@mui/icons-material/GitHub'
 
 const SocialBar = ({ children }) => (
     <S.Social>

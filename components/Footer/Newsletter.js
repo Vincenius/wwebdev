@@ -1,5 +1,5 @@
 import React from 'react'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
+import FormControlLabel from '@mui/material/FormControlLabel'
 
 import * as S from './styled'
 

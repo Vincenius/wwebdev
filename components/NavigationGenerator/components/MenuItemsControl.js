@@ -1,16 +1,16 @@
 import React from 'react'
 import styled, { css } from 'styled-components'
 
-import Card from '@material-ui/core/Card'
-import CardContent from '@material-ui/core/CardContent'
-import Paper from '@material-ui/core/Paper'
-import TextField from '@material-ui/core/TextField'
-import FormControlLabel from '@material-ui/core/FormControlLabel'
-import Checkbox from '@material-ui/core/Checkbox'
-import IconButton from '@material-ui/core/IconButton'
-import Button from '@material-ui/core/Button'
-import DeleteForeverIcon from '@material-ui/icons/DeleteForever'
-import AddCircleIcon from '@material-ui/icons/AddCircle'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import Paper from '@mui/material/Paper'
+import TextField from '@mui/material/TextField'
+import FormControlLabel from '@mui/material/FormControlLabel'
+import Checkbox from '@mui/material/Checkbox'
+import IconButton from '@mui/material/IconButton'
+import Button from '@mui/material/Button'
+import DeleteForeverIcon from '@mui/icons-material/DeleteForever'
+import AddCircleIcon from '@mui/icons-material/AddCircle'
 
 const Container = styled.div`
   width: 100%;
@@ -96,7 +96,7 @@ const MenuItemsControl = ({ menuItems, setMenuItems }) => {
         aria-label="delete row"
         component="span"
         onClick={() => { deleteItem(menuPart, index) }}
-      >
+        size="large">
         <DeleteIcon />
       </IconButton>
     </StyledRow>
@@ -127,7 +127,7 @@ const MenuItemsControl = ({ menuItems, setMenuItems }) => {
           aria-label="delete row"
           component="span"
           onClick={() => updateLogo('isUsed', false)}
-        >
+          size="large">
           <DeleteIcon />
         </IconButton>
       </StyledRow> }
@@ -154,7 +154,7 @@ const MenuItemsControl = ({ menuItems, setMenuItems }) => {
         <AddCircleIcon /> &nbsp;Add Item
       </Button>
     </Container>
-  )
+  );
 }
 
 export default MenuItemsControl

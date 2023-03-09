@@ -1,5 +1,7 @@
 import App from 'next/app'
 import { Lato } from 'next/font/google'
+import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles';
+import theme from '../ui/theme'
 
 import "../ui/global.css"
 import "../ui/ads.css"
@@ -10,9 +12,15 @@ const lato = Lato({
 })
 
 function MyApp({ Component, pageProps }) {
-    return <div className={lato.className}>
-        <Component {...pageProps} />
-    </div>
+    return (
+        <StyledEngineProvider injectFirst>
+            <ThemeProvider theme={theme}>
+                <div className={lato.className}>
+                    <Component {...pageProps} />
+                </div>
+            </ThemeProvider>
+        </StyledEngineProvider>
+    );
 }
 
 // Only uncomment this method if you have blocking data requirements for

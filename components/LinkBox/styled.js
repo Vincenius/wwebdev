@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import Paper from '@material-ui/core/Paper'
+import Paper from '@mui/material/Paper'
 import { lightBlue, gradient, boxShadow, darkGrey, middleGrey } from '../../ui/constants'
 
 export const Container = styled(Paper)`

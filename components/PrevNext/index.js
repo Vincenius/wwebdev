@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import ArrowRight from '@material-ui/icons/ArrowRightAlt'
+import ArrowRight from '@mui/icons-material/ArrowRightAlt'
 
 import { weeklyData } from '../../content/weekly'
 import articleData from '../../content/articles'
