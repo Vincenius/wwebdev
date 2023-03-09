@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import CookieConsent from 'react-cookie-consent'
 
 import Head from '../Head'
 import Header from '../Header'
@@ -58,20 +57,6 @@ function Layout ({
             </main>
 
             <Footer hideNewsletter={hideNewsletter} />
-
-            { !hasAdblock && <CookieConsent
-                enableDeclineButton
-                buttonText="I accept"
-                onAccept={() => {
-                    try {
-                        window.ezstandalone.setDisablePersonalizedStatistics(false);
-                        window.ezstandalone.setDisablePersonalizedAds(false);
-                    } catch (e) {
-                        console.log(e)
-                    }
-                }}>
-                <span style={{ fontSize: "14px" }}> This website uses cookies to enhance the user experience.</span>
-            </CookieConsent> }
         </S.Container>
     )
 }

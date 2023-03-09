@@ -16,7 +16,6 @@
     "postdeploy": "aws cloudfront create-invalidation --distribution-id=E32J3ET4M6TIBY --paths \"/*\""
   },
   "dependencies": {
-    "@babel/core": "^7.13.15",
     "@emotion/react": "^11.10.6",
     "@emotion/styled": "^11.10.6",
     "@mui/icons-material": "^5.11.11",
@@ -25,13 +24,9 @@
     "@mui/styled-engine-sc": "^5.11.11",
     "@mui/styles": "^5.11.12",
     "@next/bundle-analyzer": "^12.3.1",
-    "@sentry/browser": "^5.12.1",
     "axios": "^0.21.1",
-    "eslint-config-next": "^13.2.3",
-    "file-type": "^16.0.1",
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
-    "got": "^11.8.0",
     "hamburger-react": "^2.5.0",
     "html-react-parser": "^3.0.4",
     "image-downloader": "^4.0.1",
@@ -41,7 +36,6 @@
     "node-fetch": "^2.6.1",
     "react": "^18.2.0",
     "react-color": "^2.18.1",
-    "react-cookie-consent": "^8.0.1",
     "react-dom": "^18.2.0",
     "react-lazy-load": "^4.0.1",
     "react-sizeme": "^3.0.2",
@@ -51,8 +45,7 @@
     "sponsor-ninja-widget": "^1.0.8",
     "styled-components": "^5.3.8",
     "url-exists": "^1.0.3",
-    "url-loader": "^4.1.0",
-    "webpack": "^5.69.1"
+    "url-loader": "^4.1.0"
   },
   "devDependencies": {
     "cross-env": "^7.0.2",

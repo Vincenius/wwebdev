@@ -1,7 +1,7 @@
-import { createMuiTheme } from '@mui/material/styles';
+import { createTheme } from '@mui/material/styles';
 import { lightBlue, blue } from './constants'
 
-const theme = createMuiTheme({
+const theme = createTheme({
   palette: {
     primary: {
       main: blue,
