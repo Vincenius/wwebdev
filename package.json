@@ -8,7 +8,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "export": "npm run build && next export"
+    "export": "npm run build && next export",
+    "esbuild": "allfiles=$(ls -1 ./.next/standalone/node_modules/**/*.js) && esbuild $allfiles --minify --outdir=.next/standalone --platform=node --target=node16 --format=cjs --allow-overwrite"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -20,6 +21,7 @@
     "@mui/styles": "^5.11.12",
     "@next/bundle-analyzer": "^12.3.1",
     "axios": "^0.21.1",
+    "esbuild": "^0.17.11",
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
     "hamburger-react": "^2.5.0",
