@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 
 import Head from '../Head'
 import Header from '../Header'
@@ -19,13 +19,6 @@ function Layout ({
     titleNameFirst,
     updatedAt,
 }) {
-    const [hasAdblock, setHasAdblock] = useState(true)
-    useEffect(() => {
-        if (window.ezstandalone) {
-            setHasAdblock(false)
-        }
-    },[])
-
     const d = date ? new Date(date) : undefined
     const ud = updatedAt ? new Date(updatedAt) : undefined
 

@@ -7,6 +7,7 @@
     "analyze": "cross-env ANALYZE=true next build",
     "dev": "next dev",
     "build": "next build",
+    "esbuild": "allfiles=$(ls -1 ./.next/standalone/**/*.js) && esbuild $allfiles --minify --outdir=.next/standalone --platform=node --target=node16 --format=cjs --allow-overwrite",
     "start": "next start",
     "export": "npm run build && next export",
     "postexport": "node scripts/postExport.js",
