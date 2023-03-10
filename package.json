@@ -9,7 +9,7 @@
     "build": "next build",
     "start": "next start",
     "export": "npm run build && next export",
-    "esbuild": "allfiles=$(ls -1 ./.next/standalone/node_modules/**/*.js) && esbuild $allfiles --minify --outdir=.next/standalone --platform=node --target=node16 --format=cjs --allow-overwrite"
+    "esbuild": "allfiles=$(ls -1 ./.next/standalone/node_modules/**/*.js) && esbuild $allfiles --minify --outdir=.next/standalone/node_modules --platform=node --target=node16 --format=cjs --allow-overwrite"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -27,7 +27,6 @@
     "hamburger-react": "^2.5.0",
     "html-react-parser": "^3.0.4",
     "image-downloader": "^4.0.1",
-    "lodash": "^4.17.19",
     "next": "^13.2.3",
     "next-pwa": "^5.6.0",
     "node-fetch": "^2.6.1",

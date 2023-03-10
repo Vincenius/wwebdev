@@ -1,5 +1,4 @@
-import styled, { css } from 'styled-components'
-import _get from 'lodash/get'
+import styled, { css } from 'styled-components'
 import Card from '@mui/material/Card'
 import MuiCheckbox from '@mui/material/Checkbox'
 import MuiSlider from '@mui/material/Slider'
@@ -15,7 +14,6 @@ import {
   generateTriangleCss,
   generateCurvedCss,
 } from './codeGenerators'
-import { MobileFriendly } from '@mui/icons-material'
 
 export const Container = styled.main`
   height: 100%;
