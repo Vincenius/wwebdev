@@ -1,20 +1,14 @@
 {
   "name": "wwebdev",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "private": false,
   "license": "MIT",
   "scripts": {
     "analyze": "cross-env ANALYZE=true next build",
     "dev": "next dev",
     "build": "next build",
-    "esbuild": "allfiles=$(ls -1 ./.next/standalone/**/*.js) && esbuild $allfiles --minify --outdir=.next/standalone --platform=node --target=node16 --format=cjs --allow-overwrite",
     "start": "next start",
-    "export": "npm run build && next export",
-    "postexport": "node scripts/postExport.js",
-    "cleandeploy": "aws s3 sync ./out s3://wwebdev-static-website-bucket --delete",
-    "deploy": "aws s3 sync ./out s3://wwebdev-static-website-bucket",
-    "postcleandeploy": "aws cloudfront create-invalidation --distribution-id=E32J3ET4M6TIBY --paths \"/*\"",
-    "postdeploy": "aws cloudfront create-invalidation --distribution-id=E32J3ET4M6TIBY --paths \"/*\""
+    "export": "npm run build && next export"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -26,7 +20,6 @@
     "@mui/styles": "^5.11.12",
     "@next/bundle-analyzer": "^12.3.1",
     "axios": "^0.21.1",
-    "esbuild": "^0.17.11",
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
     "hamburger-react": "^2.5.0",
