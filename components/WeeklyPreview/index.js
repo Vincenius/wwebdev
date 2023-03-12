@@ -5,7 +5,7 @@ import ArrowRight from '@mui/icons-material/ArrowRightAlt'
 import * as S from './styled'
 import * as ui from '../../ui'
 
-const ArticlePreview = ({
+const WeeklyPreview = ({
     date,
     number,
     description,
@@ -25,7 +25,7 @@ const ArticlePreview = ({
             </header>
             <Link href="/weekly/[slug]" as={link}>
                 <ui.Screenreader>{headline}</ui.Screenreader>
-                { !imageLoaded && <S.ImageSkeleton variant="rect" /> }
+                { !imageLoaded && <S.ImageSkeleton variant="rect" /> }
                 <LazyLoad offsetVertical={1000} onContentVisible={() => setImageLoaded(true)}>
                     <S.Image
                         src={`/weekly/preview/${number}.jpg`}
@@ -41,4 +41,4 @@ const ArticlePreview = ({
     )
 }
 
-export default ArticlePreview
+export default WeeklyPreview

@@ -58,6 +58,7 @@ const SponsorNinjaWidget = () => {
       <Skeleton variant="circular" height={64} width={64} />
       <Skeleton variant="circular" height={64} width={64} />
       <Skeleton variant="circular" height={64} width={64} />
+      <Skeleton variant="circular" height={64} width={64} />
     </LoadingContainer>}
     <Container id="sponsor-ninja-container"></Container>
   </div>

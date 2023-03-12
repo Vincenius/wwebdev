@@ -16,7 +16,7 @@ const Post = () => (
 
     <h2>Debugging Node.js</h2>
 
-    {/* <video controls muted src="/blog/debugging-js-vscode/1-debug-nodejs.mp4"></video> */}
+    <video controls muted src="/blog/debugging-js-vscode/1-debug-nodejs.mp4"></video>
 
     <p>
       First of all, you need to go to the debug tab on the right menu of VS Code. If you don't have anything
@@ -46,7 +46,7 @@ const Post = () => (
       open your launch.json by clicking that little gear icon on top of the debug tab.
     </p>
 
-    {/* <video controls muted src="/blog/debugging-js-vscode/2-attach-nodejs.mp4"></video> */}
+    <video controls muted src="/blog/debugging-js-vscode/2-attach-nodejs.mp4"></video>
 
     <p>
       Then within the configuration array, you have to type "attach" and select "Node.js: Attach".
@@ -57,7 +57,7 @@ const Post = () => (
 
     <p><code>node --inspect=9229 index.js</code></p>
 
-    {/* <video controls muted src="/blog/debugging-js-vscode/3-attach-nodejs.mp4"></video> */}
+    <video controls muted src="/blog/debugging-js-vscode/3-attach-nodejs.mp4"></video>
 
     <p>
       Your app should be running. Afterward, you should be able to attach the debugger.
@@ -66,7 +66,7 @@ const Post = () => (
 
     <h2>Launch Firefox or Chrome against localhost</h2>
 
-    {/* <video controls muted src="/blog/debugging-js-vscode/4-debug-chrome.mp4"></video> */}
+    <video controls muted src="/blog/debugging-js-vscode/4-debug-chrome.mp4"></video>
 
     <p>
       In this example, I'll debug a react app in Firefox and Chrome.
