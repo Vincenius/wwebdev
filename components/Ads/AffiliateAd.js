@@ -2,20 +2,10 @@ import React from 'react'
 import styles from './AffiliateAd.module.css'
 
 export const affiliates = [{
-    link: 'https://www.git-tower.com/?via=vincent',
-    img: '/affiliate/tower.png',
-    title: 'Git Tower',
-    text: 'the most powerful Git client for Mac and Windows.'
-  }, {
     link: 'https://refind.com/?utm_source=newsletter&utm_medium=barter&utm_campaign=E1QJg_NpD4MddPPeoFBaLA',
     img: '/affiliate/refind.png',
     title: 'Refind',
     text: 'picks 5 links every day that make you smarter, tailored to your interests.'
-  }, {
-    link: 'http://www.lambdatest.com?fp_ref=vincent78',
-    img: '/affiliate/lambdatest.png',
-    title: 'Lambdatest',
-    text: 'test across 3000+ different browsers, real devices & operating systems.'
   }, {
     link: 'https://m.do.co/c/5ec9f49fcf88',
     img: '/affiliate/digitalocean.jpg',
