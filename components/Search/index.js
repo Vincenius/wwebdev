@@ -78,7 +78,7 @@ const Search = props => {
             title={r.headline}
             description={r.description}
             link={r.link}
-            image={r.previewImage}
+            image={r.shareImage}
             sponsored={r.sponsored}
         /> ) }
         { state === 'loading' && generateLinkBoxLoading(4) }

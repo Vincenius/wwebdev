@@ -15,7 +15,7 @@ const Post = () => (
     updatedAt={postMeta.updatedAt}
     link={`https://wweb.dev${postMeta.link}`}
     description={postMeta.description}
-    image={postMeta.previewImage}
+    image={postMeta.shareImage}
   >
     <ui.ArticleContainer as="article">
       <Ad />

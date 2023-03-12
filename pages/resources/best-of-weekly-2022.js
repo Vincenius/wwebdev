@@ -19,7 +19,7 @@ const Post = () => (
       updatedAt={postMeta.updatedAt}
       link={`https://wweb.dev${postMeta.link}`}
       description={postMeta.description}
-      image={postMeta.previewImage}
+      image={postMeta.shareImage}
   >
     <ui.ArticleContainer>
       Exactly three years ago I published my <a href="https://wweb.dev/weekly/1/">first weekly newsletter</a>.<br/>

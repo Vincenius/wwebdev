@@ -1,7 +1,6 @@
 import styled from 'styled-components'
-import SocialBar from '../SocialBar'
 import * as ui from '../../ui'
-import { darkGrey, breakpointSmall, breakpoint, breakpointLarge, logoColorLeft } from '../../ui/constants'
+import { darkGrey, breakpointSmall, breakpointLarge, breakpointLargeMin, logoColorLeft } from '../../ui/constants'
 
 export const Container = styled.div`
     position: relative;
@@ -153,5 +152,17 @@ export const MobileSocialBar = styled.div`
         justify-content: space-between;
         margin-top: 30px;
         padding: 0 32px;
+    }
+`
+
+export const DesktopContainer = styled.div`
+    @media (max-width: ${breakpointLarge}) {
+        display: none;
+    }
+`
+
+export const MobileContainer = styled.div`
+    @media (min-width: ${breakpointLargeMin}) {
+        display: none;
     }
 `

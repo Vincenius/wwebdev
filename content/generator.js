@@ -45,6 +45,7 @@ export const generateArticles = () => {
         description={d.description}
         link={d.link}
         previewImage={d.previewImage}
+        shareImage={d.shareImage}
     />)
 }
 
@@ -58,6 +59,7 @@ export const generateResources = () => {
             description={d.description}
             link={d.link}
             previewImage={d.previewImage}
+            shareImage={d.shareImage}
         />
     )
 }
@@ -75,6 +77,7 @@ export const generateArticleAndResources = maxCount => {
         description={d.description}
         link={d.link}
         previewImage={d.previewImage}
+        shareImage={d.shareImage}
     />).slice(0, maxCount)
 }
 

@@ -40,7 +40,7 @@ const ArticleLayout = ({ id, children }) => {
         updatedAt={postMeta.updatedAt}
         link={`https://wweb.dev${postMeta.link}`}
         description={postMeta.description}
-        image={postMeta.previewImage}
+        image={postMeta.shareImage}
     >
       <SidebarContainer>
         <ui.ArticleContainer as="article">

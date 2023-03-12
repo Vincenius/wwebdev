@@ -1,5 +1,5 @@
 import styled, { css } from 'styled-components'
-import Skeleton from '@mui/material/Skeleton'
+import Image from 'next/image'
 import { breakpointSmall, lightBlue, darkGrey } from '../../ui/constants'
 
 export const Container = styled.div`
@@ -40,19 +40,12 @@ export const Article = styled.div`
   }
 `
 
-const imageStyle = css`
+export const PreviewImage = styled(Image)`
   width: 100%;
-  height: 100px !important; /* to overwrite skeleton default */
+  height: 100px;
   object-fit: cover;
 
   @media (max-width: ${breakpointSmall}) {
-    height: 140px;
+    height: 160px;
   }
-`
-
-export const PreviewImage = styled.img`
-    ${imageStyle}
-`
-export const ImageSkeleton = styled(Skeleton)`
-    ${imageStyle}
 `

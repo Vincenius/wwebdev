@@ -1,14 +1,13 @@
-import React, { useState } from 'react'
+import React, { useState } from 'react'
 import { useRouter } from 'next/router'
 import Link from 'next/link'
 import Hamburger from 'hamburger-react'
-import { SizeMe } from 'react-sizeme'
 import SearchIcon from '@mui/icons-material/Search'
 
-import SocialBar from '../SocialBar'
+import SocialBar from '../SocialBar'
 import * as ui from '../../ui'
 import * as S from './styled'
-import { lightGrey, breakpointLargeNumber } from '../../ui/constants'
+import { lightGrey } from '../../ui/constants'
 
 const links = [
   // { href: '/about', label: 'About' },
@@ -37,16 +36,14 @@ const Nav = ({ isArticle, title, transparentBg }) => {
   const activePath = router.pathname.split('/')[1]
 
   return (
-    <SizeMe>{({ size }) =>
-      <S.Container isArticle={isArticle} transparentBg={transparentBg}>
-        { size.width > breakpointLargeNumber &&
-          <Desktop title={title} isArticle={isArticle} activePath={activePath} />
-        }
-        { size.width <= breakpointLargeNumber &&
-          <Mobile title={title} isArticle={isArticle} activePath={activePath} />
-        }
-      </S.Container>
-    }</SizeMe>
+    <S.Container isArticle={isArticle} transparentBg={transparentBg}>
+      <S.DesktopContainer>
+        <Desktop title={title} isArticle={isArticle} activePath={activePath} />
+      </S.DesktopContainer>
+      <S.MobileContainer>
+        <Mobile title={title} isArticle={isArticle} activePath={activePath} />
+      </S.MobileContainer>
+    </S.Container>
   )
 }
 
