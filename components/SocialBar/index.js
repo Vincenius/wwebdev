@@ -14,7 +14,7 @@ const SocialBar = ({ children }) => (
             </a>
         </li>
         <li>
-            <a href="https://github.com/wwebdev" target="_blank" rel="noopener">
+            <a href="https://github.com/Vincenius/wwebdev" target="_blank" rel="noopener">
                 <ui.Screenreader>Github</ui.Screenreader>
                 <GitHubIcon width="24px" height="24px" />
             </a>
