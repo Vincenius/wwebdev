@@ -7,10 +7,8 @@
     "analyze": "cross-env ANALYZE=true next build",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "npm run build && next export",
-    "esbuild": "allfiles=$(ls -1 ./.next/standalone/node_modules/**/*.js) && esbuild $allfiles --minify --outdir=.next/standalone/node_modules --platform=node --target=node16 --format=cjs --allow-overwrite",
-    "esbuild2": "allfiles=$(ls -1 ./.next/standalone/.next/**/*.js) && esbuild $allfiles --minify --outdir=.next/standalone/.next --platform=node --target=node16 --format=cjs --allow-overwrite"
+    "start": "next start -p 3009",
+    "export": "npm run build && next export"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",
@@ -22,7 +20,6 @@
     "@mui/styles": "^5.11.12",
     "@next/bundle-analyzer": "^12.3.1",
     "axios": "^0.21.1",
-    "esbuild": "^0.17.11",
     "feed": "^4.2.2",
     "fs": "0.0.1-security",
     "fs-extra": "^8.1.0",
