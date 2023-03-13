@@ -14,7 +14,7 @@ const SponsorNinjaWidget = () => {
         target: '#sponsor-ninja-container',
         position: 'bottom',
         alignment: 'left',
-        color: '#017a8c'
+        color: '#017a8c',
       })
     })
   })
