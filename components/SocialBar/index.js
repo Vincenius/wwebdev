@@ -20,7 +20,7 @@ const SocialBar = ({ children }) => (
             </a>
         </li>
         <li>
-            <a href="https://wweb.dev/rss.xml">
+            <a href="https://wweb.dev/rss/feed.xml">
                 <ui.Screenreader>RSS Feed</ui.Screenreader>
                 <RssFeedIcon width="24px" height="24px" />
             </a>

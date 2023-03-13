@@ -7,6 +7,7 @@ import NewsletterLink from '../components/NewsletterLink'
 import SponsorNinjaWidget from '../components/SponsorNinja'
 import Ad from '../components/Ads/Ad'
 import { generateWeekly, generateArticleAndResources } from '../content/generator'
+import generateStaticFiles from '../utils/generateStaticFiles'
 
 const Home = () => {
   return (
@@ -53,5 +54,15 @@ const Home = () => {
     </Layout>
   )
 }
+
+export async function getStaticProps(context) {
+  console.log('CALLED')
+  generateStaticFiles()
+
+  return {
+    props: {},
+  }
+}
+
 
 export default Home

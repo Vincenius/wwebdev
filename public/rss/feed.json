@@ -1,0 +1,2030 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "wweb.dev",
+    "home_page_url": "https://wweb.dev",
+    "feed_url": "https://wweb.dev/rss/feed.json",
+    "description": "Stay up to date with weekly updates, get resources for next project and read articles and tutorials about web development.",
+    "icon": "https://wweb.dev/logo-text.png",
+    "author": {
+        "name": "Vincent Will",
+        "url": "https://vincentwill.com"
+    },
+    "items": [
+        {
+            "id": "https://wweb.dev/resources/loader-generator",
+            "content_html": "A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.",
+            "url": "https://wweb.dev/resources/loader-generator",
+            "title": "Pure CSS Loader Generator",
+            "summary": "A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.",
+            "date_modified": "2023-03-06T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/coding-your-own-ai-2023-with-fastai",
+            "content_html": "This is a guide, which focuses on the critical parts of the fastai course. I'll cover how to set up the ecosystem and how to create, train and deploy an AI model.",
+            "url": "https://wweb.dev/blog/coding-your-own-ai-2023-with-fastai",
+            "title": "Coding your own AI in 2023 with fastai",
+            "summary": "This is a guide, which focuses on the critical parts of the fastai course. I'll cover how to set up the ecosystem and how to create, train and deploy an AI model.",
+            "date_modified": "2023-02-26T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/best-of-weekly-2022",
+            "content_html": "Exactly three years ago I published my first weekly newsletter. Since then I've sent out 125 Emails with a total of 1345 resources. Here are the 110 most clicked links.",
+            "url": "https://wweb.dev/resources/best-of-weekly-2022",
+            "title": "Best of Weekly Resources 2019-2022",
+            "summary": "Exactly three years ago I published my first weekly newsletter. Since then I've sent out 125 Emails with a total of 1345 resources. Here are the 110 most clicked links.",
+            "date_modified": "2022-11-26T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/templates/web-app-template",
+            "content_html": "A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.",
+            "url": "https://wweb.dev/templates/web-app-template",
+            "title": "Next.js Web App Template",
+            "summary": "A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.",
+            "date_modified": "2022-10-31T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/blur-background-css-generator",
+            "content_html": "A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.",
+            "url": "https://wweb.dev/resources/blur-background-css-generator",
+            "title": "Blur Background CSS Generator",
+            "summary": "A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.",
+            "date_modified": "2022-10-13T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/templates/micro-blogging-template",
+            "content_html": "A Next.js template for a twitter-like blog. You can write in markdown and upload images and videos.",
+            "url": "https://wweb.dev/templates/micro-blogging-template",
+            "title": "Next.js Micro-blogging Template",
+            "summary": "A Next.js template for a twitter-like blog. You can write in markdown and upload images and videos.",
+            "date_modified": "2022-09-28T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/templates/nextjs-blog-template",
+            "content_html": "This is a simple blog template to quickly get started with writing. It has a clean design and provides a lot of flexibility.",
+            "url": "https://wweb.dev/templates/nextjs-blog-template",
+            "title": "Next.js Blog Template",
+            "summary": "This is a simple blog template to quickly get started with writing. It has a clean design and provides a lot of flexibility.",
+            "date_modified": "2022-03-14T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/debugging-javascript-vscode",
+            "content_html": "In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...",
+            "url": "https://wweb.dev/blog/debugging-javascript-vscode",
+            "title": "A guide to debugging JavaScript in Visual Studio Code",
+            "summary": "In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...",
+            "date_modified": "2022-02-02T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/free-icon-sets",
+            "content_html": "A curated list of websites that offer collections of free icons.",
+            "url": "https://wweb.dev/resources/free-icon-sets",
+            "title": "Websites For Free Icon Sets",
+            "summary": "A curated list of websites that offer collections of free icons.",
+            "date_modified": "2020-11-05T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/js-object-functions-cheatsheet",
+            "content_html": "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.",
+            "url": "https://wweb.dev/resources/js-object-functions-cheatsheet",
+            "title": "JavaScript Object Functions Cheat Sheet",
+            "summary": "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.",
+            "date_modified": "2020-07-30T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/navigation-generator",
+            "content_html": "Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.",
+            "url": "https://wweb.dev/resources/navigation-generator",
+            "title": "Responsive Navigation Generator",
+            "summary": "Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.",
+            "date_modified": "2020-07-12T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/aws-getting-started-micro-service-lambda-dynamodb",
+            "content_html": "In this part, we're creating a DynamoDB. Then we create a Lambda for creating, reading, updating, and deleting entries in that database. And last we create...",
+            "url": "https://wweb.dev/blog/aws-getting-started-micro-service-lambda-dynamodb",
+            "title": "Getting Started with Serverless AWS (3/3) - Micro Services using Lambda, DynamoDB & API Gateway",
+            "summary": "In this part, we're creating a DynamoDB. Then we create a Lambda for creating, reading, updating, and deleting entries in that database. And last we create...",
+            "date_modified": "2020-07-05T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/aws-getting-started-cloudfront-and-domain",
+            "content_html": "In this part we're going to add CloudFront to deliver our website content with low latency to the user. Afterward, we'll add a domain with HTTPs for our website...",
+            "url": "https://wweb.dev/blog/aws-getting-started-cloudfront-and-domain",
+            "title": "Getting Started with Serverless AWS (2/3) - Distribute an S3 Bucket with CloudFront and add a Domain",
+            "summary": "In this part we're going to add CloudFront to deliver our website content with low latency to the user. Afterward, we'll add a domain with HTTPs for our website...",
+            "date_modified": "2020-06-21T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/aws-getting-started-deploy-static-website-s3",
+            "content_html": "In this series, we're creating a serverless stack using AWS. In this part, I'll show how to serve a static website through an S3 Bucket and how to deploy from your local machine...",
+            "url": "https://wweb.dev/blog/aws-getting-started-deploy-static-website-s3",
+            "title": "Getting Started with Serverless AWS (1/3) - Deploying a Static Website to S3",
+            "summary": "In this series, we're creating a serverless stack using AWS. In this part, I'll show how to serve a static website through an S3 Bucket and how to deploy from your local machine...",
+            "date_modified": "2020-06-14T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/how-to-craft-appealing-websites",
+            "content_html": "When I started developing websites I never knew where to start, when creating a new one. Over time I came up with a process that helped me not only getting started, but also making the websites...",
+            "url": "https://wweb.dev/blog/how-to-craft-appealing-websites",
+            "title": "How to craft appealing websites",
+            "summary": "When I started developing websites I never knew where to start, when creating a new one. Over time I came up with a process that helped me not only getting started, but also making the websites...",
+            "date_modified": "2020-05-28T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/js-array-functions-cheatsheet",
+            "content_html": "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.",
+            "url": "https://wweb.dev/resources/js-array-functions-cheatsheet",
+            "title": "JavaScript Array Functions Cheat Sheet",
+            "summary": "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.",
+            "date_modified": "2020-05-20T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/creative-hover-effects",
+            "content_html": "A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.",
+            "url": "https://wweb.dev/resources/creative-hover-effects",
+            "title": "Creative Hover Effects",
+            "summary": "A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.",
+            "date_modified": "2020-05-03T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/react-query-getting-started-tutorial",
+            "content_html": "Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...",
+            "url": "https://wweb.dev/blog/react-query-getting-started-tutorial",
+            "title": "Getting started with React Query - Easy server state management in React",
+            "summary": "Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...",
+            "date_modified": "2020-04-23T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/websites-for-inspiration",
+            "content_html": "Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.",
+            "url": "https://wweb.dev/resources/websites-for-inspiration",
+            "title": "Websites For Inspiration",
+            "summary": "Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.",
+            "date_modified": "2020-04-19T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/css-separator-generator",
+            "content_html": "A collection of customizable CSS section separators, with the possibility to easily copy the code.",
+            "url": "https://wweb.dev/resources/css-separator-generator",
+            "title": "CSS Section Separator Generator",
+            "summary": "A collection of customizable CSS section separators, with the possibility to easily copy the code.",
+            "date_modified": "2020-03-31T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/how-to-create-yeoman-generator",
+            "content_html": "I found myself often copy pasting code from other projects when starting new projects. This is why I created a Yeoman generator, which setups a nextjs project with styled components...",
+            "url": "https://wweb.dev/blog/how-to-create-yeoman-generator",
+            "title": "How to speed up kickstarting new projects with Yeoman",
+            "summary": "I found myself often copy pasting code from other projects when starting new projects. This is why I created a Yeoman generator, which setups a nextjs project with styled components...",
+            "date_modified": "2020-03-08T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/how-to-create-static-website-npm-scripts",
+            "content_html": "Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...",
+            "url": "https://wweb.dev/blog/how-to-create-static-website-npm-scripts",
+            "title": "How to build a static website without frameworks using npm scripts",
+            "summary": "Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...",
+            "date_modified": "2020-02-01T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/creative-backgrounds",
+            "content_html": "A curated list of websites where you can get creative backgrounds for your websites.",
+            "url": "https://wweb.dev/resources/creative-backgrounds",
+            "title": "Websites For Creative Backgrounds",
+            "summary": "A curated list of websites where you can get creative backgrounds for your websites.",
+            "date_modified": "2020-01-22T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/free-svg-illustrations",
+            "content_html": "Spice up your next project with beautiful illustrations from these websites.",
+            "url": "https://wweb.dev/resources/free-svg-illustrations",
+            "title": "A Curated List Of Websites For Free SVG Illustrations",
+            "summary": "Spice up your next project with beautiful illustrations from these websites.",
+            "date_modified": "2019-12-15T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/animated-css-background-generator",
+            "content_html": "With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.",
+            "url": "https://wweb.dev/resources/animated-css-background-generator",
+            "title": "Animated CSS Background Generator",
+            "summary": "With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.",
+            "date_modified": "2019-11-26T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/4-websites-to-recreate-to-practice-your-web-development-skills",
+            "content_html": "The best way to learn web development is by practice. But when you get started you might feel lost. There are just so many things to learn, which makes it hard to choose the right project to get started. In the following I'll share some…",
+            "url": "https://wweb.dev/blog/4-websites-to-recreate-to-practice-your-web-development-skills",
+            "title": "4 Websites to recreate to practice your web development skills",
+            "summary": "The best way to learn web development is by practice. But when you get started you might feel lost. There are just so many things to learn, which makes it hard to choose the right project to get started. In the following I'll share some…",
+            "date_modified": "2019-10-22T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/the-best-note-taking-apps-for-developers",
+            "content_html": "There are tons of note taking apps out there. But which ones are best suitable for developers? In the following I'll introduce three note taking apps for developers with good code support. + Available for: Mac, Windows, Android, iOS + Nice Code editor with a…",
+            "url": "https://wweb.dev/blog/the-best-note-taking-apps-for-developers",
+            "title": "The best note taking apps for developers",
+            "summary": "There are tons of note taking apps out there. But which ones are best suitable for developers? In the following I'll introduce three note taking apps for developers with good code support. + Available for: Mac, Windows, Android, iOS + Nice Code editor with a…",
+            "date_modified": "2019-10-15T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/how-to-toggle-an-array-item-in-react-state",
+            "content_html": "In this short article I will demonstrate how to write a function to toggle array items with Javascript and inside of React state. First of all let’s have a look how to toggle an array item with Javascript (ES6): This function will get an array and…",
+            "url": "https://wweb.dev/blog/how-to-toggle-an-array-item-in-react-state",
+            "title": "How to toggle an array item with Javascript in React State",
+            "summary": "In this short article I will demonstrate how to write a function to toggle array items with Javascript and inside of React state. First of all let’s have a look how to toggle an array item with Javascript (ES6): This function will get an array and…",
+            "date_modified": "2019-03-22T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/blog/widget-based-website-with-dynamic-vuejs-components",
+            "content_html": "In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…",
+            "url": "https://wweb.dev/blog/widget-based-website-with-dynamic-vuejs-components",
+            "title": "Widget based website with dynamic Vue.js components",
+            "summary": "In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…",
+            "date_modified": "2018-07-26T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/139",
+            "content_html": "crul, WebContainers, Windstatic, ImageHover and more...",
+            "url": "https://wweb.dev/weekly/139",
+            "title": "Weekly Web Development Resources #139",
+            "summary": "crul, WebContainers, Windstatic, ImageHover and more...",
+            "date_modified": "2023-03-07T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/138",
+            "content_html": "Poet.so, PrimeReact, StatiCrypt, Bun, Openverse and more...",
+            "url": "https://wweb.dev/weekly/138",
+            "title": "Weekly Web Development Resources #138",
+            "summary": "Poet.so, PrimeReact, StatiCrypt, Bun, Openverse and more...",
+            "date_modified": "2023-02-28T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/137",
+            "content_html": "PhotoPrism, PairDrop, Screenstab, ColorSpace and more...",
+            "url": "https://wweb.dev/weekly/137",
+            "title": "Weekly Web Development Resources #137",
+            "summary": "PhotoPrism, PairDrop, Screenstab, ColorSpace and more...",
+            "date_modified": "2023-02-14T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/136",
+            "content_html": "Atlas Icons, Yopta Editor, Design rules, Termzy and more...",
+            "url": "https://wweb.dev/weekly/136",
+            "title": "Weekly Web Development Resources #136",
+            "summary": "Atlas Icons, Yopta Editor, Design rules, Termzy and more...",
+            "date_modified": "2023-02-07T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/135",
+            "content_html": "Pico.css, Rete.js, Logggos, HTMLrev, SST and more...",
+            "url": "https://wweb.dev/weekly/135",
+            "title": "Weekly Web Development Resources #135",
+            "summary": "Pico.css, Rete.js, Logggos, HTMLrev, SST and more...",
+            "date_modified": "2023-01-31T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/134",
+            "content_html": "waitlist.rsvp, Legitify, ImaginAIry, OKLCH and more...",
+            "url": "https://wweb.dev/weekly/134",
+            "title": "Weekly Web Development Resources #134",
+            "summary": "waitlist.rsvp, Legitify, ImaginAIry, OKLCH and more...",
+            "date_modified": "2023-01-24T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/133",
+            "content_html": "Radix, val town, Lorem Faces, Alpine.js, FeatBit and more...",
+            "url": "https://wweb.dev/weekly/133",
+            "title": "Weekly Web Development Resources #133",
+            "summary": "Radix, val town, Lorem Faces, Alpine.js, FeatBit and more...",
+            "date_modified": "2023-01-17T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/132",
+            "content_html": "Sailboat UI, UpDownQuest, Boringer Avatars and more...",
+            "url": "https://wweb.dev/weekly/132",
+            "title": "Weekly Web Development Resources #132",
+            "summary": "Sailboat UI, UpDownQuest, Boringer Avatars and more...",
+            "date_modified": "2023-01-10T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/131",
+            "content_html": "CSS Subgrid, AngryTools, Tamagui, FormEasy and more...",
+            "url": "https://wweb.dev/weekly/131",
+            "title": "Weekly Web Development Resources #131",
+            "summary": "CSS Subgrid, AngryTools, Tamagui, FormEasy and more...",
+            "date_modified": "2023-01-03T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/130",
+            "content_html": "React Wrap Balancer, UI Content, Theme Toggles and more...",
+            "url": "https://wweb.dev/weekly/130",
+            "title": "Weekly Web Development Resources #130",
+            "summary": "React Wrap Balancer, UI Content, Theme Toggles and more...",
+            "date_modified": "2022-12-27T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/129",
+            "content_html": "Unovis, dddepth, QuickNote, GitHubUnwrapped and more...",
+            "url": "https://wweb.dev/weekly/129",
+            "title": "Weekly Web Development Resources #129",
+            "summary": "Unovis, dddepth, QuickNote, GitHubUnwrapped and more...",
+            "date_modified": "2022-12-20T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/128",
+            "content_html": "Landingexam, DevTunes FM, Reapop, Console Ninja and more...",
+            "url": "https://wweb.dev/weekly/128",
+            "title": "Weekly Web Development Resources #128",
+            "summary": "Landingexam, DevTunes FM, Reapop, Console Ninja and more...",
+            "date_modified": "2022-12-13T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/127",
+            "content_html": "pppsychedelic, For the Badge, MrScraper, Eleven and more...",
+            "url": "https://wweb.dev/weekly/127",
+            "title": "Weekly Web Development Resources #127",
+            "summary": "pppsychedelic, For the Badge, MrScraper, Eleven and more...",
+            "date_modified": "2022-12-06T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/126",
+            "content_html": "superplate, nnneon, TinyWow, Unclutter, Git Notes and more...",
+            "url": "https://wweb.dev/weekly/126",
+            "title": "Weekly Web Development Resources #126",
+            "summary": "superplate, nnneon, TinyWow, Unclutter, Git Notes and more...",
+            "date_modified": "2022-11-29T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/125",
+            "content_html": "CSS Clothoid Corners, Sapling, poxi, TourGuide JS and more...",
+            "url": "https://wweb.dev/weekly/125",
+            "title": "Weekly Web Development Resources #125",
+            "summary": "CSS Clothoid Corners, Sapling, poxi, TourGuide JS and more...",
+            "date_modified": "2022-11-22T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/124",
+            "content_html": "nfty.sh, Katana, Postcard, Starter Tab, JSON Crack and more...",
+            "url": "https://wweb.dev/weekly/124",
+            "title": "Weekly Web Development Resources #124",
+            "summary": "nfty.sh, Katana, Postcard, Starter Tab, JSON Crack and more...",
+            "date_modified": "2022-11-15T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/123",
+            "content_html": "Clips, missing.css, Futuristic CSS, Kodemo and more...",
+            "url": "https://wweb.dev/weekly/123",
+            "title": "Weekly Web Development Resources #123",
+            "summary": "Clips, missing.css, Futuristic CSS, Kodemo and more...",
+            "date_modified": "2022-11-08T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/122",
+            "content_html": "gistlib, Bolt.css, Turbo, AnimatiSS, uiverse and more...",
+            "url": "https://wweb.dev/weekly/122",
+            "title": "Weekly Web Development Resources #122",
+            "summary": "gistlib, Bolt.css, Turbo, AnimatiSS, uiverse and more...",
+            "date_modified": "2022-11-01T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/121",
+            "content_html": "Lucide, Linen, WebC, Outstatic, CSS Shapes and more...",
+            "url": "https://wweb.dev/weekly/121",
+            "title": "Weekly Web Development Resources #121",
+            "summary": "Lucide, Linen, WebC, Outstatic, CSS Shapes and more...",
+            "date_modified": "2022-10-25T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/120",
+            "content_html": "Randoma11y, Agreper, Can I DevTools, Metlo and more...",
+            "url": "https://wweb.dev/weekly/120",
+            "title": "Weekly Web Development Resources #120",
+            "summary": "Randoma11y, Agreper, Can I DevTools, Metlo and more...",
+            "date_modified": "2022-10-18T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/119",
+            "content_html": "Jsx Mail, Scribbble, Satori, Templating in HTML and more...",
+            "url": "https://wweb.dev/weekly/119",
+            "title": "Weekly Web Development Resources #119",
+            "summary": "Jsx Mail, Scribbble, Satori, Templating in HTML and more...",
+            "date_modified": "2022-10-11T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/118",
+            "content_html": "Dear Console, tremor, Devbox, Rematch, Upscayl and more...",
+            "url": "https://wweb.dev/weekly/118",
+            "title": "Weekly Web Development Resources #118",
+            "summary": "Dear Console, tremor, Devbox, Rematch, Upscayl and more...",
+            "date_modified": "2022-10-04T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/117",
+            "content_html": "Pika, Dub, Micro SaaS Ideas, No-Signup Tools and more...",
+            "url": "https://wweb.dev/weekly/117",
+            "title": "Weekly Web Development Resources #117",
+            "summary": "Pika, Dub, Micro SaaS Ideas, No-Signup Tools and more...",
+            "date_modified": "2022-09-27T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/116",
+            "content_html": "Tylify, lightGallery, Mockoops, Half baked ideas and more...",
+            "url": "https://wweb.dev/weekly/116",
+            "title": "Weekly Web Development Resources #116",
+            "summary": "Tylify, lightGallery, Mockoops, Half baked ideas and more...",
+            "date_modified": "2022-09-20T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/115",
+            "content_html": "GitHub Readme Stats, MiroTalk, Hackertab, 12ft and more...",
+            "url": "https://wweb.dev/weekly/115",
+            "title": "Weekly Web Development Resources #115",
+            "summary": "GitHub Readme Stats, MiroTalk, Hackertab, 12ft and more...",
+            "date_modified": "2022-03-29T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/114",
+            "content_html": "Tailymate, Avvvatars, Oh-heck, jless, Metrics and more...",
+            "url": "https://wweb.dev/weekly/114",
+            "title": "Weekly Web Development Resources #114",
+            "summary": "Tailymate, Avvvatars, Oh-heck, jless, Metrics and more...",
+            "date_modified": "2022-03-22T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/113",
+            "content_html": "nextjs-components, pppalette, CSS Checker, kod.so and more...",
+            "url": "https://wweb.dev/weekly/113",
+            "title": "Weekly Web Development Resources #113",
+            "summary": "nextjs-components, pppalette, CSS Checker, kod.so and more...",
+            "date_modified": "2022-03-15T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/112",
+            "content_html": "SingleFile, DevDocs, One Tooling, zzzenith, Drift and more...",
+            "url": "https://wweb.dev/weekly/112",
+            "title": "Weekly Web Development Resources #112",
+            "summary": "SingleFile, DevDocs, One Tooling, zzzenith, Drift and more...",
+            "date_modified": "2022-03-08T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/111",
+            "content_html": "Flowbite, SuperShields, SPCSS, React Shimmer, v8n and more...",
+            "url": "https://wweb.dev/weekly/111",
+            "title": "Weekly Web Development Resources #111",
+            "summary": "Flowbite, SuperShields, SPCSS, React Shimmer, v8n and more...",
+            "date_modified": "2022-03-01T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/110",
+            "content_html": "Fonts, RegEx Library, tinydomain, privacy-redirect and more...",
+            "url": "https://wweb.dev/weekly/110",
+            "title": "Weekly Web Development Resources #110",
+            "summary": "Fonts, RegEx Library, tinydomain, privacy-redirect and more...",
+            "date_modified": "2022-02-22T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/109",
+            "content_html": "cccreate, ToolJet, CSSUI, Partytown, DevToysMac and more...",
+            "url": "https://wweb.dev/weekly/109",
+            "title": "Weekly Web Development Resources #109",
+            "summary": "cccreate, ToolJet, CSSUI, Partytown, DevToysMac and more...",
+            "date_modified": "2022-02-15T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/108",
+            "content_html": "Oldbook.css, dddraw, Device Frames, LetMeScroll and more...",
+            "url": "https://wweb.dev/weekly/108",
+            "title": "Weekly Web Development Resources #108",
+            "summary": "Oldbook.css, dddraw, Device Frames, LetMeScroll and more...",
+            "date_modified": "2022-02-08T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/107",
+            "content_html": "Cool Backgrounds, Favicon Generator, NextUI, SVGOMG and more...",
+            "url": "https://wweb.dev/weekly/107",
+            "title": "Weekly Web Development Resources #107",
+            "summary": "Cool Backgrounds, Favicon Generator, NextUI, SVGOMG and more...",
+            "date_modified": "2022-02-01T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/106",
+            "content_html": "TinyBase, edit.photo, Tidy Free, Charm, Beercss and more...",
+            "url": "https://wweb.dev/weekly/106",
+            "title": "Weekly Web Development Resources #106",
+            "summary": "TinyBase, edit.photo, Tidy Free, Charm, Beercss and more...",
+            "date_modified": "2022-01-25T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/105",
+            "content_html": "hue.tools, clay.css, Plock, Parcel CSS, Simple.css and more...",
+            "url": "https://wweb.dev/weekly/105",
+            "title": "Weekly Web Development Resources #105",
+            "summary": "hue.tools, clay.css, Plock, Parcel CSS, Simple.css and more...",
+            "date_modified": "2022-01-18T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/104",
+            "content_html": "Typed.css, Cobe, Slowfil.es, Vanilla List, Icônes and more...",
+            "url": "https://wweb.dev/weekly/104",
+            "title": "Weekly Web Development Resources #104",
+            "summary": "Typed.css, Cobe, Slowfil.es, Vanilla List, Icônes and more...",
+            "date_modified": "2022-01-11T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/103",
+            "content_html": "CSS Diner, Tech blogs, Zotero, Atomic Habits and more...",
+            "url": "https://wweb.dev/weekly/103",
+            "title": "Weekly Web Development Resources #103",
+            "summary": "CSS Diner, Tech blogs, Zotero, Atomic Habits and more...",
+            "date_modified": "2022-01-04T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/102",
+            "content_html": "ColorHuddle, Vitest, Intab Resources, BlackMagic and more...",
+            "url": "https://wweb.dev/weekly/102",
+            "title": "Weekly Web Development Resources #102",
+            "summary": "ColorHuddle, Vitest, Intab Resources, BlackMagic and more...",
+            "date_modified": "2021-12-28T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/101",
+            "content_html": "Patterns, Glitch effect, Guess CSS, Doodle CSS and more...",
+            "url": "https://wweb.dev/weekly/101",
+            "title": "Weekly Web Development Resources #101",
+            "summary": "Patterns, Glitch effect, Guess CSS, Doodle CSS and more...",
+            "date_modified": "2021-12-21T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/100",
+            "content_html": "Floating UI, Deta, Dracula, Defensive CSS, ffflux and more...",
+            "url": "https://wweb.dev/weekly/100",
+            "title": "Weekly Web Development Resources #100",
+            "summary": "Floating UI, Deta, Dracula, Defensive CSS, ffflux and more...",
+            "date_modified": "2021-12-14T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/99",
+            "content_html": "Code Hike, Nice Modal, PickBetterPack, Open Props and more...",
+            "url": "https://wweb.dev/weekly/99",
+            "title": "Weekly Web Development Resources #99",
+            "summary": "Code Hike, Nice Modal, PickBetterPack, Open Props and more...",
+            "date_modified": "2021-12-07T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/98",
+            "content_html": "Twind, nnnoise, Image Optimizer, a11y myths, EmailTimer and more...",
+            "url": "https://wweb.dev/weekly/98",
+            "title": "Weekly Web Development Resources #98",
+            "summary": "Twind, nnnoise, Image Optimizer, a11y myths, EmailTimer and more...",
+            "date_modified": "2021-11-30T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/97",
+            "content_html": "Shadow Palette Generator, tldraw, RegEx Learn MicroDiff and more...",
+            "url": "https://wweb.dev/weekly/97",
+            "title": "Weekly Web Development Resources #97",
+            "summary": "Shadow Palette Generator, tldraw, RegEx Learn MicroDiff and more...",
+            "date_modified": "2021-11-23T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/96",
+            "content_html": "bbburst, Can I Include, Morphing Submit Button, Splide and more...",
+            "url": "https://wweb.dev/weekly/96",
+            "title": "Weekly Web Development Resources #96",
+            "summary": "bbburst, Can I Include, Morphing Submit Button, Splide and more...",
+            "date_modified": "2021-11-16T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/95",
+            "content_html": "Image Upscaler, Notifire, MistQL, Codeamigo, Iconscout and more...",
+            "url": "https://wweb.dev/weekly/95",
+            "title": "Weekly Web Development Resources #95",
+            "summary": "Image Upscaler, Notifire, MistQL, Codeamigo, Iconscout and more...",
+            "date_modified": "2021-11-09T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/94",
+            "content_html": "LT Browser, Life of Discipline, nice-waves, Blobity and more...",
+            "url": "https://wweb.dev/weekly/94",
+            "title": "Weekly Web Development Resources #94",
+            "summary": "LT Browser, Life of Discipline, nice-waves, Blobity and more...",
+            "date_modified": "2021-11-02T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/93",
+            "content_html": "Analyze CSS, useAwsui, Linaria, Water.css, Magit and more...",
+            "url": "https://wweb.dev/weekly/93",
+            "title": "Weekly Web Development Resources #93",
+            "summary": "Analyze CSS, useAwsui, Linaria, Water.css, Magit and more...",
+            "date_modified": "2021-10-26T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/92",
+            "content_html": "LocalStack, MJML, CSS backgrounds, 3D Icons, Vizzu and more...",
+            "url": "https://wweb.dev/weekly/92",
+            "title": "Weekly Web Development Resources #92",
+            "summary": "LocalStack, MJML, CSS backgrounds, 3D Icons, Vizzu and more...",
+            "date_modified": "2021-10-19T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/91",
+            "content_html": "redact.photo, Refine, Fette­Palette, Atropos, TinyJson and more...",
+            "url": "https://wweb.dev/weekly/91",
+            "title": "Weekly Web Development Resources #91",
+            "summary": "redact.photo, Refine, Fette­Palette, Atropos, TinyJson and more...",
+            "date_modified": "2021-10-12T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/90",
+            "content_html": "LuckyResumeMaker, Funky button, react-philosophies and more...",
+            "url": "https://wweb.dev/weekly/90",
+            "title": "Weekly Web Development Resources #90",
+            "summary": "LuckyResumeMaker, Funky button, react-philosophies and more...",
+            "date_modified": "2021-10-05T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/89",
+            "content_html": "Burdy, Basic Pattern Repository, cccreate, Saveddit and more...",
+            "url": "https://wweb.dev/weekly/89",
+            "title": "Weekly Web Development Resources #89",
+            "summary": "Burdy, Basic Pattern Repository, cccreate, Saveddit and more...",
+            "date_modified": "2021-09-28T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/88",
+            "content_html": "ToolJet, Doodle Ipsum, Theatre.js, Grainy Gradients and more...",
+            "url": "https://wweb.dev/weekly/88",
+            "title": "Weekly Web Development Resources #88",
+            "summary": "ToolJet, Doodle Ipsum, Theatre.js, Grainy Gradients and more...",
+            "date_modified": "2021-09-21T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/87",
+            "content_html": "Design Junction, Figen, Gokarna, SpeedVitals, Solid and more...",
+            "url": "https://wweb.dev/weekly/87",
+            "title": "Weekly Web Development Resources #87",
+            "summary": "Design Junction, Figen, Gokarna, SpeedVitals, Solid and more...",
+            "date_modified": "2021-09-14T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/86",
+            "content_html": "OpenMoji, Buttons Generator, Devboard, couleur.io and more...",
+            "url": "https://wweb.dev/weekly/86",
+            "title": "Weekly Web Development Resources #86",
+            "summary": "OpenMoji, Buttons Generator, Devboard, couleur.io and more...",
+            "date_modified": "2021-09-07T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/85",
+            "content_html": "Blokada, CSS Modules, daisyUI, Imba, Progressive Tooling and more...",
+            "url": "https://wweb.dev/weekly/85",
+            "title": "Weekly Web Development Resources #85",
+            "summary": "Blokada, CSS Modules, daisyUI, Imba, Progressive Tooling and more...",
+            "date_modified": "2021-08-18T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/84",
+            "content_html": "Jotai, LÖVR, LiveKit, AVPress, StackFinder, Gradients and more...",
+            "url": "https://wweb.dev/weekly/84",
+            "title": "Weekly Web Development Resources #84",
+            "summary": "Jotai, LÖVR, LiveKit, AVPress, StackFinder, Gradients and more...",
+            "date_modified": "2021-08-10T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/83",
+            "content_html": "Instahues, Wicked Backgrounds, Piped, Welcome UI and more...",
+            "url": "https://wweb.dev/weekly/83",
+            "title": "Weekly Web Development Resources #83",
+            "summary": "Instahues, Wicked Backgrounds, Piped, Welcome UI and more...",
+            "date_modified": "2021-08-03T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/82",
+            "content_html": "SVG Gobbler, Salvia-kit, graphlatte, Maker Stations and more...",
+            "url": "https://wweb.dev/weekly/82",
+            "title": "Weekly Web Development Resources #82",
+            "summary": "SVG Gobbler, Salvia-kit, graphlatte, Maker Stations and more...",
+            "date_modified": "2021-07-27T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/81",
+            "content_html": "Sa11y, gridless.design, Glass UI, Line Icons, Rooks and more...",
+            "url": "https://wweb.dev/weekly/81",
+            "title": "Weekly Web Development Resources #81",
+            "summary": "Sa11y, gridless.design, Glass UI, Line Icons, Rooks and more...",
+            "date_modified": "2021-07-20T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/80",
+            "content_html": "Copy & Paste CSS, UI Snippets, Nextra, use-color and more...",
+            "url": "https://wweb.dev/weekly/80",
+            "title": "Weekly Web Development Resources #80",
+            "summary": "Copy & Paste CSS, UI Snippets, Nextra, use-color and more...",
+            "date_modified": "2021-07-13T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/79",
+            "content_html": "nushell, Utopia, ReScript, DenoDB, Super Agent and more...",
+            "url": "https://wweb.dev/weekly/79",
+            "title": "Weekly Web Development Resources #79",
+            "summary": "nushell, Utopia, ReScript, DenoDB, Super Agent and more...",
+            "date_modified": "2021-06-22T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/78",
+            "content_html": "Astro, BootStarters, GitHub Flat Data, Open Tags and more...",
+            "url": "https://wweb.dev/weekly/78",
+            "title": "Weekly Web Development Resources #78",
+            "summary": "Astro, BootStarters, GitHub Flat Data, Open Tags and more...",
+            "date_modified": "2021-06-15T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/77",
+            "content_html": "mermaid, Links on Performance, Mastershot, macOCR and more...",
+            "url": "https://wweb.dev/weekly/77",
+            "title": "Weekly Web Development Resources #77",
+            "summary": "mermaid, Links on Performance, Mastershot, macOCR and more...",
+            "date_modified": "2021-06-08T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/76",
+            "content_html": "Awesome Privacy, Color Gradient, Boring Avatars, NocoDB and more...",
+            "url": "https://wweb.dev/weekly/76",
+            "title": "Weekly Web Development Resources #76",
+            "summary": "Awesome Privacy, Color Gradient, Boring Avatars, NocoDB and more...",
+            "date_modified": "2021-06-01T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/75",
+            "content_html": "Iconoir, Learn CSS, pmndrs market, Tail Blend, AImages and more...",
+            "url": "https://wweb.dev/weekly/75",
+            "title": "Weekly Web Development Resources #75",
+            "summary": "Iconoir, Learn CSS, pmndrs market, Tail Blend, AImages and more...",
+            "date_modified": "2021-05-25T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/74",
+            "content_html": "mmm.page, PINTR, Codewell, Modern JavaScript, Mantine and more...",
+            "url": "https://wweb.dev/weekly/74",
+            "title": "Weekly Web Development Resources #74",
+            "summary": "mmm.page, PINTR, Codewell, Modern JavaScript, Mantine and more...",
+            "date_modified": "2021-05-18T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/73",
+            "content_html": "How React hooks work, ClearURLs, Bootstrap 5, Oslo, HTML Tips and more...",
+            "url": "https://wweb.dev/weekly/73",
+            "title": "Weekly Web Development Resources #73",
+            "summary": "How React hooks work, ClearURLs, Bootstrap 5, Oslo, HTML Tips and more...",
+            "date_modified": "2021-05-11T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/72",
+            "content_html": "MailMask, css-shorthands, Waterfaller, Frontend Practice and more...",
+            "url": "https://wweb.dev/weekly/72",
+            "title": "Weekly Web Development Resources #72",
+            "summary": "MailMask, css-shorthands, Waterfaller, Frontend Practice and more...",
+            "date_modified": "2021-05-04T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/71",
+            "content_html": "SimpleR State, Cusdis, HTML boilerplate, Awesome-Selfhosted and more...",
+            "url": "https://wweb.dev/weekly/71",
+            "title": "Weekly Web Development Resources #71",
+            "summary": "SimpleR State, Cusdis, HTML boilerplate, Awesome-Selfhosted and more...",
+            "date_modified": "2021-04-27T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/70",
+            "content_html": "Design Resources, browser cookies, GitHub Theme, DirectShare and more...",
+            "url": "https://wweb.dev/weekly/70",
+            "title": "Weekly Web Development Resources #70",
+            "summary": "Design Resources, browser cookies, GitHub Theme, DirectShare and more...",
+            "date_modified": "2021-04-20T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/69",
+            "content_html": "Coolify, React + D3.js, Fontshare, Gradient Generator, moovie.js and more...",
+            "url": "https://wweb.dev/weekly/69",
+            "title": "Weekly Web Development Resources #69",
+            "summary": "Coolify, React + D3.js, Fontshare, Gradient Generator, moovie.js and more...",
+            "date_modified": "2021-04-13T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/68",
+            "content_html": "transition.css, use-local-storage-state, Re:factor, FicusJS and more...",
+            "url": "https://wweb.dev/weekly/68",
+            "title": "Weekly Web Development Resources #68",
+            "summary": "transition.css, use-local-storage-state, Re:factor, FicusJS and more...",
+            "date_modified": "2021-03-30T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/67",
+            "content_html": "Splite, Focalboard, Learn LaTeX, chatwoot, Sorted CSS Colors and more...",
+            "url": "https://wweb.dev/weekly/67",
+            "title": "Weekly Web Development Resources #67",
+            "summary": "Splite, Focalboard, Learn LaTeX, chatwoot, Sorted CSS Colors and more...",
+            "date_modified": "2021-03-23T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/66",
+            "content_html": "Clone Wars, StartupToolbox, react-use, amigos, conic.css and more...",
+            "url": "https://wweb.dev/weekly/66",
+            "title": "Weekly Web Development Resources #66",
+            "summary": "Clone Wars, StartupToolbox, react-use, amigos, conic.css and more...",
+            "date_modified": "2021-03-16T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/65",
+            "content_html": "Local PDF Tools, Generative SVG Social Images, Parvus, Griddy and more...",
+            "url": "https://wweb.dev/weekly/65",
+            "title": "Weekly Web Development Resources #65",
+            "summary": "Local PDF Tools, Generative SVG Social Images, Parvus, Griddy and more...",
+            "date_modified": "2021-03-09T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/64",
+            "content_html": "Code, Shadows, Blobmixer, Front-End Tips, HTML Boilerplates and more...",
+            "url": "https://wweb.dev/weekly/64",
+            "title": "Weekly Web Development Resources #64",
+            "summary": "Code, Shadows, Blobmixer, Front-End Tips, HTML Boilerplates and more...",
+            "date_modified": "2021-03-01T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/63",
+            "content_html": "Charts.css, Zsh Tricks, Responsive Design Patterns and more...",
+            "url": "https://wweb.dev/weekly/63",
+            "title": "Weekly Web Development Resources #63",
+            "summary": "Charts.css, Zsh Tricks, Responsive Design Patterns and more...",
+            "date_modified": "2021-02-23T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/62",
+            "content_html": "svgwaves.io, Remotion, github1s, ️Fusuma, CSS Polygon Shapes and more...",
+            "url": "https://wweb.dev/weekly/62",
+            "title": "Weekly Web Development Resources #62",
+            "summary": "svgwaves.io, Remotion, github1s, ️Fusuma, CSS Polygon Shapes and more...",
+            "date_modified": "2021-02-16T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/61",
+            "content_html": "Free Animated Headers, Archivy, SVG Shape Generator, SVG Crop and more...",
+            "url": "https://wweb.dev/weekly/61",
+            "title": "Weekly Web Development Resources #61",
+            "summary": "Free Animated Headers, Archivy, SVG Shape Generator, SVG Crop and more...",
+            "date_modified": "2021-02-09T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/60",
+            "content_html": "John Doe Webpage, Deskreen, Pills, Vue Native, Dev Containers and more...",
+            "url": "https://wweb.dev/weekly/60",
+            "title": "Weekly Web Development Resources #60",
+            "summary": "John Doe Webpage, Deskreen, Pills, Vue Native, Dev Containers and more...",
+            "date_modified": "2021-02-02T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/59",
+            "content_html": "Glyphs, Ojoy, Nested Media Queries, MagicTween, ButtonBuddy and more...",
+            "url": "https://wweb.dev/weekly/59",
+            "title": "Weekly Web Development Resources #59",
+            "summary": "Glyphs, Ojoy, Nested Media Queries, MagicTween, ButtonBuddy and more...",
+            "date_modified": "2021-01-26T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/58",
+            "content_html": "Figma Crash Course, The future of CSS, LinkAce, useAnimations and more...",
+            "url": "https://wweb.dev/weekly/58",
+            "title": "Weekly Web Development Resources #58",
+            "summary": "Figma Crash Course, The future of CSS, LinkAce, useAnimations and more...",
+            "date_modified": "2021-01-19T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/57",
+            "content_html": "Hotwire, AnimXYZ, 10 KB Club, Pattern Generator, Scale and more...",
+            "url": "https://wweb.dev/weekly/57",
+            "title": "Weekly Web Development Resources #57",
+            "summary": "Hotwire, AnimXYZ, 10 KB Club, Pattern Generator, Scale and more...",
+            "date_modified": "2021-01-12T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/56",
+            "content_html": "useAuth, Polotno Studio, EStimator, Scrollytelling with React and more...",
+            "url": "https://wweb.dev/weekly/56",
+            "title": "Weekly Web Development Resources #56",
+            "summary": "useAuth, Polotno Studio, EStimator, Scrollytelling with React and more...",
+            "date_modified": "2020-12-22T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/55",
+            "content_html": "Checklist Design, shotr, GIF Maker, Social Image Generator and more...",
+            "url": "https://wweb.dev/weekly/55",
+            "title": "Weekly Web Development Resources #55",
+            "summary": "Checklist Design, shotr, GIF Maker, Social Image Generator and more...",
+            "date_modified": "2020-12-15T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/54",
+            "content_html": "css.lab, React is slow, Beautiful Codes, micro-frontends and more...",
+            "url": "https://wweb.dev/weekly/54",
+            "title": "Weekly Web Development Resources #54",
+            "summary": "css.lab, React is slow, Beautiful Codes, micro-frontends and more...",
+            "date_modified": "2020-12-08T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/53",
+            "content_html": "Advent of Code, Etebase, Text Gradients, Building Your Color Palette and more...",
+            "url": "https://wweb.dev/weekly/53",
+            "title": "Weekly Web Development Resources #53",
+            "summary": "Advent of Code, Etebase, Text Gradients, Building Your Color Palette and more...",
+            "date_modified": "2020-12-01T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/52",
+            "content_html": "Upptime, Pretty Snap, Browsh, Wasp, Pattern Collect, 1MB Club and more...",
+            "url": "https://wweb.dev/weekly/52",
+            "title": "Weekly Web Development Resources #52",
+            "summary": "Upptime, Pretty Snap, Browsh, Wasp, Pattern Collect, 1MB Club and more...",
+            "date_modified": "2020-11-24T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/51",
+            "content_html": "Socialify, Effective Skeleton Screens, Notion Clone, Seasonal.css and more...",
+            "url": "https://wweb.dev/weekly/51",
+            "title": "Weekly Web Development Resources #51",
+            "summary": "Socialify, Effective Skeleton Screens, Notion Clone, Seasonal.css and more...",
+            "date_modified": "2020-11-17T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/50",
+            "content_html": "Cirrus.CSS, Device Shots, Pattern Monster, CSS Spider, Font Of Web and more...",
+            "url": "https://wweb.dev/weekly/50",
+            "title": "Weekly Web Development Resources #50",
+            "summary": "Cirrus.CSS, Device Shots, Pattern Monster, CSS Spider, Font Of Web and more...",
+            "date_modified": "2020-11-11T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/49",
+            "content_html": "Next.js 10, Placeholder Logos, link-to-qr, React Flow, Merlin and more...",
+            "url": "https://wweb.dev/weekly/49",
+            "title": "Weekly Web Development Resources #49",
+            "summary": "Next.js 10, Placeholder Logos, link-to-qr, React Flow, Merlin and more...",
+            "date_modified": "2020-11-03T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/48",
+            "content_html": "Phosphor Icons, SVG Favicon Maker, State Of CSS 2020, Checka11y.css and more...",
+            "url": "https://wweb.dev/weekly/48",
+            "title": "Weekly Web Development Resources #48",
+            "summary": "Phosphor Icons, SVG Favicon Maker, State Of CSS 2020, Checka11y.css and more...",
+            "date_modified": "2020-10-27T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/47",
+            "content_html": "ScreenBean, Coded Mails, CSS Background Patterns, dragmove.js, cssbuttons and more...",
+            "url": "https://wweb.dev/weekly/47",
+            "title": "Weekly Web Development Resources #47",
+            "summary": "ScreenBean, Coded Mails, CSS Background Patterns, dragmove.js, cssbuttons and more...",
+            "date_modified": "2020-10-20T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/46",
+            "content_html": "hola svg, Design Resources, JavaScript Iterators, vime, clamp, Phelia and more...",
+            "url": "https://wweb.dev/weekly/46",
+            "title": "Weekly Web Development Resources #46",
+            "summary": "hola svg, Design Resources, JavaScript Iterators, vime, clamp, Phelia and more...",
+            "date_modified": "2020-10-13T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/45",
+            "content_html": "IconPark, CSS Grid Layout, visx, a11yresources, CSS font-size-adjust and more...",
+            "url": "https://wweb.dev/weekly/45",
+            "title": "Weekly Web Development Resources #45",
+            "summary": "IconPark, CSS Grid Layout, visx, a11yresources, CSS font-size-adjust and more...",
+            "date_modified": "2020-10-06T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/44",
+            "content_html": "Box-Shadow Generator, Check Browsers Support, Learn Git Branching, Headless UI and more...",
+            "url": "https://wweb.dev/weekly/44",
+            "title": "Weekly Web Development Resources #44",
+            "summary": "Box-Shadow Generator, Check Browsers Support, Learn Git Branching, Headless UI and more...",
+            "date_modified": "2020-09-29T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/43",
+            "content_html": "How HTTPS Works, GitHub CLI 1.0, Domains for the Rest of Us, content-visibility and more...",
+            "url": "https://wweb.dev/weekly/43",
+            "title": "Weekly Web Development Resources #43",
+            "summary": "How HTTPS Works, GitHub CLI 1.0, Domains for the Rest of Us, content-visibility and more...",
+            "date_modified": "2020-09-22T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/42",
+            "content_html": "lookup.design, Capsule, Stitches, Beyond Media Queries, Vanilla Colorful and more...",
+            "url": "https://wweb.dev/weekly/42",
+            "title": "Weekly Web Development Resources #42",
+            "summary": "lookup.design, Capsule, Stitches, Beyond Media Queries, Vanilla Colorful and more...",
+            "date_modified": "2020-09-15T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/41",
+            "content_html": "Shortcuts.design, Omatsuri, ztext.js, Previewed, Morphing SVG, Selecto.js and more...",
+            "url": "https://wweb.dev/weekly/41",
+            "title": "Weekly Web Development Resources #41",
+            "summary": "Shortcuts.design, Omatsuri, ztext.js, Previewed, Morphing SVG, Selecto.js and more...",
+            "date_modified": "2020-09-08T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/40",
+            "content_html": "umami, Deviceful, heroicons, handwritten.js, GitDuck, The Animated Web and more...",
+            "url": "https://wweb.dev/weekly/40",
+            "title": "Weekly Web Development Resources #40",
+            "summary": "umami, Deviceful, heroicons, handwritten.js, GitDuck, The Animated Web and more...",
+            "date_modified": "2020-08-25T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/39",
+            "content_html": "Elder.js, Responsively, Storybook 6.0, zustand, Kor, Docusaurus, Embla Carousel and more...",
+            "url": "https://wweb.dev/weekly/39",
+            "title": "Weekly Web Development Resources #39",
+            "summary": "Elder.js, Responsively, Storybook 6.0, zustand, Kor, Docusaurus, Embla Carousel and more...",
+            "date_modified": "2020-08-18T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/38",
+            "content_html": "Bumbag, Magnetic Buttons, moment-guess, PurgeCSS, content-visibility, Papercups and more...",
+            "url": "https://wweb.dev/weekly/38",
+            "title": "Weekly Web Development Resources #38",
+            "summary": "Bumbag, Magnetic Buttons, moment-guess, PurgeCSS, content-visibility, Papercups and more...",
+            "date_modified": "2020-08-11T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/37",
+            "content_html": "Shoelace, CSS3 loaders, tinykeys, useImageColor, Laws of UX, Teenyicons and more...",
+            "url": "https://wweb.dev/weekly/37",
+            "title": "Weekly Web Development Resources #37",
+            "summary": "Shoelace, CSS3 loaders, tinykeys, useImageColor, Laws of UX, Teenyicons and more...",
+            "date_modified": "2020-08-04T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/36",
+            "content_html": "useHooks, Differences Between SSG And SSR, Warp SVG Online, Rows n' Columns and more...",
+            "url": "https://wweb.dev/weekly/36",
+            "title": "Weekly Web Development Resources #36",
+            "summary": "useHooks, Differences Between SSG And SSR, Warp SVG Online, Rows n' Columns and more...",
+            "date_modified": "2020-07-28T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/35",
+            "content_html": "this vs that, Super Expressive, CSS Effects Snippets, The WET Codebase and more...",
+            "url": "https://wweb.dev/weekly/35",
+            "title": "Weekly Web Development Resources #35",
+            "summary": "this vs that, Super Expressive, CSS Effects Snippets, The WET Codebase and more...",
+            "date_modified": "2020-07-21T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/34",
+            "content_html": "Tabler Icons, 1-Line Layouts, Squircley, Capsize, Developer Handbook 2020 and more...",
+            "url": "https://wweb.dev/weekly/34",
+            "title": "Weekly Web Development Resources #34",
+            "summary": "Tabler Icons, 1-Line Layouts, Squircley, Capsize, Developer Handbook 2020 and more...",
+            "date_modified": "2020-07-14T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/33",
+            "content_html": "hyperapp, html.systems, Knopf.css, Tailwind cheat sheet, shareon, DecentDrops and more...",
+            "url": "https://wweb.dev/weekly/33",
+            "title": "Weekly Web Development Resources #33",
+            "summary": "hyperapp, html.systems, Knopf.css, Tailwind cheat sheet, shareon, DecentDrops and more...",
+            "date_modified": "2020-07-07T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/32",
+            "content_html": "Grid Cheatsheet, tree.nathanfriend.io, Reflex.js, Textures.js, Whole page slider and more...",
+            "url": "https://wweb.dev/weekly/32",
+            "title": "Weekly Web Development Resources #32",
+            "summary": "Grid Cheatsheet, tree.nathanfriend.io, Reflex.js, Textures.js, Whole page slider and more...",
+            "date_modified": "2020-06-30T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/31",
+            "content_html": "Beam Cafe, Gradient Generator, Tutorialist Application State Management and more...",
+            "url": "https://wweb.dev/weekly/31",
+            "title": "Weekly Web Development Resources #31",
+            "summary": "Beam Cafe, Gradient Generator, Tutorialist Application State Management and more...",
+            "date_modified": "2020-06-23T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/30",
+            "content_html": "Blob generator, keen-slider, Collected Notes, Sitejoy, Code Notes, FeedFox and more...",
+            "url": "https://wweb.dev/weekly/30",
+            "title": "Weekly Web Development Resources #30",
+            "summary": "Blob generator, keen-slider, Collected Notes, Sitejoy, Code Notes, FeedFox and more...",
+            "date_modified": "2020-06-16T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/29",
+            "content_html": "Shape Dividers, Pattern Generator, GitHub Classroom, No Design Development and more...",
+            "url": "https://wweb.dev/weekly/29",
+            "title": "Weekly Web Development Resources #29",
+            "summary": "Shape Dividers, Pattern Generator, GitHub Classroom, No Design Development and more...",
+            "date_modified": "2020-06-09T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/28",
+            "content_html": "Supabase, Obsidian, MDN React, htmx, Rough Notation, Tailblocks, Lander and more...",
+            "url": "https://wweb.dev/weekly/28",
+            "title": "Weekly Web Development Resources #28",
+            "summary": "Supabase, Obsidian, MDN React, htmx, Rough Notation, Tailblocks, Lander and more...",
+            "date_modified": "2020-06-02T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/27",
+            "content_html": "Norde Source, Appy Dev, Keyframes, SEO Cheat Sheet, Marketing for Engineer and more...",
+            "url": "https://wweb.dev/weekly/27",
+            "title": "Weekly Web Development Resources #27",
+            "summary": "Norde Source, Appy Dev, Keyframes, SEO Cheat Sheet, Marketing for Engineer and more...",
+            "date_modified": "2020-05-26T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/26",
+            "content_html": "Deno, JSNation, Modern CSS Solutions, quicklink, animista, styco and more...",
+            "url": "https://wweb.dev/weekly/26",
+            "title": "Weekly Web Development Resources #26",
+            "summary": "Deno, JSNation, Modern CSS Solutions, quicklink, animista, styco and more...",
+            "date_modified": "2020-05-19T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/25",
+            "content_html": "Codespaces, CSS Grid Generator, Design Resources, endpoints.dev, JavaScript Cheatsheet and more...",
+            "url": "https://wweb.dev/weekly/25",
+            "title": "Weekly Web Development Resources #25",
+            "summary": "Codespaces, CSS Grid Generator, Design Resources, endpoints.dev, JavaScript Cheatsheet and more...",
+            "date_modified": "2020-05-12T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/24",
+            "content_html": "Hero Generator, Editly, Lit, Pantry, Stylestash, Tara, 1loc, Next.js Tips and more...",
+            "url": "https://wweb.dev/weekly/24",
+            "title": "Weekly Web Development Resources #24",
+            "summary": "Hero Generator, Editly, Lit, Pantry, Stylestash, Tara, 1loc, Next.js Tips and more...",
+            "date_modified": "2020-05-05T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/23",
+            "content_html": "Eloquent JavaScript, BlurHash, Spaced Time, next-dark-mode, pattern.css and more...",
+            "url": "https://wweb.dev/weekly/23",
+            "title": "Weekly Web Development Resources #23",
+            "summary": "Eloquent JavaScript, BlurHash, Spaced Time, next-dark-mode, pattern.css and more...",
+            "date_modified": "2020-04-28T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/22",
+            "content_html": "GitHub is free, React Query, BEM Cheat Sheet, Crank.js, Meanderer.js and more...",
+            "url": "https://wweb.dev/weekly/22",
+            "title": "Weekly Web Development Resources #22",
+            "summary": "GitHub is free, React Query, BEM Cheat Sheet, Crank.js, Meanderer.js and more...",
+            "date_modified": "2020-04-21T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/21",
+            "content_html": "Level Up Your CSS Animation Skills, Snapfont, Linkdash, multicopy and more...",
+            "url": "https://wweb.dev/weekly/21",
+            "title": "Weekly Web Development Resources #21",
+            "summary": "Level Up Your CSS Animation Skills, Snapfont, Linkdash, multicopy and more...",
+            "date_modified": "2020-04-14T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/20",
+            "content_html": "Open UI, AllTheFreeStock, HTML DOM, Magic Link, Flowify, Lisan and more...",
+            "url": "https://wweb.dev/weekly/20",
+            "title": "Weekly Web Development Resources #20",
+            "summary": "Open UI, AllTheFreeStock, HTML DOM, Magic Link, Flowify, Lisan and more...",
+            "date_modified": "2020-04-07T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/19",
+            "content_html": "MVP.css, Web Skills, Puddle.js, How I Became a Better Programmer, Motion Layout and more...",
+            "url": "https://wweb.dev/weekly/19",
+            "title": "Weekly Web Development Resources #19",
+            "summary": "MVP.css, Web Skills, Puddle.js, How I Became a Better Programmer, Motion Layout and more...",
+            "date_modified": "2020-03-31T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/18",
+            "content_html": "Parametric Color Mixer, Animated Hamburger Icons, TypeScript Particles, simpleParallax.js and more...",
+            "url": "https://wweb.dev/weekly/18",
+            "title": "Weekly Web Development Resources #18",
+            "summary": "Parametric Color Mixer, Animated Hamburger Icons, TypeScript Particles, simpleParallax.js and more...",
+            "date_modified": "2020-03-24T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/17",
+            "content_html": "midori, Jitsi Meet, Creative Coding Essentials, unscreen, JavaScript CheatSheet and more...",
+            "url": "https://wweb.dev/weekly/17",
+            "title": "Weekly Web Development Resources #17",
+            "summary": "midori, Jitsi Meet, Creative Coding Essentials, unscreen, JavaScript CheatSheet and more...",
+            "date_modified": "2020-03-17T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/16",
+            "content_html": "Monitoror, Slide to Subscribe, Micromodal, Distorted Link Effects, Docker Essentials and more...",
+            "url": "https://wweb.dev/weekly/16",
+            "title": "Weekly Web Development Resources #16",
+            "summary": "Monitoror, Slide to Subscribe, Micromodal, Distorted Link Effects, Docker Essentials and more...",
+            "date_modified": "2020-03-10T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/15",
+            "content_html": "CSS Icons, Mailbrew, Tailwind UI, SaaS landing pages, Brainstorming business ideas and more...",
+            "url": "https://wweb.dev/weekly/15",
+            "title": "Weekly Web Development Resources #15",
+            "summary": "CSS Icons, Mailbrew, Tailwind UI, SaaS landing pages, Brainstorming business ideas and more...",
+            "date_modified": "2020-03-03T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/14",
+            "content_html": "PostHog, JavaScript Interview Questions, Free Programming Books, grep.app and more...",
+            "url": "https://wweb.dev/weekly/14",
+            "title": "Weekly Web Development Resources #14",
+            "summary": "PostHog, JavaScript Interview Questions, Free Programming Books, grep.app and more...",
+            "date_modified": "2020-02-25T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/13",
+            "content_html": "Good first issue, App Ideas, Beautiful Dingbats, GitHub CLI, The JavaScript Way and more...",
+            "url": "https://wweb.dev/weekly/13",
+            "title": "Weekly Web Development Resources #13",
+            "summary": "Good first issue, App Ideas, Beautiful Dingbats, GitHub CLI, The JavaScript Way and more...",
+            "date_modified": "2020-02-18T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/12",
+            "content_html": "Octomments, Neumorphism, Bit, DarkModeJS, Full Stack Open 2019 and more...",
+            "url": "https://wweb.dev/weekly/12",
+            "title": "Weekly Web Development Resources #12",
+            "summary": "Octomments, Neumorphism, Bit, DarkModeJS, Full Stack Open 2019 and more...",
+            "date_modified": "2020-02-11T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/11",
+            "content_html": "You Don't know JS Yet, Vanilla Web Projects, 24 modern ES6 code snippets and more...",
+            "url": "https://wweb.dev/weekly/11",
+            "title": "Weekly Web Development Resources #11",
+            "summary": "You Don't know JS Yet, Vanilla Web Projects, 24 modern ES6 code snippets and more...",
+            "date_modified": "2020-02-04T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/10",
+            "content_html": "Hoard.fyi, Screen Size Map, Mirage JS, Stock Resources, Vuer, React Libraries and more...",
+            "url": "https://wweb.dev/weekly/10",
+            "title": "Weekly Web Development Resources #10",
+            "summary": "Hoard.fyi, Screen Size Map, Mirage JS, Stock Resources, Vuer, React Libraries and more...",
+            "date_modified": "2020-01-28T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/9",
+            "content_html": "Hero Patterns, Tiny Helpers, GoatCounter, is-website-vulnerable, JamTemplates and more...",
+            "url": "https://wweb.dev/weekly/9",
+            "title": "Weekly Web Development Resources #9",
+            "summary": "Hero Patterns, Tiny Helpers, GoatCounter, is-website-vulnerable, JamTemplates and more...",
+            "date_modified": "2020-01-21T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/8",
+            "content_html": "Gradient Magic, Broot, cacolor.co, stencils, 23 VS Code Shortcuts, Craft.js and more...",
+            "url": "https://wweb.dev/weekly/8",
+            "title": "Weekly Web Development Resources #8",
+            "summary": "Gradient Magic, Broot, cacolor.co, stencils, 23 VS Code Shortcuts, Craft.js and more...",
+            "date_modified": "2020-01-14T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/7",
+            "content_html": "Oh Shit, Git!?!, Colorsinspo, Parcel, Redux Style Guite, Bot Land, Rhubarb and more...",
+            "url": "https://wweb.dev/weekly/7",
+            "title": "Weekly Web Development Resources #7",
+            "summary": "Oh Shit, Git!?!, Colorsinspo, Parcel, Redux Style Guite, Bot Land, Rhubarb and more...",
+            "date_modified": "2020-01-07T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/6",
+            "content_html": "Just JavaScript, CHL.LI, CoreUI Icons, Convert2Svg, Generative Placeholders and more...",
+            "url": "https://wweb.dev/weekly/6",
+            "title": "Weekly Web Development Resources #6",
+            "summary": "Just JavaScript, CHL.LI, CoreUI Icons, Convert2Svg, Generative Placeholders and more...",
+            "date_modified": "2019-12-31T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/5",
+            "content_html": "Codepen Most Hearted 2019, V 8.0, lazy-simon.js, GitHub Apps and more...",
+            "url": "https://wweb.dev/weekly/5",
+            "title": "Weekly Web Development Resources #5",
+            "summary": "Codepen Most Hearted 2019, V 8.0, lazy-simon.js, GitHub Apps and more...",
+            "date_modified": "2019-12-24T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/4",
+            "content_html": "Nedux, New CSS “:is()”, Challenging projects, musicForProgramming, No to Chrome and more...",
+            "url": "https://wweb.dev/weekly/4",
+            "title": "Weekly Web Development Resources #4",
+            "summary": "Nedux, New CSS “:is()”, Challenging projects, musicForProgramming, No to Chrome and more...",
+            "date_modified": "2019-12-17T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/3",
+            "content_html": "Self Hosted, CSS Layout, Refactoring UI, Deep Sea, react-spring, Leonardo and more...",
+            "url": "https://wweb.dev/weekly/3",
+            "title": "Weekly Web Development Resources #3",
+            "summary": "Self Hosted, CSS Layout, Refactoring UI, Deep Sea, react-spring, Leonardo and more...",
+            "date_modified": "2019-12-10T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/2",
+            "content_html": "Bootstrap Icons, SVG Landscapes, roughViz.js, JavaScript Christmas, Curlie, Cell and more..",
+            "url": "https://wweb.dev/weekly/2",
+            "title": "Weekly Web Development Resources #2",
+            "summary": "Bootstrap Icons, SVG Landscapes, roughViz.js, JavaScript Christmas, Curlie, Cell and more..",
+            "date_modified": "2019-12-03T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/1",
+            "content_html": "SWR, Fresh Folk, Colors and fonts, Animated CSS Backgrounds, Postwoman, Pika and more",
+            "url": "https://wweb.dev/weekly/1",
+            "title": "Weekly Web Development Resources #1",
+            "summary": "SWR, Fresh Folk, Colors and fonts, Animated CSS Backgrounds, Postwoman, Pika and more",
+            "date_modified": "2019-11-26T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        }
+    ]
+}

@@ -1,0 +1,3 @@
+User-agent: *
+  Sitemap: https://wweb.dev/sitemap.xml
+  Disallow:

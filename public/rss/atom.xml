@@ -1,0 +1,3042 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://wweb.dev</id>
+    <title>wweb.dev</title>
+    <updated>2023-03-13T07:51:02.452Z</updated>
+    <generator>Feed for Node.js</generator>
+    <author>
+        <name>Vincent Will</name>
+        <email>info@wweb.dev</email>
+        <uri>https://vincentwill.com</uri>
+    </author>
+    <link rel="alternate" href="https://wweb.dev"/>
+    <link rel="self" href="https://wweb.dev/rss/atom.xml"/>
+    <subtitle>Stay up to date with weekly updates, get resources for next project and read articles and tutorials about web development.</subtitle>
+    <logo>https://wweb.dev/logo-text.png</logo>
+    <icon>https://wweb.dev/favicon.ico</icon>
+    <rights>All rights reserved 2023, wweb.dev</rights>
+    <entry>
+        <title type="html"><![CDATA[Pure CSS Loader Generator]]></title>
+        <id>https://wweb.dev/resources/loader-generator</id>
+        <link href="https://wweb.dev/resources/loader-generator"/>
+        <updated>2023-03-06T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.]]></summary>
+        <content type="html"><![CDATA[A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Coding your own AI in 2023 with fastai]]></title>
+        <id>https://wweb.dev/blog/coding-your-own-ai-2023-with-fastai</id>
+        <link href="https://wweb.dev/blog/coding-your-own-ai-2023-with-fastai"/>
+        <updated>2023-02-26T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is a guide, which focuses on the critical parts of the fastai course. I'll cover how to set up the ecosystem and how to create, train and deploy an AI model.]]></summary>
+        <content type="html"><![CDATA[This is a guide, which focuses on the critical parts of the fastai course. I'll cover how to set up the ecosystem and how to create, train and deploy an AI model.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Best of Weekly Resources 2019-2022]]></title>
+        <id>https://wweb.dev/resources/best-of-weekly-2022</id>
+        <link href="https://wweb.dev/resources/best-of-weekly-2022"/>
+        <updated>2022-11-26T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Exactly three years ago I published my first weekly newsletter. Since then I've sent out 125 Emails with a total of 1345 resources. Here are the 110 most clicked links.]]></summary>
+        <content type="html"><![CDATA[Exactly three years ago I published my first weekly newsletter. Since then I've sent out 125 Emails with a total of 1345 resources. Here are the 110 most clicked links.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.js Web App Template]]></title>
+        <id>https://wweb.dev/templates/web-app-template</id>
+        <link href="https://wweb.dev/templates/web-app-template"/>
+        <updated>2022-10-31T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.]]></summary>
+        <content type="html"><![CDATA[A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Blur Background CSS Generator]]></title>
+        <id>https://wweb.dev/resources/blur-background-css-generator</id>
+        <link href="https://wweb.dev/resources/blur-background-css-generator"/>
+        <updated>2022-10-13T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.]]></summary>
+        <content type="html"><![CDATA[A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.js Micro-blogging Template]]></title>
+        <id>https://wweb.dev/templates/micro-blogging-template</id>
+        <link href="https://wweb.dev/templates/micro-blogging-template"/>
+        <updated>2022-09-28T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A Next.js template for a twitter-like blog. You can write in markdown and upload images and videos.]]></summary>
+        <content type="html"><![CDATA[A Next.js template for a twitter-like blog. You can write in markdown and upload images and videos.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Next.js Blog Template]]></title>
+        <id>https://wweb.dev/templates/nextjs-blog-template</id>
+        <link href="https://wweb.dev/templates/nextjs-blog-template"/>
+        <updated>2022-03-14T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[This is a simple blog template to quickly get started with writing. It has a clean design and provides a lot of flexibility.]]></summary>
+        <content type="html"><![CDATA[This is a simple blog template to quickly get started with writing. It has a clean design and provides a lot of flexibility.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A guide to debugging JavaScript in Visual Studio Code]]></title>
+        <id>https://wweb.dev/blog/debugging-javascript-vscode</id>
+        <link href="https://wweb.dev/blog/debugging-javascript-vscode"/>
+        <updated>2022-02-02T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...]]></summary>
+        <content type="html"><![CDATA[In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Websites For Free Icon Sets]]></title>
+        <id>https://wweb.dev/resources/free-icon-sets</id>
+        <link href="https://wweb.dev/resources/free-icon-sets"/>
+        <updated>2020-11-05T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A curated list of websites that offer collections of free icons.]]></summary>
+        <content type="html"><![CDATA[A curated list of websites that offer collections of free icons.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JavaScript Object Functions Cheat Sheet]]></title>
+        <id>https://wweb.dev/resources/js-object-functions-cheatsheet</id>
+        <link href="https://wweb.dev/resources/js-object-functions-cheatsheet"/>
+        <updated>2020-07-30T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.]]></summary>
+        <content type="html"><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Responsive Navigation Generator]]></title>
+        <id>https://wweb.dev/resources/navigation-generator</id>
+        <link href="https://wweb.dev/resources/navigation-generator"/>
+        <updated>2020-07-12T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.]]></summary>
+        <content type="html"><![CDATA[Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting Started with Serverless AWS (3/3) - Micro Services using Lambda, DynamoDB & API Gateway]]></title>
+        <id>https://wweb.dev/blog/aws-getting-started-micro-service-lambda-dynamodb</id>
+        <link href="https://wweb.dev/blog/aws-getting-started-micro-service-lambda-dynamodb"/>
+        <updated>2020-07-05T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this part, we're creating a DynamoDB. Then we create a Lambda for creating, reading, updating, and deleting entries in that database. And last we create...]]></summary>
+        <content type="html"><![CDATA[In this part, we're creating a DynamoDB. Then we create a Lambda for creating, reading, updating, and deleting entries in that database. And last we create...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting Started with Serverless AWS (2/3) - Distribute an S3 Bucket with CloudFront and add a Domain]]></title>
+        <id>https://wweb.dev/blog/aws-getting-started-cloudfront-and-domain</id>
+        <link href="https://wweb.dev/blog/aws-getting-started-cloudfront-and-domain"/>
+        <updated>2020-06-21T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this part we're going to add CloudFront to deliver our website content with low latency to the user. Afterward, we'll add a domain with HTTPs for our website...]]></summary>
+        <content type="html"><![CDATA[In this part we're going to add CloudFront to deliver our website content with low latency to the user. Afterward, we'll add a domain with HTTPs for our website...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting Started with Serverless AWS (1/3) - Deploying a Static Website to S3]]></title>
+        <id>https://wweb.dev/blog/aws-getting-started-deploy-static-website-s3</id>
+        <link href="https://wweb.dev/blog/aws-getting-started-deploy-static-website-s3"/>
+        <updated>2020-06-14T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this series, we're creating a serverless stack using AWS. In this part, I'll show how to serve a static website through an S3 Bucket and how to deploy from your local machine...]]></summary>
+        <content type="html"><![CDATA[In this series, we're creating a serverless stack using AWS. In this part, I'll show how to serve a static website through an S3 Bucket and how to deploy from your local machine...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to craft appealing websites]]></title>
+        <id>https://wweb.dev/blog/how-to-craft-appealing-websites</id>
+        <link href="https://wweb.dev/blog/how-to-craft-appealing-websites"/>
+        <updated>2020-05-28T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[When I started developing websites I never knew where to start, when creating a new one. Over time I came up with a process that helped me not only getting started, but also making the websites...]]></summary>
+        <content type="html"><![CDATA[When I started developing websites I never knew where to start, when creating a new one. Over time I came up with a process that helped me not only getting started, but also making the websites...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JavaScript Array Functions Cheat Sheet]]></title>
+        <id>https://wweb.dev/resources/js-array-functions-cheatsheet</id>
+        <link href="https://wweb.dev/resources/js-array-functions-cheatsheet"/>
+        <updated>2020-05-20T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.]]></summary>
+        <content type="html"><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Creative Hover Effects]]></title>
+        <id>https://wweb.dev/resources/creative-hover-effects</id>
+        <link href="https://wweb.dev/resources/creative-hover-effects"/>
+        <updated>2020-05-03T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.]]></summary>
+        <content type="html"><![CDATA[A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Getting started with React Query - Easy server state management in React]]></title>
+        <id>https://wweb.dev/blog/react-query-getting-started-tutorial</id>
+        <link href="https://wweb.dev/blog/react-query-getting-started-tutorial"/>
+        <updated>2020-04-23T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...]]></summary>
+        <content type="html"><![CDATA[Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Websites For Inspiration]]></title>
+        <id>https://wweb.dev/resources/websites-for-inspiration</id>
+        <link href="https://wweb.dev/resources/websites-for-inspiration"/>
+        <updated>2020-04-19T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></summary>
+        <content type="html"><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CSS Section Separator Generator]]></title>
+        <id>https://wweb.dev/resources/css-separator-generator</id>
+        <link href="https://wweb.dev/resources/css-separator-generator"/>
+        <updated>2020-03-31T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A collection of customizable CSS section separators, with the possibility to easily copy the code.]]></summary>
+        <content type="html"><![CDATA[A collection of customizable CSS section separators, with the possibility to easily copy the code.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to speed up kickstarting new projects with Yeoman]]></title>
+        <id>https://wweb.dev/blog/how-to-create-yeoman-generator</id>
+        <link href="https://wweb.dev/blog/how-to-create-yeoman-generator"/>
+        <updated>2020-03-08T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[I found myself often copy pasting code from other projects when starting new projects. This is why I created a Yeoman generator, which setups a nextjs project with styled components...]]></summary>
+        <content type="html"><![CDATA[I found myself often copy pasting code from other projects when starting new projects. This is why I created a Yeoman generator, which setups a nextjs project with styled components...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to build a static website without frameworks using npm scripts]]></title>
+        <id>https://wweb.dev/blog/how-to-create-static-website-npm-scripts</id>
+        <link href="https://wweb.dev/blog/how-to-create-static-website-npm-scripts"/>
+        <updated>2020-02-01T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...]]></summary>
+        <content type="html"><![CDATA[Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Websites For Creative Backgrounds]]></title>
+        <id>https://wweb.dev/resources/creative-backgrounds</id>
+        <link href="https://wweb.dev/resources/creative-backgrounds"/>
+        <updated>2020-01-22T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A curated list of websites where you can get creative backgrounds for your websites.]]></summary>
+        <content type="html"><![CDATA[A curated list of websites where you can get creative backgrounds for your websites.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Curated List Of Websites For Free SVG Illustrations]]></title>
+        <id>https://wweb.dev/resources/free-svg-illustrations</id>
+        <link href="https://wweb.dev/resources/free-svg-illustrations"/>
+        <updated>2019-12-15T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Spice up your next project with beautiful illustrations from these websites.]]></summary>
+        <content type="html"><![CDATA[Spice up your next project with beautiful illustrations from these websites.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Animated CSS Background Generator]]></title>
+        <id>https://wweb.dev/resources/animated-css-background-generator</id>
+        <link href="https://wweb.dev/resources/animated-css-background-generator"/>
+        <updated>2019-11-26T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.]]></summary>
+        <content type="html"><![CDATA[With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[4 Websites to recreate to practice your web development skills]]></title>
+        <id>https://wweb.dev/blog/4-websites-to-recreate-to-practice-your-web-development-skills</id>
+        <link href="https://wweb.dev/blog/4-websites-to-recreate-to-practice-your-web-development-skills"/>
+        <updated>2019-10-22T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The best way to learn web development is by practice. But when you get started you might feel lost. There are just so many things to learn, which makes it hard to choose the right project to get started. In the following I'll share some…]]></summary>
+        <content type="html"><![CDATA[The best way to learn web development is by practice. But when you get started you might feel lost. There are just so many things to learn, which makes it hard to choose the right project to get started. In the following I'll share some…]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[The best note taking apps for developers]]></title>
+        <id>https://wweb.dev/blog/the-best-note-taking-apps-for-developers</id>
+        <link href="https://wweb.dev/blog/the-best-note-taking-apps-for-developers"/>
+        <updated>2019-10-15T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[There are tons of note taking apps out there. But which ones are best suitable for developers? In the following I'll introduce three note taking apps for developers with good code support. + Available for: Mac, Windows, Android, iOS + Nice Code editor with a…]]></summary>
+        <content type="html"><![CDATA[There are tons of note taking apps out there. But which ones are best suitable for developers? In the following I'll introduce three note taking apps for developers with good code support. + Available for: Mac, Windows, Android, iOS + Nice Code editor with a…]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to toggle an array item with Javascript in React State]]></title>
+        <id>https://wweb.dev/blog/how-to-toggle-an-array-item-in-react-state</id>
+        <link href="https://wweb.dev/blog/how-to-toggle-an-array-item-in-react-state"/>
+        <updated>2019-03-22T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this short article I will demonstrate how to write a function to toggle array items with Javascript and inside of React state. First of all let’s have a look how to toggle an array item with Javascript (ES6): This function will get an array and…]]></summary>
+        <content type="html"><![CDATA[In this short article I will demonstrate how to write a function to toggle array items with Javascript and inside of React state. First of all let’s have a look how to toggle an array item with Javascript (ES6): This function will get an array and…]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Widget based website with dynamic Vue.js components]]></title>
+        <id>https://wweb.dev/blog/widget-based-website-with-dynamic-vuejs-components</id>
+        <link href="https://wweb.dev/blog/widget-based-website-with-dynamic-vuejs-components"/>
+        <updated>2018-07-26T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…]]></summary>
+        <content type="html"><![CDATA[In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #139]]></title>
+        <id>https://wweb.dev/weekly/139</id>
+        <link href="https://wweb.dev/weekly/139"/>
+        <updated>2023-03-07T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[crul, WebContainers, Windstatic, ImageHover and more...]]></summary>
+        <content type="html"><![CDATA[crul, WebContainers, Windstatic, ImageHover and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #138]]></title>
+        <id>https://wweb.dev/weekly/138</id>
+        <link href="https://wweb.dev/weekly/138"/>
+        <updated>2023-02-28T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Poet.so, PrimeReact, StatiCrypt, Bun, Openverse and more...]]></summary>
+        <content type="html"><![CDATA[Poet.so, PrimeReact, StatiCrypt, Bun, Openverse and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #137]]></title>
+        <id>https://wweb.dev/weekly/137</id>
+        <link href="https://wweb.dev/weekly/137"/>
+        <updated>2023-02-14T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[PhotoPrism, PairDrop, Screenstab, ColorSpace and more...]]></summary>
+        <content type="html"><![CDATA[PhotoPrism, PairDrop, Screenstab, ColorSpace and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #136]]></title>
+        <id>https://wweb.dev/weekly/136</id>
+        <link href="https://wweb.dev/weekly/136"/>
+        <updated>2023-02-07T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Atlas Icons, Yopta Editor, Design rules, Termzy and more...]]></summary>
+        <content type="html"><![CDATA[Atlas Icons, Yopta Editor, Design rules, Termzy and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #135]]></title>
+        <id>https://wweb.dev/weekly/135</id>
+        <link href="https://wweb.dev/weekly/135"/>
+        <updated>2023-01-31T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pico.css, Rete.js, Logggos, HTMLrev, SST and more...]]></summary>
+        <content type="html"><![CDATA[Pico.css, Rete.js, Logggos, HTMLrev, SST and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #134]]></title>
+        <id>https://wweb.dev/weekly/134</id>
+        <link href="https://wweb.dev/weekly/134"/>
+        <updated>2023-01-24T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[waitlist.rsvp, Legitify, ImaginAIry, OKLCH and more...]]></summary>
+        <content type="html"><![CDATA[waitlist.rsvp, Legitify, ImaginAIry, OKLCH and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #133]]></title>
+        <id>https://wweb.dev/weekly/133</id>
+        <link href="https://wweb.dev/weekly/133"/>
+        <updated>2023-01-17T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Radix, val town, Lorem Faces, Alpine.js, FeatBit and more...]]></summary>
+        <content type="html"><![CDATA[Radix, val town, Lorem Faces, Alpine.js, FeatBit and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #132]]></title>
+        <id>https://wweb.dev/weekly/132</id>
+        <link href="https://wweb.dev/weekly/132"/>
+        <updated>2023-01-10T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Sailboat UI, UpDownQuest, Boringer Avatars and more...]]></summary>
+        <content type="html"><![CDATA[Sailboat UI, UpDownQuest, Boringer Avatars and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #131]]></title>
+        <id>https://wweb.dev/weekly/131</id>
+        <link href="https://wweb.dev/weekly/131"/>
+        <updated>2023-01-03T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[CSS Subgrid, AngryTools, Tamagui, FormEasy and more...]]></summary>
+        <content type="html"><![CDATA[CSS Subgrid, AngryTools, Tamagui, FormEasy and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #130]]></title>
+        <id>https://wweb.dev/weekly/130</id>
+        <link href="https://wweb.dev/weekly/130"/>
+        <updated>2022-12-27T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[React Wrap Balancer, UI Content, Theme Toggles and more...]]></summary>
+        <content type="html"><![CDATA[React Wrap Balancer, UI Content, Theme Toggles and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #129]]></title>
+        <id>https://wweb.dev/weekly/129</id>
+        <link href="https://wweb.dev/weekly/129"/>
+        <updated>2022-12-20T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Unovis, dddepth, QuickNote, GitHubUnwrapped and more...]]></summary>
+        <content type="html"><![CDATA[Unovis, dddepth, QuickNote, GitHubUnwrapped and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #128]]></title>
+        <id>https://wweb.dev/weekly/128</id>
+        <link href="https://wweb.dev/weekly/128"/>
+        <updated>2022-12-13T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Landingexam, DevTunes FM, Reapop, Console Ninja and more...]]></summary>
+        <content type="html"><![CDATA[Landingexam, DevTunes FM, Reapop, Console Ninja and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #127]]></title>
+        <id>https://wweb.dev/weekly/127</id>
+        <link href="https://wweb.dev/weekly/127"/>
+        <updated>2022-12-06T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[pppsychedelic, For the Badge, MrScraper, Eleven and more...]]></summary>
+        <content type="html"><![CDATA[pppsychedelic, For the Badge, MrScraper, Eleven and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #126]]></title>
+        <id>https://wweb.dev/weekly/126</id>
+        <link href="https://wweb.dev/weekly/126"/>
+        <updated>2022-11-29T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[superplate, nnneon, TinyWow, Unclutter, Git Notes and more...]]></summary>
+        <content type="html"><![CDATA[superplate, nnneon, TinyWow, Unclutter, Git Notes and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #125]]></title>
+        <id>https://wweb.dev/weekly/125</id>
+        <link href="https://wweb.dev/weekly/125"/>
+        <updated>2022-11-22T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[CSS Clothoid Corners, Sapling, poxi, TourGuide JS and more...]]></summary>
+        <content type="html"><![CDATA[CSS Clothoid Corners, Sapling, poxi, TourGuide JS and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #124]]></title>
+        <id>https://wweb.dev/weekly/124</id>
+        <link href="https://wweb.dev/weekly/124"/>
+        <updated>2022-11-15T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[nfty.sh, Katana, Postcard, Starter Tab, JSON Crack and more...]]></summary>
+        <content type="html"><![CDATA[nfty.sh, Katana, Postcard, Starter Tab, JSON Crack and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #123]]></title>
+        <id>https://wweb.dev/weekly/123</id>
+        <link href="https://wweb.dev/weekly/123"/>
+        <updated>2022-11-08T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Clips, missing.css, Futuristic CSS, Kodemo and more...]]></summary>
+        <content type="html"><![CDATA[Clips, missing.css, Futuristic CSS, Kodemo and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #122]]></title>
+        <id>https://wweb.dev/weekly/122</id>
+        <link href="https://wweb.dev/weekly/122"/>
+        <updated>2022-11-01T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[gistlib, Bolt.css, Turbo, AnimatiSS, uiverse and more...]]></summary>
+        <content type="html"><![CDATA[gistlib, Bolt.css, Turbo, AnimatiSS, uiverse and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #121]]></title>
+        <id>https://wweb.dev/weekly/121</id>
+        <link href="https://wweb.dev/weekly/121"/>
+        <updated>2022-10-25T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Lucide, Linen, WebC, Outstatic, CSS Shapes and more...]]></summary>
+        <content type="html"><![CDATA[Lucide, Linen, WebC, Outstatic, CSS Shapes and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #120]]></title>
+        <id>https://wweb.dev/weekly/120</id>
+        <link href="https://wweb.dev/weekly/120"/>
+        <updated>2022-10-18T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Randoma11y, Agreper, Can I DevTools, Metlo and more...]]></summary>
+        <content type="html"><![CDATA[Randoma11y, Agreper, Can I DevTools, Metlo and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #119]]></title>
+        <id>https://wweb.dev/weekly/119</id>
+        <link href="https://wweb.dev/weekly/119"/>
+        <updated>2022-10-11T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Jsx Mail, Scribbble, Satori, Templating in HTML and more...]]></summary>
+        <content type="html"><![CDATA[Jsx Mail, Scribbble, Satori, Templating in HTML and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #118]]></title>
+        <id>https://wweb.dev/weekly/118</id>
+        <link href="https://wweb.dev/weekly/118"/>
+        <updated>2022-10-04T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Dear Console, tremor, Devbox, Rematch, Upscayl and more...]]></summary>
+        <content type="html"><![CDATA[Dear Console, tremor, Devbox, Rematch, Upscayl and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #117]]></title>
+        <id>https://wweb.dev/weekly/117</id>
+        <link href="https://wweb.dev/weekly/117"/>
+        <updated>2022-09-27T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pika, Dub, Micro SaaS Ideas, No-Signup Tools and more...]]></summary>
+        <content type="html"><![CDATA[Pika, Dub, Micro SaaS Ideas, No-Signup Tools and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #116]]></title>
+        <id>https://wweb.dev/weekly/116</id>
+        <link href="https://wweb.dev/weekly/116"/>
+        <updated>2022-09-20T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Tylify, lightGallery, Mockoops, Half baked ideas and more...]]></summary>
+        <content type="html"><![CDATA[Tylify, lightGallery, Mockoops, Half baked ideas and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #115]]></title>
+        <id>https://wweb.dev/weekly/115</id>
+        <link href="https://wweb.dev/weekly/115"/>
+        <updated>2022-03-29T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHub Readme Stats, MiroTalk, Hackertab, 12ft and more...]]></summary>
+        <content type="html"><![CDATA[GitHub Readme Stats, MiroTalk, Hackertab, 12ft and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #114]]></title>
+        <id>https://wweb.dev/weekly/114</id>
+        <link href="https://wweb.dev/weekly/114"/>
+        <updated>2022-03-22T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Tailymate, Avvvatars, Oh-heck, jless, Metrics and more...]]></summary>
+        <content type="html"><![CDATA[Tailymate, Avvvatars, Oh-heck, jless, Metrics and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #113]]></title>
+        <id>https://wweb.dev/weekly/113</id>
+        <link href="https://wweb.dev/weekly/113"/>
+        <updated>2022-03-15T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[nextjs-components, pppalette, CSS Checker, kod.so and more...]]></summary>
+        <content type="html"><![CDATA[nextjs-components, pppalette, CSS Checker, kod.so and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #112]]></title>
+        <id>https://wweb.dev/weekly/112</id>
+        <link href="https://wweb.dev/weekly/112"/>
+        <updated>2022-03-08T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[SingleFile, DevDocs, One Tooling, zzzenith, Drift and more...]]></summary>
+        <content type="html"><![CDATA[SingleFile, DevDocs, One Tooling, zzzenith, Drift and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #111]]></title>
+        <id>https://wweb.dev/weekly/111</id>
+        <link href="https://wweb.dev/weekly/111"/>
+        <updated>2022-03-01T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Flowbite, SuperShields, SPCSS, React Shimmer, v8n and more...]]></summary>
+        <content type="html"><![CDATA[Flowbite, SuperShields, SPCSS, React Shimmer, v8n and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #110]]></title>
+        <id>https://wweb.dev/weekly/110</id>
+        <link href="https://wweb.dev/weekly/110"/>
+        <updated>2022-02-22T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Fonts, RegEx Library, tinydomain, privacy-redirect and more...]]></summary>
+        <content type="html"><![CDATA[Fonts, RegEx Library, tinydomain, privacy-redirect and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #109]]></title>
+        <id>https://wweb.dev/weekly/109</id>
+        <link href="https://wweb.dev/weekly/109"/>
+        <updated>2022-02-15T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[cccreate, ToolJet, CSSUI, Partytown, DevToysMac and more...]]></summary>
+        <content type="html"><![CDATA[cccreate, ToolJet, CSSUI, Partytown, DevToysMac and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #108]]></title>
+        <id>https://wweb.dev/weekly/108</id>
+        <link href="https://wweb.dev/weekly/108"/>
+        <updated>2022-02-08T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Oldbook.css, dddraw, Device Frames, LetMeScroll and more...]]></summary>
+        <content type="html"><![CDATA[Oldbook.css, dddraw, Device Frames, LetMeScroll and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #107]]></title>
+        <id>https://wweb.dev/weekly/107</id>
+        <link href="https://wweb.dev/weekly/107"/>
+        <updated>2022-02-01T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Cool Backgrounds, Favicon Generator, NextUI, SVGOMG and more...]]></summary>
+        <content type="html"><![CDATA[Cool Backgrounds, Favicon Generator, NextUI, SVGOMG and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #106]]></title>
+        <id>https://wweb.dev/weekly/106</id>
+        <link href="https://wweb.dev/weekly/106"/>
+        <updated>2022-01-25T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[TinyBase, edit.photo, Tidy Free, Charm, Beercss and more...]]></summary>
+        <content type="html"><![CDATA[TinyBase, edit.photo, Tidy Free, Charm, Beercss and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #105]]></title>
+        <id>https://wweb.dev/weekly/105</id>
+        <link href="https://wweb.dev/weekly/105"/>
+        <updated>2022-01-18T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[hue.tools, clay.css, Plock, Parcel CSS, Simple.css and more...]]></summary>
+        <content type="html"><![CDATA[hue.tools, clay.css, Plock, Parcel CSS, Simple.css and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #104]]></title>
+        <id>https://wweb.dev/weekly/104</id>
+        <link href="https://wweb.dev/weekly/104"/>
+        <updated>2022-01-11T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Typed.css, Cobe, Slowfil.es, Vanilla List, Icônes and more...]]></summary>
+        <content type="html"><![CDATA[Typed.css, Cobe, Slowfil.es, Vanilla List, Icônes and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #103]]></title>
+        <id>https://wweb.dev/weekly/103</id>
+        <link href="https://wweb.dev/weekly/103"/>
+        <updated>2022-01-04T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[CSS Diner, Tech blogs, Zotero, Atomic Habits and more...]]></summary>
+        <content type="html"><![CDATA[CSS Diner, Tech blogs, Zotero, Atomic Habits and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #102]]></title>
+        <id>https://wweb.dev/weekly/102</id>
+        <link href="https://wweb.dev/weekly/102"/>
+        <updated>2021-12-28T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ColorHuddle, Vitest, Intab Resources, BlackMagic and more...]]></summary>
+        <content type="html"><![CDATA[ColorHuddle, Vitest, Intab Resources, BlackMagic and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #101]]></title>
+        <id>https://wweb.dev/weekly/101</id>
+        <link href="https://wweb.dev/weekly/101"/>
+        <updated>2021-12-21T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Patterns, Glitch effect, Guess CSS, Doodle CSS and more...]]></summary>
+        <content type="html"><![CDATA[Patterns, Glitch effect, Guess CSS, Doodle CSS and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #100]]></title>
+        <id>https://wweb.dev/weekly/100</id>
+        <link href="https://wweb.dev/weekly/100"/>
+        <updated>2021-12-14T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Floating UI, Deta, Dracula, Defensive CSS, ffflux and more...]]></summary>
+        <content type="html"><![CDATA[Floating UI, Deta, Dracula, Defensive CSS, ffflux and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #99]]></title>
+        <id>https://wweb.dev/weekly/99</id>
+        <link href="https://wweb.dev/weekly/99"/>
+        <updated>2021-12-07T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Code Hike, Nice Modal, PickBetterPack, Open Props and more...]]></summary>
+        <content type="html"><![CDATA[Code Hike, Nice Modal, PickBetterPack, Open Props and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #98]]></title>
+        <id>https://wweb.dev/weekly/98</id>
+        <link href="https://wweb.dev/weekly/98"/>
+        <updated>2021-11-30T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Twind, nnnoise, Image Optimizer, a11y myths, EmailTimer and more...]]></summary>
+        <content type="html"><![CDATA[Twind, nnnoise, Image Optimizer, a11y myths, EmailTimer and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #97]]></title>
+        <id>https://wweb.dev/weekly/97</id>
+        <link href="https://wweb.dev/weekly/97"/>
+        <updated>2021-11-23T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Shadow Palette Generator, tldraw, RegEx Learn MicroDiff and more...]]></summary>
+        <content type="html"><![CDATA[Shadow Palette Generator, tldraw, RegEx Learn MicroDiff and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #96]]></title>
+        <id>https://wweb.dev/weekly/96</id>
+        <link href="https://wweb.dev/weekly/96"/>
+        <updated>2021-11-16T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[bbburst, Can I Include, Morphing Submit Button, Splide and more...]]></summary>
+        <content type="html"><![CDATA[bbburst, Can I Include, Morphing Submit Button, Splide and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #95]]></title>
+        <id>https://wweb.dev/weekly/95</id>
+        <link href="https://wweb.dev/weekly/95"/>
+        <updated>2021-11-09T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Image Upscaler, Notifire, MistQL, Codeamigo, Iconscout and more...]]></summary>
+        <content type="html"><![CDATA[Image Upscaler, Notifire, MistQL, Codeamigo, Iconscout and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #94]]></title>
+        <id>https://wweb.dev/weekly/94</id>
+        <link href="https://wweb.dev/weekly/94"/>
+        <updated>2021-11-02T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LT Browser, Life of Discipline, nice-waves, Blobity and more...]]></summary>
+        <content type="html"><![CDATA[LT Browser, Life of Discipline, nice-waves, Blobity and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #93]]></title>
+        <id>https://wweb.dev/weekly/93</id>
+        <link href="https://wweb.dev/weekly/93"/>
+        <updated>2021-10-26T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Analyze CSS, useAwsui, Linaria, Water.css, Magit and more...]]></summary>
+        <content type="html"><![CDATA[Analyze CSS, useAwsui, Linaria, Water.css, Magit and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #92]]></title>
+        <id>https://wweb.dev/weekly/92</id>
+        <link href="https://wweb.dev/weekly/92"/>
+        <updated>2021-10-19T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LocalStack, MJML, CSS backgrounds, 3D Icons, Vizzu and more...]]></summary>
+        <content type="html"><![CDATA[LocalStack, MJML, CSS backgrounds, 3D Icons, Vizzu and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #91]]></title>
+        <id>https://wweb.dev/weekly/91</id>
+        <link href="https://wweb.dev/weekly/91"/>
+        <updated>2021-10-12T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[redact.photo, Refine, Fette­Palette, Atropos, TinyJson and more...]]></summary>
+        <content type="html"><![CDATA[redact.photo, Refine, Fette­Palette, Atropos, TinyJson and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #90]]></title>
+        <id>https://wweb.dev/weekly/90</id>
+        <link href="https://wweb.dev/weekly/90"/>
+        <updated>2021-10-05T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[LuckyResumeMaker, Funky button, react-philosophies and more...]]></summary>
+        <content type="html"><![CDATA[LuckyResumeMaker, Funky button, react-philosophies and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #89]]></title>
+        <id>https://wweb.dev/weekly/89</id>
+        <link href="https://wweb.dev/weekly/89"/>
+        <updated>2021-09-28T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Burdy, Basic Pattern Repository, cccreate, Saveddit and more...]]></summary>
+        <content type="html"><![CDATA[Burdy, Basic Pattern Repository, cccreate, Saveddit and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #88]]></title>
+        <id>https://wweb.dev/weekly/88</id>
+        <link href="https://wweb.dev/weekly/88"/>
+        <updated>2021-09-21T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ToolJet, Doodle Ipsum, Theatre.js, Grainy Gradients and more...]]></summary>
+        <content type="html"><![CDATA[ToolJet, Doodle Ipsum, Theatre.js, Grainy Gradients and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #87]]></title>
+        <id>https://wweb.dev/weekly/87</id>
+        <link href="https://wweb.dev/weekly/87"/>
+        <updated>2021-09-14T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Design Junction, Figen, Gokarna, SpeedVitals, Solid and more...]]></summary>
+        <content type="html"><![CDATA[Design Junction, Figen, Gokarna, SpeedVitals, Solid and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #86]]></title>
+        <id>https://wweb.dev/weekly/86</id>
+        <link href="https://wweb.dev/weekly/86"/>
+        <updated>2021-09-07T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[OpenMoji, Buttons Generator, Devboard, couleur.io and more...]]></summary>
+        <content type="html"><![CDATA[OpenMoji, Buttons Generator, Devboard, couleur.io and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #85]]></title>
+        <id>https://wweb.dev/weekly/85</id>
+        <link href="https://wweb.dev/weekly/85"/>
+        <updated>2021-08-18T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Blokada, CSS Modules, daisyUI, Imba, Progressive Tooling and more...]]></summary>
+        <content type="html"><![CDATA[Blokada, CSS Modules, daisyUI, Imba, Progressive Tooling and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #84]]></title>
+        <id>https://wweb.dev/weekly/84</id>
+        <link href="https://wweb.dev/weekly/84"/>
+        <updated>2021-08-10T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Jotai, LÖVR, LiveKit, AVPress, StackFinder, Gradients and more...]]></summary>
+        <content type="html"><![CDATA[Jotai, LÖVR, LiveKit, AVPress, StackFinder, Gradients and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #83]]></title>
+        <id>https://wweb.dev/weekly/83</id>
+        <link href="https://wweb.dev/weekly/83"/>
+        <updated>2021-08-03T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Instahues, Wicked Backgrounds, Piped, Welcome UI and more...]]></summary>
+        <content type="html"><![CDATA[Instahues, Wicked Backgrounds, Piped, Welcome UI and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #82]]></title>
+        <id>https://wweb.dev/weekly/82</id>
+        <link href="https://wweb.dev/weekly/82"/>
+        <updated>2021-07-27T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[SVG Gobbler, Salvia-kit, graphlatte, Maker Stations and more...]]></summary>
+        <content type="html"><![CDATA[SVG Gobbler, Salvia-kit, graphlatte, Maker Stations and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #81]]></title>
+        <id>https://wweb.dev/weekly/81</id>
+        <link href="https://wweb.dev/weekly/81"/>
+        <updated>2021-07-20T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Sa11y, gridless.design, Glass UI, Line Icons, Rooks and more...]]></summary>
+        <content type="html"><![CDATA[Sa11y, gridless.design, Glass UI, Line Icons, Rooks and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #80]]></title>
+        <id>https://wweb.dev/weekly/80</id>
+        <link href="https://wweb.dev/weekly/80"/>
+        <updated>2021-07-13T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Copy & Paste CSS, UI Snippets, Nextra, use-color and more...]]></summary>
+        <content type="html"><![CDATA[Copy & Paste CSS, UI Snippets, Nextra, use-color and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #79]]></title>
+        <id>https://wweb.dev/weekly/79</id>
+        <link href="https://wweb.dev/weekly/79"/>
+        <updated>2021-06-22T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[nushell, Utopia, ReScript, DenoDB, Super Agent and more...]]></summary>
+        <content type="html"><![CDATA[nushell, Utopia, ReScript, DenoDB, Super Agent and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #78]]></title>
+        <id>https://wweb.dev/weekly/78</id>
+        <link href="https://wweb.dev/weekly/78"/>
+        <updated>2021-06-15T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Astro, BootStarters, GitHub Flat Data, Open Tags and more...]]></summary>
+        <content type="html"><![CDATA[Astro, BootStarters, GitHub Flat Data, Open Tags and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #77]]></title>
+        <id>https://wweb.dev/weekly/77</id>
+        <link href="https://wweb.dev/weekly/77"/>
+        <updated>2021-06-08T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[mermaid, Links on Performance, Mastershot, macOCR and more...]]></summary>
+        <content type="html"><![CDATA[mermaid, Links on Performance, Mastershot, macOCR and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #76]]></title>
+        <id>https://wweb.dev/weekly/76</id>
+        <link href="https://wweb.dev/weekly/76"/>
+        <updated>2021-06-01T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Awesome Privacy, Color Gradient, Boring Avatars, NocoDB and more...]]></summary>
+        <content type="html"><![CDATA[Awesome Privacy, Color Gradient, Boring Avatars, NocoDB and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #75]]></title>
+        <id>https://wweb.dev/weekly/75</id>
+        <link href="https://wweb.dev/weekly/75"/>
+        <updated>2021-05-25T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Iconoir, Learn CSS, pmndrs market, Tail Blend, AImages and more...]]></summary>
+        <content type="html"><![CDATA[Iconoir, Learn CSS, pmndrs market, Tail Blend, AImages and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #74]]></title>
+        <id>https://wweb.dev/weekly/74</id>
+        <link href="https://wweb.dev/weekly/74"/>
+        <updated>2021-05-18T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[mmm.page, PINTR, Codewell, Modern JavaScript, Mantine and more...]]></summary>
+        <content type="html"><![CDATA[mmm.page, PINTR, Codewell, Modern JavaScript, Mantine and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #73]]></title>
+        <id>https://wweb.dev/weekly/73</id>
+        <link href="https://wweb.dev/weekly/73"/>
+        <updated>2021-05-11T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How React hooks work, ClearURLs, Bootstrap 5, Oslo, HTML Tips and more...]]></summary>
+        <content type="html"><![CDATA[How React hooks work, ClearURLs, Bootstrap 5, Oslo, HTML Tips and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #72]]></title>
+        <id>https://wweb.dev/weekly/72</id>
+        <link href="https://wweb.dev/weekly/72"/>
+        <updated>2021-05-04T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[MailMask, css-shorthands, Waterfaller, Frontend Practice and more...]]></summary>
+        <content type="html"><![CDATA[MailMask, css-shorthands, Waterfaller, Frontend Practice and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #71]]></title>
+        <id>https://wweb.dev/weekly/71</id>
+        <link href="https://wweb.dev/weekly/71"/>
+        <updated>2021-04-27T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[SimpleR State, Cusdis, HTML boilerplate, Awesome-Selfhosted and more...]]></summary>
+        <content type="html"><![CDATA[SimpleR State, Cusdis, HTML boilerplate, Awesome-Selfhosted and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #70]]></title>
+        <id>https://wweb.dev/weekly/70</id>
+        <link href="https://wweb.dev/weekly/70"/>
+        <updated>2021-04-20T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Design Resources, browser cookies, GitHub Theme, DirectShare and more...]]></summary>
+        <content type="html"><![CDATA[Design Resources, browser cookies, GitHub Theme, DirectShare and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #69]]></title>
+        <id>https://wweb.dev/weekly/69</id>
+        <link href="https://wweb.dev/weekly/69"/>
+        <updated>2021-04-13T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Coolify, React + D3.js, Fontshare, Gradient Generator, moovie.js and more...]]></summary>
+        <content type="html"><![CDATA[Coolify, React + D3.js, Fontshare, Gradient Generator, moovie.js and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #68]]></title>
+        <id>https://wweb.dev/weekly/68</id>
+        <link href="https://wweb.dev/weekly/68"/>
+        <updated>2021-03-30T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[transition.css, use-local-storage-state, Re:factor, FicusJS and more...]]></summary>
+        <content type="html"><![CDATA[transition.css, use-local-storage-state, Re:factor, FicusJS and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #67]]></title>
+        <id>https://wweb.dev/weekly/67</id>
+        <link href="https://wweb.dev/weekly/67"/>
+        <updated>2021-03-23T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Splite, Focalboard, Learn LaTeX, chatwoot, Sorted CSS Colors and more...]]></summary>
+        <content type="html"><![CDATA[Splite, Focalboard, Learn LaTeX, chatwoot, Sorted CSS Colors and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #66]]></title>
+        <id>https://wweb.dev/weekly/66</id>
+        <link href="https://wweb.dev/weekly/66"/>
+        <updated>2021-03-16T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Clone Wars, StartupToolbox, react-use, amigos, conic.css and more...]]></summary>
+        <content type="html"><![CDATA[Clone Wars, StartupToolbox, react-use, amigos, conic.css and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #65]]></title>
+        <id>https://wweb.dev/weekly/65</id>
+        <link href="https://wweb.dev/weekly/65"/>
+        <updated>2021-03-09T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Local PDF Tools, Generative SVG Social Images, Parvus, Griddy and more...]]></summary>
+        <content type="html"><![CDATA[Local PDF Tools, Generative SVG Social Images, Parvus, Griddy and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #64]]></title>
+        <id>https://wweb.dev/weekly/64</id>
+        <link href="https://wweb.dev/weekly/64"/>
+        <updated>2021-03-01T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Code, Shadows, Blobmixer, Front-End Tips, HTML Boilerplates and more...]]></summary>
+        <content type="html"><![CDATA[Code, Shadows, Blobmixer, Front-End Tips, HTML Boilerplates and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #63]]></title>
+        <id>https://wweb.dev/weekly/63</id>
+        <link href="https://wweb.dev/weekly/63"/>
+        <updated>2021-02-23T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Charts.css, Zsh Tricks, Responsive Design Patterns and more...]]></summary>
+        <content type="html"><![CDATA[Charts.css, Zsh Tricks, Responsive Design Patterns and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #62]]></title>
+        <id>https://wweb.dev/weekly/62</id>
+        <link href="https://wweb.dev/weekly/62"/>
+        <updated>2021-02-16T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[svgwaves.io, Remotion, github1s, ️Fusuma, CSS Polygon Shapes and more...]]></summary>
+        <content type="html"><![CDATA[svgwaves.io, Remotion, github1s, ️Fusuma, CSS Polygon Shapes and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #61]]></title>
+        <id>https://wweb.dev/weekly/61</id>
+        <link href="https://wweb.dev/weekly/61"/>
+        <updated>2021-02-09T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Free Animated Headers, Archivy, SVG Shape Generator, SVG Crop and more...]]></summary>
+        <content type="html"><![CDATA[Free Animated Headers, Archivy, SVG Shape Generator, SVG Crop and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #60]]></title>
+        <id>https://wweb.dev/weekly/60</id>
+        <link href="https://wweb.dev/weekly/60"/>
+        <updated>2021-02-02T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[John Doe Webpage, Deskreen, Pills, Vue Native, Dev Containers and more...]]></summary>
+        <content type="html"><![CDATA[John Doe Webpage, Deskreen, Pills, Vue Native, Dev Containers and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #59]]></title>
+        <id>https://wweb.dev/weekly/59</id>
+        <link href="https://wweb.dev/weekly/59"/>
+        <updated>2021-01-26T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Glyphs, Ojoy, Nested Media Queries, MagicTween, ButtonBuddy and more...]]></summary>
+        <content type="html"><![CDATA[Glyphs, Ojoy, Nested Media Queries, MagicTween, ButtonBuddy and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #58]]></title>
+        <id>https://wweb.dev/weekly/58</id>
+        <link href="https://wweb.dev/weekly/58"/>
+        <updated>2021-01-19T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Figma Crash Course, The future of CSS, LinkAce, useAnimations and more...]]></summary>
+        <content type="html"><![CDATA[Figma Crash Course, The future of CSS, LinkAce, useAnimations and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #57]]></title>
+        <id>https://wweb.dev/weekly/57</id>
+        <link href="https://wweb.dev/weekly/57"/>
+        <updated>2021-01-12T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hotwire, AnimXYZ, 10 KB Club, Pattern Generator, Scale and more...]]></summary>
+        <content type="html"><![CDATA[Hotwire, AnimXYZ, 10 KB Club, Pattern Generator, Scale and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #56]]></title>
+        <id>https://wweb.dev/weekly/56</id>
+        <link href="https://wweb.dev/weekly/56"/>
+        <updated>2020-12-22T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[useAuth, Polotno Studio, EStimator, Scrollytelling with React and more...]]></summary>
+        <content type="html"><![CDATA[useAuth, Polotno Studio, EStimator, Scrollytelling with React and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #55]]></title>
+        <id>https://wweb.dev/weekly/55</id>
+        <link href="https://wweb.dev/weekly/55"/>
+        <updated>2020-12-15T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Checklist Design, shotr, GIF Maker, Social Image Generator and more...]]></summary>
+        <content type="html"><![CDATA[Checklist Design, shotr, GIF Maker, Social Image Generator and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #54]]></title>
+        <id>https://wweb.dev/weekly/54</id>
+        <link href="https://wweb.dev/weekly/54"/>
+        <updated>2020-12-08T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[css.lab, React is slow, Beautiful Codes, micro-frontends and more...]]></summary>
+        <content type="html"><![CDATA[css.lab, React is slow, Beautiful Codes, micro-frontends and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #53]]></title>
+        <id>https://wweb.dev/weekly/53</id>
+        <link href="https://wweb.dev/weekly/53"/>
+        <updated>2020-12-01T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Advent of Code, Etebase, Text Gradients, Building Your Color Palette and more...]]></summary>
+        <content type="html"><![CDATA[Advent of Code, Etebase, Text Gradients, Building Your Color Palette and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #52]]></title>
+        <id>https://wweb.dev/weekly/52</id>
+        <link href="https://wweb.dev/weekly/52"/>
+        <updated>2020-11-24T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Upptime, Pretty Snap, Browsh, Wasp, Pattern Collect, 1MB Club and more...]]></summary>
+        <content type="html"><![CDATA[Upptime, Pretty Snap, Browsh, Wasp, Pattern Collect, 1MB Club and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #51]]></title>
+        <id>https://wweb.dev/weekly/51</id>
+        <link href="https://wweb.dev/weekly/51"/>
+        <updated>2020-11-17T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Socialify, Effective Skeleton Screens, Notion Clone, Seasonal.css and more...]]></summary>
+        <content type="html"><![CDATA[Socialify, Effective Skeleton Screens, Notion Clone, Seasonal.css and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #50]]></title>
+        <id>https://wweb.dev/weekly/50</id>
+        <link href="https://wweb.dev/weekly/50"/>
+        <updated>2020-11-11T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Cirrus.CSS, Device Shots, Pattern Monster, CSS Spider, Font Of Web and more...]]></summary>
+        <content type="html"><![CDATA[Cirrus.CSS, Device Shots, Pattern Monster, CSS Spider, Font Of Web and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #49]]></title>
+        <id>https://wweb.dev/weekly/49</id>
+        <link href="https://wweb.dev/weekly/49"/>
+        <updated>2020-11-03T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Next.js 10, Placeholder Logos, link-to-qr, React Flow, Merlin and more...]]></summary>
+        <content type="html"><![CDATA[Next.js 10, Placeholder Logos, link-to-qr, React Flow, Merlin and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #48]]></title>
+        <id>https://wweb.dev/weekly/48</id>
+        <link href="https://wweb.dev/weekly/48"/>
+        <updated>2020-10-27T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Phosphor Icons, SVG Favicon Maker, State Of CSS 2020, Checka11y.css and more...]]></summary>
+        <content type="html"><![CDATA[Phosphor Icons, SVG Favicon Maker, State Of CSS 2020, Checka11y.css and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #47]]></title>
+        <id>https://wweb.dev/weekly/47</id>
+        <link href="https://wweb.dev/weekly/47"/>
+        <updated>2020-10-20T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ScreenBean, Coded Mails, CSS Background Patterns, dragmove.js, cssbuttons and more...]]></summary>
+        <content type="html"><![CDATA[ScreenBean, Coded Mails, CSS Background Patterns, dragmove.js, cssbuttons and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #46]]></title>
+        <id>https://wweb.dev/weekly/46</id>
+        <link href="https://wweb.dev/weekly/46"/>
+        <updated>2020-10-13T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[hola svg, Design Resources, JavaScript Iterators, vime, clamp, Phelia and more...]]></summary>
+        <content type="html"><![CDATA[hola svg, Design Resources, JavaScript Iterators, vime, clamp, Phelia and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #45]]></title>
+        <id>https://wweb.dev/weekly/45</id>
+        <link href="https://wweb.dev/weekly/45"/>
+        <updated>2020-10-06T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[IconPark, CSS Grid Layout, visx, a11yresources, CSS font-size-adjust and more...]]></summary>
+        <content type="html"><![CDATA[IconPark, CSS Grid Layout, visx, a11yresources, CSS font-size-adjust and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #44]]></title>
+        <id>https://wweb.dev/weekly/44</id>
+        <link href="https://wweb.dev/weekly/44"/>
+        <updated>2020-09-29T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Box-Shadow Generator, Check Browsers Support, Learn Git Branching, Headless UI and more...]]></summary>
+        <content type="html"><![CDATA[Box-Shadow Generator, Check Browsers Support, Learn Git Branching, Headless UI and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #43]]></title>
+        <id>https://wweb.dev/weekly/43</id>
+        <link href="https://wweb.dev/weekly/43"/>
+        <updated>2020-09-22T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How HTTPS Works, GitHub CLI 1.0, Domains for the Rest of Us, content-visibility and more...]]></summary>
+        <content type="html"><![CDATA[How HTTPS Works, GitHub CLI 1.0, Domains for the Rest of Us, content-visibility and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #42]]></title>
+        <id>https://wweb.dev/weekly/42</id>
+        <link href="https://wweb.dev/weekly/42"/>
+        <updated>2020-09-15T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[lookup.design, Capsule, Stitches, Beyond Media Queries, Vanilla Colorful and more...]]></summary>
+        <content type="html"><![CDATA[lookup.design, Capsule, Stitches, Beyond Media Queries, Vanilla Colorful and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #41]]></title>
+        <id>https://wweb.dev/weekly/41</id>
+        <link href="https://wweb.dev/weekly/41"/>
+        <updated>2020-09-08T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Shortcuts.design, Omatsuri, ztext.js, Previewed, Morphing SVG, Selecto.js and more...]]></summary>
+        <content type="html"><![CDATA[Shortcuts.design, Omatsuri, ztext.js, Previewed, Morphing SVG, Selecto.js and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #40]]></title>
+        <id>https://wweb.dev/weekly/40</id>
+        <link href="https://wweb.dev/weekly/40"/>
+        <updated>2020-08-25T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[umami, Deviceful, heroicons, handwritten.js, GitDuck, The Animated Web and more...]]></summary>
+        <content type="html"><![CDATA[umami, Deviceful, heroicons, handwritten.js, GitDuck, The Animated Web and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #39]]></title>
+        <id>https://wweb.dev/weekly/39</id>
+        <link href="https://wweb.dev/weekly/39"/>
+        <updated>2020-08-18T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Elder.js, Responsively, Storybook 6.0, zustand, Kor, Docusaurus, Embla Carousel and more...]]></summary>
+        <content type="html"><![CDATA[Elder.js, Responsively, Storybook 6.0, zustand, Kor, Docusaurus, Embla Carousel and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #38]]></title>
+        <id>https://wweb.dev/weekly/38</id>
+        <link href="https://wweb.dev/weekly/38"/>
+        <updated>2020-08-11T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Bumbag, Magnetic Buttons, moment-guess, PurgeCSS, content-visibility, Papercups and more...]]></summary>
+        <content type="html"><![CDATA[Bumbag, Magnetic Buttons, moment-guess, PurgeCSS, content-visibility, Papercups and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #37]]></title>
+        <id>https://wweb.dev/weekly/37</id>
+        <link href="https://wweb.dev/weekly/37"/>
+        <updated>2020-08-04T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Shoelace, CSS3 loaders, tinykeys, useImageColor, Laws of UX, Teenyicons and more...]]></summary>
+        <content type="html"><![CDATA[Shoelace, CSS3 loaders, tinykeys, useImageColor, Laws of UX, Teenyicons and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #36]]></title>
+        <id>https://wweb.dev/weekly/36</id>
+        <link href="https://wweb.dev/weekly/36"/>
+        <updated>2020-07-28T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[useHooks, Differences Between SSG And SSR, Warp SVG Online, Rows n' Columns and more...]]></summary>
+        <content type="html"><![CDATA[useHooks, Differences Between SSG And SSR, Warp SVG Online, Rows n' Columns and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #35]]></title>
+        <id>https://wweb.dev/weekly/35</id>
+        <link href="https://wweb.dev/weekly/35"/>
+        <updated>2020-07-21T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[this vs that, Super Expressive, CSS Effects Snippets, The WET Codebase and more...]]></summary>
+        <content type="html"><![CDATA[this vs that, Super Expressive, CSS Effects Snippets, The WET Codebase and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #34]]></title>
+        <id>https://wweb.dev/weekly/34</id>
+        <link href="https://wweb.dev/weekly/34"/>
+        <updated>2020-07-14T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Tabler Icons, 1-Line Layouts, Squircley, Capsize, Developer Handbook 2020 and more...]]></summary>
+        <content type="html"><![CDATA[Tabler Icons, 1-Line Layouts, Squircley, Capsize, Developer Handbook 2020 and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #33]]></title>
+        <id>https://wweb.dev/weekly/33</id>
+        <link href="https://wweb.dev/weekly/33"/>
+        <updated>2020-07-07T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[hyperapp, html.systems, Knopf.css, Tailwind cheat sheet, shareon, DecentDrops and more...]]></summary>
+        <content type="html"><![CDATA[hyperapp, html.systems, Knopf.css, Tailwind cheat sheet, shareon, DecentDrops and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #32]]></title>
+        <id>https://wweb.dev/weekly/32</id>
+        <link href="https://wweb.dev/weekly/32"/>
+        <updated>2020-06-30T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Grid Cheatsheet, tree.nathanfriend.io, Reflex.js, Textures.js, Whole page slider and more...]]></summary>
+        <content type="html"><![CDATA[Grid Cheatsheet, tree.nathanfriend.io, Reflex.js, Textures.js, Whole page slider and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #31]]></title>
+        <id>https://wweb.dev/weekly/31</id>
+        <link href="https://wweb.dev/weekly/31"/>
+        <updated>2020-06-23T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Beam Cafe, Gradient Generator, Tutorialist Application State Management and more...]]></summary>
+        <content type="html"><![CDATA[Beam Cafe, Gradient Generator, Tutorialist Application State Management and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #30]]></title>
+        <id>https://wweb.dev/weekly/30</id>
+        <link href="https://wweb.dev/weekly/30"/>
+        <updated>2020-06-16T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Blob generator, keen-slider, Collected Notes, Sitejoy, Code Notes, FeedFox and more...]]></summary>
+        <content type="html"><![CDATA[Blob generator, keen-slider, Collected Notes, Sitejoy, Code Notes, FeedFox and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #29]]></title>
+        <id>https://wweb.dev/weekly/29</id>
+        <link href="https://wweb.dev/weekly/29"/>
+        <updated>2020-06-09T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Shape Dividers, Pattern Generator, GitHub Classroom, No Design Development and more...]]></summary>
+        <content type="html"><![CDATA[Shape Dividers, Pattern Generator, GitHub Classroom, No Design Development and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #28]]></title>
+        <id>https://wweb.dev/weekly/28</id>
+        <link href="https://wweb.dev/weekly/28"/>
+        <updated>2020-06-02T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Supabase, Obsidian, MDN React, htmx, Rough Notation, Tailblocks, Lander and more...]]></summary>
+        <content type="html"><![CDATA[Supabase, Obsidian, MDN React, htmx, Rough Notation, Tailblocks, Lander and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #27]]></title>
+        <id>https://wweb.dev/weekly/27</id>
+        <link href="https://wweb.dev/weekly/27"/>
+        <updated>2020-05-26T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Norde Source, Appy Dev, Keyframes, SEO Cheat Sheet, Marketing for Engineer and more...]]></summary>
+        <content type="html"><![CDATA[Norde Source, Appy Dev, Keyframes, SEO Cheat Sheet, Marketing for Engineer and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #26]]></title>
+        <id>https://wweb.dev/weekly/26</id>
+        <link href="https://wweb.dev/weekly/26"/>
+        <updated>2020-05-19T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Deno, JSNation, Modern CSS Solutions, quicklink, animista, styco and more...]]></summary>
+        <content type="html"><![CDATA[Deno, JSNation, Modern CSS Solutions, quicklink, animista, styco and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #25]]></title>
+        <id>https://wweb.dev/weekly/25</id>
+        <link href="https://wweb.dev/weekly/25"/>
+        <updated>2020-05-12T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Codespaces, CSS Grid Generator, Design Resources, endpoints.dev, JavaScript Cheatsheet and more...]]></summary>
+        <content type="html"><![CDATA[Codespaces, CSS Grid Generator, Design Resources, endpoints.dev, JavaScript Cheatsheet and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #24]]></title>
+        <id>https://wweb.dev/weekly/24</id>
+        <link href="https://wweb.dev/weekly/24"/>
+        <updated>2020-05-05T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hero Generator, Editly, Lit, Pantry, Stylestash, Tara, 1loc, Next.js Tips and more...]]></summary>
+        <content type="html"><![CDATA[Hero Generator, Editly, Lit, Pantry, Stylestash, Tara, 1loc, Next.js Tips and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #23]]></title>
+        <id>https://wweb.dev/weekly/23</id>
+        <link href="https://wweb.dev/weekly/23"/>
+        <updated>2020-04-28T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Eloquent JavaScript, BlurHash, Spaced Time, next-dark-mode, pattern.css and more...]]></summary>
+        <content type="html"><![CDATA[Eloquent JavaScript, BlurHash, Spaced Time, next-dark-mode, pattern.css and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #22]]></title>
+        <id>https://wweb.dev/weekly/22</id>
+        <link href="https://wweb.dev/weekly/22"/>
+        <updated>2020-04-21T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[GitHub is free, React Query, BEM Cheat Sheet, Crank.js, Meanderer.js and more...]]></summary>
+        <content type="html"><![CDATA[GitHub is free, React Query, BEM Cheat Sheet, Crank.js, Meanderer.js and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #21]]></title>
+        <id>https://wweb.dev/weekly/21</id>
+        <link href="https://wweb.dev/weekly/21"/>
+        <updated>2020-04-14T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Level Up Your CSS Animation Skills, Snapfont, Linkdash, multicopy and more...]]></summary>
+        <content type="html"><![CDATA[Level Up Your CSS Animation Skills, Snapfont, Linkdash, multicopy and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #20]]></title>
+        <id>https://wweb.dev/weekly/20</id>
+        <link href="https://wweb.dev/weekly/20"/>
+        <updated>2020-04-07T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Open UI, AllTheFreeStock, HTML DOM, Magic Link, Flowify, Lisan and more...]]></summary>
+        <content type="html"><![CDATA[Open UI, AllTheFreeStock, HTML DOM, Magic Link, Flowify, Lisan and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #19]]></title>
+        <id>https://wweb.dev/weekly/19</id>
+        <link href="https://wweb.dev/weekly/19"/>
+        <updated>2020-03-31T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[MVP.css, Web Skills, Puddle.js, How I Became a Better Programmer, Motion Layout and more...]]></summary>
+        <content type="html"><![CDATA[MVP.css, Web Skills, Puddle.js, How I Became a Better Programmer, Motion Layout and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #18]]></title>
+        <id>https://wweb.dev/weekly/18</id>
+        <link href="https://wweb.dev/weekly/18"/>
+        <updated>2020-03-24T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Parametric Color Mixer, Animated Hamburger Icons, TypeScript Particles, simpleParallax.js and more...]]></summary>
+        <content type="html"><![CDATA[Parametric Color Mixer, Animated Hamburger Icons, TypeScript Particles, simpleParallax.js and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #17]]></title>
+        <id>https://wweb.dev/weekly/17</id>
+        <link href="https://wweb.dev/weekly/17"/>
+        <updated>2020-03-17T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[midori, Jitsi Meet, Creative Coding Essentials, unscreen, JavaScript CheatSheet and more...]]></summary>
+        <content type="html"><![CDATA[midori, Jitsi Meet, Creative Coding Essentials, unscreen, JavaScript CheatSheet and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #16]]></title>
+        <id>https://wweb.dev/weekly/16</id>
+        <link href="https://wweb.dev/weekly/16"/>
+        <updated>2020-03-10T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Monitoror, Slide to Subscribe, Micromodal, Distorted Link Effects, Docker Essentials and more...]]></summary>
+        <content type="html"><![CDATA[Monitoror, Slide to Subscribe, Micromodal, Distorted Link Effects, Docker Essentials and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #15]]></title>
+        <id>https://wweb.dev/weekly/15</id>
+        <link href="https://wweb.dev/weekly/15"/>
+        <updated>2020-03-03T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[CSS Icons, Mailbrew, Tailwind UI, SaaS landing pages, Brainstorming business ideas and more...]]></summary>
+        <content type="html"><![CDATA[CSS Icons, Mailbrew, Tailwind UI, SaaS landing pages, Brainstorming business ideas and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #14]]></title>
+        <id>https://wweb.dev/weekly/14</id>
+        <link href="https://wweb.dev/weekly/14"/>
+        <updated>2020-02-25T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[PostHog, JavaScript Interview Questions, Free Programming Books, grep.app and more...]]></summary>
+        <content type="html"><![CDATA[PostHog, JavaScript Interview Questions, Free Programming Books, grep.app and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #13]]></title>
+        <id>https://wweb.dev/weekly/13</id>
+        <link href="https://wweb.dev/weekly/13"/>
+        <updated>2020-02-18T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Good first issue, App Ideas, Beautiful Dingbats, GitHub CLI, The JavaScript Way and more...]]></summary>
+        <content type="html"><![CDATA[Good first issue, App Ideas, Beautiful Dingbats, GitHub CLI, The JavaScript Way and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #12]]></title>
+        <id>https://wweb.dev/weekly/12</id>
+        <link href="https://wweb.dev/weekly/12"/>
+        <updated>2020-02-11T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Octomments, Neumorphism, Bit, DarkModeJS, Full Stack Open 2019 and more...]]></summary>
+        <content type="html"><![CDATA[Octomments, Neumorphism, Bit, DarkModeJS, Full Stack Open 2019 and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #11]]></title>
+        <id>https://wweb.dev/weekly/11</id>
+        <link href="https://wweb.dev/weekly/11"/>
+        <updated>2020-02-04T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[You Don't know JS Yet, Vanilla Web Projects, 24 modern ES6 code snippets and more...]]></summary>
+        <content type="html"><![CDATA[You Don't know JS Yet, Vanilla Web Projects, 24 modern ES6 code snippets and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #10]]></title>
+        <id>https://wweb.dev/weekly/10</id>
+        <link href="https://wweb.dev/weekly/10"/>
+        <updated>2020-01-28T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hoard.fyi, Screen Size Map, Mirage JS, Stock Resources, Vuer, React Libraries and more...]]></summary>
+        <content type="html"><![CDATA[Hoard.fyi, Screen Size Map, Mirage JS, Stock Resources, Vuer, React Libraries and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #9]]></title>
+        <id>https://wweb.dev/weekly/9</id>
+        <link href="https://wweb.dev/weekly/9"/>
+        <updated>2020-01-21T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Hero Patterns, Tiny Helpers, GoatCounter, is-website-vulnerable, JamTemplates and more...]]></summary>
+        <content type="html"><![CDATA[Hero Patterns, Tiny Helpers, GoatCounter, is-website-vulnerable, JamTemplates and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #8]]></title>
+        <id>https://wweb.dev/weekly/8</id>
+        <link href="https://wweb.dev/weekly/8"/>
+        <updated>2020-01-14T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Gradient Magic, Broot, cacolor.co, stencils, 23 VS Code Shortcuts, Craft.js and more...]]></summary>
+        <content type="html"><![CDATA[Gradient Magic, Broot, cacolor.co, stencils, 23 VS Code Shortcuts, Craft.js and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #7]]></title>
+        <id>https://wweb.dev/weekly/7</id>
+        <link href="https://wweb.dev/weekly/7"/>
+        <updated>2020-01-07T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Oh Shit, Git!?!, Colorsinspo, Parcel, Redux Style Guite, Bot Land, Rhubarb and more...]]></summary>
+        <content type="html"><![CDATA[Oh Shit, Git!?!, Colorsinspo, Parcel, Redux Style Guite, Bot Land, Rhubarb and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #6]]></title>
+        <id>https://wweb.dev/weekly/6</id>
+        <link href="https://wweb.dev/weekly/6"/>
+        <updated>2019-12-31T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Just JavaScript, CHL.LI, CoreUI Icons, Convert2Svg, Generative Placeholders and more...]]></summary>
+        <content type="html"><![CDATA[Just JavaScript, CHL.LI, CoreUI Icons, Convert2Svg, Generative Placeholders and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #5]]></title>
+        <id>https://wweb.dev/weekly/5</id>
+        <link href="https://wweb.dev/weekly/5"/>
+        <updated>2019-12-24T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Codepen Most Hearted 2019, V 8.0, lazy-simon.js, GitHub Apps and more...]]></summary>
+        <content type="html"><![CDATA[Codepen Most Hearted 2019, V 8.0, lazy-simon.js, GitHub Apps and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #4]]></title>
+        <id>https://wweb.dev/weekly/4</id>
+        <link href="https://wweb.dev/weekly/4"/>
+        <updated>2019-12-17T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Nedux, New CSS “:is()”, Challenging projects, musicForProgramming, No to Chrome and more...]]></summary>
+        <content type="html"><![CDATA[Nedux, New CSS “:is()”, Challenging projects, musicForProgramming, No to Chrome and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #3]]></title>
+        <id>https://wweb.dev/weekly/3</id>
+        <link href="https://wweb.dev/weekly/3"/>
+        <updated>2019-12-10T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Self Hosted, CSS Layout, Refactoring UI, Deep Sea, react-spring, Leonardo and more...]]></summary>
+        <content type="html"><![CDATA[Self Hosted, CSS Layout, Refactoring UI, Deep Sea, react-spring, Leonardo and more...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #2]]></title>
+        <id>https://wweb.dev/weekly/2</id>
+        <link href="https://wweb.dev/weekly/2"/>
+        <updated>2019-12-03T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Bootstrap Icons, SVG Landscapes, roughViz.js, JavaScript Christmas, Curlie, Cell and more..]]></summary>
+        <content type="html"><![CDATA[Bootstrap Icons, SVG Landscapes, roughViz.js, JavaScript Christmas, Curlie, Cell and more..]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #1]]></title>
+        <id>https://wweb.dev/weekly/1</id>
+        <link href="https://wweb.dev/weekly/1"/>
+        <updated>2019-11-26T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[SWR, Fresh Folk, Colors and fonts, Animated CSS Backgrounds, Postwoman, Pika and more]]></summary>
+        <content type="html"><![CDATA[SWR, Fresh Folk, Colors and fonts, Animated CSS Backgrounds, Postwoman, Pika and more]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+</feed>
