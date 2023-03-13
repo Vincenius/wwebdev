@@ -7,7 +7,7 @@
     "analyze": "cross-env ANALYZE=true next build",
     "dev": "next dev",
     "build": "next build",
-    "start": "next start -p 3009",
+    "start": "next start",
     "export": "npm run build && next export"
   },
   "dependencies": {
