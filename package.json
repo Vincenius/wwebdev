@@ -9,7 +9,8 @@
     "build": "next build",
     "start": "next start",
     "export": "npm run build && next export",
-    "esbuild": "allfiles=$(ls -1 ./.next/standalone/node_modules/**/*.js) && esbuild $allfiles --minify --outdir=.next/standalone/node_modules --platform=node --target=node16 --format=cjs --allow-overwrite"
+    "esbuild": "allfiles=$(ls -1 ./.next/standalone/node_modules/**/*.js) && esbuild $allfiles --minify --outdir=.next/standalone/node_modules --platform=node --target=node16 --format=cjs --allow-overwrite",
+    "esbuild2": "allfiles=$(ls -1 ./.next/standalone/.next/**/*.js) && esbuild $allfiles --minify --outdir=.next/standalone/.next --platform=node --target=node16 --format=cjs --allow-overwrite"
   },
   "dependencies": {
     "@emotion/react": "^11.10.6",

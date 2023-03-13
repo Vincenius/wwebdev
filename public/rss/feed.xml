@@ -4,7 +4,7 @@
         <title>wweb.dev</title>
         <link>https://wweb.dev</link>
         <description>Stay up to date with weekly updates, get resources for next project and read articles and tutorials about web development.</description>
-        <lastBuildDate>Mon, 13 Mar 2023 07:51:02 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 13 Mar 2023 08:10:10 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -179,7 +179,7 @@
             <title><![CDATA[Websites For Inspiration]]></title>
             <link>https://wweb.dev/resources/websites-for-inspiration</link>
             <guid>https://wweb.dev/resources/websites-for-inspiration</guid>
-            <pubDate>Sun, 19 Apr 2020 22:00:00 GMT</pubDate>
+            <pubDate>Wed, 07 Dec 2022 23:00:00 GMT</pubDate>
             <description><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></description>
             <content:encoded><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></content:encoded>
             <author>info@wweb.dev (Vincent Will)</author>
@@ -206,7 +206,7 @@
             <title><![CDATA[How to build a static website without frameworks using npm scripts]]></title>
             <link>https://wweb.dev/blog/how-to-create-static-website-npm-scripts</link>
             <guid>https://wweb.dev/blog/how-to-create-static-website-npm-scripts</guid>
-            <pubDate>Sat, 01 Feb 2020 23:00:00 GMT</pubDate>
+            <pubDate>Thu, 17 Mar 2022 23:00:00 GMT</pubDate>
             <description><![CDATA[Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...]]></description>
             <content:encoded><![CDATA[Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...]]></content:encoded>
             <author>info@wweb.dev (Vincent Will)</author>
@@ -215,7 +215,7 @@
             <title><![CDATA[Websites For Creative Backgrounds]]></title>
             <link>https://wweb.dev/resources/creative-backgrounds</link>
             <guid>https://wweb.dev/resources/creative-backgrounds</guid>
-            <pubDate>Wed, 22 Jan 2020 23:00:00 GMT</pubDate>
+            <pubDate>Mon, 20 Dec 2021 23:00:00 GMT</pubDate>
             <description><![CDATA[A curated list of websites where you can get creative backgrounds for your websites.]]></description>
             <content:encoded><![CDATA[A curated list of websites where you can get creative backgrounds for your websites.]]></content:encoded>
             <author>info@wweb.dev (Vincent Will)</author>
@@ -224,7 +224,7 @@
             <title><![CDATA[A Curated List Of Websites For Free SVG Illustrations]]></title>
             <link>https://wweb.dev/resources/free-svg-illustrations</link>
             <guid>https://wweb.dev/resources/free-svg-illustrations</guid>
-            <pubDate>Sun, 15 Dec 2019 23:00:00 GMT</pubDate>
+            <pubDate>Thu, 04 Jun 2020 22:00:00 GMT</pubDate>
             <description><![CDATA[Spice up your next project with beautiful illustrations from these websites.]]></description>
             <content:encoded><![CDATA[Spice up your next project with beautiful illustrations from these websites.]]></content:encoded>
             <author>info@wweb.dev (Vincent Will)</author>
@@ -251,7 +251,7 @@
             <title><![CDATA[The best note taking apps for developers]]></title>
             <link>https://wweb.dev/blog/the-best-note-taking-apps-for-developers</link>
             <guid>https://wweb.dev/blog/the-best-note-taking-apps-for-developers</guid>
-            <pubDate>Tue, 15 Oct 2019 22:00:00 GMT</pubDate>
+            <pubDate>Thu, 18 Jun 2020 22:00:00 GMT</pubDate>
             <description><![CDATA[There are tons of note taking apps out there. But which ones are best suitable for developers? In the following I'll introduce three note taking apps for developers with good code support. + Available for: Mac, Windows, Android, iOS + Nice Code editor with a…]]></description>
             <content:encoded><![CDATA[There are tons of note taking apps out there. But which ones are best suitable for developers? In the following I'll introduce three note taking apps for developers with good code support. + Available for: Mac, Windows, Android, iOS + Nice Code editor with a…]]></content:encoded>
             <author>info@wweb.dev (Vincent Will)</author>

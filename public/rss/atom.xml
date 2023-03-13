@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wweb.dev</id>
     <title>wweb.dev</title>
-    <updated>2023-03-13T07:51:02.452Z</updated>
+    <updated>2023-03-13T08:10:10.014Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Vincent Will</name>
@@ -343,7 +343,7 @@
         <title type="html"><![CDATA[Websites For Inspiration]]></title>
         <id>https://wweb.dev/resources/websites-for-inspiration</id>
         <link href="https://wweb.dev/resources/websites-for-inspiration"/>
-        <updated>2020-04-19T22:00:00.000Z</updated>
+        <updated>2022-12-07T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></summary>
         <content type="html"><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></content>
         <author>
@@ -397,7 +397,7 @@
         <title type="html"><![CDATA[How to build a static website without frameworks using npm scripts]]></title>
         <id>https://wweb.dev/blog/how-to-create-static-website-npm-scripts</id>
         <link href="https://wweb.dev/blog/how-to-create-static-website-npm-scripts"/>
-        <updated>2020-02-01T23:00:00.000Z</updated>
+        <updated>2022-03-17T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...]]></summary>
         <content type="html"><![CDATA[Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...]]></content>
         <author>
@@ -415,7 +415,7 @@
         <title type="html"><![CDATA[Websites For Creative Backgrounds]]></title>
         <id>https://wweb.dev/resources/creative-backgrounds</id>
         <link href="https://wweb.dev/resources/creative-backgrounds"/>
-        <updated>2020-01-22T23:00:00.000Z</updated>
+        <updated>2021-12-20T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[A curated list of websites where you can get creative backgrounds for your websites.]]></summary>
         <content type="html"><![CDATA[A curated list of websites where you can get creative backgrounds for your websites.]]></content>
         <author>
@@ -433,7 +433,7 @@
         <title type="html"><![CDATA[A Curated List Of Websites For Free SVG Illustrations]]></title>
         <id>https://wweb.dev/resources/free-svg-illustrations</id>
         <link href="https://wweb.dev/resources/free-svg-illustrations"/>
-        <updated>2019-12-15T23:00:00.000Z</updated>
+        <updated>2020-06-04T22:00:00.000Z</updated>
         <summary type="html"><![CDATA[Spice up your next project with beautiful illustrations from these websites.]]></summary>
         <content type="html"><![CDATA[Spice up your next project with beautiful illustrations from these websites.]]></content>
         <author>
@@ -487,7 +487,7 @@
         <title type="html"><![CDATA[The best note taking apps for developers]]></title>
         <id>https://wweb.dev/blog/the-best-note-taking-apps-for-developers</id>
         <link href="https://wweb.dev/blog/the-best-note-taking-apps-for-developers"/>
-        <updated>2019-10-15T22:00:00.000Z</updated>
+        <updated>2020-06-18T22:00:00.000Z</updated>
         <summary type="html"><![CDATA[There are tons of note taking apps out there. But which ones are best suitable for developers? In the following I'll introduce three note taking apps for developers with good code support. + Available for: Mac, Windows, Android, iOS + Nice Code editor with a…]]></summary>
         <content type="html"><![CDATA[There are tons of note taking apps out there. But which ones are best suitable for developers? In the following I'll introduce three note taking apps for developers with good code support. + Available for: Mac, Windows, Android, iOS + Nice Code editor with a…]]></content>
         <author>
