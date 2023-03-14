@@ -34,7 +34,7 @@ const getByQuery = async ({ q, p }) => {
       }
     ].filter(Boolean)
     // https://docs.atlas.mongodb.com/reference/atlas-search/tutorial/#std-label-fts-tutorial-ref
-    const result = await collection.aggregate(query).toArray()
+    result = await collection.aggregate(query).toArray()
     await dbClient.close()
   } catch (e) {
     console.log('error', e)

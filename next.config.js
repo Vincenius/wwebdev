@@ -5,7 +5,6 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 const settings = withBundleAnalyzer({
-    trailingSlash: true,
     compiler: {
         styledComponents: true,
     },
