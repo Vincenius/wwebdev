@@ -35,8 +35,6 @@ const getByQuery = async ({ q, p }) => {
     ].filter(Boolean)
     // https://docs.atlas.mongodb.com/reference/atlas-search/tutorial/#std-label-fts-tutorial-ref
     const result = await collection.aggregate(query).toArray()
-    return result
-
     await dbClient.close()
   } catch (e) {
     console.log('error', e)
@@ -45,7 +43,7 @@ const getByQuery = async ({ q, p }) => {
   return result
 }
 
-async function weeklyRoute(req, res) {
+async function searchRoute(req, res) {
   if (req.method === 'GET') {
     const result = await getByQuery(req.query)
     return res.status(200).json(result)
@@ -54,4 +52,4 @@ async function weeklyRoute(req, res) {
   }
 }
 
-export default weeklyRoute
+export default searchRoute

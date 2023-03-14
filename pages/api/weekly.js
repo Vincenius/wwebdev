@@ -25,7 +25,6 @@ const getByQuery = async query => {
 }
 
 async function weeklyRoute(req, res) {
-  console.log(req.query)
   if (req.method === 'GET' && req.query.id) {
     const result = await getByQuery({ weekly: req.query.id })
     return res.status(200).json(result)
