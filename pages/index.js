@@ -56,7 +56,6 @@ const Home = () => {
 }
 
 export async function getStaticProps(context) {
-  console.log('CALLED')
   generateStaticFiles()
 
   return {

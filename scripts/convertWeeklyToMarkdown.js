@@ -7,7 +7,7 @@ const json = { weekly: id }
 const stringified = JSON.stringify(json)
 const query = encodeURI(stringified)
 
-fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}`)
+fetch(`https://wweb.dev/api/weekly?id=${pid}`)
   .then(res => res.json())
   .then(data => {
     let markDown = ``

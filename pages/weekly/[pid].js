@@ -73,10 +73,7 @@ const Post = ({ weekly }) => {
 
 export async function getServerSideProps(context) {
     const { pid = '' } = context.query
-    const json = { weekly: pid }
-    const stringified = JSON.stringify(json)
-    const query = encodeURI(stringified)
-    const response = await fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}`)
+    const response = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/weekly?id=${pid}`)
     const weekly = await response.json()
 
     return {

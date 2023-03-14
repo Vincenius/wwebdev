@@ -2,13 +2,9 @@ import articleData from '../content/articles'
 import resourceData from '../content/resources'
 
 const fetchWeekly = async (searchVal, page = 1) => {
-  const json = { search: searchVal, page }
-
-  const stringified = JSON.stringify(json)
-  const query = encodeURI(stringified)
-  const response = await fetch(`https://vyx7vatlne.execute-api.eu-central-1.amazonaws.com/prod?q=${query}`)
+  const response = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/search?q=${searchVal}&p=${page}`)
   const result = await response.json()
-  const elements = (result || []).map(item => ({ ...item, headline: item.title, previewImage: item.image }))
+  const elements = (result || []).map(item => ({ ...item, headline: item.title, shareImage: item.image }))
   const canFetchMore = elements.length === 20
 
   return { elements, nextPage: canFetchMore ? page + 1 : null }
