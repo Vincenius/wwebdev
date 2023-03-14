@@ -73,6 +73,7 @@ const Post = ({ weekly }) => {
 
 export async function getServerSideProps(context) {
     const { pid = '' } = context.query
+    console.log({ pid, hostname: process.env.NEXT_PUBLIC_HOSTNAME })
     const response = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/weekly?id=${pid}`)
     const weekly = await response.json()
 
