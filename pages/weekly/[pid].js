@@ -73,9 +73,15 @@ const Post = ({ weekly }) => {
 
 export async function getServerSideProps(context) {
     const { pid = '' } = context.query
-    console.log({ pid, hostname: process.env.NEXT_PUBLIC_HOSTNAME })
-    const response = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/weekly?id=${pid}`)
-    const weekly = await response.json()
+    let weekly
+
+    try {
+        const response = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/weekly?id=${pid}`)
+        console.log({ response })
+        weekly = await response.json()
+    } catch (error) {
+        console.log({ error })
+    }
 
     return {
         props: { weekly }, // will be passed to the page component as props
