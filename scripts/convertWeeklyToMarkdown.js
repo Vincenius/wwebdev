@@ -3,11 +3,7 @@ const fetch = require('node-fetch')
 const { weeklyData } = require('../content/weekly')
 const id = weeklyData[0].id
 
-const json = { weekly: id }
-const stringified = JSON.stringify(json)
-const query = encodeURI(stringified)
-
-fetch(`https://wweb.dev/api/weekly?id=${pid}`)
+fetch(`https://wweb.dev/api/weekly?id=${id}`)
   .then(res => res.json())
   .then(data => {
     let markDown = ``
