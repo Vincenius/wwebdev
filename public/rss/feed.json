@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/140",
+            "content_html": "Exlint, Turbowatch, JavaScript One-Liners and more...",
+            "url": "https://wweb.dev/weekly/140",
+            "title": "Weekly Web Development Resources #140",
+            "summary": "Exlint, Turbowatch, JavaScript One-Liners and more...",
+            "date_modified": "2023-03-14T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/139",
             "content_html": "crul, WebContainers, Windstatic, ImageHover and more...",
             "url": "https://wweb.dev/weekly/139",
