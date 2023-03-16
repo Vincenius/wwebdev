@@ -1,5 +1,6 @@
 import React from 'react'
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
@@ -65,6 +66,15 @@ const Post = ({ weekly }) => {
                     )
                 }
             </ui.GridContainer> }
+
+            <ui.ArticleContainer>
+                <p>
+                    Did you discover or create something you want to see in the next Weekly Web Development Resources?
+                </p>
+                <p>
+                    Submit you article, resource or tool here: <Link href="/weekly/submit">wweb.dev/weekly/submit</Link>
+                </p>
+            </ui.ArticleContainer>
 
             <PrevNext postId={pid} />
         </Layout>
