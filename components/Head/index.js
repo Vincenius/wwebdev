@@ -76,6 +76,7 @@ class MyHead extends React.Component {
                 <meta name='theme-color' content='#2c3e50' />
                 <link rel='apple-touch-icon' sizes='192x192' href='apple-icon.png' />
                 <link rel='manifest' href='/manifest.json' />
+                <link href="https://unpkg.com/octomments/build/ocs-ui.min.css" rel="stylesheet"></link>
 
                 { description && <meta name="description" content={description}></meta> }
                 <script async defer data-website-id="208d46a4-6fc6-4947-954c-e7940d9b0fe6" src="https://analytics.vincentwill.com/umami.js"></script>
