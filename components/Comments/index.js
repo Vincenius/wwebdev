@@ -16,7 +16,7 @@ function Comments() {
         );
         scriptElement.setAttribute(
             'theme',
-            'preferred-color-scheme',
+            'github-light',
         );
         ref.current?.appendChild(scriptElement);
     }, []);
