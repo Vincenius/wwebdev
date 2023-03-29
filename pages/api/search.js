@@ -26,6 +26,7 @@ const getByQuery = async ({ q, p }) => {
           }
         }
       },
+      { $sort: { score: { $meta: "textScore" } } },
       {
         $limit: page * 20
       },
