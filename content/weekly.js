@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '143',
+        date: 'April 05, 2023',
+        description: "Bearer, Mirrorful, Glance, ColorsWall, dnsx and more...",
+    },
+    {
         id: '142',
         date: 'March 29, 2023',
         description: "ThumbHash, IT Tools, Float UI, vanilla-extract and more...",
