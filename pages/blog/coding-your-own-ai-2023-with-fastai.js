@@ -364,7 +364,7 @@ const Post = () => (
           <li><ExternalLink href="https://docs.fast.ai/tutorial.tabular.html">train an AI with tabluar training for categorization</ExternalLink></li>
         </ul>
       </li>
-      <li>Let me know how you liked this guide and how I can improve it on <ExternalLink href="twitter.com/wweb_dev">Twitter</ExternalLink> or via Email: <a href="mailto:info@wweb.dev">info@wweb.dev</a></li>
+      <li>Let me know how you liked this guide and how I can improve it on <ExternalLink href="https://twitter.com/wweb_dev">Twitter</ExternalLink> or via Email: <a href="mailto:info@wweb.dev">info@wweb.dev</a></li>
     </ul>
   </ArticleLayout>
 )
