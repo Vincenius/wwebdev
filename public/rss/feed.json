@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/144",
+            "content_html": "Nano JSX, CodeReview BOT, Tabby, Plotteus and more...",
+            "url": "https://wweb.dev/weekly/144",
+            "title": "Weekly Web Development Resources #144",
+            "summary": "Nano JSX, CodeReview BOT, Tabby, Plotteus and more...",
+            "date_modified": "2023-04-11T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/143",
             "content_html": "Bearer, Mirrorful, Glance, ColorsWall, dnsx and more...",
             "url": "https://wweb.dev/weekly/143",
