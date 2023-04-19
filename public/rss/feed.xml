@@ -4,7 +4,7 @@
         <title>wweb.dev</title>
         <link>https://wweb.dev</link>
         <description>Stay up to date with weekly updates, get resources for next project and read articles and tutorials about web development.</description>
-        <lastBuildDate>Wed, 12 Apr 2023 05:16:04 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 19 Apr 2023 05:36:43 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -272,6 +272,15 @@
             <pubDate>Thu, 26 Jul 2018 22:00:00 GMT</pubDate>
             <description><![CDATA[In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…]]></description>
             <content:encoded><![CDATA[In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[Weekly Web Development Resources #145]]></title>
+            <link>https://wweb.dev/weekly/145</link>
+            <guid>https://wweb.dev/weekly/145</guid>
+            <pubDate>Tue, 18 Apr 2023 22:00:00 GMT</pubDate>
+            <description><![CDATA[SVG Doodles, Phind, refine.new, Favpie and more...]]></description>
+            <content:encoded><![CDATA[SVG Doodles, Phind, refine.new, Favpie and more...]]></content:encoded>
             <author>info@wweb.dev (Vincent Will)</author>
         </item>
         <item>

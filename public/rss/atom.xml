@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wweb.dev</id>
     <title>wweb.dev</title>
-    <updated>2023-04-12T05:16:04.789Z</updated>
+    <updated>2023-04-19T05:36:43.636Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Vincent Will</name>
@@ -526,6 +526,24 @@
         <updated>2018-07-26T22:00:00.000Z</updated>
         <summary type="html"><![CDATA[In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…]]></summary>
         <content type="html"><![CDATA[In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #145]]></title>
+        <id>https://wweb.dev/weekly/145</id>
+        <link href="https://wweb.dev/weekly/145"/>
+        <updated>2023-04-18T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[SVG Doodles, Phind, refine.new, Favpie and more...]]></summary>
+        <content type="html"><![CDATA[SVG Doodles, Phind, refine.new, Favpie and more...]]></content>
         <author>
             <name>Vincent Will</name>
             <email>info@wweb.dev</email>

@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/145",
+            "content_html": "SVG Doodles, Phind, refine.new, Favpie and more...",
+            "url": "https://wweb.dev/weekly/145",
+            "title": "Weekly Web Development Resources #145",
+            "summary": "SVG Doodles, Phind, refine.new, Favpie and more...",
+            "date_modified": "2023-04-18T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/144",
             "content_html": "Nano JSX, CodeReview BOT, Tabby, Plotteus and more...",
             "url": "https://wweb.dev/weekly/144",
