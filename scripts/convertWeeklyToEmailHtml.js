@@ -112,7 +112,7 @@ fetch(`https://wweb.dev/api/weekly?id=${id}`)
 
     // only osx??
     var proc = require('child_process').spawn('pbcopy');
-    proc.stdin.write(markdown); proc.stdin.end();
+    proc.stdin.write(htmlOutput.html); proc.stdin.end();
 
     console.log('copied')
   })
