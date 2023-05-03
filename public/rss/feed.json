@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/147",
+            "content_html": "Neat CSS, Jellylade, Yuebing, List.js and more...",
+            "url": "https://wweb.dev/weekly/147",
+            "title": "Weekly Web Development Resources #147",
+            "summary": "Neat CSS, Jellylade, Yuebing, List.js and more...",
+            "date_modified": "2023-05-02T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/146",
             "content_html": "Gradient Style, Precedent, Soft Serve, Gut and more...",
             "url": "https://wweb.dev/weekly/146",
