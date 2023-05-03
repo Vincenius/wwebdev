@@ -1,12 +1,14 @@
 import React from 'react'
 import styles from './AffiliateAd.module.css'
 
-export const affiliates = [{
-    link: 'https://refind.com/?utm_source=newsletter&utm_medium=barter&utm_campaign=E1QJg_NpD4MddPPeoFBaLA',
-    img: '/affiliate/refind.png',
-    title: 'Refind',
-    text: 'picks 5 links every day that make you smarter, tailored to your interests.'
-  }, {
+export const affiliates = [
+  // {
+  //   link: 'https://refind.com/?utm_source=newsletter&utm_medium=barter&utm_campaign=E1QJg_NpD4MddPPeoFBaLA',
+  //   img: '/affiliate/refind.png',
+  //   title: 'Refind',
+  //   text: 'picks 5 links every day that make you smarter, tailored to your interests.'
+  // },
+  {
     link: 'https://m.do.co/c/5ec9f49fcf88',
     img: '/affiliate/digitalocean.jpg',
     title: 'Digital Ocean',
