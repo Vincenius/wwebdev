@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/148",
+            "content_html": "jsonformer, Teletrace, Start UI, Homerow and more...",
+            "url": "https://wweb.dev/weekly/148",
+            "title": "Weekly Web Development Resources #148",
+            "summary": "jsonformer, Teletrace, Start UI, Homerow and more...",
+            "date_modified": "2023-05-09T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/147",
             "content_html": "Neat CSS, Jellylade, Yuebing, List.js and more...",
             "url": "https://wweb.dev/weekly/147",
