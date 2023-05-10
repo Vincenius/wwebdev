@@ -17,7 +17,7 @@ const Templates = () => (
                 title={item.headline}
                 description={item.description}
                 link={item.link}
-                image={item.previewImage}
+                image={item.shareImage}
                 isExternal={false}
             />)}
         </ui.GridContainer>
