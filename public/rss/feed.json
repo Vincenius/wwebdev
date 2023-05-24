@@ -359,6 +359,30 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/150",
+            "content_html": "VanJS, QuickRef.ME, Vidrevo, publint and more...",
+            "url": "https://wweb.dev/weekly/150",
+            "title": "Weekly Web Development Resources #150",
+            "summary": "VanJS, QuickRef.ME, Vidrevo, publint and more...",
+            "date_modified": "2023-05-23T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/weekly/149",
+            "content_html": "TopAi.tools, TextPal, Pinggy, Democoding and more...",
+            "url": "https://wweb.dev/weekly/149",
+            "title": "Weekly Web Development Resources #149",
+            "summary": "TopAi.tools, TextPal, Pinggy, Democoding and more...",
+            "date_modified": "2023-05-16T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/148",
             "content_html": "jsonformer, Teletrace, Start UI, Homerow and more...",
             "url": "https://wweb.dev/weekly/148",
