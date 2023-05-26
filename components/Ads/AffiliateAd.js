@@ -13,6 +13,12 @@ export const affiliates = [
     img: '/affiliate/digitalocean.jpg',
     title: 'Digital Ocean',
     text: 'the simple cloud. Sign up now and get 200$ in credit.'
+  },
+  {
+    link: 'https://mrscraper.com/?via=vincent',
+    img: '/affiliate/mrscraper.png',
+    title: 'MrScraper',
+    text: 'a web scraper with a visual builder, proxy rotation, API and more.'
   }
 ]
 
