@@ -6,17 +6,17 @@ import * as S from './styled'
 const Newsletter = ({ type = '' }) => {
   return <S.Newsletter
       as="form"
-      action="https://email.vincenius.com/subscription/form"
-      className="listmonk-form"
+      action="https://static.mailerlite.com/webforms/submit/g5y6d6"
+      data-code="g5y6d6"
+      target="_blank"
       type={type}
       method="post"
-      id="listmonk-newsletter-form"
     >
     { type !== 'inline' && <h2>Subscribe to the Newsletter</h2> }
     { type !== 'inline' && <p>Don't miss the next update. Drop your email below and get it straight in your inbox.</p> }
     <S.InputContainer>
       <S.Input
-        name="email"
+        name="fields[email]"
         required={true}
         type="email"
         placeholder="E-Mail"
@@ -37,7 +37,7 @@ const Newsletter = ({ type = '' }) => {
         <FormControlLabel
           control={
             <S.Checkbox
-              id="3ed85" type="checkbox" name="l" value="3ed857fa-efc9-4f26-9a66-ab85ed8e2b09"
+              name="groups[]" value="112091234"
               defaultChecked
             />
           }
@@ -48,7 +48,7 @@ const Newsletter = ({ type = '' }) => {
         <FormControlLabel
           control={
             <S.Checkbox
-              id="f3443" type="checkbox" name="l" value="f3443ac3-a941-47d2-9111-298844aec14e"
+              name="groups[]" value="112091235"
               defaultChecked
             />
           }
@@ -59,7 +59,7 @@ const Newsletter = ({ type = '' }) => {
         <FormControlLabel
           control={
             <S.Checkbox
-              id="6a18b" type="checkbox" name="l" value="6a18ba09-fc2f-48c5-b78b-0aa731915149"
+              name="groups[]" value="112091236"
               defaultChecked
             />
           }
@@ -68,7 +68,7 @@ const Newsletter = ({ type = '' }) => {
       </li>
     </S.CheckboxList>
     <S.HiddenInput>
-      <input type="hidden" name="nonce" />
+      <input type="hidden" name="ml-submit" value="1" />
     </S.HiddenInput>
   </S.Newsletter>
 }
