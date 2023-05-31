@@ -67,7 +67,7 @@ fetch(`https://wweb.dev/api/weekly?id=${id}`)
           <mj-column>
             <mj-text>You can support this newsletter by</mj-text>
             <mj-text>💸 booking a <a href="https://wweb.dev/sponsorship/">sponsored post</a></mj-text>
-            <mj-text>🥷 donating via <a href="https://app.sponsor.ninja/projects/63d7dd38d907a8ed61dca67f">Sponsor Ninja</a></mj-text>
+            <mj-text>🥷 donating via <a href="https://ko-fi.com/wweb_dev">Ko-Fi</a></mj-text>
             <mj-text>🚀 helping me grow by sharing it with your friends and colleagues</mj-text>
             <mj-text></mj-text>
             <mj-text line-height="0">Cheers,</mj-text>
@@ -99,12 +99,19 @@ fetch(`https://wweb.dev/api/weekly?id=${id}`)
             </mj-text>
           </mj-column>
           <mj-column>
-            <mj-image width="75px" src="https://app.sponsor.ninja/plus.png" href="https://app.sponsor.ninja/projects/63d7dd38d907a8ed61dca67f"></mj-image>
+            <mj-image width="75px" src="https://app.sponsor.ninja/plus.png" href="https://ko-fi.com/wweb_dev"></mj-image>
             <mj-text font-size="14px" align="center">
-              <a href="https://app.sponsor.ninja/projects/63d7dd38d907a8ed61dca67f">Become a Sponsor</a>
+              <a href="https://ko-fi.com/wweb_dev">Become a Sponsor</a>
             </mj-text>
           </mj-column>
         </mj-section>
+        <mj-section>
+        <mj-column>
+          <mj-text align="center">
+          <a href="{$unsubscribe}">Unsubscribe</a><span> | </span><a href="{$url}">View in browser</a><span> | </span><a href="{$forward}">Forward</a>
+          </mj-text>
+        </mj-column>
+      </mj-section>
       </mj-body>
     </mjml>`
 

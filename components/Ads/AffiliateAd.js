@@ -19,6 +19,12 @@ export const affiliates = [
     img: '/affiliate/mrscraper.png',
     title: 'MrScraper',
     text: 'a web scraper with a visual builder, proxy rotation, API and more.'
+  },
+  {
+    link: 'blinkist.o6eiov.net/WqYoLM',
+    img: '/affiliate/blinkist.png',
+    title: 'Blinkist',
+    text: 'get the key ideas from non-fiction bestsellers in minutes, not hours.'
   }
 ]
 
