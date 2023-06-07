@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/152",
+            "content_html": "QR code designer, Img-Cut, NakedJSX and more...",
+            "url": "https://wweb.dev/weekly/152",
+            "title": "Weekly Web Development Resources #152",
+            "summary": "QR code designer, Img-Cut, NakedJSX and more...",
+            "date_modified": "2023-06-06T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/151",
             "content_html": "Kanboard, TableConvert, Plaiceholder and more...",
             "url": "https://wweb.dev/weekly/151",

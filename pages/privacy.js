@@ -17,7 +17,7 @@ const Privacy = () => (
                 <b>If you enable "Do Not Track" in your browser I won't track you</b>.
                 Also AdBlockers will work for blocking the tracking. I'd recomment <i>uBlock Origin</i> for that.
             </p>
-            <p>I use BuySellAds for displaying ads. It has no personalized ads, so no cookies stored.</p>
+            <p>I use EthicalAds for displaying ads. It has no personalized ads, so no cookies stored.</p>
             <p>
                 If you think I'm missing something here - please let me know: info@wweb.dev
             </p>
@@ -236,17 +236,17 @@ const Privacy = () => (
                 This does not mean that all Personal Data are used for this purpose. Information and conditions of use are shown below.
                 Some of the services listed below may use Cookies to identify Users or they may use the behavioral retargeting technique, i.e. displaying ads tailored to the User’s interests and behavior, including those detected outside this Website. For more information, please check the privacy policies of the relevant services.
                 The User may opt out of a third-party service’s use of cookies by visiting the Network Advertising Initiative opt-out page.
-                BuySellAds (BuySellAds.com Inc.)
+                EthicalAds
             </p>
 
             <p>
-                BuySellAds is an advertising service provided by BuySellAds.com Inc.<br/>
+                EthicalAds is an advertising service provided by EthicalAds<br/>
                 Personal Data collected:<br/>
                 Cookies; Usage Data.<br/>
                 Place of processing:<br/>
                 United States<br/>
                 –<br/>
-                <a href="https://www.buysellads.com/about/privacy" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                <a href="https://www.ethicalads.io/privacy-policy/" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
             </p>
 
             <h2>Links To Other Sites</h2>
