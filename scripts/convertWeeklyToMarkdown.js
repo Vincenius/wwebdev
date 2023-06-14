@@ -30,7 +30,7 @@ _Enjoyed this newsletter? You can support me by:_
 
 💸 booking a [sponsored post](https://wweb.dev/sponsorship)
 
-🥷 donating via [Ko-Fi](https://ko-fi.com/wweb_dev)
+☕️ donating via [Ko-Fi](https://ko-fi.com/wweb_dev)
 
 🚀 helping me grow by sharing it with your friends and colleagues
 

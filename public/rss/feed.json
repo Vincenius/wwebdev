@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/153",
+            "content_html": "Listbee, Metorik, Spruce CSS, Bookmarks and more...",
+            "url": "https://wweb.dev/weekly/153",
+            "title": "Weekly Web Development Resources #153",
+            "summary": "Listbee, Metorik, Spruce CSS, Bookmarks and more...",
+            "date_modified": "2023-06-13T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/152",
             "content_html": "QR code designer, Img-Cut, NakedJSX and more...",
             "url": "https://wweb.dev/weekly/152",
