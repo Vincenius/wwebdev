@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/154",
+            "content_html": "Capacitor, Color & Contrast, lax.js and more...",
+            "url": "https://wweb.dev/weekly/154",
+            "title": "Weekly Web Development Resources #154",
+            "summary": "Capacitor, Color & Contrast, lax.js and more...",
+            "date_modified": "2023-06-20T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/153",
             "content_html": "Listbee, Metorik, Spruce CSS, Bookmarks and more...",
             "url": "https://wweb.dev/weekly/153",
