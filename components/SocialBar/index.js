@@ -4,6 +4,7 @@ import * as ui from '../../ui'
 import RssFeedIcon from '@mui/icons-material/RssFeed'
 import TwitterIcon from '@mui/icons-material/Twitter'
 import GitHubIcon from '@mui/icons-material/GitHub'
+import LocalCafeIcon from '@mui/icons-material/LocalCafe'
 
 const SocialBar = ({ children }) => (
     <S.Social>
@@ -19,6 +20,13 @@ const SocialBar = ({ children }) => (
                 <GitHubIcon width="24px" height="24px" />
             </a>
         </li>
+        {/* <li>
+        https://more.ko-fi.com/brand-assets
+            <a href="https://ko-fi.com/wweb_dev" target="_blank" rel="noopener">
+                <ui.Screenreader>Ko-Fi Donation</ui.Screenreader>
+                <LocalCafeIcon width="24px" height="24px" />
+            </a>
+        </li> */}
         <li>
             <a href="https://wweb.dev/rss/feed.xml">
                 <ui.Screenreader>RSS Feed</ui.Screenreader>

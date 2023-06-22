@@ -41,6 +41,7 @@ const Footer = ({ hideNewsletter }) => {
 
             <S.FooterLinks>
               <li><h2>More</h2></li>
+              <li><Link href="https://ko-fi.com/wweb_dev">Donate</Link></li>
               <li><Link href="/sponsorship">Sponsorship</Link></li>
               <li><Link href="/about">About</Link></li>
               <li><Link href="/privacy">Privacy Policy</Link></li>
