@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wweb.dev</id>
     <title>wweb.dev</title>
-    <updated>2023-06-21T09:02:05.608Z</updated>
+    <updated>2023-06-28T05:28:42.966Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Vincent Will</name>
@@ -526,6 +526,24 @@
         <updated>2018-07-26T22:00:00.000Z</updated>
         <summary type="html"><![CDATA[In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…]]></summary>
         <content type="html"><![CDATA[In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #155]]></title>
+        <id>https://wweb.dev/weekly/155</id>
+        <link href="https://wweb.dev/weekly/155"/>
+        <updated>2023-06-27T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Novel, DevPod, Pines, CSS Pattern, Vrite and more...]]></summary>
+        <content type="html"><![CDATA[Novel, DevPod, Pines, CSS Pattern, Vrite and more...]]></content>
         <author>
             <name>Vincent Will</name>
             <email>info@wweb.dev</email>
