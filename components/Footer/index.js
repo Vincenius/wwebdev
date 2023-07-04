@@ -37,6 +37,7 @@ const Footer = ({ hideNewsletter }) => {
               <li><Link href="https://img.quest/">IMG Quest</Link></li>
               <li><Link href="https://css-speedrun.netlify.app/">CSS Speedrun</Link></li>
               <li><Link href="https://convert2svg.com/">Convert2Svg</Link></li>
+              <li><Link href="https://workout.lol/">workout.lol</Link></li>
             </S.FooterLinks>
 
             <S.FooterLinks>
