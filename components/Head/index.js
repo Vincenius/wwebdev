@@ -80,6 +80,7 @@ class MyHead extends React.Component {
                 { description && <meta name="description" content={description}></meta> }
                 <script async defer data-website-id="208d46a4-6fc6-4947-954c-e7940d9b0fe6" src="https://analytics.vincentwill.com/umami.js"></script>
                 <script async src="https://media.ethicalads.io/media/client/ethicalads.min.js"></script>
+                <script async src="https://js.sparkloop.app/team_469ac6a0a2c9.js" data-sparkloop></script>
                 <style> { 'html, body { margin: 0; overflow-x: hidden; } body svg { width: 32px; }' } </style>
 
                 <React.Fragment>
