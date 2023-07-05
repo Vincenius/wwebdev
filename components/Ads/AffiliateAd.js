@@ -21,10 +21,10 @@ export const affiliates = [
     text: 'a web scraper with a visual builder, proxy rotation, API and more.'
   },
   {
-    link: 'blinkist.o6eiov.net/WqYoLM',
-    img: '/affiliate/blinkist.png',
-    title: 'Blinkist',
-    text: 'get the key ideas from non-fiction bestsellers in minutes, not hours.'
+    link: 'https://newsletter.insanelyusefulwebsites.com/subscribe?ref=9wgUnnGOds',
+    img: '/affiliate/usefulwebsites.png',
+    title: 'Insanely Useful Websites',
+    text: 'a database & newsletter featuring useful websites & apps.'
   }
 ]
 
