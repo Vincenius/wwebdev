@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/157",
+            "content_html": "AWS Docs GPT, React95, Durves, Avatars and more...",
+            "url": "https://wweb.dev/weekly/157",
+            "title": "Weekly Web Development Resources #157",
+            "summary": "AWS Docs GPT, React95, Durves, Avatars and more...",
+            "date_modified": "2023-07-11T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/156",
             "content_html": "CallToInspiration, SVG Hub, chatgpt.js, Clobbr and more...",
             "url": "https://wweb.dev/weekly/156",

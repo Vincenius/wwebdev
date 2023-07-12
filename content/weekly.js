@@ -1,5 +1,10 @@
 const data = [
     {
+        id: '157',
+        date: 'July 12, 2023',
+        description: "AWS Docs GPT, React95, Durves, Avatars and more...",
+    },
+    {
         id: '156',
         date: 'July 05, 2023',
         description: "CallToInspiration, SVG Hub, chatgpt.js, Clobbr and more...",
