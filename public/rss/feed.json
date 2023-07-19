@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/158",
+            "content_html": "clickvote, Mage Icons, Free Faces, Polar and more...",
+            "url": "https://wweb.dev/weekly/158",
+            "title": "Weekly Web Development Resources #158",
+            "summary": "clickvote, Mage Icons, Free Faces, Polar and more...",
+            "date_modified": "2023-07-18T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/157",
             "content_html": "AWS Docs GPT, React95, Durves, Avatars and more...",
             "url": "https://wweb.dev/weekly/157",
