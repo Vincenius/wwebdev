@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/159",
+            "content_html": "GGradient, Solito, Dev Radar, Iconbuddy and more...",
+            "url": "https://wweb.dev/weekly/159",
+            "title": "Weekly Web Development Resources #159",
+            "summary": "GGradient, Solito, Dev Radar, Iconbuddy and more...",
+            "date_modified": "2023-07-25T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/158",
             "content_html": "clickvote, Mage Icons, Free Faces, Polar and more...",
             "url": "https://wweb.dev/weekly/158",
