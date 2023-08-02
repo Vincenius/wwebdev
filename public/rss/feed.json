@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/160",
+            "content_html": "HTML to JSX, Avatartion, Web Components and more...",
+            "url": "https://wweb.dev/weekly/160",
+            "title": "Weekly Web Development Resources #160",
+            "summary": "HTML to JSX, Avatartion, Web Components and more...",
+            "date_modified": "2023-08-01T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/159",
             "content_html": "GGradient, Solito, Dev Radar, Iconbuddy and more...",
             "url": "https://wweb.dev/weekly/159",

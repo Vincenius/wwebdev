@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wweb.dev</id>
     <title>wweb.dev</title>
-    <updated>2023-07-26T05:07:48.188Z</updated>
+    <updated>2023-08-02T05:21:43.419Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Vincent Will</name>
@@ -526,6 +526,24 @@
         <updated>2018-07-26T22:00:00.000Z</updated>
         <summary type="html"><![CDATA[In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…]]></summary>
         <content type="html"><![CDATA[In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Weekly Web Development Resources #160]]></title>
+        <id>https://wweb.dev/weekly/160</id>
+        <link href="https://wweb.dev/weekly/160"/>
+        <updated>2023-08-01T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[HTML to JSX, Avatartion, Web Components and more...]]></summary>
+        <content type="html"><![CDATA[HTML to JSX, Avatartion, Web Components and more...]]></content>
         <author>
             <name>Vincent Will</name>
             <email>info@wweb.dev</email>
