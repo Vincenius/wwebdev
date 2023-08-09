@@ -22,7 +22,7 @@ const getByQuery = async ({ q, p }) => {
         $search: {
           "text": {
             "query": search,
-            "path": ["description", "title"]
+            "path": ["description", "title", "link"]
           }
         }
       },
