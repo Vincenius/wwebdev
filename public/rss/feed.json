@@ -359,6 +359,18 @@
             }
         },
         {
+            "id": "https://wweb.dev/weekly/161",
+            "content_html": "floccus, thumbor, The UX Cookbook, Hono and more...",
+            "url": "https://wweb.dev/weekly/161",
+            "title": "Weekly Web Development Resources #161",
+            "summary": "floccus, thumbor, The UX Cookbook, Hono and more...",
+            "date_modified": "2023-08-08T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/weekly/160",
             "content_html": "HTML to JSX, Avatartion, Web Components and more...",
             "url": "https://wweb.dev/weekly/160",

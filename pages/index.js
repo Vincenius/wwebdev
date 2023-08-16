@@ -41,13 +41,7 @@ const Home = () => {
 
             <ui.SectionHeadline>Latest News</ui.SectionHeadline>
 
-            <ui.SidebarContent>
-              { generateWeekly(6) }
-
-              <Link href="/weekly">
-                See all weekly news
-              </Link>
-            </ui.SidebarContent>
+            <p>The weekly newsletter moved to <a href="https://webdev.town">webdev.town</a></p>
           </ui.Sidebar>
         </ui.SidebarContainer>
       </ui.Container>

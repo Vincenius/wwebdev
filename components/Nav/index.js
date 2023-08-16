@@ -14,7 +14,7 @@ const links = [
   { href: '', label: 'Home' },
   { href: 'blog', label: 'Articles' },
   { href: 'resources', label: 'Resources' },
-  { href: 'weekly', label: 'Weekly' },
+  // { href: 'weekly', label: 'Weekly' },
   { href: 'templates', label: 'Templates' },
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`

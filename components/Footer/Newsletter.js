@@ -37,17 +37,6 @@ const Newsletter = ({ type = '' }) => {
         <FormControlLabel
           control={
             <S.Checkbox
-              name="groups[]" value="112091234"
-              defaultChecked
-            />
-          }
-          label="Weekly Resources" htmlFor="3ed85"
-        />
-      </li>
-      <li>
-        <FormControlLabel
-          control={
-            <S.Checkbox
               name="groups[]" value="112091235"
               defaultChecked
             />
