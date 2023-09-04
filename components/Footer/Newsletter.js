@@ -11,6 +11,7 @@ const Newsletter = ({ type = '' }) => {
       target="_blank"
       type={type}
       method="post"
+      id="listmonk-newsletter-form"
     >
     { type !== 'inline' && <h2>Subscribe to the Newsletter</h2> }
     { type !== 'inline' && <p>Don't miss the next update. Drop your email below and get it straight in your inbox.</p> }
