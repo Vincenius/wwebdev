@@ -7,8 +7,6 @@ import { SEPARATORS, SEPARATOR_OPTIONS } from './constants'
 import BrowserMockup from '../BrowserMockup'
 import Ad from '../Ads/Ad'
 import Featured from '../Featured'
-import NewsletterLink from '../NewsletterLink'
-import SponsorNinjaWidget from '../SponsorNinja'
 
 const Generator = props => {
     const defaultSeparator = SEPARATORS.SKEWED
@@ -104,9 +102,6 @@ const Generator = props => {
                         The tool includes a skewed divider, a semi-circle divider, a wave divider, a spikes divider, a triangle divider and a curved divider.
                         Most of these dividers are pure CSS and using the ::before and ::after pseudo-elements. Some need an additional HTML element.
                     </p>
-                    <p>
-                        If you enjoyed this tool, subscribe to my newsletter below to get notified when I release something new.
-                    </p>
 
                     <ui.Subheadline>You might also like</ui.Subheadline>
                     <Featured resourceIds={[1, 4, 13]} />
@@ -126,8 +121,6 @@ const Generator = props => {
                         )}
                     </S.Row>
                     <br/>
-                    <SponsorNinjaWidget />
-                    <ui.MobileHide><br/><NewsletterLink /></ui.MobileHide>
                 </ui.Sidebar>
             </S.SidebarContainer>
         </ui.Container>

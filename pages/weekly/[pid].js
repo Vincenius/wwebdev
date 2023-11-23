@@ -60,7 +60,6 @@ const Post = ({ weekly }) => {
                             />
                             { index === 1 && <div>
                                 <Ad />
-                                <NewsletterLink />
                             </div>}
                         </React.Fragment>
                     )

@@ -9,8 +9,6 @@ import Alert from '@mui/material/Alert'
 import * as ui from '../../ui'
 import Layout from '../../components/Layout'
 import Ad  from '../../components/Ads/Ad'
-import NewsletterLink from '../../components/NewsletterLink'
-import SponsorNinjaWidget from '../../components/SponsorNinja'
 
 const defaultValues = { link: '', email: '', message: '' }
 
@@ -77,9 +75,7 @@ const WeeklySubmit = () => {
               </form>
             </ui.ArticleContainer>
             <ui.Sidebar>
-                <SponsorNinjaWidget />
                 <Ad />
-                <NewsletterLink />
             </ui.Sidebar>
         </ui.SidebarContainer>
     </ui.Container>

@@ -20,7 +20,6 @@ const Weekly = () => (
     <Layout
         title="Weekly roundup of resources about web development"
         description="Stay up-to-date on the latest and greatest tools in web development. We scour the internet to bring you the most fascinating and useful links in the world of web development."
-        hideNewsletter={true}
     >
         <ui.Container>
             <ui.SectionHeadline>Weekly Web Development Newsletter</ui.SectionHeadline>

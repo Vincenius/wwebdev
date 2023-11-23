@@ -12,8 +12,30 @@ export const Container = styled.footer`
     letter-spacing: 0px;
     background: ${darkGrey};
     color: ${lightGrey};
-    margin-top: 0;
+    margin-top: 50px;
     padding: 30px 0;
+
+    &::after, &::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        display: block;
+        height: 50px;
+        background-size: 50px 100%;
+        background-image: linear-gradient(135deg, ${darkGrey} 25%, transparent 25%), linear-gradient(225deg, ${darkGrey} 25%, transparent 25%);
+        background-position: 0 0;
+    }
+
+    &::before {
+        top: 0;
+        transform: translateY(-100%) rotate(180deg);
+    }
+
+    &::after {
+        top: 100%;
+    }
 
     h2 {
         color: ${lightGrey};
@@ -120,27 +142,7 @@ export const NewsletterContainer = styled(Container)`
     background-color: ${middleDarkGrey};
     padding-bottom: 0;
 
-    &::after, &::before {
-        content: '';
-        position: absolute;
-        right: 0;
-        left: 0;
-        z-index: 1;
-        display: block;
-        height: 50px;
-        background-size: 50px 100%;
-        background-image: linear-gradient(135deg, ${middleDarkGrey} 25%, transparent 25%), linear-gradient(225deg, ${middleDarkGrey} 25%, transparent 25%);
-        background-position: 0 0;
-    }
 
-    &::before {
-        top: 0;
-        transform: translateY(-100%) rotate(180deg);
-    }
-
-    &::after {
-        top: 100%;
-    }
 `
 
 export const Newsletter = styled(ui.Container)`

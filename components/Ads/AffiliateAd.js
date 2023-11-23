@@ -20,12 +20,6 @@ export const affiliates = [
     title: 'MrScraper',
     text: 'a web scraper with a visual builder, proxy rotation, API and more.'
   },
-  {
-    link: 'https://newsletter.insanelyusefulwebsites.com/subscribe?ref=9wgUnnGOds',
-    img: '/affiliate/usefulwebsites.png',
-    title: 'Insanely Useful Websites',
-    text: 'a database & newsletter featuring useful websites & apps.'
-  }
 ]
 
 const AffiliateAd = ({ affiliateAd = 0 }) => {

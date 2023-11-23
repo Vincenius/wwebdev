@@ -3,11 +3,10 @@ import React from 'react'
 import Head from '../../components/Head'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
-import SponsorNinjaWidget from '../../components/SponsorNinja'
 import meta from '../../content/resources'
 import BlurBgGenerator from '../../components/BlurBackgroundGenerator'
 import Featured from '../../components/Featured'
-import NewsletterLink from '../../components/NewsletterLink'
+import Ad from '../../components/Ads/Ad'
 import * as S from '../../components/BlurBackgroundGenerator/styled.js'
 import * as ui from '../../ui'
 
@@ -55,10 +54,6 @@ const BlurBackgroundGenerator = () => {
                         <Featured resourceIds={[1, 5, 4]} />
                     </ui.SidebarArticle>
                     <ui.Sidebar>
-                        <ui.MobileHide>
-                            <br/><NewsletterLink />
-                            <SponsorNinjaWidget />
-                        </ui.MobileHide>
                     </ui.Sidebar>
                 </ui.SidebarContainer>
             </ui.Container>

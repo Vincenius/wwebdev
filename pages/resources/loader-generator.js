@@ -1,8 +1,6 @@
 import React from 'react'
 import Ad from '../../components/Ads/Ad'
 import Featured from '../../components/Featured'
-import NewsletterLink from '../../components/NewsletterLink'
-import SponsorNinjaWidget from '../../components/SponsorNinja'
 import LoaderGenerator from '../../components/LoaderGenerator'
 import Layout from '../../components/Layout'
 import meta from '../../content/resources'
@@ -41,8 +39,6 @@ const Demo = () => {
                 </ui.SidebarArticle>
                 <ui.Sidebar>
                   <Ad />
-                  <SponsorNinjaWidget />
-                  <ui.MobileHide><br/><NewsletterLink /></ui.MobileHide>
                 </ui.Sidebar>
               </ui.SidebarContainer>
           </ui.Container>

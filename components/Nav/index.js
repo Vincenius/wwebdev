@@ -10,11 +10,9 @@ import * as S from './styled'
 import { lightGrey } from '../../ui/constants'
 
 const links = [
-  // { href: '/about', label: 'About' },
   { href: '', label: 'Home' },
   { href: 'blog', label: 'Articles' },
-  { href: 'resources', label: 'Resources' },
-  // { href: 'weekly', label: 'Weekly' },
+  { href: 'resources', label: 'Tools' },
   { href: 'templates', label: 'Templates' },
 ].map(link => {
   link.key = `nav-link-${link.href}-${link.label}`

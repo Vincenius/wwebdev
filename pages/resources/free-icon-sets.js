@@ -37,7 +37,6 @@ const Post = () => (
             />
             <div>
                 <Ad />
-                <NewsletterLink />
             </div>
 
             <LinkBox

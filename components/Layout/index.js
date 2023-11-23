@@ -11,7 +11,6 @@ function Layout ({
     children,
     isArticle,
     hideHeader = false,
-    hideNewsletter = false,
     date,
     link,
     image,
@@ -49,7 +48,7 @@ function Layout ({
                 { children }
             </main>
 
-            <Footer hideNewsletter={hideNewsletter} />
+            <Footer />
         </S.Container>
     )
 }

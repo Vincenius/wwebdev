@@ -1,8 +1,6 @@
 import fs from "fs-extra"
 import { Feed } from "feed"
-import { weeklyData } from "../content/weekly"
-import articleData from "../content/articles"
-import resourceData from "../content/resources"
+import postData from "../content/articles"
 import templateData from "../content/templates"
 
 const formatDate = date => {
@@ -19,8 +17,7 @@ const formatDate = date => {
 
 const generateStaticFiles = () => {
   const sortedData = templateData
-    .concat(articleData)
-    .concat(resourceData)
+    .concat(postData)
     .sort((a,b) => new Date(b.date) - new Date(a.date))
 
   // ROBOTS.txt
@@ -38,12 +35,6 @@ const generateStaticFiles = () => {
         <url>
             <loc>https://wweb.dev${curr.link}</loc>
             <lastmod>${formatDate(new Date(curr.updatedAt || curr.date))}</lastmod>
-        </url>`, ''
-      )}
-      ${weeklyData.reduce((acc, curr) => `${acc}
-      <url>
-          <loc>https://wweb.dev/weekly/${curr.id}</loc>
-          <lastmod>${formatDate(new Date(curr.updatedAt || curr.date))}</lastmod>
         </url>`, ''
       )}
   </urlset>`;
@@ -91,20 +82,6 @@ const generateStaticFiles = () => {
       author: [author],
       contributor: [author],
       date: new Date(post.updatedAt || post.date),
-    });
-  });
-
-  weeklyData.forEach((post) => {
-    const url = `${siteURL}/weekly/${post.id}`;
-    feed.addItem({
-      title: `Weekly Web Development Resources #${post.id}`,
-      id: url,
-      link: url,
-      description: post.description,
-      content: post.description,
-      author: [author],
-      contributor: [author],
-      date: new Date(post.date),
     });
   });
 

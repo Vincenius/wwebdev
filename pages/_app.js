@@ -2,7 +2,6 @@
 import { Lato } from 'next/font/google'
 import { ThemeProvider, StyledEngineProvider } from '@mui/material/styles'
 import theme from '../ui/theme'
-import GlobalContext from '../utils/context'
 
 import "../ui/global.css"
 import "../ui/ads.css"
@@ -14,15 +13,13 @@ const lato = Lato({
 
 function MyApp({ Component, pageProps }) {
     return (
-        <GlobalContext>
-            <StyledEngineProvider injectFirst>
-                <ThemeProvider theme={theme}>
-                    <div className={lato.className}>
-                        <Component {...pageProps} />
-                    </div>
-                </ThemeProvider>
-            </StyledEngineProvider>
-        </GlobalContext>
+        <StyledEngineProvider injectFirst>
+            <ThemeProvider theme={theme}>
+                <div className={lato.className}>
+                    <Component {...pageProps} />
+                </div>
+            </ThemeProvider>
+        </StyledEngineProvider>
     );
 }
 

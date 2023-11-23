@@ -1,8 +1,7 @@
 import React from 'react'
-import Nav from '../Nav'
 import * as S from './styled'
 
-const Header = ({ children }) => (
+const Header = ({ children }) => (
   <S.Container>
     <S.Content>
       { children }

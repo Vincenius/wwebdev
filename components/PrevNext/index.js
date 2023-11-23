@@ -2,13 +2,12 @@ import React from 'react'
 import Link from 'next/link'
 import ArrowRight from '@mui/icons-material/ArrowRightAlt'
 
-import { weeklyData } from '../../content/weekly'
 import articleData from '../../content/articles'
 import * as S from './styled'
 
 const PrevNext = ({ postId, isArticle }) => {
     const pid = parseInt(postId)
-    const data = isArticle ? articleData : weeklyData
+    const data = articleData
     const prevMeta = pid > 1 && data.find(m => parseInt(m.id) === pid - 1)
     const nextMeta = pid < data.length && data.find(m => parseInt(m.id) === pid + 1)
     const linkName = isArticle ? 'Article' : 'Weekly'

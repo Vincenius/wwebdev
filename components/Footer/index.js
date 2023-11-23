@@ -2,17 +2,13 @@ import React from 'react'
 import Link from 'next/link'
 import MailOutlineIcon from '@mui/icons-material/MailOutline'
 
-import Newsletter from './Newsletter'
 import SocialBar from '../SocialBar'
 import * as S from './styled'
 import * as ui from '../../ui'
 
-const Footer = ({ hideNewsletter }) => {
+const Footer = () => {
   return (
     <React.Fragment>
-      { !hideNewsletter && <S.NewsletterContainer>
-        <Newsletter />
-      </S.NewsletterContainer> }
       <S.Container>
         <S.Content>
           <S.LeftFooter>
@@ -32,18 +28,15 @@ const Footer = ({ hideNewsletter }) => {
           <S.RightFooter>
             <S.FooterLinks>
               <li><h2>Other Projects</h2></li>
+              <li><Link href="https://webdev.town/">WebDev Town</Link></li>
               <li><Link href="https://sponsor.ninja/">Sponsor Ninja</Link></li>
-              <li><Link href="https://modest.app/">Modest</Link></li>
-              <li><Link href="https://img.quest/">IMG Quest</Link></li>
               <li><Link href="https://css-speedrun.netlify.app/">CSS Speedrun</Link></li>
               <li><Link href="https://convert2svg.com/">Convert2Svg</Link></li>
-              <li><Link href="https://workout.lol/">workout.lol</Link></li>
             </S.FooterLinks>
 
             <S.FooterLinks>
               <li><h2>More</h2></li>
               <li><Link href="https://ko-fi.com/wweb_dev">Donate</Link></li>
-              <li><Link href="/sponsorship">Sponsorship</Link></li>
               <li><Link href="/about">About</Link></li>
               <li><Link href="/privacy">Privacy Policy</Link></li>
               <a href="https://www.co2neutralwebsite.com/certificate/7187/en" target="_blank">
