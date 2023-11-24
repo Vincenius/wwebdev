@@ -1,20 +1,7 @@
 import React from 'react'
-import styled from 'styled-components'
 
 import Layout from '../components/Layout'
-import Newsletter from '../components/Footer/Newsletter'
-import WeeklyTabs from '../components/WeeklyTabs'
 import * as ui from '../ui'
-import { darkGrey, lightGrey } from '../ui/constants'
-import { generateWeekly } from '../content/generator'
-
-const NewsletterContainer = styled.div`
-    background: ${darkGrey};
-    color: ${lightGrey};
-    font-size: 14px;
-    margin-bottom: 50px;
-    border-radius: 10px;
-`
 
 const Weekly = () => (
     <Layout
