@@ -2,7 +2,7 @@ import React from 'react'
 import styles from './AffiliateAd.module.css'
 
 const AffiliateAd = () => {
-  return <a href="https://htmlrev.com" target="_blank" rel="noopener noreferrer" style={{ textDecoration: 'none', marginBottom: '1em', display: 'block' }}>
+  return <a href="https://htmlrev.com" target="_blank" rel="noopener" style={{ textDecoration: 'none', marginBottom: '1em', display: 'block' }}>
     <div id="carbon">
       <span className="carbon-wrap">
         <span className="carbon-img">
