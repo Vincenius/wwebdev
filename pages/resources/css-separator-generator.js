@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
+import React from 'react'
 import CssSeparatorGenerator from '../../components/CssSeparatorGenerator'
 import Layout from '../../components/Layout'
-import meta from '../../content/resources'
+import meta from '../../content/posts'
 
-const postMeta = meta.find(m => m.id === 5)
+const postMeta = meta.find(m => m.id === 10)
 
 const Demo = () => {
     return (

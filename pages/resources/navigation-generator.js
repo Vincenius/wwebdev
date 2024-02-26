@@ -1,9 +1,9 @@
 import React from 'react'
 import Layout from '../../components/Layout'
 import NavigationGenerator from '../../components/NavigationGenerator'
-import meta from '../../content/resources'
+import meta from '../../content/posts'
 
-const postMeta = meta.find(m => m.id === 9)
+const postMeta = meta.find(m => m.id === 19)
 
 const NavigationResource = () => {
   return (

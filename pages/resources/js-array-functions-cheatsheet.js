@@ -5,9 +5,9 @@ import * as ui from '../../ui'
 import Layout from '../../components/Layout'
 import CodeBlock from '../../components/CodeBlock'
 import Ad from '../../components/Ads/Ad'
-import meta from '../../content/resources'
+import meta from '../../content/posts'
 
-const postId = 8
+const postId = 14
 const postMeta = meta.find(m => m.id === postId)
 
 const HeadlineContainer = styled.div`

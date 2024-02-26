@@ -3,12 +3,11 @@ import React from 'react'
 import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
 import Ad from '../../components/Ads/Ad'
-import NewsletterLink from '../../components/NewsletterLink'
 import Featured from '../../components/Featured'
-import meta from '../../content/resources'
+import meta from '../../content/posts'
 import * as ui from '../../ui'
 
-const postId = 2
+const postId = 6
 const postMeta = meta.find(m => m.id === postId)
 
 const Post = () => (
@@ -232,7 +231,7 @@ const Post = () => (
 
         <ui.Container>
             <ui.Subheadline as="h2">You might also like</ui.Subheadline>
-            <Featured resourceIds={[2, 4, 11]} />
+            <Featured postIds={[5, 7, 11]} />
         </ui.Container>
     </Layout>
 )

@@ -4,7 +4,7 @@ import * as ui from '../../ui'
 import ArticleLayout from '../../components/ArticleLayout'
 
 const Post = () => (
-  <ArticleLayout id={8}>
+  <ArticleLayout id={15}>
     <p>
       When I got started in web development, I never knew where to start when creating a new website.
       I was overwhelmed by possibilities as if I was looking at a blank canvas and didn't know what to draw.

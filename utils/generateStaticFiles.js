@@ -1,6 +1,6 @@
 import fs from "fs-extra"
 import { Feed } from "feed"
-import postData from "../content/articles"
+import postData from "../content/posts"
 import templateData from "../content/templates"
 
 const formatDate = date => {

@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wweb.dev</id>
     <title>wweb.dev</title>
-    <updated>2024-02-22T19:21:19.112Z</updated>
+    <updated>2024-02-26T13:21:29.679Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Vincent Will</name>
@@ -15,6 +15,42 @@
     <logo>https://wweb.dev/logo-text.png</logo>
     <icon>https://wweb.dev/favicon.ico</icon>
     <rights>All rights reserved 2024, wweb.dev</rights>
+    <entry>
+        <title type="html"><![CDATA[A Guide To Self-Hosting Web Apps On Ubuntu Servers]]></title>
+        <id>https://wweb.dev/blog/guide-self-hosting-web-apps-on-ubuntu</id>
+        <link href="https://wweb.dev/blog/guide-self-hosting-web-apps-on-ubuntu"/>
+        <updated>2023-11-09T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[In this article, I will share a step-by-step guide on how to deploy and serve a web app to an ubuntu server. This applicable for any web app that runs on a port.]]></summary>
+        <content type="html"><![CDATA[In this article, I will share a step-by-step guide on how to deploy and serve a web app to an ubuntu server. This applicable for any web app that runs on a port.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pure CSS Loader Generator]]></title>
+        <id>https://wweb.dev/resources/loader-generator</id>
+        <link href="https://wweb.dev/resources/loader-generator"/>
+        <updated>2023-03-06T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.]]></summary>
+        <content type="html"><![CDATA[A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
     <entry>
         <title type="html"><![CDATA[Coding your own AI in 2023 with fastai]]></title>
         <id>https://wweb.dev/blog/coding-your-own-ai-2023-with-fastai</id>
@@ -40,6 +76,24 @@
         <updated>2022-10-31T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.]]></summary>
         <content type="html"><![CDATA[A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Blur Background CSS Generator]]></title>
+        <id>https://wweb.dev/resources/blur-background-css-generator</id>
+        <link href="https://wweb.dev/resources/blur-background-css-generator"/>
+        <updated>2022-10-13T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.]]></summary>
+        <content type="html"><![CDATA[A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.]]></content>
         <author>
             <name>Vincent Will</name>
             <email>info@wweb.dev</email>
@@ -94,6 +148,60 @@
         <updated>2022-02-02T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...]]></summary>
         <content type="html"><![CDATA[In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Websites For Free Icon Sets]]></title>
+        <id>https://wweb.dev/resources/free-icon-sets</id>
+        <link href="https://wweb.dev/resources/free-icon-sets"/>
+        <updated>2020-11-05T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A curated list of websites that offer collections of free icons.]]></summary>
+        <content type="html"><![CDATA[A curated list of websites that offer collections of free icons.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[JavaScript Object Functions Cheat Sheet]]></title>
+        <id>https://wweb.dev/resources/js-object-functions-cheatsheet</id>
+        <link href="https://wweb.dev/resources/js-object-functions-cheatsheet"/>
+        <updated>2020-07-30T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.]]></summary>
+        <content type="html"><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Responsive Navigation Generator]]></title>
+        <id>https://wweb.dev/resources/navigation-generator</id>
+        <link href="https://wweb.dev/resources/navigation-generator"/>
+        <updated>2020-07-12T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.]]></summary>
+        <content type="html"><![CDATA[Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.]]></content>
         <author>
             <name>Vincent Will</name>
             <email>info@wweb.dev</email>
@@ -178,12 +286,84 @@
         </contributor>
     </entry>
     <entry>
+        <title type="html"><![CDATA[JavaScript Array Functions Cheat Sheet]]></title>
+        <id>https://wweb.dev/resources/js-array-functions-cheatsheet</id>
+        <link href="https://wweb.dev/resources/js-array-functions-cheatsheet"/>
+        <updated>2020-05-20T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.]]></summary>
+        <content type="html"><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Creative Hover Effects]]></title>
+        <id>https://wweb.dev/resources/creative-hover-effects</id>
+        <link href="https://wweb.dev/resources/creative-hover-effects"/>
+        <updated>2020-05-03T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.]]></summary>
+        <content type="html"><![CDATA[A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[Getting started with React Query - Easy server state management in React]]></title>
         <id>https://wweb.dev/blog/react-query-getting-started-tutorial</id>
         <link href="https://wweb.dev/blog/react-query-getting-started-tutorial"/>
         <updated>2020-04-23T22:00:00.000Z</updated>
         <summary type="html"><![CDATA[Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...]]></summary>
         <content type="html"><![CDATA[Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Websites For Inspiration]]></title>
+        <id>https://wweb.dev/resources/websites-for-inspiration</id>
+        <link href="https://wweb.dev/resources/websites-for-inspiration"/>
+        <updated>2022-12-07T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></summary>
+        <content type="html"><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[CSS Section Separator Generator]]></title>
+        <id>https://wweb.dev/resources/css-separator-generator</id>
+        <link href="https://wweb.dev/resources/css-separator-generator"/>
+        <updated>2020-03-31T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A collection of customizable CSS section separators, with the possibility to easily copy the code.]]></summary>
+        <content type="html"><![CDATA[A collection of customizable CSS section separators, with the possibility to easily copy the code.]]></content>
         <author>
             <name>Vincent Will</name>
             <email>info@wweb.dev</email>
@@ -220,6 +400,60 @@
         <updated>2022-03-17T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...]]></summary>
         <content type="html"><![CDATA[Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Websites For Creative Backgrounds]]></title>
+        <id>https://wweb.dev/resources/creative-backgrounds</id>
+        <link href="https://wweb.dev/resources/creative-backgrounds"/>
+        <updated>2021-12-20T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[A curated list of websites where you can get creative backgrounds for your websites.]]></summary>
+        <content type="html"><![CDATA[A curated list of websites where you can get creative backgrounds for your websites.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[A Curated List Of Websites For Free SVG Illustrations]]></title>
+        <id>https://wweb.dev/resources/free-svg-illustrations</id>
+        <link href="https://wweb.dev/resources/free-svg-illustrations"/>
+        <updated>2020-06-04T22:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Spice up your next project with beautiful illustrations from these websites.]]></summary>
+        <content type="html"><![CDATA[Spice up your next project with beautiful illustrations from these websites.]]></content>
+        <author>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </author>
+        <contributor>
+            <name>Vincent Will</name>
+            <email>info@wweb.dev</email>
+            <uri>https://vincentwill.com</uri>
+        </contributor>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Animated CSS Background Generator]]></title>
+        <id>https://wweb.dev/resources/animated-css-background-generator</id>
+        <link href="https://wweb.dev/resources/animated-css-background-generator"/>
+        <updated>2019-11-26T23:00:00.000Z</updated>
+        <summary type="html"><![CDATA[With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.]]></summary>
+        <content type="html"><![CDATA[With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.]]></content>
         <author>
             <name>Vincent Will</name>
             <email>info@wweb.dev</email>

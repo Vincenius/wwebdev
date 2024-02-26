@@ -23,8 +23,19 @@ import hoverEffects from '../public/preview/hover-preview_eieplkIor.jpg'
 import websiteInspiration from '../public/preview/preview_rDQNhlplI.png'
 import creativeBackgrounds from '../public/preview/preview_IF4o7Ga9O.jpg'
 import freeSvgIllustration from '../public/preview/preview_C-krc8PbLyM.jpg'
+import selfHosting from '../public/preview/self-hosting.png'
 
 const data = [
+    {
+        id: 26,
+        type: 'Article',
+        date: 'November 10, 2023',
+        headline: "A Guide To Self-Hosting Web Apps On Ubuntu Servers",
+        description: "In this article, I will share a step-by-step guide on how to deploy and serve a web app to an ubuntu server. This applicable for any web app that runs on a port.",
+        link: "/blog/guide-self-hosting-web-apps-on-ubuntu",
+        previewImage: selfHosting,
+        shareImage: '/preview/self-hosting.png'
+    },
     {
         id: 25,
         type: 'Resource',

@@ -4,7 +4,7 @@
         <title>wweb.dev</title>
         <link>https://wweb.dev</link>
         <description>Stay up to date with weekly updates, get resources for next project and read articles and tutorials about web development.</description>
-        <lastBuildDate>Thu, 22 Feb 2024 19:21:19 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 26 Feb 2024 13:21:29 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -13,6 +13,24 @@
             <link>https://wweb.dev</link>
         </image>
         <copyright>All rights reserved 2024, wweb.dev</copyright>
+        <item>
+            <title><![CDATA[A Guide To Self-Hosting Web Apps On Ubuntu Servers]]></title>
+            <link>https://wweb.dev/blog/guide-self-hosting-web-apps-on-ubuntu</link>
+            <guid>https://wweb.dev/blog/guide-self-hosting-web-apps-on-ubuntu</guid>
+            <pubDate>Thu, 09 Nov 2023 23:00:00 GMT</pubDate>
+            <description><![CDATA[In this article, I will share a step-by-step guide on how to deploy and serve a web app to an ubuntu server. This applicable for any web app that runs on a port.]]></description>
+            <content:encoded><![CDATA[In this article, I will share a step-by-step guide on how to deploy and serve a web app to an ubuntu server. This applicable for any web app that runs on a port.]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[Pure CSS Loader Generator]]></title>
+            <link>https://wweb.dev/resources/loader-generator</link>
+            <guid>https://wweb.dev/resources/loader-generator</guid>
+            <pubDate>Mon, 06 Mar 2023 23:00:00 GMT</pubDate>
+            <description><![CDATA[A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.]]></description>
+            <content:encoded><![CDATA[A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
         <item>
             <title><![CDATA[Coding your own AI in 2023 with fastai]]></title>
             <link>https://wweb.dev/blog/coding-your-own-ai-2023-with-fastai</link>
@@ -29,6 +47,15 @@
             <pubDate>Mon, 31 Oct 2022 23:00:00 GMT</pubDate>
             <description><![CDATA[A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.]]></description>
             <content:encoded><![CDATA[A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[Blur Background CSS Generator]]></title>
+            <link>https://wweb.dev/resources/blur-background-css-generator</link>
+            <guid>https://wweb.dev/resources/blur-background-css-generator</guid>
+            <pubDate>Thu, 13 Oct 2022 22:00:00 GMT</pubDate>
+            <description><![CDATA[A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.]]></description>
+            <content:encoded><![CDATA[A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.]]></content:encoded>
             <author>info@wweb.dev (Vincent Will)</author>
         </item>
         <item>
@@ -56,6 +83,33 @@
             <pubDate>Wed, 02 Feb 2022 23:00:00 GMT</pubDate>
             <description><![CDATA[In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...]]></description>
             <content:encoded><![CDATA[In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[Websites For Free Icon Sets]]></title>
+            <link>https://wweb.dev/resources/free-icon-sets</link>
+            <guid>https://wweb.dev/resources/free-icon-sets</guid>
+            <pubDate>Thu, 05 Nov 2020 23:00:00 GMT</pubDate>
+            <description><![CDATA[A curated list of websites that offer collections of free icons.]]></description>
+            <content:encoded><![CDATA[A curated list of websites that offer collections of free icons.]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[JavaScript Object Functions Cheat Sheet]]></title>
+            <link>https://wweb.dev/resources/js-object-functions-cheatsheet</link>
+            <guid>https://wweb.dev/resources/js-object-functions-cheatsheet</guid>
+            <pubDate>Thu, 30 Jul 2020 22:00:00 GMT</pubDate>
+            <description><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.]]></description>
+            <content:encoded><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[Responsive Navigation Generator]]></title>
+            <link>https://wweb.dev/resources/navigation-generator</link>
+            <guid>https://wweb.dev/resources/navigation-generator</guid>
+            <pubDate>Sun, 12 Jul 2020 22:00:00 GMT</pubDate>
+            <description><![CDATA[Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.]]></description>
+            <content:encoded><![CDATA[Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.]]></content:encoded>
             <author>info@wweb.dev (Vincent Will)</author>
         </item>
         <item>
@@ -95,12 +149,48 @@
             <author>info@wweb.dev (Vincent Will)</author>
         </item>
         <item>
+            <title><![CDATA[JavaScript Array Functions Cheat Sheet]]></title>
+            <link>https://wweb.dev/resources/js-array-functions-cheatsheet</link>
+            <guid>https://wweb.dev/resources/js-array-functions-cheatsheet</guid>
+            <pubDate>Wed, 20 May 2020 22:00:00 GMT</pubDate>
+            <description><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.]]></description>
+            <content:encoded><![CDATA[A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[Creative Hover Effects]]></title>
+            <link>https://wweb.dev/resources/creative-hover-effects</link>
+            <guid>https://wweb.dev/resources/creative-hover-effects</guid>
+            <pubDate>Sun, 03 May 2020 22:00:00 GMT</pubDate>
+            <description><![CDATA[A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.]]></description>
+            <content:encoded><![CDATA[A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
             <title><![CDATA[Getting started with React Query - Easy server state management in React]]></title>
             <link>https://wweb.dev/blog/react-query-getting-started-tutorial</link>
             <guid>https://wweb.dev/blog/react-query-getting-started-tutorial</guid>
             <pubDate>Thu, 23 Apr 2020 22:00:00 GMT</pubDate>
             <description><![CDATA[Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...]]></description>
             <content:encoded><![CDATA[Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[Websites For Inspiration]]></title>
+            <link>https://wweb.dev/resources/websites-for-inspiration</link>
+            <guid>https://wweb.dev/resources/websites-for-inspiration</guid>
+            <pubDate>Wed, 07 Dec 2022 23:00:00 GMT</pubDate>
+            <description><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></description>
+            <content:encoded><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[CSS Section Separator Generator]]></title>
+            <link>https://wweb.dev/resources/css-separator-generator</link>
+            <guid>https://wweb.dev/resources/css-separator-generator</guid>
+            <pubDate>Tue, 31 Mar 2020 22:00:00 GMT</pubDate>
+            <description><![CDATA[A collection of customizable CSS section separators, with the possibility to easily copy the code.]]></description>
+            <content:encoded><![CDATA[A collection of customizable CSS section separators, with the possibility to easily copy the code.]]></content:encoded>
             <author>info@wweb.dev (Vincent Will)</author>
         </item>
         <item>
@@ -119,6 +209,33 @@
             <pubDate>Thu, 17 Mar 2022 23:00:00 GMT</pubDate>
             <description><![CDATA[Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...]]></description>
             <content:encoded><![CDATA[Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[Websites For Creative Backgrounds]]></title>
+            <link>https://wweb.dev/resources/creative-backgrounds</link>
+            <guid>https://wweb.dev/resources/creative-backgrounds</guid>
+            <pubDate>Mon, 20 Dec 2021 23:00:00 GMT</pubDate>
+            <description><![CDATA[A curated list of websites where you can get creative backgrounds for your websites.]]></description>
+            <content:encoded><![CDATA[A curated list of websites where you can get creative backgrounds for your websites.]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[A Curated List Of Websites For Free SVG Illustrations]]></title>
+            <link>https://wweb.dev/resources/free-svg-illustrations</link>
+            <guid>https://wweb.dev/resources/free-svg-illustrations</guid>
+            <pubDate>Thu, 04 Jun 2020 22:00:00 GMT</pubDate>
+            <description><![CDATA[Spice up your next project with beautiful illustrations from these websites.]]></description>
+            <content:encoded><![CDATA[Spice up your next project with beautiful illustrations from these websites.]]></content:encoded>
+            <author>info@wweb.dev (Vincent Will)</author>
+        </item>
+        <item>
+            <title><![CDATA[Animated CSS Background Generator]]></title>
+            <link>https://wweb.dev/resources/animated-css-background-generator</link>
+            <guid>https://wweb.dev/resources/animated-css-background-generator</guid>
+            <pubDate>Tue, 26 Nov 2019 23:00:00 GMT</pubDate>
+            <description><![CDATA[With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.]]></description>
+            <content:encoded><![CDATA[With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.]]></content:encoded>
             <author>info@wweb.dev (Vincent Will)</author>
         </item>
         <item>

@@ -11,6 +11,30 @@
     },
     "items": [
         {
+            "id": "https://wweb.dev/blog/guide-self-hosting-web-apps-on-ubuntu",
+            "content_html": "In this article, I will share a step-by-step guide on how to deploy and serve a web app to an ubuntu server. This applicable for any web app that runs on a port.",
+            "url": "https://wweb.dev/blog/guide-self-hosting-web-apps-on-ubuntu",
+            "title": "A Guide To Self-Hosting Web Apps On Ubuntu Servers",
+            "summary": "In this article, I will share a step-by-step guide on how to deploy and serve a web app to an ubuntu server. This applicable for any web app that runs on a port.",
+            "date_modified": "2023-11-09T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/loader-generator",
+            "content_html": "A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.",
+            "url": "https://wweb.dev/resources/loader-generator",
+            "title": "Pure CSS Loader Generator",
+            "summary": "A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.",
+            "date_modified": "2023-03-06T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/blog/coding-your-own-ai-2023-with-fastai",
             "content_html": "This is a guide, which focuses on the critical parts of the fastai course. I'll cover how to set up the ecosystem and how to create, train and deploy an AI model.",
             "url": "https://wweb.dev/blog/coding-your-own-ai-2023-with-fastai",
@@ -29,6 +53,18 @@
             "title": "Next.js Web App Template",
             "summary": "A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.",
             "date_modified": "2022-10-31T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/blur-background-css-generator",
+            "content_html": "A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.",
+            "url": "https://wweb.dev/resources/blur-background-css-generator",
+            "title": "Blur Background CSS Generator",
+            "summary": "A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.",
+            "date_modified": "2022-10-13T22:00:00.000Z",
             "author": {
                 "name": "Vincent Will",
                 "url": "https://vincentwill.com"
@@ -65,6 +101,42 @@
             "title": "A guide to debugging JavaScript in Visual Studio Code",
             "summary": "In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...",
             "date_modified": "2022-02-02T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/free-icon-sets",
+            "content_html": "A curated list of websites that offer collections of free icons.",
+            "url": "https://wweb.dev/resources/free-icon-sets",
+            "title": "Websites For Free Icon Sets",
+            "summary": "A curated list of websites that offer collections of free icons.",
+            "date_modified": "2020-11-05T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/js-object-functions-cheatsheet",
+            "content_html": "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.",
+            "url": "https://wweb.dev/resources/js-object-functions-cheatsheet",
+            "title": "JavaScript Object Functions Cheat Sheet",
+            "summary": "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.",
+            "date_modified": "2020-07-30T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/navigation-generator",
+            "content_html": "Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.",
+            "url": "https://wweb.dev/resources/navigation-generator",
+            "title": "Responsive Navigation Generator",
+            "summary": "Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.",
+            "date_modified": "2020-07-12T22:00:00.000Z",
             "author": {
                 "name": "Vincent Will",
                 "url": "https://vincentwill.com"
@@ -119,12 +191,60 @@
             }
         },
         {
+            "id": "https://wweb.dev/resources/js-array-functions-cheatsheet",
+            "content_html": "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.",
+            "url": "https://wweb.dev/resources/js-array-functions-cheatsheet",
+            "title": "JavaScript Array Functions Cheat Sheet",
+            "summary": "A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.",
+            "date_modified": "2020-05-20T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/creative-hover-effects",
+            "content_html": "A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.",
+            "url": "https://wweb.dev/resources/creative-hover-effects",
+            "title": "Creative Hover Effects",
+            "summary": "A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.",
+            "date_modified": "2020-05-03T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
             "id": "https://wweb.dev/blog/react-query-getting-started-tutorial",
             "content_html": "Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...",
             "url": "https://wweb.dev/blog/react-query-getting-started-tutorial",
             "title": "Getting started with React Query - Easy server state management in React",
             "summary": "Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...",
             "date_modified": "2020-04-23T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/websites-for-inspiration",
+            "content_html": "Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.",
+            "url": "https://wweb.dev/resources/websites-for-inspiration",
+            "title": "Websites For Inspiration",
+            "summary": "Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.",
+            "date_modified": "2022-12-07T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/css-separator-generator",
+            "content_html": "A collection of customizable CSS section separators, with the possibility to easily copy the code.",
+            "url": "https://wweb.dev/resources/css-separator-generator",
+            "title": "CSS Section Separator Generator",
+            "summary": "A collection of customizable CSS section separators, with the possibility to easily copy the code.",
+            "date_modified": "2020-03-31T22:00:00.000Z",
             "author": {
                 "name": "Vincent Will",
                 "url": "https://vincentwill.com"
@@ -149,6 +269,42 @@
             "title": "How to build a static website without frameworks using npm scripts",
             "summary": "Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...",
             "date_modified": "2022-03-17T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/creative-backgrounds",
+            "content_html": "A curated list of websites where you can get creative backgrounds for your websites.",
+            "url": "https://wweb.dev/resources/creative-backgrounds",
+            "title": "Websites For Creative Backgrounds",
+            "summary": "A curated list of websites where you can get creative backgrounds for your websites.",
+            "date_modified": "2021-12-20T23:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/free-svg-illustrations",
+            "content_html": "Spice up your next project with beautiful illustrations from these websites.",
+            "url": "https://wweb.dev/resources/free-svg-illustrations",
+            "title": "A Curated List Of Websites For Free SVG Illustrations",
+            "summary": "Spice up your next project with beautiful illustrations from these websites.",
+            "date_modified": "2020-06-04T22:00:00.000Z",
+            "author": {
+                "name": "Vincent Will",
+                "url": "https://vincentwill.com"
+            }
+        },
+        {
+            "id": "https://wweb.dev/resources/animated-css-background-generator",
+            "content_html": "With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.",
+            "url": "https://wweb.dev/resources/animated-css-background-generator",
+            "title": "Animated CSS Background Generator",
+            "summary": "With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.",
+            "date_modified": "2019-11-26T23:00:00.000Z",
             "author": {
                 "name": "Vincent Will",
                 "url": "https://vincentwill.com"

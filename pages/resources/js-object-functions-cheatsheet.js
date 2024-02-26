@@ -4,9 +4,9 @@ import Chip from '@mui/material/Chip'
 import * as ui from '../../ui'
 import CodeBlock from '../../components/CodeBlock'
 import Layout from '../../components/Layout'
-import meta from '../../content/resources'
+import meta from '../../content/posts'
 
-const postId = 10
+const postId = 20
 const postMeta = meta.find(m => m.id === postId)
 
 const HeadlineContainer = styled.div`

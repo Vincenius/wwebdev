@@ -1,5 +1,4 @@
-import articleData from '../content/articles'
-import resourceData from '../content/resources'
+import articleData from '../content/posts'
 
 const fetchWeekly = async (searchVal, page = 1) => {
   const response = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/search?q=${searchVal}&p=${page}`)
@@ -12,8 +11,7 @@ const fetchWeekly = async (searchVal, page = 1) => {
 
 const fetchArticles = async searchVal => {
   const lowerCaseSearch = searchVal.toLowerCase()
-  const articleResourceData = [...articleData, ...resourceData]
-  const articleResourceResults = articleResourceData
+  const articleResourceResults = articleData
     .filter(
       a => a.headline.toLowerCase().includes(lowerCaseSearch) ||
       a.description.toLowerCase().includes(lowerCaseSearch)

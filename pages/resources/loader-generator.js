@@ -3,10 +3,10 @@ import Ad from '../../components/Ads/Ad'
 import Featured from '../../components/Featured'
 import LoaderGenerator from '../../components/LoaderGenerator'
 import Layout from '../../components/Layout'
-import meta from '../../content/resources'
+import meta from '../../content/posts'
 import * as ui from '../../ui/'
 
-const postMeta = meta.find(m => m.id === 15)
+const postMeta = meta.find(m => m.id === 25)
 
 const Demo = () => {
     return (
@@ -35,7 +35,7 @@ const Demo = () => {
                   <LoaderGenerator />
 
                   <ui.Subheadline>You might also like</ui.Subheadline>
-                  <Featured resourceIds={[1, 5, 13]} />
+                  <Featured postIds={[5, 10, 24]} />
                 </ui.SidebarArticle>
                 <ui.Sidebar>
                   <Ad />

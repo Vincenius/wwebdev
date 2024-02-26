@@ -169,7 +169,7 @@ exports.handler = async event => {
 };`
 
 const Post = () => (
-  <ArticleLayout id={11}>
+  <ArticleLayout id={18}>
     <ol>
       <a href="/blog/aws-getting-started-deploy-static-website-s3"><li>Deploying a Static Website to S3</li></a>
       <a href="/blog/aws-getting-started-cloudfront-and-domain"><li>Distribute an S3 Bucket with CloudFront and add a Domain</li></a>

@@ -133,7 +133,7 @@ git commit -m "initial commit"
 git push`
 
 const Post = () => (
-  <ArticleLayout id={13}>
+  <ArticleLayout id={23}>
     <p>
       Recently I've started the course <ExternalLink href="https://course.fast.ai/">Practical Deep Learning for Coders</ExternalLink>.
       This course is great and I'd recommend it if you'd like to get deeper into the topic. But it's also quite time consuming

@@ -3,14 +3,14 @@ import React from 'react'
 import Head from '../../components/Head'
 import Nav from '../../components/Nav'
 import Footer from '../../components/Footer'
-import meta from '../../content/resources'
+import meta from '../../content/posts'
 import BlurBgGenerator from '../../components/BlurBackgroundGenerator'
 import Featured from '../../components/Featured'
 import Ad from '../../components/Ads/Ad'
 import * as S from '../../components/BlurBackgroundGenerator/styled.js'
 import * as ui from '../../ui'
 
-const postMeta = meta.find(m => m.id === 13)
+const postMeta = meta.find(m => m.id === 24)
 
 const BlurBackgroundGenerator = () => {
     return <React.Fragment>
@@ -51,7 +51,7 @@ const BlurBackgroundGenerator = () => {
                             Also, feedback for this generator is always welcome. Just pass me a message on <a href="https://twitter.com/wweb_dev" target="_blank" rel="noopener noreferrer">Twitter</a> or via email: <a href="mailto:info@wweb.dev">info@wweb.dev</a>.
                         </p>
                         <ui.Subheadline as="h2">You might also like</ui.Subheadline>
-                        <Featured resourceIds={[1, 5, 4]} />
+                        <Featured postIds={[5, 10, 7]} />
                     </ui.SidebarArticle>
                     <ui.Sidebar>
                     </ui.Sidebar>

@@ -115,7 +115,7 @@ const snippet11 = `writing() {
 }`
 
 const Post = () => (
-    <ArticleLayout id={6}>
+    <ArticleLayout id={9}>
         <p>
             I found myself often copy-pasting code from other projects when starting new projects.
             This is why I created a Yeoman generator, which setups

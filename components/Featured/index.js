@@ -1,14 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
-import resources from '../../content/resources'
+import posts from '../../content/posts'
 import templates from '../../content/templates'
 import * as S from './styled'
 
 const Featured = ({ articleIds = [], templateIds = [], resourceIds = [] }) => {
   const articles = [
-    ...resources.filter(r => resourceIds.includes(r.id)),
+    ...posts.filter(r => resourceIds.includes(r.id) || articleIds.includes(r.id)),
     ...templates.filter(t => templateIds.includes(t.id)),
-    ...articleIds.filter(a => articleIds.includes(a.id))
   ]
   return <S.Container>
     { articles.map((a, i) =>

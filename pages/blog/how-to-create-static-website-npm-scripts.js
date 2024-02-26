@@ -158,7 +158,7 @@ const snippet15 = `<!DOCTYPE html>
 </html>`
 
 const Post = () => (
-    <ArticleLayout id={5}>
+    <ArticleLayout id={8}>
         <p>
             Sometimes it makes total sense to build an old fashioned static website.
             It can be not only faster but also simpler than throwing in a full JavaScript framework

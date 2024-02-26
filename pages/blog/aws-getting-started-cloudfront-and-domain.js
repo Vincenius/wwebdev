@@ -4,7 +4,7 @@ import ArticleLayout from '../../components/ArticleLayout'
 import CodeBlock from '../../components/CodeBlock'
 
 const Post = () => (
-  <ArticleLayout id={10}>
+  <ArticleLayout id={17}>
     <ol>
       <a href="/blog/aws-getting-started-deploy-static-website-s3"><li>Deploying a Static Website to S3</li></a>
       <a href="/blog/aws-getting-started-cloudfront-and-domain"><li>Distribute an S3 Bucket with CloudFront and add a Domain</li></a>

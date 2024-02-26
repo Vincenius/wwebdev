@@ -2,12 +2,24 @@
   <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
       
         <url>
+            <loc>https://wweb.dev/blog/guide-self-hosting-web-apps-on-ubuntu</loc>
+            <lastmod>2023-11-10</lastmod>
+        </url>
+        <url>
+            <loc>https://wweb.dev/resources/loader-generator</loc>
+            <lastmod>2023-03-07</lastmod>
+        </url>
+        <url>
             <loc>https://wweb.dev/blog/coding-your-own-ai-2023-with-fastai</loc>
             <lastmod>2023-02-27</lastmod>
         </url>
         <url>
             <loc>https://wweb.dev/templates/web-app-template</loc>
             <lastmod>2022-11-01</lastmod>
+        </url>
+        <url>
+            <loc>https://wweb.dev/resources/blur-background-css-generator</loc>
+            <lastmod>2022-10-14</lastmod>
         </url>
         <url>
             <loc>https://wweb.dev/templates/micro-blogging-template</loc>
@@ -20,6 +32,18 @@
         <url>
             <loc>https://wweb.dev/blog/debugging-javascript-vscode</loc>
             <lastmod>2022-02-03</lastmod>
+        </url>
+        <url>
+            <loc>https://wweb.dev/resources/free-icon-sets</loc>
+            <lastmod>2020-11-06</lastmod>
+        </url>
+        <url>
+            <loc>https://wweb.dev/resources/js-object-functions-cheatsheet</loc>
+            <lastmod>2020-07-31</lastmod>
+        </url>
+        <url>
+            <loc>https://wweb.dev/resources/navigation-generator</loc>
+            <lastmod>2020-07-13</lastmod>
         </url>
         <url>
             <loc>https://wweb.dev/blog/aws-getting-started-micro-service-lambda-dynamodb</loc>
@@ -38,8 +62,24 @@
             <lastmod>2020-05-29</lastmod>
         </url>
         <url>
+            <loc>https://wweb.dev/resources/js-array-functions-cheatsheet</loc>
+            <lastmod>2020-05-21</lastmod>
+        </url>
+        <url>
+            <loc>https://wweb.dev/resources/creative-hover-effects</loc>
+            <lastmod>2020-05-04</lastmod>
+        </url>
+        <url>
             <loc>https://wweb.dev/blog/react-query-getting-started-tutorial</loc>
             <lastmod>2020-04-24</lastmod>
+        </url>
+        <url>
+            <loc>https://wweb.dev/resources/websites-for-inspiration</loc>
+            <lastmod>2022-12-08</lastmod>
+        </url>
+        <url>
+            <loc>https://wweb.dev/resources/css-separator-generator</loc>
+            <lastmod>2020-04-01</lastmod>
         </url>
         <url>
             <loc>https://wweb.dev/blog/how-to-create-yeoman-generator</loc>
@@ -48,6 +88,18 @@
         <url>
             <loc>https://wweb.dev/blog/how-to-create-static-website-npm-scripts</loc>
             <lastmod>2022-03-18</lastmod>
+        </url>
+        <url>
+            <loc>https://wweb.dev/resources/creative-backgrounds</loc>
+            <lastmod>2021-12-21</lastmod>
+        </url>
+        <url>
+            <loc>https://wweb.dev/resources/free-svg-illustrations</loc>
+            <lastmod>2020-06-05</lastmod>
+        </url>
+        <url>
+            <loc>https://wweb.dev/resources/animated-css-background-generator</loc>
+            <lastmod>2019-11-27</lastmod>
         </url>
         <url>
             <loc>https://wweb.dev/blog/4-websites-to-recreate-to-practice-your-web-development-skills</loc>

@@ -3,7 +3,7 @@ import React from 'react'
 import ArticleLayout from '../../components/ArticleLayout'
 
 const Post = () => (
-  <ArticleLayout id={12}>
+  <ArticleLayout id={22}>
     <p>
       Every time I'm tracing a bug, I'm tempted to throw in a console.log() to check some variables.
       This can be faster when you exactly know what the issue is, but it will most likely take

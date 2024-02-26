@@ -8,9 +8,9 @@ import * as ui from '../../ui'
 
 import { Background1, Background2, Background3 } from '../../components/AnimatedCssBackgroundGenerator'
 import * as S from '../../components/AnimatedCssBackgroundGenerator/styles/animatedCssBg'
-import meta from '../../content/resources'
+import meta from '../../content/posts'
 
-const postMeta = meta.find(m => m.id === 1)
+const postMeta = meta.find(m => m.id === 5)
 
 const Demo = () => {
     const [activeBg, changeBg] = useState(0);

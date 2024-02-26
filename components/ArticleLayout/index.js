@@ -2,9 +2,8 @@ import React from 'react'
 import * as ui from '../../ui'
 import SidebarLayout from '../Layout/SidebarLayout'
 import Comments from '../Comments'
-import Ad from '../Ads/Ad'
 import PrevNext from '../PrevNext'
-import meta from '../../content/articles'
+import meta from '../../content/posts'
 
 const ArticleLayout = ({ id, children }) => {
   const postMeta = meta.find(m => m.id === id)

@@ -127,7 +127,7 @@ const Post = ({ id }) => {
 export default Post`
 
 const Post = () => (
-  <ArticleLayout id={7}>
+  <ArticleLayout id={12}>
     <h2>Getting started</h2>
 
     <p>
