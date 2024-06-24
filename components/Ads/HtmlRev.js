@@ -9,8 +9,8 @@ const AffiliateAd = () => {
           <img src="/affiliate/htmlrev.png" alt="1000+ free HTML templates for web developers" style={{ maxWidth: '130px', objectFit: 'cover' }} width="130" height="100" border="0" />
         </span>
         <span className="carbon-text">
-          <span>
-            <span className={styles.title}>HTMLrev</span> - 1000+ free HTML templates for web developers
+          <span className={styles.text}>
+            <span className={styles.title}>HTMLrev</span> - 1500+ free HTML templates for web developers
           </span>
         </span>
       </span>
