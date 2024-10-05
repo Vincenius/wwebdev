@@ -28,10 +28,10 @@ const Footer = () => {
           <S.RightFooter>
             <S.FooterLinks>
               <li><h2>Other Projects</h2></li>
-              <li><Link href="https://webdev.town/">WebDev Town</Link></li>
-              <li><Link href="https://sponsor.ninja/">Sponsor Ninja</Link></li>
+              <li><Link href="https://immoradar.xyz">ImmoRadar</Link></li>
+              <li><Link href="https://github.com/Vincenius/OpenMailer">OpenMailer</Link></li>
+              <li><Link href="https://github.com/Vincenius/bsky-embed">bsky-embed</Link></li>
               <li><Link href="https://css-speedrun.netlify.app/">CSS Speedrun</Link></li>
-              <li><Link href="https://convert2svg.com/">Convert2Svg</Link></li>
             </S.FooterLinks>
 
             <S.FooterLinks>
