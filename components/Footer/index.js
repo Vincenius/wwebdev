@@ -39,9 +39,6 @@ const Footer = () => {
               <li><Link href="https://ko-fi.com/wweb_dev">Donate</Link></li>
               <li><Link href="/about">About</Link></li>
               <li><Link href="/privacy">Privacy Policy</Link></li>
-              <a href="https://www.co2neutralwebsite.com/certificate/7187/en" target="_blank">
-                <img src="//www.co2neutralwebsite.com/icons/logo/inverse_en.svg" alt="CO2 neutral website" />
-              </a>
             </S.FooterLinks>
           </S.RightFooter>
         </S.Content>
