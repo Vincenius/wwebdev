@@ -76,6 +76,7 @@ class MyHead extends React.Component {
                 <meta name='theme-color' content='#2c3e50' />
                 <link rel='apple-touch-icon' sizes='192x192' href='apple-icon.png' />
                 <link rel='manifest' href='/manifest.json' />
+                <meta name="google-adsense-account" content="ca-pub-1087144186006114"></meta>
 
                 { description && <meta name="description" content={description}></meta> }
                 <script defer src="https://analytics.vincentwill.com/script.js" data-website-id="7533aec9-873e-49d7-ae09-4f3a2dd4a12d"></script>
