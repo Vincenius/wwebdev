@@ -51,7 +51,7 @@ const BlurBackgroundGenerator = () => {
                             Also, feedback for this generator is always welcome. Just pass me a message on <a href="https://twitter.com/wweb_dev" target="_blank" rel="noopener noreferrer">Twitter</a> or via email: <a href="mailto:info@wweb.dev">info@wweb.dev</a>.
                         </p>
                         <ui.Subheadline as="h2">You might also like</ui.Subheadline>
-                        <Featured postIds={[5, 10, 7]} />
+                        <Featured articleIds={[5, 10, 7]} />
                     </ui.SidebarArticle>
                     <ui.Sidebar>
                     </ui.Sidebar>

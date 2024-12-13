@@ -47,20 +47,6 @@ const Post = () => (
             />
 
             <LinkBox
-                image="/resources/free-svg-illustrations/isometric.jpg"
-                title="Isometric"
-                link="https://isometric.online/"
-                description="This website offers a searchable list of nice and free isometric illustrations."
-            />
-
-            <LinkBox
-                image="/resources/free-svg-illustrations/glaze.jpg"
-                title="Glaze"
-                link="https://www.glazestock.com/"
-                description="Glaze offers a lot of royalty-free high quality illustrations."
-            />
-
-            <LinkBox
                 image="/resources/free-svg-illustrations/lukaszadam.jpg"
                 title="Lukasz Adam"
                 link="https://lukaszadam.com/illustrations"
@@ -107,20 +93,6 @@ const Post = () => (
                 title="Humaaans"
                 link="https://www.humaaans.com"
                 description="Humaaans have a variety of different svgs of people. They also offer each element of the humans separately to be able to create your own."
-            />
-
-            <LinkBox
-                image="/resources/free-svg-illustrations/woobro.jpg"
-                title="Woobro"
-                link="https://woobro.design/"
-                description="Woobro has some very detailed high-quality svgs for some specific use cases."
-            />
-
-            <LinkBox
-                image="/resources/free-svg-illustrations/ouch.png"
-                title="Ouch!"
-                link="https://icons8.com/ouch"
-                description="25 packs of illustrations in various styles, which are free with a credit link."
             />
 
             <LinkBox
@@ -194,20 +166,6 @@ const Post = () => (
             />
 
             <LinkBox
-                image="/resources/free-svg-illustrations/karthik-srinivas.png"
-                title="Karthik Srinivas"
-                link="https://www.karthiksrinivas.in/illustrations"
-                description='Multiple sets of illustrations for common use cases like emty and success states.'
-            />
-
-            <LinkBox
-                image="/resources/free-svg-illustrations/smashillustrations.png"
-                title="Smash Illustrations"
-                link="https://usesmash.com/"
-                description='An illustration constructor with colorful and trendy characters.'
-            />
-
-            <LinkBox
                 image="/resources/free-svg-illustrations/avataaars.png"
                 title="Avataaars Generator"
                 link="https://getavataaars.com/"
@@ -220,18 +178,11 @@ const Post = () => (
                 link="https://www.veila.me/freebies/scandinavian-houses-free-vector-images"
                 description='A vector set 30 building illustrations inspired by the scandinavian architecture.'
             />
-
-            <LinkBox
-                image="/resources/free-svg-illustrations/joe-schmoe.png"
-                title="Joe Schmoe"
-                link="https://joeschmoe.io/"
-                description='Generate an illustrated avatar based on a string. Great for profile picture placeholders.'
-            />
         </ui.GridContainer>
 
         <ui.Container>
             <ui.Subheadline as="h2">You might also like</ui.Subheadline>
-            <Featured postIds={[5, 7, 11]} />
+            <Featured articleIds={[5, 7, 11]} />
         </ui.Container>
     </Layout>
 )

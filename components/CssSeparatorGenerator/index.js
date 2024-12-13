@@ -104,7 +104,7 @@ const Generator = props => {
                     </p>
 
                     <ui.Subheadline>You might also like</ui.Subheadline>
-                    <Featured postIds={[5, 7, 24]} />
+                    <Featured articleIds={[5, 7, 24]} />
                 </ui.SidebarArticle>
                 <ui.Sidebar>
                     <Ad />

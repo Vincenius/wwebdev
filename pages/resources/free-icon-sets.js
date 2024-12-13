@@ -23,6 +23,13 @@ const Post = () => (
     >
         <ui.GridContainer>
             <LinkBox
+                title="Icônes"
+                description="A big collection of icon sets, with easy copy paste functions."
+                link="https://icones.js.org/"
+                image="/resources/free-icon-sets/icones.jpg"
+            />
+
+            <LinkBox
                 title="Hola SVG"
                 description="A set of SVG icons, where you can customize the stroke width, the colors, and more."
                 link="https://holasvg.com/icons/"
@@ -44,13 +51,6 @@ const Post = () => (
                 description="895 Fully customizable free SVG icons."
                 link="https://tablericons.com/"
                 image="/resources/free-icon-sets/tablericons.jpg"
-            />
-
-            <LinkBox
-                title="Mono Icons"
-                description="A simple, consistent open-source icon set."
-                link="https://icons.mono.company/"
-                image="/resources/free-icon-sets/monoicons.jpg"
             />
 
             <LinkBox
@@ -109,13 +109,6 @@ const Post = () => (
             />
 
             <LinkBox
-                title="Remix Icons"
-                description="A set of open-source neutral-style system symbols elaborately crafted for designers and developers."
-                link="https://remixicon.com"
-                image="/resources/free-icon-sets/remixicon.jpg"
-            />
-
-            <LinkBox
                 title="Octicons"
                 description="The official icon set of GitHub."
                 link="https://primer.style/octicons/"
@@ -160,7 +153,7 @@ const Post = () => (
             <LinkBox
                 title="Noun Project"
                 description="A website to search for over 3 million icons, which can be used for free with attribution."
-                link="https://thenounproject.com/"
+                link="https://thenounproject.com/icons/"
                 image="/resources/free-icon-sets/nounproject.png"
             />
 
@@ -174,7 +167,7 @@ const Post = () => (
 
         <ui.Container>
             <ui.Subheadline as="h2">You might also like</ui.Subheadline>
-            <Featured postIds={[6, 7, 24]} />
+            <Featured articleIds={[6, 7, 24]} />
         </ui.Container>
     </Layout>
 )

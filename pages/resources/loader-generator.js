@@ -35,7 +35,7 @@ const Demo = () => {
                   <LoaderGenerator />
 
                   <ui.Subheadline>You might also like</ui.Subheadline>
-                  <Featured postIds={[5, 10, 24]} />
+                  <Featured articleIds={[5, 10, 24]} />
                 </ui.SidebarArticle>
                 <ui.Sidebar>
                   <Ad />

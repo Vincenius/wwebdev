@@ -195,7 +195,7 @@ const NavigationGenerator = props => {
 
       <br />
       <ui.Subheadline as="h2">You might also like</ui.Subheadline>
-      <Featured postIds={[5, 10, 24]} />
+      <Featured articleIds={[5, 10, 24]} />
     </ui.Container>
   )
 }

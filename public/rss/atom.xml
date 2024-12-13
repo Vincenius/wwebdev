@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wweb.dev</id>
     <title>wweb.dev</title>
-    <updated>2024-12-09T09:46:48.756Z</updated>
+    <updated>2024-12-13T09:49:53.600Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Vincent Will</name>
@@ -163,7 +163,7 @@
         <title type="html"><![CDATA[Websites For Free Icon Sets]]></title>
         <id>https://wweb.dev/resources/free-icon-sets</id>
         <link href="https://wweb.dev/resources/free-icon-sets"/>
-        <updated>2020-11-05T23:00:00.000Z</updated>
+        <updated>2024-12-12T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[A curated list of websites that offer collections of free icons.]]></summary>
         <content type="html"><![CDATA[A curated list of websites that offer collections of free icons.]]></content>
         <author>
@@ -343,7 +343,7 @@
         <title type="html"><![CDATA[Websites For Inspiration]]></title>
         <id>https://wweb.dev/resources/websites-for-inspiration</id>
         <link href="https://wweb.dev/resources/websites-for-inspiration"/>
-        <updated>2022-12-07T23:00:00.000Z</updated>
+        <updated>2024-12-12T23:00:00.000Z</updated>
         <summary type="html"><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></summary>
         <content type="html"><![CDATA[Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.]]></content>
         <author>

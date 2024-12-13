@@ -109,22 +109,10 @@ const Post = () => (
                 image="/resources/creative-backgrounds/particlesjs.png"
             />
             <LinkBox
-                title="Pattern Generator"
-                description="A cool generator for unique, royalty-free, repeatable SVG patterns by John Bartlet."
-                link="https://beautifuldingbats.com/pattern-generator/"
-                image="/resources/creative-backgrounds/beautifuldingbats.png"
-            />
-            <LinkBox
                 title="The Pattern Library"
                 description="A compiled list of beautiful patterns by different designers."
                 link="http://thepatternlibrary.com/"
                 image="/resources/creative-backgrounds/pattern-library.jpg"
-            />
-            <LinkBox
-                title="SVG Gradient Wave Generator"
-                description="A generator for SVG wave patterns."
-                link="https://www.outpan.com/app/9aaaf27303/svg-gradient-wave-generator"
-                image="/resources/creative-backgrounds/svggradientwavegenerator.png"
             />
             <LinkBox
                 title="Subtle Patterns"
@@ -175,12 +163,6 @@ const Post = () => (
                 image="/resources/creative-backgrounds/webglbackgrounds.png"
             />
             <LinkBox
-                title="CSS Waves"
-                description="A smoothly animated wave with pure CSS."
-                link="https://csspoints.com/css-wave-effect-responsive-design/"
-                image="/resources/creative-backgrounds/gradientwave-csspoints.png"
-            />
-            <LinkBox
                 title="CSS Gradient Animator"
                 description="A site to create beautiful animated gradients for use on your website."
                 link="https://www.gradient-animator.com/"
@@ -210,7 +192,7 @@ const Post = () => (
 
         <ui.Container>
             <ui.Subheadline as="h2">You might also like</ui.Subheadline>
-            <Featured postIds={[6, 10, 24]} />
+            <Featured articleIds={[6, 10, 24]} />
         </ui.Container>
     </Layout>
 )

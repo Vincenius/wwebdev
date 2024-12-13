@@ -4,7 +4,6 @@ import Layout from '../../components/Layout'
 import LinkBox from '../../components/LinkBox'
 import Featured from '../../components/Featured'
 import Ad from '../../components/Ads/Ad'
-import NewsletterLink from '../../components/NewsletterLink'
 import meta from '../../content/posts'
 import * as ui from '../../ui'
 
@@ -30,10 +29,10 @@ const Post = () => (
             />
 
             <LinkBox
-                title="Landingexam"
-                description="Landing page examples to inspire your next promotional web page project. App, webinar, real estate and more categories to choose from."
-                link="https://landingexam.com/"
-                image="/resources/inspiration-websites/landingexam.jpg"
+                title="Websitevice"
+                description="Find inspiration among website design examples for business, startup, software, saas, mobile app, and many more."
+                link="https://websitevice.com/"
+                image="/resources/inspiration-websites/websitevice.jpg"
             />
 
             <div>
@@ -69,13 +68,6 @@ const Post = () => (
             />
 
             <LinkBox
-                title="Creative Portfolios"
-                description="A small curation of creative portfolios made by designers & developers."
-                link="https://www.creative-portfolios.com/"
-                image="/resources/inspiration-websites/creative-portfolios.jpg"
-            />
-
-            <LinkBox
                 title="Webdesign Inspiration"
                 description="Hand-picked web design inspiration, chosen among different styles and industries. It can be filtered by desktop, mobile and tablet sites."
                 link="https://www.webdesign-inspiration.com/"
@@ -90,20 +82,6 @@ const Post = () => (
             />
 
             <LinkBox
-                title="CSS Awards"
-                description="An inspiration gallery, with high quality of CSS websites from around the world."
-                link="https://www.cssawards.net/"
-                image="/resources/inspiration-websites/cssawards.jpg"
-            />
-
-            <LinkBox
-                title="Web Dev Resources"
-                description="A collection of hand-picked resources for front-end web developers."
-                link="https://webdevresources.info/inspiration"
-                image="/resources/inspiration-websites/webdevresources.jpg"
-            />
-
-            <LinkBox
                 title="Collect UI"
                 description="A huge list of hand-picked inspirational websites, which is updated daily."
                 link="https://collectui.com/"
@@ -115,13 +93,6 @@ const Post = () => (
                 description="A website design gallery showcasing single page websites, templates, and resources."
                 link="https://onepagelove.com/"
                 image="/resources/inspiration-websites/onepagelove.jpg"
-            />
-
-            <LinkBox
-                title="UI Movement"
-                description="A daily updated list for UI design inspiration, which can be filtered by specific elements."
-                link="https://uimovement.com/"
-                image="/resources/inspiration-websites/ui-movement.jpg"
             />
 
             <LinkBox
@@ -190,7 +161,7 @@ const Post = () => (
 
         <ui.Container>
             <ui.Subheadline as="h2">You might also like</ui.Subheadline>
-            <Featured postIds={[7, 13, 24]} />
+            <Featured articleIds={[7, 13, 24]} />
         </ui.Container>
     </Layout>
 )
