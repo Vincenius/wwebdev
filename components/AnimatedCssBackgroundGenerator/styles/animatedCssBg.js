@@ -1,10 +1,16 @@
 import styled from 'styled-components'
 import { breakpointLarge } from '../../../ui/constants'
+import * as ui from '../../../ui'
 
 export const Container = styled.div`
     position: relative;
     min-height: 100vh;
     height: 100%;
+`
+export const SidebarContainer = styled(ui.SidebarContainer)`
+    @media (max-width: ${breakpointLarge}) {
+        flex-direction: column-reverse;
+    }
 `
 export const BottomContainer = styled.div`
     background: #fff;

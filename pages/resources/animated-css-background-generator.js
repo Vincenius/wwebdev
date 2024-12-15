@@ -5,6 +5,7 @@ import Footer from '../../components/Footer'
 import AbsoluteAd from '../../components/Ads/AbsoluteAd'
 import Ad from '../../components/Ads/Ad'
 import * as ui from '../../ui'
+import BrowserMockup from '../../components/BrowserMockup'
 
 import { Background1, Background2, Background3 } from '../../components/AnimatedCssBackgroundGenerator'
 import * as S from '../../components/AnimatedCssBackgroundGenerator/styles/animatedCssBg'
@@ -17,7 +18,34 @@ const Demo = () => {
 
     return (
         <React.Fragment>
-            <S.Container>
+            <ui.Container>
+                <ui.SectionHeadline as="h1">Animated CSS Background Generator</ui.SectionHeadline>
+                <S.SidebarContainer>
+                    <ui.SidebarArticle as="article">
+                        <BrowserMockup maxWidth={730}>
+                            { activeBg === 0 && <Background1 changeBg={changeBg} activeBg={activeBg} /> }
+                            { activeBg === 1 && <Background2 changeBg={changeBg} activeBg={activeBg} /> }
+                            { activeBg === 2 && <Background3 changeBg={changeBg} activeBg={activeBg} /> }
+                        </BrowserMockup>
+                    </ui.SidebarArticle>
+                    <ui.Sidebar>
+                        <Ad />
+                        <ui.Subheadline noMarginBottom>Choose a background</ui.Subheadline>
+                        {/* todo <S.Row>
+                            { Object.entries(SEPARATORS).map(([key, val]) =>
+                                <Card
+                                    className={active === val ? 'active' : ''}
+                                    key={`${val}-card`}
+                                    onClick={() => { useSeparator(val) }}
+                                >
+                                    <img src={`/resources/css-separators/${val}.png`} alt={`${val} preview`} />
+                                </Card>
+                            )}
+                        </S.Row> */}
+                    </ui.Sidebar>
+                </S.SidebarContainer>
+            </ui.Container>
+            {/* <S.Container>
                 <Head
                     isArticle={true}
                     title={postMeta.headline}
@@ -34,7 +62,7 @@ const Demo = () => {
                 { activeBg === 0 && <Background1 changeBg={changeBg} activeBg={activeBg} /> }
                 { activeBg === 1 && <Background2 changeBg={changeBg} activeBg={activeBg} /> }
                 { activeBg === 2 && <Background3 changeBg={changeBg} activeBg={activeBg} /> }
-            </S.Container>
+            </S.Container> */}
 
             <S.BottomContainer>
                 <ui.SidebarContainer>
