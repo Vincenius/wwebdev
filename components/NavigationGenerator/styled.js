@@ -241,3 +241,19 @@ export const SidebarContainer = styled(ui.SidebarContainer)`
     margin-bottom: 0;
   }
 `
+
+export const CopyCode = styled.span`
+  &::after {
+    content: 'copied';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: ${props => props.showCopied
+      ? 'translateY(-100%)'
+      : 'translateY(-50%)'};
+    opacity: ${props => props.showCopied
+      ? '1'
+      : '0'};
+    transition: all 500ms ease-out;
+  }
+`

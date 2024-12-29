@@ -7,8 +7,6 @@ import AccordionSummary from '@mui/material/AccordionSummary'
 import AccordionDetails from '@mui/material/AccordionDetails'
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore'
 import Button from '@mui/material/Button'
-import Snackbar from '@mui/material/Snackbar'
-import MuiAlert from '@mui/material/Alert'
 
 import * as ui from '../../ui'
 import * as S from './styled'
@@ -20,10 +18,6 @@ import Ad from '../Ads/Ad'
 import MenuItemsControl from './components/MenuItemsControl'
 import StylingControl from './components/StylingControl'
 import { htmlGenerator } from './generator'
-
-function Alert(props) {
-  return <MuiAlert elevation={6} variant="filled" {...props} />
-}
 
 const defaultMenu = {
   logo: {
@@ -61,6 +55,7 @@ const NavigationGenerator = props => {
     useLogo: menuItems.logo.isUsed,
   }))
   const [copySuccessOpen, setCopySuccessOpen] = useState(false)
+  const [copyCSSSuccessOpen, setCopyCSSSuccessOpen] = useState(false)
 
   useEffect(() => {
     const newHtmlCode = htmlGenerator(menuItems)
@@ -150,10 +145,13 @@ const NavigationGenerator = props => {
               e.stopPropagation()
               copyToClipboard(htmlCode)
               setCopySuccessOpen(true)
+              setTimeout( () => {
+                setCopySuccessOpen(false)
+              }, 2000);
             }}
             onFocus={event => event.stopPropagation()}
           >
-            Copy Code
+            <S.CopyCode showCopied={copySuccessOpen}>Copy Code</S.CopyCode>
           </Button>
         </S.ButtonAccordionSummary>
         <AccordionDetails>
@@ -171,27 +169,20 @@ const NavigationGenerator = props => {
             onClick={e => {
               e.stopPropagation()
               copyToClipboard(cssCode)
-              setCopySuccessOpen(true)
+              setCopyCSSSuccessOpen(true)
+              setTimeout( () => {
+                setCopyCSSSuccessOpen(false)
+              }, 2000);
             }}
             onFocus={event => event.stopPropagation()}
           >
-            Copy Code
+            <S.CopyCode showCopied={copyCSSSuccessOpen}>Copy Code</S.CopyCode>
           </Button>
         </S.ButtonAccordionSummary>
         <AccordionDetails>
           <CodeBlock language="css" value={cssCode} />
         </AccordionDetails>
       </Accordion>
-
-      <Snackbar
-        open={copySuccessOpen}
-        autoHideDuration={2000}
-        onClose={() => setCopySuccessOpen(false)}
-      >
-        <Alert onClose={() => setCopySuccessOpen(false)} severity="success">
-          Copied
-        </Alert>
-      </Snackbar>
 
       <br />
       <ui.Subheadline as="h2">You might also like</ui.Subheadline>
