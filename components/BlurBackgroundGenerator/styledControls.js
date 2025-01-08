@@ -13,19 +13,11 @@ export const Controls = styled.div`
 `
 
 export const Container = styled.div`
-    background: rgba(0,0,0,0.8);
-    color: #fff;
-    padding: 20px;
-    width: 260px;
-    margin: 20px;
+    padding: 0px;
 
-    h3 {
-        margin: 0;
-        color: #fff;
-    }
     label {
         display: block;
-        margin: 10px 0 0;
+        margin: 10px 0 5px;
     }
 `
 export const Header = styled.header`

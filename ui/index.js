@@ -95,6 +95,7 @@ export const Sidebar = styled.aside`
     @media (max-width: ${breakpointLarge}) {
         margin: 0;
         max-width: 100%;
+        display: ${props => props.hideOnMobile ? 'none' : 'block'}
     }
 `
 
@@ -188,5 +189,12 @@ export const RelatedContainer = styled.div`
 export const MobileHide = styled.div`
     @media (max-width: ${breakpointLarge}) {
         display: none;
+    }
+`
+
+export const MobileOnly = styled.div`
+    display: none;
+    @media (max-width: ${breakpointLarge}) {
+        display: block;
     }
 `

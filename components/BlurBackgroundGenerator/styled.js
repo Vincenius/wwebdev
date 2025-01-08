@@ -12,7 +12,6 @@ export const backgroundCss = ({ bgColor }) =>
     background: linear-gradient(to right, ${bgColor[0]}, ${bgColor[1]});
     display: flex;
     flex-grow: 1;
-    z-index: -1;
 `
 
 export const generalCircleCss = () =>

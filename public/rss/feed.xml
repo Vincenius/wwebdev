@@ -4,7 +4,7 @@
         <title>wweb.dev</title>
         <link>https://wweb.dev</link>
         <description>Stay up to date with weekly updates, get resources for next project and read articles and tutorials about web development.</description>
-        <lastBuildDate>Sun, 29 Dec 2024 06:34:27 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 08 Jan 2025 13:21:12 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -12,7 +12,7 @@
             <url>https://wweb.dev/logo-text.png</url>
             <link>https://wweb.dev</link>
         </image>
-        <copyright>All rights reserved 2024, wweb.dev</copyright>
+        <copyright>All rights reserved 2025, wweb.dev</copyright>
         <item>
             <title><![CDATA[A Guide To Self-Hosting Web Apps On Ubuntu Servers]]></title>
             <link>https://wweb.dev/blog/guide-self-hosting-web-apps-on-ubuntu</link>

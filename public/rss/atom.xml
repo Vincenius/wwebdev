@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://wweb.dev</id>
     <title>wweb.dev</title>
-    <updated>2024-12-29T06:34:27.342Z</updated>
+    <updated>2025-01-08T13:21:12.928Z</updated>
     <generator>Feed for Node.js</generator>
     <author>
         <name>Vincent Will</name>
@@ -14,7 +14,7 @@
     <subtitle>Stay up to date with weekly updates, get resources for next project and read articles and tutorials about web development.</subtitle>
     <logo>https://wweb.dev/logo-text.png</logo>
     <icon>https://wweb.dev/favicon.ico</icon>
-    <rights>All rights reserved 2024, wweb.dev</rights>
+    <rights>All rights reserved 2025, wweb.dev</rights>
     <entry>
         <title type="html"><![CDATA[A Guide To Self-Hosting Web Apps On Ubuntu Servers]]></title>
         <id>https://wweb.dev/blog/guide-self-hosting-web-apps-on-ubuntu</id>

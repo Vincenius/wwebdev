@@ -60,7 +60,7 @@ const BrowserContent = styled.div`
   justify-content: space-between;
 `
 
-const NavigationPreview = ({ children, maxWidth = 1080 }) => (
+const BrowserMockupComponent = ({ children, maxWidth = 1080 }) => (
   <BrowserMockup maxWidth={maxWidth}>
     <BrowserHead>
       <BrowserDots></BrowserDots>
@@ -71,4 +71,4 @@ const NavigationPreview = ({ children, maxWidth = 1080 }) => (
   </BrowserMockup>
 )
 
-export default NavigationPreview
+export default BrowserMockupComponent
