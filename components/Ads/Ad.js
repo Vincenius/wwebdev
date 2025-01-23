@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import AffiliateAd, { affiliates } from './AffiliateAd'
 import HtmlRev from './HtmlRev'
+import Websitevice from './Websitevice'
 
 // https://ethical-ad-client.readthedocs.io/en/latest/
 
@@ -16,7 +17,11 @@ const Ad = () => {
   //   }
   // }, [])
 
-  return <HtmlRev />
+  return <>
+    <HtmlRev />
+    <br/>
+    <Websitevice />
+  </>
 
   // return affiliateAd === null
   //   ? <div className="bordered horizontal adaptive" data-ea-publisher="wwebdev" data-ea-type="image" data-ea-manual="true"></div>
