@@ -163,6 +163,7 @@ export const SectionHeadline = styled.h2`
 export const Subheadline = styled(SectionHeadline)`
     font-size: 1.5em !important;
     margin: ${props => !!props.noMarginBottom ? '30px 0 0' : '30px 0'} !important;
+    a { text-decoration: none !important; }
 `
 
 export const GridContainer = styled(Container)`
@@ -170,6 +171,7 @@ export const GridContainer = styled(Container)`
     grid-template-columns: repeat(auto-fill, minmax(${props => props.columns === 2 ? '400px' : '300px'}, 1fr));
     grid-gap: 40px;
     margin: 40px auto;
+    ${props => props.noPadding ? 'padding: 0;' : ''}
 
     @media (max-width: ${breakpoint}) {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));

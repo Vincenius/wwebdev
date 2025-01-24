@@ -15,7 +15,7 @@ const Search = props => {
   const [searchVal, setSearchVal] = useState('')
   const [state, setState] = useState()
   const [result, setResult] = useState([])
-  const [options, setOptions] = useState({ wweb_dev: true, weekly: true, page: 1 })
+  const [options, setOptions] = useState({ wweb_dev: true, library: false, page: 1 })
 
   const handleCheckboxChange = e => {
     setOptions({ ...options, [e.target.name]: e.target.checked })
@@ -62,14 +62,14 @@ const Search = props => {
           Search
         </S.SearchButton>
 
-        <S.CheckboxContainer>
+        {/* <S.CheckboxContainer>
           <FormControlLabel
             control={<Checkbox color="primary" name="wweb_dev" onChange={handleCheckboxChange} checked={options.wweb_dev} />}
             label="wweb.dev content" />
           <FormControlLabel
-            control={<Checkbox color="primary" name="weekly" onChange={handleCheckboxChange} checked={options.weekly} />}
-            label="Weekly content" />
-        </S.CheckboxContainer>
+            control={<Checkbox color="primary" name="library" onChange={handleCheckboxChange} checked={options.library} />}
+            label="Library content" />
+        </S.CheckboxContainer> */}
       </ui.Container>
 
       <ui.GridContainer>
