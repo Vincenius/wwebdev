@@ -11,6 +11,7 @@ export const getByQuery = async ({ query, limit = 48, page = 0 }) => {
   let result = []
   const dbClient = await connectDb()
 
+  
   try {
     const db = dbClient.db('weekly')
     const collection = db.collection('weekly')
