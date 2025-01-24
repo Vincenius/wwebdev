@@ -29,10 +29,8 @@ const Library = ({ data }) => {
           A collection 1900+ Web Development Tools, Articles, Libraries and Resources I curated over the years.
         </p>
 
-        {/* todo search bar */}
-
         { Object.entries(tags).map(([key, value]) => {
-          const { elements, tag } = data.data.find(i => i.tag === key)
+          const { elements, tag } = data?.data?.find(i => i.tag === key) || { elements: [], tag: key }
 
           return (<div key={key}>
             <ui.Subheadline><Link href={`/library/${value.toLowerCase()}`}>{value}</Link></ui.Subheadline>
@@ -60,7 +58,13 @@ const Library = ({ data }) => {
 }
 
 export async function getStaticProps() {
-    const data = await fetch(process.env.NEXT_PUBLIC_HOSTNAME + '/api/library').then(res => res.json())
+    let data = { data: [] };
+    try {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/library`);
+      data = await response.json();
+    } catch (error) {
+      console.error('Error fetching data:', error);
+    }
     return {
         props: {
           data

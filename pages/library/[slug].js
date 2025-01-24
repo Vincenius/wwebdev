@@ -29,8 +29,8 @@ const Library = ({ data, slug }) => {
 
   return (
     <Layout
-      title="Web Development Resources Library"
-      description="A collection 1900+ Web Development Tools, Articles, Libraries and Resources I curated over the years."
+      title={`${mapTag[slug]} Resources Library`}
+      description={`A collection ${mapTag[slug]} Resources I curated over the years.`}
     >
       <ui.Container>
         <ui.SectionHeadline>{mapTag[slug]} Resources</ui.SectionHeadline>
@@ -96,7 +96,14 @@ export async function getStaticPaths() {
 
 export async function getStaticProps(context) {
   const slug = context.params.slug
-  const data = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/library?tag=${slug}`).then(res => res.json())
+  let data = { data: [] };
+  try {
+    const response = await fetch(`${process.env.NEXT_PUBLIC_HOSTNAME}/api/library?tag=${slug}`);
+    data = await response.json();
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
+
   return {
     props: {
       data,
