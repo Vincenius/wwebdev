@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import AffiliateAd, { affiliates } from './AffiliateAd'
-import HtmlRev from './HtmlRev'
-import Websitevice from './Websitevice'
+import StatusScout from './StatusScout'
 
 // https://ethical-ad-client.readthedocs.io/en/latest/
 
@@ -18,9 +17,7 @@ const Ad = () => {
   // }, [])
 
   return <>
-    <HtmlRev />
-    <br/>
-    <Websitevice />
+    <StatusScout />
   </>
 
   // return affiliateAd === null
