@@ -5,6 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 })
 
 const settings = withBundleAnalyzer({
+    poweredByHeader: false,
     compiler: {
         styledComponents: true,
     },
