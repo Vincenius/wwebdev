@@ -23,7 +23,7 @@ const Post = () => (
         <a href="https://modest-blog.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>{' '}
         | <a href="https://github.com/Vincenius/modest" target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
-      <img src={postMeta.previewImage} alt="screenshot of the twitter-like blog template" />
+      <img src={postMeta.shareImage} alt="screenshot of the twitter-like blog template" />
 
       <p>
         This is a micro-blogging template to quickly create a twitter-like blog.

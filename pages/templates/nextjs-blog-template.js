@@ -23,7 +23,7 @@ const Post = () => (
         <a href="https://wwebdev-nextjs-blog-template.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>{' '}
         | <a href="https://github.com/wwebdev/nextjs-blog-template" target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
-      <img src={postMeta.previewImage} alt="screenshot of the blog template" />
+      <img src={postMeta.shareImage} alt="screenshot of the blog template" />
 
       <p>
         This is a simple blog template to quickly get started with writing.

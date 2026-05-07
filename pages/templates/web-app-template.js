@@ -23,7 +23,7 @@ const Post = () => (
         <a href="https://web-app-template-six.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>{' '}
         | <a href="https://github.com/Vincenius/web-app-template" target="_blank" rel="noopener noreferrer">GitHub</a>
       </p>
-      <img src={postMeta.previewImage} alt="screenshot of the blog template" />
+      <img src={postMeta.shareImage} alt="screenshot of the blog template" />
 
       <p>
         This is a simple Next.js template including authentication, storage, and password reset logic.
