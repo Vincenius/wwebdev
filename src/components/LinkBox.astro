@@ -1,0 +1,65 @@
+---
+// Ported from legacy-next/components/LinkBox. Drops MUI Paper/Skeleton +
+// react-lazy-load; card uses MUI Paper elevation-1 shadow, images lazy-load
+// natively. Static.
+interface Props {
+    title: string
+    description: string
+    image?: string | undefined
+    link: string
+    selfPromoted?: string | undefined
+    fullHeight?: boolean | undefined
+    isExternal?: boolean | undefined
+    sponsored?: boolean | undefined
+}
+
+const {
+    title,
+    description,
+    image,
+    link,
+    selfPromoted,
+    fullHeight = false,
+    isExternal = true,
+    sponsored,
+} = Astro.props
+
+const linkAttrs = isExternal
+    ? { href: link, target: '_blank', rel: 'noopener' }
+    : { href: link }
+---
+
+<div class="lb-container">
+    {selfPromoted && (
+        <div>
+            <div class="lb-promo-bg"></div>
+            <div class="lb-promo-label">{selfPromoted}</div>
+        </div>
+    )}
+    <article class:list={['lb-content', { 'full-height': fullHeight }]}>
+        <div>
+            {image && (
+                <a {...linkAttrs}>
+                    <img src={image} alt={title} loading="lazy" />
+                </a>
+            )}
+            <div class="lb-description">
+                {sponsored && <span class="lb-sponsored">Sponsored</span>}
+                <a {...linkAttrs}><h2>{title}</h2></a>
+                <p>{description}</p>
+            </div>
+        </div>
+
+        {isExternal && (
+            <a class="lb-visit" href={link} target="_blank" rel="noopener noreferrer">
+                visit
+                <svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    ><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path></svg>
+            </a>
+        )}
+    </article>
+</div>
+
+<!-- Styles live in src/styles/linkbox.css (global) so the React Search island
+     can render identical result cards. -->
+

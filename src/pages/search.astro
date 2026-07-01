@@ -1,0 +1,11 @@
+---
+// Ported from legacy-next/pages/search.js. The Search UI is an interactive
+// React island (SSR + hydrate so the initial shell matches the Next output).
+import Layout from '../layouts/Layout.astro'
+import Search from '../components/islands/Search'
+import '../styles/search.css'
+---
+
+<Layout title="Search">
+    <Search client:load />
+</Layout>

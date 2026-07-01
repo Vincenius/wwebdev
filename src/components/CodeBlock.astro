@@ -1,0 +1,46 @@
+---
+// Ported from legacy-next/components/CodeBlock. Replaces react-syntax-highlighter
+// (PrismLight + `prism` theme) with build-time Prism highlighting (same default
+// Prism theme, zero client JS). Code text is preserved verbatim.
+import { Prism } from '@astrojs/prism'
+import 'prismjs/themes/prism.css'
+
+interface Props {
+    language?: string | undefined
+    value: string
+    label?: string | undefined
+    wrapLongLines?: boolean | undefined
+}
+
+// Legacy CodeBlocks sometimes omit `language` (react-syntax-highlighter rendered
+// them as plaintext) — fall back to a plain grammar to match that.
+const { language = 'text', value, label, wrapLongLines = false } = Astro.props
+---
+
+<div class:list={['cb-container', { 'has-label': !!label }]}>
+    {label && <label class="cb-label">{label}</label>}
+    <div class:list={{ 'cb-wrap': wrapLongLines }}>
+        <Prism lang={language as any} code={value} />
+    </div>
+</div>
+
+<style>
+    .cb-container {
+        position: relative;
+        width: 100%;
+    }
+    .cb-container.has-label {
+        margin-top: 30px;
+    }
+    .cb-label {
+        position: absolute;
+        top: -15px;
+        background: rgb(245, 242, 240) none repeat scroll 0% 0%;
+        padding: 0 15px;
+        z-index: 1;
+    }
+    .cb-wrap :global(pre[class*='language-']) {
+        white-space: pre-wrap;
+        word-break: break-word;
+    }
+</style>

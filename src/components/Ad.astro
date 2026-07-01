@@ -1,0 +1,47 @@
+---
+// Ported from legacy-next/components/Ads/Ad.js — currently renders the static
+// StatusScout affiliate card (EthicalAds path is commented out upstream).
+// Static, no JS. Carbon card styles come from src/styles/ads.css (global).
+---
+
+<a
+    href="https://statusscout.dev?utm_source=wweb.dev"
+    target="_blank"
+    rel="noopener"
+    style="text-decoration: none; margin-bottom: 1em; display: block;"
+>
+    <div id="carbon">
+        <span class="carbon-wrap">
+            <span class="carbon-img">
+                <img
+                    src="/affiliate/statusscout.png"
+                    alt="Get a complete overview of your website’s security, performance, and more. "
+                    style="max-width: 130px; object-fit: cover;"
+                    width="130"
+                    height="100"
+                />
+            </span>
+            <span class="carbon-text" style="padding: 8px;">
+                <span class="ad-text">
+                    <span class="ad-title">StatusScout</span> - Get an overview of your website’s security, performance & more.
+                </span>
+            </span>
+        </span>
+    </div>
+</a>
+
+<style>
+    .ad-title {
+        display: inline !important;
+        text-decoration: underline;
+        font-weight: bold;
+        color: var(--color-accent);
+    }
+    .ad-title:hover {
+        text-decoration: none;
+        opacity: 0.8;
+    }
+    .ad-text {
+        font-size: 14px;
+    }
+</style>

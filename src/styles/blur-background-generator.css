@@ -1,0 +1,224 @@
+/* Blur Background CSS Generator island styles.
+   Ported from legacy-next/components/BlurBackgroundGenerator/{styled.js,
+   styledControls.js} + BrowserMockup (styled-components) to plain CSS.
+   Classes are prefixed `bbg-`. MUI Accordion/Slider/Button/TextareaAutosize
+   are replaced with native elements styled to approximate the originals. */
+
+/* ---- BrowserMockup (ported from legacy-next/components/BrowserMockup) ---- */
+.bbg-browser-mockup {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin: 0 0 50px;
+    height: 450px;
+    resize: horizontal;
+    min-width: 320px;
+    max-width: 1080px;
+}
+.bbg-browser-head {
+    position: sticky;
+    z-index: 100;
+    height: 30px;
+    width: 100%;
+    top: 0;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+}
+.bbg-browser-dots {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    margin: 0 30px;
+    background-color: #ffbb00;
+}
+.bbg-browser-dots::before,
+.bbg-browser-dots::after {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    content: ' ';
+    position: absolute;
+}
+.bbg-browser-dots::before {
+    margin: 0 -18px;
+    background-color: #ff4f4d;
+}
+.bbg-browser-dots::after {
+    margin: 0 18px;
+    background-color: #00ce15;
+}
+.bbg-browser-content {
+    height: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ---- Live blur background preview (ported from S.Background/styled.js) ---- */
+.bbg-background {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-grow: 1;
+}
+.bbg-background > div {
+    position: absolute;
+    border-radius: 100%;
+    height: 0;
+    filter: blur(240vw);
+    opacity: 0.4;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* ---- Controls container (ported from styledControls.js S.Container) ---- */
+.bbg-container {
+    padding: 0px;
+}
+.bbg-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* ---- Accordion (replaces @mui Accordion/AccordionSummary/AccordionDetails) --- */
+.bbg-accordion {
+    background: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin-bottom: 1px;
+}
+.bbg-accordion + .bbg-accordion {
+    margin-top: 0;
+}
+.bbg-accordion-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    min-height: 48px;
+    padding: 0 16px;
+    background: transparent;
+    border: 0;
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+}
+.bbg-accordion-summary .bbg-expand-icon {
+    transition: transform 0.2s;
+}
+.bbg-accordion.is-open .bbg-accordion-summary .bbg-expand-icon {
+    transform: rotate(180deg);
+}
+.bbg-accordion-details {
+    padding: 8px 16px 16px;
+    display: block;
+}
+
+/* ---- Native range slider (replaces @mui Slider) ---- */
+.bbg-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 2px;
+    background: rgba(30, 77, 146, 0.3);
+    border-radius: 2px;
+    outline: none;
+    margin: 10px 0;
+    padding: 0;
+}
+.bbg-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    cursor: pointer;
+    border: 0;
+}
+.bbg-slider::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    cursor: pointer;
+    border: 0;
+}
+
+/* ---- Circle navigation (ported from styledControls.js) ---- */
+.bbg-circle-container {
+    display: flex;
+}
+.bbg-circle-controls {
+    width: 100%;
+    margin: 0 6px;
+}
+
+/* NavButton (replaces @mui Button contained/primary) */
+.bbg-nav-button {
+    padding: 0;
+    min-width: 32px;
+    height: 36px;
+    background: var(--color-accent);
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.bbg-nav-button:hover {
+    background: #163a6e;
+}
+.bbg-nav-button:disabled {
+    background: rgba(0, 0, 0, 0.12);
+    color: rgba(0, 0, 0, 0.26);
+    box-shadow: none;
+    cursor: default;
+}
+
+/* ---- Code header + copied badge (ported from styledControls.js) ---- */
+.bbg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+.bbg-header svg {
+    font-size: 18px;
+    cursor: pointer;
+}
+.bbg-copied {
+    display: inline-block;
+    padding: 4px;
+    margin-right: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.bbg-copied.is-visible {
+    opacity: 1;
+}
+
+/* ---- Code textarea (replaces @mui TextareaAutosize) ---- */
+.bbg-code-area {
+    width: 100%;
+    margin-bottom: 0;
+}
+.bbg-code-area.has-margin-bottom {
+    margin-bottom: 20px;
+}

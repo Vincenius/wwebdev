@@ -1,0 +1,340 @@
+/* Control & layout styling for the Responsive Navigation Generator island.
+   Ported from legacy-next/components/NavigationGenerator/styled.js (+ the styled-
+   components in MenuItemsControl/StylingControl/BrowserMockup). MUI, react-color
+   and styled-components are gone; these plain `ng-` classes reproduce the look.
+   Imported by the island. */
+
+/* ---- Sidebar container override (S.SidebarContainer) ---- */
+.ng-sidebar-container {
+    margin-bottom: 0;
+}
+.ng-sidebar-container p {
+    margin-bottom: 0;
+}
+
+/* ---- Browser mockup (from components/BrowserMockup) ---- */
+.ng-browser-mockup {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    height: 450px;
+    resize: horizontal;
+    min-width: 320px;
+    max-width: 1080px;
+    margin: 0 0 50px;
+}
+.ng-browser-head {
+    position: sticky;
+    z-index: 100;
+    height: 30px;
+    width: 100%;
+    top: 0;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+}
+.ng-browser-dots {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    margin: 0 30px;
+    background-color: #ffbb00;
+}
+.ng-browser-dots::before,
+.ng-browser-dots::after {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    content: ' ';
+    position: absolute;
+}
+.ng-browser-dots::before {
+    margin: 0 -18px;
+    background-color: #ff4f4d;
+}
+.ng-browser-dots::after {
+    margin: 0 18px;
+    background-color: #00ce15;
+}
+.ng-browser-content {
+    height: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* ---- Live preview (S.Center) ---- */
+.ng-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+/* ---- Accordions (<details>/<summary> replacing MUI Accordion) ---- */
+.ng-accordion {
+    background: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    margin: 0;
+}
+.ng-accordion + .ng-accordion {
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+.ng-accordion-summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 48px;
+    padding: 0 16px;
+    cursor: pointer;
+    list-style: none;
+    font-size: 0.9375rem;
+}
+.ng-accordion-summary::-webkit-details-marker {
+    display: none;
+}
+.ng-expand-icon {
+    color: rgba(0, 0, 0, 0.54);
+    transition: transform 0.2s ease;
+    flex-shrink: 0;
+}
+.ng-accordion[open] > .ng-accordion-summary .ng-expand-icon {
+    transform: rotate(180deg);
+}
+.ng-accordion-details {
+    padding: 8px 16px 16px;
+    display: flex;
+}
+
+/* Code accordion summary (S.ButtonAccordionSummary) */
+.ng-button-summary .ng-summary-left {
+    display: flex;
+    align-items: center;
+}
+.ng-button-summary .ng-summary-left > button {
+    margin-left: 40px;
+}
+
+/* ---- Control containers (StyledRow / Container) ---- */
+.ng-control-container {
+    width: 100%;
+}
+.ng-row {
+    margin: 20px 0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+}
+@media (max-width: 560px) {
+    .ng-row {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+.ng-row > * {
+    margin-right: 30px;
+}
+@media (max-width: 560px) {
+    .ng-row > * {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+/* ---- Text fields (MUI TextField) ---- */
+.ng-field {
+    display: flex;
+    flex-direction: column;
+}
+.ng-field-label {
+    font-size: 0.75rem;
+    color: rgba(0, 0, 0, 0.54);
+    margin-bottom: 2px;
+}
+.ng-field input[type='text'] {
+    border: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+    background: transparent;
+    outline: none;
+    height: 32px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+.ng-field input[type='text']:focus {
+    border-bottom: 2px solid var(--color-accent);
+}
+
+/* ---- Checkbox (MUI Checkbox + FormControlLabel) ---- */
+.ng-checkbox-label,
+.ng-radio-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.87);
+    cursor: pointer;
+}
+.ng-checkbox-label input,
+.ng-radio-label input {
+    accent-color: var(--color-accent);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* ---- Icon buttons (MUI IconButton) ---- */
+.ng-icon-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: 0;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.54);
+}
+.ng-icon-button:hover {
+    background: rgba(0, 0, 0, 0.04);
+}
+.ng-delete-icon {
+    color: #b71c1c;
+}
+
+/* ---- Buttons (MUI outlined Button) ---- */
+.ng-button {
+    display: inline-flex;
+    align-items: center;
+    background: transparent;
+    border: 1px solid rgba(30, 77, 146, 0.5);
+    border-radius: 4px;
+    color: var(--color-accent);
+    padding: 5px 15px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+}
+.ng-button:hover {
+    border-color: var(--color-accent);
+    background: rgba(30, 77, 146, 0.04);
+}
+.ng-copy-button {
+    margin-left: 40px;
+}
+
+/* ---- Copy-code tooltip (S.CopyCode) ---- */
+.ng-copy-code {
+    position: relative;
+}
+.ng-copy-code::after {
+    content: 'copied';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 500ms ease-out;
+}
+.ng-copy-code.copied::after {
+    transform: translateY(-100%);
+    opacity: 1;
+}
+
+/* ---- Color pickers (react-color replacement) ---- */
+.ng-color-pickers {
+    display: flex;
+    margin-bottom: 50px;
+}
+@media (max-width: 800px) {
+    .ng-color-pickers {
+        flex-direction: column;
+    }
+}
+.ng-color-pickers > div {
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 800px) {
+    .ng-color-pickers > div {
+        margin-right: 0;
+        margin-bottom: 40px;
+    }
+}
+.ng-legend {
+    display: block;
+    margin-bottom: 10px;
+    color: rgba(0, 0, 0, 0.54);
+    font-size: 1rem;
+}
+.ng-color-input {
+    width: 80px;
+    height: 40px;
+    padding: 0;
+    border: 1px solid rgba(0, 0, 0, 0.23);
+    border-radius: 4px;
+    background: none;
+    cursor: pointer;
+}
+
+/* ---- Radio group / fieldset (MUI FormControl) ---- */
+.ng-fieldset {
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.ng-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-top: 8px;
+}
+
+/* ---- Slider (MUI Slider) ---- */
+.ng-slider {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 8px;
+    max-width: 400px;
+}
+.ng-slider input[type='range'] {
+    flex: 1;
+    accent-color: var(--color-accent);
+    cursor: pointer;
+}
+.ng-slider-value {
+    min-width: 40px;
+    font-size: 0.875rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+
+/* ---- Client-side code block (live-updating, replaces build-time CodeBlock) ---- */
+.ng-code-block {
+    width: 100%;
+    margin: 0;
+    padding: 1em;
+    overflow: auto;
+    background: rgb(245, 242, 240);
+    border-radius: 4px;
+    font-size: 0.9em;
+    line-height: 1.5;
+    white-space: pre;
+    tab-size: 4;
+    color: #2c3e50;
+}

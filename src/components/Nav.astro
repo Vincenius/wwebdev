@@ -1,0 +1,320 @@
+---
+// Ported from legacy-next/components/Nav. The "Library" link is intentionally
+// removed (feature dropped). Mobile menu uses a tiny vanilla-JS toggle instead
+// of the React `hamburger-react` dependency — no island needed.
+import SocialBar from './SocialBar.astro'
+
+interface Props {
+    isArticle?: boolean
+    title?: string
+    transparentBg?: boolean
+}
+
+const { isArticle = false, title = '', transparentBg = false } = Astro.props
+
+const links = [
+    { href: '', label: 'Home' },
+    { href: 'blog', label: 'Articles' },
+    { href: 'resources', label: 'Tools' },
+    { href: 'templates', label: 'Templates' },
+]
+
+const activePath = Astro.url.pathname.split('/')[1]
+const logoUrl = 'https://ik.imagekit.io/wwebdev/tr:w-180/logo-text_51kQarOOiD-.png'
+const logoAlt = isArticle ? 'Logo of wweb.dev' : title
+---
+
+<div class:list={['nav-container', { article: isArticle, transparent: transparentBg }]}>
+    <!-- Desktop -->
+    <div class="desktop-container">
+        <nav class="navigation">
+            <div class="nav-main">
+                <a href="/" class="logo"><img src={logoUrl} alt={logoAlt} /></a>
+                <ul>
+                    {links.map(({ href, label }) => (
+                        <li>
+                            <a href={`/${href}`}>
+                                <span class:list={['nav-link', { active: activePath === href }]}>{label}</span>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </div>
+            <div class="nav-right">
+                <SocialBar>
+                    <li>
+                        <a href="/search">
+                            <span class="sr-only">Search</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                ><path
+                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                                ></path></svg>
+                        </a>
+                    </li>
+                </SocialBar>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Mobile -->
+    <div class="mobile-container">
+        <header class="navigation">
+            <a href="/" class="logo"><img src={logoUrl} alt={logoAlt} /></a>
+            <div class="nav-right">
+                <button
+                    type="button"
+                    class="hamburger"
+                    aria-label="Toggle menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+        <nav class="mobile-navigation" id="mobile-menu">
+            <ul>
+                {links.map(({ href, label }) => (
+                    <li>
+                        <a href={`/${href}`}>
+                            <span class:list={['mobile-link', { active: activePath === href }]}>{label}</span>
+                        </a>
+                    </li>
+                ))}
+            </ul>
+            <div class="mobile-social-bar">
+                <SocialBar>
+                    <li>
+                        <a href="/search">
+                            <span class="sr-only">Search</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                ><path
+                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                                ></path></svg>
+                        </a>
+                    </li>
+                </SocialBar>
+            </div>
+        </nav>
+    </div>
+</div>
+
+<script>
+    const btn = document.querySelector<HTMLButtonElement>('.hamburger')
+    const menu = document.getElementById('mobile-menu')
+    btn?.addEventListener('click', () => {
+        const open = btn.getAttribute('aria-expanded') === 'true'
+        btn.setAttribute('aria-expanded', String(!open))
+        btn.classList.toggle('is-open', !open)
+        menu?.classList.toggle('is-open', !open)
+    })
+</script>
+
+<style>
+    .nav-container {
+        position: relative;
+        margin: 0 auto 32px;
+        background: #2c3e50;
+        padding: 16px 0;
+        width: 100%;
+        z-index: 10;
+    }
+    .nav-container.article {
+        margin: 0 auto;
+    }
+    .nav-container.transparent {
+        background: rgba(44, 62, 80, 0.6);
+    }
+    .nav-container img {
+        width: 90px;
+        margin-right: 30px;
+    }
+    @media (max-width: 960px) {
+        .nav-container img {
+            margin-right: 0;
+        }
+    }
+
+    /* ui.Container base + Navigation overrides */
+    .navigation {
+        max-width: 1128px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 auto;
+        z-index: 10000;
+    }
+    @media (max-width: 640px) {
+        .navigation {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+    .navigation ul {
+        display: inline-flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .nav-main {
+        display: flex;
+        align-items: center;
+    }
+    @media (max-width: 960px) {
+        .nav-main {
+            flex-direction: column;
+        }
+        .nav-main ul {
+            margin: 15px 0;
+            margin-bottom: 15px;
+            line-height: 50px;
+        }
+        .nav-main ul li:last-child a {
+            padding-right: 24px;
+        }
+    }
+    @media (max-width: 480px) {
+        .nav-main ul {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    }
+    .nav-main ul a {
+        cursor: pointer;
+        font-size: 13px;
+        line-height: 16px;
+        letter-spacing: 0px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 8px 24px;
+    }
+    .nav-main ul a:hover {
+        color: #fff;
+    }
+    .nav-main ul li:last-child a {
+        padding-right: 0;
+    }
+
+    .nav-right {
+        margin-left: auto;
+    }
+
+    .nav-link {
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .nav-link:hover,
+    .nav-link.active {
+        color: #1adbff;
+    }
+
+    .logo {
+        display: inline-block;
+    }
+
+    /* Mobile menu */
+    .mobile-navigation {
+        position: fixed;
+        transition: transform 0.2s ease-out;
+        transform: translateY(100%);
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+        padding-top: 90px;
+        background: #2c3e50;
+    }
+    .mobile-navigation.is-open {
+        transform: translateY(0);
+    }
+    .mobile-navigation ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    .mobile-link {
+        display: block;
+        cursor: pointer;
+        font-size: 18px;
+        line-height: 1.3;
+        letter-spacing: 0px;
+        font-weight: 700;
+        text-transform: uppercase;
+        text-decoration: none;
+        padding: 16px 32px;
+        background: transparent;
+        color: rgba(255, 255, 255, 0.8);
+    }
+    .mobile-link.active {
+        background: #1adbff;
+        color: #2c3e50;
+    }
+    .mobile-link:hover {
+        color: #fff;
+    }
+    .mobile-social-bar :global(ul) {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+        padding: 0 32px;
+    }
+
+    .desktop-container {
+        display: block;
+    }
+    .mobile-container {
+        display: none;
+    }
+    @media (max-width: 960px) {
+        .desktop-container {
+            display: none;
+        }
+        .mobile-container {
+            display: block;
+        }
+    }
+
+    /* Hamburger button (replaces hamburger-react) */
+    .hamburger {
+        position: relative;
+        width: 32px;
+        height: 32px;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+        padding: 0;
+        z-index: 10000;
+    }
+    .hamburger span {
+        position: absolute;
+        left: 4px;
+        right: 4px;
+        height: 2px;
+        background: #d5d8dc;
+        transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+    .hamburger span:nth-child(1) {
+        top: 9px;
+    }
+    .hamburger span:nth-child(2) {
+        top: 15px;
+    }
+    .hamburger span:nth-child(3) {
+        top: 21px;
+    }
+    .hamburger.is-open span:nth-child(1) {
+        transform: translateY(6px) rotate(45deg);
+    }
+    .hamburger.is-open span:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.is-open span:nth-child(3) {
+        transform: translateY(-6px) rotate(-45deg);
+    }
+</style>

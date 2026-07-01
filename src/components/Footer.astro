@@ -1,0 +1,194 @@
+---
+// Ported from legacy-next/components/Footer. Static (no JS).
+import SocialBar from './SocialBar.astro'
+
+const year = new Date().getFullYear()
+---
+
+<footer class="footer">
+    <div class="footer-content">
+        <div class="left-footer">
+            <img class="footer-logo" src="/logo-text.png" alt="wweb.dev logo" />
+            <div class="social-container">
+                <SocialBar>
+                    <li>
+                        <a href="mailto:info@wweb.dev">
+                            <span class="sr-only">E-Mail</span>
+                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                                ><path
+                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"
+                                ></path></svg>
+                        </a>
+                    </li>
+                </SocialBar>
+            </div>
+        </div>
+
+        <div class="right-footer">
+            <ul class="footer-links">
+                <li><h2>Other Projects</h2></li>
+                <li><a href="https://statusscout.dev">StatusScout</a></li>
+                <li><a href="https://github.com/Vincenius/OpenMailer">OpenMailer</a></li>
+                <li><a href="https://github.com/Vincenius/bsky-embed">bsky-embed</a></li>
+                <li><a href="https://css-speedrun.netlify.app/">CSS Speedrun</a></li>
+            </ul>
+
+            <ul class="footer-links">
+                <li><h2>More</h2></li>
+                <li><a href="https://ko-fi.com/wweb_dev">Donate</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/privacy">Privacy Policy</a></li>
+                <a href="https://www.co2neutralwebsite.com/certificate/7187/en" target="_blank">
+                    <img src="//www.co2neutralwebsite.com/icons/logo/inverse_en.svg" alt="CO2 neutral website" />
+                </a>
+            </ul>
+        </div>
+    </div>
+    <div class="copyright">
+        © Copyright 2018 - {year} | wweb.dev
+    </div>
+</footer>
+
+<style>
+    .footer {
+        position: relative;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        background: #2c3e50;
+        color: #d5d8dc;
+        margin-top: 50px;
+        padding: 30px 0;
+    }
+    .footer::after,
+    .footer::before {
+        content: '';
+        position: absolute;
+        right: 0;
+        left: 0;
+        z-index: 1;
+        display: block;
+        height: 50px;
+        background-size: 50px 100%;
+        background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%),
+            linear-gradient(225deg, #2c3e50 25%, transparent 25%);
+        background-position: 0 0;
+    }
+    .footer::before {
+        top: 0;
+        transform: translateY(-100%) rotate(180deg);
+    }
+    .footer::after {
+        top: 100%;
+    }
+    .footer h2 {
+        color: #d5d8dc;
+        margin-top: 0;
+    }
+
+    /* ui.Container + Content flex */
+    .footer-content {
+        max-width: 1128px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        margin: 0 auto;
+    }
+    .footer-content > * {
+        width: 50%;
+    }
+    @media (max-width: 640px) {
+        .footer-content {
+            padding-left: 16px;
+            padding-right: 16px;
+            flex-direction: column-reverse;
+        }
+        .footer-content > * {
+            width: 100%;
+            padding: 0 10px;
+        }
+    }
+
+    .copyright {
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0px;
+        color: #d5d8dc;
+        margin-top: 12px;
+        text-align: center;
+    }
+
+    .left-footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .left-footer a img {
+        height: 40px;
+        width: auto;
+    }
+    @media (max-width: 640px) {
+        .left-footer a img {
+            height: 50px;
+        }
+    }
+
+    .footer-logo {
+        max-width: 125px;
+        height: auto;
+        margin: 20px 0 0;
+    }
+    @media (max-width: 480px) {
+        .footer-logo {
+            margin: 30px auto;
+        }
+    }
+
+    .social-container {
+        margin: 20px 0 10px;
+    }
+    .social-container :global(ul) {
+        margin: 20px 0 0;
+        padding: 0;
+        display: inline-flex;
+    }
+    @media (max-width: 480px) {
+        .social-container {
+            margin: 0 auto;
+        }
+    }
+
+    .right-footer {
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .footer-links {
+        list-style: none;
+        margin-bottom: 0;
+        padding: 0;
+    }
+    @media (max-width: 480px) {
+        .footer-links {
+            flex-direction: column;
+            text-align: right;
+        }
+    }
+    .footer-links li,
+    .footer-links img {
+        margin: 10px 0;
+    }
+    .footer-links a {
+        text-decoration: none;
+        color: #d5d8dc;
+    }
+    .footer-links a:hover {
+        text-decoration: underline;
+    }
+</style>

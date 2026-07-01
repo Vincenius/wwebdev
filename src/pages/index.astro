@@ -1,0 +1,31 @@
+---
+// Ported from legacy-next/pages/index.js (generateArticleAndResources).
+import SidebarLayout from '../layouts/SidebarLayout.astro'
+import ArticlePreview from '../components/ArticlePreview.astro'
+import posts from '../data/posts'
+import templates from '../data/templates'
+
+const items = [...posts, ...templates].sort(
+    (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime(),
+)
+---
+
+<SidebarLayout
+    title="News, Resources and Articles, Templates about Web-Development"
+    description="Stay up to date with weekly updates, get resources for your next projects and read articles and tutorials about web development."
+    titleNameFirst={true}
+>
+    <h2 class="ui-section-headline">Latest Articles &amp; Tools</h2>
+
+    {items.map((d) => (
+        <ArticlePreview
+            type={d.type}
+            date={d.date}
+            updatedAt={d.updatedAt}
+            headline={d.headline}
+            description={d.description}
+            link={d.link}
+            previewImage={d.previewImage}
+        />
+    ))}
+</SidebarLayout>

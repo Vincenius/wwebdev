@@ -1,0 +1,134 @@
+---
+// Ported from legacy-next/components/ArticlePreview. Static (the upstream
+// useState was unused). next/image → plain lazy <img> on pre-optimized assets.
+interface Props {
+    date: string
+    link: string
+    headline: string
+    description: string
+    type?: string | undefined
+    previewImage?: string | undefined
+    updatedAt?: string | undefined
+}
+
+const { date, link, headline, description, type, previewImage, updatedAt } = Astro.props
+
+const lastDate = updatedAt || date
+const d = new Date(lastDate)
+const isResource = type === 'Resource'
+const isTemplate = type === 'Template'
+const readMore = isResource ? 'Open Resource ' : isTemplate ? 'Open Template' : 'Read more '
+---
+
+<article class="ap-container">
+    {previewImage && (
+        <a href={link}>
+            <img class="ap-preview" src={previewImage} alt={headline} width="300" height="170" loading="lazy" />
+        </a>
+    )}
+    <div>
+        <header>
+            {type && (
+                <span class:list={['ap-type', { highlight: isResource || isTemplate }]}>
+                    <b>{type}</b> -&nbsp;
+                </span>
+            )}
+            {updatedAt && <span class="ap-updated">Updated: </span>}
+            <time class="ap-time" datetime={d.toISOString()}>{lastDate}</time>
+            <h2 class="ap-headline"><a href={link}>{headline}</a></h2>
+        </header>
+        <p>{description}</p>
+        <a href={link}>
+            <span class="ap-readmore">
+                {readMore}
+                <svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
+                    ><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path></svg>
+            </span>
+        </a>
+    </div>
+</article>
+
+<style>
+    .ap-container {
+        border-bottom: 1px solid #d5d8dc;
+        margin-bottom: 3.2rem;
+        padding-bottom: 3.2rem;
+        display: flex;
+        margin-top: -10px;
+    }
+    @media only screen and (max-width: 640px) {
+        .ap-container {
+            flex-direction: column;
+        }
+    }
+
+    .ap-preview {
+        width: 300px;
+        height: 170px;
+        object-fit: cover;
+        margin-right: 20px;
+        margin-top: 10px;
+    }
+    @media only screen and (max-width: 640px) {
+        .ap-preview {
+            width: 100%;
+            height: auto;
+            min-height: 250px;
+            max-height: 300px;
+        }
+    }
+
+    .ap-type {
+        font-weight: bold;
+        font-size: 0.82397rem;
+        line-height: 1.86667rem;
+    }
+    .ap-type.highlight b {
+        color: var(--color-accent);
+    }
+
+    .ap-updated {
+        color: #5b6f82;
+        font-size: 0.82397rem;
+        line-height: 1.86667rem;
+        margin-bottom: 8px;
+        font-style: italic;
+    }
+    .ap-time {
+        color: #5b6f82;
+        font-size: 0.82397rem;
+        line-height: 1.86667rem;
+        margin-bottom: 8px;
+    }
+    .ap-headline {
+        font-size: 1.3em;
+        font-weight: 500;
+        hyphens: manual;
+        line-height: 1.2;
+        margin: 0 0 16px;
+    }
+    .ap-headline a {
+        color: var(--color-heading);
+        text-decoration: none;
+        transition: all 0.12s ease;
+    }
+    .ap-headline a:hover {
+        color: var(--color-accent);
+    }
+    .ap-readmore {
+        display: inline-flex;
+        align-items: center;
+        line-height: 1;
+        font-size: 0.77248rem;
+        font-weight: 700;
+        margin-top: calc(1.06667rem + 0.25vw);
+        text-transform: uppercase;
+        text-decoration: underline;
+        color: var(--color-accent);
+    }
+    .ap-readmore:hover {
+        color: var(--color-accent-hover);
+        text-decoration: underline;
+        cursor: pointer;
+    }
+</style>

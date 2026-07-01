@@ -1,0 +1,78 @@
+---
+// Ported from legacy-next/components/PrevNext.
+import posts from '../data/posts'
+
+interface Props {
+    postId: number
+}
+
+const { postId } = Astro.props
+const pid = Number(postId)
+const data = posts
+const prevMeta = pid > 1 ? data.find((m) => Number(m.id) === pid - 1) : undefined
+const nextMeta = pid < data.length ? data.find((m) => Number(m.id) === pid + 1) : undefined
+
+const arrow =
+    '<svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path></svg>'
+---
+
+<div class="pn-container">
+    {!prevMeta ? (
+        <span></span>
+    ) : (
+        <a href={prevMeta.link} class="pn-link">
+            <div class="pn-prev"><Fragment set:html={arrow} />Previous Article</div>
+            <span>{prevMeta.headline}</span>
+        </a>
+    )}
+    {nextMeta && (
+        <a href={nextMeta.link} class="pn-link pn-right">
+            <div class="pn-next">Next Article<Fragment set:html={arrow} /></div>
+            <span>{nextMeta.headline}</span>
+        </a>
+    )}
+</div>
+
+<style>
+    .pn-container {
+        max-width: 1128px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 100%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+    }
+    @media (max-width: 640px) {
+        .pn-container {
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+    .pn-link {
+        max-width: 50%;
+        margin: 0 20px 0 0;
+        text-align: left;
+        cursor: pointer;
+    }
+    .pn-link.pn-right {
+        margin: 0 0 0 20px;
+        text-align: right;
+    }
+    .pn-link span {
+        display: block;
+    }
+    .pn-next,
+    .pn-prev {
+        display: inline-flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    .pn-next :global(svg) {
+        margin-left: 10px;
+    }
+    .pn-prev :global(svg) {
+        transform: rotate(180deg);
+        margin-right: 10px;
+    }
+</style>

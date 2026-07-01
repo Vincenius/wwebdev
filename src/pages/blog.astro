@@ -1,0 +1,22 @@
+---
+// Ported from legacy-next/pages/blog.js (generateArticles).
+import SidebarLayout from '../layouts/SidebarLayout.astro'
+import ArticlePreview from '../components/ArticlePreview.astro'
+import posts from '../data/posts'
+
+const articles = posts.filter((p) => p.type === 'Article')
+---
+
+<SidebarLayout title="A Blog about Web-Development">
+    <h2 class="ui-section-headline">Blog posts around web development</h2>
+    {articles.map((d) => (
+        <ArticlePreview
+            date={d.date}
+            updatedAt={d.updatedAt}
+            headline={d.headline}
+            description={d.description}
+            link={d.link}
+            previewImage={d.previewImage}
+        />
+    ))}
+</SidebarLayout>

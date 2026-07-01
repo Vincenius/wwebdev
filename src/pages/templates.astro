@@ -1,0 +1,25 @@
+---
+// Ported from legacy-next/pages/templates.js.
+import Layout from '../layouts/Layout.astro'
+import LinkBox from '../components/LinkBox.astro'
+import templates from '../data/templates'
+---
+
+<Layout title="Templates">
+    <div class="ui-container">
+        <h2 class="ui-section-headline">Templates</h2>
+    </div>
+
+    <div class="ui-grid cols-2">
+        {templates.map((item) => (
+            <LinkBox
+                fullHeight
+                title={item.headline}
+                description={item.description}
+                link={item.link}
+                image={item.shareImage}
+                isExternal={false}
+            />
+        ))}
+    </div>
+</Layout>

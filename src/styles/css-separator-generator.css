@@ -1,0 +1,256 @@
+/* Control/layout styling for the CSS Section Separator Generator island.
+   Ported from legacy-next/components/CssSeparatorGenerator/styled.js
+   (+ BrowserMockup styled.js). styled-components / @mui replaced with plain
+   global classes prefixed `csg-`.
+
+   Colour tokens (from legacy-next/ui/constants.js):
+     darkGrey       #2c3e50
+     greyBlue       #5B6F82
+     lightGrey      #d5d8dc
+     logoColorLeft  #1adbff
+     breakpointLarge 960px
+*/
+
+/* S.SidebarContainer — extends ui.SidebarContainer, reverses on large bp */
+@media (max-width: 960px) {
+    .csg-sidebar-container {
+        flex-direction: column-reverse;
+    }
+}
+
+/* --- BrowserMockup (ported from BrowserMockup/index.js styled-components) --- */
+.csg-browser-mockup {
+    position: relative;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    margin: 0 0 50px;
+    height: 450px;
+    resize: horizontal;
+    min-width: 320px;
+}
+.csg-browser-head {
+    position: sticky;
+    z-index: 100;
+    height: 30px;
+    width: 100%;
+    top: 0;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+}
+.csg-browser-dots {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    margin: 0 30px;
+    background-color: #ffbb00;
+}
+.csg-browser-dots::before,
+.csg-browser-dots::after {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    content: ' ';
+    position: absolute;
+}
+.csg-browser-dots::before {
+    margin: 0 -18px;
+    background-color: #ff4f4d;
+}
+.csg-browser-dots::after {
+    margin: 0 18px;
+    background-color: #00ce15;
+}
+.csg-browser-content {
+    height: calc(100% - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* --- Preview section (S.Section / S.Top) --- */
+.csg-preview-top {
+    position: relative;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #2c3e50;
+}
+
+/* --- Control overlay (S.ControlContainer) --- */
+.csg-control-container {
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    z-index: 100;
+}
+.csg-control-container h3 {
+    margin: 0;
+    color: #fff;
+}
+.csg-control-container label {
+    color: #d5d8dc;
+}
+
+/* S.SliderContainer */
+.csg-slider-container label {
+    text-transform: capitalize;
+}
+.csg-slider-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* S.FormControlLabel */
+.csg-form-control-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* S.Checkbox */
+.csg-checkbox {
+    accent-color: #d5d8dc;
+    margin-right: 8px;
+}
+
+/* S.Slider */
+.csg-slider {
+    width: 100%;
+    accent-color: #1adbff;
+}
+
+/* --- Chooser cards (S.Row + MUI Card) --- */
+.csg-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (max-width: 960px) {
+    .csg-row {
+        margin-bottom: 15px;
+    }
+}
+.csg-row > * {
+    width: 100%;
+    flex-basis: calc(50% - 20px);
+    margin: 20px 0;
+}
+@media (max-width: 960px) {
+    .csg-row > * {
+        flex-basis: calc(33% - 20px);
+    }
+}
+.csg-row > *.active,
+.csg-row > *:hover {
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.csg-row img {
+    width: 100%;
+}
+/* MUI Card default surface */
+.csg-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+/* --- Controls card (S.Controls extends MUI Card) --- */
+.csg-controls-card {
+    position: relative;
+    margin-top: 30px;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+/* MUI Tabs/Tab replacement */
+.csg-tabs {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.csg-tab {
+    border: 0;
+    background: transparent;
+    padding: 12px 16px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    min-width: 90px;
+}
+.csg-tab.active {
+    color: var(--color-accent);
+    box-shadow: inset 0 -2px 0 var(--color-accent);
+}
+
+/* S.GithubLink */
+.csg-github-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 20px;
+    color: #2c3e50;
+}
+.csg-github-link:hover {
+    color: #5b6f82;
+}
+
+/* S.ControlContent */
+.csg-control-content {
+    padding: 10px;
+}
+
+/* S.CodeArea (TextareaAutosize) */
+.csg-code-area {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 96px;
+}
+.csg-code-area.csg-margin-bottom {
+    margin-bottom: 20px;
+}
+
+/* S.CopyContainer */
+.csg-copy-container {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.csg-copy-container svg {
+    color: #2c3e50;
+    margin-right: 4px;
+}
+
+/* S.Copied */
+.csg-copied {
+    display: inline-block;
+    padding: 4px;
+    margin-right: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.csg-copied.visible {
+    opacity: 1;
+}

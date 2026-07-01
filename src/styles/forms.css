@@ -1,0 +1,81 @@
+/* Brand the native form controls used across the interactive islands so they
+   match the site instead of rendering browser-default. Global, but scoped to
+   control types the search box doesn't use (it's a bare text input). */
+
+input[type='range'] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 6px;
+    border-radius: 999px;
+    background: var(--color-light-grey);
+    accent-color: var(--color-accent);
+    cursor: pointer;
+}
+input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    border: 2px solid #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+input[type='range']::-moz-range-thumb {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    border: 2px solid #fff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+input[type='color'] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 44px;
+    height: 32px;
+    padding: 2px;
+    border: 1px solid var(--color-light-grey);
+    border-radius: var(--radius);
+    background: #fff;
+    cursor: pointer;
+}
+input[type='color']::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+input[type='color']::-webkit-color-swatch {
+    border: none;
+    border-radius: calc(var(--radius) - 4px);
+}
+input[type='color']::-moz-color-swatch {
+    border: none;
+    border-radius: calc(var(--radius) - 4px);
+}
+
+select {
+    font: inherit;
+    color: var(--color-heading);
+    background: #fff;
+    border: 1px solid var(--color-light-grey);
+    border-radius: var(--radius);
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    accent-color: var(--color-accent);
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+select:focus-visible {
+    outline: none;
+    border-color: var(--color-accent);
+    box-shadow: 0 0 0 3px color-mix(in srgb, var(--color-accent) 20%, transparent);
+}

@@ -1,0 +1,34 @@
+---
+// Ported from legacy-next/pages/resources/blur-background-css-generator.js.
+// The interactive generator is a React island (client:visible) so its default
+// state is server-rendered for parity. The whole sidebar layout (headline,
+// prose, preview, controls) lives in the island because the preview and both
+// Controls instances share state; the static <Ad/> and <Featured/> are passed
+// in as server-rendered slots so they keep their original props/markup.
+import Layout from '../../layouts/Layout.astro'
+import Ad from '../../components/Ad.astro'
+import Featured from '../../components/Featured.astro'
+import BlurBackgroundGenerator from '../../components/islands/BlurBackgroundGenerator'
+import posts from '../../data/posts'
+
+const postMeta = posts.find((m) => m.id === 24)!
+---
+
+<Layout
+    isArticle={true}
+    hideHeader={true}
+    title={postMeta.headline}
+    date={postMeta.date}
+    updatedAt={postMeta.updatedAt}
+    link={`https://wweb.dev${postMeta.link}`}
+    description={postMeta.description}
+    image={postMeta.shareImage}
+>
+    <div class="ui-container">
+        <BlurBackgroundGenerator client:visible>
+            <Ad slot="adTop" />
+            <Ad slot="adSidebar" />
+            <Featured slot="featured" articleIds={[5, 10, 7]} />
+        </BlurBackgroundGenerator>
+    </div>
+</Layout>

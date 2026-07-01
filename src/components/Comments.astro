@@ -1,0 +1,22 @@
+---
+// Ported from legacy-next/components/Comments (utterances). Renders an empty
+// container server-side; the widget script is injected client-side, exactly as
+// before. (Behaviour incl. the site CSP applies identically to the Next build.)
+---
+
+<div id="comments-container"></div>
+
+<script>
+    const container = document.getElementById('comments-container')
+    if (container) {
+        const s = document.createElement('script')
+        s.async = true
+        s.crossOrigin = 'anonymous'
+        s.src = 'https://utteranc.es/client.js'
+        s.setAttribute('issue-term', 'og:title')
+        s.setAttribute('label', 'comment')
+        s.setAttribute('repo', 'vincenius/wwebdev-comments')
+        s.setAttribute('theme', 'github-light')
+        container.appendChild(s)
+    }
+</script>

@@ -1,0 +1,96 @@
+/* Ported from
+   legacy-next/components/AnimatedCssBackgroundGenerator/styles/animatedCssBg.js
+   and .../styles/animatedCssBgControls.js — styled-components → plain CSS.
+   The per-variant animated background CSS (styledBg1/2/3.js) is injected at
+   runtime via scoped <style> tags in the Background1/2/3 island components, so
+   it stays byte-identical to the original generated output. */
+
+/* --- animatedCssBg.js: Container --------------------------------------- */
+/* Wraps the interactive generator. In the original this wrapped the whole page
+   (incl. Nav); here the page chrome is provided by Layout, so this only needs
+   to establish the positioning context for the fixed backgrounds. */
+.acbg-root {
+    position: relative;
+    min-height: 100vh;
+    height: 100%;
+}
+
+/* --- animatedCssBgControls.js ----------------------------------------- */
+.acbg-container {
+    position: relative;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    margin: 20px;
+    padding: 20px;
+    max-width: 300px;
+    z-index: 1;
+}
+.acbg-container h3 {
+    margin: 0;
+    color: #fff;
+}
+.acbg-container label {
+    display: block;
+    margin: 10px 0 0;
+}
+
+.acbg-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.acbg-header.acbg-no-margin {
+    margin-bottom: 0;
+}
+.acbg-header svg {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.acbg-source {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    font-size: 14px;
+}
+.acbg-source > *:first-child {
+    margin-right: 20px;
+}
+
+.acbg-code-area {
+    width: 100%;
+    margin-bottom: 0;
+}
+.acbg-code-area.acbg-margin-bottom {
+    margin-bottom: 20px;
+}
+
+.acbg-copied {
+    display: inline-block;
+    padding: 4px;
+    margin-right: 5px;
+    background: rgba(0, 0, 0, 0.8);
+    color: rgba(255, 255, 255, 0.6);
+    border-radius: 5px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+.acbg-copied.acbg-visible {
+    opacity: 1;
+}
+
+.acbg-nav {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.acbg-nav a {
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+}
+.acbg-nav a.active,
+.acbg-nav a:hover {
+    text-decoration: underline;
+}

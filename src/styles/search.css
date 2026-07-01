@@ -1,0 +1,55 @@
+/* Search island controls — native input/button approximating the old MUI
+   filled TextField + contained Button. */
+.search-row {
+    display: flex;
+}
+.search-input {
+    width: calc(100% - 120px);
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.06);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+    padding: 0 12px;
+}
+.search-input:hover {
+    background: rgba(0, 0, 0, 0.09);
+}
+.search-input-icon {
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.54);
+    margin-right: 8px;
+}
+.search-input input {
+    flex: 1;
+    border: 0;
+    background: transparent;
+    outline: none;
+    height: 56px;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.87);
+}
+.search-button {
+    width: 120px;
+    height: 58px;
+    background: var(--color-accent);
+    color: #fff;
+    border: 0;
+    border-radius: var(--radius);
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    cursor: pointer;
+    box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 5px 0px rgba(0, 0, 0, 0.12);
+}
+.search-button:hover {
+    background: var(--color-accent-hover);
+}
+.search-button:disabled {
+    opacity: 0.5;
+    cursor: default;
+}

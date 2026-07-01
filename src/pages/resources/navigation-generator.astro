@@ -1,0 +1,45 @@
+---
+// Ported from legacy-next/pages/resources/navigation-generator.js.
+// Static shell (prose, Ad sidebar, Featured) is rendered in Astro; the
+// interactive generator is the React island <NavigationGenerator client:visible />.
+import Layout from '../../layouts/Layout.astro'
+import Ad from '../../components/Ad.astro'
+import Featured from '../../components/Featured.astro'
+import NavigationGenerator from '../../components/islands/NavigationGenerator'
+import posts from '../../data/posts'
+
+const postMeta = posts.find((m) => m.id === 19)!
+---
+
+<Layout
+    isArticle={true}
+    hideHeader={true}
+    title={postMeta.headline}
+    date={postMeta.date}
+    updatedAt={postMeta.updatedAt}
+    link={`https://wweb.dev${postMeta.link}`}
+    description={postMeta.description}
+    image={postMeta.shareImage}
+>
+    <div class="ui-container">
+        <div class="ui-sidebar-container ng-sidebar-container">
+            <article class="ui-sidebar-article">
+                <h1 class="ui-section-headline">Responsive Navigation Generator</h1>
+                <p>
+                    This is a tool to quickly generate a responsive navigation. You can adjust the menu items, the logo,
+                    the colors and the breakpoint. When the breakpoint is reached, the navigation turns into a burger
+                    menu.
+                </p>
+            </article>
+            <aside class="ui-sidebar">
+                <Ad />
+            </aside>
+        </div>
+
+        <NavigationGenerator client:visible />
+
+        <br />
+        <h2 class="ui-subheadline">You might also like</h2>
+        <Featured articleIds={[5, 10, 24]} />
+    </div>
+</Layout>

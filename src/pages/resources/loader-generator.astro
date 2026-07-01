@@ -1,0 +1,44 @@
+---
+// Ported from legacy-next/pages/resources/loader-generator.js.
+// The interactive generator is a React island (client:visible) so its default
+// state is server-rendered for parity.
+import Layout from '../../layouts/Layout.astro'
+import Ad from '../../components/Ad.astro'
+import Featured from '../../components/Featured.astro'
+import LoaderGenerator from '../../components/islands/LoaderGenerator'
+import posts from '../../data/posts'
+
+const postMeta = posts.find((m) => m.id === 25)!
+---
+
+<Layout
+    isArticle={true}
+    hideHeader={true}
+    title={postMeta.headline}
+    date={postMeta.date}
+    updatedAt={postMeta.updatedAt}
+    link={`https://wweb.dev${postMeta.link}`}
+    description={postMeta.description}
+    image={postMeta.shareImage}
+>
+    <div class="ui-container">
+        <h1 class="ui-section-headline">Pure CSS Loader Generator</h1>
+        <div class="ui-sidebar-container">
+            <article class="ui-sidebar-article">
+                <p>
+                    This CSS generator helps you to create simple CSS spinners. You can choose
+                    between four different types of CSS spinners and adjust the settings.
+                </p>
+                <p>Afterward, you can easily copy the CSS code for usage on your website.</p>
+
+                <LoaderGenerator client:visible />
+
+                <h2 class="ui-subheadline">You might also like</h2>
+                <Featured articleIds={[5, 10, 24]} />
+            </article>
+            <aside class="ui-sidebar">
+                <Ad />
+            </aside>
+        </div>
+    </div>
+</Layout>

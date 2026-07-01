@@ -1,0 +1,77 @@
+// Ported verbatim from
+// legacy-next/components/AnimatedCssBackgroundGenerator/styles/styledBg1.js
+// styled-components → plain string builders. The `move` keyframe / styled
+// Container / Span are recreated by the island via a scoped <style> tag using
+// these exact functions, so both the live background and the copyable CSS are
+// byte-identical to the original.
+
+export interface Bg1CssProps {
+    count: number
+    colors: string[]
+    size: number
+    speed: number
+    addBgClass?: boolean
+}
+
+export function createCSS({ count, colors, size, speed, addBgClass }: Bg1CssProps): string {
+    let styles = ''
+
+    for (let i = 0; i < count; i += 1) {
+        const speedValue = 500 - speed * 10
+        const color = colors[Math.floor(Math.random() * colors.length)]
+        const randomTop = Math.floor(Math.random() * 100 + 1)
+        const randomLeft = Math.floor(Math.random() * 100 + 1)
+        const randomDuration = (Math.floor(Math.random() * speedValue + 1) * 10) / 10 + 5
+        const randomDelay = ((Math.floor(Math.random() * speedValue + 1) * 10) / 10) * -1
+        const randomTransition1 = Math.floor(Math.random() * 50 + 1) - 25
+        const randomTransition2 = Math.floor(Math.random() * 50 + 1) - 25
+        const blurRadius = Math.random() + 0.5 * size * 0.5
+        const x = Math.random() < 0.5 ? -1 : 1
+        const boxShadow = size * 2 * x
+
+        styles += `
+${addBgClass ? '.background ' : ''}span:nth-child(${i}) {
+    color: ${color};
+    top: ${randomTop}%;
+    left: ${randomLeft}%;
+    animation-duration: ${randomDuration}s;
+    animation-delay: ${randomDelay}s;
+    transform-origin: ${randomTransition1}vw ${randomTransition2}vh;
+    box-shadow: ${boxShadow}vmin 0 ${blurRadius}vmin currentColor;
+}`
+    }
+
+    return styles
+}
+
+export const backgroundCss = ({ bgColor }: { bgColor: string }): string =>
+    `
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background: ${bgColor};
+    overflow: hidden;
+`
+
+export const spanCss = ({
+    size,
+    speed,
+    addAnimation,
+}: {
+    size: number
+    speed: number
+    addAnimation?: boolean
+}): string =>
+    `
+    width: ${size}vmin;
+    height: ${size}vmin;
+    border-radius: ${size}vmin;
+    backface-visibility: hidden;
+    position: absolute;
+    ${addAnimation ? 'animation: move;' : ''}
+    animation-duration: ${speed};
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+`

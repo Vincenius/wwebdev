@@ -1,0 +1,22 @@
+---
+// Ported from legacy-next/pages/resources.js (generateResources).
+import SidebarLayout from '../layouts/SidebarLayout.astro'
+import ArticlePreview from '../components/ArticlePreview.astro'
+import posts from '../data/posts'
+
+const resources = posts.filter((p) => p.type === 'Resource')
+---
+
+<SidebarLayout title="Free Resources and Tools for your usage">
+    <h2 class="ui-section-headline">Resources and Tools around Web Development</h2>
+    {resources.map((d) => (
+        <ArticlePreview
+            date={d.date}
+            updatedAt={d.updatedAt}
+            headline={d.headline}
+            description={d.description}
+            link={d.link}
+            previewImage={d.previewImage}
+        />
+    ))}
+</SidebarLayout>

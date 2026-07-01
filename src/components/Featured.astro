@@ -1,0 +1,79 @@
+---
+// Ported from legacy-next/components/Featured.
+import posts from '../data/posts'
+import templates from '../data/templates'
+
+interface Props {
+    articleIds?: number[]
+    templateIds?: number[]
+    resourceIds?: number[]
+}
+
+const { articleIds = [], templateIds = [], resourceIds = [] } = Astro.props
+const articles = [
+    ...posts.filter((r) => resourceIds.includes(r.id) || articleIds.includes(r.id)),
+    ...templates.filter((t) => templateIds.includes(t.id)),
+]
+---
+
+<div class="ft-container">
+    {articles.map((a, i) => (
+        <div class:list={['ft-article', { margin: i === 1 }]}>
+            <a href={a.link}>
+                <img class="ft-preview" src={a.previewImage} alt={a.headline} loading="lazy" />
+            </a>
+            <a href={a.link}><h3>{a.headline}</h3></a>
+        </div>
+    ))}
+</div>
+
+<style>
+    .ft-container {
+        display: flex;
+        margin-bottom: 62px;
+        font-size: 1rem;
+    }
+    @media (max-width: 480px) {
+        .ft-container {
+            flex-direction: column;
+        }
+    }
+    .ft-article {
+        width: 100%;
+        margin: 0;
+    }
+    .ft-article.margin {
+        margin: 0 30px;
+    }
+    @media (max-width: 480px) {
+        .ft-article,
+        .ft-article.margin {
+            margin: 0 0 30px;
+        }
+    }
+    .ft-article a {
+        text-decoration: none;
+    }
+    .ft-article > * {
+        cursor: pointer;
+    }
+    .ft-article h3 {
+        margin: 0;
+        font-weight: normal;
+        color: #2c3e50;
+        font-size: 1.1em;
+    }
+    .ft-article h3:hover {
+        color: var(--color-accent);
+    }
+    .ft-preview {
+        width: 100%;
+        height: 100px;
+        object-fit: cover;
+    }
+    @media (max-width: 480px) {
+        .ft-preview {
+            height: 160px;
+        }
+    }
+</style>

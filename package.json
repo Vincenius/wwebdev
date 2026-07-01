@@ -1,0 +1,52 @@
+{
+  "name": "wwebdev",
+  "version": "2.0.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "packageManager": "yarn@4.17.0",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "cross-env TZ=UTC astro build",
+    "preview": "astro preview",
+    "check": "astro check",
+    "astro": "astro",
+    "snapshot:baseline": "node test/snapshot-baseline.mjs",
+    "test:parity": "node test/parity.mjs",
+    "test:migration": "astro check && cross-env TZ=UTC astro build",
+    "serve": "node server.mjs"
+  },
+  "dependencies": {
+    "@astrojs/prism": "^4.0.2",
+    "@astrojs/react": "^6.0.0",
+    "@fontsource/lato": "^5.2.7",
+    "astro": "^7.0.3",
+    "express": "^5.2.1",
+    "feed": "^5.2.1",
+    "prismjs": "^1.30.0",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.9",
+    "@tailwindcss/vite": "^4.3.2",
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.0.1",
+    "@types/prismjs": "^1.26.6",
+    "@types/react": "^19.2.17",
+    "@types/react-dom": "^19.2.3",
+    "cross-env": "^10.1.0",
+    "node-html-parser": "^8.0.4",
+    "tailwindcss": "^4.3.2",
+    "typescript": "^6.0.3"
+  },
+  "dependenciesMeta": {
+    "esbuild": {
+      "built": true
+    },
+    "sharp": {
+      "built": true
+    }
+  }
+}

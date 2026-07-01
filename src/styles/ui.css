@@ -1,0 +1,232 @@
+/* Primitives ported from legacy-next/ui/index.js (styled-components) to plain
+   CSS classes. Imported globally via Layout so every page can use them. */
+
+.ui-container {
+    max-width: 1128px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    margin: 30px auto;
+}
+@media (max-width: 640px) {
+    .ui-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.ui-article-container {
+    max-width: 750px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    margin: 0 auto;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+@media (max-width: 640px) {
+    .ui-article-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+.ui-article-container ul li {
+    margin: 10px 0;
+}
+.ui-article-container img,
+.ui-article-container video {
+    max-width: 100%;
+}
+/* links inherit the global accent + underline */
+.ui-article-container h2,
+.ui-article-container h3 {
+    color: var(--color-heading);
+    font-weight: 300;
+    margin: 1.6em 0 0.6em;
+}
+
+.ui-section-headline {
+    position: relative;
+    font-size: 2em;
+    margin: 0 0 30px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.ui-section-headline::after {
+    content: '';
+    display: block;
+    width: 1.5em;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: var(--color-accent);
+}
+
+.ui-subheadline {
+    position: relative;
+    font-size: 1.5em !important;
+    margin: 30px 0 !important;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+.ui-subheadline.no-margin-bottom {
+    margin: 30px 0 0 !important;
+}
+.ui-subheadline::after {
+    content: '';
+    display: block;
+    width: 1.5em;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background: var(--color-accent);
+}
+.ui-subheadline a {
+    text-decoration: none !important;
+}
+
+.ui-grid {
+    max-width: 1128px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 40px;
+    margin: 40px auto;
+}
+.ui-grid.cols-2 {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+.ui-grid.no-padding {
+    padding: 0;
+}
+@media (max-width: 640px) {
+    .ui-grid {
+        padding-left: 16px;
+        padding-right: 16px;
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+}
+
+.ui-sidebar-container {
+    display: flex;
+}
+@media (max-width: 960px) {
+    .ui-sidebar-container {
+        flex-direction: column;
+    }
+}
+
+.ui-sidebar-main {
+    margin-bottom: 30px;
+    width: 100%;
+}
+.ui-sidebar-main > a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-accent);
+    margin-bottom: 20px;
+}
+.ui-sidebar-main > a:hover {
+    color: var(--color-accent-hover);
+}
+
+.ui-sidebar-article {
+    margin-bottom: 30px;
+    width: 100%;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+.ui-sidebar-article > a {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    color: var(--color-accent);
+    margin-bottom: 20px;
+}
+.ui-sidebar-article > a:hover {
+    color: var(--color-accent-hover);
+}
+
+.ui-sidebar {
+    width: 100%;
+    max-width: 300px;
+    min-width: 300px;
+    margin-left: 50px;
+}
+@media (max-width: 960px) {
+    .ui-sidebar {
+        margin: 0;
+        max-width: 100%;
+        display: block;
+    }
+    .ui-sidebar.hide-on-mobile {
+        display: none;
+    }
+}
+
+.ui-intro-text {
+    max-width: 1128px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    margin: 20px auto 40px;
+}
+@media (max-width: 640px) {
+    .ui-intro-text {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+.ui-block-link {
+    display: block;
+}
+
+.ui-flex-container {
+    display: flex;
+}
+
+.ui-related-container {
+    display: flex;
+    justify-content: space-between;
+}
+@media (max-width: 640px) {
+    .ui-related-container {
+        flex-direction: column;
+    }
+}
+
+.ui-code {
+    margin: 0 4px;
+    background: rgb(245, 242, 240) none repeat scroll 0% 0%;
+}
+
+.ui-small-image {
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.ui-mobile-hide {
+    display: block;
+}
+@media (max-width: 960px) {
+    .ui-mobile-hide {
+        display: none;
+    }
+}
+
+.ui-mobile-only {
+    display: none;
+}
+@media (max-width: 960px) {
+    .ui-mobile-only {
+        display: block;
+    }
+}

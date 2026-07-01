@@ -1,0 +1,112 @@
+---
+// Ported from legacy-next/components/Layout (+ _document/_app shell).
+import '@fontsource/lato/300.css'
+import '@fontsource/lato/400.css'
+import '@fontsource/lato/700.css'
+import '@fontsource/lato/900.css'
+import '../styles/global.css'
+import '../styles/ads.css'
+import '../styles/ui.css'
+import '../styles/linkbox.css'
+import '../styles/forms.css'
+
+import Head from './Head.astro'
+import Nav from '../components/Nav.astro'
+import Header from '../components/Header.astro'
+import Footer from '../components/Footer.astro'
+import type { LayoutProps } from './layoutProps'
+
+type Props = LayoutProps
+
+const {
+    title,
+    isArticle = false,
+    hideHeader = false,
+    date,
+    link,
+    image,
+    description,
+    titleNameFirst,
+    updatedAt,
+} = Astro.props
+
+const d = date ? new Date(date) : undefined
+const ud = updatedAt ? new Date(updatedAt) : undefined
+---
+
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <Head
+            title={title}
+            link={link}
+            image={image}
+            description={description}
+            date={d}
+            updatedDate={ud}
+            isArticle={isArticle}
+            titleNameFirst={titleNameFirst}
+        />
+    </head>
+    <body>
+        <div class="layout-container">
+            <Nav title={title} isArticle={isArticle} />
+
+            {isArticle && !hideHeader && (
+                <Header>
+                    <h1>{title}</h1>
+                    {d && (
+                        <p class="s-date">
+                            <time class="s-time" datetime={d.toISOString()}>{date}</time>
+                        </p>
+                    )}
+                    {updatedAt && ud && (
+                        <p class="s-date s-updated">
+                            Updated: <time class="s-time" datetime={ud.toISOString()}>{updatedAt}</time>
+                        </p>
+                    )}
+                </Header>
+            )}
+
+            <main>
+                <slot />
+            </main>
+
+            <Footer />
+        </div>
+    </body>
+</html>
+
+<style>
+    .layout-container {
+        max-width: 1440px;
+        margin: 0 auto;
+        box-shadow: var(--shadow-page);
+        background: #fff;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        justify-content: space-between;
+    }
+    @media (min-width: 1441px) {
+        .layout-container {
+            margin: 20px auto;
+            border-radius: var(--radius-lg);
+        }
+    }
+
+    .s-time {
+        font-size: 1rem;
+        line-height: 30px;
+        margin-right: 3px;
+    }
+    .s-date {
+        margin-bottom: 0;
+        color: #5b6f82;
+    }
+    .s-updated {
+        margin: 0 auto;
+        font-style: italic;
+    }
+</style>

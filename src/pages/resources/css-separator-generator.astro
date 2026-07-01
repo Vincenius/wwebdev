@@ -1,0 +1,29 @@
+---
+// Ported from legacy-next/pages/resources/css-separator-generator.js.
+// The interactive generator is a React island; the static <Ad/> and <Featured/>
+// Astro components are passed into the island as named slots.
+import Layout from '../../layouts/Layout.astro'
+import Ad from '../../components/Ad.astro'
+import Featured from '../../components/Featured.astro'
+import CssSeparatorGenerator from '../../components/islands/CssSeparatorGenerator'
+import posts from '../../data/posts'
+import '../../styles/css-separator-generator.css'
+
+const postMeta = posts.find((m) => m.id === 10)!
+---
+
+<Layout
+    isArticle={true}
+    hideHeader={true}
+    title={postMeta.headline}
+    date={postMeta.date}
+    updatedAt={postMeta.updatedAt}
+    link={`https://wweb.dev${postMeta.link}`}
+    description={postMeta.description}
+    image={postMeta.shareImage}
+>
+    <CssSeparatorGenerator client:visible>
+        <Ad slot="ad" />
+        <Featured slot="featured" articleIds={[5, 7, 24]} />
+    </CssSeparatorGenerator>
+</Layout>

@@ -1,0 +1,23 @@
+---
+// Ported from legacy-next/components/Layout/SidebarLayout.
+import Layout from './Layout.astro'
+import Ad from '../components/Ad.astro'
+import type { LayoutProps } from './layoutProps'
+
+// Same props as Layout — forwarded through.
+type Props = LayoutProps
+const props = Astro.props
+---
+
+<Layout {...props}>
+    <div class="ui-container">
+        <div class="ui-sidebar-container">
+            <div class="ui-sidebar-main">
+                <slot />
+            </div>
+            <aside class="ui-sidebar">
+                <Ad />
+            </aside>
+        </div>
+    </div>
+</Layout>

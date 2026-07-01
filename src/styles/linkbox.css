@@ -1,0 +1,82 @@
+/* LinkBox styles (global) so both LinkBox.astro and the React Search island
+   render identical cards. Ported from legacy-next/components/LinkBox/styled.js. */
+.lb-container {
+    position: relative;
+    background-color: #fff;
+    color: var(--color-body);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    transition: box-shadow 0.15s ease, transform 0.15s ease;
+}
+.lb-container:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    transform: translateY(-2px);
+}
+.lb-content {
+    position: relative;
+    z-index: 1;
+    background: #fff;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.lb-content h2 {
+    font-weight: 500;
+    color: var(--color-heading);
+    margin: 0.25em 0 1em;
+}
+.lb-content h2:hover {
+    color: var(--color-accent);
+}
+.lb-content img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.lb-content.full-height img {
+    height: 100%;
+}
+.lb-content a {
+    text-decoration: none;
+}
+.lb-content p {
+    line-height: 1.3;
+}
+.lb-description {
+    padding: 20px;
+}
+.lb-description p {
+    margin-bottom: 0;
+}
+.lb-promo-bg {
+    background: linear-gradient(57deg, #00c6a7 0%, #1e4d92 100%);
+    box-shadow: 0 16px 48px #e3e7eb;
+    position: absolute;
+    height: calc(100% + 8px);
+    width: calc(100% + 8px);
+    left: -4px;
+    top: -4px;
+    z-index: 0;
+    border-radius: 4px;
+}
+.lb-promo-label {
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    top: 0;
+    background: linear-gradient(57deg, #00c6a7 0%, #1e4d92 100%);
+    padding: 6px;
+    border-bottom-left-radius: 4px;
+    color: #fff;
+}
+.lb-visit {
+    padding: 0 20px 16px;
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+}
+.lb-sponsored {
+    color: #616161;
+}

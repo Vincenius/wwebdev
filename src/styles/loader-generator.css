@@ -1,0 +1,162 @@
+/* Loader Generator island controls/layout.
+   Ported from legacy-next/components/LoaderGenerator/styled.js. styled-components
+   + MUI (Paper/Slider) are replaced with plain global `lg-` classes. The live
+   loader demo CSS itself is injected inline by the island (see
+   loaderGenerator.css.ts) so its output stays pixel-identical. */
+
+.lg-control-container {
+    display: flex;
+    gap: 2em;
+    width: 100%;
+    margin-bottom: 2em;
+}
+
+.lg-slider-container {
+    width: 100%;
+}
+
+.lg-loader-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3em;
+}
+
+/* MUI Paper look-alike for LoaderCard. */
+.lg-loader-card {
+    background: #fff;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding: 1em;
+    width: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid transparent;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+.lg-loader-card.lg-active {
+    border: 2px solid var(--color-accent);
+}
+
+/* MUI FormLabel look-alike. */
+.lg-form-label {
+    display: block;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 1rem;
+    line-height: 1.4375em;
+    margin-top: 0.5em;
+    margin-bottom: 0.25em;
+}
+
+/* MUI Slider look-alike using a native range input. */
+.lg-slider {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 4px;
+    background: rgba(30, 77, 146, 0.3);
+    border-radius: 2px;
+    outline: none;
+    margin: 8px 0 4px;
+    cursor: pointer;
+}
+.lg-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    cursor: pointer;
+    box-shadow: none;
+    transition: box-shadow 150ms ease;
+}
+.lg-slider::-webkit-slider-thumb:hover {
+    box-shadow: 0 0 0 8px rgba(30, 77, 146, 0.16);
+}
+.lg-slider::-moz-range-thumb {
+    width: 14px;
+    height: 14px;
+    border: none;
+    border-radius: 50%;
+    background: var(--color-accent);
+    cursor: pointer;
+}
+.lg-slider::-moz-range-track {
+    height: 4px;
+    background: rgba(30, 77, 146, 0.3);
+    border-radius: 2px;
+}
+
+/* Native color input replacing react-color SketchPicker. */
+.lg-color-picker {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5em;
+    cursor: pointer;
+}
+.lg-color-picker input[type='color'] {
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 0;
+    background: none;
+    cursor: pointer;
+}
+.lg-color-value {
+    font-size: 0.9rem;
+    color: rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+}
+
+/* CodeBlock look-alike (matches src/components/CodeBlock.astro / prism theme). */
+.lg-code-block {
+    position: relative;
+    width: 100%;
+    margin-top: 30px;
+}
+.lg-code-label {
+    position: absolute;
+    top: -15px;
+    left: 0;
+    background: rgb(245, 242, 240) none repeat scroll 0% 0%;
+    padding: 0 15px;
+    z-index: 1;
+}
+.lg-code-pre {
+    background: #f5f2f0;
+    color: #000;
+    padding: 1em;
+    margin: 0.5em 0;
+    border-radius: 0.3em;
+    overflow: auto;
+    white-space: pre-wrap;
+    word-break: break-word;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    font-size: 1em;
+    line-height: 1.5;
+    tab-size: 4;
+}
+
+/* CopyLink ported from styled.js — the "copied" bubble animates on click. */
+.lg-copy-link {
+    position: relative;
+    cursor: pointer;
+}
+.lg-copy-link::after {
+    content: 'copied';
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 500ms ease-out;
+}
+.lg-copy-link.lg-copied::after {
+    transform: translateY(-100%);
+    opacity: 1;
+}

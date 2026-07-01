@@ -1,0 +1,91 @@
+---
+// Global <head>: title, meta description, canonical, Open Graph, Twitter card,
+// article JSON-LD, icons, analytics.
+interface Props {
+    title: string
+    link?: string | undefined
+    description?: string | undefined
+    image?: string | undefined
+    date?: Date | undefined
+    updatedDate?: Date | undefined
+    isArticle?: boolean | undefined
+    titleNameFirst?: boolean | undefined
+}
+
+const { title, link, description, image, date, updatedDate, isArticle, titleNameFirst } =
+    Astro.props
+
+const headTitle = titleNameFirst ? `wweb.dev | ${title}` : `${title} | wweb.dev`
+const imageLink = isArticle && image ? `https://wweb.dev${image}` : 'https://wweb.dev/share.png'
+const metaDescription =
+    description || 'News, Resources, Templates and Articles about Web-Development'
+// Every page gets a real canonical (was empty on non-article pages).
+const canonical = link ?? `https://wweb.dev${Astro.url.pathname}`
+
+// Valid Article structured data — only on articles, with real ISO dates and
+// absent fields omitted (the previous build emitted literal "undefined"/"${date}").
+const structuredData = isArticle
+    ? {
+          '@context': 'https://schema.org',
+          '@type': 'Article',
+          mainEntityOfPage: { '@type': 'WebPage', '@id': canonical },
+          headline: title,
+          ...(date && { datePublished: date.toISOString() }),
+          ...(updatedDate && { dateModified: updatedDate.toISOString() }),
+          image: { '@type': 'ImageObject', url: imageLink, height: 646, width: 1300 },
+          ...(description && { description }),
+          author: { '@type': 'Person', name: 'Vincent Will' },
+          publisher: {
+              '@type': 'Organization',
+              name: 'wweb.dev',
+              logo: {
+                  '@type': 'ImageObject',
+                  url: 'https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png',
+                  height: 64,
+                  width: 64,
+              },
+          },
+      }
+    : null
+---
+
+<title>{headTitle}</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="robots" content="index, follow" />
+<meta name="description" content={metaDescription} />
+<link rel="canonical" href={canonical} />
+
+<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" sizes="192x192" href="/apple-icon.png" />
+<link rel="manifest" href="/manifest.json" />
+<meta name="application-name" content="wweb.dev" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="default" />
+<meta name="apple-mobile-web-app-title" content="wweb.dev" />
+<meta name="mobile-web-app-capable" content="yes" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="theme-color" content="#2c3e50" />
+
+<meta property="og:title" content={title} />
+<meta property="og:description" content={metaDescription} />
+<meta property="og:image" content={imageLink} />
+<meta property="og:url" content={canonical} />
+<meta property="og:site_name" content="wweb.dev" />
+<meta property="og:type" content={isArticle ? 'article' : 'website'} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@wweb_dev" />
+<meta name="twitter:creator" content="@wweb_dev" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={metaDescription} />
+<meta name="twitter:image" content={imageLink} />
+
+<script
+    defer
+    is:inline
+    src="https://analytics.vincentwill.com/script.js"
+    data-website-id="7533aec9-873e-49d7-ae09-4f3a2dd4a12d"></script>
+
+{structuredData && (
+    <script type="application/ld+json" is:inline set:html={JSON.stringify(structuredData)} />
+)}

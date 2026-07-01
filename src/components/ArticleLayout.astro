@@ -1,0 +1,32 @@
+---
+// Ported from legacy-next/components/ArticleLayout.
+import SidebarLayout from '../layouts/SidebarLayout.astro'
+import Comments from './Comments.astro'
+import PrevNext from './PrevNext.astro'
+import posts from '../data/posts'
+
+interface Props {
+    id: number
+}
+
+const { id } = Astro.props
+const postMeta = posts.find((m) => m.id === id)!
+---
+
+<SidebarLayout
+    isArticle={true}
+    title={postMeta.headline}
+    date={postMeta.date}
+    updatedAt={postMeta.updatedAt}
+    link={`https://wweb.dev${postMeta.link}`}
+    description={postMeta.description}
+    image={postMeta.shareImage}
+>
+    <article class="ui-article-container">
+        <slot />
+
+        <Comments />
+
+        <PrevNext postId={id} />
+    </article>
+</SidebarLayout>
