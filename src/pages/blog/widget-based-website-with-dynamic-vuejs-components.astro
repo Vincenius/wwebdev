@@ -109,8 +109,7 @@ const snippet9 = `init: function() {
 
     <h2>Project Setup</h2>
     <p>
-        First of all install the&nbsp;<a href="https://cli.vuejs.org/">vue-cli</a>
-        if you havent already. To do so open a console and type
+        First of all install the&nbsp;<a href="https://cli.vuejs.org/">vue-cli</a> if you havent already. To do so open a console and type
     </p>
     <p><code>npm install -g @vue/cli</code></p>
     <p>Afterwards create a new project by entering</p>
@@ -142,8 +141,7 @@ const snippet9 = `init: function() {
     <h2>Dynamic Component creation</h2>
     <p>
         First of all we want to create the HelloWorld component dynamically. Therefor update the
-        code in the <code>&lt;script&gt;</code>
-        block inside of your App.vue
+        code in the <code>&lt;script&gt;</code> block inside of your App.vue
     </p>
 
     <CodeBlock language="javascript" value={snippet3} />
@@ -160,19 +158,16 @@ const snippet9 = `init: function() {
     <p>
         Because components do not export a class, we need to pass the component to <code
             >Vue.extend</code
-        >
-        to be able to create an instance of the component with the <code>new</code> keyword.
+        > to be able to create an instance of the component with the <code>new</code> keyword.
     </p>
     <p>When creating the instance, we can provide the properties with <code>propsData</code></p>
     <p>
         To mount the instance, we have to call <code>instance.$mount();</code>. As a last step, we
         are then able to attach the instance of the component to the DOM. Therefor we call <code
             >this.$refs['main']</code
-        >
-        to get the <code>&lt;div&gt;&nbsp;</code>where we want to insert our component. Then we call <code
+        > to get the <code>&lt;div&gt;</code> where we want to insert our component. Then we call <code
             >appendChild</code
-        >
-        with <code>instance.$el</code> where <code>$el</code> is used to get the native DOM element reference.
+        > with <code>instance.$el</code> where <code>$el</code> is used to get the native DOM element reference.
     </p>
     <p>
         If you refresh localhost:8080, the dynamic headline should now be visible. Now let's make it

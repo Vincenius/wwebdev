@@ -32,15 +32,17 @@
     }
 }
 
+/* Long-form reading: no tracking (positive letter-spacing hurts body copy),
+   roomier leading, darker ink than the site-wide grey-blue. */
 .ui-article-container {
     max-width: 750px;
     padding-left: 24px;
     padding-right: 24px;
     width: 100%;
     margin: 0 auto;
-    line-height: 1.5;
-    letter-spacing: 1px;
+    line-height: 1.65;
     font-size: 20px;
+    color: var(--color-article-body);
 }
 @media (max-width: 640px) {
     .ui-article-container {
@@ -158,9 +160,9 @@
 .ui-sidebar-article {
     margin-bottom: 30px;
     width: 100%;
-    line-height: 1.5;
-    letter-spacing: 1px;
+    line-height: 1.65;
     font-size: 20px;
+    color: var(--color-article-body);
 }
 .ui-sidebar-article > a {
     display: block;

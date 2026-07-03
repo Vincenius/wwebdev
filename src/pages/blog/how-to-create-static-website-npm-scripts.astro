@@ -252,8 +252,7 @@ const snippet15 = `<!DOCTYPE html>
     <p>
         This will install the package <a href="https://www.npmjs.com/package/node-sass" target="_blank" rel="noopener">node-sass</a>,
         into the dev dependencies. It enables us to compile .scss files to CSS.<br/>
-        When the installation is done, open the <code class="ui-code">package.json</code>
-        and add the following script to your scripts:
+        When the installation is done, open the <code class="ui-code">package.json</code> and add the following script to your scripts:
     </p>
     <CodeBlock
         language="json"
@@ -281,8 +280,7 @@ const snippet15 = `<!DOCTYPE html>
     <img src="/blog/static-website/dirStructure1.png" alt="structure of the project" width="215" height="210" />
 
     <p>
-        Now you can include the compiled CSS file in the <code class="ui-code">{`<head>`}</code>
-        of your <code class="ui-code">index.html</code>
+        Now you can include the compiled CSS file in the <code class="ui-code">{`<head>`}</code> of your <code class="ui-code">index.html</code>
     </p>
 
     <CodeBlock
@@ -337,8 +335,7 @@ const snippet15 = `<!DOCTYPE html>
 
     <p>
         This will check your CSS files in the <code class="ui-code">dist</code> directory and add the prefixes for them.
-        So you need to run <code class="ui-code">npm run css:scss</code> first, to compile your scss into <code class="ui-code">dist</code>
-        and afterward run <code class="ui-code">npm run css:autoprefixer</code> to add vendor-prefixes to your compiled
+        So you need to run <code class="ui-code">npm run css:scss</code> first, to compile your scss into <code class="ui-code">dist</code> and afterward run <code class="ui-code">npm run css:autoprefixer</code> to add vendor-prefixes to your compiled
         CSS file. As we don't want to run the scripts one after another, let's add another script to the
         <code class="ui-code">package.json</code>, which will run the scripts sequentially by connecting the scripts with
         <code class="ui-code">&&</code>.
@@ -433,8 +430,7 @@ const snippet15 = `<!DOCTYPE html>
     </p>
     <p>
         After moving the <code class="ui-code">index.html</code>, we need to update the stylesheet link
-        to <code class="ui-code">href="/index.css"</code>. If you now run <code class="ui-code">npm run serve</code>
-        your website should automatically open in the browser and you should see something
+        to <code class="ui-code">href="/index.css"</code>. If you now run <code class="ui-code">npm run serve</code> your website should automatically open in the browser and you should see something
         like this in your console:
     </p>
 
@@ -469,8 +465,7 @@ const snippet15 = `<!DOCTYPE html>
         <code class="ui-code">src/scss</code> and compile our <code class="ui-code">scss</code> into the
         <code class="ui-code">dist</code> directory. Also, we have autoprefixing and linting for
         our CSS in place. Additionally, the script is running a development server, which
-        automatically refreshes our browser whenever something in <code class="ui-code">dist</code>
-        changes.
+        automatically refreshes our browser whenever something in <code class="ui-code">dist</code> changes.
     </p>
 
     <p>

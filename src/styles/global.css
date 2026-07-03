@@ -24,6 +24,9 @@
     /* Text */
     --color-heading: #2c3e50;
     --color-body: #5b6f82;
+    /* Article/long-form copy: darker than --color-body (~7:1 on white) for
+       comfortable extended reading while keeping the blue-grey cast. */
+    --color-article-body: #3f5165;
 
     --font-sans: 'Lato', sans-serif;
 
