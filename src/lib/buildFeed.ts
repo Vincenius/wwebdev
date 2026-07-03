@@ -3,7 +3,14 @@ import { Feed } from 'feed'
 import { sortedData, siteURL } from './feedData'
 
 export function buildFeed(): Feed {
-    const date = new Date()
+    // Deterministic: the feed is "updated" when its newest item changed, not on
+    // every rebuild (sortedData is newest-first; updatedAt can outdate newer posts).
+    const date = new Date(
+        sortedData
+            .map((p) => p.updatedAt || p.date)
+            .sort()
+            .at(-1)!,
+    )
     const author = {
         name: 'Vincent Will',
         email: 'info@wweb.dev',

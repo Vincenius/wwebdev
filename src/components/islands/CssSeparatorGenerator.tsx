@@ -13,6 +13,7 @@
 // scoped <style> block: the generator functions emit rules containing `&` (or a
 // `.class` selector); we replace `&` with the preview element's own selector.
 import React, { useState } from 'react'
+import CopyButton from '../react/CopyButton'
 import { SEPARATORS, SEPARATOR_OPTIONS } from './cssSeparator/constants'
 import type { SeparatorValue, SeparatorOptions, SliderOption } from './cssSeparator/constants'
 import {
@@ -26,14 +27,14 @@ import {
     generateCurvedCss,
 } from './cssSeparator/codeGenerators'
 
-const FileCopyIcon = () => (
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
-    </svg>
-)
-
 const GitHubIcon = () => (
-    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <svg
+        width="28"
+        height="28"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        xmlns="http://www.w3.org/2000/svg"
+    >
         <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
     </svg>
 )
@@ -93,38 +94,21 @@ interface ControlsProps {
 const Controls: React.FC<ControlsProps> = ({ options, active }) => {
     const [value, setValue] = useState(0)
     const isVisible = true
-    const [copiedCode, showCopied] = useState('')
 
     const htmlCode = generateHtmlCode(active)
     const cssCode = generateCssCode({ active, options })
 
-    const htmlTextArea = React.useRef<HTMLTextAreaElement>(null)
-    const cssTextArea = React.useRef<HTMLTextAreaElement>(null)
-
-    const copyToClipboard = (
-        textArea: React.RefObject<HTMLTextAreaElement | null>,
-        areaName: string,
-    ) => {
-        const el = textArea.current
-        if (!el) return
-        el.select()
-        if (typeof navigator !== 'undefined' && navigator.clipboard) {
-            navigator.clipboard.writeText(el.value).catch(() => {})
-        } else if (typeof document !== 'undefined') {
-            document.execCommand('copy')
-        }
-        showCopied(areaName)
-
-        setTimeout(() => {
-            showCopied('')
-        }, 2000)
-    }
-
     return (
         <div className="csg-controls-card">
-            <div className="csg-tabs" role="tablist" aria-label="controls for customizing the separator">
+            <div
+                className="csg-tabs"
+                role="tablist"
+                aria-label="controls for customizing the separator"
+            >
                 <button
                     type="button"
+                    role="tab"
+                    aria-selected={value === 0}
                     className={`csg-tab${value === 0 ? ' active' : ''}`}
                     onClick={() => setValue(0)}
                 >
@@ -132,6 +116,8 @@ const Controls: React.FC<ControlsProps> = ({ options, active }) => {
                 </button>
                 <button
                     type="button"
+                    role="tab"
+                    aria-selected={value === 1}
                     className={`csg-tab${value === 1 ? ' active' : ''}`}
                     onClick={() => setValue(1)}
                 >
@@ -149,22 +135,34 @@ const Controls: React.FC<ControlsProps> = ({ options, active }) => {
             <div className="csg-control-content" style={{ display: isVisible ? 'block' : 'none' }}>
                 {value === 0 && (
                     <div>
-                        <div className="csg-copy-container" onClick={() => copyToClipboard(htmlTextArea, 'html')}>
-                            <FileCopyIcon />
-                            Copy
-                        </div>
-                        <span className={`csg-copied${copiedCode === 'html' ? ' visible' : ''}`}>copied</span>
-                        <textarea className="csg-code-area csg-margin-bottom" value={htmlCode} readOnly ref={htmlTextArea} />
+                        <CopyButton
+                            text={htmlCode}
+                            label="Copy"
+                            copiedLabel="copied"
+                            className="csg-copy-container"
+                            iconSize={20}
+                        />
+                        <textarea
+                            className="csg-code-area csg-margin-bottom"
+                            value={htmlCode}
+                            readOnly
+                        />
                     </div>
                 )}
                 {value === 1 && (
                     <div>
-                        <div className="csg-copy-container" onClick={() => copyToClipboard(cssTextArea, 'css')}>
-                            <FileCopyIcon />
-                            Copy
-                        </div>
-                        <span className={`csg-copied${copiedCode === 'css' ? ' visible' : ''}`}>copied</span>
-                        <textarea className="csg-code-area csg-margin-bottom" value={cssCode} readOnly ref={cssTextArea} />
+                        <CopyButton
+                            text={cssCode}
+                            label="Copy"
+                            copiedLabel="copied"
+                            className="csg-copy-container"
+                            iconSize={20}
+                        />
+                        <textarea
+                            className="csg-code-area csg-margin-bottom"
+                            value={cssCode}
+                            readOnly
+                        />
                     </div>
                 )}
             </div>
@@ -209,7 +207,7 @@ const Generator: React.FC<GeneratorProps> = ({ ad, featured }) => {
         })
     }
 
-    const useSeparator = (val: SeparatorValue) => {
+    const selectSeparator = (val: SeparatorValue) => {
         setActive(val)
         setOptions(SEPARATOR_OPTIONS[val]!)
     }
@@ -248,13 +246,15 @@ const Generator: React.FC<GeneratorProps> = ({ ad, featured }) => {
                             {Object.entries(options).map(([key, option]) =>
                                 key !== 'reversed' && option && typeof option === 'object' ? (
                                     <div className="csg-slider-container" key={`${key}-slider`}>
-                                        <label>{key}</label>
+                                        <label htmlFor={`csg-slider-${key}`}>{key}</label>
                                         <input
                                             type="range"
                                             className="csg-slider"
+                                            id={`csg-slider-${key}`}
                                             value={(option as SliderOption).value}
-                                            onChange={(e) => handleChange(key, Number(e.target.value))}
-                                            aria-labelledby={`${key}-slider`}
+                                            onChange={(e) =>
+                                                handleChange(key, Number(e.target.value))
+                                            }
                                             min={(option as SliderOption).min}
                                             max={(option as SliderOption).max}
                                             step={(option as SliderOption).step ?? 1}
@@ -270,12 +270,15 @@ const Generator: React.FC<GeneratorProps> = ({ ad, featured }) => {
 
                     <h2 className="ui-subheadline">CSS section divider description</h2>
                     <p>
-                        With this CSS Section Separator Generator, you can choose between 6 different dividers.
-                        Each of them can be customized by using the controls in the preview field.
+                        With this CSS Section Separator Generator, you can choose between 6
+                        different dividers. Each of them can be customized by using the controls in
+                        the preview field.
                     </p>
                     <p>
-                        The tool includes a skewed divider, a semi-circle divider, a wave divider, a spikes divider, a triangle divider and a curved divider.
-                        Most of these dividers are pure CSS and using the ::before and ::after pseudo-elements. Some need an additional HTML element.
+                        The tool includes a skewed divider, a semi-circle divider, a wave divider, a
+                        spikes divider, a triangle divider and a curved divider. Most of these
+                        dividers are pure CSS and using the ::before and ::after pseudo-elements.
+                        Some need an additional HTML element.
                     </p>
 
                     <h2 className="ui-subheadline">You might also like</h2>
@@ -286,15 +289,20 @@ const Generator: React.FC<GeneratorProps> = ({ ad, featured }) => {
                     <h2 className="ui-subheadline no-margin-bottom">Choose a section divider</h2>
                     <div className="csg-row">
                         {Object.entries(SEPARATORS).map(([, val]) => (
-                            <div
-                                className={`csg-card${active === val ? ' active' : ''}`}
+                            <button
+                                type="button"
+                                className={`ui-unbutton csg-card${active === val ? ' active' : ''}`}
                                 key={`${val}-card`}
+                                aria-pressed={active === val}
                                 onClick={() => {
-                                    useSeparator(val as SeparatorValue)
+                                    selectSeparator(val as SeparatorValue)
                                 }}
                             >
-                                <img src={`/resources/css-separators/${val}.png`} alt={`${val} preview`} />
-                            </div>
+                                <img
+                                    src={`/resources/css-separators/${val}.png`}
+                                    alt={`${val} preview`}
+                                />
+                            </button>
                         ))}
                     </div>
                     <br />

@@ -1,13 +1,17 @@
-@import 'tailwindcss';
+/* Theme-only import: emits @theme tokens as :root CSS vars. Deliberately NOT
+   the full 'tailwindcss' import — its preflight reset (img max-width, ul/p/h*
+   zeroing) breaks component CSS ported from the un-reset Next.js site, and no
+   utility classes are used. */
+@import 'tailwindcss/theme' layer(theme);
 
-@theme {
+/* `static`: always emit every token — Tailwind's usage scanner can't see
+   var(--…) references inside Astro scoped <style> blocks and would prune them. */
+@theme static {
     /* Palette */
     --color-green-blue: #00c6a7;
     --color-blue: #1e4d92;
     --color-light-grey: #d5d8dc;
-    --color-middle-grey: #969fa8;
     --color-dark-grey: #2c3e50;
-    --color-middle-dark-grey: #344a60;
     --color-grey-blue: #5b6f82;
     --color-logo-left: #1adbff;
     --color-logo-right: #42b8ff;
@@ -47,7 +51,6 @@
 html {
     font-size: 18px;
     line-height: 1.6;
-    overflow-x: hidden;
     -webkit-text-size-adjust: 100%;
 }
 
@@ -62,10 +65,6 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     text-rendering: optimizeLegibility;
-}
-
-body svg {
-    width: 32px;
 }
 
 hr {
@@ -93,6 +92,19 @@ h3 {
     color: var(--color-heading);
     font-weight: 300;
     line-height: 1.2;
+}
+
+/* Visually-hidden text for icon links (was Tailwind's sr-only utility). */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
 }
 
 ::selection {

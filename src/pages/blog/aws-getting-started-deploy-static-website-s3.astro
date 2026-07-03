@@ -31,7 +31,7 @@ const snippet2 = `<!DOCTYPE html>
 </html>`
 ---
 
-<ArticleLayout id={16}>
+<ArticleLayout>
     <ol>
       <a href="/blog/aws-getting-started-deploy-static-website-s3"><li>Deploying a Static Website to S3</li></a>
       <a href="/blog/aws-getting-started-cloudfront-and-domain"><li>Distribute an S3 Bucket with CloudFront and add a Domain</li></a>
@@ -49,16 +49,16 @@ const snippet2 = `<!DOCTYPE html>
       For that go to <a href="https://aws.amazon.com/" target="_blank" rel="noopener noreferrer">https://aws.amazon.com/</a>.
     </p>
 
-    <img src="/blog/aws1/aws1-login.jpg" alt="aws wesbite login top-right" />
+    <img src="/blog/aws1/aws1-login.jpg" alt="aws wesbite login top-right" width="1600" height="887" />
 
     <p>
       Afterward, go to the Management Console if you're not already there. <br />
       Select S3 from the services menu in the top left.
     </p>
 
-    <img src="/blog/aws1/aws2-management-console.jpg" alt="aws where to find the management console" />
+    <img src="/blog/aws1/aws2-management-console.jpg" alt="aws where to find the management console" width="1600" height="318" />
 
-    <img src="/blog/aws1/aws3-s3-service.jpg" alt="aws s3 service on the top-right menu" />
+    <img src="/blog/aws1/aws3-s3-service.jpg" alt="aws s3 service on the top-right menu" width="1600" height="887" />
 
     <p>
       Now you should see the S3 bucket overview. S3 stands for "simple storage service",
@@ -68,7 +68,7 @@ const snippet2 = `<!DOCTYPE html>
       Go ahead and click <code class="ui-code">Create bucket</code>.
     </p>
 
-    <img src="/blog/aws1/aws4-s3-blank.jpg" alt="aws s3 service create bucket" />
+    <img src="/blog/aws1/aws4-s3-blank.jpg" alt="aws s3 service create bucket" width="1600" height="887" />
 
     <p>
       Now choose a name for your bucket. For the region, choose the one near you.
@@ -83,7 +83,7 @@ const snippet2 = `<!DOCTYPE html>
       So uncheck the box for "Block all public access" and remove the checks, which are not related to the ACLs.
     </p>
 
-    <img src="/blog/aws1/aws5-s3-create.jpg" alt="aws s3 options for creating a bucket" />
+    <img src="/blog/aws1/aws5-s3-create.jpg" alt="aws s3 options for creating a bucket" width="1600" height="1823" />
 
     <p>
       Click <code class="ui-code">Create Bucket</code>. Afterward, you'll see an overview of all your buckets.
@@ -97,7 +97,7 @@ const snippet2 = `<!DOCTYPE html>
       language="javascript"
       value={snippet1}
     />
-    <img src="/blog/aws1/aws6-bucket-policy.jpg" alt="aws s3 bucket policy" />
+    <img src="/blog/aws1/aws6-bucket-policy.jpg" alt="aws s3 bucket policy" width="1600" height="887" />
 
     <p>
       This will allow public access to your bucket.
@@ -112,7 +112,7 @@ const snippet2 = `<!DOCTYPE html>
       You can also specify below, which page will be shown when errors occur.
     </p>
 
-    <img src="/blog/aws1/aws7-bucket-website.jpg" alt="aws s3 bucket enable website" />
+    <img src="/blog/aws1/aws7-bucket-website.jpg" alt="aws s3 bucket enable website" width="1600" height="887" />
 
     <p>
       If you now click on the endpoint of your bucket, you'll see a <code class="ui-code">404 Not Found</code> error.
@@ -132,14 +132,14 @@ const snippet2 = `<!DOCTYPE html>
       So let's go back to the "Overview" Tab and click "Upload".
     </p>
 
-    <img src="/blog/aws1/aws8-bucket-overview-upload.jpg" alt="aws s3 upload file to bucket" />
+    <img src="/blog/aws1/aws8-bucket-overview-upload.jpg" alt="aws s3 upload file to bucket" width="1600" height="887" />
 
     <p>
       Select your file and click upload on the bottom left.<br/>
       There is no need to change the permissions and properties for this file, as the defaults are fine.
     </p>
 
-    <img src="/blog/aws1/aws9-upload.jpg" alt="aws s3 upload settings" />
+    <img src="/blog/aws1/aws9-upload.jpg" alt="aws s3 upload settings" width="1600" height="887" />
 
     <p>
       Now you should be able to see the content of your <code class="ui-code">index.html</code> when you open
@@ -150,7 +150,7 @@ const snippet2 = `<!DOCTYPE html>
       the overview and it will show you the "Object URL".
     </p>
 
-    <img src="/blog/aws1/aws10-url.jpg" alt="aws s3 url of uploaded index.html" />
+    <img src="/blog/aws1/aws10-url.jpg" alt="aws s3 url of uploaded index.html" width="1600" height="887" />
 
     <h2>
       Setting up IAM and Deploying to S3 from your CLI
@@ -162,14 +162,14 @@ const snippet2 = `<!DOCTYPE html>
     </p>
     <p>For that go back to your management console and go to the service IAM.</p>
 
-    <img src="/blog/aws1/aws11-services-iam.jpg" alt="aws where to find IAM" />
+    <img src="/blog/aws1/aws11-services-iam.jpg" alt="aws where to find IAM" width="1600" height="887" />
 
     <p>
       Amazon IAM (Identity and Access Management) is used to manage users and their permissions.<br />
       Click on <code class="ui-code">Users</code> in the left menu and then on <code class="ui-code">Add user</code>
     </p>
 
-    <img src="/blog/aws1/aws12-iam-user.jpg" alt="aws iam add user" />
+    <img src="/blog/aws1/aws12-iam-user.jpg" alt="aws iam add user" width="1600" height="887" />
 
     <p>
       We want to create a user, which is able to do everything - so I call it admin.
@@ -179,14 +179,14 @@ const snippet2 = `<!DOCTYPE html>
       Afterward, click <code class="ui-code">Next: Permissions</code>.
     </p>
 
-    <img src="/blog/aws1/aws13-iam-create.jpg" alt="aws iam user create settings" />
+    <img src="/blog/aws1/aws13-iam-create.jpg" alt="aws iam user create settings" width="1600" height="887" />
 
     <p>
       As a next step, we need to grant that user the required permissions.<br/>
       So go to <code class="ui-code">Attach existing policies directly</code> and select <code class="ui-code">AdministratorAccess</code>.
     </p>
 
-    <img src="/blog/aws1/aws14-permissions.jpg" alt="aws set permissions for IAM user" />
+    <img src="/blog/aws1/aws14-permissions.jpg" alt="aws set permissions for IAM user" width="1600" height="887" />
 
     <p>
       You can skip the next tag of setting tags and straight create the user.
@@ -196,7 +196,7 @@ const snippet2 = `<!DOCTYPE html>
       Note them somewhere or keep this page open.
     </p>
 
-    <img src="/blog/aws1/aws15-keys.jpg" alt="aws find keys for new user" />
+    <img src="/blog/aws1/aws15-keys.jpg" alt="aws find keys for new user" width="1600" height="887" />
 
     <p>
       To deploy via CLI you need to install the aws-shell. Go to their repository and follow the installment instructions:<br/>

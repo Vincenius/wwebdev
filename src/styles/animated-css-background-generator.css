@@ -66,31 +66,34 @@
     margin-bottom: 20px;
 }
 
-.acbg-copied {
-    display: inline-block;
-    padding: 4px;
-    margin-right: 5px;
-    background: rgba(0, 0, 0, 0.8);
-    color: rgba(255, 255, 255, 0.6);
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.acbg-copied.acbg-visible {
-    opacity: 1;
-}
-
 .acbg-nav {
     margin-bottom: 20px;
     display: flex;
     justify-content: space-between;
 }
-.acbg-nav a {
+/* Demo switchers are <button class="ui-unbutton"> now (were bare <a>);
+   `.acbg-nav button` outranks the .ui-unbutton reset. */
+.acbg-nav a,
+.acbg-nav button {
     color: #fff;
     cursor: pointer;
     text-decoration: none;
 }
 .acbg-nav a.active,
-.acbg-nav a:hover {
+.acbg-nav a:hover,
+.acbg-nav button.active,
+.acbg-nav button:hover {
     text-decoration: underline;
+}
+
+/* hide/show accordion toggles — were <a href="#">; keep the global content-link
+   look now that they are <button class="ui-unbutton acbg-toggle">. */
+.acbg-header .acbg-toggle {
+    color: var(--color-accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.12s ease;
+}
+.acbg-header .acbg-toggle:hover {
+    color: var(--color-accent-hover);
 }

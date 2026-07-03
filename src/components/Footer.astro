@@ -1,12 +1,13 @@
 ---
 // Ported from legacy-next/components/Footer. Static (no JS).
 import SocialBar from './SocialBar.astro'
+import Icon from './Icon.astro'
 
 const year = new Date().getFullYear()
 ---
 
 <footer class="footer">
-    <div class="footer-content">
+    <div class="footer-content ui-max">
         <div class="left-footer">
             <img class="footer-logo" src="/logo-text.png" alt="wweb.dev logo" />
             <div class="social-container">
@@ -14,10 +15,7 @@ const year = new Date().getFullYear()
                     <li>
                         <a href="mailto:info@wweb.dev">
                             <span class="sr-only">E-Mail</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                ><path
-                                    d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"
-                                ></path></svg>
+                            <Icon name="mail" />
                         </a>
                     </li>
                 </SocialBar>
@@ -39,7 +37,10 @@ const year = new Date().getFullYear()
                 <li><a href="/about">About</a></li>
                 <li><a href="/privacy">Privacy Policy</a></li>
                 <a href="https://www.co2neutralwebsite.com/certificate/7187/en" target="_blank">
-                    <img src="//www.co2neutralwebsite.com/icons/logo/inverse_en.svg" alt="CO2 neutral website" />
+                    <img
+                        src="//www.co2neutralwebsite.com/icons/logo/inverse_en.svg"
+                        alt="CO2 neutral website"
+                    />
                 </a>
             </ul>
         </div>
@@ -55,8 +56,8 @@ const year = new Date().getFullYear()
         font-size: 15px;
         line-height: 20px;
         letter-spacing: 0px;
-        background: #2c3e50;
-        color: #d5d8dc;
+        background: var(--color-dark-grey);
+        color: var(--color-light-grey);
         margin-top: 50px;
         padding: 30px 0;
     }
@@ -70,8 +71,9 @@ const year = new Date().getFullYear()
         display: block;
         height: 50px;
         background-size: 50px 100%;
-        background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%),
-            linear-gradient(225deg, #2c3e50 25%, transparent 25%);
+        background-image:
+            linear-gradient(135deg, var(--color-dark-grey) 25%, transparent 25%),
+            linear-gradient(225deg, var(--color-dark-grey) 25%, transparent 25%);
         background-position: 0 0;
     }
     .footer::before {
@@ -82,7 +84,7 @@ const year = new Date().getFullYear()
         top: 100%;
     }
     .footer h2 {
-        color: #d5d8dc;
+        color: var(--color-light-grey);
         margin-top: 0;
     }
 
@@ -118,7 +120,7 @@ const year = new Date().getFullYear()
         font-size: 15px;
         line-height: 20px;
         letter-spacing: 0px;
-        color: #d5d8dc;
+        color: var(--color-light-grey);
         margin-top: 12px;
         text-align: center;
     }
@@ -186,7 +188,7 @@ const year = new Date().getFullYear()
     }
     .footer-links a {
         text-decoration: none;
-        color: #d5d8dc;
+        color: var(--color-light-grey);
     }
     .footer-links a:hover {
         text-decoration: underline;

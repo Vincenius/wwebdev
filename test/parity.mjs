@@ -32,7 +32,7 @@ const TOOL_ROUTES = new Set([
     '/resources/js-object-functions-cheatsheet',
 ])
 
-const slug = path => (path === '/' ? 'index' : path.replace(/^\//, '').replaceAll('/', '__'))
+const slug = (path) => (path === '/' ? 'index' : path.replace(/^\//, '').replaceAll('/', '__'))
 
 async function loadBaseline() {
     const idx = JSON.parse(await readFile(join(HERE, 'baseline', 'index.json'), 'utf8'))
@@ -45,16 +45,19 @@ async function baselineHtml(path) {
 
 /** Symmetric word-multiset difference ratio (0 = identical). */
 function textDiffRatio(a, b) {
-    const count = s => {
+    const count = (s) => {
         const m = new Map()
         for (const w of s.split(' ').filter(Boolean)) m.set(w, (m.get(w) ?? 0) + 1)
         return m
     }
-    const ma = count(a), mb = count(b)
+    const ma = count(a),
+        mb = count(b)
     const keys = new Set([...ma.keys(), ...mb.keys()])
-    let diff = 0, total = 0
+    let diff = 0,
+        total = 0
     for (const k of keys) {
-        const x = ma.get(k) ?? 0, y = mb.get(k) ?? 0
+        const x = ma.get(k) ?? 0,
+            y = mb.get(k) ?? 0
         diff += Math.abs(x - y)
         total += Math.max(x, y)
     }
@@ -67,7 +70,8 @@ function diffHead(base, got) {
         if (b && typeof b === 'object' && !Array.isArray(b)) {
             for (const k of Object.keys(b)) walk(b[k], g?.[k], path ? `${path}.${k}` : k)
         } else {
-            const bs = JSON.stringify(b), gs = JSON.stringify(g)
+            const bs = JSON.stringify(b),
+                gs = JSON.stringify(g)
             if (bs !== gs) problems.push(`${path}: baseline ${bs} != target ${gs}`)
         }
     }
@@ -80,8 +84,8 @@ async function run() {
     const failures = []
 
     // Optional subset filter for incremental batch verification: ONLY=/a,/b
-    const only = process.env.ONLY ? process.env.ONLY.split(',').map(s => s.trim()) : null
-    const surviving = only ? routes.surviving.filter(p => only.includes(p)) : routes.surviving
+    const only = process.env.ONLY ? process.env.ONLY.split(',').map((s) => s.trim()) : null
+    const surviving = only ? routes.surviving.filter((p) => only.includes(p)) : routes.surviving
 
     // T-01 / T-04 + text: surviving routes
     for (const path of surviving) {
@@ -116,9 +120,13 @@ async function run() {
         }
 
         // T-03: no surviving page may link to the removed library feature.
-        const dead = extractInternalLinks(html).filter(h => h === '/library' || h.startsWith('/library/'))
+        const dead = extractInternalLinks(html).filter(
+            (h) => h === '/library' || h.startsWith('/library/'),
+        )
         if (dead.length) {
-            failures.push(`[dead-link] ${path} — links to removed routes: ${[...new Set(dead)].join(', ')}`)
+            failures.push(
+                `[dead-link] ${path} — links to removed routes: ${[...new Set(dead)].join(', ')}`,
+            )
         }
     }
 
@@ -142,7 +150,9 @@ async function run() {
         process.exit(1)
     }
     const removedChecked = only ? 0 : routes.removed.length
-    console.log(`\n✓ Route parity passed: ${surviving.length} surviving${only ? ' (filtered)' : ''}, ${removedChecked} removed.`)
+    console.log(
+        `\n✓ Route parity passed: ${surviving.length} surviving${only ? ' (filtered)' : ''}, ${removedChecked} removed.`,
+    )
 }
 
 run()

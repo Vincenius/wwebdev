@@ -6,6 +6,7 @@
 // ./navigationGenerator/{generator,cssGenerator}.ts and stay byte-identical to
 // the legacy output.
 import { useEffect, useMemo, useRef, useState } from 'react'
+import CopyButton from '../react/CopyButton'
 import '../../styles/navigation-generator.css'
 import { htmlGenerator } from './navigationGenerator/generator'
 import type { MenuItems } from './navigationGenerator/generator'
@@ -42,49 +43,21 @@ const stylingOptions: MenuStyle = {
 }
 
 const ExpandIcon = () => (
-    <svg className="ng-expand-icon" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <svg
+        className="ng-expand-icon"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true"
+    >
         <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" fill="currentColor" />
     </svg>
 )
 
-// Reproduces the old copyToClipboard util (legacy-next/utils/copyToClipboard.js)
-// but preferring the async Clipboard API, guarded for SSR safety.
-const copyToClipboard = (str: string) => {
-    if (typeof navigator !== 'undefined' && navigator.clipboard) {
-        navigator.clipboard.writeText(str)
-        return
-    }
-    if (typeof document === 'undefined') return
-    const el = document.createElement('textarea')
-    el.value = str
-    el.setAttribute('readonly', '')
-    el.style.position = 'absolute'
-    el.style.left = '-9999px'
-    document.body.appendChild(el)
-    const selection = document.getSelection()
-    const selected = selection && selection.rangeCount > 0 ? selection.getRangeAt(0) : false
-    el.select()
-    document.execCommand('copy')
-    document.body.removeChild(el)
-    if (selected && selection) {
-        selection.removeAllRanges()
-        selection.addRange(selected)
-    }
-}
-
 export default function NavigationGenerator() {
     const [menuItems, setMenuItems] = useState<MenuItems>(defaultMenu)
     const [menuStyle, setMenuStyle] = useState<MenuStyle>(stylingOptions)
-    const [htmlCode, setHtmlCode] = useState<string>(htmlGenerator(menuItems))
-    const [cssCode, setCssCode] = useState<string>(
-        generateNavigationCss({
-            ...menuStyle,
-            useLogo: menuItems.logo.isUsed,
-        })
-    )
-    const [copySuccessOpen, setCopySuccessOpen] = useState(false)
-    const [copyCSSSuccessOpen, setCopyCSSSuccessOpen] = useState(false)
-
     // Width-aware live preview: react-sizeme measured the preview width so the
     // demo could render only the relevant (mobile/desktop) branch. A
     // ResizeObserver reproduces that behaviour SSR-safely.
@@ -103,18 +76,12 @@ export default function NavigationGenerator() {
         return () => observer.disconnect()
     }, [])
 
-    useEffect(() => {
-        const newHtmlCode = htmlGenerator(menuItems)
-        setHtmlCode(newHtmlCode)
-    }, [menuItems])
-
-    useEffect(() => {
-        const newCssCode = generateNavigationCss({
-            ...menuStyle,
-            useLogo: menuItems.logo.isUsed,
-        })
-        setCssCode(newCssCode)
-    }, [menuStyle, menuItems])
+    // Generated code is derived state — computed directly, no effect round-trip.
+    const htmlCode = useMemo(() => htmlGenerator(menuItems), [menuItems])
+    const cssCode = useMemo(
+        () => generateNavigationCss({ ...menuStyle, useLogo: menuItems.logo.isUsed }),
+        [menuStyle, menuItems],
+    )
 
     // CSS for the live preview only — uses the measured width so the correct
     // responsive branch is applied inline (as the legacy styled.div did).
@@ -125,7 +92,7 @@ export default function NavigationGenerator() {
                 width: previewWidth,
                 useLogo: menuItems.logo.isUsed,
             }),
-        [menuStyle, menuItems, previewWidth]
+        [menuStyle, menuItems, previewWidth],
     )
 
     return (
@@ -177,22 +144,12 @@ export default function NavigationGenerator() {
                 <summary className="ng-accordion-summary ng-button-summary">
                     <span className="ng-summary-left">
                         HTML
-                        <button
-                            type="button"
+                        <CopyButton
+                            text={htmlCode}
+                            label="Copy Code"
+                            copiedLabel="copied"
                             className="ng-button ng-copy-button"
-                            onClick={(e) => {
-                                e.stopPropagation()
-                                e.preventDefault()
-                                copyToClipboard(htmlCode)
-                                setCopySuccessOpen(true)
-                                setTimeout(() => {
-                                    setCopySuccessOpen(false)
-                                }, 2000)
-                            }}
-                            onFocus={(event) => event.stopPropagation()}
-                        >
-                            <span className={`ng-copy-code${copySuccessOpen ? ' copied' : ''}`}>Copy Code</span>
-                        </button>
+                        />
                     </span>
                     <ExpandIcon />
                 </summary>
@@ -206,22 +163,12 @@ export default function NavigationGenerator() {
                 <summary className="ng-accordion-summary ng-button-summary">
                     <span className="ng-summary-left">
                         CSS
-                        <button
-                            type="button"
+                        <CopyButton
+                            text={cssCode}
+                            label="Copy Code"
+                            copiedLabel="copied"
                             className="ng-button ng-copy-button"
-                            onClick={(e) => {
-                                e.stopPropagation()
-                                e.preventDefault()
-                                copyToClipboard(cssCode)
-                                setCopyCSSSuccessOpen(true)
-                                setTimeout(() => {
-                                    setCopyCSSSuccessOpen(false)
-                                }, 2000)
-                            }}
-                            onFocus={(event) => event.stopPropagation()}
-                        >
-                            <span className={`ng-copy-code${copyCSSSuccessOpen ? ' copied' : ''}`}>Copy Code</span>
-                        </button>
+                        />
                     </span>
                     <ExpandIcon />
                 </summary>

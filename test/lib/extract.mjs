@@ -15,7 +15,7 @@ export function extractHead(html) {
 
     const jsonLd = head
         .querySelectorAll('script[type="application/ld+json"]')
-        .map(s => normalizeJson(s.textContent))
+        .map((s) => normalizeJson(s.textContent))
 
     return {
         title: head.querySelector('title')?.textContent?.trim() ?? null,
@@ -55,7 +55,9 @@ function sortKeys(value) {
     if (Array.isArray(value)) return value.map(sortKeys)
     if (value && typeof value === 'object') {
         return Object.fromEntries(
-            Object.keys(value).sort().map(k => [k, sortKeys(value[k])]),
+            Object.keys(value)
+                .sort()
+                .map((k) => [k, sortKeys(value[k])]),
         )
     }
     return value
@@ -68,7 +70,7 @@ function sortKeys(value) {
  * comparing full-body text would false-fail every route. Chrome parity is covered
  * separately by link-resolution checks (T-07). Falls back to <body> if no <main>.
  */
-const decodeEntities = s =>
+const decodeEntities = (s) =>
     s
         .replace(/&nbsp;/g, ' ')
         .replace(/&amp;/g, '&')
@@ -82,16 +84,17 @@ const decodeEntities = s =>
 
 export function extractText(html) {
     const root = parse(html)
-    const scope =
-        root.querySelector('main') ?? root.querySelector('body') ?? root
+    const scope = root.querySelector('main') ?? root.querySelector('body') ?? root
     // Drop chrome + non-content so the intended "Library" nav-link removal (and
     // other header/footer chrome) never registers as a content diff — matters for
     // the few pages that have no <main> (e.g. the full-screen demo pages).
     // Also drop the sidebar/ad regions: the production ad rotates between
     // affiliates (StatusScout / HTMLrev / …) so it is non-deterministic content.
     scope
-        .querySelectorAll('nav, header, footer, aside, script, style, noscript, #carbon, #carbonads')
-        .forEach(n => n.remove())
+        .querySelectorAll(
+            'nav, header, footer, aside, script, style, noscript, #carbon, #carbonads',
+        )
+        .forEach((n) => n.remove())
     // Turn BLOCK-level tag boundaries into whitespace but drop INLINE tags with
     // no separator. Rationale:
     //  • block boundaries → space: adjacent elements (LinkBoxes, <p>s) don't glue
@@ -102,13 +105,13 @@ export function extractText(html) {
     // Applied identically to both baseline and target.
     const BLOCK =
         /<\/?(?:div|p|section|article|header|footer|main|aside|nav|ul|ol|li|h[1-6]|br|hr|table|thead|tbody|tr|td|th|pre|blockquote|figure|figcaption|dl|dt|dd|form|fieldset|details|summary)\b[^>]*>/gi
-    return decodeEntities(
-        scope.innerHTML.replace(BLOCK, ' ').replace(/<[^>]+>/g, ''),
+    return (
+        decodeEntities(scope.innerHTML.replace(BLOCK, ' ').replace(/<[^>]+>/g, ''))
+            // strip zero-width / invisible chars (e.g. MUI fieldset legends emit U+200B)
+            .replace(/[​-‍﻿]/g, '')
+            .replace(/\s+/g, ' ')
+            .trim()
     )
-        // strip zero-width / invisible chars (e.g. MUI fieldset legends emit U+200B)
-        .replace(/[​-‍﻿]/g, '')
-        .replace(/\s+/g, ' ')
-        .trim()
 }
 
 /** All internal (same-site / relative) link hrefs on the page — for T-03 / T-07. */
@@ -116,8 +119,8 @@ export function extractInternalLinks(html, origin = 'https://wweb.dev') {
     const root = parse(html)
     return root
         .querySelectorAll('a[href]')
-        .map(a => a.getAttribute('href'))
+        .map((a) => a.getAttribute('href'))
         .filter(Boolean)
-        .map(h => (h.startsWith(origin) ? h.slice(origin.length) || '/' : h))
-        .filter(h => h.startsWith('/'))
+        .map((h) => (h.startsWith(origin) ? h.slice(origin.length) || '/' : h))
+        .filter((h) => h.startsWith('/'))
 }

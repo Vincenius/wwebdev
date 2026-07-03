@@ -107,11 +107,11 @@ ${addBgClass ? '.background ' : ''}li:nth-child(${i}) {
     animation-delay: ${i * 2}s;
     left: ${randomLeft}vw;
     top: ${randomTop}vh;${
-            lighten
-                ? `
+        lighten
+            ? `
     border-color: ${shadeColor(bgColor, 10)};`
-                : ''
-        }
+            : ''
+    }
 }
 `
     }

@@ -1,6 +1,9 @@
 ---
 // Ported from legacy-next/components/ArticlePreview. Static (the upstream
 // useState was unused). next/image → plain lazy <img> on pre-optimized assets.
+import Icon from './Icon.astro'
+import { formatDisplayDate, toISODateTime } from '../lib/dates'
+
 interface Props {
     date: string
     link: string
@@ -14,35 +17,46 @@ interface Props {
 const { date, link, headline, description, type, previewImage, updatedAt } = Astro.props
 
 const lastDate = updatedAt || date
-const d = new Date(lastDate)
 const isResource = type === 'Resource'
 const isTemplate = type === 'Template'
 const readMore = isResource ? 'Open Resource ' : isTemplate ? 'Open Template' : 'Read more '
 ---
 
 <article class="ap-container">
-    {previewImage && (
-        <a href={link}>
-            <img class="ap-preview" src={previewImage} alt={headline} width="300" height="170" loading="lazy" />
-        </a>
-    )}
+    {
+        previewImage && (
+            <a class="ap-preview-link" href={link}>
+                <img
+                    class="ap-preview"
+                    src={previewImage}
+                    alt={headline}
+                    width="300"
+                    height="170"
+                    loading="lazy"
+                />
+            </a>
+        )
+    }
     <div>
         <header>
-            {type && (
-                <span class:list={['ap-type', { highlight: isResource || isTemplate }]}>
-                    <b>{type}</b> -&nbsp;
-                </span>
-            )}
+            {
+                type && (
+                    <span class:list={['ap-type', { highlight: isResource || isTemplate }]}>
+                        <b>{type}</b> -&nbsp;
+                    </span>
+                )
+            }
             {updatedAt && <span class="ap-updated">Updated: </span>}
-            <time class="ap-time" datetime={d.toISOString()}>{lastDate}</time>
+            <time class="ap-time" datetime={toISODateTime(lastDate)}
+                >{formatDisplayDate(lastDate)}</time
+            >
             <h2 class="ap-headline"><a href={link}>{headline}</a></h2>
         </header>
         <p>{description}</p>
         <a href={link}>
             <span class="ap-readmore">
                 {readMore}
-                <svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                    ><path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z"></path></svg>
+                <Icon name="arrow" size={32} />
             </span>
         </a>
     </div>
@@ -50,7 +64,7 @@ const readMore = isResource ? 'Open Resource ' : isTemplate ? 'Open Template' : 
 
 <style>
     .ap-container {
-        border-bottom: 1px solid #d5d8dc;
+        border-bottom: 1px solid var(--color-light-grey);
         margin-bottom: 3.2rem;
         padding-bottom: 3.2rem;
         display: flex;
@@ -62,7 +76,11 @@ const readMore = isResource ? 'Open Resource ' : isTemplate ? 'Open Template' : 
         }
     }
 
+    .ap-preview-link {
+        flex-shrink: 0;
+    }
     .ap-preview {
+        display: block;
         width: 300px;
         height: 170px;
         object-fit: cover;
@@ -88,14 +106,14 @@ const readMore = isResource ? 'Open Resource ' : isTemplate ? 'Open Template' : 
     }
 
     .ap-updated {
-        color: #5b6f82;
+        color: var(--color-grey-blue);
         font-size: 0.82397rem;
         line-height: 1.86667rem;
         margin-bottom: 8px;
         font-style: italic;
     }
     .ap-time {
-        color: #5b6f82;
+        color: var(--color-grey-blue);
         font-size: 0.82397rem;
         line-height: 1.86667rem;
         margin-bottom: 8px;

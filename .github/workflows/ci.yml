@@ -1,0 +1,38 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Enable Corepack (Yarn 4)
+        run: corepack enable
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: yarn
+
+      - name: Install
+        run: yarn install --immutable
+
+      - name: Lint
+        run: yarn lint
+
+      - name: Typecheck (astro check)
+        run: yarn check
+
+      - name: Build
+        run: yarn build
+
+      - name: Route parity vs baseline
+        run: |
+          yarn serve &
+          for i in $(seq 1 30); do curl -sf http://localhost:4321/ >/dev/null && break; sleep 1; done
+          yarn test:parity

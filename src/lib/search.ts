@@ -1,5 +1,5 @@
-// Client-side search over local article/resource data (runs in the Search island).
-import posts from '../data/posts'
+// Client-side search over all local content (runs in the Search island).
+import { allItems } from './content'
 
 export interface SearchResult {
     headline: string
@@ -11,8 +11,7 @@ export interface SearchResult {
 export default function search(query: string): SearchResult[] {
     const q = query.toLowerCase().trim()
     if (!q) return []
-    return posts.filter(
-        (p) =>
-            p.headline.toLowerCase().includes(q) || p.description.toLowerCase().includes(q),
+    return allItems.filter(
+        (p) => p.headline.toLowerCase().includes(q) || p.description.toLowerCase().includes(q),
     )
 }

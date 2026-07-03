@@ -2,23 +2,12 @@
 // legacy-next/components/AnimatedCssBackgroundGenerator/Controls.js
 // styled-components → plain-CSS classes (acbg-*, see
 // src/styles/animated-css-background-generator.css).
-// @mui/icons-material/FileCopy → inline SVG.
-// Copy uses navigator.clipboard in the handler (guarded), replacing the old
-// textarea.select() + document.execCommand('copy').
-import { useRef, useState } from 'react'
+// @mui/icons-material/FileCopy → shared <CopyButton> (components/react), which
+// copies via navigator.clipboard (with execCommand fallback). The demo links
+// and hide/show toggles are real <button>s (ui-unbutton) for keyboard access.
+import { useState } from 'react'
 import type { ReactNode } from 'react'
-
-const FileCopyIcon = ({ onClick }: { onClick: () => void }) => (
-    <svg
-        onClick={onClick}
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        aria-hidden="true"
-        style={{ fontSize: '18px', width: '18px', height: '18px', cursor: 'pointer' }}
-    >
-        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
-    </svg>
-)
+import CopyButton from '../../react/CopyButton'
 
 interface ControlsProps {
     children?: ReactNode
@@ -41,64 +30,44 @@ export default function Controls({
 }: ControlsProps) {
     const [showControl, toggleControl] = useState(true)
     const [showCode, toggleCode] = useState(false)
-    const [copiedCode, showCopied] = useState('')
-
-    const htmlTextArea = useRef<HTMLTextAreaElement>(null)
-    const cssTextArea = useRef<HTMLTextAreaElement>(null)
-
-    const copyToClipboard = (
-        textArea: React.RefObject<HTMLTextAreaElement | null>,
-        areaName: string,
-    ) => {
-        const el = textArea.current
-        if (el) {
-            el.select()
-            if (typeof navigator !== 'undefined' && navigator.clipboard) {
-                navigator.clipboard.writeText(el.value)
-            }
-        }
-        showCopied(areaName)
-
-        setTimeout(() => {
-            showCopied('')
-        }, 2000)
-    }
 
     return (
         <div>
             <div className="acbg-container">
                 <div className="acbg-nav">
-                    <a
+                    <button
+                        type="button"
                         onClick={() => changeBg(0)}
-                        className={activeBg === 0 ? 'active' : ''}
+                        className={`ui-unbutton${activeBg === 0 ? ' active' : ''}`}
                     >
                         Demo 1
-                    </a>
-                    <a
+                    </button>
+                    <button
+                        type="button"
                         onClick={() => changeBg(1)}
-                        className={activeBg === 1 ? 'active' : ''}
+                        className={`ui-unbutton${activeBg === 1 ? ' active' : ''}`}
                     >
                         Demo 2
-                    </a>
-                    <a
+                    </button>
+                    <button
+                        type="button"
                         onClick={() => changeBg(2)}
-                        className={activeBg === 2 ? 'active' : ''}
+                        className={`ui-unbutton${activeBg === 2 ? ' active' : ''}`}
                     >
                         Demo 3
-                    </a>
+                    </button>
                 </div>
                 <header className={`acbg-header${!showControl ? ' acbg-no-margin' : ''}`}>
                     <h3>Controls</h3>
-                    <a
-                        onClick={(e) => {
-                            e.preventDefault()
-                            toggleControl(!showControl)
-                        }}
-                        href="#"
+                    <button
+                        type="button"
+                        className="ui-unbutton acbg-toggle"
+                        aria-expanded={showControl}
+                        onClick={() => toggleControl(!showControl)}
                     >
                         {showControl && 'hide'}
                         {!showControl && 'show'}
-                    </a>
+                    </button>
                 </header>
 
                 {showControl && children}
@@ -114,64 +83,47 @@ export default function Controls({
             <div className="acbg-container">
                 <header className={`acbg-header${!showCode ? ' acbg-no-margin' : ''}`}>
                     <h3>Code</h3>
-                    <a
-                        onClick={(e) => {
-                            e.preventDefault()
-                            toggleCode(!showCode)
-                        }}
-                        href="#"
+                    <button
+                        type="button"
+                        className="ui-unbutton acbg-toggle"
+                        aria-expanded={showCode}
+                        onClick={() => toggleCode(!showCode)}
                     >
                         {showCode && 'hide'}
                         {!showCode && 'show'}
-                    </a>
+                    </button>
                 </header>
 
                 {showCode && (
                     <div>
                         <header className="acbg-header acbg-no-margin">
                             <span>HTML</span>
-                            <div>
-                                <span
-                                    className={`acbg-copied${
-                                        copiedCode === 'html' ? ' acbg-visible' : ''
-                                    }`}
-                                >
-                                    copied
-                                </span>
-                                <FileCopyIcon
-                                    onClick={() => copyToClipboard(htmlTextArea, 'html')}
-                                />
-                            </div>
+                            <CopyButton
+                                text={htmlCode}
+                                label=""
+                                copiedLabel="copied"
+                                iconSize={18}
+                                ariaLabel="Copy HTML"
+                            />
                         </header>
 
                         <textarea
                             className="acbg-code-area acbg-margin-bottom"
                             value={htmlCode}
                             readOnly
-                            ref={htmlTextArea}
                         />
 
                         <header className="acbg-header acbg-no-margin">
                             <span>CSS</span>
-                            <div>
-                                <span
-                                    className={`acbg-copied${
-                                        copiedCode === 'css' ? ' acbg-visible' : ''
-                                    }`}
-                                >
-                                    copied
-                                </span>
-                                <FileCopyIcon
-                                    onClick={() => copyToClipboard(cssTextArea, 'css')}
-                                />
-                            </div>
+                            <CopyButton
+                                text={cssCode}
+                                label=""
+                                copiedLabel="copied"
+                                iconSize={18}
+                                ariaLabel="Copy CSS"
+                            />
                         </header>
-                        <textarea
-                            className="acbg-code-area"
-                            value={cssCode}
-                            readOnly
-                            ref={cssTextArea}
-                        />
+                        <textarea className="acbg-code-area" value={cssCode} readOnly />
                     </div>
                 )}
             </div>

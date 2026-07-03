@@ -3,7 +3,6 @@
 import '@fontsource/lato/300.css'
 import '@fontsource/lato/400.css'
 import '@fontsource/lato/700.css'
-import '@fontsource/lato/900.css'
 import '../styles/global.css'
 import '../styles/ads.css'
 import '../styles/ui.css'
@@ -14,6 +13,7 @@ import Head from './Head.astro'
 import Nav from '../components/Nav.astro'
 import Header from '../components/Header.astro'
 import Footer from '../components/Footer.astro'
+import { formatDisplayDate } from '../lib/dates'
 import type { LayoutProps } from './layoutProps'
 
 type Props = LayoutProps
@@ -28,6 +28,7 @@ const {
     description,
     titleNameFirst,
     updatedAt,
+    noindex,
 } = Astro.props
 
 const d = date ? new Date(date) : undefined
@@ -46,27 +47,35 @@ const ud = updatedAt ? new Date(updatedAt) : undefined
             updatedDate={ud}
             isArticle={isArticle}
             titleNameFirst={titleNameFirst}
+            noindex={noindex}
         />
     </head>
     <body>
         <div class="layout-container">
             <Nav title={title} isArticle={isArticle} />
 
-            {isArticle && !hideHeader && (
-                <Header>
-                    <h1>{title}</h1>
-                    {d && (
-                        <p class="s-date">
-                            <time class="s-time" datetime={d.toISOString()}>{date}</time>
-                        </p>
-                    )}
-                    {updatedAt && ud && (
-                        <p class="s-date s-updated">
-                            Updated: <time class="s-time" datetime={ud.toISOString()}>{updatedAt}</time>
-                        </p>
-                    )}
-                </Header>
-            )}
+            {
+                isArticle && !hideHeader && (
+                    <Header>
+                        <h1>{title}</h1>
+                        {d && date && (
+                            <p class="s-date">
+                                <time class="s-time" datetime={d.toISOString()}>
+                                    {formatDisplayDate(date)}
+                                </time>
+                            </p>
+                        )}
+                        {updatedAt && ud && (
+                            <p class="s-date s-updated">
+                                Updated:{' '}
+                                <time class="s-time" datetime={ud.toISOString()}>
+                                    {formatDisplayDate(updatedAt)}
+                                </time>
+                            </p>
+                        )}
+                    </Header>
+                )
+            }
 
             <main>
                 <slot />
@@ -103,7 +112,7 @@ const ud = updatedAt ? new Date(updatedAt) : undefined
     }
     .s-date {
         margin-bottom: 0;
-        color: #5b6f82;
+        color: var(--color-grey-blue);
     }
     .s-updated {
         margin: 0 auto;

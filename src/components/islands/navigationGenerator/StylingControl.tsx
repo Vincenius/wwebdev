@@ -20,39 +20,46 @@ interface Props {
 
 export default function StylingControl({ menuStyle, setMenuStyle }: Props) {
     const updateStyle = (name: keyof MenuStyle, value: string | number) => {
-        const newMenuStyle = menuStyle
-        ;(newMenuStyle as any)[name] = value
-        setMenuStyle((prevStyle) => ({ ...prevStyle, ...newMenuStyle }))
+        setMenuStyle((prevStyle) => ({ ...prevStyle, [name]: value }))
     }
 
     return (
         <div className="ng-control-container">
             <div className="ng-color-pickers">
                 <div>
-                    <label className="ng-legend">Primary</label>
+                    <label className="ng-legend" htmlFor="ng-primaryColor">
+                        Primary
+                    </label>
                     <input
                         type="color"
                         className="ng-color-input"
+                        id="ng-primaryColor"
                         value={menuStyle.primaryColor}
                         onChange={(e) => updateStyle('primaryColor', e.target.value)}
                     />
                 </div>
 
                 <div>
-                    <label className="ng-legend">Secondary</label>
+                    <label className="ng-legend" htmlFor="ng-secondaryColor">
+                        Secondary
+                    </label>
                     <input
                         type="color"
                         className="ng-color-input"
+                        id="ng-secondaryColor"
                         value={menuStyle.secondaryColor}
                         onChange={(e) => updateStyle('secondaryColor', e.target.value)}
                     />
                 </div>
 
                 <div>
-                    <label className="ng-legend">Hover</label>
+                    <label className="ng-legend" htmlFor="ng-hoverColor">
+                        Hover
+                    </label>
                     <input
                         type="color"
                         className="ng-color-input"
+                        id="ng-hoverColor"
                         value={menuStyle.hoverColor}
                         onChange={(e) => updateStyle('hoverColor', e.target.value)}
                     />
@@ -60,12 +67,8 @@ export default function StylingControl({ menuStyle, setMenuStyle }: Props) {
             </div>
 
             <fieldset className="ng-fieldset">
-                <label className="ng-legend">Burger Menu Position</label>
-                <div
-                    className="ng-radio-group"
-                    role="radiogroup"
-                    aria-label="Burger Menu Position"
-                >
+                <span className="ng-legend">Burger Menu Position</span>
+                <div className="ng-radio-group" role="radiogroup" aria-label="Burger Menu Position">
                     <label className="ng-radio-label">
                         <input
                             type="radio"
@@ -93,11 +96,13 @@ export default function StylingControl({ menuStyle, setMenuStyle }: Props) {
             <br />
             <br />
 
-            <label className="ng-legend">Burger Menu Breakpoint</label>
+            <label className="ng-legend" htmlFor="ng-breakpoint">
+                Burger Menu Breakpoint
+            </label>
             <div className="ng-slider">
                 <input
                     type="range"
-                    aria-labelledby="breakpoint slider"
+                    id="ng-breakpoint"
                     min={480}
                     max={1200}
                     step={1}

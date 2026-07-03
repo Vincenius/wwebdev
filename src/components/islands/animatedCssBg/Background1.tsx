@@ -16,11 +16,7 @@ interface Props {
 export default function Background1({ changeBg, activeBg }: Props) {
     const [spanCount, setSpanCount] = useState(20)
     const [bgColor, setBgColor] = useState('#3E1E68')
-    const [circleColors, setCircleColors] = useState<string[]>([
-        '#583C87',
-        '#E45A84',
-        '#FFACAC',
-    ])
+    const [circleColors, setCircleColors] = useState<string[]>(['#583C87', '#E45A84', '#FFACAC'])
     const [size, setSize] = useState(20)
     const [speed, setSpeed] = useState(45)
 
@@ -110,7 +106,7 @@ ${spanCssRules}
                 size,
                 speed,
             }).replace(/(^|\n)span:nth-child/g, '$1.acbg-bg1-container span:nth-child'),
-        [spanCount, bgColor, circleColors, size, speed],
+        [spanCount, circleColors, size, speed],
     )
     const spanStyle = useMemo(() => spanCss({ size, speed }), [size, speed])
 
@@ -124,10 +120,10 @@ ${spanCssRules}
                 changeBg={changeBg}
                 activeBg={activeBg}
             >
-                <label>Count:</label>
+                <label htmlFor="bg1-count">Count:</label>
                 <input
                     type="range"
-                    aria-labelledby="count-slider"
+                    id="bg1-count"
                     step={1}
                     min={1}
                     max={50}
@@ -135,10 +131,10 @@ ${spanCssRules}
                     onChange={(e) => setSpanCount(Number(e.target.value))}
                 />
 
-                <label>Size:</label>
+                <label htmlFor="bg1-size">Size:</label>
                 <input
                     type="range"
-                    aria-labelledby="size-slider"
+                    id="bg1-size"
                     step={1}
                     min={1}
                     max={50}
@@ -146,10 +142,10 @@ ${spanCssRules}
                     onChange={(e) => setSize(Number(e.target.value))}
                 />
 
-                <label>Average Speed:</label>
+                <label htmlFor="bg1-speed">Average Speed:</label>
                 <input
                     type="range"
-                    aria-labelledby="speed-slider"
+                    id="bg1-speed"
                     step={1}
                     min={1}
                     max={50}
@@ -157,18 +153,27 @@ ${spanCssRules}
                     onChange={(e) => setSpeed(Number(e.target.value))}
                 />
 
-                <label>Background Color:</label>
+                <label htmlFor="bg1-bg-color">Background Color:</label>
                 <input
                     type="color"
+                    id="bg1-bg-color"
                     value={bgColor}
                     onChange={(e) => setBgColor(e.target.value)}
                 />
 
-                <label>Circle Colors:</label>
+                <span className="acbg-group-label">Circle Colors:</span>
                 {buildCircleInputs()}
                 <br />
-                {circleColors.length > 1 && <button onClick={removeColor}>-</button>}
-                {circleColors.length < 8 && <button onClick={addColor}>+</button>}
+                {circleColors.length > 1 && (
+                    <button type="button" aria-label="Remove color" onClick={removeColor}>
+                        -
+                    </button>
+                )}
+                {circleColors.length < 8 && (
+                    <button type="button" aria-label="Add color" onClick={addColor}>
+                        +
+                    </button>
+                )}
             </Controls>
             <style
                 dangerouslySetInnerHTML={{

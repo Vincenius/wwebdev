@@ -6,9 +6,9 @@ import Layout from '../../layouts/Layout.astro'
 import Ad from '../../components/Ad.astro'
 import Featured from '../../components/Featured.astro'
 import LoaderGenerator from '../../components/islands/LoaderGenerator'
-import posts from '../../data/posts'
+import { findByLink } from '../../lib/content'
 
-const postMeta = posts.find((m) => m.id === 25)!
+const postMeta = findByLink(Astro.url.pathname)
 ---
 
 <Layout
@@ -34,7 +34,13 @@ const postMeta = posts.find((m) => m.id === 25)!
                 <LoaderGenerator client:visible />
 
                 <h2 class="ui-subheadline">You might also like</h2>
-                <Featured articleIds={[5, 10, 24]} />
+                <Featured
+                    links={[
+                        '/resources/animated-css-background-generator',
+                        '/resources/css-separator-generator',
+                        '/resources/blur-background-css-generator',
+                    ]}
+                />
             </article>
             <aside class="ui-sidebar">
                 <Ad />

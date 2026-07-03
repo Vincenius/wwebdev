@@ -51,10 +51,7 @@ ${liChild}`
     // backgroundCss + liStyle + liChildStyle). Independent random draw from the
     // copyable code, as in the original.
     const containerStyle = useMemo(() => {
-        const li = liStyle({ speed, bgColor }).replace(
-            /^li /,
-            '.acbg-bg3-container li ',
-        )
+        const li = liStyle({ speed, bgColor }).replace(/^li /, '.acbg-bg3-container li ')
         const liChild = liChildStyle({ count, bgColor }).replace(
             /(^|\n)li:nth-child/g,
             '$1.acbg-bg3-container li:nth-child',
@@ -75,10 +72,10 @@ ${liChild}`
                 changeBg={changeBg}
                 activeBg={activeBg}
             >
-                <label>Count:</label>
+                <label htmlFor="bg3-count">Count:</label>
                 <input
                     type="range"
-                    aria-labelledby="count-slider"
+                    id="bg3-count"
                     step={1}
                     min={1}
                     max={40}
@@ -86,10 +83,10 @@ ${liChild}`
                     onChange={(e) => setCount(Number(e.target.value))}
                 />
 
-                <label>Speed:</label>
+                <label htmlFor="bg3-count">Speed:</label>
                 <input
                     type="range"
-                    aria-labelledby="count-slider"
+                    id="bg3-count"
                     step={1}
                     min={1}
                     max={20}
@@ -97,9 +94,10 @@ ${liChild}`
                     onChange={(e) => setSpeed(Number(e.target.value))}
                 />
 
-                <label>Background Color:</label>
+                <label htmlFor="bg3-bg-color">Background Color:</label>
                 <input
                     type="color"
+                    id="bg3-bg-color"
                     value={bgColor}
                     onChange={(e) => setBgColor(e.target.value)}
                 />

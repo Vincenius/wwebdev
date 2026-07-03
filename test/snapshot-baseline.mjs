@@ -14,7 +14,7 @@ const HERE = dirname(fileURLToPath(import.meta.url))
 const BASE = process.env.BASELINE_URL ?? 'https://wweb.dev'
 const OUT = join(HERE, 'baseline')
 
-const slug = path => (path === '/' ? 'index' : path.replace(/^\//, '').replaceAll('/', '__'))
+const slug = (path) => (path === '/' ? 'index' : path.replace(/^\//, '').replaceAll('/', '__'))
 
 async function run() {
     await mkdir(OUT, { recursive: true })

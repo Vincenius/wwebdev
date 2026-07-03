@@ -1,6 +1,23 @@
 /* Primitives ported from legacy-next/ui/index.js (styled-components) to plain
    CSS classes. Imported globally via Layout so every page can use them. */
 
+/* Shared page-width shell: the one source for the site's max-width + gutters.
+   Components (Nav, Footer, PrevNext, …) add this class instead of copying it. */
+.ui-max {
+    max-width: 1128px;
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 640px) {
+    .ui-max {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
 .ui-container {
     max-width: 1128px;
     padding-left: 24px;
@@ -37,6 +54,8 @@
 .ui-article-container img,
 .ui-article-container video {
     max-width: 100%;
+    /* keep the intrinsic ratio when width/height attributes are scaled down */
+    height: auto;
 }
 /* links inherit the global accent + underline */
 .ui-article-container h2,
@@ -183,6 +202,19 @@
         padding-left: 16px;
         padding-right: 16px;
     }
+}
+
+/* Strip native button chrome — for interactive controls styled by their own
+   classes (generator copy buttons, selectable cards). */
+.ui-unbutton {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    font: inherit;
+    color: inherit;
+    text-align: inherit;
+    cursor: pointer;
 }
 
 .ui-block-link {

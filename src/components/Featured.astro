@@ -1,30 +1,29 @@
 ---
-// Ported from legacy-next/components/Featured.
-import posts from '../data/posts'
-import templates from '../data/templates'
+// Ported from legacy-next/components/Featured. Items are picked by their link
+// (render order follows the registry, newest first — as before).
+import { allItems } from '../lib/content'
 
 interface Props {
-    articleIds?: number[]
-    templateIds?: number[]
-    resourceIds?: number[]
+    links: string[]
 }
 
-const { articleIds = [], templateIds = [], resourceIds = [] } = Astro.props
-const articles = [
-    ...posts.filter((r) => resourceIds.includes(r.id) || articleIds.includes(r.id)),
-    ...templates.filter((t) => templateIds.includes(t.id)),
-]
+const { links } = Astro.props
+const articles = allItems.filter((a) => links.includes(a.link))
 ---
 
 <div class="ft-container">
-    {articles.map((a, i) => (
-        <div class:list={['ft-article', { margin: i === 1 }]}>
-            <a href={a.link}>
-                <img class="ft-preview" src={a.previewImage} alt={a.headline} loading="lazy" />
-            </a>
-            <a href={a.link}><h3>{a.headline}</h3></a>
-        </div>
-    ))}
+    {
+        articles.map((a, i) => (
+            <div class:list={['ft-article', { margin: i === 1 }]}>
+                <a href={a.link}>
+                    <img class="ft-preview" src={a.previewImage} alt={a.headline} loading="lazy" />
+                </a>
+                <a href={a.link}>
+                    <h3>{a.headline}</h3>
+                </a>
+            </div>
+        ))
+    }
 </div>
 
 <style>
@@ -60,7 +59,7 @@ const articles = [
     .ft-article h3 {
         margin: 0;
         font-weight: normal;
-        color: #2c3e50;
+        color: var(--color-dark-grey);
         font-size: 1.1em;
     }
     .ft-article h3:hover {

@@ -3,6 +3,7 @@
 // removed (feature dropped). Mobile menu uses a tiny vanilla-JS toggle instead
 // of the React `hamburger-react` dependency — no island needed.
 import SocialBar from './SocialBar.astro'
+import Icon from './Icon.astro'
 
 interface Props {
     isArticle?: boolean
@@ -27,17 +28,23 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
 <div class:list={['nav-container', { article: isArticle, transparent: transparentBg }]}>
     <!-- Desktop -->
     <div class="desktop-container">
-        <nav class="navigation">
+        <nav class="navigation ui-max">
             <div class="nav-main">
                 <a href="/" class="logo"><img src={logoUrl} alt={logoAlt} /></a>
                 <ul>
-                    {links.map(({ href, label }) => (
-                        <li>
-                            <a href={`/${href}`}>
-                                <span class:list={['nav-link', { active: activePath === href }]}>{label}</span>
-                            </a>
-                        </li>
-                    ))}
+                    {
+                        links.map(({ href, label }) => (
+                            <li>
+                                <a href={`/${href}`}>
+                                    <span
+                                        class:list={['nav-link', { active: activePath === href }]}
+                                    >
+                                        {label}
+                                    </span>
+                                </a>
+                            </li>
+                        ))
+                    }
                 </ul>
             </div>
             <div class="nav-right">
@@ -45,10 +52,7 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
                     <li>
                         <a href="/search">
                             <span class="sr-only">Search</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                ><path
-                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                                ></path></svg>
+                            <Icon name="search" />
                         </a>
                     </li>
                 </SocialBar>
@@ -58,7 +62,7 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
 
     <!-- Mobile -->
     <div class="mobile-container">
-        <header class="navigation">
+        <header class="navigation ui-max">
             <a href="/" class="logo"><img src={logoUrl} alt={logoAlt} /></a>
             <div class="nav-right">
                 <button
@@ -74,23 +78,24 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
         </header>
         <nav class="mobile-navigation" id="mobile-menu">
             <ul>
-                {links.map(({ href, label }) => (
-                    <li>
-                        <a href={`/${href}`}>
-                            <span class:list={['mobile-link', { active: activePath === href }]}>{label}</span>
-                        </a>
-                    </li>
-                ))}
+                {
+                    links.map(({ href, label }) => (
+                        <li>
+                            <a href={`/${href}`}>
+                                <span class:list={['mobile-link', { active: activePath === href }]}>
+                                    {label}
+                                </span>
+                            </a>
+                        </li>
+                    ))
+                }
             </ul>
             <div class="mobile-social-bar">
                 <SocialBar>
                     <li>
                         <a href="/search">
                             <span class="sr-only">Search</span>
-                            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
-                                ><path
-                                    d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
-                                ></path></svg>
+                            <Icon name="search" />
                         </a>
                     </li>
                 </SocialBar>
@@ -114,7 +119,7 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
     .nav-container {
         position: relative;
         margin: 0 auto 32px;
-        background: #2c3e50;
+        background: var(--color-dark-grey);
         padding: 16px 0;
         width: 100%;
         z-index: 10;
@@ -123,7 +128,7 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
         margin: 0 auto;
     }
     .nav-container.transparent {
-        background: rgba(44, 62, 80, 0.6);
+        background: color-mix(in srgb, var(--color-dark-grey) 60%, transparent);
     }
     .nav-container img {
         width: 90px;
@@ -135,24 +140,13 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
         }
     }
 
-    /* ui.Container base + Navigation overrides */
+    /* width/gutters come from the global .ui-max */
     .navigation {
-        max-width: 1128px;
-        padding-left: 24px;
-        padding-right: 24px;
-        width: 100%;
         position: relative;
         display: flex;
         justify-content: flex-start;
         align-items: center;
-        margin: 0 auto;
         z-index: 10000;
-    }
-    @media (max-width: 640px) {
-        .navigation {
-            padding-left: 16px;
-            padding-right: 16px;
-        }
     }
     .navigation ul {
         display: inline-flex;
@@ -210,7 +204,7 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
     }
     .nav-link:hover,
     .nav-link.active {
-        color: #1adbff;
+        color: var(--color-logo-left);
     }
 
     .logo {
@@ -228,7 +222,7 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
         left: 0;
         z-index: 9999;
         padding-top: 90px;
-        background: #2c3e50;
+        background: var(--color-dark-grey);
     }
     .mobile-navigation.is-open {
         transform: translateY(0);
@@ -252,8 +246,8 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
         color: rgba(255, 255, 255, 0.8);
     }
     .mobile-link.active {
-        background: #1adbff;
-        color: #2c3e50;
+        background: var(--color-logo-left);
+        color: var(--color-dark-grey);
     }
     .mobile-link:hover {
         color: #fff;
@@ -296,8 +290,10 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
         left: 4px;
         right: 4px;
         height: 2px;
-        background: #d5d8dc;
-        transition: transform 0.2s ease, opacity 0.2s ease;
+        background: var(--color-light-grey);
+        transition:
+            transform 0.2s ease,
+            opacity 0.2s ease;
     }
     .hamburger span:nth-child(1) {
         top: 9px;

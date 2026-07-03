@@ -10,9 +10,9 @@ import '@fontsource/lato/900.css'
 import '../../styles/global.css'
 import Head from '../../layouts/Head.astro'
 import Nav from '../../components/Nav.astro'
-import posts from '../../data/posts'
+import { findByLink } from '../../lib/content'
 
-const postMeta = posts.find((m) => m.id === 13)!
+const postMeta = findByLink(Astro.url.pathname)
 
 const demos = [
     { key: 'wave', label: 'Wave', pen: 'https://codepen.io/Vincenius/pen/OJyxeaN' },
@@ -51,7 +51,11 @@ const rows = [demos.slice(0, 2), demos.slice(2, 4), demos.slice(4, 6)]
                         target="_blank"
                         rel="noopener"
                     >
-                        [<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 16 16"
+                        [<svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 16 16"
                             ><path
                                 fill-rule="evenodd"
                                 d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"
@@ -61,19 +65,29 @@ const rows = [demos.slice(0, 2), demos.slice(2, 4), demos.slice(4, 6)]
                 </h1>
                 <p class="che-subline">Tap to see the hover effect</p>
 
-                {rows.map((row) => (
-                    <section class="che-demo-container">
-                        {row.map((d) => (
-                            <div class="che-demo">
-                                <h2>
-                                    {d.label}
-                                    <a href={d.pen} target="_blank" rel="noopener noreferrer">[Codepen]</a>
-                                </h2>
-                                <a href="#" class={`che-effect che-${d.key}`} data-hover={d.key}>HOVER ME</a>
-                            </div>
-                        ))}
-                    </section>
-                ))}
+                {
+                    rows.map((row) => (
+                        <section class="che-demo-container">
+                            {row.map((d) => (
+                                <div class="che-demo">
+                                    <h2>
+                                        {d.label}
+                                        <a href={d.pen} target="_blank" rel="noopener noreferrer">
+                                            [Codepen]
+                                        </a>
+                                    </h2>
+                                    <a
+                                        href="#"
+                                        class={`che-effect che-${d.key}`}
+                                        data-hover={d.key}
+                                    >
+                                        HOVER ME
+                                    </a>
+                                </div>
+                            ))}
+                        </section>
+                    ))
+                }
             </div>
         </div>
 
@@ -273,8 +287,24 @@ const rows = [demos.slice(0, 2), demos.slice(2, 4), demos.slice(4, 6)]
             }
 
             .che-curvy {
-                background: radial-gradient(circle at 100% 50%, transparent 20%, rgba(0, 0, 0, 0.5) 21%, rgba(0, 0, 0, 0.5) 34%, transparent 35%, transparent),
-                    radial-gradient(circle at 0% 50%, transparent 20%, rgba(0, 0, 0, 0.5) 21%, rgba(0, 0, 0, 0.5) 34%, transparent 35%, transparent) 0 -50px;
+                background:
+                    radial-gradient(
+                        circle at 100% 50%,
+                        transparent 20%,
+                        rgba(0, 0, 0, 0.5) 21%,
+                        rgba(0, 0, 0, 0.5) 34%,
+                        transparent 35%,
+                        transparent
+                    ),
+                    radial-gradient(
+                            circle at 0% 50%,
+                            transparent 20%,
+                            rgba(0, 0, 0, 0.5) 21%,
+                            rgba(0, 0, 0, 0.5) 34%,
+                            transparent 35%,
+                            transparent
+                        )
+                        0 -50px;
                 background-color: #fff;
                 background-size: 75px 100px;
                 background-clip: text;
@@ -288,7 +318,9 @@ const rows = [demos.slice(0, 2), demos.slice(2, 4), demos.slice(4, 6)]
             .che-curvy:hover,
             .che-curvy.hover {
                 animation-play-state: running;
-                background-position-y: 0%, -50px;
+                background-position-y:
+                    0%,
+                    -50px;
             }
             @keyframes curvyAnimation {
                 100% {
@@ -299,7 +331,11 @@ const rows = [demos.slice(0, 2), demos.slice(2, 4), demos.slice(4, 6)]
             .che-border {
                 position: relative;
                 white-space: nowrap;
-                text-shadow: -2px 0 #00c6a7, 0 2px #00c6a7, 2px 0 #00c6a7, 0 -2px #00c6a7;
+                text-shadow:
+                    -2px 0 #00c6a7,
+                    0 2px #00c6a7,
+                    2px 0 #00c6a7,
+                    0 -2px #00c6a7;
                 width: 100%;
                 transition: width 0.5s ease;
             }
@@ -309,7 +345,11 @@ const rows = [demos.slice(0, 2), demos.slice(2, 4), demos.slice(4, 6)]
                 position: absolute;
                 top: 0;
                 left: 0;
-                text-shadow: -2px 0 #000, 0 2px #000, 2px 0 #000, 0 -2px #000;
+                text-shadow:
+                    -2px 0 #000,
+                    0 2px #000,
+                    2px 0 #000,
+                    0 -2px #000;
                 width: 100%;
                 white-space: nowrap;
                 overflow: hidden;
@@ -320,7 +360,19 @@ const rows = [demos.slice(0, 2), demos.slice(2, 4), demos.slice(4, 6)]
             }
 
             .che-gradient {
-                background: rgba(0, 0, 0, 0) linear-gradient(90deg, hsl(141, 81%, 76%), hsl(186, 81%, 76%), hsl(231, 81%, 76%), hsl(276, 81%, 76%), hsl(321, 81%, 76%), hsl(6, 81%, 76%), hsl(51, 81%, 76%), hsl(96, 81%, 76%)) repeat scroll 0% 0% / 200% 200%;
+                background: rgba(0, 0, 0, 0)
+                    linear-gradient(
+                        90deg,
+                        hsl(141, 81%, 76%),
+                        hsl(186, 81%, 76%),
+                        hsl(231, 81%, 76%),
+                        hsl(276, 81%, 76%),
+                        hsl(321, 81%, 76%),
+                        hsl(6, 81%, 76%),
+                        hsl(51, 81%, 76%),
+                        hsl(96, 81%, 76%)
+                    )
+                    repeat scroll 0% 0% / 200% 200%;
                 color: transparent !important;
                 background-clip: text;
             }
@@ -343,7 +395,15 @@ const rows = [demos.slice(0, 2), demos.slice(2, 4), demos.slice(4, 6)]
             .che-stripes2 {
                 position: relative;
                 color: transparent !important;
-                background-image: repeating-linear-gradient(45deg, rgb(241, 241, 241) 0px, rgb(241, 241, 241) 144px, rgb(128, 128, 128) 144px, rgb(128, 128, 128) 288px, rgb(190, 190, 190) 288px, rgb(190, 190, 190) 432px);
+                background-image: repeating-linear-gradient(
+                    45deg,
+                    rgb(241, 241, 241) 0px,
+                    rgb(241, 241, 241) 144px,
+                    rgb(128, 128, 128) 144px,
+                    rgb(128, 128, 128) 288px,
+                    rgb(190, 190, 190) 288px,
+                    rgb(190, 190, 190) 432px
+                );
                 background-size: 250%;
                 background-position: 0%;
                 background-clip: text;

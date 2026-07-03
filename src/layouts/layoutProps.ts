@@ -10,4 +10,5 @@ export interface LayoutProps {
     description?: string | undefined
     titleNameFirst?: boolean | undefined
     updatedAt?: string | undefined
+    noindex?: boolean | undefined
 }

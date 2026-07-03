@@ -6,9 +6,9 @@ import Layout from '../../layouts/Layout.astro'
 import Ad from '../../components/Ad.astro'
 import Featured from '../../components/Featured.astro'
 import NavigationGenerator from '../../components/islands/NavigationGenerator'
-import posts from '../../data/posts'
+import { findByLink } from '../../lib/content'
 
-const postMeta = posts.find((m) => m.id === 19)!
+const postMeta = findByLink(Astro.url.pathname)
 ---
 
 <Layout
@@ -26,9 +26,9 @@ const postMeta = posts.find((m) => m.id === 19)!
             <article class="ui-sidebar-article">
                 <h1 class="ui-section-headline">Responsive Navigation Generator</h1>
                 <p>
-                    This is a tool to quickly generate a responsive navigation. You can adjust the menu items, the logo,
-                    the colors and the breakpoint. When the breakpoint is reached, the navigation turns into a burger
-                    menu.
+                    This is a tool to quickly generate a responsive navigation. You can adjust the
+                    menu items, the logo, the colors and the breakpoint. When the breakpoint is
+                    reached, the navigation turns into a burger menu.
                 </p>
             </article>
             <aside class="ui-sidebar">
@@ -40,6 +40,12 @@ const postMeta = posts.find((m) => m.id === 19)!
 
         <br />
         <h2 class="ui-subheadline">You might also like</h2>
-        <Featured articleIds={[5, 10, 24]} />
+        <Featured
+            links={[
+                '/resources/animated-css-background-generator',
+                '/resources/css-separator-generator',
+                '/resources/blur-background-css-generator',
+            ]}
+        />
     </div>
 </Layout>

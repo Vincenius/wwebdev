@@ -48,9 +48,9 @@ export const getLoaderDotsCss = ({ count, color, size, gap, speed }: LoaderSetti
   box-shadow: ${Array.from(Array(count).keys())
       .map(
           (i) =>
-              `${2 * Math.cos(i * 360 / count * 0.01745329252)}em
-      ${2 * Math.sin(i * 360 / count * 0.01745329252)}em 0
-      ${(35 / size) / 40 * -1}em`
+              `${2 * Math.cos(((i * 360) / count) * 0.01745329252)}em
+      ${2 * Math.sin(((i * 360) / count) * 0.01745329252)}em 0
+      ${(35 / size / 40) * -1}em`,
       )
       .slice((gap / 30) * (count / 2))
       .join(',')};
@@ -90,7 +90,7 @@ export const getLoaderRingAfter = ({ color, size, gap, speed }: LoaderSettings) 
   width: auto;
   border: ${size / 2}px solid ${color};
   border-radius: 50%;
-  clip-path: polygon(50% 50%, 50% 0%, 100% 0%,100% ${-100 + ((30 / gap) * 60)}%);
+  clip-path: polygon(50% 50%, 50% 0%, 100% 0%,100% ${-100 + (30 / gap) * 60}%);
   animation: spinRingInner ${speed * 1.5}ms cubic-bezier(0.770, 0.000, 0.175, 1.000) infinite;
 `
 

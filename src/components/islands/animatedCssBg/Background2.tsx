@@ -57,10 +57,7 @@ ${liCss}`
             /(^|\n)li:nth-child/g,
             '$1.acbg-bg2-container li:nth-child',
         )
-        const general = generalCss({ speed }).replace(
-            /(^|\n)li /,
-            '$1.acbg-bg2-container li ',
-        )
+        const general = generalCss({ speed }).replace(/(^|\n)li /, '$1.acbg-bg2-container li ')
         return `${createKeyframe()}
 .acbg-bg2-container {${backgroundCss({ bgColor })}}
 .acbg-bg2-container ${general}
@@ -77,10 +74,10 @@ ${childRules}`
                 changeBg={changeBg}
                 activeBg={activeBg}
             >
-                <label>Count:</label>
+                <label htmlFor="bg2-count">Count:</label>
                 <input
                     type="range"
-                    aria-labelledby="count-slider"
+                    id="bg2-count"
                     step={1}
                     min={1}
                     max={50}
@@ -88,10 +85,10 @@ ${childRules}`
                     onChange={(e) => setCount(Number(e.target.value))}
                 />
 
-                <label>Size:</label>
+                <label htmlFor="bg2-size">Size:</label>
                 <input
                     type="range"
-                    aria-labelledby="size-slider"
+                    id="bg2-size"
                     step={1}
                     min={1}
                     max={500}
@@ -99,10 +96,10 @@ ${childRules}`
                     onChange={(e) => setSize([Number(e.target.value), size[1]] as [number, number])}
                 />
 
-                <label>Speed:</label>
+                <label htmlFor="bg2-count">Speed:</label>
                 <input
                     type="range"
-                    aria-labelledby="count-slider"
+                    id="bg2-count"
                     step={1}
                     min={1}
                     max={50}
@@ -110,9 +107,10 @@ ${childRules}`
                     onChange={(e) => setSpeed(Number(e.target.value))}
                 />
 
-                <label>Background Color:</label>
+                <label htmlFor="bg2-bg-color">Background Color:</label>
                 <input
                     type="color"
+                    id="bg2-bg-color"
                     value={bgColor}
                     onChange={(e) => setBgColor(e.target.value)}
                 />

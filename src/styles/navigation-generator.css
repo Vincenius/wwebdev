@@ -18,7 +18,9 @@
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
     height: 450px;
     resize: horizontal;
     min-width: 320px;
@@ -79,7 +81,9 @@
 .ng-accordion {
     background: #fff;
     color: rgba(0, 0, 0, 0.87);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    box-shadow:
+        0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 2px 1px -1px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     margin: 0;
@@ -133,7 +137,9 @@
     align-items: center;
     background: #fff;
     color: rgba(0, 0, 0, 0.87);
-    box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    box-shadow:
+        0px 1px 3px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 2px 1px -1px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
@@ -214,7 +220,10 @@
 }
 
 /* ---- Buttons (MUI outlined Button) ---- */
-.ng-button {
+/* `button.ng-button` (not just `.ng-button`) so these rules outrank the
+   `.ui-unbutton` chrome reset used by the shared CopyButton, regardless of
+   stylesheet order. */
+button.ng-button {
     display: inline-flex;
     align-items: center;
     background: transparent;
@@ -229,30 +238,12 @@
     cursor: pointer;
     position: relative;
 }
-.ng-button:hover {
+button.ng-button:hover {
     border-color: var(--color-accent);
     background: rgba(30, 77, 146, 0.04);
 }
 .ng-copy-button {
     margin-left: 40px;
-}
-
-/* ---- Copy-code tooltip (S.CopyCode) ---- */
-.ng-copy-code {
-    position: relative;
-}
-.ng-copy-code::after {
-    content: 'copied';
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translateY(-50%);
-    opacity: 0;
-    transition: all 500ms ease-out;
-}
-.ng-copy-code.copied::after {
-    transform: translateY(-100%);
-    opacity: 1;
 }
 
 /* ---- Color pickers (react-color replacement) ---- */

@@ -20,7 +20,7 @@ const { language = 'text', value, label, wrapLongLines = false } = Astro.props
 <div class:list={['cb-container', { 'has-label': !!label }]}>
     {label && <label class="cb-label">{label}</label>}
     <div class:list={{ 'cb-wrap': wrapLongLines }}>
-        <Prism lang={language as any} code={value} />
+        <Prism lang={language} code={value} />
     </div>
 </div>
 

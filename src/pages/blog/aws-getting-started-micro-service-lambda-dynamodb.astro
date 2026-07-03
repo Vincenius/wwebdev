@@ -168,7 +168,7 @@ exports.handler = async event => {
 };`
 ---
 
-<ArticleLayout id={18}>
+<ArticleLayout>
     <ol>
       <a href="/blog/aws-getting-started-deploy-static-website-s3"><li>Deploying a Static Website to S3</li></a>
       <a href="/blog/aws-getting-started-cloudfront-and-domain"><li>Distribute an S3 Bucket with CloudFront and add a Domain</li></a>
@@ -187,7 +187,7 @@ exports.handler = async event => {
       for specific data models and have flexible schemas.
     </p>
 
-    <img src="/blog/aws3/1-dynamodb-service.jpg" alt="dynamodb service" />
+    <img src="/blog/aws3/1-dynamodb-service.jpg" alt="dynamodb service" width="1600" height="311" />
 
     <p>
       Then click <code class="ui-code">Create Table</code> and specify the name and the primary key of your table. I will
@@ -199,9 +199,9 @@ exports.handler = async event => {
       You could also specify a sort key to provide more querying flexibility. I will skip this for simplicity.
     </p>
 
-    <img src="/blog/aws3/2-dynamodb-create.jpg" alt="dynamodb create new" />
+    <img src="/blog/aws3/2-dynamodb-create.jpg" alt="dynamodb create new" width="1600" height="887" />
 
-    <img src="/blog/aws3/3-dynamodb-create-settings.jpg" alt="settings of new dynamodb" />
+    <img src="/blog/aws3/3-dynamodb-create-settings.jpg" alt="settings of new dynamodb" width="1600" height="887" />
 
     <p>
       Now you should see the overview of your freshly created table.
@@ -209,7 +209,7 @@ exports.handler = async event => {
       You can also manually add them here.
     </p>
 
-    <img src="/blog/aws3/4-dynamodb-items.jpg" alt="items of dynamodb" />
+    <img src="/blog/aws3/4-dynamodb-items.jpg" alt="items of dynamodb" width="1600" height="887" />
 
     <p>
       To access this table we will create a Lambda function. AWS Lambda is a computing service
@@ -224,34 +224,34 @@ exports.handler = async event => {
       Thus we need to head to the IAM service and create a new role.
     </p>
 
-    <img src="/blog/aws3/5-services-iam.jpg" alt="IAM service" />
+    <img src="/blog/aws3/5-services-iam.jpg" alt="IAM service" width="1600" height="887" />
 
     <p>
       Go to roles on the left menu and click <code class="ui-code">Create role</code>.
     </p>
 
-    <img src="/blog/aws3/6-iam-create.jpg" alt="IAM create new role" />
+    <img src="/blog/aws3/6-iam-create.jpg" alt="IAM create new role" width="1600" height="887" />
 
     <p>
       Now you have to select the service, which will use the role. Click on <code class="ui-code">Lambda</code> and
       then <code class="ui-code">Next: Permissions</code>.
     </p>
 
-    <img src="/blog/aws3/7-iam-create-lambda.jpg" alt="IAM create lambda permissions" />
+    <img src="/blog/aws3/7-iam-create-lambda.jpg" alt="IAM create lambda permissions" width="1600" height="887" />
 
     <p>
       In this step, we need to specify the permissions our lambda will get. We want our lambda to be able to
       access the DynamoDB. So type <code class="ui-code">dynamo</code> and select <code class="ui-code">AmazonDynamoDBFullAccess</code>.
     </p>
 
-    <img src="/blog/aws3/8-iam-dynamodb.jpg" alt="IAM dynamodb access" />
+    <img src="/blog/aws3/8-iam-dynamodb.jpg" alt="IAM dynamodb access" width="1600" height="887" />
 
     <p>
       Skip the step of setting tags. On the last step choose a name for the new role.
       I'll call it  <code class="ui-code">lambda_dynamo</code>. Then click  <code class="ui-code">Create role</code>.
     </p>
 
-    <img src="/blog/aws3/9-iam-create.jpg" alt="IAM create role" />
+    <img src="/blog/aws3/9-iam-create.jpg" alt="IAM create role" width="1600" height="887" />
 
     <h2>Creating the Lambda function</h2>
 
@@ -260,9 +260,9 @@ exports.handler = async event => {
       Go to the Lambda service and click on <code class="ui-code">Create Function</code>.
     </p>
 
-    <img src="/blog/aws3/10-lambda-service.jpg" alt="Lambda service" />
+    <img src="/blog/aws3/10-lambda-service.jpg" alt="Lambda service" width="1600" height="887" />
 
-    <img src="/blog/aws3/11-lambda-create.jpg" alt="Lambda create" />
+    <img src="/blog/aws3/11-lambda-create.jpg" alt="Lambda create" width="1600" height="887" />
 
     <p>
       I create the lambda for creating DynamoDB entries first. I'll call the function <code class="ui-code">createPost</code>.
@@ -270,7 +270,7 @@ exports.handler = async event => {
       just created. Afterward, click <code class="ui-code">Create function</code>.
     </p>
 
-    <img src="/blog/aws3/12-lambda-details.jpg" alt="Lambda creation details" />
+    <img src="/blog/aws3/12-lambda-details.jpg" alt="Lambda creation details" width="1600" height="887" />
 
     <p>
       In the function view, scroll down to get to the editor.<br/>
@@ -283,7 +283,7 @@ exports.handler = async event => {
       Afterward, click <code class="ui-code">Test</code>, to check if your function is working.
     </p>
 
-    <img src="/blog/aws3/13-lambda-code.jpg" alt="Lambda code" />
+    <img src="/blog/aws3/13-lambda-code.jpg" alt="Lambda code" width="1600" height="887" />
 
     <p>
       Because we haven't specified any tests yet, a modal will open.
@@ -296,7 +296,7 @@ exports.handler = async event => {
 
     <CodeBlock language="json" value={snippet2} />
 
-    <img src="/blog/aws3/13-5-lambda-create-test.jpg" alt="Lambda create test" />
+    <img src="/blog/aws3/13-5-lambda-create-test.jpg" alt="Lambda create test" width="1600" height="887" />
 
     <p>
       Now you can click <code class="ui-code">Test</code> again, to execute the test call.
@@ -374,32 +374,32 @@ exports.handler = async event => {
       Then scroll down and click on <code class="ui-code">Build</code> of the card <code class="ui-code">REST API</code>.
     </p>
 
-    <img src="/blog/aws3/14-api-gateway-service.jpg" alt="API Gateway Service" />
+    <img src="/blog/aws3/14-api-gateway-service.jpg" alt="API Gateway Service" width="1600" height="299" />
 
-    <img src="/blog/aws3/15-api-gateway-create.jpg" alt="Create API Gateway" />
+    <img src="/blog/aws3/15-api-gateway-create.jpg" alt="Create API Gateway" width="1600" height="887" />
 
     <p>
       Then select <code class="ui-code">New API</code> and enter a name for yours. To keep it simple,
       use the type <code class="ui-code">Regional</code>. Then hit <code class="ui-code">Create API</code>.
     </p>
 
-    <img src="/blog/aws3/16-api-gateway-create.jpg" alt="Create API Gateway Details" />
+    <img src="/blog/aws3/16-api-gateway-create.jpg" alt="Create API Gateway Details" width="1600" height="887" />
 
     <p>
       Then click on <code class="ui-code">Actions</code> and <code class="ui-code">Create Method</code>. Now choose your Lambda function,
       which is in my case <code class="ui-code">postLambda</code>, and click <code class="ui-code">Save</code>.
     </p>
 
-    <img src="/blog/aws3/17-api-gateway-method.jpg" alt="Create API Gateway Method" />
+    <img src="/blog/aws3/17-api-gateway-method.jpg" alt="Create API Gateway Method" width="1600" height="887" />
 
-    <img src="/blog/aws3/18-api-gateway-method-create.jpg" alt="Create API Gateway Method Details" />
+    <img src="/blog/aws3/18-api-gateway-method-create.jpg" alt="Create API Gateway Method Details" width="1600" height="887" />
 
     <p>
       You should see a modal, which is asking you to give permissions for your API Gateway.
       Click <code class="ui-code">OK</code> to allow your API Gateway to access your Lambda function.
     </p>
 
-    <img src="/blog/aws3/19-api-gateway-modal.jpg" alt="Create API allow lambda access" />
+    <img src="/blog/aws3/19-api-gateway-modal.jpg" alt="Create API allow lambda access" width="1600" height="441" />
 
     <p>
       To be able to call our API, we need to deploy it first. So go into <code class="ui-code">Actions</code> and
@@ -407,9 +407,9 @@ exports.handler = async event => {
       mine <code class="ui-code">production</code>, but this can be anything.
     </p>
 
-    <img src="/blog/aws3/20-api-gateway-deploy.jpg" alt="Deploy API Gateway" />
+    <img src="/blog/aws3/20-api-gateway-deploy.jpg" alt="Deploy API Gateway" width="1600" height="887" />
 
-    <img src="/blog/aws3/21-api-gateway-deploy.jpg" alt="Deploy API Gateway" />
+    <img src="/blog/aws3/21-api-gateway-deploy.jpg" alt="Deploy API Gateway" width="1600" height="1076" />
 
     <p>
       On top of the page, you will see the <code class="ui-code">Invoke URL</code>. If you click on it
@@ -418,7 +418,7 @@ exports.handler = async event => {
       POST endpoint of this URL. On Postman, it would look like this.
     </p>
 
-    <img src="/blog/aws3/23-postman.jpg" alt="Invoke Post endpoint postman" />
+    <img src="/blog/aws3/23-postman.jpg" alt="Invoke Post endpoint postman" width="1600" height="985" />
 
     <p>
       Or you can also call this endpoint from your terminal with curl
@@ -468,42 +468,42 @@ exports.handler = async event => {
       After you've created all those lambdas, go to the API Gateway service. Open your before created API.
     </p>
 
-    <img src="/blog/aws3/24-api-gateway.jpg" alt="API Gateway" />
+    <img src="/blog/aws3/24-api-gateway.jpg" alt="API Gateway" width="1600" height="887" />
 
     <p>
       Create an endpoint for getting all posts in the table.
     </p>
 
-    <img src="/blog/aws3/25-api-gateway-get-all.jpg" alt="API Gateway get all endpoint" />
+    <img src="/blog/aws3/25-api-gateway-get-all.jpg" alt="API Gateway get all endpoint" width="1600" height="887" />
 
     <p>
       For getting, updating, or deleting a single item, we're getting the id of the element from the URI.
       To provide that id, create a new resource.
     </p>
 
-    <img src="/blog/aws3/26-api-gateway-resource.jpg" alt="API Gateway create resource" />
+    <img src="/blog/aws3/26-api-gateway-resource.jpg" alt="API Gateway create resource" width="1600" height="887" />
 
-    <img src="/blog/aws3/27-api-gateway-resource-create.jpg" alt="API Gateway create resource details" />
+    <img src="/blog/aws3/27-api-gateway-resource-create.jpg" alt="API Gateway create resource details" width="1600" height="887" />
 
     <p>
       Afterward, add a GET, a PUT, and a DELETE method to this sub-path.
       For those, you need to enable <code class="ui-code">Use Lambda Proxy integration</code> to be able to access the id from the URL.
     </p>
 
-    <img src="/blog/aws3/28-create-get.jpg" alt="API Gateway create get by id endpoint" />
+    <img src="/blog/aws3/28-create-get.jpg" alt="API Gateway create get by id endpoint" width="1600" height="887" />
 
     <p>
       When you're done creating the endpoints, your API should look like this:
     </p>
 
-    <img src="/blog/aws3/29-api-gateway-done.jpg" alt="Final API Gateway" />
+    <img src="/blog/aws3/29-api-gateway-done.jpg" alt="Final API Gateway" width="1600" height="887" />
 
     <p>
       As a last step deploy your API again by clicking <code class="ui-code">Actions</code> and then <code class="ui-code">Deploy API</code>.
       Select the same stage to overwrite it with the new state.
     </p>
 
-    <img src="/blog/aws3/30-api-gateway-deploy.jpg" alt="Deploy API Gateway" />
+    <img src="/blog/aws3/30-api-gateway-deploy.jpg" alt="Deploy API Gateway" width="1600" height="887" />
 
     <p>
       Congratulations. Your REST API is now up and running. Here are the calls for your shell to call those endpoints:

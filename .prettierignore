@@ -1,0 +1,9 @@
+dist/
+.astro/
+.yarn/
+test/baseline/
+screenshots/
+yarn.lock
+# Page content (.astro article/resource bodies): Prettier re-wrapping can make
+# the Astro compiler drop significant whitespace around inline elements.
+src/pages/**/*.astro

@@ -1,16 +1,13 @@
 ---
-// Ported from legacy-next/components/ArticleLayout.
+// Ported from legacy-next/components/ArticleLayout. The page's metadata is
+// looked up by its own URL (src/data is the registry) — no id prop to keep in
+// sync; a missing entry fails the build inside findByLink.
 import SidebarLayout from '../layouts/SidebarLayout.astro'
 import Comments from './Comments.astro'
 import PrevNext from './PrevNext.astro'
-import posts from '../data/posts'
+import { findByLink } from '../lib/content'
 
-interface Props {
-    id: number
-}
-
-const { id } = Astro.props
-const postMeta = posts.find((m) => m.id === id)!
+const postMeta = findByLink(Astro.url.pathname)
 ---
 
 <SidebarLayout
@@ -27,6 +24,6 @@ const postMeta = posts.find((m) => m.id === id)!
 
         <Comments />
 
-        <PrevNext postId={id} />
+        <PrevNext link={postMeta.link} />
     </article>
 </SidebarLayout>

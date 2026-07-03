@@ -18,17 +18,17 @@ production HTML baseline it was diffed against remains in `test/baseline/`.
 
 All pages are **prerendered (static)**; only the API endpoint is **on-demand (SSR)**.
 
-| Route(s) | Render | Notes |
-|---|---|---|
-| `/` | static | article+resource list |
-| `/blog` + 14 `/blog/*` | static | articles; Prism code via `@astrojs/prism` (build-time) |
-| `/resources` + `/resources/*` (6 listicles) | static | |
-| `/templates` + 3 `/templates/*` | static | |
-| `/about`, `/privacy`, `/sponsorship`, `/weekly` | static | |
-| `/search` | static shell + **React island** | client-side search over local articles |
-| `/resources/*` (6 generators) | static shell + **React island** (5) / **.astro** (1) | see islands below |
-| `/api/search` | **SSR** (`prerender = false`) | MongoDB Atlas `$search` |
-| `/sitemap.xml`, `/robots.txt`, `/rss/{feed.xml,atom.xml,feed.json}` | static endpoints | reproduced from `feed` + posts/templates |
+| Route(s)                                                            | Render                                               | Notes                                                  |
+| ------------------------------------------------------------------- | ---------------------------------------------------- | ------------------------------------------------------ |
+| `/`                                                                 | static                                               | article+resource list                                  |
+| `/blog` + 14 `/blog/*`                                              | static                                               | articles; Prism code via `@astrojs/prism` (build-time) |
+| `/resources` + `/resources/*` (6 listicles)                         | static                                               |                                                        |
+| `/templates` + 3 `/templates/*`                                     | static                                               |                                                        |
+| `/about`, `/privacy`, `/sponsorship`, `/weekly`                     | static                                               |                                                        |
+| `/search`                                                           | static shell + **React island**                      | client-side search over local articles                 |
+| `/resources/*` (6 generators)                                       | static shell + **React island** (5) / **.astro** (1) | see islands below                                      |
+| `/api/search`                                                       | **SSR** (`prerender = false`)                        | MongoDB Atlas `$search`                                |
+| `/sitemap.xml`, `/robots.txt`, `/rss/{feed.xml,atom.xml,feed.json}` | static endpoints                                     | reproduced from `feed` + posts/templates               |
 
 ## Routes removed (the "library" feature)
 

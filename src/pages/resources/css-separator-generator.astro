@@ -6,10 +6,10 @@ import Layout from '../../layouts/Layout.astro'
 import Ad from '../../components/Ad.astro'
 import Featured from '../../components/Featured.astro'
 import CssSeparatorGenerator from '../../components/islands/CssSeparatorGenerator'
-import posts from '../../data/posts'
+import { findByLink } from '../../lib/content'
 import '../../styles/css-separator-generator.css'
 
-const postMeta = posts.find((m) => m.id === 10)!
+const postMeta = findByLink(Astro.url.pathname)
 ---
 
 <Layout
@@ -24,6 +24,13 @@ const postMeta = posts.find((m) => m.id === 10)!
 >
     <CssSeparatorGenerator client:visible>
         <Ad slot="ad" />
-        <Featured slot="featured" articleIds={[5, 7, 24]} />
+        <Featured
+            slot="featured"
+            links={[
+                '/resources/animated-css-background-generator',
+                '/resources/creative-backgrounds',
+                '/resources/blur-background-css-generator',
+            ]}
+        />
     </CssSeparatorGenerator>
 </Layout>

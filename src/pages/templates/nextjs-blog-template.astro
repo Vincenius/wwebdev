@@ -1,50 +1,66 @@
 ---
 import Layout from '../../layouts/Layout.astro'
-import templates from '../../data/templates'
+import { findByLink } from '../../lib/content'
 import Ad from '../../components/Ad.astro'
 
-const postMeta = templates.find((m) => m.id === 1)!
+const postMeta = findByLink(Astro.url.pathname)
 ---
 
 <Layout
-  isArticle={true}
-  title={postMeta.headline}
-  date={postMeta.date}
-  updatedAt={postMeta.updatedAt}
-  link={`https://wweb.dev${postMeta.link}`}
-  description={postMeta.description}
-  image={postMeta.shareImage}
+    isArticle={true}
+    title={postMeta.headline}
+    date={postMeta.date}
+    updatedAt={postMeta.updatedAt}
+    link={`https://wweb.dev${postMeta.link}`}
+    description={postMeta.description}
+    image={postMeta.shareImage}
 >
-  <article class="ui-article-container">
-    <Ad />
-      <p>
-        <a href="https://wwebdev-nextjs-blog-template.vercel.app/" target="_blank" rel="noopener noreferrer">Demo</a>{' '}
-        | <a href="https://github.com/wwebdev/nextjs-blog-template" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </p>
-      <img src={postMeta.shareImage} alt="screenshot of the blog template" />
+    <article class="ui-article-container">
+        <Ad />
+        <p>
+            <a
+                href="https://wwebdev-nextjs-blog-template.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer">Demo</a
+            >{' '}
+            | <a
+                href="https://github.com/wwebdev/nextjs-blog-template"
+                target="_blank"
+                rel="noopener noreferrer">GitHub</a
+            >
+        </p>
+        <img src={postMeta.shareImage} alt="screenshot of the blog template" />
 
-      <p>
-        This is a simple blog template to quickly get started with writing.
-        It has a clean design and provides a lot of flexibility.
-      </p>
+        <p>
+            This is a simple blog template to quickly get started with writing. It has a clean
+            design and provides a lot of flexibility.
+        </p>
 
-      <b>Features</b>
-      <ul>
-        <li>Next.js 12</li>
-        <li>CSS Modules</li>
-        <li>Material UI Icons</li>
-        <li>Markdown support</li>
-        <li>RSS generation</li>
-        <li>CSS variables</li>
-        <li>Responsive Design</li>
-        <li>Best practices and accessibility</li>
-      </ul>
+        <b>Features</b>
+        <ul>
+            <li>Next.js 12</li>
+            <li>CSS Modules</li>
+            <li>Material UI Icons</li>
+            <li>Markdown support</li>
+            <li>RSS generation</li>
+            <li>CSS variables</li>
+            <li>Responsive Design</li>
+            <li>Best practices and accessibility</li>
+        </ul>
 
-      <p>
-        <img src="/resources/blog-template-lighthouse.png" alt="lighthouse score 100"/>
-      </p>
+        <p>
+            <img
+                src="/resources/blog-template-lighthouse.png"
+                alt="lighthouse score 100"
+                width="1566"
+                height="914"
+            />
+        </p>
 
-      <b>License</b> <br/>
-      <a href="https://choosealicense.com/licenses/mit/" target="_blank" rel="noopener noreferrer">MIT</a>
+        <b>License</b>
+        <br />
+        <a href="https://choosealicense.com/licenses/mit/" target="_blank" rel="noopener noreferrer"
+            >MIT</a
+        >
     </article>
 </Layout>

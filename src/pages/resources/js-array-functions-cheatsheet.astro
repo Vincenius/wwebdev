@@ -2,18 +2,16 @@
 import Layout from '../../layouts/Layout.astro'
 import CodeBlock from '../../components/CodeBlock.astro'
 import Ad from '../../components/Ad.astro'
-import posts from '../../data/posts'
+import { findByLink } from '../../lib/content'
 
-const postId = 14
-const postMeta = posts.find((m) => m.id === postId)!
+const postMeta = findByLink(Astro.url.pathname)
 
 const arrEntries = `['a', 'b', 'c']
 	.entries() // Array Iterator {  }
 	.next() // { value: (2) […], done: false }
 	.value // Array [ 0, "a" ]`
 
-const flatMapSyntax =
-`var new_array = arr.flatMap(function callback(currentValue[, index[, array]]) {
+const flatMapSyntax = `var new_array = arr.flatMap(function callback(currentValue[, index[, array]]) {
     // return element for new_array
 }[, thisArg])`
 
@@ -47,11 +45,7 @@ const arrUnshift = `const arr = [ 1, 2, 3 ]
 arr.unshift(0, 99) // returns 5 // arr is [ 0, 99, 1, 2, 3 ]`
 
 const chipColor = (amount: number) =>
-    amount >= 90
-        ? amount >= 95
-            ? '#81c784'
-            : '#fff176'
-        : '#ef9a9a'
+    amount >= 90 ? (amount >= 95 ? '#81c784' : '#fff176') : '#ef9a9a'
 
 const functions = [
     {
@@ -61,7 +55,8 @@ const functions = [
         desc: 'merge two or more arrays',
         example: '[ 1, 2 ].concat([5], [7, 9]) // [ 1, 2, 5, 7, 9 ]',
         syntax: 'const new_array = old_array.concat([value1[, value2[, ...[, valueN]]]])',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/concat',
     },
     {
         name: 'copyWithin()',
@@ -70,7 +65,8 @@ const functions = [
         desc: 'copies part of array to another location',
         example: '[ 1, 2, 3, 4, 5 ].copyWithin(0,2)  // [ 3, 4, 5, 4, 5 ]',
         syntax: 'arr.copyWithin(target[, start[, end]])',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/copyWithin',
     },
     { ad: true },
     {
@@ -80,7 +76,8 @@ const functions = [
         desc: 'Array Iterator with key/value pairs for each index',
         example: arrEntries,
         syntax: 'arr.entries()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/entries',
     },
     {
         name: 'every()',
@@ -89,7 +86,8 @@ const functions = [
         desc: 'tests if all elements in the array pass the test',
         example: '[1, 30, 40].every(val => val > 0) // true',
         syntax: 'arr.every(callback(element[, index[, array]])[, thisArg])',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every',
     },
     {
         name: 'fill()',
@@ -98,7 +96,8 @@ const functions = [
         desc: 'changes elements in an array to a static value',
         example: `[1, 2, 3, 4].fill('x', 1, 3) // [ 1, "x", "x", 4 ]`,
         syntax: 'arr.fill(value[, start[, end]])',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/fill',
     },
     {
         name: 'filter()',
@@ -107,7 +106,8 @@ const functions = [
         desc: 'creates new array with elements that pass test',
         example: '[1, 10, 5, 6].filter(val => val > 5) // [ 10, 6 ]',
         syntax: 'let newArray = arr.filter(callback(element[, index, [array]])[, thisArg])',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter',
     },
     {
         name: 'find()',
@@ -116,7 +116,8 @@ const functions = [
         desc: 'returns the value of the first element, that matches test',
         example: '[1, 10, 5, 6].find(val => val > 5) // 10',
         syntax: 'arr.find(callback(element[, index[, array]])[, thisArg])',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/find',
     },
     {
         name: 'findIndex()',
@@ -125,7 +126,8 @@ const functions = [
         desc: 'returns index of the first element, that matches test',
         example: '[1, 4, 5, 6].findIndex(val => val > 5) // 3',
         syntax: 'arr.findIndex(callback( element[, index[, array]] )[, thisArg])',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex',
     },
     {
         name: 'flat()',
@@ -134,7 +136,8 @@ const functions = [
         desc: 'creates a new array with sub-array elements flattened by specified depth.',
         example: '[1, [2, [3, [4]]]].flat(2) // [ 1, 2, 3, [4] ]',
         syntax: 'const new_array = arr.flat([depth]);',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flat',
     },
     {
         name: 'flatMap()',
@@ -143,11 +146,13 @@ const functions = [
         desc: 'creates a new array with sub-array elements flattened by specified depth.',
         example: '[[2], [4], [6], [8]].flatMap(val => val/2) // [ 1, 2, 3, 4 ]',
         syntax: flatMapSyntax,
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/flatMap',
     },
     {
         name: 'forEach()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach',
         amount: 95,
         link: '#feat=mdn-javascript_builtins_array_foreach',
         desc: 'executes provided function once for each array element',
@@ -156,7 +161,8 @@ const functions = [
     },
     {
         name: 'includes()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/includes',
         amount: 95,
         link: '#feat=array-includes',
         desc: 'determines if array includes a certain value',
@@ -165,7 +171,8 @@ const functions = [
     },
     {
         name: 'indexOf()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf',
         amount: 95,
         link: '#feat=mdn-javascript_builtins_array_indexof',
         desc: 'returns the first index at which element can be found',
@@ -174,7 +181,8 @@ const functions = [
     },
     {
         name: 'join()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join',
         amount: 96,
         link: '#feat=mdn-javascript_builtins_array_join',
         desc: 'returns string by concatenating all elements in array',
@@ -183,7 +191,8 @@ const functions = [
     },
     {
         name: 'keys()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/keys',
         amount: 93,
         link: '#feat=mdn-javascript_builtins_array_keys',
         desc: 'returns Array Iterator that contains keys for each index',
@@ -192,7 +201,8 @@ const functions = [
     },
     {
         name: 'lastIndexOf()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf',
         amount: 95,
         link: '#feat=mdn-javascript_builtins_array_lastindexof',
         desc: 'returns last index at which given element can be found',
@@ -201,7 +211,8 @@ const functions = [
     },
     {
         name: 'map()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map',
         amount: 95,
         link: '#feat=mdn-javascript_builtins_array_map',
         desc: 'creates new array with results of provided function',
@@ -210,7 +221,8 @@ const functions = [
     },
     {
         name: 'pop()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/pop',
         amount: 96,
         link: '#feat=mdn-javascript_builtins_array_pop',
         desc: 'removes last element from array and returns that element',
@@ -219,7 +231,8 @@ const functions = [
     },
     {
         name: 'push()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push',
         amount: 96,
         link: '#feat=mdn-javascript_builtins_array_push',
         desc: 'adds one or more elements to end of array and returns new length',
@@ -228,7 +241,8 @@ const functions = [
     },
     {
         name: 'reduce()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/Reduce',
         amount: 95,
         link: '#feat=mdn-javascript_builtins_array_reduce',
         desc: 'executes a reducer function, resulting in single output value',
@@ -237,7 +251,8 @@ const functions = [
     },
     {
         name: 'reduceRight()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/ReduceRight',
         amount: 95,
         link: '#feat=mdn-javascript_builtins_array_reduceright',
         desc: 'executes a reducer function from right to left, resulting in single output value',
@@ -246,7 +261,8 @@ const functions = [
     },
     {
         name: 'reverse()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse',
         amount: 96,
         link: '#feat=mdn-javascript_builtins_array_reverse',
         desc: 'reverses an array',
@@ -255,7 +271,8 @@ const functions = [
     },
     {
         name: 'shift()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/shift',
         amount: 96,
         link: '#feat=mdn-javascript_builtins_array_shift',
         desc: 'removes the first element from array and returns that element',
@@ -264,7 +281,8 @@ const functions = [
     },
     {
         name: 'slice()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/slice',
         amount: 96,
         link: '#feat=mdn-javascript_builtins_array_slice',
         desc: 'returns a copy of part of array, while original array is not modified',
@@ -273,7 +291,8 @@ const functions = [
     },
     {
         name: 'some()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/some',
         amount: 95,
         link: '#feat=mdn-javascript_builtins_array_some',
         desc: 'tests whether at least one element in array passes the test',
@@ -282,7 +301,8 @@ const functions = [
     },
     {
         name: 'sort()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort',
         amount: 96,
         link: '#feat=mdn-javascript_builtins_array_sort',
         desc: 'sorts the elements of array in place',
@@ -291,7 +311,8 @@ const functions = [
     },
     {
         name: 'splice()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice',
         amount: 96,
         link: '#feat=mdn-javascript_builtins_array_splice',
         desc: 'changes contents of array by removing, replacing and/or adding elements',
@@ -300,7 +321,8 @@ const functions = [
     },
     {
         name: 'toLocaleString()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toLocaleString',
         amount: 95,
         link: '#feat=mdn-javascript_builtins_array_tolocalestring',
         desc: 'elements are converted to Strings using toLocaleString and are separated by locale-specific String (eg. “,”)',
@@ -309,7 +331,8 @@ const functions = [
     },
     {
         name: 'toString()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/toString',
         amount: 95,
         link: '#feat=mdn-javascript_builtins_array_tostring',
         desc: 'returns a string representing the specified array',
@@ -318,7 +341,8 @@ const functions = [
     },
     {
         name: 'unshift()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift',
         amount: 96,
         link: '#feat=mdn-javascript_builtins_array_unshift',
         desc: 'adds one or more elements to beginning of array and returns new length',
@@ -327,7 +351,8 @@ const functions = [
     },
     {
         name: 'values()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/values',
         amount: 91,
         link: '#feat=mdn-javascript_builtins_array_values',
         desc: 'returns Array Iterator object that contains values for each index in array',
@@ -347,34 +372,36 @@ const functions = [
     image={postMeta.shareImage}
 >
     <article class="ui-article-container">
-        {functions.map((fn) =>
-            'ad' in fn ? (
-                <Ad />
-            ) : (
-                <>
-                    <div class="headline-container">
-                        <h2>
-                            <a href={fn.mdnLink} target="_blank" rel="noopener noreferrer">
-                                {fn.name}
-                            </a>
-                            <a
-                                href={`https://caniuse.com/${fn.link}`}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <span
-                                    class="styled-chip"
-                                    style={`background-color: ${chipColor(fn.amount!)} !important;`}
-                                >{`> ${fn.amount}%`}</span>
-                            </a>
-                        </h2>
-                        <span>{fn.desc}</span>
-                    </div>
-                    <CodeBlock language="javascript" value={fn.example!} label="example" />
-                    <CodeBlock language="javascript" value={fn.syntax!} label="syntax" />
-                </>
+        {
+            functions.map((fn) =>
+                'ad' in fn ? (
+                    <Ad />
+                ) : (
+                    <>
+                        <div class="headline-container">
+                            <h2>
+                                <a href={fn.mdnLink} target="_blank" rel="noopener noreferrer">
+                                    {fn.name}
+                                </a>
+                                <a
+                                    href={`https://caniuse.com/${fn.link}`}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    <span
+                                        class="styled-chip"
+                                        style={`background-color: ${chipColor(fn.amount!)} !important;`}
+                                    >{`> ${fn.amount}%`}</span>
+                                </a>
+                            </h2>
+                            <span>{fn.desc}</span>
+                        </div>
+                        <CodeBlock language="javascript" value={fn.example!} label="example" />
+                        <CodeBlock language="javascript" value={fn.syntax!} label="syntax" />
+                    </>
+                ),
             )
-        )}
+        }
     </article>
 </Layout>
 

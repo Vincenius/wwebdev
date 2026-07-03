@@ -1,5 +1,6 @@
-// React version of LinkBox for use inside client islands (e.g. Search results).
-// Same markup + global .lb-* classes as src/components/LinkBox.astro.
+// The one LinkBox implementation: rendered statically from .astro pages (no
+// client JS) and hydrated inside the Search island. Styles: src/styles/linkbox.css.
+import { ArrowIcon } from './icons'
 
 interface Props {
     title: string
@@ -11,12 +12,6 @@ interface Props {
     isExternal?: boolean | undefined
     sponsored?: boolean | undefined
 }
-
-const Arrow = () => (
-    <svg width="1em" height="1em" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M16.01 11H4v2h12.01v3L20 12l-3.99-4z" />
-    </svg>
-)
 
 export default function LinkBox({
     title,
@@ -59,7 +54,7 @@ export default function LinkBox({
                 {isExternal && (
                     <a className="lb-visit" href={link} target="_blank" rel="noopener noreferrer">
                         visit
-                        <Arrow />
+                        <ArrowIcon size={32} />
                     </a>
                 )}
             </article>

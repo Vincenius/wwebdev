@@ -1,10 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro'
 import CodeBlock from '../../components/CodeBlock.astro'
-import posts from '../../data/posts'
+import { findByLink } from '../../lib/content'
 
-const postId = 20
-const postMeta = posts.find((m) => m.id === postId)!
+const postMeta = findByLink(Astro.url.pathname)
 
 const definePropsExample = `Object.defineProperties({ a: 1, b: 2 }, { a: {
   value: 3,
@@ -90,168 +89,192 @@ delete obj.a // error in strict mode`
 const functions = [
     {
         name: 'Object.assign()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign',
         desc: 'copies properties from one or more source objects to target object',
         example: 'Object.assign({ a: 1, b: 2 }, { c: 3 }, { d: 4 }) // { a: 1, b: 2, c: 3, d: 4 }',
         syntax: 'Object.assign(target, ...sources)',
     },
     {
         name: 'Object.create()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/create',
         desc: 'creates new object, using an existing object as the prototype',
         example: 'Object.create({ a: 1 }) // <prototype>: Object { a: 1 }',
         syntax: 'Object.create(proto, [propertiesObject])',
     },
     {
         name: 'Object.defineProperties()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperties',
         desc: 'defines new or modifies existing properties',
         syntax: 'Object.defineProperties(obj, props)',
         example: definePropsExample,
     },
     {
         name: 'Object.defineProperty()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/defineProperty',
         desc: 'defines new or modifies existing property',
         syntax: 'Object.defineProperty(obj, prop, descriptor)',
         example: definePropExample,
     },
     {
         name: 'Object.entries()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/entries',
         desc: "returns array of object's [key, value] pairs",
         syntax: 'Object.entries(obj)',
         example: 'Object.entries({ a: 1, b: 2 }) // [ ["a", 1], ["b", 2] ]',
     },
     {
         name: 'Object.freeze()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze',
         desc: 'freezes an object, which then can no longer be changed',
         syntax: 'Object.freeze(obj)',
         example: freezeExample,
     },
     {
         name: 'Object.fromEntries()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/fromEntries',
         desc: 'transforms a list of key-value pairs into an object',
         syntax: 'Object.fromEntries(iterable)',
         example: "Object.fromEntries([['a', 1], ['b', 2]]) // { a: 1, b: 2 }",
     },
     {
         name: 'Object.getOwnPropertyDescriptor()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptor',
         desc: 'returns a property descriptor for an own property',
         syntax: 'Object.getOwnPropertyDescriptor(obj, prop)',
         example: getOwnPropertyDescriptorExample,
     },
     {
         name: 'Object.getOwnPropertyDescriptors()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyDescriptors',
         desc: 'returns all own property descriptors',
         syntax: 'Object.getOwnPropertyDescriptor(obj, prop)',
         example: getOwnPropertyDescriptorsExample,
     },
     {
         name: 'Object.getOwnPropertyNames()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertyNames',
         desc: 'returns array of all properties',
         syntax: 'Object.getOwnPropertyNames(obj)',
         example: 'Object.getOwnPropertyNames({ a: 1, b: 2 }) // [ "a", "b" ]',
     },
     {
         name: 'Object.getOwnPropertySymbols()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getOwnPropertySymbols',
         desc: 'array of all symbol properties',
         syntax: 'Object.getOwnPropertySymbols(obj)',
         example: getOwnPropertySymbolsExample,
     },
     {
         name: 'Object.getPrototypeOf()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/getPrototypeOf',
         desc: 'returns the prototype',
         syntax: 'Object.getPrototypeOf(obj)',
         example: getPrototypeOfExample,
     },
     {
         name: 'Object.is()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/is',
         desc: 'determines whether two values are the same value',
         syntax: 'Object.is(value1, value2)',
         example: isExample,
     },
     {
         name: 'Object.isExtensible()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isExtensible',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isExtensible',
         desc: 'determines wether an object can have new properties added to it',
         syntax: 'Object.isExtensible(obj)',
         example: isExtensibleExample,
     },
     {
         name: 'Object.isFrozen()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isFrozen',
         desc: 'determines if an object is frozen',
         syntax: 'Object.isFrozen(obj)',
         example: isFrozenExample,
     },
     {
         name: 'Object.isSealed()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isSealed',
         desc: 'determines if an object is sealed',
         syntax: 'Object.isSealed(obj)',
         example: isSealedExample,
     },
     {
         name: 'Object.keys()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys',
         desc: "returns array of object's enumerable property names",
         syntax: 'Object.keys(obj)',
         example: 'Object.keys({ a: 1, b: 2 }) // [ "a", "b" ]',
     },
     {
         name: 'Object.preventExtensions()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/preventExtensions',
         desc: 'prevents new properties from being added to an object',
         syntax: 'Object.preventExtensions(obj)',
         example: preventExtensionsExample,
     },
     {
         name: 'Object.prototype.hasOwnProperty()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/hasOwnProperty',
         desc: 'returns boolean indicating whether object has the specified property',
         syntax: 'obj.hasOwnProperty(prop)',
         example: hasOwnPropertyExample,
     },
     {
         name: 'Object.prototype.isPrototypeOf()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/isPrototypeOf',
         desc: "checks if object exists in another object's prototype chain",
         syntax: 'prototypeObj.isPrototypeOf(object)',
         example: isPrototypeOfExample,
     },
     {
         name: 'Object.prototype.propertyIsEnumerable()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/propertyIsEnumerable',
         desc: "checks whether the specified property is enumerable and is the object's own property",
         syntax: 'obj.propertyIsEnumerable(prop)',
         example: propertyIsEnumerableExample,
     },
     {
         name: 'Object.prototype.toString()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/toString',
         desc: 'returns a string representing the object',
         syntax: 'obj.toString()',
         example: toStringExample,
     },
     {
         name: 'Object.seal()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/seal',
         desc: 'prevents new properties from being added and marks all existing properties as non-configurable',
         syntax: 'Object.seal(obj)',
         example: sealExample,
     },
     {
         name: 'Object.values()',
-        mdnLink: 'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values',
+        mdnLink:
+            'https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/values',
         desc: "returns array of object's own enumerable property values",
         syntax: 'Object.values(obj)',
         example: `Object.values({ a: 1, b: 'a'}) // [ 1, "a" ]`,
@@ -269,20 +292,22 @@ const functions = [
     image={postMeta.shareImage}
 >
     <article class="ui-article-container">
-        {functions.map((fn) => (
-            <>
-                <div class="headline-container">
-                    <h2>
-                        <a href={fn.mdnLink} target="_blank" rel="noopener noreferrer">
-                            {fn.name}
-                        </a>
-                    </h2>
-                    <span>{fn.desc}</span>
-                </div>
-                <CodeBlock language="javascript" value={fn.example} label="example" />
-                <CodeBlock language="javascript" value={fn.syntax} label="syntax" />
-            </>
-        ))}
+        {
+            functions.map((fn) => (
+                <>
+                    <div class="headline-container">
+                        <h2>
+                            <a href={fn.mdnLink} target="_blank" rel="noopener noreferrer">
+                                {fn.name}
+                            </a>
+                        </h2>
+                        <span>{fn.desc}</span>
+                    </div>
+                    <CodeBlock language="javascript" value={fn.example} label="example" />
+                    <CodeBlock language="javascript" value={fn.syntax} label="syntax" />
+                </>
+            ))
+        }
     </article>
 </Layout>
 

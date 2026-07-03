@@ -1,12 +1,11 @@
 ---
 import Layout from '../../layouts/Layout.astro'
-import LinkBox from '../../components/LinkBox.astro'
+import LinkBox from '../../components/react/LinkBox'
 import Featured from '../../components/Featured.astro'
 import Ad from '../../components/Ad.astro'
-import posts from '../../data/posts'
+import { findByLink } from '../../lib/content'
 
-const postId = 21
-const postMeta = posts.find((m) => m.id === postId)!
+const postMeta = findByLink(Astro.url.pathname)
 ---
 
 <Layout
@@ -164,6 +163,12 @@ const postMeta = posts.find((m) => m.id === postId)!
 
     <div class="ui-container">
         <h2 class="ui-subheadline">You might also like</h2>
-        <Featured articleIds={[6, 7, 24]} />
+        <Featured
+            links={[
+                '/resources/free-svg-illustrations',
+                '/resources/creative-backgrounds',
+                '/resources/blur-background-css-generator',
+            ]}
+        />
     </div>
 </Layout>

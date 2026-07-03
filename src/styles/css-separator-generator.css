@@ -24,7 +24,9 @@
     background: #fff;
     border-radius: 10px;
     overflow: hidden;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
     margin: 0 0 50px;
     height: 450px;
     resize: horizontal;
@@ -141,7 +143,11 @@
         margin-bottom: 15px;
     }
 }
-.csg-row > * {
+/* Cards are <button class="ui-unbutton csg-card"> — the extra
+   `.csg-row > .csg-card` selector outranks the `.ui-unbutton` reset
+   (margin: 0) regardless of stylesheet order. */
+.csg-row > *,
+.csg-row > .csg-card {
     width: 100%;
     flex-basis: calc(50% - 20px);
     margin: 20px 0;
@@ -154,16 +160,21 @@
 .csg-row > *.active,
 .csg-row > *:hover {
     cursor: pointer;
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
 }
 .csg-row img {
     width: 100%;
 }
-/* MUI Card default surface */
-.csg-card {
+/* MUI Card default surface (button.csg-card beats the .ui-unbutton reset) */
+.csg-card,
+button.csg-card {
     background: #fff;
     border-radius: 4px;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    box-shadow:
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     overflow: hidden;
 }
@@ -174,7 +185,9 @@
     margin-top: 30px;
     background: #fff;
     border-radius: 4px;
-    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+    box-shadow:
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
         0px 1px 3px 0px rgba(0, 0, 0, 0.12);
 }
 
@@ -238,19 +251,4 @@
 .csg-copy-container svg {
     color: #2c3e50;
     margin-right: 4px;
-}
-
-/* S.Copied */
-.csg-copied {
-    display: inline-block;
-    padding: 4px;
-    margin-right: 5px;
-    background: rgba(0, 0, 0, 0.8);
-    color: rgba(255, 255, 255, 0.6);
-    border-radius: 5px;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.csg-copied.visible {
-    opacity: 1;
 }

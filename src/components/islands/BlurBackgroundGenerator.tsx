@@ -14,8 +14,9 @@
 //   @mui TextareaAutosize  -> <textarea>
 //   @mui icons             -> inline SVG
 //   react-color            -> (already native <input type="color"> in original)
-import { useRef, useState } from 'react'
-import type { ReactNode, RefObject } from 'react'
+import { useId, useState } from 'react'
+import type { ReactNode } from 'react'
+import CopyButton from '../react/CopyButton'
 import '../../styles/blur-background-generator.css'
 
 type Circle = {
@@ -93,19 +94,6 @@ const ExpandMoreIcon = () => (
     </svg>
 )
 
-const FileCopyIcon = ({ onClick }: { onClick: () => void }) => (
-    <svg
-        onClick={onClick}
-        width="18"
-        height="18"
-        viewBox="0 0 24 24"
-        fill="currentColor"
-        style={{ fontSize: '18px', cursor: 'pointer' }}
-    >
-        <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z" />
-    </svg>
-)
-
 const ArrowLeft = () => (
     <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
         <path d="M14 7l-5 5 5 5V7z" />
@@ -133,7 +121,6 @@ function Accordion({
             <button
                 type="button"
                 className="bbg-accordion-summary"
-                aria-controls="blur background configuration"
                 aria-expanded={open}
                 onClick={() => setOpen(!open)}
             >
@@ -162,30 +149,14 @@ function Controls({
     setValues: (v: Values) => void
 }) {
     const [activeCircle, setActiveCircle] = useState(0)
-    const [copiedCode, showCopied] = useState('')
 
     // activeCircle is always a valid index by construction (clamped on count
     // changes); non-null local keeps parity under noUncheckedIndexedAccess.
     const circle = values.circles[activeCircle]!
 
-    const htmlTextArea = useRef<HTMLTextAreaElement>(null)
-    const cssTextArea = useRef<HTMLTextAreaElement>(null)
-
-    const copyToClipboard = (textArea: RefObject<HTMLTextAreaElement | null>, areaName: string) => {
-        const el = textArea.current
-        if (!el) return
-        // Original selected the textarea + document.execCommand('copy'); keep the
-        // select for UX and copy via the clipboard API (guarded for SSR safety).
-        el.select()
-        if (typeof navigator !== 'undefined' && navigator.clipboard) {
-            navigator.clipboard.writeText(el.value).catch(() => {})
-        }
-        showCopied(areaName)
-
-        setTimeout(() => {
-            showCopied('')
-        }, 2000)
-    }
+    // Unique id prefix per Controls instance (rendered twice: mobile + sidebar),
+    // so the label htmlFor/input id associations stay valid page-wide.
+    const uid = useId()
 
     return (
         <>
@@ -193,9 +164,10 @@ function Controls({
 
             <Accordion title="Settings" defaultExpanded={true}>
                 <div className="bbg-container">
-                    <label>Background gradient</label>
+                    <label htmlFor={`${uid}-bg-from`}>Background gradient</label>
                     <input
                         type="color"
+                        id={`${uid}-bg-from`}
                         value={values.bgColor[0]}
                         onChange={(e) => {
                             setValues({ ...values, bgColor: [e.target.value, values.bgColor[1]] })
@@ -203,17 +175,18 @@ function Controls({
                     />
                     <input
                         type="color"
+                        aria-label="Background gradient end color"
                         value={values.bgColor[1]}
                         onChange={(e) => {
                             setValues({ ...values, bgColor: [values.bgColor[0], e.target.value] })
                         }}
                     />
 
-                    <label>Circle Count</label>
+                    <label htmlFor={`${uid}-count`}>Circle Count</label>
                     <input
                         type="range"
                         className="bbg-slider"
-                        aria-labelledby={`circle count`}
+                        id={`${uid}-count`}
                         step={1}
                         min={1}
                         max={10}
@@ -268,11 +241,11 @@ function Controls({
                                     setValues({ ...values, circles: newCircles })
                                 }}
                             />
-                            <label>Top Position</label>
+                            <label htmlFor={`${uid}-top`}>Top Position</label>
                             <input
                                 type="range"
                                 className="bbg-slider"
-                                aria-labelledby={`circle ${activeCircle + 1} top position`}
+                                id={`${uid}-top`}
                                 step={1}
                                 min={0}
                                 max={100}
@@ -284,11 +257,11 @@ function Controls({
                                     setValues({ ...values, circles: newCircles })
                                 }}
                             />
-                            <label>Left Position</label>
+                            <label htmlFor={`${uid}-left`}>Left Position</label>
                             <input
                                 type="range"
                                 className="bbg-slider"
-                                aria-labelledby={`circle ${activeCircle + 1} top position`}
+                                id={`${uid}-left`}
                                 step={1}
                                 min={0}
                                 max={100}
@@ -300,11 +273,11 @@ function Controls({
                                     setValues({ ...values, circles: newCircles })
                                 }}
                             />
-                            <label>Size</label>
+                            <label htmlFor={`${uid}-size`}>Size</label>
                             <input
                                 type="range"
                                 className="bbg-slider"
-                                aria-labelledby={`circle ${activeCircle + 1} size`}
+                                id={`${uid}-size`}
                                 step={1}
                                 min={0}
                                 max={150}
@@ -334,31 +307,32 @@ function Controls({
                 <div className="bbg-container">
                     <header className="bbg-header">
                         <span>HTML</span>
-                        <div>
-                            <span className={`bbg-copied${copiedCode === 'html' ? ' is-visible' : ''}`}>
-                                copied
-                            </span>
-                            <FileCopyIcon onClick={() => copyToClipboard(htmlTextArea, 'html')} />
-                        </div>
+                        <CopyButton
+                            text={htmlCode}
+                            label=""
+                            copiedLabel="copied"
+                            iconSize={18}
+                            ariaLabel="Copy HTML"
+                        />
                     </header>
 
                     <textarea
                         className="bbg-code-area has-margin-bottom"
                         value={htmlCode}
                         readOnly
-                        ref={htmlTextArea}
                     />
 
                     <header className="bbg-header">
                         <span>CSS</span>
-                        <div>
-                            <span className={`bbg-copied${copiedCode === 'css' ? ' is-visible' : ''}`}>
-                                copied
-                            </span>
-                            <FileCopyIcon onClick={() => copyToClipboard(cssTextArea, 'css')} />
-                        </div>
+                        <CopyButton
+                            text={cssCode}
+                            label=""
+                            copiedLabel="copied"
+                            iconSize={18}
+                            ariaLabel="Copy CSS"
+                        />
                     </header>
-                    <textarea className="bbg-code-area" value={cssCode} readOnly ref={cssTextArea} />
+                    <textarea className="bbg-code-area" value={cssCode} readOnly />
                 </div>
             </Accordion>
         </>
@@ -431,84 +405,89 @@ ${circleCssStr}`
     return (
         <div className="ui-container">
             <div className="ui-sidebar-container">
-            <article className="ui-sidebar-article">
-                <h1 className="ui-section-headline">Blur Background CSS Generator</h1>
+                <article className="ui-sidebar-article">
+                    <h1 className="ui-section-headline">Blur Background CSS Generator</h1>
 
-                <div className="ui-mobile-only">{adTop}</div>
+                    <div className="ui-mobile-only">{adTop}</div>
 
-                <BrowserMockup>
-                    <div
-                        className="bbg-background"
-                        style={{
-                            background: `linear-gradient(to right, ${values.bgColor[0]}, ${values.bgColor[1]})`,
-                        }}
-                    >
-                        {/* https://cssgradient.io/gradient-backgrounds/ */}
-                        {values.circles.map((c, i) => (
-                            <div
-                                key={`circle-${i}`}
-                                style={{
-                                    background: `linear-gradient(132deg, ${c.color[0]} 0.00%, ${c.color[1]} 100.00%)`,
-                                    width: `${c.size}%`,
-                                    paddingTop: `${c.size}%`,
-                                    left: `${c.left}%`,
-                                    top: `${c.top}%`,
-                                }}
-                            ></div>
-                        ))}
+                    <BrowserMockup>
+                        <div
+                            className="bbg-background"
+                            style={{
+                                background: `linear-gradient(to right, ${values.bgColor[0]}, ${values.bgColor[1]})`,
+                            }}
+                        >
+                            {/* https://cssgradient.io/gradient-backgrounds/ */}
+                            {values.circles.map((c, i) => (
+                                <div
+                                    key={`circle-${i}`}
+                                    style={{
+                                        background: `linear-gradient(132deg, ${c.color[0]} 0.00%, ${c.color[1]} 100.00%)`,
+                                        width: `${c.size}%`,
+                                        paddingTop: `${c.size}%`,
+                                        left: `${c.left}%`,
+                                        top: `${c.top}%`,
+                                    }}
+                                ></div>
+                            ))}
+                        </div>
+                    </BrowserMockup>
+
+                    <div className="ui-mobile-only">
+                        <Controls
+                            values={values}
+                            setValues={setValues}
+                            htmlCode={htmlCode}
+                            cssCode={cssCode}
+                        />
                     </div>
-                </BrowserMockup>
 
-                <div className="ui-mobile-only">
+                    <p>
+                        This is a tool to generate the CSS for a customizable blur background.
+                        Afterward, you can easily copy the code and use it on your website.
+                    </p>
+                    <p>
+                        You can customize the gradient background color as well as the gradient
+                        color of the circles. You can set the position and the size of the circles
+                        as well.
+                    </p>
+                    <p>
+                        As everything on wweb.dev this tool is under the{' '}
+                        <a
+                            href="https://choosealicense.com/licenses/mit/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            MIT license
+                        </a>
+                        . This means that you can use the generated backgrounds for commercial or
+                        private projects without attribution.
+                    </p>
+                    <p>
+                        If you like the generated blur backgrounds or use them anywhere in your
+                        project, I'd be happy if you'd let me know. Also, feedback for this
+                        generator is always welcome. Just pass me a message on{' '}
+                        <a
+                            href="https://twitter.com/wweb_dev"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Twitter
+                        </a>{' '}
+                        or via email: <a href="mailto:info@wweb.dev">info@wweb.dev</a>.
+                    </p>
+                    <h2 className="ui-subheadline">You might also like</h2>
+                    {featured}
+                </article>
+                <aside className="ui-sidebar hide-on-mobile">
+                    {adSidebar}
                     <Controls
                         values={values}
                         setValues={setValues}
                         htmlCode={htmlCode}
                         cssCode={cssCode}
                     />
-                </div>
-
-                <p>
-                    This is a tool to generate the CSS for a customizable blur background. Afterward,
-                    you can easily copy the code and use it on your website.
-                </p>
-                <p>
-                    You can customize the gradient background color as well as the gradient color of the
-                    circles. You can set the position and the size of the circles as well.
-                </p>
-                <p>
-                    As everything on wweb.dev this tool is under the{' '}
-                    <a
-                        href="https://choosealicense.com/licenses/mit/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                    >
-                        MIT license
-                    </a>
-                    . This means that you can use the generated backgrounds for commercial or private
-                    projects without attribution.
-                </p>
-                <p>
-                    If you like the generated blur backgrounds or use them anywhere in your project, I'd
-                    be happy if you'd let me know. Also, feedback for this generator is always welcome.
-                    Just pass me a message on{' '}
-                    <a href="https://twitter.com/wweb_dev" target="_blank" rel="noopener noreferrer">
-                        Twitter
-                    </a>{' '}
-                    or via email: <a href="mailto:info@wweb.dev">info@wweb.dev</a>.
-                </p>
-                <h2 className="ui-subheadline">You might also like</h2>
-                {featured}
-            </article>
-            <aside className="ui-sidebar hide-on-mobile">
-                {adSidebar}
-                <Controls
-                    values={values}
-                    setValues={setValues}
-                    htmlCode={htmlCode}
-                    cssCode={cssCode}
-                />
-            </aside>
+                </aside>
             </div>
         </div>
     )

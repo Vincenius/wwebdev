@@ -5,13 +5,13 @@
       "title": "wweb.dev | News, Resources and Articles, Templates about Web-Development",
       "description": "Stay up to date with weekly updates, get resources for your next projects and read articles and tutorials about web development.",
       "robots": "index, follow",
-      "canonical": null,
+      "canonical": "https://wweb.dev/",
       "og": {
         "title": "News, Resources and Articles, Templates about Web-Development",
         "description": "Stay up to date with weekly updates, get resources for your next projects and read articles and tutorials about web development.",
         "image": "https://wweb.dev/share.png",
-        "url": null,
-        "type": "article",
+        "url": "https://wweb.dev/",
+        "type": "website",
         "site_name": "wweb.dev"
       },
       "twitter": {
@@ -21,9 +21,7 @@
         "image": "https://wweb.dev/share.png",
         "creator": "@wweb_dev"
       },
-      "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"undefined\" }, \"headline\": \"News, Resources and Articles, Templates about Web-Development\", undefined undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/share.png\", \"height\":646,\"width\":1300 }, \"description\":\"Stay up to date with weekly updates, get resources for your next projects and read articles and tutorials about web development.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
-      ]
+      "jsonLd": []
     }
   },
   "/about": {
@@ -32,25 +30,23 @@
       "title": "About | wweb.dev",
       "description": "News, Resources, Templates and Articles about Web-Development",
       "robots": "index, follow",
-      "canonical": null,
+      "canonical": "https://wweb.dev/about",
       "og": {
         "title": "About",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
-        "url": null,
-        "type": "article",
+        "url": "https://wweb.dev/about",
+        "type": "website",
         "site_name": "wweb.dev"
       },
       "twitter": {
         "card": "summary_large_image",
         "title": "About",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
         "creator": "@wweb_dev"
       },
-      "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"undefined\" }, \"headline\": \"About\", undefined undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/share.png\", \"height\":646,\"width\":1300 }, \"description\":\"undefined\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
-      ]
+      "jsonLd": []
     }
   },
   "/blog": {
@@ -59,25 +55,23 @@
       "title": "A Blog about Web-Development | wweb.dev",
       "description": "News, Resources, Templates and Articles about Web-Development",
       "robots": "index, follow",
-      "canonical": null,
+      "canonical": "https://wweb.dev/blog",
       "og": {
         "title": "A Blog about Web-Development",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
-        "url": null,
-        "type": "article",
+        "url": "https://wweb.dev/blog",
+        "type": "website",
         "site_name": "wweb.dev"
       },
       "twitter": {
         "card": "summary_large_image",
         "title": "A Blog about Web-Development",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
         "creator": "@wweb_dev"
       },
-      "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"undefined\" }, \"headline\": \"A Blog about Web-Development\", undefined undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/share.png\", \"height\":646,\"width\":1300 }, \"description\":\"undefined\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
-      ]
+      "jsonLd": []
     }
   },
   "/blog/4-websites-to-recreate-to-practice-your-web-development-skills": {
@@ -103,7 +97,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/4-websites-to-recreate-to-practice-your-web-development-skills\" }, \"headline\": \"4 Websites to recreate to practice your web development skills\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/4-github-pages_kdFLSpWYBJ_.png\", \"height\":646,\"width\":1300 }, \"description\":\"The best way to learn web development is by practice. But when you get started you might feel lost. There are just so many things to learn, which makes it hard to choose the right project to get started. In the following I'll share some…\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2019-10-23T00:00:00.000Z\",\"description\":\"The best way to learn web development is by practice. But when you get started you might feel lost. There are just so many things to learn, which makes it hard to choose the right project to get started. In the following I'll share some…\",\"headline\":\"4 Websites to recreate to practice your web development skills\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/4-github-pages_kdFLSpWYBJ_.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/4-websites-to-recreate-to-practice-your-web-development-skills\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -130,7 +124,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/aws-getting-started-cloudfront-and-domain\" }, \"headline\": \"Getting Started with Serverless AWS (2/3) - Distribute an S3 Bucket with CloudFront and add a Domain\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/preview2_8ljU3AStslZ.png\", \"height\":646,\"width\":1300 }, \"description\":\"In this part we're going to add CloudFront to deliver our website content with low latency to the user. Afterward, we'll add a domain with HTTPs for our website...\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2020-06-22T00:00:00.000Z\",\"description\":\"In this part we're going to add CloudFront to deliver our website content with low latency to the user. Afterward, we'll add a domain with HTTPs for our website...\",\"headline\":\"Getting Started with Serverless AWS (2/3) - Distribute an S3 Bucket with CloudFront and add a Domain\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview2_8ljU3AStslZ.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/aws-getting-started-cloudfront-and-domain\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -157,7 +151,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/aws-getting-started-deploy-static-website-s3\" }, \"headline\": \"Getting Started with Serverless AWS (1/3) - Deploying a Static Website to S3\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/preview1_bCXvzLuCixG.png\", \"height\":646,\"width\":1300 }, \"description\":\"In this series, we're creating a serverless stack using AWS. In this part, I'll show how to serve a static website through an S3 Bucket and how to deploy from your local machine...\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2020-06-15T00:00:00.000Z\",\"description\":\"In this series, we're creating a serverless stack using AWS. In this part, I'll show how to serve a static website through an S3 Bucket and how to deploy from your local machine...\",\"headline\":\"Getting Started with Serverless AWS (1/3) - Deploying a Static Website to S3\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview1_bCXvzLuCixG.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/aws-getting-started-deploy-static-website-s3\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -184,7 +178,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/aws-getting-started-micro-service-lambda-dynamodb\" }, \"headline\": \"Getting Started with Serverless AWS (3/3) - Micro Services using Lambda, DynamoDB & API Gateway\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/preview3_iZ3HECZAt.png\", \"height\":646,\"width\":1300 }, \"description\":\"In this part, we're creating a DynamoDB. Then we create a Lambda for creating, reading, updating, and deleting entries in that database. And last we create...\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2020-07-06T00:00:00.000Z\",\"description\":\"In this part, we're creating a DynamoDB. Then we create a Lambda for creating, reading, updating, and deleting entries in that database. And last we create...\",\"headline\":\"Getting Started with Serverless AWS (3/3) - Micro Services using Lambda, DynamoDB & API Gateway\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview3_iZ3HECZAt.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/aws-getting-started-micro-service-lambda-dynamodb\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -211,7 +205,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/coding-your-own-ai-2023-with-fastai\" }, \"headline\": \"Coding your own AI in 2023 with fastai\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/coding-your-own-ai-2023-with-fastai.png\", \"height\":646,\"width\":1300 }, \"description\":\"This is a guide, which focuses on the critical parts of the fastai course. I'll cover how to set up the ecosystem and how to create, train and deploy an AI model.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2023-02-27T00:00:00.000Z\",\"description\":\"This is a guide, which focuses on the critical parts of the fastai course. I'll cover how to set up the ecosystem and how to create, train and deploy an AI model.\",\"headline\":\"Coding your own AI in 2023 with fastai\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/coding-your-own-ai-2023-with-fastai.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/coding-your-own-ai-2023-with-fastai\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -238,7 +232,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/debugging-javascript-vscode\" }, \"headline\": \"A guide to debugging JavaScript in Visual Studio Code\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/debugging-javascript-vscode.png\", \"height\":646,\"width\":1300 }, \"description\":\"In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2022-02-03T00:00:00.000Z\",\"description\":\"In this post, I will show how to set up debugging for Javascript in VS Code for Node.js and for React in Firefox or Chrome...\",\"headline\":\"A guide to debugging JavaScript in Visual Studio Code\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/debugging-javascript-vscode.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/debugging-javascript-vscode\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -265,7 +259,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/guide-self-hosting-web-apps-on-ubuntu\" }, \"headline\": \"A Guide To Self-Hosting Web Apps On Ubuntu Servers\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/self-hosting.png\", \"height\":646,\"width\":1300 }, \"description\":\"In this article, I will share a step-by-step guide on how to deploy and serve a web app to an ubuntu server. This applicable for any web app that runs on a port.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2023-11-10T00:00:00.000Z\",\"description\":\"In this article, I will share a step-by-step guide on how to deploy and serve a web app to an ubuntu server. This applicable for any web app that runs on a port.\",\"headline\":\"A Guide To Self-Hosting Web Apps On Ubuntu Servers\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/self-hosting.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/guide-self-hosting-web-apps-on-ubuntu\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -292,7 +286,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/how-to-craft-appealing-websites\" }, \"headline\": \"How to craft appealing websites\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/craft-website_NKUJDYwLo.png\", \"height\":646,\"width\":1300 }, \"description\":\"When I started developing websites I never knew where to start, when creating a new one. Over time I came up with a process that helped me not only getting started, but also making the websites...\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2020-05-29T00:00:00.000Z\",\"description\":\"When I started developing websites I never knew where to start, when creating a new one. Over time I came up with a process that helped me not only getting started, but also making the websites...\",\"headline\":\"How to craft appealing websites\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/craft-website_NKUJDYwLo.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/how-to-craft-appealing-websites\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -319,7 +313,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{\"@context\":\"http://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"Fri Mar 18 2022 00:00:00 GMT+0000 (Coordinated Universal Time)\",\"datePublished\":\"${date}\",\"description\":\"Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...\",\"headline\":\"How to build a static website without frameworks using npm scripts\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_tFOrvyV60.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/how-to-create-static-website-npm-scripts\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"2022-03-18T00:00:00.000Z\",\"datePublished\":\"2020-02-02T00:00:00.000Z\",\"description\":\"Sometimes it makes total sense to build an old fashioned static website. It can be not only faster, but also simplier than throwing in a full JavaScript framework just to build a website with only a few pages...\",\"headline\":\"How to build a static website without frameworks using npm scripts\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_tFOrvyV60.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/how-to-create-static-website-npm-scripts\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -346,7 +340,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/how-to-create-yeoman-generator\" }, \"headline\": \"How to speed up kickstarting new projects with Yeoman\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/preview_TSicBaLsTso.png\", \"height\":646,\"width\":1300 }, \"description\":\"I found myself often copy pasting code from other projects when starting new projects. This is why I created a Yeoman generator, which setups a nextjs project with styled components...\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2020-03-09T00:00:00.000Z\",\"description\":\"I found myself often copy pasting code from other projects when starting new projects. This is why I created a Yeoman generator, which setups a nextjs project with styled components...\",\"headline\":\"How to speed up kickstarting new projects with Yeoman\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_TSicBaLsTso.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/how-to-create-yeoman-generator\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -373,7 +367,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/how-to-toggle-an-array-item-in-react-state\" }, \"headline\": \"How to toggle an array item with Javascript in React State\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/2-react_du62Xdg5s.jpg\", \"height\":646,\"width\":1300 }, \"description\":\"In this short article I will demonstrate how to write a function to toggle array items with Javascript and inside of React state. First of all let’s have a look how to toggle an array item with Javascript (ES6): This function will get an array and…\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2019-03-23T00:00:00.000Z\",\"description\":\"In this short article I will demonstrate how to write a function to toggle array items with Javascript and inside of React state. First of all let’s have a look how to toggle an array item with Javascript (ES6): This function will get an array and…\",\"headline\":\"How to toggle an array item with Javascript in React State\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/2-react_du62Xdg5s.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/how-to-toggle-an-array-item-in-react-state\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -400,7 +394,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/react-query-getting-started-tutorial\" }, \"headline\": \"Getting started with React Query - Easy server state management in React\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/preview_vKvwsCn4S.png\", \"height\":646,\"width\":1300 }, \"description\":\"Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2020-04-24T00:00:00.000Z\",\"description\":\"Handling state, which comes from the server can really cause some headaches in React. There is a lot you have to think about when dealing with asynchronous data, like updating, caching...\",\"headline\":\"Getting started with React Query - Easy server state management in React\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_vKvwsCn4S.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/react-query-getting-started-tutorial\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -427,7 +421,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{\"@context\":\"http://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"Fri Jun 19 2020 00:00:00 GMT+0000 (Coordinated Universal Time)\",\"datePublished\":\"${date}\",\"description\":\"There are tons of note taking apps out there. But which ones are best suitable for developers? In the following I'll introduce three note taking apps for developers with good code support. + Available for: Mac, Windows, Android, iOS + Nice Code editor with a…\",\"headline\":\"The best note taking apps for developers\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/3-notebook_UBA90tPOp.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/the-best-note-taking-apps-for-developers\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"2020-06-19T00:00:00.000Z\",\"datePublished\":\"2019-10-16T00:00:00.000Z\",\"description\":\"There are tons of note taking apps out there. But which ones are best suitable for developers? In the following I'll introduce three note taking apps for developers with good code support. + Available for: Mac, Windows, Android, iOS + Nice Code editor with a…\",\"headline\":\"The best note taking apps for developers\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/3-notebook_UBA90tPOp.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/the-best-note-taking-apps-for-developers\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -454,7 +448,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/blog/widget-based-website-with-dynamic-vuejs-components\" }, \"headline\": \"Widget based website with dynamic Vue.js components\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/1-vue_GRNjptkThwm.jpg\", \"height\":646,\"width\":1300 }, \"description\":\"In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2018-07-27T00:00:00.000Z\",\"description\":\"In this post I will explain how to generate a webpage using dynamic Vue.js components. This could be the foundation of a CMS based on Vue. The finished project can be found here First of all install the vue-cli if you havent already. To do so open…\",\"headline\":\"Widget based website with dynamic Vue.js components\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/1-vue_GRNjptkThwm.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/blog/widget-based-website-with-dynamic-vuejs-components\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -464,25 +458,23 @@
       "title": "Privacy Policy | wweb.dev",
       "description": "News, Resources, Templates and Articles about Web-Development",
       "robots": "index, follow",
-      "canonical": null,
+      "canonical": "https://wweb.dev/privacy",
       "og": {
         "title": "Privacy Policy",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
-        "url": null,
-        "type": "article",
+        "url": "https://wweb.dev/privacy",
+        "type": "website",
         "site_name": "wweb.dev"
       },
       "twitter": {
         "card": "summary_large_image",
         "title": "Privacy Policy",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
         "creator": "@wweb_dev"
       },
-      "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"undefined\" }, \"headline\": \"Privacy Policy\", undefined undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/share.png\", \"height\":646,\"width\":1300 }, \"description\":\"undefined\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
-      ]
+      "jsonLd": []
     }
   },
   "/resources": {
@@ -491,25 +483,23 @@
       "title": "Free Resources and Tools for your usage | wweb.dev",
       "description": "News, Resources, Templates and Articles about Web-Development",
       "robots": "index, follow",
-      "canonical": null,
+      "canonical": "https://wweb.dev/resources",
       "og": {
         "title": "Free Resources and Tools for your usage",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
-        "url": null,
-        "type": "article",
+        "url": "https://wweb.dev/resources",
+        "type": "website",
         "site_name": "wweb.dev"
       },
       "twitter": {
         "card": "summary_large_image",
         "title": "Free Resources and Tools for your usage",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
         "creator": "@wweb_dev"
       },
-      "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"undefined\" }, \"headline\": \"Free Resources and Tools for your usage\", undefined undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/share.png\", \"height\":646,\"width\":1300 }, \"description\":\"undefined\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
-      ]
+      "jsonLd": []
     }
   },
   "/resources/animated-css-background-generator": {
@@ -535,7 +525,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/resources/animated-css-background-generator\" }, \"headline\": \"Animated CSS Background Generator\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/resources01_zAtYo6WzY.jpg\", \"height\":646,\"width\":1300 }, \"description\":\"With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2019-11-27T00:00:00.000Z\",\"description\":\"With this tool you can quickly create and customize animated CSS backgrounds for your website. It includes a total of three different pure CSS animated backgrounds.\",\"headline\":\"Animated CSS Background Generator\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/resources01_zAtYo6WzY.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/animated-css-background-generator\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -562,7 +552,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/resources/blur-background-css-generator\" }, \"headline\": \"Blur Background CSS Generator\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/resources/blur-background-generator.png\", \"height\":646,\"width\":1300 }, \"description\":\"A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2022-10-14T00:00:00.000Z\",\"description\":\"A tool to generate the CSS for a customized blur background. Afterward, you can easily copy the code and use it on your website.\",\"headline\":\"Blur Background CSS Generator\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/resources/blur-background-generator.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/blur-background-css-generator\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -589,7 +579,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{\"@context\":\"http://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"Fri Dec 13 2024 00:00:00 GMT+0000 (Coordinated Universal Time)\",\"datePublished\":\"${date}\",\"description\":\"A curated list of websites where you can get creative backgrounds for your websites.\",\"headline\":\"Websites For Creative Backgrounds\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_IF4o7Ga9O.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/creative-backgrounds\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"2024-12-13T00:00:00.000Z\",\"datePublished\":\"2020-01-23T00:00:00.000Z\",\"description\":\"A curated list of websites where you can get creative backgrounds for your websites.\",\"headline\":\"Websites For Creative Backgrounds\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_IF4o7Ga9O.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/creative-backgrounds\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -616,7 +606,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/resources/creative-hover-effects\" }, \"headline\": \"Creative Hover Effects\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/hover-preview_eieplkIor.jpg\", \"height\":646,\"width\":1300 }, \"description\":\"A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2020-05-04T00:00:00.000Z\",\"description\":\"A collection of six creative hover effects for your inspiration. All of the effects are available on Codepen for easy copy-pasting.\",\"headline\":\"Creative Hover Effects\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/hover-preview_eieplkIor.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/creative-hover-effects\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -643,7 +633,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/resources/css-separator-generator\" }, \"headline\": \"CSS Section Separator Generator\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/css-separator-generator_7lds84DdzGW.png\", \"height\":646,\"width\":1300 }, \"description\":\"A collection of customizable CSS section separators, with the possibility to easily copy the code.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2020-04-01T00:00:00.000Z\",\"description\":\"A collection of customizable CSS section separators, with the possibility to easily copy the code.\",\"headline\":\"CSS Section Separator Generator\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/css-separator-generator_7lds84DdzGW.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/css-separator-generator\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -670,7 +660,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{\"@context\":\"http://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"Fri Dec 13 2024 00:00:00 GMT+0000 (Coordinated Universal Time)\",\"datePublished\":\"${date}\",\"description\":\"A curated list of websites that offer collections of free icons.\",\"headline\":\"Websites For Free Icon Sets\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_S4rXKoliGYiB.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/free-icon-sets\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"2024-12-13T00:00:00.000Z\",\"datePublished\":\"2020-11-06T00:00:00.000Z\",\"description\":\"A curated list of websites that offer collections of free icons.\",\"headline\":\"Websites For Free Icon Sets\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_S4rXKoliGYiB.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/free-icon-sets\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -697,7 +687,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{\"@context\":\"http://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"Thu Jun 13 2024 00:00:00 GMT+0000 (Coordinated Universal Time)\",\"datePublished\":\"${date}\",\"description\":\"Spice up your next project with beautiful illustrations from these websites.\",\"headline\":\"A Curated List Of Websites For Free SVG Illustrations\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_C-krc8PbLyM.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/free-svg-illustrations\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"2024-06-13T00:00:00.000Z\",\"datePublished\":\"2019-12-16T00:00:00.000Z\",\"description\":\"Spice up your next project with beautiful illustrations from these websites.\",\"headline\":\"A Curated List Of Websites For Free SVG Illustrations\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_C-krc8PbLyM.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/free-svg-illustrations\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -724,7 +714,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/resources/js-array-functions-cheatsheet\" }, \"headline\": \"JavaScript Array Functions Cheat Sheet\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/js-array-cheatsheet-preview_vpuXKzM9s.png\", \"height\":646,\"width\":1300 }, \"description\":\"A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2020-05-21T00:00:00.000Z\",\"description\":\"A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Array. It includes a quick explanation, the syntax, an example, and the browser support.\",\"headline\":\"JavaScript Array Functions Cheat Sheet\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/js-array-cheatsheet-preview_vpuXKzM9s.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/js-array-functions-cheatsheet\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -751,7 +741,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/resources/js-object-functions-cheatsheet\" }, \"headline\": \"JavaScript Object Functions Cheat Sheet\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/js-object-cheatsheet-preview_urYtz7hxD8d.png\", \"height\":646,\"width\":1300 }, \"description\":\"A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2020-07-31T00:00:00.000Z\",\"description\":\"A Cheat Sheet to quickly find all functions that can be executed on a JavaScript Object. It includes a quick explanation, the syntax and an example.\",\"headline\":\"JavaScript Object Functions Cheat Sheet\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/js-object-cheatsheet-preview_urYtz7hxD8d.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/js-object-functions-cheatsheet\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -778,7 +768,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/resources/loader-generator\" }, \"headline\": \"Pure CSS Loader Generator\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/resources/pure-css-loader-generator.png\", \"height\":646,\"width\":1300 }, \"description\":\"A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2023-03-07T00:00:00.000Z\",\"description\":\"A code generator that helps you to create simple CSS spinners. You can choose between four different types of CSS spinners and customize them by adjusting the settings.\",\"headline\":\"Pure CSS Loader Generator\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/resources/pure-css-loader-generator.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/loader-generator\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -805,7 +795,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/resources/navigation-generator\" }, \"headline\": \"Responsive Navigation Generator\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/navigation-generator_flkQB-LbDQ-.png\", \"height\":646,\"width\":1300 }, \"description\":\"Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2020-07-13T00:00:00.000Z\",\"description\":\"Quickly get the HTML and CSS for a customizable menu. It will be responsive and it turns to a burger menu on mobile, completely without JavaScript.\",\"headline\":\"Responsive Navigation Generator\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/navigation-generator_flkQB-LbDQ-.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/navigation-generator\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -832,7 +822,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{\"@context\":\"http://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"Fri Dec 13 2024 00:00:00 GMT+0000 (Coordinated Universal Time)\",\"datePublished\":\"${date}\",\"description\":\"Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.\",\"headline\":\"Websites For Inspiration\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_rDQNhlplI.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/websites-for-inspiration\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"dateModified\":\"2024-12-13T00:00:00.000Z\",\"datePublished\":\"2020-04-20T00:00:00.000Z\",\"description\":\"Need some inspiration for your project? With this list of 23 websites, which you can check for inspiration, you'll never run out of ideas for your website again.\",\"headline\":\"Websites For Inspiration\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/preview_rDQNhlplI.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/resources/websites-for-inspiration\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -842,25 +832,23 @@
       "title": "Search | wweb.dev",
       "description": "News, Resources, Templates and Articles about Web-Development",
       "robots": "index, follow",
-      "canonical": null,
+      "canonical": "https://wweb.dev/search",
       "og": {
         "title": "Search",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
-        "url": null,
-        "type": "article",
+        "url": "https://wweb.dev/search",
+        "type": "website",
         "site_name": "wweb.dev"
       },
       "twitter": {
         "card": "summary_large_image",
         "title": "Search",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
         "creator": "@wweb_dev"
       },
-      "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"undefined\" }, \"headline\": \"Search\", undefined undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/share.png\", \"height\":646,\"width\":1300 }, \"description\":\"undefined\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
-      ]
+      "jsonLd": []
     }
   },
   "/sponsorship": {
@@ -869,25 +857,23 @@
       "title": "Sponsorship | wweb.dev",
       "description": "News, Resources, Templates and Articles about Web-Development",
       "robots": "index, follow",
-      "canonical": null,
+      "canonical": "https://wweb.dev/sponsorship",
       "og": {
         "title": "Sponsorship",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
-        "url": null,
-        "type": "article",
+        "url": "https://wweb.dev/sponsorship",
+        "type": "website",
         "site_name": "wweb.dev"
       },
       "twitter": {
         "card": "summary_large_image",
         "title": "Sponsorship",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
         "creator": "@wweb_dev"
       },
-      "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"undefined\" }, \"headline\": \"Sponsorship\", undefined undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/share.png\", \"height\":646,\"width\":1300 }, \"description\":\"undefined\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
-      ]
+      "jsonLd": []
     }
   },
   "/templates": {
@@ -896,25 +882,23 @@
       "title": "Templates | wweb.dev",
       "description": "News, Resources, Templates and Articles about Web-Development",
       "robots": "index, follow",
-      "canonical": null,
+      "canonical": "https://wweb.dev/templates",
       "og": {
         "title": "Templates",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
-        "url": null,
-        "type": "article",
+        "url": "https://wweb.dev/templates",
+        "type": "website",
         "site_name": "wweb.dev"
       },
       "twitter": {
         "card": "summary_large_image",
         "title": "Templates",
-        "description": null,
+        "description": "News, Resources, Templates and Articles about Web-Development",
         "image": "https://wweb.dev/share.png",
         "creator": "@wweb_dev"
       },
-      "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"undefined\" }, \"headline\": \"Templates\", undefined undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/share.png\", \"height\":646,\"width\":1300 }, \"description\":\"undefined\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
-      ]
+      "jsonLd": []
     }
   },
   "/templates/micro-blogging-template": {
@@ -940,7 +924,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/templates/micro-blogging-template\" }, \"headline\": \"Next.js Micro-blogging Template\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/modest-blog-preview.jpg\", \"height\":646,\"width\":1300 }, \"description\":\"A Next.js template for a twitter-like blog. You can write in markdown and upload images and videos.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2022-09-29T00:00:00.000Z\",\"description\":\"A Next.js template for a twitter-like blog. You can write in markdown and upload images and videos.\",\"headline\":\"Next.js Micro-blogging Template\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/modest-blog-preview.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/templates/micro-blogging-template\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -967,7 +951,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/templates/nextjs-blog-template\" }, \"headline\": \"Next.js Blog Template\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/nextjs-blog-template-preview.png\", \"height\":646,\"width\":1300 }, \"description\":\"This is a simple blog template to quickly get started with writing. It has a clean design and provides a lot of flexibility.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2022-03-15T00:00:00.000Z\",\"description\":\"This is a simple blog template to quickly get started with writing. It has a clean design and provides a lot of flexibility.\",\"headline\":\"Next.js Blog Template\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/nextjs-blog-template-preview.png\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/templates/nextjs-blog-template\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -994,7 +978,7 @@
         "creator": "@wweb_dev"
       },
       "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"https://wweb.dev/templates/web-app-template\" }, \"headline\": \"Next.js Web App Template\", \"datePublished\":\"${date}\", undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/preview/web-app-template.jpg\", \"height\":646,\"width\":1300 }, \"description\":\"A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
+        "{\"@context\":\"https://schema.org\",\"@type\":\"Article\",\"author\":{\"@type\":\"Person\",\"name\":\"Vincent Will\"},\"datePublished\":\"2022-11-01T00:00:00.000Z\",\"description\":\"A template to quickly set up a web app or SaaS. It includes the basic authentication logic using MongoDB as well as password reset logic with nodemailer.\",\"headline\":\"Next.js Web App Template\",\"image\":{\"@type\":\"ImageObject\",\"height\":646,\"url\":\"https://wweb.dev/preview/web-app-template.jpg\",\"width\":1300},\"mainEntityOfPage\":{\"@id\":\"https://wweb.dev/templates/web-app-template\",\"@type\":\"WebPage\"},\"publisher\":{\"@type\":\"Organization\",\"logo\":{\"@type\":\"ImageObject\",\"height\":64,\"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\",\"width\":64},\"name\":\"wweb.dev\"}}"
       ]
     }
   },
@@ -1004,13 +988,13 @@
       "title": "Weekly roundup of resources about web development | wweb.dev",
       "description": "Stay up-to-date on the latest and greatest tools in web development. We scour the internet to bring you the most fascinating and useful links in the world of web development.",
       "robots": "index, follow",
-      "canonical": null,
+      "canonical": "https://wweb.dev/weekly",
       "og": {
         "title": "Weekly roundup of resources about web development",
         "description": "Stay up-to-date on the latest and greatest tools in web development. We scour the internet to bring you the most fascinating and useful links in the world of web development.",
         "image": "https://wweb.dev/share.png",
-        "url": null,
-        "type": "article",
+        "url": "https://wweb.dev/weekly",
+        "type": "website",
         "site_name": "wweb.dev"
       },
       "twitter": {
@@ -1020,9 +1004,7 @@
         "image": "https://wweb.dev/share.png",
         "creator": "@wweb_dev"
       },
-      "jsonLd": [
-        "{ \"@context\": \"http://schema.org\", \"@type\":\"Article\", \"mainEntityOfPage\": { \"@type\": \"WebPage\", \"@id\":\"undefined\" }, \"headline\": \"Weekly roundup of resources about web development\", undefined undefined \"image\": { \"@type\":\"ImageObject\", \"url\":\"https://wweb.dev/share.png\", \"height\":646,\"width\":1300 }, \"description\":\"Stay up-to-date on the latest and greatest tools in web development. We scour the internet to bring you the most fascinating and useful links in the world of web development.\", \"author\": { \"@type\":\"Person\", \"name\":\"Vincent Will\" }, \"publisher\": { \"@type\":\"Organization\", \"name\":\"wweb.dev\", \"logo\":{ \"@type\":\"ImageObject\", \"url\":\"https://ik.imagekit.io/wwebdev/logo_RnCn4cnua.png\", \"height\":64, \"width\":64 } } }"
-      ]
+      "jsonLd": []
     }
   }
 }

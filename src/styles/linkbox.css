@@ -7,7 +7,9 @@
     border-radius: var(--radius);
     box-shadow: var(--shadow-card);
     overflow: hidden;
-    transition: box-shadow 0.15s ease, transform 0.15s ease;
+    transition:
+        box-shadow 0.15s ease,
+        transform 0.15s ease;
 }
 .lb-container:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
@@ -51,7 +53,7 @@
     margin-bottom: 0;
 }
 .lb-promo-bg {
-    background: linear-gradient(57deg, #00c6a7 0%, #1e4d92 100%);
+    background: linear-gradient(57deg, var(--color-green-blue) 0%, var(--color-blue) 100%);
     box-shadow: 0 16px 48px #e3e7eb;
     position: absolute;
     height: calc(100% + 8px);
@@ -66,7 +68,7 @@
     z-index: 2;
     right: 0;
     top: 0;
-    background: linear-gradient(57deg, #00c6a7 0%, #1e4d92 100%);
+    background: linear-gradient(57deg, var(--color-green-blue) 0%, var(--color-blue) 100%);
     padding: 6px;
     border-bottom-left-radius: 4px;
     color: #fff;

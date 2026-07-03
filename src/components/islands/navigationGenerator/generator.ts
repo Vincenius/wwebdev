@@ -31,7 +31,7 @@ const generateMenu = (items: MenuLinkItem[]): string =>
         <a href="${item.link}"${item.blank ? ' target="_blank" rel="noopener noreferrer"' : ''}>
           ${item.caption}
         </a>
-      </li>`
+      </li>`,
         )
         .join('')
 

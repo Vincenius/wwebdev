@@ -131,7 +131,7 @@ git commit -m "initial commit"
 git push`
 ---
 
-<ArticleLayout id={23}>
+<ArticleLayout>
     <p>
       Recently I've started the course <a href="https://course.fast.ai/" target="_blank" rel="noopener noreferrer">Practical Deep Learning for Coders</a>.
       This course is great and I'd recommend it if you'd like to get deeper into the topic. But it's also quite time consuming
@@ -139,12 +139,12 @@ git push`
     </p>
     <p>
       This is why I've decided to create this guide, which focuses on the critical parts of the course. I'll cover how to
+    </p>
       <ul>
         <li>Set up the ecosystem for developing an AI</li>
         <li>Create and train an AI model with <a href="https://docs.fast.ai/" target="_blank" rel="noopener noreferrer">fastai</a></li>
         <li>Deploy the model and use it in your project</li>
       </ul>
-    </p>
 
     <h2>Create a Jupyter Notebook</h2>
     <p>
@@ -158,18 +158,18 @@ git push`
     </p>
     <p>
       There are two options for using a Jupyter Notebook.
+    </p>
       <ol>
         <li>Use a free hosted service like <a href="https://www.kaggle.com/" target="_blank" rel="noopener noreferrer">Kaggle</a></li>
         <li> Run a notebook locally. You can find a guide on how to set up Jupyter on their <a href="https://docs.jupyter.org/en/latest/" target="_blank" rel="noopener noreferrer">documentation</a></li>
       </ol>
-    </p>
     <p>
       Jupyter Notebooks have cells of either python code or markdown.
       You can run the code directly in your browser by pressing the "Run" button in the top navigation or next to the cell.
       It will give you the output of your code underneath the code cell.
     </p>
 
-    <img src="/blog/ai-guide/01-jupyter-screenshot.png" alt="screenshot of a demo notebook" />
+    <img src="/blog/ai-guide/01-jupyter-screenshot.png" alt="screenshot of a demo notebook" width="1678" height="812" />
 
     <p>
       Now let's jump right into the code. The rest of this guide will also be available in
@@ -310,7 +310,7 @@ git push`
     />
 
     <p>This will create a UI to easily interact with our model</p>
-    <img src="/blog/ai-guide/02-gradio-screenshot.png" alt="screenshot of a gradio UI" />
+    <img src="/blog/ai-guide/02-gradio-screenshot.png" alt="screenshot of a gradio UI" width="2062" height="998" />
 
     <p>
       At the bottom, you can see the text Use via API.<br/>
@@ -319,7 +319,7 @@ git push`
     <p>
       Click on the top right menu and then on "New Space". Enter the name of your project and select Gradio as SDK. Then choose a License and keep the other options as they are. Now you can create the Space.
     </p>
-    <img src="/blog/ai-guide/03-hugging-face-screenshot.png" alt="screenshot of a hugging face new space creation" />
+    <img src="/blog/ai-guide/03-hugging-face-screenshot.png" alt="screenshot of a hugging face new space creation" width="2880" height="1628" />
     <p>
       Afterward, we need to add our model and our code to the Hugging Face repository. If you are running your notebook locally you should have the exported model in your working directory. If you are on Kaggle, you have to click the small arrow on the bottom right. There you should see a "Data" tab with your exported model.pkl file.
     </p>

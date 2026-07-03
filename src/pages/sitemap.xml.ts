@@ -1,20 +1,34 @@
-// Ported from legacy-next/utils/generateStaticFiles.js (sitemap.xml).
-// Sourced from posts + templates only (no library, no static pages) — same as
-// the Next build.
+// Sitemap over all content pages (posts + templates) plus the static pages
+// (the Next build only listed posts/templates).
 import type { APIRoute } from 'astro'
-import { sortedData, formatDate } from '../lib/feedData'
+import { sortedData, siteURL } from '../lib/feedData'
+
+const staticPages = [
+    '/',
+    '/about',
+    '/blog',
+    '/privacy',
+    '/resources',
+    '/search',
+    '/sponsorship',
+    '/templates',
+    '/weekly',
+]
 
 export const GET: APIRoute = () => {
+    const urls = [
+        ...staticPages.map(
+            (path) =>
+                `\n        <url>\n            <loc>${siteURL}${path === '/' ? '' : path}</loc>\n        </url>`,
+        ),
+        ...sortedData.map(
+            (post) =>
+                `\n        <url>\n            <loc>${siteURL}${post.link}</loc>\n            <lastmod>${post.updatedAt || post.date}</lastmod>\n        </url>`,
+        ),
+    ]
+
     const sitemapXml = `<?xml version="1.0" encoding="UTF-8"?>
-  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      ${sortedData.reduce(
-          (acc, curr) => `${acc}
-        <url>
-            <loc>https://wweb.dev${curr.link}</loc>
-            <lastmod>${formatDate(new Date(curr.updatedAt || curr.date))}</lastmod>
-        </url>`,
-          '',
-      )}
+  <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">${urls.join('')}
   </urlset>`
 
     return new Response(sitemapXml, {

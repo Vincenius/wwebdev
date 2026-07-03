@@ -9,9 +9,9 @@ import Layout from '../../layouts/Layout.astro'
 import Ad from '../../components/Ad.astro'
 import Featured from '../../components/Featured.astro'
 import BlurBackgroundGenerator from '../../components/islands/BlurBackgroundGenerator'
-import posts from '../../data/posts'
+import { findByLink } from '../../lib/content'
 
-const postMeta = posts.find((m) => m.id === 24)!
+const postMeta = findByLink(Astro.url.pathname)
 ---
 
 <Layout
@@ -28,7 +28,14 @@ const postMeta = posts.find((m) => m.id === 24)!
         <BlurBackgroundGenerator client:visible>
             <Ad slot="adTop" />
             <Ad slot="adSidebar" />
-            <Featured slot="featured" articleIds={[5, 10, 7]} />
+            <Featured
+                slot="featured"
+                links={[
+                    '/resources/animated-css-background-generator',
+                    '/resources/css-separator-generator',
+                    '/resources/creative-backgrounds',
+                ]}
+            />
         </BlurBackgroundGenerator>
     </div>
 </Layout>

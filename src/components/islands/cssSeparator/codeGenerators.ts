@@ -23,7 +23,13 @@ export const generateHtmlCode = (active: SeparatorValue): string =>
 </section>`
           : `<section class="${active}"></section>`
 
-export const generateCssCode = ({ active, options }: { active: SeparatorValue; options: any }): string => {
+export const generateCssCode = ({
+    active,
+    options,
+}: {
+    active: SeparatorValue
+    options: any
+}): string => {
     // TODO check what to generate
     return active === SEPARATORS.SKEWED
         ? `.${active} {
@@ -53,7 +59,13 @@ const generateContainerStyle = (cssClass?: string): string =>
             : `background: ${darkGrey};`
     }`
 
-export const generateSkewCss = ({ angle, reversed }: { angle: SliderOption; reversed?: boolean }): string =>
+export const generateSkewCss = ({
+    angle,
+    reversed,
+}: {
+    angle: SliderOption
+    reversed?: boolean
+}): string =>
     `position: absolute;
   top: 0;
   bottom: 0;
@@ -71,7 +83,14 @@ export const generateSkewCss = ({ angle, reversed }: { angle: SliderOption; reve
   transform-origin: top left;`
   }`
 
-export const generateSemiCircleCss = ({ cssClass, left, width, height, top, reversed }: any): string =>
+export const generateSemiCircleCss = ({
+    cssClass,
+    left,
+    width,
+    height,
+    top,
+    reversed,
+}: any): string =>
     `${generateContainerStyle(cssClass)}
 
 ${cssClass ? `.${cssClass}` : '&'}::before {
