@@ -17,5 +17,5 @@ ENV NODE_ENV=production
 COPY --from=build /app/node_modules ./node_modules
 COPY --from=build /app/dist ./dist
 COPY --from=build /app/server.mjs /app/securityHeaders.mjs /app/package.json ./
-EXPOSE 4321
+EXPOSE 3000
 CMD ["node", "server.mjs"]

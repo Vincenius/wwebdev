@@ -3,11 +3,11 @@ services:
     build: .
     image: wwebdev:latest
     ports:
-      - '4321:4321'
+      - '3000:3000'
     environment:
       - TZ=UTC
       - HOST=0.0.0.0
-      - PORT=4321
+      - PORT=3000
       # Client-exposed base hostname (was NEXT_PUBLIC_HOSTNAME).
       - PUBLIC_HOSTNAME=https://wweb.dev
     restart: unless-stopped
