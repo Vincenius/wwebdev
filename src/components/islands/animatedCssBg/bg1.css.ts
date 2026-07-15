@@ -1,10 +1,3 @@
-// Ported verbatim from
-// legacy-next/components/AnimatedCssBackgroundGenerator/styles/styledBg1.js
-// styled-components → plain string builders. The `move` keyframe / styled
-// Container / Span are recreated by the island via a scoped <style> tag using
-// these exact functions, so both the live background and the copyable CSS are
-// byte-identical to the original.
-
 export interface Bg1CssProps {
     count: number
     colors: string[]

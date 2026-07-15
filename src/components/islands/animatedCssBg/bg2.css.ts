@@ -1,6 +1,3 @@
-// Ported verbatim from
-// legacy-next/components/AnimatedCssBackgroundGenerator/styles/styledBg2.js
-
 export function createKeyframe(): string {
     return `@keyframes animate {
     0%{

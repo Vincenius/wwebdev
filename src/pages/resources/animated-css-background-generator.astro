@@ -1,10 +1,7 @@
 ---
-// Ported from
-// legacy-next/pages/resources/animated-css-background-generator.js
-// The interactive generator (three animated CSS backgrounds + controls) is a
-// React island; the prose/sidebar chrome is static Astro. ui.* → plain classes.
 import Layout from '../../layouts/Layout.astro'
 import Ad from '../../components/Ad.astro'
+import Featured from '../../components/Featured.astro'
 import AnimatedCssBackgroundGenerator from '../../components/islands/AnimatedCssBackgroundGenerator'
 import { findByLink } from '../../lib/content'
 
@@ -20,85 +17,86 @@ const postMeta = findByLink(Astro.url.pathname)
     description={postMeta.description}
     image={postMeta.shareImage}
 >
-    <AnimatedCssBackgroundGenerator client:visible />
+    <AnimatedCssBackgroundGenerator client:visible>
+        <Ad slot="ad" />
+        <Fragment slot="description">
+            <h2 class="ui-subheadline">Animated CSS background description</h2>
+            <p>
+                With this tool you can quickly create and customize animated CSS backgrounds for
+                your website. It includes a total of three different background generators. Pick one
+                with the cards in the sidebar, adjust it with the controls inside the browser
+                mockup and copy the generated HTML and CSS below.
+            </p>
 
-    <div class="ui-container">
-        <div class="ui-sidebar-container">
-            <article class="ui-sidebar-article">
-                <h1>Animated CSS Background</h1>
+            <h2 class="ui-subheadline">Bokeh effect animation background</h2>
 
-                <p>
-                    With this tool you can quickly create and customize animated CSS backgrounds for
-                    your website. It includes a total of three different background generators.
-                </p>
+            <img
+                alt="Bokeh effect animation background screenshot"
+                src="/resources/animated-bg-generator/bg1.jpg"
+                width="730"
+                height="420"
+            />
 
-                <h2>Bokeh effect animation background</h2>
+            <p>
+                The first animated CSS background is taken from <a
+                    href="https://codepen.io/Mamboleoo/pen/BxMQYQ"
+                    target="_blank"
+                    rel="noopener noreferrer">Louis Hoebregts Codepen</a
+                >. It consists of blurry bubbles of one or multiple colors moving in circular
+                shapes. You can adjust the speed, the size and the colors of the bubbles that move
+                around. Afterward you can easily copy the HTML and the CSS and insert it anywhere on
+                your website. For each bubble a span is inserted into the dom. Each of them are then
+                positioned randomly. Afterwards they are animated based on the speed variable
+                defined by you.
+            </p>
 
-                <img
-                    alt="Bokeh effect animation background screenshot"
-                    src="/resources/animated-bg-generator/bg1.jpg"
-                    width="800"
-                    height="378"
-                />
+            <h2 class="ui-subheadline">Pure CSS animation background</h2>
 
-                <p>
-                    The first animated CSS background is taken from <a
-                        href="https://codepen.io/Mamboleoo/pen/BxMQYQ"
-                        target="_blank"
-                        rel="noopener noreferrer">Louis Hoebregts Codepen</a
-                    >. It consists of blurry bubbles of one or multiple colors moving in circular
-                    shapes. You can adjust the speed, the size and the colors of the bubbles that
-                    move around. Afterward you can easily copy the HTML and the CSS and insert it
-                    anywhere on your website. For each bubble a span is inserted into the dom. Each
-                    of them are then positioned randomly. Afterwards they are animated based on the
-                    speed variable defined by you.
-                </p>
+            <img
+                alt="Pure CSS animation background screenshot"
+                src="/resources/animated-bg-generator/bg2.jpg"
+                width="730"
+                height="420"
+            />
 
-                <h2>Pure CSS animation background</h2>
+            <p>
+                The second one of the animated CSS backgrounds is inspired by <a
+                    href="https://codepen.io/mohaiman/pen/MQqMyo"
+                    target="_blank"
+                    rel="noopener noreferrer">Mohammad Abdul Mohaimans Codepen</a
+                >. This one has spinning rectangles that move up and turn into circles. Here you can
+                adjust the count of the rectangles, the speed, the size and the color as well. In
+                this case every rectangle is added as a list item to an unordered list. They are
+                positioned randomly on the X-Axis and move up after different delays.
+            </p>
 
-                <img
-                    alt="Pure CSS animation background screenshot"
-                    src="/resources/animated-bg-generator/bg2.jpg"
-                    width="800"
-                    height="378"
-                />
+            <h2 class="ui-subheadline">Rectangle animate background CSS</h2>
 
-                <p>
-                    The second one of the animated CSS backgrounds is inspired by <a
-                        href="https://codepen.io/mohaiman/pen/MQqMyo"
-                        target="_blank"
-                        rel="noopener noreferrer">Mohammad Abdul Mohaimans Codepen</a
-                    >. This one has spinning rectangles that move up and turn into circles. Here you
-                    can adjust the count of the rectangles, the speed, the size and the color as
-                    well. In this case every rectangle is added as a list item to an unordered list.
-                    They are positioned randomly on the X-Axis and move up after different delays.
-                </p>
+            <img
+                alt="Rectangle animate background CSS screenshot"
+                src="/resources/animated-bg-generator/bg3.jpg"
+                width="730"
+                height="420"
+            />
 
-                <h2>Rectangle animate background CSS</h2>
-
-                <img
-                    alt="Rectangle animate background CSS screenshot"
-                    src="/resources/animated-bg-generator/bg3.jpg"
-                    width="800"
-                    height="378"
-                />
-
-                <p>
-                    The last animated background generator is by <a
-                        href="https://codepen.io/BjornRombaut/pen/mOLGgX"
-                        target="_blank"
-                        rel="noopener noreferrer">Bjorns Codepen</a
-                    >. It has cubes that are spinning and growing until they fade. You can adjust
-                    the count and the size as well as the color of the cubes. The cubes are
-                    positioned randomly on the screen and have different shades of the given
-                    background color. In the HTML they are also added as list items.
-                </p>
-
-                <br />
-            </article>
-            <aside class="ui-sidebar">
-                <Ad />
-            </aside>
-        </div>
-    </div>
+            <p>
+                The last animated background generator is by <a
+                    href="https://codepen.io/BjornRombaut/pen/mOLGgX"
+                    target="_blank"
+                    rel="noopener noreferrer">Bjorns Codepen</a
+                >. It has cubes that are spinning and growing until they fade. You can adjust the
+                count and the size as well as the color of the cubes. The cubes are positioned
+                randomly on the screen and have different shades of the given background color. In
+                the HTML they are also added as list items.
+            </p>
+        </Fragment>
+        <Featured
+            slot="featured"
+            links={[
+                '/resources/css-separator-generator',
+                '/resources/creative-backgrounds',
+                '/resources/blur-background-css-generator',
+            ]}
+        />
+    </AnimatedCssBackgroundGenerator>
 </Layout>

@@ -22,9 +22,9 @@
   },
   "dependencies": {
     "@astrojs/prism": "^4.0.2",
-    "@astrojs/react": "^6.0.0",
+    "@astrojs/react": "6.0.1",
     "@fontsource/lato": "^5.2.7",
-    "astro": "^7.0.3",
+    "astro": "7.0.9",
     "compression": "^1.8.1",
     "express": "^5.2.1",
     "feed": "^5.2.1",

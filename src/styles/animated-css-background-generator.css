@@ -1,99 +1,234 @@
-/* Ported from
-   legacy-next/components/AnimatedCssBackgroundGenerator/styles/animatedCssBg.js
-   and .../styles/animatedCssBgControls.js — styled-components → plain CSS.
-   The per-variant animated background CSS (styledBg1/2/3.js) is injected at
-   runtime via scoped <style> tags in the Background1/2/3 island components, so
-   it stays byte-identical to the original generated output. */
-
-/* --- animatedCssBg.js: Container --------------------------------------- */
-/* Wraps the interactive generator. In the original this wrapped the whole page
-   (incl. Nav); here the page chrome is provided by Layout, so this only needs
-   to establish the positioning context for the fixed backgrounds. */
-.acbg-root {
-    position: relative;
-    min-height: 100vh;
-    height: 100%;
+/* Sidebar (chooser) moves above the article on small screens */
+@media (max-width: 960px) {
+    .acbg-sidebar-container {
+        flex-direction: column-reverse;
+    }
 }
 
-/* --- animatedCssBgControls.js ----------------------------------------- */
-.acbg-container {
+/* --- Browser mockup (same look as csg-browser-mockup) ------------------- */
+.acbg-browser-mockup {
     position: relative;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
+    margin: 0 0 50px;
+    height: 560px;
+    max-width: 730px;
+    resize: horizontal;
+    min-width: 320px;
+}
+.acbg-browser-head {
+    position: sticky;
+    z-index: 100;
+    height: 30px;
+    width: 100%;
+    top: 0;
+    background: #e8e8e8;
+    display: flex;
+    align-items: center;
+}
+.acbg-browser-dots {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    margin: 0 30px;
+    background-color: #ffbb00;
+}
+.acbg-browser-dots::before,
+.acbg-browser-dots::after {
+    width: 12px;
+    height: 12px;
+    border-radius: 12px;
+    content: ' ';
+    position: absolute;
+}
+.acbg-browser-dots::before {
+    margin: 0 -18px;
+    background-color: #ff4f4d;
+}
+.acbg-browser-dots::after {
+    margin: 0 18px;
+    background-color: #00ce15;
+}
+/* Size container: the injected background CSS gets its v* units rewritten to
+   cq*, which resolve against this box (see previewCss.ts). */
+.acbg-browser-content {
+    position: relative;
+    height: calc(100% - 30px);
+    container-type: size;
+}
+/* The generated code says `position: fixed` (correct for a real page
+   background) — pin the live preview to the mockup content instead. The
+   two-class selector outranks the injected single-class rule. */
+.acbg-browser-content .acbg-bg1-container,
+.acbg-browser-content .acbg-bg2-container,
+.acbg-browser-content .acbg-bg3-container {
+    position: absolute;
+}
+
+/* --- Controls overlay inside the mockup (like csg-control-container) ---- */
+.acbg-control-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    padding: 14px 16px;
     background: rgba(0, 0, 0, 0.8);
     color: #fff;
-    margin: 20px;
-    padding: 20px;
-    max-width: 300px;
-    z-index: 1;
+    font-size: 0.875rem;
+    max-width: 280px;
+    max-height: calc(100% - 40px);
+    overflow: auto;
+    z-index: 10;
 }
-.acbg-container h3 {
+.acbg-control-container h3 {
     margin: 0;
     color: #fff;
+    font-size: 1.05rem;
 }
-.acbg-container label {
+.acbg-control-container label,
+.acbg-control-container .acbg-group-label {
     display: block;
-    margin: 10px 0 0;
+    margin: 8px 0 0;
+    color: #d5d8dc;
+}
+.acbg-control-container input[type='range'] {
+    width: 100%;
+    margin: 2px 0 0;
+}
+.acbg-control-container input[type='color'] {
+    width: 36px;
+    height: 26px;
+    padding: 0;
 }
 
 .acbg-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 20px;
 }
-.acbg-header.acbg-no-margin {
-    margin-bottom: 0;
+
+/* hide/show toggle + source link sit on the dark overlay — keep them white
+   (the accent color has too little contrast there). */
+.acbg-header .acbg-toggle,
+.acbg-source a {
+    color: #fff;
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.12s ease;
 }
-.acbg-header svg {
-    font-size: 18px;
-    cursor: pointer;
+.acbg-header .acbg-toggle:hover,
+.acbg-source a:hover {
+    color: #d5d8dc;
 }
 
 .acbg-source {
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    font-size: 14px;
+    margin-top: 12px;
+    font-size: 13px;
 }
 .acbg-source > *:first-child {
     margin-right: 20px;
 }
 
+/* --- Code card below the mockup (like csg-controls-card) ---------------- */
+.acbg-controls-card {
+    position: relative;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow:
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+.acbg-tabs {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.acbg-tab {
+    border: 0;
+    background: transparent;
+    padding: 12px 16px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    color: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+    min-width: 90px;
+}
+.acbg-tab.active {
+    color: var(--color-accent);
+    box-shadow: inset 0 -2px 0 var(--color-accent);
+}
+.acbg-control-content {
+    padding: 10px;
+}
 .acbg-code-area {
     width: 100%;
-    margin-bottom: 0;
+    box-sizing: border-box;
+    font-family: inherit;
+    resize: vertical;
+    min-height: 200px;
 }
-.acbg-code-area.acbg-margin-bottom {
-    margin-bottom: 20px;
+.acbg-copy-container {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+.acbg-copy-container svg {
+    color: #2c3e50;
+    margin-right: 4px;
 }
 
-.acbg-nav {
-    margin-bottom: 20px;
+/* --- Chooser cards in the sidebar (like csg-row / csg-card) ------------- */
+.acbg-row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
-/* Demo switchers are <button class="ui-unbutton"> now (were bare <a>);
-   `.acbg-nav button` outranks the .ui-unbutton reset. */
-.acbg-nav a,
-.acbg-nav button {
-    color: #fff;
+@media (max-width: 960px) {
+    .acbg-row {
+        margin-bottom: 15px;
+    }
+}
+/* Cards are <button class="ui-unbutton acbg-card"> — the extra
+   `.acbg-row > .acbg-card` selector outranks the `.ui-unbutton` reset
+   (margin: 0) regardless of stylesheet order. */
+.acbg-row > *,
+.acbg-row > .acbg-card {
+    width: 100%;
+    flex-basis: calc(50% - 20px);
+    margin: 20px 0;
+}
+@media (max-width: 960px) {
+    .acbg-row > * {
+        flex-basis: calc(33% - 20px);
+    }
+}
+.acbg-row > *.active,
+.acbg-row > *:hover {
     cursor: pointer;
-    text-decoration: none;
+    box-shadow:
+        0 14px 28px rgba(0, 0, 0, 0.25),
+        0 10px 10px rgba(0, 0, 0, 0.22);
 }
-.acbg-nav a.active,
-.acbg-nav a:hover,
-.acbg-nav button.active,
-.acbg-nav button:hover {
-    text-decoration: underline;
+.acbg-row img {
+    width: 100%;
+    display: block;
 }
-
-/* hide/show accordion toggles — were <a href="#">; keep the global content-link
-   look now that they are <button class="ui-unbutton acbg-toggle">. */
-.acbg-header .acbg-toggle {
-    color: var(--color-accent);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    transition: color 0.12s ease;
-}
-.acbg-header .acbg-toggle:hover {
-    color: var(--color-accent-hover);
+.acbg-card,
+button.acbg-card {
+    background: #fff;
+    border-radius: 4px;
+    box-shadow:
+        0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14),
+        0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
 }

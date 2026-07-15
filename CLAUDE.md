@@ -96,4 +96,12 @@ test/                routes.json, parity.mjs, lib/extract.mjs, baseline/
 - Parity harness: `test/baseline/` was re-snapshot from the post-refactor build
   (ISO dates, sitemap additions, a11y buttons) and is now the **regression
   baseline** for the current site. 7 interactive tool pages keep a relaxed text
-  tolerance (native controls replaced MUI).
+  tolerance (native controls replaced MUI). The animated-css-background-generator
+  (browser-mockup layout) and creative-hover-effects (sidebar tool layout +
+  demo cards, was a full-screen dark page) pages were redesigned after that
+  snapshot — re-snapshot before comparing them.
+- Animated-bg previews: the copyable CSS is a fixed, viewport-unit page
+  background; the live preview reuses it inside the mockup by rewriting v*→cq*
+  units (`islands/animatedCssBg/previewCss.ts`; the mockup content is a size
+  container) plus a `position: absolute` override in
+  `styles/animated-css-background-generator.css`. Keep those in sync.
