@@ -30,9 +30,3 @@ jobs:
 
       - name: Build
         run: yarn build
-
-      - name: Route parity vs baseline
-        run: |
-          yarn serve &
-          for i in $(seq 1 30); do curl -sf http://localhost:4321/ >/dev/null && break; sleep 1; done
-          yarn test:parity

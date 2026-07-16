@@ -11,7 +11,7 @@ import Layout from '../layouts/Layout.astro'
                 <div class="about-flex">
                     <div>
                         <h2 class="ui-section-headline">About</h2>
-                        <img src="/me.jpg" alt="picture of vincent will" width="500" height="500" />
+                        <img src="/me.jpg" alt="picture of vincent will" width="800" height="800" />
                     </div>
                     <div>
                         <p>
@@ -75,10 +75,14 @@ import Layout from '../layouts/Layout.astro'
     .about-flex {
         display: flex;
     }
+    /* Fixed square box (the height attribute would otherwise win over a
+       max-width-only rule and distort); cover guards non-square sources. */
     .about-flex img {
         border-radius: 100%;
         margin-right: 36px;
-        max-width: 150px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
     }
     @media (max-width: 960px) {
         .about-flex {

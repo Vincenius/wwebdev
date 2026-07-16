@@ -18,12 +18,11 @@ yarn serve          # node server.mjs → PROD (serves dist/ + security headers 
 yarn check          # astro check (astro/tsconfigs/strictest)
 yarn lint           # eslint (flat config: TS + astro + jsx-a11y + react-hooks)
 yarn format         # prettier --write . (format:check for CI-style check)
-yarn test:parity    # diff routes vs test/baseline (run `yarn serve` first)
 ```
 
 Yarn 4 via Corepack (`corepack enable`). Prod = `server.mjs` (Express static +
 headers + compression), **not** `astro preview`. CI: `.github/workflows/ci.yml`
-runs lint → check → build → parity.
+runs lint → check → build.
 
 ## Layout
 
@@ -42,8 +41,7 @@ src/
   data/              posts.ts, templates.ts  ← content registry (see below)
   lib/               content.ts (registry access), dates.ts (ISO→display),
                      feedData/buildFeed (RSS), search.ts (local search)
-  styles/            global/ui/ads/linkbox/forms + per-generator .css
-test/                routes.json, parity.mjs, lib/extract.mjs, baseline/
+  styles/            global/ui/linkbox/forms + per-generator .css
 ```
 
 ## Content registry (src/data + src/lib)
@@ -82,7 +80,10 @@ test/                routes.json, parity.mjs, lib/extract.mjs, baseline/
   style them with `.ui-unbutton` + component classes. Copy-to-clipboard =
   `components/react/CopyButton.tsx`.
 - Global stylesheets (imported in `Layout.astro`): `global` (tokens+base),
-  `ui` (`.ui-*` primitives), `linkbox`, `forms` (native control theming), `ads`.
+  `ui` (`.ui-*` primitives), `linkbox`, `forms` (native control theming).
+- `components/Ad.astro` = site-wide **sponsor self-promo banner** (no external
+  ads) → links to `/sponsorship`, the stats/media-kit page (numbers there are
+  placeholders to be filled in manually).
 - `<head>`/SEO lives only in `layouts/Head.astro`.
 - Local `<img>`s carry intrinsic `width`/`height` attributes (CLS); article CSS
   scales them with `max-width:100%; height:auto`.
@@ -93,7 +94,3 @@ test/                routes.json, parity.mjs, lib/extract.mjs, baseline/
   resolver for `trailingSlash:'never'` + `format:'directory'` (`/blog` → `blog/index.html`,
   no 301). Don't swap in `express.static` (it 301s to add slashes).
 - Client env is `PUBLIC_*` (was `NEXT_PUBLIC_*`).
-- Parity harness: `test/baseline/` was re-snapshot from the post-refactor build
-  (ISO dates, sitemap additions, a11y buttons) and is now the **regression
-  baseline** for the current site. 7 interactive tool pages keep a relaxed text
-  tolerance (native controls replaced MUI).

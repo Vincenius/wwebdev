@@ -1,7 +1,6 @@
 dist/
 .astro/
 .yarn/
-test/baseline/
 screenshots/
 yarn.lock
 # Page content (.astro article/resource bodies): Prettier re-wrapping can make
