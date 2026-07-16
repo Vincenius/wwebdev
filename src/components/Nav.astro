@@ -211,11 +211,16 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
         display: inline-block;
     }
 
-    /* Mobile menu */
+    /* Mobile menu. The header bar paints its own opaque background above the
+       panel (see .mobile-container .navigation) so the menu slides out from
+       underneath it instead of across the logo. */
     .mobile-navigation {
         position: fixed;
-        transition: transform 0.2s ease-out;
-        transform: translateY(100%);
+        transition:
+            transform 0.3s cubic-bezier(0.55, 0.06, 0.68, 0.19),
+            visibility 0s linear 0.3s;
+        transform: translateY(-100%);
+        visibility: hidden;
         height: 100%;
         width: 100%;
         top: 0;
@@ -226,6 +231,20 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
     }
     .mobile-navigation.is-open {
         transform: translateY(0);
+        visibility: visible;
+        transition: transform 0.45s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    /* Content trails the panel: fades in once the slide has mostly settled,
+       fades out immediately on close. */
+    .mobile-navigation ul,
+    .mobile-social-bar {
+        opacity: 0;
+        transition: opacity 0.15s ease-out;
+    }
+    .mobile-navigation.is-open ul,
+    .mobile-navigation.is-open .mobile-social-bar {
+        opacity: 1;
+        transition: opacity 0.3s ease-out 0.15s;
     }
     .mobile-navigation ul {
         list-style: none;
@@ -264,6 +283,17 @@ const logoAlt = isArticle ? 'Logo of wweb.dev' : title
     }
     .mobile-container {
         display: none;
+    }
+    /* Opaque bar above the sliding panel; negative margin + padding make its
+       background span the .nav-container padding strip too. */
+    .mobile-container .navigation {
+        margin: -16px 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+        background: var(--color-dark-grey);
+    }
+    .nav-container.transparent .mobile-container .navigation {
+        background: color-mix(in srgb, var(--color-dark-grey) 60%, transparent);
     }
     @media (max-width: 960px) {
         .desktop-container {

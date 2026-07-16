@@ -17,5 +17,10 @@ export default defineConfig({
     integrations: [react()],
     vite: {
         plugins: [tailwindcss()],
+        // Never inline assets as data: URIs — the CSP (securityHeaders.mjs) is
+        // 'self'-only, so inlined woff fallbacks trigger console CSP errors.
+        build: {
+            assetsInlineLimit: 0,
+        },
     },
 })

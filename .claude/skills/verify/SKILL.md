@@ -35,8 +35,9 @@ Useful checks for the generator tools:
 
 ## Gotchas
 
-- 3 console errors about data-URI fonts violating CSP `font-src 'self'`
-  (from Nav.css) are pre-existing on every page — ignore.
+- The console should be error-free. Vite asset inlining is disabled
+  (`assetsInlineLimit: 0` in astro.config.mjs) because data-URI fonts violate
+  CSP `font-src 'self'` — if data-URI CSP errors reappear, that setting was lost.
 - `yarn test:parity` needs `test/baseline/` (prod HTML snapshots) which is not
   checked in; without it the harness ENOENTs. Not a substitute for browser
   verification anyway.

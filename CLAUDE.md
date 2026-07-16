@@ -94,6 +94,9 @@ src/
   resolver for `trailingSlash:'never'` + `format:'directory'` (`/blog` → `blog/index.html`,
   no 301). Don't swap in `express.static` (it 301s to add slashes).
 - Client env is `PUBLIC_*` (was `NEXT_PUBLIC_*`).
+- Vite asset inlining is off (`assetsInlineLimit: 0` in astro.config.mjs):
+  the CSP is `'self'`-only, so `data:` URIs (e.g. inlined woff fallbacks)
+  would log CSP errors on every page.
 - Animated-bg previews: the copyable CSS is a fixed, viewport-unit page
   background; the live preview reuses it inside the mockup by rewriting v*→cq*
   units (`islands/animatedCssBg/previewCss.ts`; the mockup content is a size

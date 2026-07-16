@@ -55,7 +55,7 @@ const readMore = isResource ? 'Open Resource ' : isTemplate ? 'Open Template' : 
         <p>{description}</p>
         <a href={link}>
             <span class="ap-readmore">
-                {readMore}
+                {readMore}<span class="sr-only">: {headline}</span>
                 <Icon name="arrow" size={32} />
             </span>
         </a>
