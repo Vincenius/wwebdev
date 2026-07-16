@@ -5309,16 +5309,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"node-html-parser@npm:^8.0.4":
-  version: 8.0.4
-  resolution: "node-html-parser@npm:8.0.4"
-  dependencies:
-    css-select: "npm:^5.1.0"
-    entities: "npm:^8.0.0"
-  checksum: 10c0/066283a4cfcc31fd9612f6e131d1b0bc03f1b85d927de98e5a623185fd91b6101fa95d92c42e477134d9beb768ce24a8eeef086b5beed2a6fb718229e9f38bc0
-  languageName: node
-  linkType: hard
-
 "node-mock-http@npm:^1.0.4":
   version: 1.0.4
   resolution: "node-mock-http@npm:1.0.4"
@@ -7485,7 +7475,6 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^7.1.1"
     express: "npm:^5.2.1"
     feed: "npm:^5.2.1"
-    node-html-parser: "npm:^8.0.4"
     prettier: "npm:^3.9.4"
     prettier-plugin-astro: "npm:^0.14.1"
     prismjs: "npm:^1.30.0"

@@ -7,7 +7,7 @@ import reactHooks from 'eslint-plugin-react-hooks'
 
 export default tseslint.config(
     {
-        ignores: ['dist/', '.astro/', '.yarn/', 'test/baseline/', 'screenshots/'],
+        ignores: ['dist/', '.astro/', '.yarn/', 'screenshots/'],
     },
     ...tseslint.configs.recommended,
     ...astro.configs.recommended,
