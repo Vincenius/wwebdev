@@ -2435,9 +2435,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:7.0.9":
-  version: 7.0.9
-  resolution: "astro@npm:7.0.9"
+"astro@npm:7.1.0":
+  version: 7.1.0
+  resolution: "astro@npm:7.1.0"
   dependencies:
     "@astrojs/compiler-rs": "npm:^0.3.1"
     "@astrojs/internal-helpers": "npm:0.10.1"
@@ -2503,7 +2503,7 @@ __metadata:
       optional: true
   bin:
     astro: ./bin/astro.mjs
-  checksum: 10c0/5dfd9749fc37c8503d2aed63fff27c924c6934dd79189fbe81320196c89a4d28dcb6040b213ac836a90a559c898a2cb66e8cb5a42d3d634fdaf4e25ec37fceff
+  checksum: 10c0/4639367de441cd1832e2c63bc9e99d566519668a686fcddc2a542c0ef4e8a1ca76cc28490edc3f1b8ce0b2e3b8028333a87f84f8019530546b9bdca9af9749b6
   languageName: node
   linkType: hard
 
@@ -7467,7 +7467,7 @@ __metadata:
     "@types/prismjs": "npm:^1.26.6"
     "@types/react": "npm:^19.2.17"
     "@types/react-dom": "npm:^19.2.3"
-    astro: "npm:7.0.9"
+    astro: "npm:7.1.0"
     compression: "npm:^1.8.1"
     eslint: "npm:^10.6.0"
     eslint-plugin-astro: "npm:^2.1.1"
